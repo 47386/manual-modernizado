@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:703px;\" coordsize=\"950,703\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:703px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J46636200000CASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:703px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:112px;top:125px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Llave mecánica<br>(Incluyendo el transpondedor)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:411px;top:125px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Llave del inmovilizador<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:131px;top:406px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>UNIDAD IMOES<br>(Incorporado en la MICU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:97px;top:660px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Conjunto bloqueo de la dirección<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:375px;top:639px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Unidad de control<br>del sistema de entrada sin llaves del inmovilizador<br>(con el receptor incorporado)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:759px;top:660px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:623px;top:326px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Llave mecánica<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:788px;top:279px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Transmisor<br>(Incluyendo<br>el transpondedor)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

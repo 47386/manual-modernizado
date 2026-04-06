@@ -1,0 +1,19 @@
+with(document) {
+write("<v:group id=\"group7\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:415px;\" coordsize=\"950,415\">");
+write("<v:rect id=\"rect7\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:415px;\">");
+write("<img id=\"img7\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ36200000000CASD10.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:415px;border-color:#ffffff\">");
+write("<p id=\"p7_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:82px;top:348px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BOTÓN DE LOS MAPAS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p7_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:226px;top:386px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BOTÓN DE CANCELACIÓN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p7_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:539px;top:386px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>DIAL DE INTERFAZ<br></b></nobr>");
+write("</p>");
+write("<p id=\"p7_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:716px;top:321px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BOTÓN DEL MENÚ<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

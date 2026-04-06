@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:678px;\" coordsize=\"950,678\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:678px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9ERPK76300000000BBPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:678px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:501px;top:514px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>Modo de Ensaio 2<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:416px;top:293px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>Modo de Ensaio 1<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:801px;top:22px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>: Linha CAN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:425px;top:318px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>(B−CAN)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:631px;top:329px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>MICU<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:148px;top:306px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>MÓDULO DE CONTROLO <br>DO INDICADOR<br>(CONTA-ROTAÇÕES) <br>(Indicador das PORTAS <br>LIGADO/DESLIGADO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:729px;top:211px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>LUZ <br>DO TECTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:665px;top:480px;font-weight:normal;font-size:6.82pt;\">");
+write("<nobr><b>INTERRUPTOR <br>DA PORTA DO CONDUTOR <br>(Fechado: Porta aberta)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

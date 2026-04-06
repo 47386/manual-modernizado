@@ -1,0 +1,534 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E80D14300014701MAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Inspección del servofreno
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div class="tool_list_title">
+<b>
+Herramientas especiales necesarias
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012938')">
+<br>
+Tubos de unión del manómetro, 12 x 1,0 mm.
+<br>
+ 07HAK-SG00110
+</a>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012939')">
+<br>
+Manómetro de presión
+<br>
+ 07YAJ-0010410
+</a>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012940')">
+<br>
+Manómetro de vacío
+<br>
+ 07YAJ-0010610
+</a>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012941')">
+<br>
+Accesorio
+<br>
+ 07410-5790102
+</a>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012942')">
+<br>
+Adaptador
+<br>
+ 07410-5790503
+</a>
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Comprobación de la existencia de fugas
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Monte el manómetro de vacío (A) entre el servofreno y la válvula antirretorno.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Ponga en marcha el motor, ajuste su velocidad con el pedal del acelerador de forma que el manómetro de vacío indique una lectura de 66,7 kPa (500 mm.Hg). A continuación, pare el motor.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Lea la indicación del manómetro de vacío.
+</div>
+<div>
+Si se reduce la lectura del vacío en 2,7 kPa (20 mm.Hg) o más después de 30 segundos, compruebe la existencia de fugas en las piezas siguientes.
+</div>
+<ul type="disc">
+<li>
+<div>
+Válvula antirretorno
+</div>
+</li>
+<li>
+<div>
+Tubo, manguito de vacío
+</div>
+</li>
+<li>
+<div>
+Juntas
+</div>
+</li>
+<li>
+<div>
+Servofreno
+</div>
+</li>
+<li>
+<div>
+Cilindro maestro
+</div>
+</li>
+</ul>
+<div>
+NOTA: No trate de desmontar el servofreno. Sustituya el servofreno como un conjunto por otro nuevo.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005208','1');">
+<img src="../tn/SMR7E80D14300014701MASD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80D14300014701MASD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Comprobación de funcionamiento
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Monte el manómetro de vacío de la misma forma que en la comprobación de la existencia de fugas.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Conecte los manómetro de presión de aceite (A) al cilindro maestro utilizando los accesorios (herramientas especiales) como se indica.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Purgue el aire a través de las válvulas (B).
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Ponga en marcha el motor y déjelo a ralentí.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005209','1');">
+<img src="../tn/SMR7E80D14300014701MASD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80D14300014701MASD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Haga que un ayudante pise el pedal de freno ejerciendo una presión de 98 N (10 kgf) y 294 N (30 kgf) medida con un manómetro (A) disponible comercialmente.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+En cada vacío, deben observarse las presiones siguientes en los manómetros.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="33%">
+<col width="25%">
+<col width="20%">
+<col width="20%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Vacío del servofreno kPa(mm.Hg)
+</b>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Presión sobre el pedal de freno N (kgf)
+</b>
+</div>
+</td>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Presión de aceite en el cilindro maestro kPa (kgf/cm
+<sup>
+2
+</sup>
+)
+</b>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="2" align="center">
+<div>
+0 (0)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+98 (10)
+</div>
+</td>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+0 (0)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+294 (30)
+</div>
+</td>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+1.089 (11,1)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="2" align="center">
+<div>
+66,7 (500)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+98 (10)
+</div>
+</td>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+3.865 (39,4)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+294 (30)
+</div>
+</td>
+<td class="ViewerTD" colspan="2" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+7.978 (81,4)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Si las lecturas no coinciden con los límites indicados anteriormente, compruebe la existencia de fugas por el cilindro maestro.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005210','1');">
+<img src="../tn/SMR7E80D14300014701MASD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80D14300014701MASD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Comprobación de la válvula antirretorno del servofreno
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Desconecte el manguito de vacío del servofreno (incorporado en la válvula antirretorno) (A) en el lado de éste.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Ponga en marcha el motor y déjelo a ralentí. Debe existir un vacío disponible. Si no se dispone de dicho vacío, la válvula antirretorno no funciona debidamente. Sustituya el manguito de vacío y la válvula antirretorno del servofreno y vuelva a efectuar la comprobación.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005211','1');">
+<img src="../tn/SMR7E80D14300014701MASD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80D14300014701MASD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

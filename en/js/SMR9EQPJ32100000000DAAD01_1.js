@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1039px;\" coordsize=\"950,1039\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1039px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ32100000000DAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1039px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:493px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEADLIGHT LEVELING MOTOR<br><a href=\"javascript:CtsProc('0','000000000000227','i000')\"></b>Input Test,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000228','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:637px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SIDE TURN SIGNAL LIGHT<br><a href=\"javascript:CtsProc('0','000000000000237','i000')\"></b>Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:622px;top:715px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT HEADLIGHT LEVELING SENSOR<br>(With HID)<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\"></b>Circuit Troubleshooting,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:542px;top:816px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HID UNIT<br><a href=\"javascript:CtsProc('0','000000000000221','i000')\"></b>Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:413px;top:874px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT FOG LIGHT<br><a href=\"javascript:CtsProc('0','000000000000216','i000')\"></b>Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002105','i000')\">Bulb Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002104','i000')\">Adjustment,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:696px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEADLIGHT<br><a href=\"javascript:CtsProc('0','000000000000218','i000')\"></b>Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\">Bulb Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000219','i000')\">Ajustment,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000217','i000')\">HID Lamp System Troubleshooting,<br></a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:847px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT POSITION LIGHT<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Bulb Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:895px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT TURN SIGNAL LIGHT<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Bulb Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1011px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>LHD model is shown, RHD model is similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

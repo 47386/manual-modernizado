@@ -1,0 +1,653 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46636200000FEIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Controllo dell'immobilizzatore
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al connettore trasmissione dati.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Controllare la voce &quot;SYSTEM CHECK&quot; (controllo sistema) in &quot;IMMOBILIZER INFORMATION&quot; (informazioni immobilizzatore) con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Se sul tester HDS viene visualizzato il messaggio ‘‘Normal'' (normale), l'immobilizzatore funziona correttamente. Se sul tester HDS vengono visualizzati altri messaggi, controllare quanto segue:
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="12%">
+<col width="27%">
+<col width="60%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+N. controllo impianto
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Controllo impianto
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Possibile causa
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La chiave non è stata registrata
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Questa chiave non è registrata nella centralina immobilizzatore-sistema di accesso con telecomando. Provare a registrare le chiavi con il tester HDS.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra l'antenna e la chiave codificata è assente perchè la catenella metallica della chiave fa interferenza.
+</div>
+</li>
+<li>
+<div>
+La tensione della batteria è bassa.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Errore di comunicazione tra la chiave e l'immobilizzatore
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruzione intermittente tra il transponder e la centralina immobilizzatore-sistema di accesso con telecomando. 
+</div>
+</li>
+<li>
+<div>
+La chiave codificata non è una chiave originale Honda.
+</div>
+</li>
+<li>
+<div>
+Chiave difettosa (transponder difettoso)
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra l'antenna e la chiave codificata è assente perchè la catenella metallica della chiave fa interferenza.
+</div>
+</li>
+<li>
+<div>
+La tensione della batteria è bassa.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicazione assente tra la chiave e l'immobilizzatore
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Il commutatore di accensione è stato portato su ON con una chiave non codificata.
+</div>
+</li>
+<li>
+<div>
+La chiave codificata non è una chiave originale Honda.
+</div>
+</li>
+<li>
+<div>
+Chiave difettosa (transponder difettoso)
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra l'antenna e la chiave codificata è assente perchè la catenella metallica della chiave fa interferenza.
+</div>
+</li>
+<li>
+<div>
+La tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando difettosa
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+B-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Il modulo ECM non è stato registrato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Il modulo ECM non è stato registrato. Provare a registrare il modulo ECM con il tester HDS.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina immobilizzatore-sistema di accesso con telecomando e il modulo ECM è assente a causa di un'interferenza.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+B-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Errore del formato di comunicazione nel modulo ECM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Il modulo ECM non è stato registrato. Provare a registrare il modulo ECM con il tester HDS.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina immobilizzatore-sistema di accesso con telecomando e il modulo ECM è assente a causa di un'interferenza.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+C-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La centralina IMOES non è stata registrata
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La centralina IMOES non è stata registrata.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente a causa di un'interferenza.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+C-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Errore del formato di comunicazione nella centralina IMOES
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La centralina IMOES non è stata registrata.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente a causa di un'interferenza.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Cortocircuito nella linea S-net
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Il cablaggio tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è in cortocircuito. (Cortocircuito nella linea S-net)
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina immobilizzatore-sistema di accesso con telecomando e il modulo ECM è assente a causa di un'interferenza.
+</div>
+</li>
+<li>
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando difettosa
+</div>
+</li>
+<li>
+<div>
+Modulo ECM difettoso
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La comunicazione tra la centralina IMOES e l'immobilizzatore è assente
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Fusibile bruciato
+</div>
+</li>
+<li>
+<div>
+Il cablaggio tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è interrotto.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina IMOES e la centralina immobilizzatore-sistema di accesso con telecomando è assente a causa di un'interferenza.
+</div>
+</li>
+<li>
+<div>
+Centralina IMOES difettosa
+</div>
+</li>
+<li>
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando difettosa
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicazione assente tra la ECM e l'immobilizzatore
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Fusibile bruciato
+</div>
+</li>
+<li>
+<div>
+Il cablaggio tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è interrotto.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra il modulo ECM e la centralina immobilizzatore-sistema di accesso con telecomando è assente perchè la tensione della batteria è bassa.
+</div>
+</li>
+<li>
+<div>
+La comunicazione tra la centralina immobilizzatore-sistema di accesso con telecomando e il modulo ECM è assente a causa di un'interferenza.
+</div>
+</li>
+<li>
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando difettosa
+</div>
+</li>
+<li>
+<div>
+Modulo ECM difettoso
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Registrazione iniziale della centralina immobilizzatore non completata
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+La centralina immobilizzatore-sistema di accesso con telecomando non è registrata. Provare a registrare la centralina immobilizzatore-sistema di accesso con telecomando con il tester HDS.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-3
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-4
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-5
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Modalità speciale
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Portare il commutatore di accensione su ON (II) e OFF con la chiave registrata.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-3
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-4
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-5
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

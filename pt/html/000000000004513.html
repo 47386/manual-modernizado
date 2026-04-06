@@ -1,0 +1,771 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ES0J36200000000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias do Sistema de Navegação
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Funcionamento Geral
+</b>
+</div>
+<div>
+Consulte o Manual de Instruções do Sistema de Navegação Honda, para os procedimentos de funcionamento do sistema de navegação.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Diagnóstico por Sintoma
+</b>
+</div>
+<div>
+Certas condições e limitações de sistema resultarão em erros ocasionais de posicionamento do veículo. Alguns clientes poderão pensar que isto indica um problema com o sistema de navegação quando, de facto, o sistema encontra-se normal. Ao entrevistar clientes, tenha em atenção os seguintes pontos acerca dos sintomas do sistema de navegação.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitações de Navegação por Auto-Inércia
+</b>
+</div>
+<div>
+As limitações por parte da auto-inércia do sistema de navegação (o sensor da taxa de guinada e o sinal da velocidade do veículo) poderão causar algumas discrepâncias entre a posição real e a posição indicada do veículo (posição GPS do veículo).
+</div>
+<div>
+As seguintes condições poderão causar erros de posicionamento do veículo:
+</div>
+<ul type="disc">
+<li>
+<div>
+Movimentação do veículo com o motor parado, tal como o transporte por ferry ou por um camião de reboque ou se o veículo for rodado numa plataforma giratória.
+</div>
+</li>
+<li>
+<div>
+Patinagem dos pneus, alterações nos diâmetros de rodagem dos Pneus e algumas situações de condução poderão causar discrepâncias nas distâncias percorridas. Alguns exemplos disto são:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Patinagem contínua dos Pneus numa superfície escorregadia.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conduzir com as correntes de neve montadas.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Pressão dos Pneus anormal.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Tamanho incorrecto dos Pneus.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Mudança frequente de faixas numa auto-estrada larga.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Condução contínua numa auto-estrada recta ou com curvatura suave.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+As tolerâncias do sistema e as imprecisões do mapa limitam, por vezes, a precisão da indicação da posição do veículo. Alguns exemplos disto são:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conduzir em estradas que não aparecem no mapa (a correspondência por mapa não é possível).
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conduzir numa estrada cujas curvas são sempre na mesma direcção, tais como uma ponte em anel, uma passagem desnivelada ou um parque de estacionamento em espiral.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conduzir numa estrada com uma série de curvas apertadas.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Condução na proximidade de uma saída ou transição gradual da auto-estrada.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conduzir numa estrada de duas estradas paralelas próximas.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Após efectuação de muitas curvas de 90 º.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+O ícone de direcção para destino ou o ‘‘Ícone de destino'' apresentado ou o mapa pode estar a uma distância de algumas centenas de pés da localização real.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitações do Sistema Global de Posicionamento (GPS)
+</b>
+</div>
+<div>
+O GPS não detecta a posição do veículo nos seguintes casos:
+</div>
+<ul type="disc">
+<li>
+<div>
+Para os primeiros 5 a 10 minutos após reconhecimento da bateria (Isto pode demorar 45 minutos).
+</div>
+</li>
+<li>
+<div>
+Quando os sinais de satélite estiverem bloqueados por edifícios altos, montanhas, túneis, árvores ou camiões grandes.
+</div>
+</li>
+<li>
+<div>
+Quando a antena GPS se encontra bloqueada por um objecto colocado sobre ela no veículo. A antena GPS exige uma vista clara e desimpedida do céu.
+</div>
+</li>
+<li>
+<div>
+Quando os sinais de satélite estão bloqueados pelo funcionamento de algum acessório electrónico do mercado secundário, incluindo mas não se limitando a unidades de entretenimento no tablier que não OEM (rádio, reprodutores de CD/multileitores e Lo Jack) e telemóveis colocados nas proximidades do sistema de navegação e vidros escurecidos por cima da antena GPS.
+</div>
+</li>
+</ul>
+<div>
+A precisão do GPS diminui nos seguintes casos:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sombras metálicas nos vidros acima da antena GPS.
+</div>
+</li>
+<li>
+<div>
+Quando se podem receber apenas dois sinais de satélite (São necessários três sinais de satélite para um posicionamento preciso).
+</div>
+</li>
+<li>
+<div>
+Quando os centros de controlo de satélites estiverem a ter problemas.
+</div>
+</li>
+<li>
+<div>
+Quando se conduz na proximidade de cabos de alta voltagem.
+</div>
+</li>
+<li>
+<div>
+Quando os sinais de satélite estão bloqueados pelo funcionamento de algum acessório electrónico do mercado secundário, incluindo mas não se limitando a unidades de entretenimento no tablier que não OEM (rádio, leitores de CD/multileitores, detectores de radares e sistemas anti-roubo) e telemóveis colocados nas proximidades do sistema de navegação
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Modo Silencioso Logic
+</b>
+</div>
+<div>
+Sempre que o sistema de navegação transmite comandos de orientação, todos os altifalantes encontram-se no modo silencioso. Quando o sistema de comando por voz está a ser utilizado todos os altifalantes encontram-se no modo silencioso. Se estiver a ser utilizado o Telefone Mãos-Livres, o comando por voz.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitações da Unidade LCD
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Em temperaturas frias o visor poderá ficar escuro durante os primeiros dois a três minutos, até aquecer.
+</div>
+</li>
+<li>
+<div>
+Quando o visor estiver demasiado quente devido a exposição solar directa na altura de Verão, permanecerá escuro até a temperatura baixar.
+</div>
+</li>
+<li>
+<div>
+Quando a humidade for alta e a temperatura interior for baixa, o visor poderá parecer nublado. Após alguma utilização o visor ficará mais nítido.
+</div>
+</li>
+<li>
+<div>
+Por vezes, podem-se notar impressões digitais no ecrã devido a sua cobertura de baixa reflexão. Limpe o ecrã com um pano húmido macio. Poderá utilizar um agente de limpeza neutro destinado a óculos ou ecrãs de computadores.
+</div>
+</li>
+</ul>
+<div>
+NOTA: O ecrã não é afectado pelo sol, como no caso dos ecrãs anteriores.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Duplicação de Sintomas
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Se conseguir obter novamente o problema, compare-o a um ‘‘veículo semelhante em bom estado.'' Utilize apenas um veículo do mesmo modelo, ano, o mesmo friso e a mesma versão do software. Se conseguir obter novamente o problema no veículo semelhante em bom estado, trata-se de uma característica do sistema.
+</div>
+</li>
+<li>
+<div>
+Quando os sintomas podem ser duplicados, siga os procedimentos de auto-diagnóstico e os procedimentos de diagnóstico de avarias apropriados.
+</div>
+</li>
+<li>
+<div>
+Quando o sintoma não voltar a surgir ou se surgir apenas intermitentemente, pergunte ao cliente quais as condições em que o sintoma ocorreu.
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Tente determinar se a causa foi devida a uma interferência externa.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Tente reproduzir o sintoma recriando as mesmas condições que o cliente experenciou.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Vibração, extremos de temperatura e humidade (orvalho, humidade) são factores difíceis de reproduzir.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Inspeccione se o veículo tem dispositivos electrónicos de mercado secundário (localizadores de veículos, detector de radares, amps etc) que possam estar escondidos.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauções de Manutenção
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Verifique se existem artigos sobre os boletins de serviço ou Informações de manutenção relativos aos problemas do cliente.
+</div>
+</li>
+<li>
+<div>
+Antes de desligar a bateria, anote as frequências memorizadas dos botões de pré-selecção do rádio.
+</div>
+</li>
+<li>
+<div>
+A unidade de navegação está localizada atrás do porta-luvas.
+</div>
+</li>
+<li>
+<div>
+Quando se desliga a bateria, o relógio GPS interno é reposto para ‘‘0:00”. O relógio será reposto na hora correcta, após o sistema concluir a inicialização do GPS.
+</div>
+</li>
+<li>
+<div>
+Após voltar a ligar a bateria, deverá aguardar até obter o sinal inicial do satélite. Isto pode demorar de 10 a 45 minutos.
+</div>
+</li>
+<li>
+<div>
+Antes de devolver o veículo ao cliente, introduza as estações de rádio pré-seleccionadas e acerte o relógio, conforme necessário.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Inicialização do Sistema
+</b>
+</div>
+<div>
+Se por qualquer motivo o sistema de navegação ficar sem energia (por ex. a bateria foi desligada), é necessário iniciar o sistema de navegação. Quando concluído, o seu sistema está pronto para ser utilizado.
+</div>
+<div>
+Esta inicialização requer o seguinte:
+</div>
+<ul type="disc">
+<li>
+<div>
+Inicialização do GPS (pode não ser preciso, de acordo com o tempo de falta de energia do sistema)
+</div>
+</li>
+<li>
+<div>
+Correspondência do mapa para alinhar o GPS a uma localização do mapa
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Inicialização do GPS
+</b>
+</div>
+<div>
+De acordo com o tempo que a bateria esteve desligada, o sistema pode requerer uma inicialização do GPS. Se for preciso, aparece o seguinte ecrã:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011222','1');">
+<img src="../tn/SMR7ES0J36200000000BBPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7ES0J36200000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div>
+Se este procedimento não for necessário, o sistema continua directamente para o ecrã de Exoneração de Responsabilidade. Durante a inicialização, o sistema procura todos os satélites do GPS disponíveis e obtém a sua informação orbital. Durante este procedimento o veículo deve encontrar-se no exterior com uma vista desimpedida do céu.
+</div>
+<div>
+Se o sistema de navegação encontrar os satélites, esta caixa apaga-se e passa para o ecrã de Exoneração de Responsabilidade. Se num período de 10 minutos o sistema falhar na localização de um número suficiente de satélites para determinar a sua posição, aparece o seguinte ecrã.
+</div>
+<div>
+Após 30 minutos de visualização deste ecrã, desligue o motor e volte a arrancar o veículo. Se conseguir agora visualizar o ecrã de Exoneração de Responsabilidade, a inicialização do GPS foi concluída.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+O tempo médio de captação é inferior a 10 minutos, podendo, no entanto, demorar até 45 minutos.
+</div>
+</li>
+<li>
+<div>
+Se o sistema continuar a não conseguir captar o sinal, siga as instruções do ecrã. Se este ecrã voltar a aparecer, 
+<a href="javascript:CtsProc('0','000000000004523','i000')">
+efectue um diagnóstico de avarias do ícone GPS não indicado.
+</a>
+</div>
+</li>
+<li>
+<div>
+Para contornar o ecrã de Captação do GPS, pressione e segure simultaneamente as teclas ‘‘MENU'' e ‘‘Sair de zoom''. Toque no ecrã no botão ‘‘Retroceder'' para sair do modo de diagnóstico. Isto permite a continuação do diagnóstico de avarias quando está parado.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011223','1');">
+<img src="../tn/SMR7ES0J36200000000BBPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7ES0J36200000000BBPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG11">
+</a>
+<div class="servinfosub_title">
+<b>
+Procedimentos Após Manutenção-Correspondência Por Mapa
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Estacione o veículo numa área onde os sinais de satélite do GPS não possam ser obstruídos e verifique a marca do satélite no visor.
+</div>
+</li>
+<li>
+<div>
+Conduza o veículo 1 milha antes de introduzir um destino e confirme que a estrada utilizada é visualizada na parte inferior do ecrã (correspondência por mapa).
+</div>
+</li>
+<li>
+<div>
+Introduza a direcção do concessionário e confirme os caminhos do sistema e se tem um funcionamento normal.
+</div>
+</li>
+<li>
+<div>
+Apague todos os destinos anteriores e entradas de moradas introduzidos para fins de ensaio.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

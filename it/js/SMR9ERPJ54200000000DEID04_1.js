@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DEID04.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:790px;top:142px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA EPS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:640px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MODULO DI COMANDO<br>QUADRO STRUMENTI (TACHIMETRO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:433px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MODULO DI COMANDO<br>QUADRO STRUMENTI (CONTAGIRI)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:152px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA IMMOBILIZZATORE<br>SISTEMA DI ACCESSO CON TELECOMANDO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:778px;top:603px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCATOLA FUSIBILI/RELÈ<br>SOTTO PLANCIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:376px;top:656px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ ESCLUSIONE MOTORINO DI AVVIAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:744px;top:919px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA MICU<br>(Integrata nella scatola<br>fusibili/relè sotto plancia)<br>CENTRALINA IMOES<br>(Integrata nella centralina MICU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1058px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>*: Con navigatore<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:395px;top:598px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA<br>VIVAVOCE*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:722px;top:83px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA ADATTATORE USB<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

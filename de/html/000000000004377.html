@@ -1,0 +1,832 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPJ54200046121FEGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Leistungsrelais überprüfen
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Anhand dieser Tabelle den Relaistyp ermitteln und dann den entsprechenden Test durchführen.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="60%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Relais
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Test
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ACC-Trennrelais
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="20" align="left">
+<div>
+Schließer
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A/C-Kompressorkupplungsrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A/C-Kondensatorlüfterrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Gebläsemotorrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Zigarettenanzünderrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relais der Zubehörstrombuchse vorn
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nebelscheinwerferrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Kraftstoffvorwärmerrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Scheinwerferwaschanlagenrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Hupenrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+IG2-Trennrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Einlassverschlussventilrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+PGM-FI-Hauptrelais 1, 2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relais PTC-Heizung A, B, C 
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Heizungsrelais elektrisch verstellbare Außenspiegel
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Kühlerlüfterrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relais der Zubehörstrombuchse hinten
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Heckscheibenheizungsrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sitzheizungsrelais (high)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Anlasser-Trennrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relais der Super-Verriegelung für die Fahrertür
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Ausführung mit fünf Klemmen
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Gebläsereglerrelais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sicherheitssperr-Relais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relais der Super-Verriegelung für die Beifahrertür
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sitzheizungsrelais (low)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Schließer (außer PGM-FI-Hauptrelais 1, 2, Heckscheibenheizungsrelais, Kühlerlüfterrelais, A/C-Kondensatorlüfterrelais und Gebläsemotorrelais, Kraftstoffvorwärmrelais, Einlassverschlussrelais, Relais PTC-Heizung A, B, C)
+</b>
+</div>
+<div>
+Auf Durchgang zwischen den Klemmen prüfen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Klemmen Nr. 4 und Nr. 3 an Spannungsversorgung bzw. Masse angeschlossen sind, muss Durchgang zwischen den Klemmen Nr. 1 und Nr. 2 vorhanden sein.
+</div>
+</li>
+<li>
+<div>
+Nach dem Unterbrechen der Spannungsversorgung darf kein Durchgang zwischen den Klemmen Nr. 1 und Nr. 2 vorhanden sein.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010928','1');">
+<img src="../tn/SMR9ERPJ54200046121FEGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010928','2');">
+<img src="../tn/SMR9ERPJ54200046121FEGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Einlassverschlussventilrelais, Kraftstoffvorwärmrelais, Relais PTC-Heizung A, Relais PTC-Heizung B, Relais PTC-Heizung C
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Stecker J (10P) und K (5P) des Sicherungs-/Relaiskastens im Motorraum trennen.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Am Sicherungs-/Relaiskasten im Motorraum den folgenden Test durchführen:
+</div>
+<div>
+Einlassverschlussventilrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen J Nr. 9 (+) und J Nr. 3 (−) an Spannung und Messe legen. Zwischen der Klemme J Nr. 4 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen J Nr. 9 (+) und J Nr. 3 (−) von Spannung und Messe trennen. Zwischen der Klemme Nr. 4 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+Kraftstoffvorwärmrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen J Nr. 8 (+) und J Nr. 7 (−) an Spannung und Messe legen. Zwischen der Klemme K Nr. 5 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen J Nr. 8 (+) und J Nr. 7 (−) von Spannung und Messe trennen. Zwischen der Klemme Nr. 5 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+Relais der PTC-Heizung A:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 10 (−) an Spannung und Messe legen. Zwischen der Klemme K Nr. 4 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 10 (−) von Spannung und Messe trennen. Zwischen der Klemme Nr. 4 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+Relais der PTC-Heizung B:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 6 (−) an Spannung und Messe legen. Zwischen der Klemme K Nr. 3 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 6 (−) von Spannung und Messe trennen. Zwischen der Klemme Nr. 3 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+Relais der PTC-Heizung C:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 2 (−) an Spannung und Messe legen. Zwischen der Klemme K Nr. 2 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen J Nr. 1 (+) und J Nr. 2 (−) von Spannung und Messe trennen. Zwischen der Klemme Nr. 2 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010929','1');">
+<img src="../tn/SMR9ERPJ54200046121FEGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010929','2');">
+<img src="../tn/SMR9ERPJ54200046121FEGD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+PGM-FI-Hauptrelais 1, 2, Heckscheibenheizungsrelais
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Den 20P-Stecker D des Sicherungs-/Relaiskastens im Motorraum trennen.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Am Sicherungs-/Relaiskasten im Motorraum den folgenden Test durchführen:
+</div>
+<div>
+PGM-FI-Hauptrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemme Nr. 20 mit Karosseriemasse verbinden. Zwischen der Klemme Nr. 17 und Karosseriemasse muss Batteriespannung anliegen.
+</div>
+</li>
+<li>
+<div>
+Die Klemme Nr. 20 von Karosseriemasse trennen. Zwischen der Klemme Nr. 17 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+PGM-FI-Hauptrelais 2:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemme Nr. 20 mit Karosseriemasse verbinden. Zwischen den Klemmen Nr. 8, Nr. 9, Nr. 18, Nr. 19 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemme Nr. 20 von Karosseriemasse trennen. Zwischen den Klemmen Nr. 8, Nr. 9, Nr. 18, Nr. 19 und Karosseriemasse darf keine Spannung gemessen werden.
+</div>
+</li>
+</ul>
+<div>
+Heckscheibenheizungsrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemme Nr. 18 mit Spannung und die Klemme Nr. 4 mit Masse verbinden. Zwischen der Klemme Nr. 3 und Karosseriemasse muss Batteriespannung gemessen werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemme Nr. 18 von Spannung und die Klemme Nr. 4 von Masse trennen. Zwischen der Klemme Nr. 3 und Karosseriemasse darf keine Spannung gemessen werden.
+</div>
+</li>
+</ul>
+<div>
+Scheinwerferwaschanlagenrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemme Nr. 7 mit Karosseriemasse verbinden. Zwischen der Klemme Nr. 10 und Karosseriemasse muss Batteriespannung anliegen.
+</div>
+</li>
+<li>
+<div>
+Die Klemme Nr. 7 von Karosseriemasse trennen. Zwischen der Klemme Nr. 10 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010930','1');">
+<img src="../tn/SMR9ERPJ54200046121FEGD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Kühlerlüfterrelais, A/C-Kondensatorlüfterrelais, Gebläsemotorrelais
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Den 20P-Stecker E des Sicherungs-/Relaiskastens im Motorraum trennen.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Am Sicherungs-/Relaiskasten im Motorraum den folgenden Test durchführen:
+</div>
+<div>
+Kühlerlüfterrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen Nr. 15 (+) und Nr. 4 (−) an Spannung und Masse legen. Zwischen der Klemme Nr. 11 und Karosseriemasse muss Batteriespannung anliegen.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen Nr. 15 (+) und Nr. 4 (−) von Spannung und Masse trennen. Zwischen der Klemme Nr. 11 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+A/C-Kondensatorlüfterrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen Nr. 15 (+) und Nr. 16 (−) an Spannung und Masse anschließen. Zwischen der Klemme Nr. 13 und Karosseriemasse muss Batteriespannung anliegen.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen Nr. 15 (+) und Nr. 16 (−) von Spannung und Masse trennen. Zwischen der Klemme Nr. 13 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+<div>
+Gebläsemotorrelais:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Klemmen Nr. 6 (+) und Nr. 1 (−) an Spannung und Masse anschließen. Zwischen der Klemme Nr. 3 und Karosseriemasse darf keine Batteriespannung anliegen.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen Nr. 6 (+) und Nr. 1 (−) von Spannung und Masse trennen. Zwischen der Klemme Nr. 3 und Karosseriemasse darf keine Spannung anliegen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010931','1');">
+<img src="../tn/SMR9ERPJ54200046121FEGD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Ausführung mit fünf Klemmen
+</b>
+</div>
+<div>
+Auf Durchgang zwischen den Klemmen prüfen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Klemmen Nr. 5 und Nr. 3 an Spannung bzw. Masse angeschlossen sind, muss Durchgang zwischen den Klemmen Nr. 1 und Nr. 2 vorhanden sein.
+</div>
+</li>
+<li>
+<div>
+Nach dem Unterbrechen der Spannungsversorgung muss Durchgang zwischen den Klemmen Nr. 1 und Nr. 4 vorhanden sein.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010932','1');">
+<img src="../tn/SMR9ERPJ54200046121FEGD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010932','2');">
+<img src="../tn/SMR9ERPJ54200046121FEGD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ54200046121FEGD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

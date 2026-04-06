@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1023px;\" coordsize=\"950,1023\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1023px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A18300000000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1023px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:583px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHWALLBLECH<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:684px;top:120px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAGRAHMEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:734px;top:286px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KURBELWELLEN-ÖLDICHTRING,<br>GETRIEBESEITE<br><a href=\"javascript:CtsProc('0','000000000001094','i210')\"></b>Einbau,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:685px;top:721px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>DRUCKSCHEIBEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:527px;top:918px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KURBELWELLE<br><a href=\"javascript:CtsProc('0','000000000001090','i000')\"></b>Axialspiel,</a><br><a href=\"javascript:CtsProc('0','000000000001095','iT02')\">Schlag,</a><br><a href=\"javascript:CtsProc('0','000000000001095','iT01')\">Ovalität,</a><br><a href=\"javascript:CtsProc('0','000000000001093','i000')\">Ausbau,</a><br><a href=\"javascript:CtsProc('0','000000000001094','i000')\">Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:52px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HAUPTLAGER<br><a href=\"javascript:CtsProc('0','000000000001096','iR01')\"></b>Radialspiel,</a><br><a href=\"javascript:CtsProc('0','000000000001096','iR02')\">Wahl,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:25px;top:689px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CKP-IMPULSPLATTE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:162px;top:436px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PASS-STIFTE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:19px;top:71px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CKP-SENSOR (KURBELWELLENSTELLUNG)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

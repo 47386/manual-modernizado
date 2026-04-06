@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group5\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:911px;\" coordsize=\"950,911\">");
+write("<v:rect id=\"rect5\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:911px;\">");
+write("<img id=\"img5\" name=\"PrtImgId\" src=\"../img/SMR8EL0J54200000000DEGD15.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:911px;border-color:#ffffff\">");
+write("<p id=\"p5_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:656px;top:26px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>IG2-TRENNRELAIS<br></b>Kabelfarben: ORN, GRY,<br>YEL und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p5_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:656px;top:77px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ACC-TRENNRELAIS <br></b>Kabelfarben: RED, GRY,<br>GRN und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p5_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:794px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANLASSER-TRENNRELAIS<br></b>Kabelfarben: WHT, RED,<br>GRY und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p5_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:845px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SICHERHEITSRELAIS<br></b>Kabelfarben: GRY, WHT,<br>BLK und GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p5_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:462px;top:727px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SRS-EINHEIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p5_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:298px;top:790px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERGERÄT DER SCHEINWERFERWASCHANLAGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p5_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:106px;top:841px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NAVIGATIONSEINHEIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p5_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:36px;top:144px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUEREINHEIT DER AUTOMATISCHEN <br>SCHEINWERFERHÖHENVERSTELLUNG<br></b></nobr>");
+write("</p>");
+write("<p id=\"p5_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:389px;top:90px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUDIOGERÄT<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

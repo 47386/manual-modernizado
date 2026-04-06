@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1103px;\" coordsize=\"950,1103\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1103px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E00J46643400000DAPD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:651px;top:378px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DE SEGURANÇA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:431px;top:1017px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BUZINA DE SEGURANÇA<br><a href=\"javascript:CtsProc('0','000000000000309','i000')\"></b>Ensaio/Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:29px;top:903px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DO CAPOT<br><a href=\"javascript:CtsProc('0','000000000000308','i000')\"></b>Ensaio,</a><br><a href=\"javascript:CtsProc('0','000000000000147','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:52px;top:1066px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>A versão LHD é ilustrada; a versão RHD é semelhante.<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:236px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOTÃO DE FECHO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:29px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CHAVE DA IGNIÇÃO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:280px;top:244px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOTÃO DE DESBLOQUEIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:26px;top:215px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRANSMISSOR<br><a href=\"javascript:CtsProc('0','000000000000310','i000')\"></b>Ensaio,</a><br><a href=\"javascript:CtsProc('0','000000000000294','i000')\">Registo,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:43px;top:370px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE ÁUDIO/UNIDADE DE NAVEGAÇÃO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

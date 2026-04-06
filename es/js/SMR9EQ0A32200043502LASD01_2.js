@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:911px;\" coordsize=\"950,911\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:911px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQ0A32200043502LASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:911px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:202px;top:153px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FIJOS DE CENTRAJE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:57px;top:641px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CARCASA DE LA BOMBA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:322px;top:854px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TORNILLO DE CIERRE<br>39 N·m<br>(4,0 kgf·m)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:376px;top:802px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MUELLE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:369px;top:654px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VÁLVULA DE DESCARGA<br></b>La válvula debe deslizarse <br>libremente en su alojamiento <br>en la carcasa. Cambiar si está rayada.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:468px;top:458px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROTOR INTERIOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:551px;top:417px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROTOR EXTERIOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:714px;top:374px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAPA DE LA BOMBA DE ACEITE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:853px;top:59px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>JUNTA TÓRICA<br></b>Sustituir.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:766px;top:15px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>6 N·m <br>(0,6 kgf·m)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

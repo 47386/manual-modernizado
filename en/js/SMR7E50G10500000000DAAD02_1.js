@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E50G10500000000DAAD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:654px;top:833px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RADIATOR FAN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:374px;top:992px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>A/C CONDENSER FAN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:577px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>A/C COMPRESSOR CLUTCH RELAY<br><a href=\"javascript:CtsProc('0','000000000002360','i000')\"></b>Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:323px;top:67px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNDER-HOOD <br>FUSE/RELAY BOX<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:626px;top:84px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FAN CONTROL RELAY<br><a href=\"javascript:CtsProc('0','000000000002360','iR05')\"></b>Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:510px;top:883px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>OUTSIDE AIR TEMPERATURE SENSOR<br><a href=\"javascript:CtsProc('0','000000000000060','i000')\"></b>Test,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000061','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:208px;top:328px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1056px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>LHD type is shown, RHD type is similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:156px;top:897px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>A/C PRESSURE SENSOR<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

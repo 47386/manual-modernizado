@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/SMR8EL0J54200000000DEGD14.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:787px;top:127px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>EPS-STEUERGERÄT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:639px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INSTRUMENTENSTEUERMODUL<br>(GESCHWINDIGKEITSMESSER)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:417px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INSTRUMENTENSTEUERMODUL <br>(DREHZAHLMESSER)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:81px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERGERÄT VON WEGFAHRSPERRE UND <br>SCHLÜSSELLOSEM TÜRÖFFNUNGSSYSTEM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:799px;top:600px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SICHERUNGS-/<br>RELAISKASTEN <br>UNTER DEM <br>ARMATURENBRETT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:414px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANLASSER-TRENNRELAIS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:793px;top:922px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU (in den <br>Sicherungs-/Relaiskasten <br>unter dem Armaturenbrett <br>eingebaut) <br>IMOES-EINHEIT<br>(in das MICU eingebaut)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:1024px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>*: Mit Navigationssystem<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:353px;top:603px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HFT-STEUERGERÄT*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:248px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Nicht belegt<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

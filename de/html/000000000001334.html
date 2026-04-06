@@ -1,0 +1,873 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72100090532FAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+DTC-Fehlersuche: P0532
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P0532:
+</b>
+<div>
+ Schaltkreis A/C-Drucksensor, Spannung Niedrig
+</div>
+<div>
+HINWEIS: Vor der Fehlersuche alle eingefrorenen Daten aufzeichnen und 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+die Allgemeinen Informationen zur Fehlersuche nachlesen.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Den Motor anlassen und im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das Gebläse einschalten.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Klimaanlage einschalten.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Das Element A/C PRESSURE SENSOR (A/C-Drucksensor) in der DATA LIST (Datenliste) mit dem HDS abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Liegt ca. 0,3 V Spannung oder weniger an?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i050')">Schritt 5
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zeitweise auftretende Störung; das System ist gegenwärtig in Ordnung. A/C-Drucksensor und ECM auf schlechte Kontakte oder Wackelkontakte überprüfen.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Den 3P-Stecker des A/C-Drucksensors trennen.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Das Element A/C PRESSURE SENSOR (A/C-Drucksensor) in der DATA LIST (Datenliste) mit dem HDS abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Liegt ca. 0,3 V Spannung oder weniger an?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i100')">Schritt 10
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Die Spannung zwischen den Klemmen Nr. 1 und Nr. 3 des 3P-Steckers des A/C-Drucksensors messen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden ca. 5 V gemessen?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i170')">Schritt 17
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i130')">Schritt 13
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Die Zündung ausschalten (0) und 2 Minuten warten.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Den ECM-Stecker Nr. 1 (96P) trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003836','1');">
+<img src="../tn/SMR7E40K72100090532FAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100090532FAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Zwischen der Klemme Nr. 2 des 3P-Steckers des A/C-Drucksensors und Karosseriemasse auf Durchgang prüfen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Kurzschluss im Kabel zwischen dem A/C-Drucksensor und der Klemme Nr. 18 des ECM-Steckers Nr. 1 beheben und mit 
+<a href="javascript:parent.Jmp('i190')">Schritt 19
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i260')">Schritt 26
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Die Zündung ausschalten (0) und 2 Minuten warten.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Den ECM-Stecker Nr. 2 (58P) trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003837','1');">
+<img src="../tn/SMR7E40K72100090532FAGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100090532FAGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Die 3P-Steckerklemme Nr. 1 des A/C-Drucksensors und Karosseriemasse mit einem Überbrückungskabel verbinden.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003838','1');">
+<img src="../tn/SMR7E40K72100090532FAGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100090532FAGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Auf Durchgang zwischen der Klemme Nr. 13 des ECM-Steckers Nr. 2 und Karosseriemasse prüfen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i260')">Schritt 26
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen dem A/C-Drucksensor und der Klemme Nr. 13 des ECM-Steckers Nr. 2 beheben und mit 
+<a href="javascript:parent.Jmp('i190')">Schritt 19
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+<a href="javascript:CtsProc('0','000000000001496','i000')">
+Den A/C-Drucksensor austauschen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Alle Stecker wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i210">
+</a>
+<ol>
+<li value="21">
+<div>
+Das ECM mit dem HDS rücksetzen.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="22">
+<div>
+Den Motor anlassen und im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="23">
+<div>
+Das Gebläse einschalten.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="24">
+<div>
+Klimaanlage einschalten.
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="25">
+<div>
+Mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert wurden.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der DTC P0532 gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+A/C-Drucksensor und ECM auf schlechte Kontakte oder Wackelkontakte prüfen und mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Fehlersuche ist abgeschlossen. Wenn ein anderer DTC oder temporärer DTC gemeldet wird, das dem gemeldeten DTC zugeordnete Fehlersuchverfahren durchführen.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i260">
+</a>
+<ol>
+<li value="26">
+<div>
+Alle Stecker wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="27">
+<div>
+<a href="javascript:CtsProc('0','000000000001299','iG14')">
+Das ECM ggf. auf die neueste Softwareversion aktualisieren
+</a>
+ oder 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+durch ein bekanntermaßen funktionsfähiges ECM ersetzen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i280">
+</a>
+<ol>
+<li value="28">
+<div>
+Den Motor anlassen und im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="29">
+<div>
+Das Gebläse einschalten.
+</div>
+</li>
+</ol>
+<a name="i300">
+</a>
+<ol>
+<li value="30">
+<div>
+Klimaanlage einschalten.
+</div>
+</li>
+</ol>
+<a name="i310">
+</a>
+<ol>
+<li value="31">
+<div>
+Mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert wurden.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der DTC P0532 gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+A/C-Drucksensor und ECM auf schlechte Kontakte oder Wackelkontakte überprüfen. Wurde das ECM aktualisiert, 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+ein bekanntermaßen funktionsfähiges ECM einbauen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i280')">Schritt 28
+</a>
+ fortfahren. Wurde das ECM ausgetauscht, mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn das ECM aktualisiert wurde, ist die Fehlersuche jetzt beendet. Wenn das ECM ersetzt wurde, 
+<a href="javascript:CtsProc('0','000000000001102','i000')">
+das ursprüngliche ECM austauschen.
+</a>
+ Wenn ein anderer DTC oder temporärer DTC gemeldet wird, das dem gemeldeten DTC zugeordnete Fehlersuchverfahren durchführen.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003839','1');">
+<img src="../tn/SMR7E40K72100090532FAGD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100090532FAGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

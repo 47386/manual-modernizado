@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:543px;\" coordsize=\"950,543\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:543px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQDE34137300000CASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:543px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:93px;top:61px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MÓDULO <br>DE CONTROL DE LOS INDICADORES (VELOCIM)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:33px;top:111px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MÓDULO <br>DE CONTROL DE LOS INDICADORES (TAC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:6px;top:457px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL DEL MODULADOR VSA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:398px;top:513px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TCM (actuador del embrague)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:489px;top:484px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MÓDULO DE CONTROL DEL MOTOR (ECM)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:500px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ACTUADOR DEL CAMBIO <br>DE MARCHAS DE LA CAJA DE CAMBIOS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:615px;top:15px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>INTERRUPTOR DE CAMBIOS<br>DEL VOLANTE DE LA DIRECCIÓN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:335px;top:19px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MÓDULO DE CONTROL <br>DEL CAMBIO DE MARCHAS<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

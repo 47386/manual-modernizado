@@ -1,0 +1,197 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J26351543881FEST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Pantalla de información múltiple - Calibración del indicador de temperatura del aire exterior
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: 
+<a href="javascript:CtsProc('0','000000000000060','i000')">
+Compruebe el sensor de la temperatura del aire exterior.
+</a>
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Descripción
+</b>
+</div>
+<div>
+El sensor de temperatura del aire exterior está situado detrás de la parte central del parachoques delantero. El módulo de control de los indicadores (tac) emplea las medidas de este sensor para mostrar la temperatura del aire exterior.
+</div>
+<div>
+Debido a la situación del sensor, éste puede verse afectado por la reflexión del calor de la superficie de la carretera, el calor del motor o del radiador o por los humos de escape calientes del tráfico circundante.
+</div>
+<div>
+Estas condiciones pueden empapar de calor el sensor de temperatura del aire exterior y provocar unas lecturas imprecisas. Se ha añadido un dispositivo lógico al módulo de control de los indicadores (tac) para ayudar a evitar medidas anormales o irregulares de la temperatura del aire exterior.
+</div>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Lógica del indicador de temperatura del aire exterior
+</b>
+</div>
+<div>
+Indicación inicial de la temperatura del aire exterior después de girar la llave de contacto a la posición ON (II).
+</div>
+<ul type="disc">
+<li>
+<div>
+Si la temperatura del refrigerante del motor es de 60 °C °o más cuando se gira la llave de contacto a la posición ON (II), el indicador de temperatura del aire exterior mostrará la misma temperatura que había la última vez que se giró la llave de contacto a la posición OFF independientemente de cuál sea la temperatura medida en ese momento por el sensor.
+</div>
+</li>
+<li>
+<div>
+Si la temperatura del refrigerante del motor es de 59 °C °o menos cuando se gira la llave de contacto a la posición ON (II), se mostrará la temperatura medida en ese momento por el sensor de temperatura del aire exterior.
+</div>
+</li>
+</ul>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Actualización del indicador de la temperatura del aire exterior durante la marcha
+</b>
+</div>
+<div>
+Si la temperatura medida por el sensor de temperatura del aire exterior es superior a la temperatura del indicador, éste procederá a efectuar un incremento de 1 °C por minuto en la indicación de dicha temperatura una vez que el vehículo haya alcanzado una velocidad superior a 30 km/h durante más de 1 minuto y 30 segundos. Este incremento seguirá produciéndose hasta indicar la temperatura actual del aire exterior. Por lo tanto, la primera actualización del indicador de temperatura del aire exterior se producirá 1 minuto y 30 segundos después de que el vehículo circule a una velocidad superior a 30 km/h. Si la velocidad del vehículo disminuye por debajo de los 30 km/h, el indicador no producirá ninguna actualización hasta que el vehículo haya recuperado la velocidad superior a 30 km/h durante 1 minuto y 30 segundos de nuevo.
+</div>
+<div>
+Si la temperatura del aire exterior es inferior a la indicada, la temperatura disminuirá 1°C cada 2 segundos hasta alcanzar la temperatura actual del aire exterior, con independencia de la velocidad del vehículo.
+</div>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Localización de averías
+</b>
+</div>
+<div>
+Si el indicador muestra — — — °C — — — ° durante más de 2 segundos una vez seleccionado el modo de presentación de la temperatura del aire exterior, compruebe el sensor y ejecute la 
+<a href="javascript:CtsProc('0','000000000000421','i000')">
+función de autodiagnóstico del módulo de control de los indicadores.
+</a>
+</div>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Calibración
+</b>
+</div>
+<div>
+La temperatura del aire exterior indicada se puede volver a calibrar en ±3 °C ±°para satisfacer las expectativas del cliente.
+</div>
+<div>
+Calibre la temperatura del aire exterior con el HDS o personalizando el valor en memoria.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

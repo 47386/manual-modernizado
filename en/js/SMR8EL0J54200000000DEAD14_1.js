@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/SMR8EL0J54200000000DEAD14.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:787px;top:127px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>EPS CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:639px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GAUGE CONTROL MODULE<br>(SPEEDO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:444px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GAUGE CONTROL <br>MODULE (TACH)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:218px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>IMMOBILIZER-KEYLESS<br>CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:799px;top:600px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNDER-DASH FUSE/<br>RELAY BOX<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:414px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STARTER CUT RELAY<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:793px;top:922px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Built into the under-<br>dash fuse/relay box)<br>IMOES UNIT<br>(Built into the MICU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:1024px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>*: With Navigation<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:353px;top:603px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HANDS FREE TELEPHONE<br>CONTROL UNIT*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:248px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Not used<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

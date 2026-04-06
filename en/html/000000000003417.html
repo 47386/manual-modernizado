@@ -1,0 +1,2199 @@
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQDE34137300000BAAT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+i-SHIFT System Fail Safe Action Index
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="15%">
+<col width="45%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+SAE Fault Code (DTC)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Malfunction Criteria
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Fail Safe Action
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0504
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the brake information in the F-CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Received brake signal did not change for 3 drive cycles or more.
+</div>
+<div>
+i-SHIFT drive cycle is established under these conditions (Once all of these conditions mentioned are satisfied, 1 drive cycle is established.):
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Two minutes elapsed after the ignition switch is turned ON.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Gear is shifted to the 3rd gear or higher.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Speed has reached 16 km/h or more.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Driving in manual mode is impossible.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0512
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by Starter Switch Signal (STS).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0562
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by voltage input.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors the VBATT (+B) signal when voltage has reached 9 V or less.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on (When voltage decreases, symptoms such as delay in motor operation occur).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0563
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by voltage input.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors the VBATT (+B) signal when voltage reached 28 V or more.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0603
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the TCM internal circuit check function.
+</div>
+<ul type="disc">
+<li>
+<div>
+Performs ROMSUM check of the Keep Alive Memory (KAM), and assumes a malfunction if the RONSUM value does not match.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Control is terminated and the condition when a malfunction has been detected (gear position, clutch position) is kept.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0605
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the TCM internal circuit check function.
+</div>
+<ul type="disc">
+<li>
+<div>
+Checks the RONSUM in the rewritable part of the ROM, and assumes a malfunction if the RONSUM value does not match.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Control is terminated and the condition when a malfunction has been detected (gear position, clutch position) is kept.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0666
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the TCM internal temperature sensor signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When the input value is higher or lower than the designed value.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0702
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Determination by VCC voltage input value.
+</div>
+<ul type="disc">
+<li>
+<div>
+When the input value is higher or lower than the designed value.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Control is terminated and the condition when a malfunction has been detected (gear position, clutch position) is kept.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0780
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by shift position while shifting gears.
+</div>
+<ul type="disc">
+<li>
+<div>
+Even if synchro position is not reached, but reaching the connecting part in the gear has failed at least three times.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0810
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the value from the clutch actuator position sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+When the position sensor value does not change even if the clutch actuator has been commanded to operate.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed exceedes a certain speed (varies with the speed gear retained), the clutch actuator position when the malfunction occurred is retained, and control is performed.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below a certain speed, the mode becomes Neutral.
+</div>
+</li>
+<li>
+<div>
+Although the engine can be restarted, the time elapsed to start the engine after pressing the starter switch is longer than usual (about 1 sec).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0882
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by input voltage value and F-CAN signal value.
+</div>
+<ul type="disc">
+<li>
+<div>
+When voltage input value in the TCM is almost 0 V, even if the IG1 signal (received F-CAN value) of the ECM is ON.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on (If the F-CAN signal from the ECM is sent continuously, control continues until the IG1 in the ECM turns OFF).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0883
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by input voltage value and F-CAN signal value.
+</div>
+<ul type="disc">
+<li>
+<div>
+When voltage input value in the TCM is almost equal or more than the battery voltage, even if the IG1 signal (received F-CAN value) of the ECM is OFF.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0904
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by sensor signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors PULSES SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SELECT signal is open.
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SELECT signal is about 0 V (GND short).
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SELECT signal is almost equal to the battery voltage (BATT short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0909
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by neutral width.
+</div>
+<ul type="disc">
+<li>
+<div>
+When the neutral width of the change actuator is 15.5 mm or above, or 25.5 mm or below
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0910
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by sensor signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Output from the sensor does not change even if the output value in the select actuator position does not detect electrical malfunction in the sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0914
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by sensor signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors PULSES SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SHIFT signal is open.
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SHIFT signal is about 0 V (GND short).
+</div>
+</li>
+<li>
+<div>
+When the line for PULSES SHIFT signal is almost equal to the battery voltage (BATT short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear at the time a malfunction has been confirmed. Connects or disconnects the clutch by vehicle speed.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0919
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by time spent in neutral position learning.
+</div>
+<ul type="disc">
+<li>
+<div>
+When confirmation of a neutral position is not possible.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0920
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by sensor signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Output from the sensor does not change even if the output value in the shift actuator position does not detect electrical malfunction in the sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0942
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by in-gear action.
+</div>
+<ul type="disc">
+<li>
+<div>
+When synchro position cannot be achieved even if shift/select is operated and in-gear action is performed of halt condition.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P16C0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CPU performs self-diagnosis while ignition switch is ON, and determines whether the malfunction has been recorded or not. 
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Control termination other than alteration of information.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by gear actuator's input energy (calculated vaue).
+</div>
+<ul type="disc">
+<li>
+<div>
+For a certain period of time, an input from 2400 W to 3000 W, or an energy input from 1600 W to 2000 W occurred.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by the value from the clutch actuator position sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Clutch actuator position sensor value is beyond the range of design value.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed exceedes a certain speed (varies with the speed gear retained), the clutch actuator position when the malfunction occurred is retained, and control is performed.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below a certain speed, the mode becomes Neutral.
+</div>
+</li>
+<li>
+<div>
+Although the engine can be restarted, the time elapsed to start the engine after pressing the starter switch is longer than usual (about 1 sec).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by clutch temperature value.
+</div>
+<ul type="disc">
+<li>
+<div>
+If clutch temperature value reaches 300 °C (572 °F) or more.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Creep termination.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose when Clutch Contact Position 3 Learning was not completed or in progress.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using VSPOUT signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When VSPOUT signal is 0 V or approximately equal to the battery voltage.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by ECU BRAKE AND signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When ECU BRAKE AND signal is 0 V or approximately equal to the battery voltage.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by Starter Enable signal return input value.
+</div>
+<ul type="disc">
+<li>
+<div>
+When Starter Enable signal return value is 0 V or approximately equal to the battery voltage.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using F-CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Diagnostic software protection not active.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+<div>
+(Cannot perform commands and alteration necessary for KEY inspection.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When SENSOR SUPPLY SHIFT signal is about 0 V (GND short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when malfunction was confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19ED
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR SHIFT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR SUPPLY SHIFT signal is almost equal to the battery voltage (BATT short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by GND signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR GND SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR GND SHIFT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SENSOR signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors DIRECTION SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for DIRECTION SHIFT signal is about 0 V (GND short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SENSOR signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors DIRECTION SHIFT signal.
+</div>
+</li>
+<li>
+<div>
+When the DIRECTION SHIFT signal is almost equal to the battery voltage (BATT short).
+</div>
+</li>
+<li>
+<div>
+When the line for DIRECTION SHIFT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When SENSOR SELECT signal is about 0 V (GND short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR SELECT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SUPPLY signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR SUPPLY SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR SUPPLY SELECT signal is almost equal to the battery voltage (BATT short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by GND signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors SENSOR GND SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for SENSOR GND SELECT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SENSOR signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitors DIRECTION SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When the line for DIRECTION SELECT signal is about 0 V (GND short).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by SENSOR signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitor of DIRECTION SELECT signal.
+</div>
+</li>
+<li>
+<div>
+When DIRECTION SELECT signal is a rough voltage of the battery (BATT short).
+</div>
+</li>
+<li>
+<div>
+When the line for DIRECTION SELECT signal is open.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using F-CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Torque instability signal received at the TCM is set at 10 minutes. or above.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose when Clutch Contact Position 1/2 Learning was completed or in progress.
+</div>
+<ul type="disc">
+<li>
+<div>
+When all phases of learning was not completed.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+<div>
+(1st or reverse gear only can be shifted. Drive at very slow speed available.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis when Shift Change Actuator Position Learning and Synchronizing Position Learning is completed or in progress.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Control terminated (Engine startup impossible).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by Shift Change Actuator Position Learning value.
+</div>
+<ul type="disc">
+<li>
+<div>
+Shift Position Gear 1/3/5 is +10.8 mm or above, +6.8 mm or below.
+</div>
+</li>
+<li>
+<div>
+Shift Position Gear 2/4/6/R is −6.8 mm or above, −10.8 mm or below.
+</div>
+</li>
+<li>
+<div>
+Select Position Gear 1/2/ is −2.8 mm or above, −5.8 mm or below.
+</div>
+</li>
+<li>
+<div>
+Select Position Gear 3/4/ is +2.1 mm or above, −0.9 mm or below.
+</div>
+</li>
+<li>
+<div>
+Select Position Gear 5/6/ is +7.6 mm or above, +4.6 mm or below.
+</div>
+</li>
+<li>
+<div>
+Select Position Gear R is +11.95 mm or above, +9.45 mm or below.
+</div>
+</li>
+<li>
+<div>
+Synchronizer Position Gear 1/3/5 is +7.6 mm or above, −0.4 mm or below.
+</div>
+</li>
+<li>
+<div>
+Synchronizer Position Gear 2/4/6 is +0.4 mm or above, −7.6 mm or below.
+</div>
+</li>
+</ul>
+<div>
+A fault code is recorded if one of the conditions above exists.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by Clutch Contact Position learning value.
+</div>
+<ul type="disc">
+<li>
+<div>
+Clutch Contact Position (long term) is 15 mm or above, or 7.5 mm or below.
+</div>
+</li>
+<li>
+<div>
+Clutch Contact Position (medium term) is 15 mm or above, or 7.5 mm or below.
+</div>
+</li>
+<li>
+<div>
+Clutch Contact Position (short term) is 15 mm or above, or 7.5 mm or below.
+</div>
+</li>
+</ul>
+<div>
+A fault code is recorded if one of the conditions above exists.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by Friction Coefficient value.
+</div>
+<ul type="disc">
+<li>
+<div>
+Friction Coefficient #1 is 865 or above, or 171 or below.
+</div>
+</li>
+<li>
+<div>
+Friction Coefficient #2 is 865 or above, or 171 or below.
+</div>
+</li>
+<li>
+<div>
+Friction Coefficient #3 is 865 or above, or 171 or below.
+</div>
+</li>
+<li>
+<div>
+Friction Coefficient General is 865 or above, or 171 or below.
+</div>
+</li>
+</ul>
+<div>
+A fault code is recorded if one of the conditions above exists.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+None
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2785
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by motor temperature value and PCB sensor's input value.
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor temperature is 195 °C (383 °F) or above.
+</div>
+</li>
+<li>
+<div>
+PCB sensor's input value is 118 °C (244 °F) or above.
+</div>
+</li>
+</ul>
+<div>
+A fault code is recorded if one of the conditions above exists.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Gearshift limit (from 1st to 5th and R only) by Shift map for use during occurrence of malfunction.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2786
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by gear actuator's input energy (calculated value).
+</div>
+<ul type="disc">
+<li>
+<div>
+For a certain period of time, an input of 3000 W or more, or an energy input of 2000 W or more occurred.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Fixed at the speed gear when a malfunction has been confirmed (connects or disconnects the clutch by vehicle speed).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2787
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis by clutch temperature value.
+</div>
+<ul type="disc">
+<li>
+<div>
+If clutch temperature value reaches 400 °C or more.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+Creep termination.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0100
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When TCM cannot receive signals from the ECM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed exceedes a certain speed (varies with the speed gear retained), the clutch actuator position when the malfunction occurred is retained, and control is performed.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below a certain speed, the mode becomes Neutral.
+</div>
+</li>
+<li>
+<div>
+Although the engine can be restarted, the time elapsed to start the engine after pressing the starter switch is longer than usual (about 1 sec).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0103
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When TCM cannot receive signals from gear shift control module.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+If vehicle speed is over 5 km/h, the position at malfunction is retained, and control is done (change in auto mode from manual mode).
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below 5 km/h, the mode becomes Neutral.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0155
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When TCM cannot receive signals from gauge control module.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When an INVALID value is included in the ECM data received by the TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+DTC set caused by IAT sensor malfunction/ECT sensor malfunction: None
+</div>
+</li>
+<li>
+<div>
+For DTC set caused by other ECM malfunctions: When vehicle speed exceedes a certain speed (varies with the speed gear retained), the clutch actuator position when the malfunction occurred is retained, and control is performed.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below a certain speed, the mode becomes Neutral.
+</div>
+</li>
+<li>
+<div>
+Although the engine can be restarted, the time elapsed to start the engine after pressing the starter switch is longer than usual (about 1 sec).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+If the data received by the TCM from the gear shift control module contains an abnormal or INVALID value.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Fail safe action is classified according to malfunction mode.
+</div>
+<ul type="disc">
+<li>
+<div>
+Auto/Manual range abnormality: i-SHIFT indicator comes on. However, shifting between Automatic and manual is not possible.
+</div>
+</li>
+<li>
+<div>
+For abnormality in other range and abnormality in the data received: i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+If vehicle speed is over 5 km/h, the position at malfunction is retained, and control is done. When vehicle speed is below 5 km/h, the mode becomes Neutral.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1261
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When TCM cannot receive signals from VSA.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+If the shift lever is not at the N position: Speed gear is fixed at malfunction occurrence. However, to prevent engine stall, clutch opening and closing is controlled.
+</div>
+</li>
+<li>
+<div>
+When shift lever is at the N position: Shifts gear to Neutral, and thereafter, Neutral mode is maintained even if shift lever is moved to other positions.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1400
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Abnormality exists in the ECM data received by TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+When vehicle speed exceedes a certain speed (varies with the speed gear retained), the clutch actuator position when the malfunction occurred is retained, and control is performed.
+</div>
+</li>
+<li>
+<div>
+When vehicle speed is below a certain speed, the mode becomes Neutral.
+</div>
+</li>
+<li>
+<div>
+Although the engine can be restarted, the time elapsed to start the engine after pressing the starter switch is longer than usual (about 1 sec).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+TCM received a shift down request, but when gear is shifted, maximum engine speed is exceeded.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1402
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Before TCM received 5-gear-down request, it received 4-gear-down request.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+i-SHIFT indicator comes on.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1403
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+INVALID value in the VSA data received by TCM. When 1 piece of data is included.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+When VSA unit detects malfunction: Disables downshift when brake is depressed.
+</div>
+</li>
+<li>
+<div>
+If VSA unit did not detect a malfunction: None
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+Abnormality exists in the VSA data received by TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+When VSA unit detects malfunction: Disables downshift when brake is depressed.
+</div>
+</li>
+<li>
+<div>
+If VSA unit has not detect a malfunction: None
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1405
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis using CAN signal.
+</div>
+<ul type="disc">
+<li>
+<div>
+When multiple INVALID values are included in the VSA data received by the TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+i-SHIFT indicator comes on.
+</div>
+</li>
+<li>
+<div>
+If shift lever is not at the N position: Speed gear is fixed at malfunction occurrence. However, to prevent engine stall, clutch opening and closing is controlled.
+</div>
+</li>
+<li>
+<div>
+When shift lever is at the N position: Shifts gear to Neutral, and thereafter, Neutral mode is maintained even if shift lever is moved to other positions.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

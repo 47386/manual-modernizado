@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:655px;\" coordsize=\"950,655\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:655px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A20336300000DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:655px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:591px;top:15px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CONTROL DE SOBREALIMENTACIÓN DEL TURBOCOMPRESOR<br>ELECTRO VÁLVULA<br><a href=\"javascript:CtsProc('0','000000000001165','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:380px;top:577px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSOR DE POSICIÓN<br>DE CONTROL DE LA CORREDERA <br>DEL COLECTOR DE ADMISIÓN (IMRC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:496px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CONDUCTO DE ENTRADA DE AIRE<br><a href=\"javascript:CtsProc('0','000000000001161','i000')\"></b>Desmontaje/Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:140px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CONTROL CORREDERA COLECTOR ADMISIÓN <br>VÁLVULA (IMRC)<br><a href=\"javascript:CtsProc('0','000000000001466','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:465px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ACTUADOR DEL CONTROL DE LA<br>ELECTROVÁLVULA DE CONTROL (IMRC)<br><a href=\"javascript:CtsProc('0','000000000001160','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:620px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>*: Esta ilustración muestra el modelo LHD.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:583px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VÁLVULA ISV<br><a href=\"javascript:CtsProc('0','000000000001164','i000')\"></b>Limpiar,</a><br><a href=\"javascript:CtsProc('0','000000000001163','i000')\">Desmontaje/Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:801px;top:328px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CAJA DE<br>FUSIBLES/RELÉS DEBAJO <br>DEL CAPÓ<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:71px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>FILTRO DE AIRE<br><a href=\"javascript:CtsProc('0','000000000001158','i000')\"></b>Desmontaje/Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:103px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CARTUCHO DEL FILTRO DE AIRE<br><a href=\"javascript:CtsProc('0','000000000001159','i000')\"></b>Inspección/Sustitución,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

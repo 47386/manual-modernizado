@@ -1,0 +1,690 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ER0K72100090401FAPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Diagnóstico de Avarias por DTC: P0401 (80)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P0401:
+</b>
+<div>
+ Fluxo Insuficiente da EGR
+</div>
+<div>
+NOTA: Antes de efectuar o diagnóstico de avarias, tome nota dos dados congelados e dos instantâneos a bordo e
+<a href="javascript:CtsProc('0','000000000000775','i000')">
+reveja a informação geral do diagnóstico de avarias.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Elimine o DTC da memória utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Arranque o motor. Mantenha a rotação do motor nas 3.000 rpm (min
+<sup>
+−1
+</sup>
+) sem carga (em ponto-morto) até a ventoinha do radiador ligar e, em seguida, deixe-o ao ralenti.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Efectue o ENSAIO DA EGR no MENU INSPECÇÃO, com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O resultado está bom?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i050')">Etapa 5
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i070')">Etapa 7
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 70 °C
+</div>
+</li>
+<li>
+<div>
+Transmissão na 4.ª ou 5.ª 
+</div>
+</li>
+<li>
+<div>
+Conduza o veículo a uma velocidade constante entre 88−120 km/h durante 10 segundos ou mais.
+</div>
+</li>
+<li>
+<div>
+Durante a condução desacelere (com a borboleta completamente fechada) durante 5 segundos
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Monitorize o ESTADO DO OBD para o DTC P0401 no MENU DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O ecrã indica REPROVADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Limpe a portinhola EGR do colector de admissão e 
+<a href="javascript:CtsProc('0','000000000000673','i000')">
+e o tubo rígido EGR
+</a>
+ com um produto de limpeza da chapa da borboleta e da admissão. Limpe também a passagem interior da válvula EGR com chapa da borboleta utilizando um produto de limpeza por indução e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i090')">Etapa 9
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ecrã indicar APROVADO, avaria intermitente, o sistema está agora bom. Verifique se não existem más ligações ou terminais soltos na válvula EGR e no ECM. Se o ecrã indicar EM EXECUÇÃO, continue a conduzir até aparecer um resultado. Se o ecrã indicar FORA DA CONDIÇÃO NORMAL, passe à 
+<a href="javascript:parent.Jmp('i050')">Etapa 5
+</a>
+ e volte a verificar.
+</div>
+</td>
+</tr>
+</table>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+BLOQUEIE (0) a ignição.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+<a href="javascript:CtsProc('0','000000000000674','i000')">
+Substitua a válvula EGR.
+</a>
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Efectue o procedimento de aprendizagem do ralenti do ECM.
+</a>
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 70 °C
+</div>
+</li>
+<li>
+<div>
+Transmissão na 4.ª ou 5.ª 
+</div>
+</li>
+<li>
+<div>
+Conduza o veículo a uma velocidade constante entre 88−120 km/h durante 10 segundos ou mais.
+</div>
+</li>
+<li>
+<div>
+Durante a condução desacelere (com a borboleta completamente fechada) durante 5 segundos
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0401?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos na válvula EGR e no ECM. Se as ligações estão boas, passe à 
+<a href="javascript:parent.Jmp('i150')">Etapa 15
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i140')">Etapa 14
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Monitorize o ESTADO DO OBD para o DTC P0401 no MENU DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O ecrã indica APROVADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+O diagnóstico de avarias está concluído. Se tiverem sido indicados quaisquer outros DTC Temporários ou DTC na 
+<a href="javascript:parent.Jmp('i130')">Etapa 13
+</a>
+, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ecrã indicar REPROVADO, verifique se não existem más ligações ou terminais soltos na válvula EGR nem no ECM e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+. Se o ecrã indicar EM EXECUÇÃO, continue a conduzir até aparecer um resultado. Se o ecrã indicar FORA DA CONDIÇÃO NORMAL, passe à 
+<a href="javascript:parent.Jmp('i120')">Etapa 12
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+<a href="javascript:CtsProc('0','000000000000775','iG16')">
+Actualize o ECM se este não possuir o mais recente software,
+</a>
+ ou 
+<a href="javascript:CtsProc('0','000000000000775','iG17')">
+instale um ECM em bom estado.
+</a>
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 70 °C
+</div>
+</li>
+<li>
+<div>
+Transmissão na 4.ª ou 5.ª 
+</div>
+</li>
+<li>
+<div>
+Conduza o veículo a uma velocidade constante entre 88−120 km/h durante 10 segundos ou mais.
+</div>
+</li>
+<li>
+<div>
+Durante a condução desacelere (com a borboleta completamente fechada) durante 5 segundos
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0401?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos na válvula EGR e no ECM. Se o ECM foi actualizado, 
+<a href="javascript:CtsProc('0','000000000000775','iG17')">
+instale um ECM em bom estado
+</a>
+ e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i160')">Etapa 16
+</a>
+. Se o ECM tiver sido substituído, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i180')">Etapa 18
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Monitorize o ESTADO DO OBD para o DTC P0401 no MENU DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O ecrã indica APROVADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ECM tiver sido actualizado, o diagnóstico de avarias está concluído. Se o ECM tiver sido substituído, 
+<a href="javascript:CtsProc('0','000000000000662','i000')">
+substitua o ECM original.
+</a>
+ Se tiverem sido indicados quaisquer outros DTC Temporários ou DTC na 
+<a href="javascript:parent.Jmp('i170')">Etapa 17
+</a>
+, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ecrã indicar REPROVADO, verifique se não existem más ligações ou terminais soltos na válvula EGR e no ECM. Se o ECM foi actualizado, 
+<a href="javascript:CtsProc('0','000000000000775','iG17')">
+instale um ECM em bom estado
+</a>
+ e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i160')">Etapa 16
+</a>
+. Se o ECM tiver sido substituído, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+. Se o ecrã indicar EM EXECUÇÃO, continue a conduzir até aparecer um resultado. Se o ecrã indicar FORA DA CONDIÇÃO NORMAL, passe à 
+<a href="javascript:parent.Jmp('i160')">Etapa 16
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

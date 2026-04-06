@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J46170400000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:347px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEDILE PASSEGGERO<br>RELÈ RISCALDATORE (ALTA TEMPERATURA)<br></b>Colori fili: RED, ORN,<br>BLK e GRN/RED<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\">Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:421px;top:107px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEDILE PASSEGGERO<br>RELÈ RISCALDATORE (BASSA TEMPERATURA)<br></b>Colori fili: RED, BRN,<br>BLU/YEL, BLK e BLK<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\">Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:234px;top:935px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEDILE CONDUCENTE<br>RELÈ RISCALDATORE (ALTA TEMPERATURA)<br></b>Colori fili: RED, ORN,<br>BLK e GRN/RED<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\">Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:703px;top:935px;font-weight:normal;font-size:8.41pt;\">");
+write("<nobr><b>SEDILE CONDUCENTE<br>RELÈ RISCALDATORE (BASSA TEMPERATURA)<br></b>Colori fili: RED, BRN,<br>BLU/YEL, BLK e BLK<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\">Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:571px;top:256px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RISCALDATORE<br>SCHIENALE SEDILE PASSEGGERO<br><a href=\"javascript:CtsProc('0','000000000000284','i000')\"></b>Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:487px;top:198px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RISCALDATORE CUSCINO<br>SEDILE PASSEGGERO<br><a href=\"javascript:CtsProc('0','000000000000284','i000')\"></b>Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:664px;top:321px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RISCALDATORE<br>SCHIENALE SEDILE CONDUCENTE<br><a href=\"javascript:CtsProc('0','000000000000284','i000')\"></b>Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:680px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RISCALDATORE CUSCINO<br>SEDILE CONDUCENTE<br><a href=\"javascript:CtsProc('0','000000000000284','i000')\"></b>Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:1057px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>In figura viene mostrato il modello con guida a sinistra, quello con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

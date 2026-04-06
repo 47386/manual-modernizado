@@ -1,0 +1,589 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00H46400000000MDST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Sustitución de componentes del SRS / Inspección después del despliegue
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: Antes de efectuar ningún tipo de reparación en el SRS, utilice el método del menú del SRS del HDS para comprobar los DTC; consulte el Índice de localización de averías de los DTC para aquellas piezas cuyo despliegue resulte menos obvio (tensores de los cinturones de seguridad, sensores de impacto delanteros, sensores de airbag laterales, etc.).
+</div>
+<div>
+Después de una colisión en la que se haya producido el despliegue de los tensores del cinturón de seguridad, sustituya estas piezas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Unidad SRS
+</div>
+</li>
+<li>
+<div>
+Tensores de los cinturones de seguridad
+</div>
+</li>
+<li>
+<div>
+Tensor de la hebilla del cinturón de seguridad:
+</div>
+</li>
+<li>
+<div>
+Sensores de impactos frontales
+</div>
+</li>
+</ul>
+<div>
+Después de una colisión en la que se haya producido el despliegue de los tensores de la hebilla del cinturón de seguridad, sustituya estas piezas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Unidad SRS
+</div>
+</li>
+<li>
+<div>
+Tensores de los cinturones de seguridad
+</div>
+</li>
+<li>
+<div>
+Tensor de la hebilla del cinturón de seguridad:
+</div>
+</li>
+<li>
+<div>
+Sensores de impactos frontales
+</div>
+</li>
+</ul>
+<div>
+Después de una colisión en la que se haya producido el despliegue de un (de los) airbag(s) delantero(s), sustituya estas piezas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Unidad SRS
+</div>
+</li>
+<li>
+<div>
+Airbag(s) desplegado(s)
+</div>
+</li>
+<li>
+<div>
+Tensores de los cinturones de seguridad
+</div>
+</li>
+<li>
+<div>
+Tensor de la hebilla del cinturón de seguridad:
+</div>
+</li>
+<li>
+<div>
+Sensores de impactos frontales
+</div>
+</li>
+</ul>
+<div>
+Después de una colisión en la que se haya producido el despliegue de un (de los) airbag(s) lateral(es), sustituya estas piezas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Unidad SRS
+</div>
+</li>
+<li>
+<div>
+Airbag(s) lateral(es) desplegado(s)
+</div>
+</li>
+<li>
+<div>
+Ganchos traseros del tejido de refuerzo
+</div>
+</li>
+<li>
+<div>
+Sensor(es) de impacto(s) lateral(es) (primero) del(de los) lado(s) desplegado(s).
+</div>
+</li>
+<li>
+<div>
+Clips de la funda del respaldo
+</div>
+</li>
+<li>
+<div>
+Bastidor del asiento completo
+</div>
+</li>
+</ul>
+<div>
+Después de una colisión en la que se haya producido el despliegue de un (de los) airbag(s) de cortina lateral(es), sustituya estas piezas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Unidad SRS
+</div>
+</li>
+<li>
+<div>
+Airbag(s) de cortina lateral(es) desplegado(s)
+</div>
+</li>
+<li>
+<div>
+Sensor(es) de impacto(s) lateral(es) (primero) del(de los) lado(s) desplegado(s).
+</div>
+</li>
+<li>
+<div>
+Sensor(es) de impacto(s) lateral(es) (segundo) del(de los) lado(s) desplegado(s).
+</div>
+</li>
+<li>
+<div>
+Guarnecido del techo
+</div>
+</li>
+<li>
+<div>
+Guarnecido superior del pilar central
+</div>
+</li>
+<li>
+<div>
+El guarnecido superior del pilar trasero
+</div>
+</li>
+<li>
+<div>
+Asidero delantero
+</div>
+</li>
+<li>
+<div>
+Segundo asidero
+</div>
+</li>
+<li>
+<div>
+Todos los clips que vayan con el guarnecido
+</div>
+</li>
+<li>
+<div>
+Parasol
+</div>
+</li>
+</ul>
+<div>
+Después de una colisión de moderada a fuerte o una colisión trasera, busque cualquier tipo de daño en el airbag de cortina lateral o en sus componentes. En función de la magnitud de los daños, sustituya los componentes según la necesidad.
+</div>
+<div>
+Durante el proceso de reparación, inspeccione estas zonas:
+</div>
+<ul type="disc">
+<li>
+<div>
+Inspeccione todos los mazos de cables del SRS. Sustituya, y no repare, cualquier mazo de cables dañado.
+</div>
+</li>
+<li>
+<div>
+Inspeccione la existencia de daños debidos al calor en el carrete del cable. Si existe algún daño, sustituya el carrete del cable.
+</div>
+</li>
+</ul>
+<div>
+Una vez reparado el vehículo de forma completa, gire la llave de contacto a la posición ON (II). El SRS está correcto si su luz testigo se enciende durante 6 segundos y se apaga luego. Si la luz testigo no funciona debidamente, utilice el Método del menú del SRS del HDS para efectuar la lectura del(de los) DTC(s). Su aún así tampoco puede recuperar los códigos, vaya a la Localización de averías del circuito de la luz testigo del SRS.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+El guarnecido del pilar delantero
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000262','1');">
+<img src="../tn/SMR7E00H46400000000MDSD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<div class="figure_title">
+<b>
+El guarnecido del pilar central
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000262','2');">
+<img src="../tn/SMR7E00H46400000000MDSD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<div class="figure_title">
+<b>
+El guarnecido del pilar trasero
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000262','3');">
+<img src="../tn/SMR7E00H46400000000MDSD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Comprobación y Ajuste del forro del techo/cubierta del guarnecido del pilar
+</b>
+</div>
+<div>
+Para evitar el despliegue accidental del airbag lateral de cortina y posibles daños en el guarnecido del pilar, el solape entre el forro del techo y el guarnecido del pilar debe ser inferior a 15 mm. Realice la siguiente operación para comprobar este solape:
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Monte el forro del techo (A) y el guarnecido del pilar (B).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000263','1');">
+<img src="../tn/SMR7E00H46400000000MDSD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Utilice un trozo de cinta adhesiva protectora en el techo y marque el borde superior de cada guarnecido del pilar.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000264','1');">
+<img src="../tn/SMR7E00H46400000000MDSD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Desmonte el guarnecido del pilar y mida el solape del forro del techo.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el solape es inferior a 15 mm., retire la cinta y monte el guarnecido del pilar.
+</div>
+</li>
+<li>
+<div>
+Si el solape tiene 15 mm. o más, vaya a
+<a href="javascript:parent.Jmp('i040')">Paso 4
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000265','1');">
+<img src="../tn/SMR7E00H46400000000MDSD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Corte con cuidado el forro del techo con una cuchilla, de manera que reduzca el tamaño de la cubierta a menos de 15 mm.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Retire la cinta y monte el guarnecido del pilar.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000266','1');">
+<img src="../tn/SMR7E00H46400000000MDSD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000MDSD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

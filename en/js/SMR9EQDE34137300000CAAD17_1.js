@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:239px;\" coordsize=\"950,239\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:239px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR9EQDE34137300000CAAD17.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:239px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:221px;top:17px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Brake<br>Pedal<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:231px;top:50px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>ON<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:542px;top:18px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Brake<br>Pedal<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:548px;top:51px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>OFF<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:347px;top:27px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>N<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:435px;top:27px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>A, R<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:715px;top:142px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Transmitting<br>Power<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:56px;top:18px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Shift Lever<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:87px;top:35px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>N<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

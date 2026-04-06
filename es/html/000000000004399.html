@@ -1,0 +1,1421 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPK76100000000BBST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Cómo localizar las averías del sistema de navegación
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Funcionamiento general
+</b>
+</div>
+<div>
+Consulte los procedimientos de operación en el manual del sistema de navegación.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Característica antirrobo
+</b>
+</div>
+<div>
+El sistema de y navegación y la unidad de audio disponen de un circuito de protección antirrobo codificado. Compruebe que dispone del código antirrobo antes de:
+</div>
+<ul type="disc">
+<li>
+<div>
+Desconecte de la batería.
+</div>
+</li>
+<li>
+<div>
+Desconexión del conector 8P de la unidad de navegación
+</div>
+</li>
+<li>
+<div>
+Extraer el fusible número 16 (15 A) de la caja de fusibles/relés situada debajo del capó.
+</div>
+</li>
+</ul>
+<div>
+Una vez terminado el servicio, vuelva a conectar la alimentación a la unidad de navegación y gire la llave de contacto a la posición ON (II). Introduzca el código antirrobo de 4 dígitos y seleccione &quot;Fin&quot;.
+</div>
+<div>
+Cuando se sustituya la unidad de navegación, asegúrese de proporcionar al cliente el nuevo código de seguridad antirrobo.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Diagnóstico de síntomas
+</b>
+</div>
+<div>
+Ciertas circunstancias y limitaciones del sistema pueden dar lugar a errores ocasionales de la posición del vehículo. Algunos clientes pueden pensar que ello es indicativo de la existencia de una avería en el sistema de navegación cuando, de hecho, el sistema está normal. Cuando entreviste a los clientes sobre los síntomas del sistema de navegación, tenga en cuenta lo siguiente.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitaciones de la navegación autoinercial
+</b>
+</div>
+<div>
+Las limitaciones de la parte autoinercial del sistema de navegación (el sensor del índice de guiñada y la señal de la velocidad del vehículo) pueden provocar algunas discrepancias entre la posición real del vehículo y la posición indicada del mismo (posición GPS del vehículo)
+</div>
+<div>
+Las circunstancias que se relacionan a continuación pueden dar lugar a errores de posicionamiento del vehículo:
+</div>
+<ul type="disc">
+<li>
+<div>
+El desplazamiento del vehículo con el motor parado, como por ejemplo cuando se transporta por ferry o en un camión con remolque o si el vehículo gira en una mesa giratoria.
+</div>
+</li>
+<li>
+<div>
+El patinaje de los neumáticos, los cambios en los diámetros de rodadura de éstos y algunas situaciones de la conducción puede provocar discrepancias en las distancias recorridas. Entre otros ejemplos relacionados con este aspecto se incluyen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+El patinaje continuo de los neumáticos sobre una superficie deslizante
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción con cadenas para nieve montadas en el vehículo
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Una presión de inflado anormal en los neumáticos
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Unas dimensiones incorrectas de los neumáticos
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Los frecuentes cambios de carril en una autopista ancha
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción continua en línea recta o en autopista con unas curvas suaves
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Carreteras con muchos baches
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Las tolerancias del sistema y las imprecisiones de los mapas limitan, algunas veces, la precisión de la indicación de la posición del vehículo. Entre otros ejemplos relacionados con este aspecto se incluyen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción por carreteras no señaladas en los mapas (la conformidad con los mapas no resulta posible)
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción por carreteras que giran en una dirección, como por ejemplo los bucles en los puentes, en un intercambiador o en las espirales de los garajes de estacionamiento.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción por carreteras con una serie de curvas muy cerradas
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Conducción cerca de una salida de autopista o transición.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La conducción por una carretera con otra estrechamente paralela a ella.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Después de haber efectuado muchos giros de 90 grados
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitaciones del Sistema de posicionamiento global (GPS)
+</b>
+</div>
+<div>
+El GPS no puede detectar la posición o la elevación del vehículo en las circunstancias siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+Durante los primeros 5 a 10 minutos tras volver a conectar la batería (esto puede llevar hasta 45 minutos).
+</div>
+</li>
+<li>
+<div>
+Cuando la señal del satélite queda bloqueada por un edificio alto, por montañas, túneles, árboles altos o camiones grandes
+</div>
+</li>
+<li>
+<div>
+Cuando la antena GPS se encuentra bloqueada por el tintado metálico de una ventanilla algún objeto situado por encima de ella en el vehículo. La antena GPS requiere una visión clara y sin obstrucciones del cielo
+</div>
+</li>
+<li>
+<div>
+Cuando no hay salida de la señal del satélite (La salida de la señal se interrumpe, algunas veces, debido a labores de mantenimiento en el satélite)
+</div>
+</li>
+<li>
+<div>
+Cuando las señales del satélite quedan bloqueadas por el funcionamiento de ciertos accesorios electrónicos de postventa entre los que se incluyen, aunque sin limitarse exclusivamente a ellas, las unidades de entretenimiento no OEM montadas en el salpicadero (radios, reproductores/intercambiadores de CD) y teléfonos móviles situados próximos al sistema de navegación.
+</div>
+</li>
+</ul>
+<div>
+La precisión del GPS se reduce durante las circunstancias siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+Tintado metálico de las ventanillas por encima de la antena GPS.
+</div>
+</li>
+<li>
+<div>
+Cuando solo se reciben las señales de tres satélites o menos (se requieren las señales de cuatro satélites para determinar la posición con precisión).
+</div>
+</li>
+<li>
+<div>
+Durante la conducción junta líneas eléctricas de alta tensión.
+</div>
+</li>
+<li>
+<div>
+Cuando sufren averías los centros de control del satélite
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Lógica de silencio
+</b>
+</div>
+<div>
+Siempre que el sistema de navegación está proporcionando una guía, los altavoces delanteros están en silencio. Cuando se está utilizando el sistema de control de voz, se silencian todos los altavoces. Si se utiliza el teléfono manos libres, no se puede usar el control por la voz y aparece un mensaje en pantalla.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitaciones de la unidad LCD
+</b>
+</div>
+<div>
+NOTA: La pantalla no es sensible al tacto. Utilice el dial de interfaz y los botones para seleccionar opciones en pantalla.
+</div>
+<ul type="disc">
+<li>
+<div>
+A temperaturas frías, la pantalla puede permanecer a oscuras durante los primeros 2 ó 3 minutos hasta que se calienta.
+</div>
+</li>
+<li>
+<div>
+Cuando la pantalla está demasiado caliente debido a la luz solar directa en verano, permanecerá oscura hasta que baje la temperatura (quizás se muestre un error de mensaje para indicarlo).
+</div>
+</li>
+<li>
+<div>
+Cuando la humedad es alta y la temperatura interior baja, la pantalla puede presentar un aspecto neblinoso. Después de algún uso se aclarará la pantalla.
+</div>
+</li>
+<li>
+<div>
+Los dedos pueden dejar marcas en la pantalla. Limpie la pantalla con un trapo húmedo suave. Puede utilizar un agente de limpieza suave para gafas o pantallas de ordenadores. Para evitar rayar el panel, no lo frote con demasiada energía ni utilice agentes de limpieza abrasivos o toallas de taller.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Reproducción de síntomas
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando se puede duplicar el síntoma, compruebe que no se trata de una característica del sistema. Consulte el manual del sistema de navegación y compárelo con un vehículo en buen estado (con el mismo software y base de datos), bajo las mismas condiciones. Si el síntoma no es igual que el del vehículo correcto, siga los procedimientos de autodiagnóstico y los procedimientos de localización de averías apropiados.
+</div>
+</li>
+<li>
+<div>
+Si el síntoma deja de aparecer o aparece de nuevo sólo intermitentemente, pida al cliente que le explique las condiciones en que se produjo.
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Pida al cliente que le muestre el problema.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Intente establecer un posible error de usuario o si no comprende correctamente el sistema.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Trate de establecer si la causa puede haber sido debida a una interferencia exterior.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Trate de reproducir el síntoma en las mismas condiciones en que lo experimentó el cliente.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La vibración, las temperaturas extremas y la humedad (rocío, humedad) son factores cuya reproducción resulta difícil.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Revise el vehículo en busca de accesorios electrónicos de posventa (localizadores de vehículos, amperímetros, detectores de radar, etc.) que puedan estar ocultos.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauciones de servicio
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Si tiene que cambiar la unidad de navegación, puede hacer una copia de los datos de navegación y transferirlos a una nueva unidad de navegación.
+</div>
+</li>
+<li>
+<div>
+Cuando se desconecta la batería, el reloj interno del GPS se pone a 0:00. El reloj volverá a mostrar la hora correcta cuando el sistema termine de inicializar el GPS.
+</div>
+</li>
+<li>
+<div>
+Antes de desconectar la batería, compruebe que dispone de los códigos antirrobo para los sistemas de sonido y navegación y anote las emisoras presintonizadas. Consiga también toda la información sobre DTCs de PGM-FI o la transmisión y los datos fijos (que se perderán al cortar la corriente eléctrica del ECM).
+</div>
+</li>
+<li>
+<div>
+Después de conectar de nuevo la batería, es necesario esperar para conseguir la señal inicial del satélite. Llevará entre 10 y 45 minutos.
+</div>
+</li>
+<li>
+<div>
+Configure el reloj (zona horaria y horario de verano) en el sistema de navegación.
+</div>
+</li>
+<li>
+<div>
+Antes de devolver el vehículo al cliente, introduzca los códigos antirrobo del sistema de sonido y el sistema de navegación.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Inicialización del sistema
+</b>
+</div>
+<div>
+Si el sistema de navegación pierde la corriente (por ejemplo, si se desconecta la batería). Es necesario reiniciar el sistema de navegación. Una vez inicializado, el sistema estará listo para su utilización.
+</div>
+<div>
+La inicialización requiere lo siguiente:
+</div>
+<ul type="disc">
+<li>
+<div>
+Introducción del código antirrobo de 4 dígitos para desbloquear el sistema.
+</div>
+</li>
+<li>
+<div>
+Inicialización del GPS (que puede no ser necesario dependiendo del tiempo que el sistema haya estado sin alimentación eléctrica)
+</div>
+</li>
+<li>
+<div>
+Ajuste de mapas para alinear el GPS con una ubicación en el mapa
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG12">
+</a>
+<div class="servinfosub_title">
+<b>
+Inicialización del GPS
+</b>
+</div>
+<div>
+NOTA: Estacione el vehículo en el exterior con una visión clara del horizonte hacia el sur.
+</div>
+<div>
+Dependiendo de la duración de la desconexión de la batería, el sistemas quizás requiera la inicialización del GPS. En caso afirmativo, se muestra la pantalla siguiente:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010981','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG12">
+</a>
+<div>
+Si no es necesario este procedimiento, el sistema accede directamente a la pantalla de descarga de responsabilidades. Durante la inicialización, el sistema busca todos los satélites GPS disponibles, y obtiene su información orbital. Durante este procedimiento, el vehículo debe estar al aire libre y con una clara exposición al cielo.
+</div>
+<div>
+Si el sistema de navegación encuentra los satélites correctamente, se borra este cuadro y cambia a la pantalla de descarga de responsabilidades. Si el sistema no logra un número suficiente de satélites en 10 minutos para localizar su posición, se muestra la pantalla siguiente.
+</div>
+<div>
+Si aparece esta pantalla, apague el motor, vuelva a poner en marcha el vehículo y desplácelo a otro lugar. Si aparece la pantalla del aviso legal, la inicialización del GPS está completa.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+El tiempo medio de adquisición es inferior a 10 minutos, pero pueden ser necesarios hasta 45 minutos.
+</div>
+</li>
+<li>
+<div>
+Si el sistema sigue sin poder adquirir una señal, siga las instrucciones de la pantalla. Si vuelve a aparecer esta pantalla, 
+<a href="javascript:CtsProc('0','000000000004317','i000')">
+efectúe el proceso de localización de averías para &quot;El icono del GPS es blanco o no aparece&quot;.
+</a>
+</div>
+</li>
+<li>
+<div>
+Puede ir directamente a una pantalla de CSF pulsando al mismo tiempo los botones MENÚ + INFO y acceder a la pantalla &quot;Enlaces del sistema&quot;.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010982','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG13">
+</a>
+<div class="servinfosub_title">
+<b>
+Ajuste de mapas
+</b>
+</div>
+<div>
+Esta parte de la inicialización hace corresponder las coordenadas del GPS con una carretera en la pantalla de mapas. Para realizar esta parte del procedimiento, asegúrese de que el sistema de navegación está visualizando un mapa y conduzca el vehículo por una carretera marcada en la pantalla del mapa. No introduzca todavía ningún destino. Cuando el nombre de la carretera por la que está conduciendo aparezca en la parte inferior de la pantalla, se habrá completado el proceso. Ahora ya puede utilizar el sistema.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<div class="servinfosub_title">
+<b>
+Manejo y limpieza del DVD
+</b>
+</div>
+<div>
+Para evitar dañar o manchar con los dedos el DVD, sujételo siempre por los bordes y consérvelo en una caja de CD siempre que no lo esté utilizando en la unidad de navegación. Los arañazos y las marcas de dedos en el DVD pueden causar reinicios intermitentes y otros errores del sistema.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010984','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<div>
+Por lo general, las manchas y marcas de dedos se pueden eliminar con un limpiador suave y pañuelos como los que se utilizan para limpiar gafas. Utilice una tela limpia y suave para limpiar un DVD. Frote suavemente el DVD desde el centro hacia el borde exterior, y nunca en círculos.
+</div>
+<div>
+No ponga etiquetas ni anillos en el DVD.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010985','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG19">
+</a>
+<div class="servinfosub_title">
+<b>
+Precaución ante los ‘‘preestrenos'' a clientes
+</b>
+</div>
+<div>
+Es posible que el cliente quiera ver un &quot;preestreno&quot; de las características del software de navegación más reciente. No utilice nunca el vehículo de un cliente para mostrar un DVD de navegación. Al introducir un DVD más nuevo se instala el último software de dicho DVD en la memoria del sistema de navegación del cliente. Cuando se vuelva a instalar el DVD original, el nuevo software seguirá en la memoria y es muy probable que sea incompatible con los mapas y bases de datos de puntos de interés del DVD original o software.
+</div>
+<div>
+Si el cliente desea conocer las características un nuevo software de navegación, muestréselas en un vehículo del concesionario en el que ya haya instalado la última versión del DVD.
+</div>
+<div>
+Si el cliente o el concesionario instalan accidentalmente una versión más actualizada del software, la única solución es acceder a la pantalla &quot;Versión&quot; del modo de diagnóstico del sistema de navegación y realizar una descarga forzada de software.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG20">
+</a>
+<div class="servinfosub_title">
+<b>
+Cómo revisar el registro de errores
+</b>
+</div>
+<div>
+El registro de errores contiene información sobre problemas intermitentes de navegación que se producen mientras el cliente usa el sistema. En ocasiones no es posible reproducir la queja del cliente. El registro de errores puede contener la información necesaria para diagnosticar el problema. Para revisar el registro de errores:
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ponga en marcha el motor.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Pulse y mantenga pulsados los botones MAPA+MENÚ+CANCELAR durante 3 segundos, o 
+<a href="javascript:CtsProc('0','000000000000261','i000')">
+conecte el conector de servicio SCS al conector de servicio de navegación situado en la guantera.
+</a>
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Seleccione &quot;Ajustes e información detallada&quot; en el menú &quot;Selección de diagnósticos&quot;.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010987','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG20">
+</a>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Si se han emitido códigos de error de hardware en la unidad de navegación, el icono del registro de errores aparece en amarillo cuando se accede a la pantalla del modo de autodiagnóstico (&quot;Enlaces del sistema&quot;). El icono es de color gris si no hay errores de hardware. Seleccione el icono del registro de errores para ver los errores con sus códigos DTC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010988','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG20">
+</a>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Seleccione &quot;Error de hardware&quot; (&quot;Error de software&quot; es sólo para uso en fábrica).
+</div>
+<div>
+NOTA: Los errores de software son para uso exclusivo en fábrica.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010989','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG20">
+</a>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Registro de errores de hardware
+</b>
+</div>
+<br>
+<a name="i060">
+</a>
+<ol>
+<li value="1">
+<div>
+La pantalla de errores de hardware muestra la siguiente información sobre cada error:
+</div>
+<ul type="disc">
+<li>
+<div>
+El código DTC del error.
+</div>
+</li>
+<li>
+<div>
+Una breve descripción del código DTC.
+</div>
+</li>
+<li>
+<div>
+La fecha y la hora en que se produjo el error.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Seleccione ARRIBA o ABAJO con el dial de interfaz para poder ver más errores.
+</div>
+</li>
+<li>
+<div>
+Seleccione &quot;Borrar&quot; para borrar el registro de errores. La opción &quot;Guardar&quot; es para uso exclusivo en fábrica.
+</div>
+</li>
+<li>
+<div>
+Anote los DTCs y el historial de errores antes de borrar.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="2">
+<div>
+Utilice la tabla de localización de averías por DTC para corregir el error.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="3">
+<div>
+Borre todos los DTC.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="4">
+<div>
+Seleccione &quot;Volver&quot; para abandonar el registro de errores.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010990','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG20">
+</a>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Registro de errores de software
+</b>
+</div>
+<br>
+<div>
+No se puede acceder a los errores de software. Son para uso exclusivo en fábrica.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG21">
+</a>
+<div class="servinfosub_title">
+<b>
+Cómo borrar el registro de errores
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Efectúe los pasos descritos en &quot;Cómo revisar el registro de errores&quot;.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Seleccione &quot;Borrar&quot; en el menú de errores.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Al seleccionar &quot;Borrar&quot;, se eliminarán al mismo tiempo todos los errores de software y hardware contenidos en el registro.
+</div>
+</li>
+<li>
+<div>
+La opción &quot;Guardar&quot; es para uso exclusivo en fábrica.
+</div>
+</li>
+<li>
+<div>
+Anote los DTCs y el historial de errores antes de borrar.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+Se muestra el registro de errores de hardware
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010992','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<div class="figure_title">
+<b>
+Se muestra el registro de errores de software (sólo para uso en fábrica)
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010992','2');">
+<img src="../tn/SMR9ERPK76100000000BBSD10.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD10_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG21">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Si selecciona &quot;Borrar&quot; y &quot;Sí&quot;, se borrarán al mismo tiempo el registro de errores de hardware y el registro de errores de software.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Pulse Volver para salir.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+Eliminación del registro de errores de hardware
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010993','1');">
+<img src="../tn/SMR9ERPK76100000000BBSD11.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD11_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<div class="figure_title">
+<b>
+Eliminación del registro de errores de software (sólo para uso en fábrica)
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010993','2');">
+<img src="../tn/SMR9ERPK76100000000BBSD12.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76100000000BBSD12_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

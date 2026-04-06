@@ -1,0 +1,652 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E4AK72100090545FAPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Diagnóstico de Avarias por DTC: P0545
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P0545:
+</b>
+<div>
+ Baixa Voltagem do Circuito do Sensor 1 EGT
+</div>
+<div>
+NOTA: Antes de efectuar o diagnóstico de avarias, tome nota dos dados congelados e 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+reveja a informação geral do diagnóstico de avarias.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Verifique SENSOR 1 DA TEMPERATURA DOS GASES DE ESCAPE (EGT) na LISTA DE DADOS, com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado cerca de 0,1 V ou menos?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i030')">Etapa 3
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Avaria intermitente, o sistema está bom neste momento. Verifique se não existem más ligações ou terminais soltos no sensor 1 EGT e no ECM.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Desligue a ficha de 2P do sensor 1 EGT.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Verifique SENSOR 1 DA TEMPERATURA DOS GASES DE ESCAPE (EGT) na LISTA DE DADOS, com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado cerca de 0,1 V ou menos?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i070')">Etapa 7
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i100')">Etapa 10
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+DESLIGUE a ignição e aguarde 2 minutos.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Desligue a ficha N.º 1 (96P) do ECM.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Verifique a continuidade entre o terminal N.º 2 da ficha de 2P do sensor 1 EGT e a massa da carroçaria.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Há continuidade?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare o curto-circuito no fio entre o sensor 1 EGT e o terminal N.º 87 da ficha N.º 1 do ECM e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i120')">Etapa 12
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i180')">Etapa 18
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+<a href="javascript:CtsProc('0','000000000001431','i000')">
+Substitua o sensor 1 EGT.
+</a>
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Volte a ligar todas as fichas.
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Arranque o motor e mantenha-o ao ralenti até a temperatura do líquido de arrefecimento do motor atingir os 70 °C.
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 70 °C (158 °F)
+</div>
+</li>
+<li>
+<div>
+Numa estrada plana
+</div>
+</li>
+<li>
+<div>
+Transmissão em 3ª
+</div>
+</li>
+<li>
+<div>
+Velocidade do veículo acima de 60 km/h 
+</div>
+</li>
+<li>
+<div>
+Conduza durante cerca de 30 segundos ou mais
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0545?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos no sensor 1 EGT e no ECM e, em seguida, passe a 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+O diagnóstico de avarias está concluído. Se forem indicados quaisquer outros DTC Temporários ou DTC, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Volte a ligar todas as fichas.
+</div>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+<a href="javascript:CtsProc('0','000000000001299','iG14')">
+Actualize o ECM se este ainda não tiver o software mais recente instalado,
+</a>
+ ou 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+instale um ECM em bom estado.
+</a>
+</div>
+</li>
+</ol>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Arranque o motor e mantenha-o ao ralenti até a temperatura do líquido de arrefecimento do motor atingir os 70 °C.
+</div>
+</li>
+</ol>
+<a name="i210">
+</a>
+<ol>
+<li value="21">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 70 °C (158 °F)
+</div>
+</li>
+<li>
+<div>
+Numa estrada plana
+</div>
+</li>
+<li>
+<div>
+Transmissão em 3ª
+</div>
+</li>
+<li>
+<div>
+Velocidade do veículo acima de 60 km/h
+</div>
+</li>
+<li>
+<div>
+Conduza durante cerca de 30 segundos ou mais
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="22">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0545?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos no sensor 1 EGT e no ECM. Se o ECM tiver sido substituído, 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+instale um ECM em bom estado
+</a>
+ e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i200')">Etapa 20
+</a>
+. Se o ECM tiver sido substituído, passe para 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ECM tiver sido actualizado, o diagnóstico de avarias está concluído. Se o ECM tiver sido substituído, 
+<a href="javascript:CtsProc('0','000000000001102','i000')">
+substitua o ECM original.
+</a>
+: Se forem indicados quaisquer outros DTC Temporários ou DTC, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004062','1');">
+<img src="../tn/SMR7E4AK72100090545FAPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E4AK72100090545FAPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

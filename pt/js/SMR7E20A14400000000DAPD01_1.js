@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E20A14400000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:608px;top:685px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CORPO DO TERMOSTATO<br><a href=\"javascript:CtsProc('0','000000000000591','i000')\"></b>Remoção e Instalação,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:564px;top:765px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TERMOSTATO<br><a href=\"javascript:CtsProc('0','000000000000589','i000')\"></b>Ensaio,</a><br><a href=\"javascript:CtsProc('0','000000000000590','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:4px;top:798px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RADIADOR<br><a href=\"javascript:CtsProc('0','000000000000586','i000')\"></b>Substituição,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:414px;top:932px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TEMPERATURA DO LÍQUIDO DE ARREFECIMENTO DO MOTOR<br>SENSOR 2 (ECT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:32px;top:506px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOMBA DA ÁGUA<br><a href=\"javascript:CtsProc('0','000000000000594','i000')\"></b>Inspecção,</a><br><a href=\"javascript:CtsProc('0','000000000000593','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:740px;top:451px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SAÍDA DO AQUECEDOR<br><a href=\"javascript:CtsProc('0','000000000000584','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:867px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>CONJUNTO DA VENTOINHA DO CONDENSADOR DO A/C<br><a href=\"javascript:CtsProc('0','000000000000586','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000000588','i000')\">Ensaio do Motor da Ventoinha,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:121px;top:932px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CONJUNTO DA VENTOINHA DO RADIADOR<br><a href=\"javascript:CtsProc('0','000000000000586','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000000588','i000')\">Ensaio do Motor da Ventoinha,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:726px;top:533px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SAÍDA DA ÁGUA<br><a href=\"javascript:CtsProc('0','000000000000592','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:13px;top:249px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEPARADOR DO LÍQUIDO DE ARREFECIMENTO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

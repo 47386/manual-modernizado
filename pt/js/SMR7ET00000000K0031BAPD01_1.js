@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:719px;\" coordsize=\"950,719\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:719px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ET00000000K0031BAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:719px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:17px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>NOTA: A ilustração apresenta o modelo LHD, o modelo RHD é simétrico.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:419px;top:51px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>INFORMAÇÃO<br>AVISO SRS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:48px;top:82px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CUIDADO COM A CADEIRA<br>DA CRIANÇA RELATIVAMENTE AO AIRBAG DO PASSAGEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:106px;top:146px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>PERIGO DO MÓDULO DO AIRBAG<br>DO PASSAGEIRO DIANTEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:303px;top:674px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>AVISO NO MONITOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:54px;top:635px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>AVISO NA COLUNA DA DIRECÇÃO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:717px;top:570px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CUIDADO COM O TENSOR<br>DO CINTO DE SEGURANÇA DIANTEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:757px;top:402px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>PERIGO DO MÓDULO<br>DO AIRBAG LATERAL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:712px;top:673px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CUIDADO COM O TENSOR<br>DO CINTO DE SEGURANÇA DIANTEIRO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

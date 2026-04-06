@@ -1,0 +1,687 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E80A20326400000BAPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Despressurização do Combustível
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Antes de desligar as linhas ou os tubos flexíveis do combustível, despressurize o sistema desactivando a bomba do combustível e desligando o tubo do combustível/união de ligação rápida no compartimento do motor.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Com o HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que tem ao dispor o código anti-roubo para a unidade áudio.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Retire o tampão de enchimento do combustível para despressurizar o depósito do combustível.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Do MENU DE INSPECÇÃO do HDS, seleccione Bomba do Combustível DESLIGADA e, em seguida, arranque o motor e mantenha-o ao ralenti até que pare.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Não deixe que o motor fique ao ralenti com um N.º de rotações superior a 1,000 rpm (min
+<sup>
+-1
+</sup>
+) ou o ECM continuará a activar a bomba do combustível.
+</div>
+</li>
+<li>
+<div>
+Poderá ser instalado um DTC ou um DTC temporário durante este procedimento. 
+<a href="javascript:CtsProc('0','000000000001940','iG07')">
+Verifique se não há DTC e desmemorize-os, se necessário.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Desligue o cabo negativo da bateria.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Retire a tampa (A) da união de ligação rápida.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Verifique se a união de ligação rápida do combustível se encontra suja e limpe-a, se necessário.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004898','1');">
+<img src="../tn/SMR7E80A20326400000BAPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Coloque um trapo ou um pano sobre a união de ligação rápida (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004899','1');">
+<img src="../tn/SMR7E80A20326400000BAPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Desligue a união de ligação rápida (A): Segure na ficha (B) com uma mão e aperte as abas de retenção (C) com a outra, para as libertar das abas de bloqueio (D). Desligue a ficha.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Tenha cuidado para não danificar a linha (E) nem outras peças.
+</div>
+</li>
+<li>
+<div>
+Não utilize ferramentas.
+</div>
+</li>
+<li>
+<div>
+Se a ficha não se mover, mantenha as abas de retenção pressionadas para baixo e puxe e empurre alternadamente a ficha, até esta se soltar facilmente.
+</div>
+</li>
+<li>
+<div>
+Não retire o fixador da linha; uma vez retirado, o fixador terá de ser substituído por outro novo.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Após desligar a união de ligação rápida, 
+<a href="javascript:CtsProc('0','000000000001752','i040')">
+verifique se não está suja nem danificada.
+</a>
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Volte a ligar o cabo negativo à bateria e, em seguida, efectue o seguinte:
+</div>
+<ul type="disc">
+<li>
+<div>
+Introduza o código anti-roubo do sistema áudio.
+</div>
+</li>
+<li>
+<div>
+Acerte o relógio.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004900','1');">
+<img src="../tn/SMR7E80A20326400000BAPD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Sem o HDS
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que tem ao dispor o código anti-roubo para a unidade áudio.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+<a href="javascript:CtsProc('0','000000000000340','i000')">
+Retire a caixa de fusíveis/relés sob a tablier,
+</a>
+ e, de seguida, retire o relé principal 2 da PGM-Fl (BOMBA DO COMBUSTÍVEL) (A) da caixa de fusíveis/relés sob o tablier.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Volte a instalar a caixa de fusíveis/relés sob o tablier.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Arranque o motor e deixe-o funcionar, até que este se vá abaixo.
+</div>
+<div>
+NOTA: Se quaisquer DTC forem memorizados, desmemorize-os e ignore-os.
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Retire o tampão de enchimento do combustível.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Desligue o cabo negativo da bateria.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004901','1');">
+<img src="../tn/SMR7E80A20326400000BAPD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i280">
+</a>
+<ol>
+<li value="8">
+<div>
+Retire a tampa (A) da união de ligação rápida.
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="9">
+<div>
+Verifique se a união de ligação rápida do combustível se encontra suja e limpe-a, se necessário.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004902','1');">
+<img src="../tn/SMR7E80A20326400000BAPD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i300">
+</a>
+<ol>
+<li value="10">
+<div>
+Coloque um trapo ou um pano sobre a união de ligação rápida (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004903','1');">
+<img src="../tn/SMR7E80A20326400000BAPD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i310">
+</a>
+<ol>
+<li value="11">
+<div>
+Desligue a união de ligação rápida (A): Segure na ficha (B) com uma mão e aperte as abas de retenção (C) com a outra, para as libertar das abas de bloqueio (D). Desligue a ficha.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Tenha cuidado para não danificar a linha (E) nem outras peças.
+</div>
+</li>
+<li>
+<div>
+Não utilize ferramentas.
+</div>
+</li>
+<li>
+<div>
+Se a ficha não se mover, mantenha as abas de retenção pressionadas para baixo e puxe e empurre alternadamente a ficha, até esta se soltar facilmente.
+</div>
+</li>
+<li>
+<div>
+Não retire o fixador da linha; uma vez retirado, o fixador terá de ser substituído por outro novo.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="12">
+<div>
+Após desligar a união de ligação rápida, 
+<a href="javascript:CtsProc('0','000000000001752','i000')">
+verifique se não está suja nem danificada.
+</a>
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="13">
+<div>
+Volte a ligar o cabo negativo à bateria e, em seguida, efectue o seguinte:
+</div>
+<ul type="disc">
+<li>
+<div>
+Introduza os códigos anti-roubo do sistema áudio.
+</div>
+</li>
+<li>
+<div>
+Acerte o relógio.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004904','1');">
+<img src="../tn/SMR7E80A20326400000BAPD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326400000BAPD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

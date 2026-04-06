@@ -1,0 +1,240 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A20326943364MAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Comprobación de sensor de nivel de aceite del motor
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Con este procedimiento se comprueba el normal funcionamiento del sensor del nivel de aceite del motor.
+</div>
+</li>
+<li>
+<div>
+Efectúe esta operación en un lugar llano.
+</div>
+</li>
+<li>
+<div>
+Asegúrese de que el cliente no haya añadido aceite antes de realizar esta operación.
+</div>
+</li>
+<li>
+<div>
+Antes de empezar compruebe si hay fugas de aceite.
+</div>
+</li>
+<li>
+<div>
+Asegúrese de que el vehículo tiene el indicador del nivel de aceite original.
+</div>
+</li>
+<li>
+<div>
+Compruebe si se indica algún DTC temporal o permanente con el HDS antes de efectuar este procedimiento. Si se indica algún DCT o DTC temporal, efectúe primero la localización de averías y, a continuación, este procedimiento.
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ponga en marcha el motor. Mantenga el motor a 3.000 rpm. (mín.
+<sup>
+-1
+</sup>
+) en vacío (en punto muerto) hasta que se ponga en marcha el ventilador del radiador.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Gire la llave de contacto a la posición LOCK (0) y espere 5 minutos.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Compruebe el nivel de aceite del motor en el indicador de nivel.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el nivel de aceite del motor es correcto y el cliente no ha añadido aceite después de que se encendidiera el símbolo del aceite del motor, 
+<a href="javascript:CtsProc('0','000000000003118','i000')">
+cambie el sensor de nivel de aceite del motor
+</a>
+ y vaya a 
+<a href="javascript:parent.Jmp('i040')">Paso 4
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Si el nivel del aceite del motor no se encuentra en la marca adecuada, 
+<a href="javascript:CtsProc('0','000000000003163','i000')">
+ajuste el nivel de aceite,
+</a>
+ vaya a 
+<a href="javascript:parent.Jmp('i010')">Paso 1
+</a>
+ y repita la comprobación.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Ponga en marcha el motor. Mantenga el motor a 3.000 rpm. (mín.
+<sup>
+-1
+</sup>
+) en vacío (en punto muerto) hasta que se ponga en marcha el ventilador del radiador.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Compruebe la existencia de DTC permanentes o temporales con el HDS.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si no aparece ningún DTC, el sensor del nivel de aceite del motor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si se indica algún otro DTC temporal o permanente, vaya a la localización de averías del DTC indicado.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

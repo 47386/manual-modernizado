@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:895px;\" coordsize=\"950,895\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:895px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DEGD06.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:895px;border-color:#ffffff\">");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:720px;top:88px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ZIGARETTENANZÜNDERRELAIS<br></b>Kabelfarben: BLU, WHT,<br>BLK und PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:720px;top:137px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELAIS FÜR<br>ZUBEHÖRSTROMBUCHSE HINTEN<br></b>Kabelfarben: RED, YEL,<br>BLK und PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:72px;top:183px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEIZUNGSSTEUERGERÄT / KLIMAREGLEREINHEIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:495px;top:753px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HUPENRELAIS (mit Alarmanlage)<br></b>Kabelfarben: WHT, GRN,<br>ORN und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:495px;top:818px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEIZUNGSRELAIS ELEKTRISCH <br>VERSTELLBARE AUSSENSPIEGEL<br></b>Kabelfarben: WHT, ORN,<br>GRY und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:352px;top:102px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NEBELSCHEINWERFERRELAIS<br></b>Kabelfarben: WHT, RED,<br>BLU und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELAIS FÜR<br>ZUBEHÖRSTROMBUCHSE VORN<br></b>Kabelfarben: GRN, BLU,<br>BLK und PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:731px;top:723px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SUPER-VERRIEGELUNGSRELAIS <br>FAHRERTÜR<br></b>Kabelfarben: BLU, WHT,<br>RED, BLK und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:731px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SUPER-VERRIEGELUNGSRELAIS <br>BEIFAHRERTÜR<br></b>Kabelfarben: ORN, WHT,<br>GRN, BLK und WHT<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

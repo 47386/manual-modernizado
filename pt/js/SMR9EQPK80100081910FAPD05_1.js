@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:465px;\" coordsize=\"475,465\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:465px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQPK80100081910FAPD05.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:465px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:49px;top:17px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>FICHA DE 46P DA UNIDADE DE CONTROLO/MODULADOR VSA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:167px;top:114px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CAN-L (RED)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:128px;top:33px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b></b>Lado dos fios dos terminais fêmea<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:290px;top:115px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CAN-H (WHT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:128px;top:434px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b></b>Lado dos fios dos terminais fêmea<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:101px;top:324px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>FICHA DE 4P DO <br>SENSOR DA ACELERAÇÃO LATERAL-TAXA DE GUINADA <br>(Modelo sem i-SHIFT) ou<br>FICHA DE 4P DO <br>SENSOR DE ACELERAÇÃO LATERAL/<br>LONGITUDINAL-TAXA DE GUINADA <br> (Modelo com i-SHIFT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:119px;top:294px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CAN-H (WHT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:141px;top:188px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CAN-L (RED)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

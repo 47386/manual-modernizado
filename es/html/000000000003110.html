@@ -1,0 +1,3075 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A20326926935FAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Localización de averías del circuito del F-CAN - Sistema de PGM-FI
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: La información marcada con un asterisco (
+<sup>
+*
+</sup>
+) hace referencia a la línea CANL.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Utilice un cable puente para conectar la línea SCS y el HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Desconecte el conector A (49P) del ECM y después, desconecte el HDS.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Hay alrededor de 88-111 Ω?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i400')">Paso 40
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i050')">Paso 5
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Desconecte estos conectores:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+Conector 36P del módulo de control de los indicadores (tac).
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+Conector 46P de la unidad de control del modulador del VSA.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+Conector 4P del sensor de aceleración lateral-índice de guiñada.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000054','i000')">
+Conector D (28P) de la unidad de control del EPS.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000090','i000')">
+Conector A (28P) de la unidad del SRS.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000003272','i000')">
+Conector 10P del mazo de cables del compartimiento del motor (con sistema i-SHIFT); modelo LHD,
+</a>
+ 
+<a href="javascript:CtsProc('0','000000000003273','i000')">
+modelo RHD.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000002067','i000')">
+Conector 12P del módulo de control del cambio de marchas.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008002','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Compruebe si existe continuidad entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el cortocircuito en el cable entre los terminales A3 y A4
+<sup>
+*
+</sup>
+ del ECM.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i070')">Paso 7
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008003','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Utilice un cable puente para conectar el terminal A3 del conector del ECM con masa de la carrocería.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008004','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Compruebe la existencia de continuidad entre el terminal Nº 1 del conector 36P del módulo de control de los indicadores (tac) y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i090')">Paso 9
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A3) y el módulo de control de los indicadores (tac).■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008005','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Compruebe la existencia de continuidad entre el terminal Nº 39 del conector 46P de la unidad de control-modulador de VSA y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i100')">Paso 10
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A3) y la unidad de control-modulador de VSA.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008006','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 1 del conector D (28P) de la unidad de control del EPS y la masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i110')">Paso 11
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A3) y la unidad de control de la EPS.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008007','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 11 del conector A (28P) de la unidad del SRS y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Con Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i120')">Paso 12
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Sin Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A3) y la unidad SRS.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008008','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 7 del conector 10P del mazo de cables del compartimiento del motor y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Repare el circuito abierto en el cable entre el ECM (A3) y el mazo de cables del actuador de embrague.
+</div>
+</li>
+<li>
+<div>
+Compruebe si existe un circuito abierto en el mazo de cables del actuador del embrague.■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Retire el cable puente del conector A (49P) del ECM.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008009','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Utilice un cable puente para conectar el terminal A4 del conector del ECM con masa de la carrocería.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008010','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Compruebe la existencia de continuidad entre el terminal Nº 19 del conector 36P del módulo de control de los indicadores (tac) y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i160')">Paso 16
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A4) y el módulo de control de los indicadores (tac).■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008011','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD10.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD10_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Compruebe la existencia de continuidad entre el terminal Nº 38 del conector 46P de la unidad de control-modulador de VSA y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i170')">Paso 17
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A4) y la unidad de control-modulador de VSA.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008012','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD11.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD11_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 15 del conector D (28P) de la unidad de control del EPS y la masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i180')">Paso 18
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A4) y la unidad de control de EPS.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008013','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD12.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD12_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 12 del conector A (28P) de la unidad del SRS y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Con Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i190')">Paso 19
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Sin Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i200')">Paso 20
+</a>
+.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el circuito abierto en el cable entre el ECM (A4) y la unidad SRS.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008014','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD13.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Compruebe si existe continuidad entre el terminal Nº 6 del conector 10P del mazo de cables del compartimiento del motor y masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i200')">Paso 20
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Repare el circuito abierto en el cable entre el ECM (A4) y el mazo de cables del actuador de embrague.
+</div>
+</li>
+<li>
+<div>
+Compruebe si existe un circuito abierto en el mazo de cables del actuador del embrague.■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Reconecte el conector 36P del módulo de control de los indicadores (tac).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008015','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD14.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i210">
+</a>
+<ol>
+<li value="21">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 2,34-2,86 kΩ?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i220')">Paso 22
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+Sustituya el módulo de control de los indicadores (tac) por otro que se sepa que es correcto.
+</a>
+ Si el HDS identifica el vehículo, 
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+sustituya el módulo de control original de los indicadores (tac).
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+<a name="i220">
+</a>
+<ol>
+<li value="22">
+<div>
+Desconecte el conector 36P del módulo de control de los indicadores (tac).
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="23">
+<div>
+Vuelva a conectar el conector 46P de la unidad de control de VSA.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008016','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD15.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD15_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i240">
+</a>
+<ol>
+<li value="24">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 108-132 Ω?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i250')">Paso 25
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+Sustituya la unidad del control-modulador del VSA por otra que se sepa que funciona correctamente.
+</a>
+ Si el HDS se comunica con el ECM, 
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+sustituya la unidad del control-modulador del VSA original.
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+<a name="i250">
+</a>
+<ol>
+<li value="25">
+<div>
+Desconecte el conector 46P de la unidad de control-modulador del VSA.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="26">
+<div>
+Vuelva a conectar el conector 4P del sensor de aceleración lateral-índice de guiñada.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008017','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD16.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD16_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i270">
+</a>
+<ol>
+<li value="27">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+Cambie el sensor de aceleración lateral/índice de guiñada por uno que sepa que es correctamente.
+</a>
+ Si el HDS se comunica con el ECM, 
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+sustituya el sensor de aceleración lateral/índice de guiñada.
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i280')">Paso 28
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i280">
+</a>
+<ol>
+<li value="28">
+<div>
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+Desconecte el conector 46P de la unidad del control-modulador de VSA,
+</a>
+ y 
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+el conector 4P del sensor de aceleración.
+</a>
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="29">
+<div>
+Vuelva a conectar el conector D (28P) de la unidad de control del EPS.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008018','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD17.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD17_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i300">
+</a>
+<ol>
+<li value="30">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 2,34-2,86 kΩ?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i310')">Paso 31
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000054','i000')">
+Sustituya la unidad de control EPS por otra que se sepa que es correcta.
+</a>
+ Si el HDS se comunica con el ECM, 
+<a href="javascript:CtsProc('0','000000000000054','i000')">
+sustituya la unidad de control del EPS original.
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+<a name="i310">
+</a>
+<ol>
+<li value="31">
+<div>
+Desconecte el conector D (28P) de la unidad de control del EPS.
+</div>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="32">
+<div>
+Vuelva a conectar el conector A (28P) de la unidad SRS.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008019','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD18.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD18_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i330">
+</a>
+<ol>
+<li value="33">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 2,34-2,86 kΩ?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Con Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i340')">Paso 34
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Sin Sistema i-SHIFT: 
+<a href="javascript:CtsProc('0','000000000003057','i000')">
+Actualice el ECM si no tiene el software más reciente
+</a>
+ o 
+<a href="javascript:CtsProc('0','000000000003186','iG17')">
+cámbielo por otro que funcione correctamente
+</a>
+ y repita la comprobación. Si la indicación/síntoma desaparece con un ECM que funciona correctamente, 
+<a href="javascript:CtsProc('0','000000000003056','i000')">
+cambie el ECM original.
+</a>
+■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000090','i000')">
+Sustituya la unidad del SRS por otra que se sepa que es correcta.
+</a>
+ Si el HDS identifica el vehículo, 
+<a href="javascript:CtsProc('0','000000000000090','i000')">
+sustituya la unidad del SRS.
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+<a name="i340">
+</a>
+<ol>
+<li value="34">
+<div>
+Desconecte el conector A (28P) de la unidad SRS.
+</div>
+</li>
+</ol>
+<a name="i350">
+</a>
+<ol>
+<li value="35">
+<div>
+Vuelva a conectar el conector 10P del mazo de cables del compartimiento del motor.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008020','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD19.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD19_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i360">
+</a>
+<ol>
+<li value="36">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 2,34-2,86 kΩ?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i370')">Paso 37
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Compruebe si existe un circuito abierto o un cortocircuito en el mazo de cables del actuador del embrague.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000003464','iG07')">
+Sustituya el TCM por otro que se sepa que es correcto.
+</a>
+ Si el HDS identifica el vehículo, 
+<a href="javascript:CtsProc('0','000000000003294','i000')">
+sustituya el TCM original.
+</a>
+■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<a name="i370">
+</a>
+<ol>
+<li value="37">
+<div>
+Desconecte el conector 10P del mazo de cables del compartimiento del motor.
+</div>
+</li>
+</ol>
+<a name="i380">
+</a>
+<ol>
+<li value="38">
+<div>
+Vuelva a conectar el conector 12P del módulo de control del cambio de marchas.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008021','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD20.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD20_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i390">
+</a>
+<ol>
+<li value="39">
+<div>
+Mida la resistencia entre los terminales A3 y A4 del conector del ECM.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Mide alrededor de 2,34-2,86 kΩ?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000003057','i000')">
+Actualice el ECM si no tiene el software más reciente
+</a>
+ o 
+<a href="javascript:CtsProc('0','000000000003186','iG17')">
+cámbielo por otro que funcione correctamente
+</a>
+ y repita la comprobación. Si la indicación/síntoma desaparece con un ECM que funciona correctamente, 
+<a href="javascript:CtsProc('0','000000000003056','i000')">
+cambie el ECM original.
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000002067','i000')">
+Sustituya el módulo de control del cambio de marchas por otro que se sepa que es correcto.
+</a>
+ Si el HDS identifica el vehículo, 
+<a href="javascript:CtsProc('0','000000000002067','i000')">
+sustituya el módulo de control del cambio de engranajes.
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+<a name="i400">
+</a>
+<ol>
+<li value="40">
+<div>
+Desconecte estos conectores:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+Conector 36P del módulo de control de los indicadores (tac).
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+Conector 46P de la unidad de control del modulador del VSA.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+Conector 4P del sensor de aceleración lateral-índice de guiñada.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000054','i000')">
+Conector D (28P) de la unidad de control del EPS.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000090','i000')">
+Conector A (28P) de la unidad del SRS.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000003272','i000')">
+Conector 10P del mazo de cables del compartimiento del motor (con sistema i-SHIFT); modelo LHD,
+</a>
+ 
+<a href="javascript:CtsProc('0','000000000003273','i000')">
+modelo RHD.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000002067','i000')">
+Conector 12P del módulo de control del cambio de marchas.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008022','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD23.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD23_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i410">
+</a>
+<ol>
+<li value="41">
+<div>
+Compruebe si existe continuidad entre el terminal A3 del conector del ECM y la masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el cortocircuito en el cable entre los terminales A3 del ECM y el módulo de control de los indicadores (tac), la unidad de control-modulador de VSA, el sensor de aceleración lateral-índice de guiñada, la unidad SRS, la unidad de control de la EPS, el TCM (con i-SHIFT) o el DLC.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i420')">Paso 42
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008023','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD21.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD21_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i420">
+</a>
+<ol>
+<li value="42">
+<div>
+Compruebe si existe continuidad entre el terminal A4 del conector del ECM y la masa de la carrocería.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Existe continuidad?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare el cortocircuito en el cable entre los terminales A4 del ECM y el módulo de control de los indicadores (tac), la unidad de control-modulador de VSA, el sensor de aceleración lateral-índice de guiñada, la unidad SRS, la unidad de control de la EPS, el TCM (con i-SHIFT) o el DLC.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i430')">Paso 43
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i430">
+</a>
+<ol>
+<li value="43">
+<div>
+Vuelva a conectar todos los conectores.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="44">
+<div>
+Conecte el HDS al DLC.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="45">
+<div>
+Desconecte el conector 36P del módulo de control de los indicadores (tac).
+</div>
+</li>
+</ol>
+<a name="i460">
+</a>
+<ol>
+<li value="46">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+Sustituya el módulo de control de los indicadores (tac).
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i470')">Paso 47
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i470">
+</a>
+<ol>
+<li value="47">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i480">
+</a>
+<ol>
+<li value="48">
+<div>
+Reconecte el conector 36P del módulo de control de los indicadores (tac).
+</div>
+</li>
+</ol>
+<a name="i490">
+</a>
+<ol>
+<li value="49">
+<div>
+Desconecte el conector 37P de la unidad de control-modulador de VSA.
+</div>
+</li>
+</ol>
+<a name="i500">
+</a>
+<ol>
+<li value="50">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000982','i000')">
+Sustituya la unidad de control del VSA.
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i510')">Paso 51
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i510">
+</a>
+<ol>
+<li value="51">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i520">
+</a>
+<ol>
+<li value="52">
+<div>
+Vuelva a conectar el conector 37P de la unidad de control-modulador de VSA.
+</div>
+</li>
+</ol>
+<a name="i530">
+</a>
+<ol>
+<li value="53">
+<div>
+Desconecte el conector 4P del sensor de aceleración lateral-índice de guiñada.
+</div>
+</li>
+</ol>
+<a name="i540">
+</a>
+<ol>
+<li value="54">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+Sustituya el sensor de índice de guinada-aceleración lateral.
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i550')">Paso 55
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i550">
+</a>
+<ol>
+<li value="55">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i560">
+</a>
+<ol>
+<li value="56">
+<div>
+<a href="javascript:CtsProc('0','000000000000983','i000')">
+Conecte de nuevo el conector 4P del sensor de aceleración lateral-índice de guiñada.
+</a>
+</div>
+</li>
+</ol>
+<a name="i570">
+</a>
+<ol>
+<li value="57">
+<div>
+Desconecte el conector D (28P) de la unidad de control del EPS.
+</div>
+</li>
+</ol>
+<a name="i580">
+</a>
+<ol>
+<li value="58">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000054','i000')">
+Sustituya la unidad de control del EPS
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i590')">Paso 59
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i590">
+</a>
+<ol>
+<li value="59">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i600">
+</a>
+<ol>
+<li value="60">
+<div>
+Vuelva a conectar el conector D (28P) de la unidad de control del EPS.
+</div>
+</li>
+</ol>
+<a name="i610">
+</a>
+<ol>
+<li value="61">
+<div>
+Desconecte el conector A (28P) de la unidad SRS.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="62">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000090','i000')">
+Sustituya la unidad del SRS
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Con Sistema i-SHIFT: Vaya a 
+<a href="javascript:parent.Jmp('i630')">Paso 63
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Sin Sistema i-SHIFT: 
+<a href="javascript:CtsProc('0','000000000003057','i000')">
+Actualice el ECM si no tiene el software más reciente
+</a>
+ o 
+<a href="javascript:CtsProc('0','000000000003186','iG17')">
+cámbielo por otro que funcione correctamente
+</a>
+ y repita la comprobación. Si la indicación/síntoma desaparece con un ECM que funciona correctamente, 
+<a href="javascript:CtsProc('0','000000000003056','i000')">
+cambie el ECM original.
+</a>
+■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<a name="i630">
+</a>
+<ol>
+<li value="63">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="64">
+<div>
+Vuelva a conectar el conector A (28P) de la unidad SRS.
+</div>
+</li>
+</ol>
+<a name="i650">
+</a>
+<ol>
+<li value="65">
+<div>
+Desconecte el conector 10P del mazo de cables del compartimiento del motor.
+</div>
+</li>
+</ol>
+<a name="i660">
+</a>
+<ol>
+<li value="66">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<ul type="disc">
+<li>
+<div>
+Compruebe si existe un circuito abierto o un cortocircuito en el mazo de cables del actuador del embrague.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000003294','i000')">
+Sustituya el TCM.
+</a>
+■
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i670')">Paso 67
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i670">
+</a>
+<ol>
+<li value="67">
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+</li>
+</ol>
+<a name="i680">
+</a>
+<ol>
+<li value="68">
+<div>
+Vuelva a conectar el conector 10P del mazo de cables del compartimiento del motor.
+</div>
+</li>
+</ol>
+<a name="i690">
+</a>
+<ol>
+<li value="69">
+<div>
+Desconecte el conector 12P del módulo de control del cambio de marchas.
+</div>
+</li>
+</ol>
+<a name="i700">
+</a>
+<ol>
+<li value="70">
+<div>
+Gire la llave de contacto a la posición ON (II) y efectúe la lectura del HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Identifica el HDS al vehículo?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000002067','i000')">
+Sustituya el módulo de control del cambio de marchas.
+</a>
+■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000003057','i000')">
+Actualice el ECM si no tiene el software más reciente
+</a>
+ o 
+<a href="javascript:CtsProc('0','000000000003186','iG17')">
+cámbielo por otro que funcione correctamente
+</a>
+ y repita la comprobación. Si la indicación/síntoma desaparece con un ECM que funciona correctamente, 
+<a href="javascript:CtsProc('0','000000000003056','i000')">
+cambie el ECM original.
+</a>
+■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000008024','1');">
+<img src="../tn/SMR9EQ0A20326926935FASD22.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326926935FASD22_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

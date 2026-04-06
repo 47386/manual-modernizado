@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:959px;\" coordsize=\"950,959\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:959px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DASD03.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:959px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TESTIGO DE LUCES ANTINIEBLA TRASERAS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:116px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TESTIGO DE LUZ DE CARRETERA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:594px;top:24px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TESTIGO DE LUCES ANTINIEBLA DELANTERAS (1,4 W)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:689px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REGLAJE AUTOMÁTICO DE FAROS<br>UNIDAD DE CONTROL (Con HID)<br><a href=\"javascript:CtsProc('0','000000000000226','i000')\"></b>Comprobación de la entrada,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:484px;top:691px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DEL COMBINADO DE LUCES<br><a href=\"javascript:CtsProc('0','000000000000208','i000')\"></b>Comprobación/Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:375px;top:758px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DE POSICIÓN DEL PEDAL DE FRENO<br>INTERRUPTOR DE POSICIÓN<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Comprobación,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:210px;top:843px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DEL INTERRUPTOR DEL REGLAJE DE FAROS<br>(Sin HID)<br><a href=\"javascript:CtsProc('0','000000000002144','i000')\"></b>Comprobación/Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:707px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Montar en la caja de <br>fusibles y relés situada <br>debajo del salpicadero)<br><a href=\"javascript:CtsProc('0','000000000000210','i000')\"></b>Comprobación de la entrada,</a><br> en el Manual de Taller, <br>R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000340','i000')\">Sustitución,</a><br> en el Manual de Taller, <br>R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:331px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCES DE CONDUCCIÓN DIURNA<br>RELÉ (modelo KS)<br><a href=\"javascript:CtsProc('0','000000000004377','i000')\"></b>Comprobación,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:5px;top:930px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Se muestra el modelo LHD; el RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

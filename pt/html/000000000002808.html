@@ -1,0 +1,709 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR8EN0J54200046121FEPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Ensaio do Relé de Alimentação
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Utilize esta tabela para identificar o tipo de relé e, em seguida, efectue o respectivo ensaio.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="60%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Relé
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Ensaio
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé de corte de ACC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="18" align="left">
+<div>
+Tipo normalmente aberto
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da embraiagem do compressor do A/C
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da ventoinha do condensador do A/C
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do motor do ventilador
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do ETCS
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da tomada dianteira de alimentação para acessórios
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da luz dianteira de nevoeiro
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da buzina
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé de corte IG2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da bobina da ignição
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé principal 1, 2 da PGM-FI
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé secundário da PGM-FI
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do desembaciador do espelho retrovisor eléctrico
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da ventoinha do radiador
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da tomada traseira de alimentação para acessórios
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do desembaciador do vidro traseiro
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do aquecedor do banco (alto)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé de corte do motor de arranque
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da super fechadura do lado do condutor
+<sup>
+*
+</sup>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Tipo de cinco terminais
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé de controlo da ventoinha
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do inibidor
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé da super fechadura da porta do passageiro
+<sup>
+*
+</sup>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relé do aquecedor do banco (baixo)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="100%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="8%">
+<col width="91%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+*:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Modelo KE
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Tipo normalmente aberto (Excepto Relé principal 1 da PGM-FI, Relé da bobina da ignição, Relé secundário da PGM-FI, Relé do ETCS, Relé do desembaciador do vidro traseiro, Relé da ventoinha do radiador, Relé da ventoinha do condensador e relé do motor do ventilador)
+</b>
+</div>
+<div>
+Verifique a continuidade entre os terminais.
+</div>
+<ul type="disc">
+<li>
+<div>
+Deverá haver continuidade entre os terminais N.ºs 1 e 2, quando se liga a potência e a massa aos terminais N.ºs 4 e 3.
+</div>
+</li>
+<li>
+<div>
+Não deverá haver continuidade entre os terminais N.ºs 1 e 2, quando se desliga a potência.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007303','1');">
+<img src="../tn/SMR8EN0J54200046121FEPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007303','2');">
+<img src="../tn/SMR8EN0J54200046121FEPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Relé principal 1 da PGM-FI, Relé da bobina da ignição, Relé secundário da PGM-FI, Relé do ETCS, Relé do desembaciador do vidro traseiro
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Desligue a ficha D (20 P) da caixa de fusíveis/relés sob o capot.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+No lado da caixa de fusíveis/relés sob o capot, execute o seguinte teste.
+</div>
+<div>
+Relé principal 1 da PGM-FI:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue o terminal N.º 16 e a massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 5 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue o terminal N.º 16 da massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 5 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé da bobina da ignição:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue o terminal N.º 16 e a massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 18 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue o terminal N.º 16 da massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 18 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé secundário da PGM-FI:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue o terminal N.º 20 e a massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 9 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue o terminal N.º 20 da massa da carroçaria. Não deve existir voltagem da bateria entre o terminal N.º 9 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé do ETCS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue a potência e a massa entre os terminais N.º 15 (+) e N.º 17 (-). Deve existir voltagem da bateria entre o terminal N.º 6 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue a potência e a massa dos terminais N.º 15 (+) e N.º 17 (-). Não deve existir voltagem da bateria entre o terminal N.º 6 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé do desembaciador do vidro traseiro:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue a potência e a massa entre os terminais N.º 4 (-) e N.º 14 (+). Deve existir voltagem da bateria entre o terminal N.º 3 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue a potência e a massa dos terminais N.º 4 (-) e N.º 14 (+). Não deve existir voltagem da bateria entre o terminal N.º 3 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007304','1');">
+<img src="../tn/SMR8EN0J54200046121FEPD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Relé da ventoinha do radiador, Relé da ventoinha do condensador do A/C, Relé do motor do ventilador
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Desligue a ficha E (20 P) da caixa de fusíveis/relés sob o capot.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+No lado da caixa de fusíveis/relés sob o capot, execute o seguinte teste.
+</div>
+<div>
+Relé da ventoinha do radiador:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue a potência e a massa entre os terminais N.º 5 (-) e N.º 8 (+). Deve existir voltagem da bateria entre o terminal N.º 13 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue a potência e a massa dos terminais N.º 5 e N.º 8 (+). Não deve existir voltagem da bateria entre o terminal N.º 13 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé da ventoinha do condensador do A/C:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue a potência e a massa entre os terminais N.º 4 (-) e N.º 16 (+). Deve existir voltagem da bateria entre o terminal N.º 12 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue a potência e a massa dos terminais N.º 4 (-) e N.º 16 (+). Não deve existir voltagem da bateria entre o terminal N.º 12 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+<div>
+Relé do motor do ventilador:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ligue a potência e a massa entre os terminais N.º 1 (-) e N.º 8 (+). Deve existir voltagem da bateria entre o terminal N.º 3 e a massa da carroçaria.
+</div>
+</li>
+<li>
+<div>
+Desligue a potência e a massa dos terminais N.º 1 (-) e N.º 8 (+). Não deve existir voltagem da bateria entre o terminal N.º 3 e a massa da carroçaria.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007305','1');">
+<img src="../tn/SMR8EN0J54200046121FEPD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Tipo de cinco terminais
+</b>
+</div>
+<div>
+Verifique a continuidade entre os terminais.
+</div>
+<ul type="disc">
+<li>
+<div>
+Deverá haver continuidade entre os terminais N.ºs 1 e 2, quando se liga a potência e a massa aos terminais N.ºs 5 e 3.
+</div>
+</li>
+<li>
+<div>
+Deverá haver continuidade entre os terminais N.ºs 1 e 4, quando se desliga a potência.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007306','1');">
+<img src="../tn/SMR8EN0J54200046121FEPD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007306','2');">
+<img src="../tn/SMR8EN0J54200046121FEPD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR8EN0J54200046121FEPD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

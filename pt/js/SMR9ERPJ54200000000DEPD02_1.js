@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:815px;\" coordsize=\"950,815\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:815px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DEPD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:815px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DE CORTE IG2<br></b>Cores dos fios: ORN, GRY,<br>YEL e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DE CORTE DE ACC<br></b>Cores dos fios: GRN, GRY,<br>PUR e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:704px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DE CORTE DO MOTOR DE ARRANQUE<br></b>Cores dos fios: WHT, RED,<br>GRY e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO INIBIDOR<br></b>Cores dos fios: GRY, WHT,<br>BLK e GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:678px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE SRS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:711px;top:741px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE DE NAVEGAÇÃO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:682px;top:119px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNDADE DE CONTROLO<br>DO NIVELAMENTO AUTOMÁTICO DOS FARÓIS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:528px;top:107px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE ÁUDIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:13px;top:646px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE DE CONTROLO<br>DO IMOBILIZADOR-SISTEMA DE <br>DESTRANCAR/TRANCAR AS <br>PORTAS SEM CHAVE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:610px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

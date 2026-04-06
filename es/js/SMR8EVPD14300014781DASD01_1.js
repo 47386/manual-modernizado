@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR8EVPD14300014781DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:490px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CILINDRO MAESTRO<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Purga del sistema de frenos</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">desmontaje,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Montaje,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TESTIGO DEL SISTEMA DE FRENOS<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Diagrama del circuito,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Comprobación del interruptor del freno de estacionamiento,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Comprobación del interruptor del nivel del líquido de frenos</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:635px;top:283px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TUBERÍA y MANGUITO DE FRENOS<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspección,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Sustitución de un manguito del sistema de frenos,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:675px;top:683px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO TRASERO<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"></b>Inspección y sustitución de las pastillas de freno,<br></a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Inspección de los discos,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Revisión general de las pinzas de freno,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:546px;top:815px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO DE ESTACIONAMIENTO<br><a href=\"javascript:CtsProc('0','000000000004909','i000')\"></b>Inspección y ajuste,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Sustitución del cable,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:500px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO DELANTERO<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"></b>Inspección y sustitución de las pastillas de freno,<br></a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Inspección de los discos,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Revisión general de las pinzas de freno,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:153px;top:879px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DE POSICIÓN DEL PEDAL DE FRENO<br></b>Ajuste del interruptor de posición <br><a href=\"javascript:CtsProc('0','000000000000027','i000')\">del pedal de freno y del interruptor del propio pedal<br></a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:65px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVOFRENO<br><a href=\"javascript:CtsProc('0','000000000001204','i000')\"></b>Inspección,</a><br> en el Suplemento <br>del Manual de taller, R/P 62SMR20<br><a href=\"javascript:CtsProc('0','000000000001422','i000')\">Sustitución,</a><br> en el Suplemento <br>del Manual de taller, R/P 62SMR20<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

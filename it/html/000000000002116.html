@@ -1,0 +1,560 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7EDAK72200000000BBIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Come effettuare la ricerca guasti nell'EPS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Spia servosterzo elettrico
+</b>
+</div>
+<div>
+In condizioni normali, la spia del servosterzo elettrico si accende quando il commutatore di accensione viene posizionato su ON (II) e si spegne dopo l'avviamento del motore. Questo indica che il LED e il suo circuito funzionano correttamente.
+</div>
+<div>
+Se si verifica un problema nel sistema dopo l'avviamento del motore, la spia del servosterzo elettrico rimane accesa e la servoassistenza viene disinserita.
+</div>
+<div>
+Quando la spia del servosterzo elettrico si accende, la centralina memorizza il DTC. In questo caso, la centralina non attiverà il servosterzo elettrico (EPS) dopo il nuovo avviamento del motore, ma continuerà a mantenere accesa la spia del servosterzo elettrico.
+</div>
+<div>
+Quando nella centralina di comando vengono memorizzati i codici DTC 51-01, 51-02 o 51-06, la spia del servosterzo elettrico rimane accesa finché non viene cancellato il DTC. Quando viene rilevato un guasto e la spia del servosterzo elettrico si accende, ci sono casi in cui la spia rimane accesa finché il commutatore di accensione non viene portato su OFF e casi in cui la spia si spegne automaticamente quando il sistema torna normale. Tuttavia, anche se il sistema funziona correttamente, la spia del servosterzo elettrico può accendersi ugualmente nelle condizioni indicate di seguito:
+</div>
+<ul type="disc">
+<li>
+<div>
+La velocità della vettura diminuisce improvvisamente da 20 km/h o più (azionando i freni) e scende a meno di 1 km/h, il regime motore è pari a 2.000 giri/min (min
+<sup>
+−1
+</sup>
+) [commutatore di accensione su ON (II) per i primi 5 minuti: 2.150 giri/min (min
+<sup>
+−1
+</sup>
+)] o superiore per 5 secondi (in modo continuo) dopo l'improvvisa decelerazione.
+</div>
+</li>
+<li>
+<div>
+Ruotando il volante con velocità della vettura pari o inferiore a 1 km/h per 20 secondi, il regime motore è pari a 2.000 giri/min (min
+<sup>
+−1
+</sup>
+) [commutatore di accensione su ON (II) per i primi 5 minuti: 2.150 giri/min (min
+<sup>
+−1
+</sup>
+)] o superiore per almeno 10 secondi.
+</div>
+</li>
+<li>
+<div>
+Quando il regime motore è pari a 500 giri/min (min
+<sup>
+-1
+</sup>
+) o inferiore e la vettura viaggia a una velocità di 10 km/h o superiore per circa 3 secondi.
+</div>
+</li>
+</ul>
+<div>
+Per determinare la causa effettiva del guasto, consultare il cliente circa le condizioni nelle quali si è verificato il guasto, prendendo in considerazione le condizioni precedenti.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Codice di guasto (DTC)
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la CPU non può essere attivata o non funziona, la spia del servosterzo elettrico si accende, ma il DTC non viene memorizzato.
+</div>
+</li>
+<li>
+<div>
+La memoria può contenere tutti i DTC. Tuttavia, quando viene rilevato lo stesso DTC più di una volta, il DTC più recente sovrascrive quello vecchio, quindi viene memorizzato una sola volta.
+</div>
+</li>
+<li>
+<div>
+Prima viene segnalato il DTC più basso. I DTC vengono segnalati in ordine ascendente, non nell'ordine in cui si sono verificati.
+</div>
+</li>
+<li>
+<div>
+I DTC sono memorizzati nella EEPROM (memoria non volatile) quindi i DTC memorizzati non possono essere cancellati scollegando la batteria. Per cancellare i DTC eseguire la procedura specifica.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Autodiagnosi
+</b>
+</div>
+<div>
+L'autodiagnosi può essere classificata in tre categorie:
+</div>
+<ul type="disc">
+<li>
+<div>
+Diagnosi iniziale: effettuata subito dopo l'avviamento del motore fino a quando la spia del servosterzo elettrico si spegne.
+</div>
+</li>
+<li>
+<div>
+Diagnosi regolare: effettuata subito dopo la diagnosi iniziale fino a quando il commutatore di accensione viene portato su OFF.
+</div>
+</li>
+<li>
+<div>
+Diagnosi sterzo: effettuata durante la diagnosi regolare ruotando il volante.
+</div>
+</li>
+</ul>
+<div>
+Quando un problema è rilevato dall'autodiagnosi, la centralina del servosterzo elettrico esegue le seguenti funzioni:
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Accende la spia del serevosterzo elettrico.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Memorizza il DTC.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Arresta la servoassistenza e riprende il funzionamento dello sterzo manuale.
+</div>
+<div>
+NOTA: Con i DTC 11-01, 11-02, 12-01, 21-01, 21-02, 22-01 e 35-04 la spia del servosterzo elettrico si spegne automaticamente quando il sistema ritorna ai valori normali.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Limitazioni di funzionamento della servoassistenza
+</b>
+</div>
+<div>
+L'applicazione ripetuta ed eccessiva della forza di sterzata, come girare il volante continuamente da una parte e dall'altra a vettura ferma, causa un aumento di consumo elettrico nel motorino del servosterzo elettrico. L'aumento di corrente elettrica provoca il surriscaldamento del motorino. Poiché questo surriscaldamento incide negativamente sul sistema, la centralina esercita un monitoraggio sulla corrente elettrica del motorino.
+</div>
+<div>
+Quando la centralina rileva il surriscaldamento del motorino, riduce gradualmente la corrente per proteggere il sistema, riducendo la funzionalità della servoassistenza. In questo caso la spia del servosterzo elettrico non si accende.
+</div>
+<div>
+Quando la coppia dello sterzo non è applicata al volante o quando l'accensione è spenta e il motore si raffredda, la centralina ripristina la servoassistenza gradualmente fino a ripristino completo (dopo un massimo di circa 8 minuti).
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Posizione neutra del sensore di coppia
+</b>
+</div>
+<div>
+La centralina del servosterzo elettrico memorizza la posizione neutra del sensore di coppia nella memoria EEPROM. Memorizzare la posizione neutra del sensore di coppia ogni volta che si effettua la sostituzione della scatola dello sterzo, del motorino o della centralina del servosterzo elettrico.
+</div>
+<div>
+NOTA: La posizione neutra del sensore di coppia non viene influenzata anche se viene cancellato il DTC.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Come eseguire la ricerca guasti in base ai DTC
+</b>
+</div>
+<div>
+Le procedure del diagramma di ricerca guasti partono dal presupposto che la causa del guasto perduri e che la spia del servosterzo elettrico rimanga accesa. Seguire il diagramma quando la spia del servosterzo elettrico non si accende può comportare una diagnosi errata.
+</div>
+<div>
+Le figure dei connettori mostrano i connettori dei terminali femmina con una cornice singola ed i connettori dei terminali maschio con una cornice doppia.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Consultare il cliente circa le condizioni nelle quali si è verificato il guasto, quindi cercare di riprodurle il più fedelmente possibile per eseguire la ricerca guasti. Appurare quando si è accesa la spia del servosterzo elettrico: durante l'attivazione del servosterzo elettrico, dopo l'attivazione del servosterzo elettrico, con la vettura a una certa velocità, ecc.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Quando la spia del servosterzo elettrico non si accende durante la prova su strada, ma si esegue la ricerca guasti basata sul DTC, controllare se ci sono connettori allentati, contatti difettosi dei terminali, ecc., prima di procedere alla ricerca guasti.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Dopo la ricerca guasti, cancellare il DTC e provare la vettura su strada. Verificare che la spia del servosterzo elettrico non si accenda.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Come richiamare i DTC
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Con il commutatore di accensione su OFF, collegare il tester HDS al connettore trasmissione dati (DLC) (A) situato sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con la vettura e la centralina del servosterzo elettrico. In caso contrario, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Seguire i messaggi sul tester HDS per visualizzare i DTC sullo schermo. Dopo aver determinato il DTC, consultare l'indice della ricerca guasti in base ai DTC.
+</div>
+<div>
+NOTA: Consultare il menu della guida del tester HDS per le istruzioni specifiche.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006030','1');">
+<img src="../tn/SMR7EDAK72200000000BBID01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EDAK72200000000BBID01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Come cancellare i DTC
+</b>
+</div>
+<a name="i610">
+</a>
+<ol>
+<li value="1">
+<div>
+Con il commutatore di accensione su OFF, collegare il tester HDS al connettore trasmissione dati (DLC) (A) situato sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con la vettura e la centralina del servosterzo elettrico. In caso contrario, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="4">
+<div>
+Cancellare i DTC seguendo i messaggi sullo schermo del tester HDS.
+</div>
+<div>
+NOTA: Consultare il menu della guida del tester HDS per le istruzioni specifiche.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006031','1');">
+<img src="../tn/SMR7EDAK72200000000BBID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EDAK72200000000BBID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

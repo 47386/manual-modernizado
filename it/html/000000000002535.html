@@ -1,0 +1,709 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7EJ0J54200046121FEIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Controllo relè alimentazione
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Fare riferimento alla tabella seguente per identificare il tipo di relè, quindi effettuare la verifica indicata.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="60%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Relè
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Verifica
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè esclusione ACC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="18" align="left">
+<div>
+Tipo normalmente aperto
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè presa di corrente per accessori
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè frizione compressore A/C
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè ventola condensatore A/C
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè motorino gruppo di ventilazione
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè accendisigari
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè sistema ETCS
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè fendinebbia
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè avvisatore acustico
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè esclusione IG2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè bobina di accensione
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè principale 1, 2 impianto PGM-FI
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè secondario impianto PGM-FI
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè sbrinatore specchietti elettrici
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè ventola radiatore
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè lunotto termico
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè riscaldatore sedile (alta temperatura)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè esclusione motorino di avviamento
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè di comando ventola
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Tipo a cinque terminali
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè di inibizione
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè superbloccaggio lato conducente
+<sup>
+*
+</sup>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè superbloccaggio lato passeggero
+<sup>
+*
+</sup>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Relè riscaldatore sedile (bassa temperatura)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="100%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="8%">
+<col width="91%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+*:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Modello KE
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Tipo normalmente aperto (eccetto relè principale 1 impianto PGM-FI, relè bobina di accensione, relè secondario impianto PGM-FI, relè sistema ETCS, relè lunotto termico, relè ventola radiatore, relè ventola condensatore e relè motorino gruppo ventilazione)
+</b>
+</div>
+<div>
+Controllare la continuità tra i terminali.
+</div>
+<ul type="disc">
+<li>
+<div>
+Deve esserci continuità tra i terminali N.1 e N.2 quando l'alimentazione e la massa sono collegate ai terminali N.4 e N.3.
+</div>
+</li>
+<li>
+<div>
+Non deve esserci continuità tra i terminali N.1 e N.2 quando l'alimentazione è scollegata.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006783','1');">
+<img src="../tn/SMR7EJ0J54200046121FEID01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006783','2');">
+<img src="../tn/SMR7EJ0J54200046121FEID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Relè principale 1 impianto PGM-FI, relè bobina di accensione, relè secondario impianto PGM-FI, relè sistema ETCS, relè lunotto termico
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare il connettore D (20P) della scatola fusibili/relè vano motore.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+In corrispondenza del lato scatola fusibili/relè vano motore, effettuare la verifica seguente.
+</div>
+<div>
+Relè principale 1 impianto PGM-FI:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare il terminale N.16 alla massa. Deve esserci tensione di batteria tra il terminale N.5 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare il terminale N.16 dalla massa. Non deve esserci tensione tra il terminale N.5 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè bobina di accensione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare il terminale N.16 alla massa. Deve esserci tensione di batteria tra il terminale N.18 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare il terminale N.16 dalla massa. Non deve esserci tensione tra il terminale N.18 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè secondario impianto PGM-FI:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare il terminale N.20 alla massa. Deve esserci tensione di batteria tra il terminale N.9 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare il terminale N.20 dalla massa. Non deve esserci tensione tra il terminale N.9 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè sistema ETCS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare l'alimentazione e la massa tra i terminali N.15 e N.17. Deve esserci tensione di batteria tra il terminale N.6 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare l'alimentazione e la massa dai terminali N.15 e N.17. Non deve esserci tensione tra il terminale N.6 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè lunotto termico:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare l'alimentazione e la massa tra i terminali N.4 e N.14. Deve esserci tensione di batteria tra il terminale N.3 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare l'alimentazione e la massa dai terminali N.4 e N.14. Non deve esserci tensione tra il terminale N.3 e la massa.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006784','1');">
+<img src="../tn/SMR7EJ0J54200046121FEID03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Relè ventola radiatore, relè ventola condensatore, relè motorino gruppo di ventilazione
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare il connettore E (20P) nella scatola fusibili/relè vano motore.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+In corrispondenza del lato scatola fusibili/relè vano motore, effettuare la verifica seguente.
+</div>
+<div>
+Relè ventola radiatore:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare l'alimentazione e la massa tra i terminali N.5 e N.8. Deve esserci tensione di batteria tra il terminale N.13 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare l'alimentazione e la massa dai terminali N.5 e N.8. Non deve esserci tensione tra il terminale N.13 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè ventola condensatore:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare l'alimentazione e la massa tra i terminali N.4 e N.16. Deve esserci tensione di batteria tra il terminale N.12 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare l'alimentazione e la massa dai terminali N.4 e N.16. Non deve esserci tensione tra il terminale N.12 e la massa.
+</div>
+</li>
+</ul>
+<div>
+Relè motorino gruppo di ventilazione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Collegare l'alimentazione e la massa tra i terminali N.1 e N.8. Deve esserci tensione di batteria tra il terminale N.3 e la massa.
+</div>
+</li>
+<li>
+<div>
+Scollegare l'alimentazione e la massa dai terminali N.1 e N.8. Non deve esserci tensione tra il terminale N.3 e la massa.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006785','1');">
+<img src="../tn/SMR7EJ0J54200046121FEID04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Tipo a cinque terminali
+</b>
+</div>
+<div>
+Controllare la continuità tra i terminali.
+</div>
+<ul type="disc">
+<li>
+<div>
+Deve esserci continuità tra i terminali N.1 e N.2 quando l'alimentazione e la massa sono collegate ai terminali N.5 e N.3.
+</div>
+</li>
+<li>
+<div>
+Deve esserci continuità tra i terminali N.1 e N.4 quando l'alimentazione è scollegata.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006786','1');">
+<img src="../tn/SMR7EJ0J54200046121FEID05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000006786','2');">
+<img src="../tn/SMR7EJ0J54200046121FEID06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7EJ0J54200046121FEID06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:863px;\" coordsize=\"950,863\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:863px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR7ES0J32100000000DAID03.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:863px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPIA RETRONEBBIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:116px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPIA ABBAGLIANTI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:594px;top:24px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPIA FENDINEBBIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:632px;top:761px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LIVELLAMENTO AUTOMATICO FARI<br>CENTRALINA (Con HID)<br><a href=\"javascript:CtsProc('0','000000000000226','i000')\"></b>Verifica ingressi,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:410px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>DEVIOLUCI<br><a href=\"javascript:CtsProc('0','000000000000208','i000')\"></b>Verifica/sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:321px;top:726px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDALE FRENO<br>INTERRUTTORE POSIZIONE<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Verifica,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:182px;top:797px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUTTORE LIVELLAMENTO FARI<br>(Senza HID)<br><a href=\"javascript:CtsProc('0','000000000002144','i000')\"></b>Verifica/sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:707px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Incorporata nella scatola<br>relè/fusibili sotto plancia)<br><a href=\"javascript:CtsProc('0','000000000000210','i000')\"></b>Verifica ingressi,</a><br><a href=\"javascript:CtsProc('0','000000000000340','i000')\">Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:331px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ LUCI DI MARCIA DIURNA (Modello KG)<br>RELÈ (modello KS)<br></b>Colori fili: LT GRN, <br>ORN, GRN, RED e BLU<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\">Verifica,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

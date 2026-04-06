@@ -1,0 +1,296 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00G24166100000FEST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Comprobación de las funciones de la luna trasera térmica
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Tenga cuidado de no dañar o rayar los cables de la luneta trasera térmica con las sondas del comprobador.
+</div>
+</li>
+<li>
+<div>
+Antes de efectuar la comprobación, compruebe el fusible Nº 12 (30 A) de la caja de fusibles/relés situada debajo del capó y el fusible Nº 36 (10 A) de la caja de fusibles/relés situada debajo del salpicadero.
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Compruebe la tensión entre el terminal positivo (A) y la masa de la carrocería con la llave de contacto en la posición ON (II) y el interruptor de la luneta trasera térmica conectado.
+</div>
+<div>
+Debe ser igual a la tensión de la batería.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si no hay tensión, compruebe la existencia de:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Caja de fusibles/relés situada debajo del capó defectuosa.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Interruptor de la luneta trasera térmica/sistema antivaho del espejo retrovisor eléctrico defectuoso
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Circuito abierto en el cable entre la caja de fusibles/relés situada debajo del capó y el terminal positivo.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Si existe continuidad, vaya a 
+<a href="javascript:parent.Jmp('i020')">Paso 2
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Gire la llave de contacto a la posición OFF y desconecte el terminal negativo (B) de la luneta trasera térmica.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Compruebe si existe continuidad entre el terminal negativo (B) y masa de la carrocería.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si no hay continuidad, compruebe si hay un circuito abierto en el cable o una conexión a masa defectuosa en (G701).
+</div>
+</li>
+<li>
+<div>
+Si existe continuidad, vaya a 
+<a href="javascript:parent.Jmp('i040')">Paso 4
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Vuelva a conectar el terminal negativo de la luneta trasera térmica.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Gire la llave de contacto a la posición ON (II) y conecte el interruptor de la luneta trasera térmica/antivaho del espejo retrovisor eléctrico.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Haga contacto con la sonda positiva del voltímetro en todos los puntos de cada cable de la luneta y con la sonda negativa en el terminal negativo de la misma.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si la tensión es la especificada, el cable de la luneta trasera térmica hasta ese punto es correcto.
+</div>
+</li>
+<li>
+<div>
+Si la tensión no es la especificada, repare el cable de la luneta trasera térmica.
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si existe una tensión superior a la especificada en uno de los puntos, hay una rotura en la mitad negativa del cable.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si existe una tensión inferior a la especificada en uno de los puntos, hay una rotura en la mitad positiva del cable.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000197','1');">
+<img src="../tn/SMR7E00G24166100000FESD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00G24166100000FESD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

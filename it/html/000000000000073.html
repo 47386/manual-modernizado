@@ -1,0 +1,1742 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00H46400000000AAIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Precauzioni e procedure per l'SRS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauzioni generali
+</b>
+</div>
+<div>
+Leggere attentamente le seguenti precauzioni prima di effettuare operazioni di manutenzione sul sistema airbag. Osservare le istruzioni descritte nel presente manuale, onde evitare l'attivazione accidentale degli airbag, con rischio di danni o lesioni personali.
+</div>
+<ul type="disc">
+<li>
+<div>
+Ad eccezione di quando si eseguono controlli dell'impianto elettrico, portare sempre il commutatore di accensione su OFF, collegare a terra la linea SCS con il tester HDS per disattivare il modulo PCM, scollegare il cavo negativo dalla batteria e attendere almeno 3 minuti prima di intervenire.
+</div>
+<div>
+NOTA: Il contenuto della memoria del sistema SRS non si cancella né se il commutatore di accensione viene portato su OFF né se i cavi della batteria vengono scollegati.
+</div>
+</li>
+<li>
+<div>
+Utilizzare le parti di ricambio prodotte in conformità agli stessi standard e qualità delle parti originali. Non installare componenti SRS usati. Per la riparazione del sistema SRS utilizzare solamente componenti nuovi.
+</div>
+</li>
+<li>
+<div>
+Controllare accuratamente tutti i componenti del sistema SRS prima di installarli.
+</div>
+<div>
+Non installare componenti che presentano segni di cadute o di utilizzo improprio, quali ammaccature, incrinature o deformazioni.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Prima di rimuovere qualsiasi componente del sistema SRS (inclusi i connettori), scollegare sempre il connettore del sistema SRS.
+</div>
+</li>
+<li>
+<div>
+Per il controllo del sistema, utilizzare solamente un multimetro digitale. Se il multimetro non è originale Honda, verificare che la corrente di uscita sia 10 mA (0,01 A) o inferiore nel caso in cui lo strumento sia regolato a fondoscala dell'ohmmetro. Un tester con un'uscita superiore può provocare l'attivazione accidentale, con rischio di lesioni personali.
+</div>
+</li>
+<li>
+<div>
+Non collocare alcun oggetto sull'airbag lato passeggero anteriore.
+</div>
+</li>
+<li>
+<div>
+L'impianto audio e il navigatore originali sono dotati di un circuito antifurto a codice. Prima di scollegare il cavo negativo dalla batteria, verificare di essere in possesso delle stazioni radio preselezionate dal cliente.
+</div>
+</li>
+<li>
+<div>
+Prima di riconsegnare la vettura al cliente, inserire i codici antifurto dell'autoradio e del navigatore (se in dotazione), quindi inserire le stazioni radio preselezionate; impostare l'orologio sulle vetture senza navigatore.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000226','1');">
+<img src="../tn/SMR7E00H46400000000AAID01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauzioni correlate allo sterzo
+</b>
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Allineamento arrotolatore
+</b>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Un allineamento errato dell'arrotolatore potrebbe provocare un'interruzione nel cablaggio, disattivando il sistema SRS, i comandi al volante e l'avvisatore acustico. 
+<a href="javascript:CtsProc('0','000000000000084','i260')">
+Centrare l'arrotolatore ogni volta che si esegue quanto segue.
+</a>
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Installazione del volante
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Installazione dell'arrotolatore
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Installazione del piantone dello sterzo
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Altre installazioni o regolazioni correlate allo sterzo
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Non smontare l'arrotolatore.
+</div>
+</li>
+<li>
+<div>
+Non ingrassare l'arrotolatore.
+</div>
+</li>
+<li>
+<div>
+Se l'arrotolatore è danneggiato, sostituirlo con uno nuovo. Per esempio, se l'arrotolatore non ruota regolarmente, sostituirlo.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Come maneggiare e stoccare l'airbag
+</b>
+</div>
+<div>
+Non smontare l'airbag. I relativi componenti non richiedono manutenzione. Una volta che l'airbag si è attivato, non può essere né riparato né riutilizzato.
+</div>
+<div>
+Per lo stoccaggio temporaneo dell'airbag durante la manutenzione, osservare le seguenti precauzioni.
+</div>
+<ul type="disc">
+<li>
+<div>
+Riporre l'airbag con il rivestimento rivolto verso l'alto. Non appoggiare niente sull'airbag.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000228','1');">
+<img src="../tn/SMR7E00H46400000000AAID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<ul type="disc">
+<li>
+<div>
+Tenere l'airbag lontano da olio, grasso, detergenti o acqua, onde evitare che possa danneggiarsi.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000229','1');">
+<img src="../tn/SMR7E00H46400000000AAID03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<ul type="disc">
+<li>
+<div>
+Riporre l'airbag rimosso su una superficie sicura e piana, lontana da fonti di calore (temperature superiori a 93°C).
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000230','1');">
+<img src="../tn/SMR7E00H46400000000AAID04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<ul type="disc">
+<li>
+<div>
+Non effettuare mai controlli elettrici sugli airbag, come per esempio la misurazione della resistenza.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Non posizionarsi di fronte all'airbag durante le operazioni di rimozione, controllo o sostituzione.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Per il corretto smaltimento dell'airbag danneggiato
+<a href="javascript:CtsProc('0','000000000000081','i000')">
+, fare riferimento a Smaltimento airbag.
+</a>
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000231','1');">
+<img src="../tn/SMR7E00H46400000000AAID05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<ul type="disc">
+<li>
+<div>
+Il gruppo airbag laterale a tendina è un componente lungo e raccordato composto da un generatore di gas (A), da una sacca flessibile (B) e da staffe (C).
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Durante la rimozione o l'installazione del gruppo airbag laterale a tendina, non toccare mai la sacca flessibile (B).
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000232','1');">
+<img src="../tn/SMR7E00H46400000000AAID06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Centralina del sistema SRS, sensori di impatto frontale e sensori di impatto laterale
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Non dare colpi o urtare la centralina del sistema SRS, i sensori di impatto frontale o i sensori di impatto laterale quando il commutatore di accensione è su ON (II) o almeno 3 minuti dopo che il commutatore di accensione è stato portato su OFF.
+</div>
+</li>
+<li>
+<div>
+Durante l'installazione o la sostituzione, non urtare (con chiave pneumatica, martello, ecc.) l'area attorno alla centralina del sistema SRS, ai sensori di impatto frontale e ai sensori di impatto laterale. Gli airbag potrebbero attivarsi accidentalmente provocando danni o lesioni personali.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000233','1');">
+<img src="../tn/SMR7E00H46400000000AAID07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000080','i000')">
+Se in seguito ad una collisione viene attivato un airbag anteriore, un airbag laterale, un airbag laterale a tendina o il pretensionatore della fibbia della cintura di sicurezza, passare a Sostituzione/controllo dei componenti in seguito all'attivazione.
+</a>
+ In caso di collisione con attivazione di un airbag laterale e di un airbag laterale a tendina, sostituire il sensore di impatto laterale sul lato di attivazione e la centralina del sistema SRS. In caso di collisione senza attivazione degli airbag o degli airbag laterali, controllare se ci sono danni o deformazioni sulla centralina del sistema SRS, sui sensori di impatto frontale e sui sensori di impatto laterale. In caso di danni, sostituire la centralina del sistema SRS e/o i sensori.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Non smontare la centralina del sistema SRS, i sensori di impatto frontale o i sensori di impatto laterale.
+</div>
+</li>
+<li>
+<div>
+Portare il commutatore di accensione su OFF, scollegare il cavo negativo della batteria ed attendere almeno 3 minuti prima di installare o sostituire la centralina del sistema SRS o scollegare i connettori dalla centralina del sistema SRS.
+</div>
+</li>
+<li>
+<div>
+Assicurarsi che la centralina del sistema SRS, i sensori di impatto frontale e i sensori di impatto laterale siano installati saldamente con bulloni di fissaggio serrati con coppia di 9,8 N·m (1,0 kgf·m, ).
+</div>
+</li>
+<li>
+<div>
+Non versare acqua oppure olio sulla centralina del sistema SRS o sui sensori d'impatto laterale e tenerli puliti dalla polvere.
+</div>
+</li>
+<li>
+<div>
+Riporre la centralina del sistema SRS, i sensori di impatto frontale e i sensori di impatto laterale in un luogo fresco (inferiore a 40°C) e asciutto (umidità relativa inferiore all'80‰).
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000234','1');">
+<img src="../tn/SMR7E00H46400000000AAID08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauzioni per il cablaggio
+</b>
+</div>
+<div>
+Alcuni cablaggi del sistema SRS possono essere identificati dalla speciale guaina isolante gialla ed i connettori del sistema SRS possono essere quindi identificati dal loro colore giallo. Osservare le seguenti istruzioni.
+</div>
+<ul type="disc">
+<li>
+<div>
+Non tentare mai di modificare, giuntare o riparare il cablaggio del sistema SRS.
+</div>
+<div>
+Se c'è un'interruzione o un danno nel cablaggio o nei terminali del sistema SRS, sostituire il cablaggio.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000235','1');">
+<img src="../tn/SMR7E00H46400000000AAID09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<ul type="disc">
+<li>
+<div>
+Installare i cablaggi in modo tale che non siano pizzicati o interferiscano con altri componenti.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Verificare che tutti i punti di collegamento a massa del sistema SRS siano puliti e saldamente fissati, in modo tale da garantire un contatto metallo-metallo ottimale. Una massa difettosa può causare problemi intermittenti difficili da diagnosticare.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000236','1');">
+<img src="../tn/SMR7E00H46400000000AAID10.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID10_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Precauzioni per i controlli elettrici
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando si utilizza un tester per componenti elettrici, inserire il puntale del tester nel lato fili del connettore. Non inserire il puntale del tester nel lato terminali del connettore e non manomettere il connettore.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000237','1');">
+<img src="../tn/SMR7E00H46400000000AAID11.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID11_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<ul type="disc">
+<li>
+<div>
+Utilizzare un puntale a forma di U. Non applicare una forza eccessiva durante l'inserimento del puntale.
+</div>
+</li>
+</ul>
+<ul type="disc">
+<li>
+<div>
+Utilizzare i connettori di manutenzione specificati durante la ricerca guasti.
+</div>
+<div>
+L'utilizzo di attrezzi inadeguati può essere causa di controlli errati dovuti ad un contatto metallo-metallo insufficiente.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000238','1');">
+<img src="../tn/SMR7E00H46400000000AAID12.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID12_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Connettore con bloccaggio a molla
+</b>
+</div>
+<div>
+Alcuni connettori del sistema SRS sono dotati di un bloccaggio a molla.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Connettori airbag anteriore
+</b>
+</div>
+<br>
+<div>
+<b>
+Scollegamento
+</b>
+</div>
+<div>
+Per sganciare il dispositivo di blocco, tirare la bussola caricata a molla (A) verso il fermo (B), bloccando contemporaneamente l'altra metà del connettore. Quindi separare le due metà del connettore. Tirare il manicotto e non il connettore.
+</div>
+<div>
+<b>
+Collegamento
+</b>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000239','1');">
+<img src="../tn/SMR7E00H46400000000AAID13.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<a name="iT02">
+</a>
+<div>
+Per effettuare il ricollegamento, trattenere la parte del connettore dotata di dente d'arresto e premere la parte posteriore del manicotto del connettore nella direzione mostrata in figura. Non appena vengono unite le due metà del connettore, la bussola (A) viene spinta indietro dal dente d'arresto (C). Non toccare il manicotto.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000240','1');">
+<img src="../tn/SMR7E00H46400000000AAID14.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Connettore airbag laterale
+</b>
+</div>
+<br>
+<div>
+<b>
+Scollegamento
+</b>
+</div>
+<div>
+Per sganciare il dispositivo di blocco, tirare la bussola caricata a molla (A) verso il fermo (B), bloccando contemporaneamente l'altra metà del connettore. Quindi separare le due metà del connettore. Accertarsi di tirare la il manicotto e non la metà del connettore.
+</div>
+<div>
+<b>
+Collegamento
+</b>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000241','1');">
+<img src="../tn/SMR7E00H46400000000AAID15.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID15_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<a name="iT03">
+</a>
+<div>
+Tenere entrambe le metà del connettore ed unirle premendo in modo deciso finché la sporgenza (C) della parte del connettore dotata di corona non scatti.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000242','1');">
+<img src="../tn/SMR7E00H46400000000AAID16.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID16_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Interruzione dei connettori di cortocircuito della centralina del sistema SRS per effettuare la diagnosi
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012202')">
+<br>
+Dispositivo di eliminazione cortocircuiti del sistema SRS
+<br>
+ 070AZ-SAA0100
+</a>
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Per evitare danni alla cavità del connettore, inserire il dispositivo di eliminazione cortocircuiti del sistema SRS (070AZ-SAA0100) nella cavità direttamente dal lato terminale.
+</div>
+</li>
+<li>
+<div>
+Prima di installare il dispositivo di eliminazione cortocircuiti, lavarlo con un detergente per contatti elettrici e asciugarlo con un getto d'aria compressa.
+</div>
+</li>
+<li>
+<div>
+Non utilizzare dispositivi di eliminazione cortocircuiti danneggiati.
+</div>
+</li>
+<li>
+<div>
+Prima di procedere al nuovo collegamento, rimuovere il dispositivo di eliminazione cortocircuiti.
+</div>
+</li>
+</ul>
+<div>
+Una volta scollegati i connettori A o B della centralina del sistema SRS, sarà creato un cortocircuito nel connettore per evitare l'attivazione dell'airbag. Durante la fase di diagnosi del sistema, il circuito dovrà essere saltuariamente aperto. Qualora sia necessario interrompere il circuito per la diagnosi, inserire il dispositivo di eliminazione cortocircuiti (numero categorico 070AZ-SAA0100) nelle cavità specificate.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000243','1');">
+<img src="../tn/SMR7E00H46400000000AAID17.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID17_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div>
+I numeri dei terminali sono indicati a partire dal lato filo dei terminali femminili. Inserire il dispositivo di eliminazione cortocircuiti nelle nelle cavità sul lato terminale del connettore.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000244','1');">
+<img src="../tn/SMR7E00H46400000000AAID18.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID18_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000244','2');">
+<img src="../tn/SMR7E00H46400000000AAID19.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID19_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Sedili con airbag laterali
+</b>
+</div>
+<div>
+I sedili con airbag laterali sono etichettati sullo schienale con ‘‘AIRBAG LATERALE''.
+</div>
+<ul type="disc">
+<li>
+<div>
+Durante la pulizia, non versare una quantità eccessiva di liquido e non spruzzare vapore sul sedile.
+</div>
+</li>
+<li>
+<div>
+Non riparare rivestimenti dello schienale eventualmente lacerati o sfilacciati. Sostituire il rivestimento dello schienale del sedile.
+</div>
+</li>
+<li>
+<div>
+In seguito a una collisione con attivazione dell'airbag laterale, sostituire l'airbag laterale e il telaio del sedile con componenti nuovi. Nel caso in cui il cuscino dello schienale del sedile sia diviso, sostituirlo.
+</div>
+</li>
+<li>
+<div>
+Non posizionare mai sul sedile accessori (rivestimenti, cuscini, riscaldatori sedile, luci, ecc.).
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000245','1');">
+<img src="../tn/SMR7E00H46400000000AAID20.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID20_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Scollegamento dei connettori del sistema
+</b>
+</div>
+<div>
+Portare il commutatore di accensione in posizione OFF, scollegare il cavo negativo dalla batteria, quindi, prima di iniziare le seguenti procedure, attendere almeno 3 minuti.
+</div>
+<ul type="disc">
+<li>
+<div>
+Prima di scollegare il connettore 4P (1) dell'arrotolatore, scollegare il connettore 4P (2) dell'airbag lato conducente.
+</div>
+</li>
+<li>
+<div>
+Prima di scollegare il connettore B dalla centralina del sistema SRS, scollegare entrambi i connettori 4P dei pretensionatori delle cinture di sicurezza e dei pretensionatori delle cinture di sicurezza addominali laterali (3, 4, 5, 6).
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare il cavo negativo dalla batteria e attendere almeno 3 minuti.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000246','1');">
+<img src="../tn/SMR7E00H46400000000AAID21.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Scollegamento dei connettori del sistema
+</b>
+</div>
+<div>
+Portare il commutatore di accensione in posizione OFF, scollegare il cavo negativo dalla batteria, quindi, prima di iniziare le seguenti procedure, attendere almeno 3 minuti.
+</div>
+<ul type="disc">
+<li>
+<div>
+Prima di scollegare il connettore 4P (1) dell'arrotolatore, scollegare il connettore 4P (2) dell'airbag lato conducente.
+</div>
+</li>
+<li>
+<div>
+Prima di scollegare il connettore B dalla centralina del sistema SRS, scollegare entrambi i connettori 4P dei pretensionatori delle cinture di sicurezza e dei pretensionatori delle cinture di sicurezza addominali laterali (3, 4, 5, 6).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID21_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare il cavo negativo dalla batteria e attendere almeno 3 minuti.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Airbag lato conducente
+</b>
+</div>
+<br>
+<a name="i020">
+</a>
+<ol>
+<li value="1">
+<div>
+Rimuovere il pannello di accesso (A) dal volante, quindi scollegare il connettore 4P (B) dell'airbag lato conducente dall'arrotolatore.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000247','1');">
+<img src="../tn/SMR7E00H46400000000AAID22.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID22_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT05">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Airbag lato passeggero anteriore
+</b>
+</div>
+<br>
+<a name="i030">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000000190','i000')">
+Rimuovere il cassetto portaoggetti,
+</a>
+ quindi scollegare il connettore 4P (A) dell'airbag lato passeggero anteriore dal cablaggio della plancia.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000248','1');">
+<img src="../tn/SMR7E00H46400000000AAID23.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID23_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT06">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Airbag laterale
+</b>
+</div>
+<br>
+<a name="i040">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare il connettore 2P (A) dell'airbag laterale dal cablaggio del pavimento.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000249','1');">
+<img src="../tn/SMR7E00H46400000000AAID24.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID24_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT07">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Airbag a tendina laterale
+</b>
+</div>
+<br>
+<a name="i050">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000000182','i000')">
+Rimuovere il rivestimento interno del tetto.
+</a>
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="2">
+<div>
+Scollegare il connettore 2P (A) del cablaggio del pavimento o del cablaggio lato destro dall'airbag laterale a tendina.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000250','1');">
+<img src="../tn/SMR7E00H46400000000AAID25.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID25_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT08">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Pretensionatore cintura di sicurezza
+</b>
+</div>
+<br>
+<a name="i070">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000000199','i000')">
+Rimuovere il pannello della finitura laterale posteriore,
+</a>
+ quindi scollegare i connettori 4P (A) del cablaggio del pavimento dal pretensionatore della cintura di sicurezza.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000251','1');">
+<img src="../tn/SMR7E00H46400000000AAID26.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID26_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT09">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Pretensionatore fibbia cintura di sicurezza
+</b>
+</div>
+<br>
+<a name="i080">
+</a>
+<ol>
+<li value="1">
+<div>
+Scollegare i connettori 4P (A) del cablaggio del pavimento dal pretensionatore della fibbia della cintura di sicurezza.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000252','1');">
+<img src="../tn/SMR7E00H46400000000AAID27.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID27_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<a name="iT10">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Centralina del sistema SRS
+</b>
+</div>
+<br>
+<a name="i090">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000001590','i000')">
+Rimuovere la console centrale,
+</a>
+ quindi scollegare il connettore A e il connettore B della centralina del sistema SRS dalla centralina stessa.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000253','1');">
+<img src="../tn/SMR7E00H46400000000AAID28.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00H46400000000AAID28_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

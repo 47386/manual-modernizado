@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:591px;\" coordsize=\"950,591\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:591px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E20E16236500000LDSD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:591px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:137px;top:17px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANILLO DE EJE INTERMEDIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:304px;top:95px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANILLO DE SOPORTE DEL COJINETE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:537px;top:60px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TORNILLOS DE BRIDA<br>10 x 1,25 mm.<br>39 N·m (4,0 kgf·m,<br>)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:11px;top:269px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>EJE INTERMEDIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:311px;top:445px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>COJINETE <br>DEL EJE INTERMEDIO<br></b>Sustituir.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:166px;top:387px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANILLO ELÁSTICO INTERNO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:485px;top:502px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANILLO ELÁSTICO EXTERNO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:581px;top:549px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>JUNTA DE ESTANQUEIDAD EXTERIOR<br></b>Sustituir.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:777px;top:333px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>Rellene de grasa el interior del <br>retén de aceite exterior.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:801px;top:543px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANILLO DE REGLAJE<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

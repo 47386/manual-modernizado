@@ -1,0 +1,771 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ES0J36200000000BBGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Fehlersuchverfahren, Navigationssystem
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Allgemeine Funktionsweise
+</b>
+</div>
+<div>
+Die Betriebsanweisungen für das Navigationssystem sind im Bedienungshandbuch für das Honda Navigationssystem zu finden.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Symptomdiagnose
+</b>
+</div>
+<div>
+Auf Grund von Systembegrenzungen kann es unter bestimmten Umständen gelegentlich zu Fehlern bzgl. der ermittelten Fahrzeugposition kommen. In diesem Fall ist für den Kunden die Vermutung naheliegend, dass dies auf ein Problem beim Navigationssystem hinweist, während das System in Wirklichkeit normal funktioniert. Berücksichtigen Sie die folgenden Punkte, wenn Sie Kunden über Symptome des Navigationssystems befragen:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Selbst-inertiale Navigationsbegrenzungen
+</b>
+</div>
+<div>
+Durch die Eigenträgheit bestimmter Komponenten des Navigationssystems (Gierratensensor und Fahrgeschwindigkeitssignal) bedingt können tatsächliche Fahrzeugposition und angezeigte Fahrzeugposition (GPS-Fahrzeugposition) voneinander abweichen.
+</div>
+<div>
+Unter folgenden Umständen kann es zu Fahrzeugpositionsfehlern kommen:
+</div>
+<ul type="disc">
+<li>
+<div>
+Passive Bewegung des Fahrzeugs bei abgestelltem Motor, wie auf einer Fähre oder beim Abschleppen, oder wenn das Fahrzeug auf einer Drehscheibe gedreht wird
+</div>
+</li>
+<li>
+<div>
+Reifenschlupf, Änderungen des Reifenrolldurchmessers und bestimmte Fahrsituationen können Abweichungen bei der Ermittlung der zurückgelegten Wegstrecke verursachen. Als Beispiele dafür sind zu nennen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Wiederholter Reifenschlupf auf glatter Fahrbahn
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahren mit Schneeketten
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Falscher Reifendruck
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Falsche Reifengröße
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Häufiger Spurwechsel auf einer mehrspurigen, breiten Schnellstraße
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Anhaltendes Fahren auf einer geraden oder leicht kurvigen Schnellstraße
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Toleranzen im System und Kartenungenauigkeiten begrenzen gelegentlich die Präzision der Anzeige der Fahrzeugposition. Als Beispiele dafür sind zu nennen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahrt auf Straßen, die auf der Karte nicht vorhanden sind (kein Kartenabgleich möglich)
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahrt auf einer Straße, die sich in einer Richtung dreht, wie Brückenschleife, Autobahnkreuz oder spiralförmige Parkhausauffahrt
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahrt auf einer Straße mit mehreren scharfen Haarnadelkurven
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahrt auf einer lang gestreckten Ausfahrt oder Abzweigung
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fahrt auf einer von zwei nahezu parallel verlaufenden Straßen
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Viele 90 Grad-Abbiegemanöver
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Zielführung bzw. das auf der Karte angezeigte ‘‘Zielführungssymbol&quot; kann um bis zu mehrere hundert Meter vom tatsächlichen Standort abweichen.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Beschränkungen des Standortbestimmungssystems (GPS)
+</b>
+</div>
+<div>
+Das GPS kann unter folgenden Umständen die Fahrzeugposition nicht ermitteln:
+</div>
+<ul type="disc">
+<li>
+<div>
+Während der ersten 5 bis 10 Minuten (unter Umständen bis zu 45 Minuten) nach dem Wiederanschließen der Batterie
+</div>
+</li>
+<li>
+<div>
+Wenn die Satellitensignale von hohen Gebäuden, Bergen, Tunneln, hohen Bäumen oder großen LKWs abgeschirmt werden
+</div>
+</li>
+<li>
+<div>
+Wenn die GPS-Antenne durch einen Gegenstand über ihr im Fahrzeug behindert bzw. gestört wird Die GPS-Antenne benötigt freie, ungehinderte Sicht zum Himmel.
+</div>
+</li>
+<li>
+<div>
+Wenn die Satellitensignale von nachgerüsteter Elektronik, beispielsweise von in das Armaturenbrett eingebauter Unterhaltungselektronik von Fremdherstellern (Radio, CD-Spieler/-Wechsler, Fahrzeug-Aufspürcomputer), oder von Handys in der Nähe des Navigationssystems oder von getöntem Glas über der GPS-Antenne gestört bzw. abgefangen werden
+</div>
+</li>
+</ul>
+<div>
+Die Präzision des GPS ist unter folgenden Umständen reduziert:
+</div>
+<ul type="disc">
+<li>
+<div>
+Metallische Scheibentönung über der GPS-Antenne
+</div>
+</li>
+<li>
+<div>
+Wenn nur zwei Satellitensignale empfangen werden können (zur präzisen Positionsermittlung sind drei Satellitensignale erforderlich)
+</div>
+</li>
+<li>
+<div>
+Bei Problemen in den Satelliten-Kontrollstationen
+</div>
+</li>
+<li>
+<div>
+Während der Fahrt in der Nähe von Hochspannungsleitungen
+</div>
+</li>
+<li>
+<div>
+Wenn die Satellitensignale von nachgerüsteter Elektronik, wie zum Beispiel in das Armaturenbrett eingebauter Unterhaltungselektronik von Fremdherstellern (Radio, CD-Spieler/-Wechsler, Radardetektor, Fahrzeug-Aufspürcomputer), oder von Handys in der Nähe des Navigationssystems gestört bzw. abgefangen werden
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Stummschaltungslogik
+</b>
+</div>
+<div>
+Während der akustischen Zielführung durch das Navigationssystem sind alle Lautsprecher stumm geschaltet. Während der Fahrer dem System Anweisungen über die Sprachsteuerung gibt, sind alle Lautsprecher stumm geschaltet. Die Freisprecheinrichtung schaltet einen Teil der Lautsprecher stumm.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+LCD-Beschränkungen
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Bei großer Kälte bleibt das Display möglicherweise 2 oder 3 Minuten lang dunkel, bis es sich erwärmt hat.
+</div>
+</li>
+<li>
+<div>
+Wenn das Display auf Grund von direkter Sonnenbestrahlung im Sommer zu heiß wird, bleibt es dunkel, bis die Temperatur in den Normalbereich gesunken ist.
+</div>
+</li>
+<li>
+<div>
+Bei hoher Luftfeuchtigkeit und niedriger Innentemperatur kann das Display beschlagen aussehen. Das Display klärt sich nach einiger Betriebszeit wieder.
+</div>
+</li>
+<li>
+<div>
+Fingerabdrücke auf dem Bildschirm können sich wegen der Antireflexbeschichtung des Anzeigefelds bei bestimmten Lichtverhältnissen störend bemerkbar machen. Den Bildschirm mit einem weichen feuchten Tuch reinigen. Dazu kann ein mildes Reinigungsmittel wie für Brillen oder Computermonitore verwendet werden.
+</div>
+</li>
+</ul>
+<div>
+HINWEIS: Die Anzeige wird nicht mehr wie früher vom Sonnenlicht beeinträchtigt.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Symptomwiederholung
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das Symptom nicht reproduziert werden kann, stellen Sie einen Vergleich mit einem ‘‘bekanntermaßen funktionsfähigen&quot; Fahrzeug an. Ziehen Sie dazu immer ein Fahrzeug desselben Modells mit identischem Baujahr, gleicher Ausstattung und identischer Softwareversion heran. Wenn das Symptom bei dem bekanntermaßen funktionsfähigen Fahrzeug reproduziert werden kann, deutet das auf ein systemspezifisches Problem hin.
+</div>
+</li>
+<li>
+<div>
+Wenn das Symptom reproduziert werden kann, die Selbstdiagnoseverfahren und das entsprechende Fehlersuchverfahren durchführen.
+</div>
+</li>
+<li>
+<div>
+Wenn das Symptom sich nicht wiederholt oder unregelmäßig auftritt, den Kunden fragen, unter welchen Bedingungen das Symptom auftrat.
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Versuchen Sie herauszufinden, ob äußere Einflüsse die Ursache gewesen sein können.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Versuchen, das Symptom unter denselben Bedingungen wieder auftreten zu lassen, die beim Kunden vorlagen.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Vibration, extreme Temperaturen und Nässe (Kondensation, Feuchte) sind Faktoren, die schwierig nachzubilden sind.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Untersuchen Sie das Fahrzeug auf eventuell versteckt angeordnete nachgerüstete Elektronik (Fahrzeugortungsgeräte, Radardetektoren usw.).
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Vorsichtsmaßnahmen bei der Wartung
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Sehen Sie nach Service-Rundschreiben und NEWS-Artikeln, die sich auf das vom Kunden beschriebene Problem beziehen.
+</div>
+</li>
+<li>
+<div>
+Vor dem Trennen der Batterie immer die Frequenzen der eingestellten Radiosender notieren.
+</div>
+</li>
+<li>
+<div>
+Die Navigationseinheit befindet sich hinter dem Handschuhfach.
+</div>
+</li>
+<li>
+<div>
+Wenn die Verbindung zur Batterie unterbrochen wird, wird die interne GPS-Uhr auf ‘‘0:00'' zurückgestellt. Durch die GPS-Initialisierung wird die Uhr wieder auf die aktuelle Zeit eingestellt.
+</div>
+</li>
+<li>
+<div>
+Nach dem Wiederanschließen der Batterie dauert es eine Weile, bis das erste Signal vom Satelliten empfangen wird. Die Wartezeit beträgt zwischen 10 und 45 Minuten.
+</div>
+</li>
+<li>
+<div>
+Vor der Rückgabe des Fahrzeugs an den Kunden richten Sie wieder die vom Kunden voreingestellten Radiosender ein und stellen bei Bedarf die Uhr.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Systeminitialisierung
+</b>
+</div>
+<div>
+Nachdem aus irgendeinem Grund die Stromversorgung zum Navigationssystem unterbrochen (also etwa die Batterie getrennt) wurde, muss das Navigationssystem initialisiert werden. Danach ist das System wieder einsatzbereit.
+</div>
+<div>
+Zur Initialisierung ist Folgendes nötig:
+</div>
+<ul type="disc">
+<li>
+<div>
+GPS-Initialisierung (je nach Dauer der Stromunterbrechung evtl. nicht erforderlich)
+</div>
+</li>
+<li>
+<div>
+Kartenabgleich zum Abgleich zwischen GPS und Karte
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+GPS-Initialisierung
+</b>
+</div>
+<div>
+Je nachdem, wie lange die Batteriestromversorgung unterbrochen war, muss das GPS neu initialisiert werden. Wenn das der Fall ist, wird dieser Bildschirm angezeigt:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011222','1');">
+<img src="../tn/SMR7ES0J36200000000BBGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7ES0J36200000000BBGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div>
+Andernfalls wird als Nächstes der Hinweisbildschirm zum Navigationssystem angezeigt. Während der Initialisierung sucht das System nach allen verfügbaren GPS-Satelliten und holt ihre Umlaufbahninformationen ein. Das Fahrzeug soll dazu im Freien und unter freiem Himmel stehen.
+</div>
+<div>
+Sobald das Navigationssystem die Satelliten gefunden hat, wird anstelle des Initialisierungsbildschirms der Hinweisbildschirm angezeigt. Wenn nicht innerhalb von 10 Minuten genügend Satelliten zur Bestimmung der Fahrzeugposition geortet werden können, wird der folgende Bildschirm angezeigt:
+</div>
+<div>
+Wenn der Bildschirm länger als 30 Minuten angezeigt wird, stellen Sie den Motor ab und starten Sie das Fahrzeug neu. Wenn dann der Hinweisbildschirm angezeigt wird, war die GPS-Initialisierung erfolgreich.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die durchschnittliche Erfassungszeit beträgt weniger als 10 Minuten, der Vorgang kann aber auch bis zu 45 Minuten dauern.
+</div>
+</li>
+<li>
+<div>
+Wenn das System auch dann kein Signal erfasst, folgen Sie den Anweisungen auf dem Bildschirm. Wenn der Bildschirm erneut angezeigt wird, 
+<a href="javascript:CtsProc('0','000000000004523','i000')">
+folgen Sie dem unter &quot;GPS-Symbol wird nicht angezeigt&quot; beschriebenen Fehlersuchverfahren.
+</a>
+</div>
+</li>
+<li>
+<div>
+Um den GPS-Erfassungsbildschirm zu umgehen, halten Sie gleichzeitig die Tasten ‘‘MENÜ&quot; und ‘‘Verkleinern&quot; gedrückt. Mit der Schaltfläche ‘‘Zurück&quot; auf dem Bildschirm verlassen Sie den Diagnosemodus. So können Sie die Fehlersuche fortsetzen.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011223','1');">
+<img src="../tn/SMR7ES0J36200000000BBGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7ES0J36200000000BBGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG11">
+</a>
+<div class="servinfosub_title">
+<b>
+Abschließender Kartenabgleich
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Fahrzeug an einem Ort abstellen, wo die GPS-Satellitensignale ungehindert empfangen werden können, und das Satellitenzeichen auf dem Display prüfen.
+</div>
+</li>
+<li>
+<div>
+Das Fahrzeug ca. 1,6 km fahren. Ein Ziel eingeben und kontrollieren, ob die benutzte Straße am unteren Bildschirmrand angezeigt wird (Kartenabgleich durchgeführt).
+</div>
+</li>
+<li>
+<div>
+Die Adresse der Werkstatt eingeben und auf der Rückfahrt kontrollieren, dass die Navigationsfunktionen des Systems ordnungsgemäß funktionieren.
+</div>
+</li>
+<li>
+<div>
+Eventuell zu Testzwecken eingegebene Ziele und Adressen löschen.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DAID02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:462px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSORE ILLUMINAZIONE AUTOMATICA/PIOGGIA<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Verifica ingressi,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:721px;top:227px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TERZA LUCE DI STOP<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina,<br>numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:678px;top:646px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE TARGA<br><a href=\"javascript:CtsProc('0','000000000000209','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, <br>numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Sostituzione lampadina,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:609px;top:725px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE RETROMARCIA<br>(LUCE PANNELLO POSTERIORE)<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Sostituzione lampadina,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:514px;top:886px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RETRONEBBIA<br>(LUCE DI POSIZIONE POSTERIORE INTERNA)<br><a href=\"javascript:CtsProc('0','000000000004299','i000')\"></b>Sostituzione,</a><br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Sostituzione lampadina,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:514px;top:823px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE DI POSIZIONE POSTERIORE/ LUCE DI STOP<br>(LUCE DI POSIZIONE POSTERIORE INTERNA)<br><a href=\"javascript:CtsProc('0','000000000004299','i000')\"></b>Sostituzione,</a><br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Sostituzione lampadina,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:198px;top:732px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE DI POSIZIONE POSTERIORE/ LUCE DI STOP<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:198px;top:810px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICATORE DI DIREZIONE POSTERIORE<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:625px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FARI POSTERIORI<br>SENSORE LIVELLAMENTO FARI (Con HID)<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\">Ricerca guasti circuito,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:963px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La figura mostra la versione con guida a sinistra; la versione con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

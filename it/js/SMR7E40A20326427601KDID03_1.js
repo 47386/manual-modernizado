@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:353px;\" coordsize=\"475,353\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:353px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A20326427601KDID03.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:353px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:293px;top:158px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>A<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:128px;top:157px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>B<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40px;top:203px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>X=<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:83px;top:217px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>A+B<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:95px;top:194px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>A<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40px;top:259px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>X: Rilevazione della chiave dinamometrica<br>A: Lunghezza della chiave dinamometrica (mm)<br>B: Lunghezza della chiave per filtri carburante (100 mm)<br>C: Coppia di serraggio effettiva del filtro<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:203px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>x C<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:58px;top:322px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>(17,2 N·m (1,8 kgf·m))<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

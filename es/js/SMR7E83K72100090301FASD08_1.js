@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:385px;\" coordsize=\"475,385\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:385px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E83K72100090301FASD08.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:385px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:269px;top:80px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>INJ<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:68px;top:61px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b></b>Lado del cable de los <br>terminales hembra<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:224px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CONECTOR <br>C (44P) DEL<br> ECM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:110px;top:356px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b></b>Lado del terminal de los terminales hembra<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:140px;top:17px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>CONECTOR 2P DEL INYECTOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:166px;top:171px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>INY2 (RED)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:285px;top:171px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>INY3 (BLU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:146px;top:200px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>INY1 (BRN)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:310px;top:200px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>INY4 (YEL)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

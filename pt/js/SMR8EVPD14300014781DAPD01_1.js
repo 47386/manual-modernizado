@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR8EVPD14300014781DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:490px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOMBA PRINCIPAL<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Purga do Sistema dos Travões,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Desmontagem,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Montagem,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DO SISTEMA DOS TRAVÕES<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Diagrama do Circuito,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Ensaio do Interruptor do Travão de Estacionamento,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Ensaio do Interruptor do Nível do Fluído dos Travões,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:635px;top:283px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TUBO FLEXÍVEL e LINHA DO TRAVÃO<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspecção,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Substituição do Tubo Flexível do Travão,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:670px;top:682px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO TRASEIRO<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"></b>Inspecção e Substituição da Pastilha,<br></a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Inspecção do Disco</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Reparação Geral da Pinça</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:546px;top:815px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO DE ESTACIONAMENTO<br><a href=\"javascript:CtsProc('0','000000000004909','i000')\"></b>Inspecção e afinação,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Substituição do Cabo,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:534px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÕES DIANTEIROS<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"></b>Inspecção e Substituição da Pastilha,<br></a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Inspecção do Disco</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Reparação Geral da Pinça</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:160px;top:877px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDAL DOS TRAVÕES<br></b>Afinação do Pedal dos Travões e do Interruptor da Posição<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> do Pedal dos Travões,<br></a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:60px;top:753px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVO-FREIO<br><a href=\"javascript:CtsProc('0','000000000001204','i000')\"></b>Inspecção,</a><br> no Suplemento do Manual de <br>Oficina, Ref.ª de Peça 62SMR20<br><a href=\"javascript:CtsProc('0','000000000001422','i000')\">Substituição,</a><br> no Suplemento do Manual de <br>Oficina, Ref.ª de Peça 62SMR20<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

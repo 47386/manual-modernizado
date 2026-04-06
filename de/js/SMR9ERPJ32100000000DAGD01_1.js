@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1007px;\" coordsize=\"950,1007\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1007px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1007px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:493px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFERHÖHENVERSTELLMOTOR<br><a href=\"javascript:CtsProc('0','000000000000227','i000')\"></b>Eingangstest,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000228','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:683px;top:590px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEITENBLINKLEUCHTE<br><a href=\"javascript:CtsProc('0','000000000000237','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:581px;top:667px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFERHÖHENVERSTELLUNGSSENSOR<br>(Mit HID)<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\"></b>Fehlersuche im Schaltkreis</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:537px;top:787px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HID-EINHEIT<br><a href=\"javascript:CtsProc('0','000000000000221','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:423px;top:855px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NEBELSCHEINWERFER<br><a href=\"javascript:CtsProc('0','000000000000216','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002105','i000')\">Austausch der Glühlampe</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002104','i000')\">Einstellung,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:697px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFER<br><a href=\"javascript:CtsProc('0','000000000000218','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\">Austausch der Glühlampe</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000219','i000')\">Einstellung,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000217','i000')\">Fehlersuche Gasentladungslampensystem,<br></a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:852px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VORDERE BEGRENZUNGSLEUCHTE<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Austausch der Glühlampe</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:900px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VORDERE BLINKLEUCHTE<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Austausch der Glühlampe</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:9px;top:979px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Abgebildet ist ein LHD-Modell; für das RHD-Modell gilt sinngemäß das Gleiche.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

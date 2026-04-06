@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:655px;\" coordsize=\"950,655\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:655px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A20336300000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:655px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:591px;top:15px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>LADEDRUCKSTEUERUNG<br>MAGNETVENTIL<br><a href=\"javascript:CtsProc('0','000000000001165','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:402px;top:577px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>STELLUNGSSENSOR DER <br>ANSAUGKRÜMMER-<br>LUFTSTEUERUNG (IMRC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:496px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANSAUGKANAL<br><a href=\"javascript:CtsProc('0','000000000001161','i000')\"></b>Ausbau / Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:140px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANSAUGKRÜMMERROHRSTEUERUNG<br>IMRC-VENTIL<br><a href=\"javascript:CtsProc('0','000000000001466','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:465px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANSAUGKRÜMMER-LEITUNGS-<br>STEUERUNGSMAGNETVENTIL (IMRC)<br><a href=\"javascript:CtsProc('0','000000000001160','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:620px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>*: Abgebildet ist ein Modell mit Linkslenkung (LHD).<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:561px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>EINLASSVERSCHLUSSVENTIL (ISV)<br><a href=\"javascript:CtsProc('0','000000000001164','i000')\"></b>Reinigung,</a><br><a href=\"javascript:CtsProc('0','000000000001163','i000')\">Ausbau / Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:327px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SICHERUNGS-/<br>RELAISKASTEN <br>IM MOTORRAUM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:71px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>LUFTFILTER<br><a href=\"javascript:CtsProc('0','000000000001158','i000')\"></b>Ausbau / Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:102px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>LUFTFILTERELEMENT<br><a href=\"javascript:CtsProc('0','000000000001159','i000')\"></b>Inspektion / Austausch,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

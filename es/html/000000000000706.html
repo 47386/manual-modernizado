@@ -1,0 +1,421 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E20A20326934595FAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Comprobación de los inyectores
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: Compruebe los siguientes puntos antes de iniciar la comprobación: velocidad de ralentí, distribución del encendido y ‰ de CO a ralentí.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Trate de poner en marcha el motor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el motor se pone en marcha, vaya a 
+<a href="javascript:parent.Jmp('i020')">Paso 2
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Si el motor no se pone en marcha, vaya a 
+<a href="javascript:parent.Jmp('i070')">Paso 7
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Conecte el HDS al conector de enlace de datos (DLC) (A), situado debajo del salpicadero, en el lado del conductor.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Seleccione ONE INJECTOR en INSPECTION MENU con el HDS.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Desactive cada inyector, uno de cada vez, seleccionando el número del inyector cuya inyección se quiere interrumpir.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Examine el cambio en la velocidad de ralentí.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el descenso en la velocidad de ralentí es prácticamente igual para todos los cilindros, los inyectores de combustible funcionan normalmente.
+</div>
+</li>
+<li>
+<div>
+Si la velocidad o la calidad del ralentí sigue siendo la misma cuando desconecta un inyector en particular, es posible que ese inyector sea defectuoso. 
+<a href="javascript:CtsProc('0','000000000000707','i000')">
+Sustituya el inyector y vuelva a efectuar la comprobación.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Utilice un estetoscopio para comprobar si cada uno de los inyectores emite algún sonido (clic) cuando el motor está a ralentí.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si algún inyector de combustible no emite el sonido característico, 
+<a href="javascript:CtsProc('0','000000000000707','i000')">
+sustitúyalo e intente escucharlo de nuevo.
+</a>
+</div>
+</li>
+<li>
+<div>
+Si continúa sin escuchar ningún sonido, compruebe:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay alguna rotura o una mala conexión en el cable YEL/BLK entre el relé principal 1 de PGM-FI y el conector de la conexión.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si el conector de la conexión está abierto u oxidado.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay alguna rotura o una mala conexión en el cable YEL/BLK entre el conector de la conexión y el inyector.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay algún cortocircuito, rotura o una mala conexión en el cable entre el inyector y el ECM.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Si todo está correcto, la comprobación ha terminado.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Gire la llave de contacto a la posición OFF.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Desconecte el conector del inyector.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001782','1');">
+<img src="../tn/SMR7E20A20326934595FASD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326934595FASD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Mida la resistencia entre los terminales Nº 1 y Nº 2 del inyector (A). La resistencia debe ser de 10-13 Ω.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si la resistencia es correcta, vaya a 
+<a href="javascript:parent.Jmp('i100')">Paso 10
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000707','i000')">
+Si la resistencia no responde a lo especificado, sustituya el inyector.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+<a href="javascript:CtsProc('0','000000000000680','i000')">
+Compruebe la presión de combustible.
+</a>
+</div>
+<ul type="disc">
+<li>
+<div>
+Si la presión del combustible cumple las especificaciones, compruebe:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay alguna rotura o una mala conexión en el cable YEL/BLK entre el relé principal 1 de PGM-FI y el conector de la conexión.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si el conector de la conexión está abierto u oxidado.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay alguna rotura o una mala conexión en el cable YEL/BLK entre el conector de la conexión y el inyector.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Si hay algún cortocircuito, rotura o una mala conexión en el cable entre el inyector y el ECM.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Si la presión del combustible no cumple las especificaciones, 
+<a href="javascript:CtsProc('0','000000000000680','i000')">
+vuelva a comprobarla.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001783','1');">
+<img src="../tn/SMR7E20A20326934595FASD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326934595FASD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

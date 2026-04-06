@@ -1,0 +1,1058 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EP3K73200000000BBST20
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Cómo localizar las averías de los indicadores
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+El módulo de control de los indicadores (TAC) dispone de la función de autodiagnóstico indicada, así como de una función de restablecimiento personalizada.
+</div>
+<ul type="disc">
+<li>
+<div>
+Comprobación del circuito de activación del zumbador.
+</div>
+</li>
+<li>
+<div>
+Comprobación del circuito de activación de las luces testigo.
+</div>
+</li>
+<li>
+<div>
+Comprobación de la entrada del interruptor.
+</div>
+</li>
+<li>
+<div>
+Comprobación de los segmentos de LCD.
+</div>
+</li>
+<li>
+<div>
+Comprobación del circuito de activación de los indicadores (Tacómetro, aforador de combustible, indicador de temperatura del refrigerante).
+</div>
+</li>
+<li>
+<div>
+Comprobación de las líneas de comunicaciones (línea de comunicaciones (B-CAN) de la red de zona de la carrocería-controlador y línea de comunicaciones (F-CAN) de la red de zona bastidor-controlador entre los indicadores).
+</div>
+</li>
+<li>
+<div>
+Compruebe la línea UART entre el módulo de control de los indicadores (TAC) y el módulo de control de los indicadores (VELOCÍM).
+</div>
+</li>
+</ul>
+<div>
+NOTA: El control de las luces testigo se controla, asimismo, a través de la línea de comunicaciones.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Entrada a la función de autodiagnóstico
+</b>
+</div>
+<div>
+Antes de entrar en la función de autodiagnóstico, compruebe el fusible Nº 10 (7,5 A) de la caja de fusibles/relés situada debajo del salpicadero y el fusible Nº 16 (15 A) de la caja de fusibles/relés situada debajo del capó.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Pulse y mantenga pulsado el botón de SELECCIÓN/RESTABLECIMIENTO.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Encienda los faros.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+A los 5 segundos, apague los faros, a continuación, vuelva a encenderlos y apáguelos de nuevo.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+A los 5 segundos, suelte el botón de SELECCIÓN/RESTABLECIMIENTO y pulse y suelte el botón tres veces repetidamente.
+</div>
+</li>
+</ol>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Mientras se esté en el modo de autodiagnóstico, el regulador de la intensidad de luz de las luces del salpicadero funciona normalmente.
+</div>
+</li>
+<li>
+<div>
+Mientras se esté en el modo de autodiagnóstico, el botón de SEL/RESET se utiliza para iniciar la comprobación del circuito de activación del zumbador y la del circuito de activación de los indicadores.
+</div>
+</li>
+<li>
+<div>
+ Si la velocidad del vehículo supera los 2 km/h o si se gira la llave de contacto a la posición LOCK (0), se termina el modo de autodiagnóstico.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007422','1');">
+<img src="../tn/SMR9EP3K73200000000BBSD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<div>
+El módulo de control de los indicadores (TAC) dispone de la función de autodiagnóstico indicada, así como de una función de restablecimiento personalizada.
+</div>
+<ul type="disc">
+<li>
+<div>
+Comprobación del circuito de activación del zumbador.
+</div>
+</li>
+<li>
+<div>
+Comprobación del circuito de activación de las luces testigo.
+</div>
+</li>
+<li>
+<div>
+Comprobación de la entrada del interruptor.
+</div>
+</li>
+<li>
+<div>
+Comprobación de los segmentos de LCD.
+</div>
+</li>
+<li>
+<div>
+Comprobación del circuito de activación de los indicadores (Tacómetro, aforador de combustible, indicador de temperatura del refrigerante).
+</div>
+</li>
+<li>
+<div>
+Comprobación de las líneas de comunicaciones (línea de comunicaciones (B-CAN) de la red de zona de la carrocería-controlador y línea de comunicaciones (F-CAN) de la red de zona bastidor-controlador entre los indicadores).
+</div>
+</li>
+<li>
+<div>
+Compruebe la línea UART entre el módulo de control de los indicadores (TAC) y el módulo de control de los indicadores (VELOCÍM).
+</div>
+</li>
+</ul>
+<div>
+NOTA: El control de las luces testigo se controla, asimismo, a través de la línea de comunicaciones.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Entrada a la función de autodiagnóstico
+</b>
+</div>
+<div>
+Antes de entrar en la función de autodiagnóstico, compruebe el fusible Nº 10 (7,5 A) de la caja de fusibles/relés situada debajo del salpicadero y el fusible Nº 16 (15 A) de la caja de fusibles/relés situada debajo del capó.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Pulse y mantenga pulsado el botón de SELECCIÓN/RESTABLECIMIENTO.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Encienda los faros.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+A los 5 segundos, apague los faros, a continuación, vuelva a encenderlos y apáguelos de nuevo.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+A los 5 segundos, suelte el botón de SELECCIÓN/RESTABLECIMIENTO y pulse y suelte el botón tres veces repetidamente.
+</div>
+</li>
+</ol>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Mientras se esté en el modo de autodiagnóstico, el regulador de la intensidad de luz de las luces del salpicadero funciona normalmente.
+</div>
+</li>
+<li>
+<div>
+Mientras se esté en el modo de autodiagnóstico, el botón de SEL/RESET se utiliza para iniciar la comprobación del circuito de activación del zumbador y la del circuito de activación de los indicadores.
+</div>
+</li>
+<li>
+<div>
+ Si la velocidad del vehículo supera los 2 km/h o si se gira la llave de contacto a la posición LOCK (0), se termina el modo de autodiagnóstico.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EP3K73200000000BBSD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación del circuito de activación de las luces testigo
+</b>
+</div>
+<div>
+Cuando se entra en el modo de autodiagnóstico, comienzan a destellar las luces testigo siguientes:
+</div>
+<div>
+Luz testigo del ABS, luz testigo del sistema de frenos, luz testigo del sistema de carga, luz testigo del control de la velocidad de crucero, luz testigo de la velocidad de crucero, luz testigo de la EPS, luz testigo de luz de carretera, luz testigo del inmovilizador, luz testigo de luces encendidas, luz testigo de nivel de combustible bajo, luz testigo de fallo de funcionamiento (MIL), luz testigo de presión del aceite, luces testigo de los cinturones de seguridad, luz testigo de seguridad, luz testigo del SRS, luz testigo de VSA, luz testigo de activación de VSA, luz testigo de luces antiniebla delanteras, luz testigo maestra de luces de emergencia, luz testigo REV, luz testigo del airbag del acompañante, luz testigo de alarma de velocidad, y luz testigo i-VTEC.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación de la entrada del interruptor
+</b>
+</div>
+<div>
+Una vez que el zumbador ha emitido su sonido, de manera intermitente, en la fase inicial de la función de autodiagnóstico, un zumbador comienza a funcionar de manera continua cada vez que se desconecta o se conecta alguna de las entradas de los interruptores siguientes. Cuando ha terminado el zumbador de alta frecuencia, comenzará el de baja frecuencia. Después de sonar cinco veces, el zumbador se detendrá. Además el zumbador sonará secuencialmente cuando exista un avisador acústico:
+</div>
+<div>
+Interruptor PRINCIPAL, ESTABLECIMIENTO, REANUDACIÓN, CANCELACIÓN de velocidad de crucero, interruptor SEL/RESET, interruptor INFO, km/h, botón de cambio a mph, interruptor del freno del estacionamiento e interruptor de DESCONEXIÓN DE VSA
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación del circuito de activación del zumbador:
+</b>
+</div>
+<div>
+Al entrar en el modo de autodiagnóstico, el zumbador sincronizará su aviso acústico con el parpadeo de los indicadores en orden de frecuencias altas a bajas uno a uno. Cuando ha terminado el zumbador de alta frecuencia, comenzará el de baja frecuencia. Después de sonar cinco veces, el zumbador se detendrá. Además el zumbador sonará secuencialmente cuando exista un avisador acústico.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación de los segmentos de LCD
+</b>
+</div>
+<div>
+Cuando se entra en el modo de autodiagnóstico, la pantalla LCD indica ‘‘· · ·''. El objeto indicado parpadea cinco veces.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007426','1');">
+<img src="../tn/SMR9EP3K73200000000BBSD02.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación de los segmentos de LCD
+</b>
+</div>
+<div>
+Cuando se entra en el modo de autodiagnóstico, la pantalla LCD indica ‘‘· · ·''. El objeto indicado parpadea cinco veces.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EP3K73200000000BBSD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Compruebe el circuito de activación de los indicadores:
+</b>
+</div>
+<div>
+Cuando se entra en el modo de autodiagnóstico, la aguja del tacómetro se desplaza de la posición de mínimo a la posición de máximo, retornando a continuación a la posición de mínimo.
+</div>
+<div>
+NOTA: Una vez que el zumbador deja de sonar y las agujas de los indicadores retornan a su posición de mínimo, al pulsar el botón de SEL/RESET se inicia de nuevo la Comprobación del circuito de activación del zumbador (un solo zumbido) y la del circuito de activación de los indicadores.
+</div>
+<div>
+La comprobación no puede empezar hasta que las agujas de los indicadores hayan retornado a la posición de mínimo.
+</div>
+<div>
+Si no se produce el retorno de la aguja o no suena el zumbador, 
+<a href="javascript:CtsProc('0','000000000000173','i000')">
+sustituya el módulo de control de los indicadores (tac).
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007427','1');">
+<img src="../tn/SMR9EP3K73200000000BBSD03.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Compruebe el circuito de activación de los indicadores:
+</b>
+</div>
+<div>
+Cuando se entra en el modo de autodiagnóstico, la aguja del tacómetro se desplaza de la posición de mínimo a la posición de máximo, retornando a continuación a la posición de mínimo.
+</div>
+<div>
+NOTA: Una vez que el zumbador deja de sonar y las agujas de los indicadores retornan a su posición de mínimo, al pulsar el botón de SEL/RESET se inicia de nuevo la Comprobación del circuito de activación del zumbador (un solo zumbido) y la del circuito de activación de los indicadores.
+</div>
+<div>
+La comprobación no puede empezar hasta que las agujas de los indicadores hayan retornado a la posición de mínimo.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EP3K73200000000BBSD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+Si no se produce el retorno de la aguja o no suena el zumbador, 
+<a href="javascript:CtsProc('2','000000000000173','i000')">
+sustituya el módulo de control de los indicadores (tac).
+</a>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación de la línea de comunicaciones
+</b>
+</div>
+<div>
+Mientras se permanece en el modo de autodiagnóstico, la comprobación de la línea de comunicaciones se inicia después de la comprobación de los segmentos LCD.
+</div>
+<div>
+Si se encienden todos los segmentos, la línea de comunicaciones está correcta. Si no es así, aparecerá la palabra ‘‘ERROR&quot; en la pantalla del cuentakilómetros seguida por número(s).
+</div>
+<ul type="disc">
+<li>
+<div>
+ERROR 1: Error en la línea de comunicaciones F-CAN
+</div>
+</li>
+<li>
+<div>
+ERROR 2: Error en la línea de comunicaciones B-CAN
+</div>
+</li>
+<li>
+<div>
+ERROR 3: Error en las líneas de comunicaciones UART
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Lista de códigos de error
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de error
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Tipos de errores en la(s) línea(s) de comunicaciones
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN y B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN y UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con B-CAN y UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2.3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN, B-CAN y UART
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 1&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac)  y la red de zona del controlador rápido (F-CAN). Compruebe la existencia de DTCs en el ECM y proceda a la localización de averías si se detecta alguno. Si no se encuentra ningún DTC, vaya a la localización de averías indicada.
+</div>
+</li>
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 2&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac) y la red de zona de la carrocería-controlador (B-CAN). Vaya a la localización de averías indicada (B1155 a B1160).
+</div>
+</li>
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 3&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac)  y el módulo de control de los indicadores (velocím). Vaya a la comprobación de las entradas del módulo de control de los indicadores (tac) y compruebe el terminal A20. Si el mazo de cables está correcto, sustituya el módulo de control de los indicadores (velocím) por otro que se sepa que es correcto y repita la comprobación.
+</div>
+</li>
+</ul>
+<div>
+Si se encuentra algún error en las líneas de comunicaciones F-CAN o B-CAN, vaya a la comprobación de DTCs utilizando el HDS.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+Ejemplo de indicación
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007428','1');">
+<img src="../tn/SMR9EP3K73200000000BBSD04.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Comprobación de la línea de comunicaciones
+</b>
+</div>
+<div>
+Mientras se permanece en el modo de autodiagnóstico, la comprobación de la línea de comunicaciones se inicia después de la comprobación de los segmentos LCD.
+</div>
+<div>
+Si se encienden todos los segmentos, la línea de comunicaciones está correcta. Si no es así, aparecerá la palabra ‘‘ERROR&quot; en la pantalla del cuentakilómetros seguida por número(s).
+</div>
+<ul type="disc">
+<li>
+<div>
+ERROR 1: Error en la línea de comunicaciones F-CAN
+</div>
+</li>
+<li>
+<div>
+ERROR 2: Error en la línea de comunicaciones B-CAN
+</div>
+</li>
+<li>
+<div>
+ERROR 3: Error en las líneas de comunicaciones UART
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Lista de códigos de error
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de error
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Tipos de errores en la(s) línea(s) de comunicaciones
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN y B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN y UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con B-CAN y UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2.3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicación con F-CAN, B-CAN y UART
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<div class="figure_title">
+<b>
+Ejemplo de indicación
+</b>
+</div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EP3K73200000000BBSD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<ul type="disc">
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 1&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac)  y la red de zona del controlador rápido (F-CAN). Compruebe la existencia de DTCs en el ECM y proceda a la localización de averías si se detecta alguno. Si no se encuentra ningún DTC, vaya a la localización de averías indicada.
+</div>
+</li>
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 2&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac) y la red de zona de la carrocería-controlador (B-CAN). Vaya a la localización de averías indicada (B1155 a B1160).
+</div>
+</li>
+<li>
+<div>
+Si se produce la indicación de la palabra ‘‘ERROR 3&quot;, ello es indicativo de que existe un fallo de funcionamiento en la línea de comunicaciones, entre el módulo de control de los indicadores (tac)  y el módulo de control de los indicadores (velocím). Vaya a la comprobación de las entradas del módulo de control de los indicadores (tac) y compruebe el terminal A20. Si el mazo de cables está correcto, sustituya el módulo de control de los indicadores (velocím) por otro que se sepa que es correcto y repita la comprobación.
+</div>
+</li>
+</ul>
+<div>
+Si se encuentra algún error en las líneas de comunicaciones F-CAN o B-CAN, vaya a la comprobación de DTCs utilizando el HDS.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Terminación de la función de autodiagnóstico
+</b>
+</div>
+<div>
+Gire la llave de contacto a la posición LOCK (0).
+</div>
+<div>
+NOTA: Si la velocidad del vehículo es superior a 2 km/h, se termina la función de autodiagnóstico.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

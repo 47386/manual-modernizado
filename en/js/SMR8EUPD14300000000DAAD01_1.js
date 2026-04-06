@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1119px;\" coordsize=\"950,1119\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1119px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR8EUPD14300000000DAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1119px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:561px;top:198px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE SYSTEM INDICATOR<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Circuit Diagram,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Parking Brake Switch Test,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Brake Fluid Level Switch Test,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:778px;top:560px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR BRAKE<br></b>Pad Inspection and<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"> Replacement,</a><br> in the Shop Manual,<br> P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Disc Inspection,<br></a><br> in the Shop Manual,<br> P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Caliper Overhaul,<br></a><br> in the Shop Manual,<br> P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:634px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PARKING BRAKE<br></b>Inspection and<br><a href=\"javascript:CtsProc('0','000000000004893','i000')\"> Adjustment,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Cable Replacement,<br></a><br> in the Shop Manual,<br> P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:351px;top:846px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT BRAKE<br></b>Pad Inspection and Replacement:<br><a href=\"javascript:CtsProc('0','000000000001849','i000')\">K20Z4 engine model,</a><br>  in the Shop Manual Supplement, P/N 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\">Except K20Z4 engine model,</a><br>  in the Shop Manual, P/N 62SMR00B<br>Disc Inspection:<br><a href=\"javascript:CtsProc('0','000000000001848','i000')\">K20Z4 engine model,</a><br>  in the Shop Manual Supplement, P/N 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Except K20Z4 engine model,</a><br>  in the Shop Manual, P/N 62SMR00B<br>Caliper Overhaul:<br><a href=\"javascript:CtsProc('0','000000000001847','i000')\">K20Z4 engine model,</a><br>  in the Shop Manual Supplement, P/N 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Except K20Z4 engine model,</a><br>  in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:506px;top:755px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE PEDAL<br></b>Brake Pedal and Brake Pedal Position<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> Switch Adjustment,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:765px;top:322px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE HOSE and LINE<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspection,</a><br> in the Shop Manual,<br> P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Brake Hose Replacement,<br></a><br> in the Shop Manual,<br> P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:1088px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>The illustration shows LHD type. RHD type is similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:510px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE BOOSTER<br></b>Inspection:<br><a href=\"javascript:CtsProc('0','000000000001846','i000')\">K20Z4 engine model,</a><br>  in the Shop Manual Supplement, P/N 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002056','i000')\">Except K20Z4 engine model,</a><br>  in the Shop Manual, P/N 62SMR00B<br>Replacement:<br><a href=\"javascript:CtsProc('0','000000000002031','i000')\">K20Z4 engine model,</a><br>  in the Shop Manual Supplement, P/N 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002118','i000')\">Except K20Z4 engine model,</a><br>  in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:74px;top:710px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MASTER CYLINDER<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Brake System Bleeding,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Disassembly,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Reassembly,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

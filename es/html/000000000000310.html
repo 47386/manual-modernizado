@@ -1,0 +1,577 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46643436101FEST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Comprobación del mando a distancia de la entrada sin llave
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div class="tool_list_title">
+<b>
+Herramientas especiales necesarias
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012211')">
+<br>
+Comprobador del sistema de entrada sin llaves
+<br>
+ 07MAJ-SP00400
+</a>
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Si las puertas se abren o se cierran con el transmisor pero el LED del transmisor no se enciende, el LED es defectuoso; cambie el transmisor.
+</div>
+</li>
+<li>
+<div>
+Si no se abre ninguna puerta, no es posible bloquear las puertas con el transmisor.
+</div>
+</li>
+<li>
+<div>
+Si desbloquea las puertas con el transmisor pero no se abre ninguna en un plazo de 30 segundos, las puertas se vuelven a bloquear automáticamente.
+</div>
+</li>
+<li>
+<div>
+Las puertas no se cierran ni se abren con el transmisor si la llave de contacto está en el interruptor de encendido.
+</div>
+</li>
+</ul>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Con HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Pulse el botón de cierre o apertura cinco o seis veces para reiniciar el transmisor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si las cerraduras se bloquean, el transmisor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Si no funciona alguno de los botones del transmisor, proceda a su sustitución y registre un transmisor nuevo.
+</a>
+</div>
+</li>
+<li>
+<div>
+Si las cerraduras no se bloquean, vaya a 
+<a href="javascript:parent.Jmp('i020')">Paso 2
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Conecte el HDS al conector de enlace de datos.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Seleccione ENTRADA SIN LLAVES en el menú SISTEMA ELÉCTRICO DE LA CARROCERÍA y acceda a COMPROBACIÓN DE ENTRADA SIN LLAVES.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Pulese el botón de cierre o apertura y compruebe el transmisor en la pantalla del HDS.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si se indica CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES RECIBIDO, el transmisor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si se indica DISTINTO CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES RECIBIDO, el transmisor es diferente; si es necesario, 
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+vuelva a programar y registrar el transmisor.
+</a>
+</div>
+</li>
+<li>
+<div>
+Si se indica CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES NO RECIBIDO, vaya a 
+<a href="javascript:parent.Jmp('i050')">Paso 5
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Abra el transmisor y compruebe si ha sufrido algún daño por la entrada de agua.
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Si encuentra algún daño debido al agua, cambie el transmisor y registre un transmisor nuevo.
+</a>
+</div>
+</li>
+<li>
+<div>
+Si no existe ningún daño debido a la entrada de agua, vaya a 
+<a href="javascript:parent.Jmp('i060')">Paso 6
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000833','1');">
+<img src="../tn/SMR7E00J46643436101FESD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FESD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Cambie la pila (A) del transmisor por otra nueva, pulse el botón de cierre o apertura y compruebe el transmisor en la pantalla del HDS.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si se indica CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES RECIBIDO, el transmisor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si se produce la indicación KEYLESS ENTRY TRANSMITTER CODE IS NOT RECEIVED, vaya a 
+<a href="javascript:parent.Jmp('i070')">Paso 7
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Cambie el transmisor por otro que sepa que funciona y repita la comprobación con el HDS.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si se indica DISTINTO) CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES RECIBIDO, el transmisor es correcto.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Si se indica CÓDIGO DE TRANSMISOR DE ENTRADA SIN LLAVES NO RECIBIDO, la unidad de control de la entrada sin llaves-inmovilizador es defectuosa; proceda a su sustitución y efectúe el registro del sistema del inmovilizador.
+</a>
+</div>
+</li>
+</ul>
+<div>
+NOTA: Dado que el transmisor está combinado con el transpondedor del inmovilizador, al registrar el transpondedor con el HDS se registra también automáticamente el transmisor.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000834','1');">
+<img src="../tn/SMR7E00J46643436101FESD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FESD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Sin HDS
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Sitúe el transmisor (A) detrás del comprobador de la entrada sin llaves (B).
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Pulse el botón de cierre de puertas.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si se enciende la luz testigo (C), el transmisor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si la luz testigo no se enciende, compruebe si se da alguna de estas circunstancias:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La batería no funciona o está baja, vaya a 
+<a href="javascript:parent.Jmp('i030')">Paso 3
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Transmisor defectuoso.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000835','1');">
+<img src="../tn/SMR7E00J46643436101FESD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FESD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Abra el transmisor y compruebe si ha sufrido algún daño por la entrada de agua.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si encuentra algún daño debido a la entrada de agua, cambie el transmisor.
+</div>
+</li>
+<li>
+<div>
+Si no existe ningún daño debido a la entrada de agua, vaya a 
+<a href="javascript:parent.Jmp('i040')">Paso 4
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000836','1');">
+<img src="../tn/SMR7E00J46643436101FESD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FESD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Cambie la pila (A) del transmisor por otra nueva y trate de abrir y cerrar las puertas con el transmisor pulsando cinco o seis veces el botón de cierre o de apertura.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si las puertas se abren y se cierran, el transmisor funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si las puertas no se abren ni se cierran, habrá que utilizar el HDS para nuevos diagnósticos.
+</div>
+</li>
+</ul>
+<div>
+NOTA: Dado que el transmisor está combinado con el transpondedor del inmovilizador, al registrar el transpondedor con el HDS se registra también automáticamente el transmisor.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000837','1');">
+<img src="../tn/SMR7E00J46643436101FESD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FESD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

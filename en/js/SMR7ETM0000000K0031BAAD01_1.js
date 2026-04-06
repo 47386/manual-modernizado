@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:719px;\" coordsize=\"950,719\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:719px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ETM0000000K0031BAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:719px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:17px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>NOTE: The illustration shows the LHD model, the RHD model is similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:496px;top:47px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SRS WARNING<br>INFORMATION<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:252px;top:66px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>PASSENGER AIRBAG<br>CHILD SEAT CAUTION<br>(Except KN model)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:124px;top:136px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>FRONT PASSENGER<br>AIRBAG MODULE DANGER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:300px;top:682px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MONITOR NOTICE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55px;top:630px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>STEERING COLUMN NOTICE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:717px;top:582px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>FRONT SEAT BELT<br>TENSIONER CAUTION<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:779px;top:390px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SIDE AIRBAG<br>MODULE DANGER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:667px;top:672px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>FRONT SEAT BELT<br>TENSIONER CAUTION<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:529px;\" coordsize=\"475,529\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:529px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ET3K796000U0100FAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:529px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:175px;top:198px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>CANL<br>(RED)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:41px;top:187px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>CANH (WHT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:140px;top:307px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>CANH (WHT)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:143px;top:17px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>ECM CONNECTOR A (44P)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:118px;top:34px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b></b>Terminal side of female terminals<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:45px;top:465px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>CLUTCH ACTUATOR SUBHARNESS 10P CONNECTOR<br>(Engine compartment wire harness side)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:124px;top:497px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b></b>Terminal side of male terminals<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:73px;top:391px;font-weight:normal;font-size:9.21pt;\">");
+write("<nobr><b>CANL (RED)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

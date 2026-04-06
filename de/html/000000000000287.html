@@ -1,0 +1,370 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46636200000BBGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Fehlersuche in der Wegfahrsperre
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Allgemeine Prüfung vor der Fehlersuche
+</b>
+</div>
+<div>
+Bevor eine Fehlersuche im Wegfahrsperrensystem durchgeführt wird, die folgenden allgemeinen Punkte überprüfen und gegebenenfalls entsprechende Probleme beheben.
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Batterie ist teilweise entladen: Die Batterie vollständig laden und eine Fehlersuche im Wegfahrsperrensystem durchführen.
+</div>
+</li>
+<li>
+<div>
+Beim Zündschlüssel handelt es sich nicht um ein HONDA-Originalteil. Den von Honda zugelassenen Schlüsselrohling verwenden, den Schlüssel registrieren und eine Fehlersuche im Wegfahrsperrensystem durchführen.
+</div>
+</li>
+<li>
+<div>
+Der Schlüssel befindet sich an einem Schlüsselanhänger, in einem Schlüsseletui, oder es sind mehrere Schlüssel zusammengebündelt: Den Schlüssel entfernen und eine Fehlersuche im Wegfahrsperrensystem nur mit dem Schlüssel durchführen.
+</div>
+</li>
+<li>
+<div>
+Es wurde elektrisches Zubehör nachgerüstet. Das Zubehör ausbauen und eine Fehlersuche im Wegfahrsperrensystem durchführen.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Fehlersuche nach Symptomen mit der Wegfahrsperrenanzeigeleuchte-Sequenz
+</b>
+</div>
+<div>
+Der Zustand der Wegfahrsperre lässt sich mit der Wegfahrsperrenanzeigeleuchte-Sequenz prüfen. Die vier möglichen Muster werden im Folgenden beschrieben:
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Normaler Betrieb
+</b>
+</div>
+<br>
+<div>
+Nach Identifizierung des Wegfahrsperrencodes leuchtet die Wegfahrsperrenanzeige 2 Sekunden auf. Die Anzeige erlischt nach Einschalten der Zündung (II).
+</div>
+<div>
+Die Wegfahrsperrenanzeige leuchtet beim Ausschalten der Zündung (0) nicht auf.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Wegfahrsperrencode nicht identifiziert
+</b>
+</div>
+<br>
+<div>
+Kann der Wegfahrsperrencode nicht identifiziert werden, leuchtet die Wegfahrsperrenanzeige 2 Sekunden auf und blinkt nach Einschalten der Zündung (II).
+</div>
+<div>
+Die Wegfahrsperrenanzeige blinkt zehnmal und erlischt beim Ausschalten der Zündung (0).
+</div>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Wegfahrsperrenanzeige leuchtet nicht auf
+</b>
+</div>
+<br>
+<div>
+Leuchtet die Wegfahrsperrenanzeige nach Einschalten der Zündung (II) nicht auf, weist dies auf eine Unterbrechung oder einen Kurzschluss in den F-CAN-Leitungen zwischen ECM und Instrumentensteuermodul hin. Die Störungsanzeigeleuchte (MIL) beobachten. Wenn die MIL nicht erlischt, eine 
+<a href="javascript:CtsProc('0','000000000000775','i000')">
+Fehlersuche im PGM-FI-System
+</a>
+ durchführen.
+</div>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Wegfahrsperrenanzeige erlischt nicht
+</b>
+</div>
+<br>
+<div>
+Erlischt die Wegfahrsperrenanzeige nach Einschalten der Zündung (II) nicht, 
+<a href="javascript:CtsProc('0','000000000004799','i000')">
+das Selbstdiagnoseverfahren für das Instrumentensteuermodul (Drehzahlmesser) durchführen.
+</a>
+ Wenn der Anzeigesteuerkreis in Ordnung ist, mit dem HDS die SYSTEMPRÜFUNG durchführen. Bevor eine Fehlersuche im Wegfahrsperrensystem durchgeführt wird, die folgenden allgemeinen Punkte prüfen und eventuelle Probleme beheben.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Fehlersuche nach Symptomen anhand fehlerhafter Schaltkreisfunktionen
+</b>
+</div>
+<div>
+Bei einer Störung im Wegfahrsperren-Schaltkreis die fehlerhafte Funktion mit der folgenden Tabelle den Leitungen zuordnen, die geprüft werden müssen:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000794','1');">
+<img src="../tn/SMR7E00J46636200000BBGD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Fehlersuche nach Symptomen anhand fehlerhafter Schaltkreisfunktionen
+</b>
+</div>
+<div>
+Bei einer Störung im Wegfahrsperren-Schaltkreis die fehlerhafte Funktion mit der folgenden Tabelle den Leitungen zuordnen, die geprüft werden müssen:
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46636200000BBGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Systemprüfung
+</b>
+</div>
+<div>
+HINWEIS: Mit dem HDS kann eine Systemprüfung durchgeführt werden, um den Status der Registrierung des Wegfahrsperrenschlüssels, die ECM-Registrierung und die Kommunikation zwischen Zündschlüssel und Steuergerät von Wegfahrsperre und schlüssellosem Türöffnungssystem zu prüfen.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Das HDS an den Datenübertragungsstecker anschließen und die Zündung einschalten (II).
+</div>
+<div>
+HINWEIS: Wenn das HDS nicht mit dem Fahrzeug kommuniziert, eine 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Fehlersuche im DLC-Schaltkreis durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Im ‘‘SYSTEM SELECTION MENU&quot; (Systemauswahlmenü) die Option ‘‘IMMOBILIZER&quot; (Wegfahrsperre) auswählen und ‘‘IMMOBILIZER SETUP&quot; (Wegfahrsperreneinstellung) aufrufen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Mit dem HDS eine Systemprüfung (SYSTEM CHECK) durchführen. Wird eine Systemprüfungsnummer angegeben, die Fehlersuche für das gemeldete Teil durchführen.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Eine Fehlersuche nach Symptomen durchführen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

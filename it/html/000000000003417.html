@@ -1,0 +1,2199 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQDE34137300000BAIT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Indice degli interventi della protezione automatica in caso di guasto dell'impianto del cambio i-SHIFT
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="15%">
+<col width="45%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Codice di guasto SAE (DTC)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Criteri del guasto
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Intervento della protezione automatica in caso di guasto
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0504
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alle informazioni del freno nel segnale della linea F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il segnale freno ricevuto non varia per 3 cicli di guida o più.
+</div>
+<div>
+Il ciclo di guida del cambio i-SHIFT viene determinato da queste condizioni (quando tutte queste condizioni vengono soddisfatte, viene determinato 1 ciclo di guida):
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Due minuti dopo aver portato il commutatore di accensione su ON.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Il cambio passa alla 3ª marcia o superiore.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La velocità raggiunta è pari o superiore a 16 km/h.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La guida in modalità manuale è impossibile.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0512
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale dell'interruttore del motorino di avviamento (STS).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0562
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla tensione in ingresso.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale VBATT (+B) quando la tensione raggiunge un valore pari o inferiore a 9 V.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende (quando la tensione diminuisce si manifestano sintomi quali il ritardo di funzionamento del motorino).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0563
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla tensione in ingresso.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale VBATT (+B) quando la tensione raggiunge un valore pari o superiore a 28 V.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0603
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla funzione di controllo del circuito interno del modulo TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Esegue il controllo ROMSUM della memoria di mantenimento sotto tensione (KAM) e, se il valore ROMSUM non corrisponde, rileva un guasto.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Il controllo è terminato e le condizioni di rilevamento di un guasto (posizione cambio, posizione frizione) vengono conservate.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0605
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla funzione di controllo del circuito interno del modulo TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il valore ROMSUM nella parte riscrivibile della memoria ROM e, se il valore non corrisponde, rileva un guasto.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Il controllo è terminato e le condizioni di rilevamento di un guasto (posizione cambio, posizione frizione) vengono conservate.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0666
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale sensore temperatura interna del modulo TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore di ingresso è più alto o più basso del valore specificato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0702
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore di ingresso tensione VCC.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore di ingresso è più alto o più basso del valore specificato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Il controllo è terminato e le condizioni di rilevamento di un guasto (posizione cambio, posizione frizione) vengono conservate.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0780
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla posizione del cambio durante il cambio marcia.
+</div>
+<ul type="disc">
+<li>
+<div>
+La posizione di sincronizzazione non è stata raggiunta e il componente di collegamento non ha raggiunto l'ingranaggio per almeno tre volte.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0810
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore del sensore di posizione dell'attuatore della frizione.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore del sensore di posizione non varia e l'attuatore della frizione è stato azionato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Quando la vettura supera una determinata velocità (che varia con la marcia innestata), in caso di guasto, la posizione dell'attuatore della frizione è trattenuta e il controllo viene eseguito.
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a un certo valore, si passa alla modalità folle.
+</div>
+</li>
+<li>
+<div>
+Il motore viene riavviato, ma il tempo trascorso dall'azionamento dell'interruttore del motorino di avviamento all'avvio del motore è più lungo del normale (cira 1 secondo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0882
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore della tensione di ingresso e al valore del segnale F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore della tensione di ingresso nel modulo TCM è circa 0 V e il segnale IG1 (ricevuto dal valore F-CAN) del modulo ECM è attivato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT sia accende (se il segnale F-CAN viene inviato in modo continuo dal modulo ECM, il controllo continua finché il segnale IG1 è disattivato).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0883
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore della tensione di ingresso e al valore del segnale F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore della tensione di ingresso nel modulo TCM è pari o inferiore alla tensione di batteria e il segnale IG1 (ricevuto dal valore F-CAN) del modulo ECM è attivato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0904
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale del sensore.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale PULSES SELECT.
+</div>
+</li>
+<li>
+<div>
+La linea del segnale PULSES SELECT è interrotta.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale PULSES SELECT è circa 0 V (cortocircuito verso massa).
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale PULSES SELECT è quasi uguale alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0909
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base all'ampiezza della folle.
+</div>
+<ul type="disc">
+<li>
+<div>
+L'ampiezza della folle dell'attuatore di cambio marcia è pari a 15,5 mm o superiore, oppure è pari a 25,5 mm o inferiore.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0910
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale del sensore.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il segnale di uscita del sensore non varia, anche se il valore di uscita nella posizione dell'attuatore della leva selettrice non rileva guasti elettrici all'interno del sensore.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0914
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale del sensore.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale PULSES SHIFT.
+</div>
+</li>
+<li>
+<div>
+La linea del segnale PULSES SHIFT è interrotta.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale PULSES SHIFT è cira 0 V (cortocircuito verso massa).
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale PULSES SHIFT è quasi pari alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato. Innestare o disinnestare la frizione in base alla velocità della vettura.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0919
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al tempo trascorso per l'apprendimento della posizione di folle.
+</div>
+<ul type="disc">
+<li>
+<div>
+Non è possibile confermare la posizione di folle.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0920
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale del sensore.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il segnale di uscita del sensore non varia, anche se il valore di uscita nella posizione dell'attuatore della leva del cambio non rileva guasti elettrici all'interno del sensore.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0942
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla marcia inserita.
+</div>
+<ul type="disc">
+<li>
+<div>
+La posizione di sincronizzazione non può essere raggiunta, viene eseguita l'azione cambio/selezione marcia durante la fermata.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P16C0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La CPU esegue l'autodiagnosi, mentre il commutatore di accensione è su ON, e rileva se l'errore di funzionamento è stato registrato. 
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Completamento controllo senza alterazione delle informazioni.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla potenza di ingresso (valore calcolato) dell'attuatore del cambio.
+</div>
+<ul type="disc">
+<li>
+<div>
+Per un determinato periodo di tempo, si è verificata una potenza di ingresso da 2400 W a 3000 W o da 1600 W a 2000 W.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore del sensore di posizione dell'attuatore della frizione.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il valore del sensore di posizione dell'attuatore della frizione è superiore al valore specificato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Quando la vettura supera una determinata velocità (che varia con la marcia innestata), in caso di guasto, la posizione dell'attuatore della frizione è trattenuta e il controllo viene eseguito.
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a un certo valore, si passa alla modalità folle.
+</div>
+</li>
+<li>
+<div>
+Il motore viene riavviato, ma il tempo trascorso dall'azionamento dell'interruttore del motorino di avviamento all'avvio del motore è più lungo del normale (cira 1 secondo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore della temperatura della frizione.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la temperatura della frizione è pari o superiore a 300°C.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Avanzamento interrotto.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi - l'apprendimento della posizione 3 del contatto della frizione non è stato completato o è ancora in esecuzione.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale VSPOUT.
+</div>
+<ul type="disc">
+<li>
+<div>
+La tensione della linea del segnale VSPOUT è 0 V o quasi uguale alla tensione di batteria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale ECU BRAKE AND.
+</div>
+<ul type="disc">
+<li>
+<div>
+La tensione della linea del segnale ECU BRAKE AND è 0 V o quasi uguale alla tensione di batteria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore di ingresso di ritorno del segnale di abilitazione del motorino di avviamento.
+</div>
+<ul type="disc">
+<li>
+<div>
+La tensione della linea del segnale di ritorno di abilitazione del motorino di avviamento è 0 V o quasi uguale alla tensione di batteria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Protezione software diagnostico non operativa.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+<div>
+(Non può eseguire i comandi e le variazioni necessarie per il controlli della chiave)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SHIFT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale SENSOR SUPPLY SHIFT è cira 0 V (cortocircuito verso massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19ED
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SHIFT.
+</div>
+</li>
+<li>
+<div>
+La linea del segnale SENSOR SHIFT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SHIFT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale SENSOR SUPPLY SHIFT è quasi pari alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale GND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR GND SHIFT.
+</div>
+</li>
+<li>
+<div>
+La linea del segnale SENSOR GND SHIFT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale DIRECTION SHIFT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale DIRECTION SHIFT è cira 0 V (cortocircuito verso massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale DIRECTION SHIFT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale DIRECTION SHIFT è quasi pari alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+<li>
+<div>
+La linea del segnale DIRECTION SHIFT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SELECT .
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale SENSOR SELECT è cira 0 V (cortocircuito verso massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SELECT .
+</div>
+</li>
+<li>
+<div>
+La linea del segnale SENSOR SELECT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SUPPLY.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR SUPPLY SELECT .
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale SENSOR SUPPLY SELECT è quasi pari alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale GND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale SENSOR GND SELECT.
+</div>
+</li>
+<li>
+<div>
+La linea del segnale SENSOR GND SELECT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controlla il segnale DIRECTION SELECT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale DIRECTION SELECT è cira 0 V (cortocircuito verso massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controllo segnale DIRECTION SELECT.
+</div>
+</li>
+<li>
+<div>
+La tensione nella linea del segnale DIRECTION SELECT è quasi pari alla tensione di batteria (cortocircuito verso batteria).
+</div>
+</li>
+<li>
+<div>
+La linea del segnale DIRECTION SELECT è interrotta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il segnale di instabilità della coppia ricevuto dal modulo TCM è impostato a 10 minuti o più.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi - l'apprendimento delle posizioni 1/2 del contatto della frizione non è stato completato o è ancora in esecuzione.
+</div>
+<ul type="disc">
+<li>
+<div>
+Non sono state eseguite tutte le fasi della procedura di apprendimento.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+<div>
+(È possibile inserire solo la 1a o la retromarcia. Guidare ad una velocità ridotta).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi - l'apprendimento della posizione dell'attuatore di cambio marcia e della posizione di sincronizzazione è incompleto o in esecuzione.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Controllo terminato (l'avviamento del motore è impossibile).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore di apprendimento della posizione dell'attuatore di cambio marcia.
+</div>
+<ul type="disc">
+<li>
+<div>
+La posizione di cambio marcia 1/3/5 è pari a +10,8 mm o superiore, oppure pari a +6,8 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di cambio marcia 2/4/6/R è pari a -6,8 mm o superiore, oppure pari a -10,8 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di selezione marcia 1/2 è pari a −2,8 mm o superiore, oppure pari a −5,8 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di selezione marcia 3/4 è pari a +2,1 mm o superiore, oppure pari a -0,9 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di selezione marce 5/6 è +7,6 mm o superiore, oppure +4,6 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di selezione marcia R è +11,95 mm o superiore, oppure +9,45 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di sincronizzazione marcia 1/3/5 è pari a +7,6 mm o superiore, oppure pari a -0,4 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di sincronizzazione marcia 2/4/6 è pari a +0,4 mm o superiore, oppure pari a -7,6 mm o inferiore.
+</div>
+</li>
+</ul>
+<div>
+Quando si verifica una delle condizioni sopra riportate, viene registrato un codice di guasto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore di apprendimento della posizione di contatto della frizione.
+</div>
+<ul type="disc">
+<li>
+<div>
+La posizione di contatto della frizione (a lungo termine) è pari a 15 mm o superiore, oppure pari a 7,5 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di contatto della frizione (a medio termine) è pari a 15 mm o superiore, oppure pari a 7,5 mm o inferiore.
+</div>
+</li>
+<li>
+<div>
+La posizione di contatto della frizione (a breve termine) è pari a 15 mm o superiore, oppure pari a 7,5 mm o inferiore.
+</div>
+</li>
+</ul>
+<div>
+Quando si verifica una delle condizioni sopra riportate, viene registrato un codice di guasto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore del coefficiente di attrito.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il coefficiente di attrito N. 1 è pari a 865 o superiore, oppure pari a 171 o inferiore.
+</div>
+</li>
+<li>
+<div>
+Il coefficiente di attrito N. 2 è pari a 865 o superiore, oppure pari a 171 o inferiore.
+</div>
+</li>
+<li>
+<div>
+Il coefficiente di attrito N. 3 è pari a 865 o superiore, oppure pari a 171 o inferiore.
+</div>
+</li>
+<li>
+<div>
+Il coefficiente generale di attrito è 865 o superiore, oppure 171 o inferiore.
+</div>
+</li>
+</ul>
+<div>
+Quando si verifica una delle condizioni sopra riportate, viene registrato un codice di guasto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nessuno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2785
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore della temperatura del motorino elettrico e al valore di ingresso del sensore PCB.
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motorino è pari a 195 °C o superiore.
+</div>
+</li>
+<li>
+<div>
+Il valore di ingresso del sensore PCB è pari a 118 °C o superiore.
+</div>
+</li>
+</ul>
+<div>
+Quando si verifica una delle condizioni sopra riportate, viene registrato un codice di guasto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+In caso di guasto viene impostato il limite di cambio marcia (dalla 1ª alla 5ª e R) in base alla mappatura di cambio marcia.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2786
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base alla potenza di ingresso (valore calcolato) dell'attuatore del cambio.
+</div>
+<ul type="disc">
+<li>
+<div>
+Per un determinato periodo di tempo si è verificata una potenza di ingresso pari a 3000 W o superiore, oppure una potenza di ingresso pari a 2000 W o superiore.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La marcia rimane innestata a guasto confermato (innesta o disinnesta la frizione in base alla velocità della vettura).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2787
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al valore della temperatura della frizione.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la temperatura della frizione raggiunge o supera i 400 °C.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Avanzamento interrotto.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0100
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM riceve i segnali dal modulo ECM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Quando la vettura supera una determinata velocità (che varia con la marcia innestata), in caso di guasto, la posizione dell'attuatore della frizione è trattenuta e il controllo viene eseguito.
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a un certo valore, si passa alla modalità folle.
+</div>
+</li>
+<li>
+<div>
+Il motore viene riavviato, ma il tempo trascorso dall'azionamento dell'interruttore del motorino di avviamento all'avvio del motore è più lungo del normale (cira 1 secondo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0103
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM non riceve i segnali dal modulo di comando leva cambio.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Se la velocità della vettura è superiore a 5 km/h, in caso di guasto, la posizione è mantenuta e viene eseguito il controllo (passaggio dalla modalità manuale a quella automatica).
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a 5 km/h, si passa alla modalità folle.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0155
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM non può ricevere i segnali dal modulo di comando del quadro strumenti.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati relativi al modulo ECM, ricevuti dal modulo TCM, includono un valore non valido.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+DTC causati da un guasto al sensore IAT o al sensore ECT: Nessuno
+</div>
+</li>
+<li>
+<div>
+DTC causati da altri guasti al modulo ECM: Quando la vettura supera una determinata velocità (che varia con la marcia innestata), in caso di guasto, la posizione dell'attuatore della frizione è trattenuta e il controllo viene eseguito.
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a un certo valore, si passa alla modalità folle.
+</div>
+</li>
+<li>
+<div>
+Il motore viene riavviato, ma il tempo trascorso dall'azionamento dell'interruttore del motorino di avviamento all'avvio del motore è più lungo del normale (cira 1 secondo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati inviati dal modulo di comando del cambio marcia al modulo TCM includono un valore anomalo o non valido.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+L'intervento della protezione automatica in caso di guasto è determinato in base al guasto.
+</div>
+<ul type="disc">
+<li>
+<div>
+Anomalia nel passaggio modalità automatica/modalità manuale: La spia del cambio i-SHIFT si accende. Tuttavia, il passaggio dalla modalità automatica a quella manuale non è possibile.
+</div>
+</li>
+<li>
+<div>
+Anomalie in altri passaggi o nei dati ricevuti: La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Se la velocità del veicolo supera 5 km/h, in caso di guasto, la posizione è mantenuta e il controllo viene eseguito. Quando la velocità della vettura è inferiore a 5 km/h, si passa alla modalità folle.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1261
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM non riceve i segnali dal sistema VSA.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+La leva del cambio non è in posizione N: In caso di guasto, la marcia è trattenuta. Tuttavia, per evitare l'arresto del motore, l'apertura e la chiusura della frizione vengono controllate.
+</div>
+</li>
+<li>
+<div>
+La leva del cambio è in posizione N: Innesta la folle; la modalità folle è mantenuta, anche se la leva del cambio viene portata in un'altra posizione.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1400
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati inviati relativi al modulo ECM, ricevuti dal modulo TCM, presentano anomalie.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Quando la vettura supera una determinata velocità (che varia con la marcia innestata), in caso di guasto, la posizione dell'attuatore della frizione è trattenuta e il controllo viene eseguito.
+</div>
+</li>
+<li>
+<div>
+Quando la velocità della vettura è inferiore a un certo valore, si passa alla modalità folle.
+</div>
+</li>
+<li>
+<div>
+Il motore viene riavviato, ma il tempo trascorso dall'azionamento dell'interruttore del motorino di avviamento all'avvio del motore è più lungo del normale (cira 1 secondo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM ha ricevuto una richiesta di passaggio a marcia inferiore, ma quando si esegue il cambio, il regime massimo del motore viene superato.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1402
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Il modulo TCM riceve la richiesta di passaggio a 4ª prima di ricevere quella di passaggio a 5ª.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1403
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati del sistema VSA ricevuti dal modulo TCM comprendono un valore non valido. Quando è inclusa una parte di dati.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Se la centralina del sistema VSA rileva un guasto: Disabilita il passaggio alla marcia inferiore quando il pedale del freno è premuto.
+</div>
+</li>
+<li>
+<div>
+Se la centralina del sistema VSA non rileva alcun guasto: Nessuno
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati del sistema VSA ricevuti dal modulo TCM presentano anomalie.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Se la centralina del sistema VSA rileva un guasto: Disabilita il passaggio alla marcia inferiore quando il pedale del freno è premuto.
+</div>
+</li>
+<li>
+<div>
+Se la centralina del sistema VSA non rileva alcun guasto: Nessuno
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1405
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosi in base al segnale CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+I dati del sistema VSA ricevuti dal modulo TCM comprendono valori non validi.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+La spia del cambio i-SHIFT si accende.
+</div>
+</li>
+<li>
+<div>
+Se la leva del cambio non è in posizione N: In caso di guasto, la marcia è trattenuta. Tuttavia, per evitare l'arresto del motore, l'apertura e la chiusura della frizione vengono controllate.
+</div>
+</li>
+<li>
+<div>
+La leva del cambio è in posizione N: Innesta la folle; la modalità folle è mantenuta, anche se la leva del cambio viene portata in un'altra posizione.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

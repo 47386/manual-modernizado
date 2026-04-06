@@ -1,0 +1,507 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00K79100000000BBGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Fehlersuchverfahren, SRS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+DTC (Diagnose-Fehlercodes)
+</b>
+</div>
+<div>
+Das SRS-System verfügt über eine Selbstdiagnosefunktion, die Störungen im System erkennt und entsprechende Informationen in einem Datenspeicher speichert. Um die Fehlersuche zu vereinfachen, können diese Daten über einen Datenübertragungskreis aus dem Speicher abgerufen werden.
+</div>
+<ul type="disc">
+<li>
+<div>
+Beim Einschalten der Zündung (II) leuchtet die SRS-Anzeige auf. Erlischt sie nach 6 Sekunden, funktioniert das System normal.
+</div>
+</li>
+<li>
+<div>
+Wenn eine Abweichung festgestellt wird, lokalisiert und definiert das System die Störung, speichert diese Informationen im Datenspeicher und schaltet die SRS-Anzeige ein. Die Daten bleiben auch dann im Speicher, wenn die Zündung ausgeschaltet oder die Batterie abgeklemmt wird.
+</div>
+</li>
+<li>
+<div>
+Wird das HDS an den 16P-Datenübertragungsstecker (DLC) angeschlossen, um die SCS-Klemme kurzzuschließen, und die Zündung eingeschaltet (II), gibt die SRS-Anzeige durch die Anzahl von Blinkzeichen den primären Diagnose-Fehlercode (DTC) an.
+</div>
+</li>
+<li>
+<div>
+Wird das HDS an den 16P-Datenübertragungsstecker (DLC) angeschlossen, kann der DTC außerdem im Menü ‘‘SRS'' des Honda-Diagnosesystems eingesehen werden.
+</div>
+</li>
+<li>
+<div>
+Nachdem der DTC ausgelesen und notiert wurde, ist dem Fehlersuchverfahren zu folgen, das dem betreffenden Code zugeordnet ist.
+</div>
+</li>
+</ul>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Vorsichtsmaßnahmen
+</b>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Zur Prüfung des Systems grundsätzlich ein Digital-Multimeter verwenden. Falls ein anderes Mehrfachmessgerät als das Honda-Multimeter verwendet wird, sicherstellen, dass die Ausgangsleistung im untersten Messbereich des Ohmmeters nicht höher als 10 mA (0,01 A) ist. Durch ein Testgerät mit höherem Ausgangsstrom kann der Airbag-Schaltkreis beschädigt werden. Außerdem besteht die Gefahr einer unkontrollierten Airbag-Auslösung, wodurch es zu Verletzungen kommen kann.
+</div>
+</li>
+<li>
+<div>
+Wenn die Zündung eingeschaltet (II) ist oder für höchstens 3 Minuten ausgeschaltet wurde (0), die SRS-Einheit  vor Stößen und Erschütterungen schützen. Die Airbags könnten sonst ausgelöst werden und Schäden oder Verletzungen verursachen.
+</div>
+</li>
+<li>
+<div>
+Vor dem Ausbau des SRS-Kabelbaums die Stecker des Fahrer- und des Beifahrer-Airbags, beide Seiten-Airbagstecker sowie die beiden Gurtstrafferstecker abziehen.
+</div>
+</li>
+<li>
+<div>
+Sicherstellen, dass die Batterie ausreichend aufgeladen ist. Bei leerer oder schwacher Batterie können möglicherweise keine exakten Messwerte ermittelt werden.
+</div>
+</li>
+<li>
+<div>
+Die Klemmen der SRS-Einheit oder der Kabelbaumstecker nicht mit der Prüfspitze des Testgeräts berühren und nicht mit einem Überbrückungskabel kurzschließen. Ausschließlich den vorgesehenen Prüfstiftsatz und das HDS benutzen. Anschlüsse mit Schnappverschluss von der Rückseite prüfen.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Auslesen des DTC
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Sicherstellen, dass die Zündung ausgeschaltet ist (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den DLC (A) anschließen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Sicherstellen, dass das HDS mit dem Fahrzeug und der SRS-Einheit kommuniziert. Andernfalls eine Fehlersuche im DLC-Schaltkreis durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Mit dem HDS prüfen, ob DTCs gespeichert sind.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Den DTC auslesen.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Die Zündung ausschalten (0) und 10 Sekunden warten.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Das HDS vom DLC trennen.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Das dem betreffenden DTC zugeordnete Fehlersuchverfahren durchführen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001113','1');">
+<img src="../tn/SMR7E00K79100000000BBGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Löschen des DTC-Speicher
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Sicherstellen, dass die Zündung ausgeschaltet ist (0).
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den DLC (A) anschließen.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Sicherstellen, dass das HDS mit dem Fahrzeug und der SRS-Einheit kommuniziert. Andernfalls eine Fehlersuche im DLC-Schaltkreis durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Im SRS MENU (SRS-Menü) des HDS die Option SRS wählen, dann die Option DTC, um den/die DTCs zu löschen.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Die Zündung ausschalten (0) und 10 Sekunden warten.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Das HDS vom DLC trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001114','1');">
+<img src="../tn/SMR7E00K79100000000BBGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Fehlersuche bei zeitweise auftretenden Störungen
+</b>
+</div>
+<div>
+Wenn eine Störung vorlag, diese jedoch nicht wieder auftritt, wird sie im Speicher als zeitweise auftretende Störung gespeichert, und die SRS-Anzeige schaltet sich ein.
+</div>
+<div>
+Anhand des DTC die Fehlersuche wie folgt vornehmen:
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Den DTC auslesen (siehe ‘‘Auslesen des DTC'').
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Den DTC-Speicher löschen (siehe ‘‘Löschen des DTC-Speichers'').
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Feststellbremse ziehen, den Motor anlassen und im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Die SRS-Anzeige leuchtet ca. 6 Sekunden lang auf und erlischt dann.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="5">
+<div>
+Am entsprechenden Kabelbaum und den Steckern rütteln und auf lockere Anschlüsse, schlecht sitzende Stifte und unzureichende Masseverbindungen achten.
+</div>
+</li>
+</ol>
+<a name="i460">
+</a>
+<ol>
+<li value="6">
+<div>
+Eine Probefahrt durchführen (schnelles Beschleunigen, abruptes Bremsen, Kurvenfahrt), das Lenkrad bis zum Anschlag nach links und nach rechts drehen und 5 bis 10 Sekunden in der jeweiligen Stellung halten. Wenn die Störung erneut auftritt, leuchtet die SRS-Anzeige auf.
+</div>
+<div>
+HINWEIS: Bei einer defekten Kabelrolle kann es zu Wackelkontakten in Verbindung mit dem Fahrer-Airbag kommen.
+</div>
+</li>
+</ol>
+<a name="i470">
+</a>
+<ol>
+<li value="7">
+<div>
+Wenn sich der kurzzeitig auftretende Fehler nicht reproduzieren lässt, ist das System gegenwärtig in Ordnung.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72100092199FAPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Diagnóstico de Avarias por DTC: P2199
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P2199:
+</b>
+<div>
+ Correlação Incorrecta da Voltagem do Sensor 1/2 IAT
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Antes de iniciar o diagnóstico de avarias, tome nota dos dados congelados e 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+reveja a informação geral do diagnóstico de avarias.
+</a>
+</div>
+</li>
+<li>
+<div>
+Antes de iniciar este diagnóstico de avarias, verifique se não existem más ligações ou bloqueios na conduta do ar da admissão.
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Elimine o DTC da memória utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Arranque o motor. Mantenha a rotação do motor nas 2.000 rpm (mín
+<sup>
+-1
+</sup>
+) sem carga (em ponto-morto) até a ventoinha do radiador ligar e, em seguida, deixe-o ao ralenti.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 80 °C (176 °F)
+</div>
+</li>
+<li>
+<div>
+Transmissão em 3ª
+</div>
+</li>
+<li>
+<div>
+Velocidade do veículo entre 40 km/h e 60 km/h
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Monitorize o ESTADO DO OBD para o DTC P2199 no MENU DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O ecrã indica REPROVADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i060')">Etapa 6
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ecrã indicar APROVADO, avaria intermitente, o sistema está bom neste momento. Verifique se não há más ligações ou terminais soltos no sensor MAF/sensor 1 IAT, no sensor MAP/sensor 2 IAT nem no ECM; verifique também se não existem más ligações ou bloqueios na conduta do ar da admissão. Se o ecrã indicar NÃO FOI CONCLUÍDO, passe à 
+<a href="javascript:parent.Jmp('i040')">Etapa 4
+</a>
+ e volte a verificar.
+</div>
+</td>
+</tr>
+</table>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+<a href="javascript:CtsProc('0','000000000001120','i000')">
+Retire o sensor MAF/sensor 1 IAT 
+</a>
+ e 
+<a href="javascript:CtsProc('0','000000000001119','i000')">
+o sensor MAP/sensor 2 IAT.
+</a>
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Permita que o sensor MAF/sensor 1 IAT e o sensor MAP/sensor 2 IAT arrefeçam até atingir uma temperatura inferior a 25 °C.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Registe a temperatura ambiente.
+</div>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Ligue o sensor MAF/sensor 1 IAT à respectiva ficha de 2P e o sensor MAP/sensor 2 IAT à respectiva ficha de 2P, mas não os instale na conduta do ar da admissão.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Registe rapidamente o valor do SENSOR 1 e 2 IAT na LISTA DE DADOS com o HDS.
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Compare o valor do SENSOR 1 IAT e a temperatura ambiente e o valor do SENSOR 2 IAT e a temperatura ambiente individualmente.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Algum sensor difere mais de 35 °C da temperatura ambiente?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Substitua o sensor cujo valor difere mais do que 35 °C da temperatura ambiente e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i140')">Etapa 14
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Avaria intermitente, o sistema está agora bom. Verifique se não existem más ligações ou bloqueios na conduta do ar da admissão e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i140')">Etapa 14
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+<a href="javascript:CtsProc('0','000000000001120','i000')">
+Instale o sensor MAF/sensor 1 IAT 
+</a>
+ e 
+<a href="javascript:CtsProc('0','000000000001119','i000')">
+o sensor MAP/sensor 2 IAT.
+</a>
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Arranque o motor. Mantenha a rotação do motor nas 2.000 rpm (mín
+<sup>
+-1
+</sup>
+) sem carga (em ponto-morto) até a ventoinha do radiador ligar e, em seguida, deixe-o ao ralenti.
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Efectue um teste de estrada sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura do líquido de arrefecimento do motor (SENSOR 1 ECT) acima dos 80 °C (176 °F)
+</div>
+</li>
+<li>
+<div>
+Transmissão em 3ª
+</div>
+</li>
+<li>
+<div>
+Velocidade do veículo entre 40 km/h e 60 km/h
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P2199?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos no sensor MAF/sensor 1 IAT, no sensor MAP/sensor 2 IAT nem no ECM e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i200')">Etapa 20
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Monitorize o ESTADO DO OBD para o DTC P2199 no MENU DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+O ecrã indica APROVADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+O diagnóstico de avarias está concluído. Se tiverem sido indicados quaisquer outros DTC Temporários ou DTC no 
+<a href="javascript:parent.Jmp('i190')">Etapa 19
+</a>
+, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ecrã indicar REPROVADO, verifique se não existem más ligações ou terminais soltos no sensor MAF/sensor 1 IAT, no sensor MAP/sensor 2 IAT nem no ECM e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+. Se o ecrã indicar NÃO FOI CONCLUÍDO, passe à 
+<a href="javascript:parent.Jmp('i170')">Etapa 17
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

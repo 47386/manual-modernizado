@@ -1,0 +1,507 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00K79100000000BBST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Cómo localizar las averías del SRS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+DTC (Código de diagnóstico de averías)
+</b>
+</div>
+<div>
+La función de autodiagnóstico del sistema del SRS le permite localizar las causas de las averías del sistema y guardar, a continuación, la información en la memoria. Para una ejecución más fácil del procedimiento de localización de averías, estos datos pueden recuperarse a través del circuito de enlace de datos.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando se gira la llave de contacto a la posición ON (II), se enciende la luz testigo del SRS. Si se apaga después de 6 segundos, el sistema funciona correctamente.
+</div>
+</li>
+<li>
+<div>
+Si existe alguna anomalía, el sistema la sitúa y la define, guarda la información en la memoria y enciende la luz testigo del SRS. Los datos permanecerán en la memoria aun cuando se gire la llave de contacto a la posición OFF o se desconecte la batería.
+</div>
+</li>
+<li>
+<div>
+Cuando se conecta el HDS al conector 16P de enlace de datos (DLC), para poner en corto el terminal del SCS, y se gira la llave de contacto a la posición ON (II), la luz testigo del SRS indicará el código de diagnóstico de averías (DTC) mediante el número de destellos.
+</div>
+</li>
+<li>
+<div>
+Cuando conecte el HDS al conector 16P del enlace de datos (DLC), podrá recuperar el DTC en el menú ‘‘SRS&quot; de Honda Systems.
+</div>
+</li>
+<li>
+<div>
+Después de leer y registrar el DTC, proceda con el procedimiento de localización de averías para este código.
+</div>
+</li>
+</ul>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Precauciones
+</b>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Para las comprobaciones del sistema, utilice únicamente un multímetro digital. Si noes un multímetro Honda, asegúrese de la intensidad de la corriente es de 10 mA (0,01A) o menos cuando se conecta en el valor mínimo de la gama del óhmetro. El empleo de un comprobador con una intensidad de corriente mayor podría provocar un despliegue accidental y causar una posible lesión.
+</div>
+</li>
+<li>
+<div>
+Siempre que la llave de contacto se encuentre en la posición ON (II) o se haya girado a la posición OFF durante menos de 3 minutos, tenga cuidado de no chocar contra la unidad SRS, podría producirse el despliegue accidental del airbag y provocar daños o lesiones.
+</div>
+</li>
+<li>
+<div>
+Antes de desmontar el mazo de cables del SRS, desconecte el conector del airbag del conductor, el conector del airbag del acompañante, los conectores de ambos airbags laterales y los conectores de los tensores de ambos cinturones de seguridad.
+</div>
+</li>
+<li>
+<div>
+Asegúrese de que la batería está suficientemente cargada. Si la batería está baja o descargada, los valores de las mediciones no serán correctos.
+</div>
+</li>
+<li>
+<div>
+No toque con la sonda de un comprobador los terminales de la unidad SRS o los conectores del mazo de cables y no conecte dichos terminales con un cable puente. Utilice únicamente el juego de comprobación y el HDS. Compruebe los conectores de cierre accionado por muelle correctamente.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Lectura del DTC
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Asegúrese de que la llave de contacto se encuentra en la posición OFF.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Conecte el HDS al DLC (A).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Compruebe que el HDS establece comunicación con el vehículo y con la unidad SRS. Si no lo hace, efectúe la localización de averías del circuito del DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Utilice el HDS para comprobar los DTC.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Lea el DTC.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Gire la llave de contacto a la posición OFF y espere 10 segundos.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Desconecte el HDS del DLC.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Lleve a cabo el procedimiento de localización de averías para este DTC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001113','1');">
+<img src="../tn/SMR7E00K79100000000BBSD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBSD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Borrado de la memoria de los DTC
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Asegúrese de que la llave de contacto se encuentra en la posición OFF.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Conecte el HDS al DLC (A).
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Compruebe que el HDS establece comunicación con el vehículo y con la unidad SRS. Si no lo hace, efectúe la localización de averías del circuito del DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+En el SRS MENU del HDS, seleccione SRS y luego DTC para borrar los DTC.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Gire la llave de contacto a la posición OFF y espere 10 segundos.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Desconecte el HDS del DLC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001114','1');">
+<img src="../tn/SMR7E00K79100000000BBSD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBSD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Localización de averías de fallos intermitentes
+</b>
+</div>
+<div>
+Si se produce un fallo de funcionamiento, pero no se repite, se guarda en la memoria como un fallo intermitente lo que dará lugar a que se encienda la luz testigo del SRS.
+</div>
+<div>
+Después de comprobar el DTC, efectúe la localización de averías como sigue:
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Lea el DTC (véase ‘‘Lectura del DTC&quot;).
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Borre la memoria de DTC (véase ‘‘Borrado de la memoria de DTC&quot;).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Ponga el freno de estacionamiento, arranque el motor y déjelo al ralentí.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+La luz testigo del SRS se enciende durante 6 segundos y luego se apaga.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="5">
+<div>
+Agite los mazos de cables y conexiones relacionados y busque conexiones flojas, ajuste defectuoso de las patillas y conexiones a masa defectuosas.
+</div>
+</li>
+</ol>
+<a name="i460">
+</a>
+<ol>
+<li value="6">
+<div>
+Efectúe una prueba de carretera (aceleraciones rápidas, frenazos bruscos, toma de curvas cerradas), gire el volante de la dirección totalmente a derecha e izquierda y manténgalo en cada posición durante 5 a 10 seg. Si se repite la avería, se encenderá la luz testigo del SRS.
+</div>
+<div>
+NOTA: Un carrete de cable defectuoso puede causar conexiones intermitentes en el airbag del conductor.
+</div>
+</li>
+</ol>
+<a name="i470">
+</a>
+<ol>
+<li value="7">
+<div>
+Si no se puede reproducir el fallo intermitente, el sistema funciona correctamente en ese momento.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

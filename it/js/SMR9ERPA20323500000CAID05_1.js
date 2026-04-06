@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:639px;\" coordsize=\"950,639\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:639px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9ERPA20323500000CAID05.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:639px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:419px;top:610px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VALVOLA EGR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:569px;top:543px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ELETTROVALVOLA<br>COMANDO EGR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:833px;top:131px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>DIVERSI<br>SENSORI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:851px;top:20px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Al RELÈ<br>PRINCIPALE<br>IMPIANTO PGM-FI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:709px;top:137px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:695px;top:34px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>YEL/BLK<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:813px;top:224px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BLK<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:732px;top:330px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>RED<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:306px;top:322px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Alla<br>POMPA A<br>VUOTO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

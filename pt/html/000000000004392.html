@@ -1,0 +1,1052 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPK73200000000BBPT20
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias nos Indicadores
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+O módulo de controlo do indicador (CONTA-ROTAÇÕES) tem a função de auto-diagnóstico indicada e também tem uma função de desmemorização personalizada.
+</div>
+<ul type="disc">
+<li>
+<div>
+A verificação do circuito principal do alarme sonoro.
+</div>
+</li>
+<li>
+<div>
+A verificação do circuito principal do indicador.
+</div>
+</li>
+<li>
+<div>
+O ensaio da entrada de sinais do interruptor.
+</div>
+</li>
+<li>
+<div>
+A verificação dos segmentos LCD.
+</div>
+</li>
+<li>
+<div>
+A verificação do circuito principal de indicadores (Conta-rotações, Indicador do nível do combustível, Indicador da temperatura do líquido de arrefecimento).
+</div>
+</li>
+<li>
+<div>
+A verificação da linha de comunicação (da linha de comunicação da área de rede do controlador da estrutura (B-CAN) e da da linha de comunicação da área de rede do controlador rápido (F-CAN) entre os indicadores).
+</div>
+</li>
+<li>
+<div>
+A verificação da linha UART entre o módulo de controlo do indicador (CONTA-ROTAÇÕES) e o módulo de controlo do indicador (VELOCÍMETRO).
+</div>
+</li>
+</ul>
+<div>
+NOTA: Os indicadores também são controlados mediante a linha de comunicação.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Entrar na função de auto-diagnóstico
+</b>
+</div>
+<div>
+Antes de realizar a função de auto-diagnóstico, verifique o fusível N.º 10 (7,5 A) na caixa de fusíveis/relés sob o capot e o fusível N.º 16 (15 A) na caixa de fusíveis/relés sob o tablier.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Pressione e mantenha pressionado o interruptor de SELECÇÃO/REPOSIÇÃO.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+ACENDA os faróis.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Dentro de 5 seg., DESLIGUE os faróis e, em seguida, ACENDA-OS para depois os voltar a DESLIGAR.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Num espaço de 5 seg., solte o botão SELECÇÃO/REPOSIÇÃO e, em seguida, pressione e solte o botão três vezes seguidas.
+</div>
+</li>
+</ol>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Enquanto no modo de auto-diagnóstico, o controlador da luminosidade das luzes do tablier funciona normalmente.
+</div>
+</li>
+<li>
+<div>
+Enquanto no modo de auto-diagnóstico, o interruptor de SELECÇÃO/REPOSIÇÃO é utilizado para iniciar o Ensaio do Circuito Principal do Alarme Sonoro e a Verificação do Circuito Principal dos Indicadores.
+</div>
+</li>
+<li>
+<div>
+ Se a velocidade do veículo for superior a 2 km/h ou a ignição for BLOQUEADA (0), o modo de auto-diagnóstico termina.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010949','1');">
+<img src="../tn/SMR9ERPK73200000000BBPD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<div>
+O módulo de controlo do indicador (CONTA-ROTAÇÕES) tem a função de auto-diagnóstico indicada e também tem uma função de desmemorização personalizada.
+</div>
+<ul type="disc">
+<li>
+<div>
+A verificação do circuito principal do alarme sonoro.
+</div>
+</li>
+<li>
+<div>
+A verificação do circuito principal do indicador.
+</div>
+</li>
+<li>
+<div>
+O ensaio da entrada de sinais do interruptor.
+</div>
+</li>
+<li>
+<div>
+A verificação dos segmentos LCD.
+</div>
+</li>
+<li>
+<div>
+A verificação do circuito principal de indicadores (Conta-rotações, Indicador do nível do combustível, Indicador da temperatura do líquido de arrefecimento).
+</div>
+</li>
+<li>
+<div>
+A verificação da linha de comunicação (da linha de comunicação da área de rede do controlador da estrutura (B-CAN) e da da linha de comunicação da área de rede do controlador rápido (F-CAN) entre os indicadores).
+</div>
+</li>
+<li>
+<div>
+A verificação da linha UART entre o módulo de controlo do indicador (CONTA-ROTAÇÕES) e o módulo de controlo do indicador (VELOCÍMETRO).
+</div>
+</li>
+</ul>
+<div>
+NOTA: Os indicadores também são controlados mediante a linha de comunicação.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Entrar na função de auto-diagnóstico
+</b>
+</div>
+<div>
+Antes de realizar a função de auto-diagnóstico, verifique o fusível N.º 10 (7,5 A) na caixa de fusíveis/relés sob o capot e o fusível N.º 16 (15 A) na caixa de fusíveis/relés sob o tablier.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Pressione e mantenha pressionado o interruptor de SELECÇÃO/REPOSIÇÃO.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+ACENDA os faróis.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Dentro de 5 seg., DESLIGUE os faróis e, em seguida, ACENDA-OS para depois os voltar a DESLIGAR.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Num espaço de 5 seg., solte o botão SELECÇÃO/REPOSIÇÃO e, em seguida, pressione e solte o botão três vezes seguidas.
+</div>
+</li>
+</ol>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Enquanto no modo de auto-diagnóstico, o controlador da luminosidade das luzes do tablier funciona normalmente.
+</div>
+</li>
+<li>
+<div>
+Enquanto no modo de auto-diagnóstico, o interruptor de SELECÇÃO/REPOSIÇÃO é utilizado para iniciar o Ensaio do Circuito Principal do Alarme Sonoro e a Verificação do Circuito Principal dos Indicadores.
+</div>
+</li>
+<li>
+<div>
+ Se a velocidade do veículo for superior a 2 km/h ou a ignição for BLOQUEADA (0), o modo de auto-diagnóstico termina.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK73200000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Verificação do Circuito Principal do Indicador
+</b>
+</div>
+<div>
+Ao activar o modo de auto-diagnóstico, os seguintes indicadores cintilam:
+</div>
+<div>
+Indicador do ABS, indicador do sistema dos travões, indicador do sistema de carga, indicador do controlo da velocidade de cruzeiro, indicador da velocidade de cruzeiro, indicador EPS, indicador dos máximos, indicador do imobilizador, indicador de luzes acesas, indicador de baixo nível de combustível, lâmpada indicadora de mau funcionamento (MIL), indicador da pressão do óleo, indicadores do cinto de segurança, indicador da segurança, indicador SRS, indicador VSA, indicador de activação do VSA, indicador de luz dianteira de nevoeiro, indicador de luz traseira de nevoeiro. indicador de aviso geral, indicador REV, indicador ECO, indicador da resistência de aquecimento, indicador de mudança para alta da M/T, indicador de mudança para baixa da M/T e indicador de airbag do passageiro desligado.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Verificação do Sinal de Entrada do Interruptor
+</b>
+</div>
+<div>
+Após os alarmes sonoros intermitentes soarem na fase inicial de auto-diagnóstico, um alarme sonoro soará continuamente enquanto qualquer dos sinais de entrada dos seguintes interruptores forem LIGADOS. Quando o alarme sonoro de elevada frequência concluída, o alarme sonoro de baixa frequência deve soar. Quando o alarme sonoro soar cinco vezes, o alarme sonoro pára. Além disso, o alarme sonoro deve soar sequencialmente quando existir o alarme sonoro:
+</div>
+<div>
+PRINCIPAL do controlo da velocidade de cruzeiro, interruptores SET/RESUME/CANCEL, interruptor SEL/RESET, botão INFO, km/h, botão de mudança para mph, interruptor do travão de estacionamento e interruptor VSA DESLIGADO.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Verificação do Circuito Principal do Alarme Sonoro
+</b>
+</div>
+<div>
+Quando entrar no modo de auto-diagnóstico, o alarme sonoro deve soar sincronizadamente com a cintilação dos indicadores, por ordem de alta frequência de baixa frequência, um por um. Quando o alarme sonoro de elevada frequência concluída, o alarme sonoro de baixa frequência deve soar. Quando o alarme sonoro soar cinco vezes, o alarme sonoro pára. Além disso, o alarme sonoro deve soar sequencialmente quando existir o alarme sonoro.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação dos Segmentos LCD
+</b>
+</div>
+<div>
+Ao activar o modo de auto-diagnóstico, o visor LCD indica ‘‘· · ·''. O objecto indicado cintila cinco vezes.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010953','1');">
+<img src="../tn/SMR9ERPK73200000000BBPD02.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação dos Segmentos LCD
+</b>
+</div>
+<div>
+Ao activar o modo de auto-diagnóstico, o visor LCD indica ‘‘· · ·''. O objecto indicado cintila cinco vezes.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK73200000000BBPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação do Circuito Principal de Indicadores
+</b>
+</div>
+<div>
+Ao entrar no modo de auto-diagnóstico, o ponteiro do conta-rotações muda da posição mínima à máxima e, em seguida, volta à posição mínima.
+</div>
+<div>
+NOTA: Após o alarme sonoro deixar de soar e o ponteiro do indicador voltar à posição mínima, pressionar o botão de SELECÇÃO/REPOSIÇÃO, a Verificação do Circuito Principal do Alarme Sonoro (um som) e a Verificação do Circuito Principal de Indicadores serão iniciadas novamente.
+</div>
+<div>
+A verificação não pode voltar a começar até que o ponteiro do indicador volte à posição mínima.
+</div>
+<div>
+Se um ponteiro não mudar ou um alarme sonoro não soar, substitua o módulo de controlo do indicador (conta-rotações).
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010954','1');">
+<img src="../tn/SMR9ERPK73200000000BBPD03.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação do Circuito Principal de Indicadores
+</b>
+</div>
+<div>
+Ao entrar no modo de auto-diagnóstico, o ponteiro do conta-rotações muda da posição mínima à máxima e, em seguida, volta à posição mínima.
+</div>
+<div>
+NOTA: Após o alarme sonoro deixar de soar e o ponteiro do indicador voltar à posição mínima, pressionar o botão de SELECÇÃO/REPOSIÇÃO, a Verificação do Circuito Principal do Alarme Sonoro (um som) e a Verificação do Circuito Principal de Indicadores serão iniciadas novamente.
+</div>
+<div>
+A verificação não pode voltar a começar até que o ponteiro do indicador volte à posição mínima.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK73200000000BBPD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+Se um ponteiro não mudar ou um alarme sonoro não soar, substitua o módulo de controlo do indicador (conta-rotações).
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação da Linha de Comunicação
+</b>
+</div>
+<div>
+Enquanto no modo de auto-diagnóstico, é iniciada a Verificação da Linha de Comunicação após a Verificação dos Segmentos LCD.
+</div>
+<div>
+Se todos os segmentos se ligam, a linha de comunicação está boa. Se estiver avariada, será indicada a palavra ‘‘ERRO'' no visor do conta-quilómetros seguida de número(s).
+</div>
+<ul type="disc">
+<li>
+<div>
+ERRO 1: Erro na linha de comunicação F-CAN
+</div>
+</li>
+<li>
+<div>
+ERRO 2: Erro na linha de comunicação B-CAN
+</div>
+</li>
+<li>
+<div>
+ERRO 3: Erro de comunicação nas linhas UART
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Lista de Código de Erro
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de erro
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Tipo de erro na(s) linha(s) de comunicação
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN e B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN e UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 2. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação B-CAN e UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 2. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN, B-CAN e UART
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 1'', há uma avaria na linha de comunicação entre o módulo de controlo do indicador (conta-rotações) e o controlador rápido da área de rede (F-CAN). Verifique se há DTC no ECM e efectue um diagnóstico de avarias a qualquer DTC encontrado. Se não encontrar nenhum DTC, passe ao diagnóstico de avarias indicado.
+</div>
+</li>
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 2'', há uma avaria na linha de comunicação entre o módulo de controlo do indicador (conta-rotações) e o controlador rápido da área de rede (B-CAN). Passe para o diagnóstico de avarias indicado (B1155 a B1160).
+</div>
+</li>
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 3'', há uma avaria na linha de comunicação UART entre o módulo de controlo do indicador (conta-rotações) e o módulo de controlo do indicador (velocímetro). Vá para o ensaio de entrada de sinais do módulo de controlo do indicador (conta-rotações) e verifique o terminal A20. Se a cablagem se encontrar em boas condições, instale um módulo de controlo do indicador (velocímetro) em bom estado e volte a verificar.
+</div>
+</li>
+</ul>
+<div>
+Se for encontrado qualquer erro de linha de comunicação F-CAN ou B-CAN, passe à verificação de DTC utilizando o HDS.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+Indicação de Exemplo
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010955','1');">
+<img src="../tn/SMR9ERPK73200000000BBPD04.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+A Verificação da Linha de Comunicação
+</b>
+</div>
+<div>
+Enquanto no modo de auto-diagnóstico, é iniciada a Verificação da Linha de Comunicação após a Verificação dos Segmentos LCD.
+</div>
+<div>
+Se todos os segmentos se ligam, a linha de comunicação está boa. Se estiver avariada, será indicada a palavra ‘‘ERRO'' no visor do conta-quilómetros seguida de número(s).
+</div>
+<ul type="disc">
+<li>
+<div>
+ERRO 1: Erro na linha de comunicação F-CAN
+</div>
+</li>
+<li>
+<div>
+ERRO 2: Erro na linha de comunicação B-CAN
+</div>
+</li>
+<li>
+<div>
+ERRO 3: Erro de comunicação nas linhas UART
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Lista de Código de Erro
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de erro
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Tipo de erro na(s) linha(s) de comunicação
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERRO 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN e B-CAN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN e UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 2. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação B-CAN e UART
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro 1. 2. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comunicação F-CAN, B-CAN e UART
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<div class="figure_title">
+<b>
+Indicação de Exemplo
+</b>
+</div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK73200000000BBPD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<ul type="disc">
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 1'', há uma avaria na linha de comunicação entre o módulo de controlo do indicador (conta-rotações) e o controlador rápido da área de rede (F-CAN). Verifique se há DTC no ECM e efectue um diagnóstico de avarias a qualquer DTC encontrado. Se não encontrar nenhum DTC, passe ao diagnóstico de avarias indicado.
+</div>
+</li>
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 2'', há uma avaria na linha de comunicação entre o módulo de controlo do indicador (conta-rotações) e o controlador rápido da área de rede (B-CAN). Passe para o diagnóstico de avarias indicado (B1155 a B1160).
+</div>
+</li>
+<li>
+<div>
+Se é indicada a palavra ‘‘ERRO 3'', há uma avaria na linha de comunicação UART entre o módulo de controlo do indicador (conta-rotações) e o módulo de controlo do indicador (velocímetro). Vá para o ensaio de entrada de sinais do módulo de controlo do indicador (conta-rotações) e verifique o terminal A20. Se a cablagem se encontrar em boas condições, instale um módulo de controlo do indicador (velocímetro) em bom estado e volte a verificar.
+</div>
+</li>
+</ul>
+<div>
+Se for encontrado qualquer erro de linha de comunicação F-CAN ou B-CAN, passe à verificação de DTC utilizando o HDS.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Como finalizar a Função de Auto-diagnóstico
+</b>
+</div>
+<div>
+BLOQUEIE (0) a ignição.
+</div>
+<div>
+NOTA: Se a velocidade do veículo for superior a 2 km/h, a função de auto-diagnóstico termina.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

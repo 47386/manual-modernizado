@@ -1,0 +1,751 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A20326400000BAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Kraftstoffdruck entlasten
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Vor dem Lösen von Kraftstoffleitungen oder Kraftstoffschläuchen die Kraftstoffpumpe deaktivieren und die Schnellkupplung der Kraftstoffleitung im Motorraum trennen, um das System drucklos zu machen.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Mit dem HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) (A) unter dem Armaturenbrett auf der Fahrerseite anschließen.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Sicherstellen, dass das HDS mit dem ECM kommuniziert. Wenn das nicht der Fall ist, 
+<a href="javascript:CtsProc('0','000000000003107','i000')">
+die Fehlersuche für den DLC-Schaltkreis durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Den Kraftstofftankdeckel abschrauben, um den Druck im Kraftstofftank abzubauen.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Im INSPECTION MENU (Menü &quot;Inspektion&quot;) des HDS die Option &quot;Fuel Pump OFF&quot; (Kraftstoffpumpe AUS) wählen, den Motor anlassen und bis zum Absterben im Leerlauf laufen lassen.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Den Motor nicht über 1.000 min
+<sup>
+-1
+</sup>
+ (U/min) im Leerlauf laufen lassen, da die Kraftstoffpumpe sonst weiterhin durch das ECM gesteuert wird.
+</div>
+</li>
+<li>
+<div>
+Während dieses Vorgangs kann ein DTC oder ein temporärer DTC gespeichert werden. 
+<a href="javascript:CtsProc('0','000000000003186','iG10')">
+Nachsehen, ob DTCs gespeichert sind, und diese gegebenenfalls löschen.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Das Massekabel von der Batterie trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007897','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Die Abdeckung (A) der Schnellkupplung entfernen.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Die Kraftstoffschnellkupplung auf Verunreinigung prüfen und gegebenenfalls reinigen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007898','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Einen Lappen über die Schnellkupplung (A) legen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007899','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Die Schnellkupplung (A) trennen: Mit einer Hand das Kupplungsstück (B) halten, mit der anderen Hand zum Lösen der Sperrklinken (D) die Sicherungsbügel (C) zusammendrücken. Das Kupplungsstück abziehen.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Leitung (E) und die übrigen Teile nicht beschädigen.
+</div>
+</li>
+<li>
+<div>
+Keine Werkzeuge verwenden.
+</div>
+</li>
+<li>
+<div>
+Das Kupplungsstück, wenn es sehr fest sitzt, bei gedrückten Sicherungsbügeln mehrmals vor und zurück bewegen, bis es sich leicht lösen lässt.
+</div>
+</li>
+<li>
+<div>
+Den Sicherungsbügel möglichst an der Leitung belassen. Ein entfernter Sicherungsbügel muss erneuert werden.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Nach dem Trennen der Schnellkupplung 
+<a href="javascript:CtsProc('0','000000000003090','i040')">
+prüfen, ob Verunreinigungen oder Beschädigungen vorliegen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Das Massekabel wieder an die Batterie anschließen und folgende Schritte durchführen:
+</div>
+<ul type="disc">
+<li>
+<div>
+Den Diebstahlsicherungscode für die Audioanlage eingeben.
+</div>
+</li>
+<li>
+<div>
+Die Uhr stellen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007900','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Ohne das HDS
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Sicherstellen, dass der Diebstahlsicherungscode für die Audioanlage vorliegt.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+<a href="javascript:CtsProc('0','000000000000340','i000')">
+Den Sicherungs-/Relaiskasten unter dem Armaturenbrett beschrieben ausbauen
+</a>
+ und das PGM-Fl-Hauptrelais 2 (KRAFTSTOFFPUMPE) (A) aus dem Sicherungs-/Relaiskasten herausnehmen.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Den Sicherungs-/Relaiskasten unter dem Armaturenbrett wieder einbauen.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Den Motor anlassen und bis zum Absterben im Leerlauf laufen lassen.
+</div>
+<div>
+HINWEIS: Eventuell gespeicherte DTCs löschen und ignorieren.
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Den Kraftstofftankdeckel abschrauben.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Das Massekabel von der Batterie trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007901','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i280">
+</a>
+<ol>
+<li value="8">
+<div>
+Die Abdeckung (A) der Schnellkupplung entfernen.
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="9">
+<div>
+Die Kraftstoffschnellkupplung auf Verunreinigung prüfen und gegebenenfalls reinigen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007902','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i300">
+</a>
+<ol>
+<li value="10">
+<div>
+Einen Lappen über die Schnellkupplung (A) legen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007903','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i310">
+</a>
+<ol>
+<li value="11">
+<div>
+Die Schnellkupplung (A) trennen: Mit einer Hand das Kupplungsstück (B) halten, mit der anderen Hand zum Lösen der Sperrklinken (D) die Sicherungsbügel (C) zusammendrücken. Das Kupplungsstück abziehen.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Leitung (E) und die übrigen Teile nicht beschädigen.
+</div>
+</li>
+<li>
+<div>
+Keine Werkzeuge verwenden.
+</div>
+</li>
+<li>
+<div>
+Das Kupplungsstück, wenn es sehr fest sitzt, bei gedrückten Sicherungsbügeln mehrmals vor und zurück bewegen, bis es sich leicht lösen lässt.
+</div>
+</li>
+<li>
+<div>
+Den Sicherungsbügel möglichst an der Leitung belassen. Ein entfernter Sicherungsbügel muss erneuert werden.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="12">
+<div>
+Nach dem Trennen der Schnellkupplung 
+<a href="javascript:CtsProc('0','000000000003090','i040')">
+prüfen, ob Verunreinigungen oder Beschädigungen vorliegen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="13">
+<div>
+Das Massekabel wieder an die Batterie anschließen und folgende Schritte durchführen:
+</div>
+<ul type="disc">
+<li>
+<div>
+Den Diebstahlsicherungscode für die Audioanlage eingeben.
+</div>
+</li>
+<li>
+<div>
+Die Uhr stellen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007904','1');">
+<img src="../tn/SMR9EQ0A20326400000BAGD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A20326400000BAGD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

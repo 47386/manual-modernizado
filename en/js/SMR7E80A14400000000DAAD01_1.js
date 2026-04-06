@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E80A14400000000DAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:470px;top:720px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>THERMOSTAT<br><a href=\"javascript:CtsProc('0','000000000001619','i000')\"></b>Test,</a><br><a href=\"javascript:CtsProc('0','000000000001620','i000')\">Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:442px;top:881px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RADIATOR<br><a href=\"javascript:CtsProc('0','000000000001615','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:287px;top:989px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ENGINE COOLANT TEMPERATURE<br>(ECT) SENSOR 2<br><a href=\"javascript:CtsProc('0','000000000001754','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:445px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WATER PUMP<br><a href=\"javascript:CtsProc('0','000000000001624','i000')\"></b>Inspection,</a><br><a href=\"javascript:CtsProc('0','000000000001623','i000')\">Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:831px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>A/C CONDENSER FAN ASSEMBLY<br><a href=\"javascript:CtsProc('0','000000000001618','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000001617','i000')\">Fan Motor Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:74px;top:917px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RADIATOR FAN ASSEMBLY<br><a href=\"javascript:CtsProc('0','000000000001618','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000001617','i000')\">Fan Motor Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:725px;top:533px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WATER OUTLET<br><a href=\"javascript:CtsProc('0','000000000001621','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:294px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>COOLANT SEPARATOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:53px;top:531px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WATER PASSAGE<br><a href=\"javascript:CtsProc('0','000000000001622','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:638px;top:635px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ENGINE OIL<br>COOLER<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

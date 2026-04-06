@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:385px;\" coordsize=\"475,385\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:385px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E00H46200053401KBGD06.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:385px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:65px;top:27px;font-weight:normal;font-size:7.99pt;\">");
+write("<nobr><b>UNTERE <br>VERANKERUNGSSCHRAUBE <br>HINTEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:336px;top:180px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>ZAHNSCHEIBE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:326px;top:353px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>HÜLSEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:178px;top:189px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>FEDERSCHEIBE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:195px;top:15px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>VERANKERUNG UNTEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:293px;top:43px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>HÜLSEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:357px;top:51px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>WASCHANLAGEN-<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:151px;top:356px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>VERANKERUNG UNTEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:83px;top:198px;font-weight:normal;font-size:7.99pt;\">");
+write("<nobr><b>UNTERE <br>VERANKERUNGSSCHRAUBE <br>VORN<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:980px; height:1103px;\" coordsize=\"980,1103\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:980px;height:1103px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J54200000000DEPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:980px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:422px;top:451px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR GERAL DOS VIDROS ELÉCTRICOS<br>(Possui uma unidade de controlo incorporada)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:932px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO AQUECEDOR DO BANCO <br>DO CONDUTOR  (ALTO)<br></b>Cores dos fios: RED, ORN, <br>BLK e GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:997px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO AQUECEDOR DO BANCO DO CONDUTOR <br>(BAIXO)<br></b>Cores dos fios: RED, BRN,<br>BLU/YEL, BLK e BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:763px;top:576px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO AQUECEDOR DO BANCO<br>DO PASSAGEIRO DIANTEIRO (ALTO)<br></b>Cores dos fios: RED, ORN, <br>BLK e GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:763px;top:639px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO AQUECEDOR DO BANCO<br>DO PASSAGEIRO DIANTEIRO (BAIXO)<br></b>Cores dos fios: RED, BRN,<br>BLU/YEL, BLK e BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Banco do Condutor<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Banco do Passageiro Dianteiro:<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:15px;top:1067px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>A versão LHD é ilustrada; a versão RHD é semelhante.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

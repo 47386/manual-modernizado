@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:591px;\" coordsize=\"950,591\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:591px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54300000000DAPD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:591px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:732px;top:237px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BOCAL DO LAVA VIDROS<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>Substituição,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:690px;top:433px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BOCAL DO LAVA-FARÓIS<br><a href=\"javascript:CtsProc('0','000000000000349','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:656px;top:505px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MOTOR DO LAVA-FARÓIS<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Ensaio,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:687px;top:114px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MOTOR DO LIMPA VIDROS<br><a href=\"javascript:CtsProc('0','000000000000353','i000')\"></b>Ensaio,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000354','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:131px;top:431px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>RESERVATÓRIO DO LAVA VIDROS<br><a href=\"javascript:CtsProc('0','000000000000347','i000')\"></b>Substituição,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:20px;top:348px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TUBOS DO LAVA VIDROS<br><a href=\"javascript:CtsProc('0','000000000000350','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:19px;top:233px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ILUMINAÇÃO AUTOMÁTICA/<br>SENSOR DA CHUVA<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Ensaio de Entrada de Sinais,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:562px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>O modelo LHD é ilustrado, o modelo RHD é similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:332px;top:481px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MOTOR DO LAVA VIDROS<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Ensaio,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:626px;top:17px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BRAÇOS DO LIMPA VIDROS e ARTICULAÇÃO<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

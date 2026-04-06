@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:815px;\" coordsize=\"950,815\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:815px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DEAD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:815px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>IG2 CUT RELAY<br></b>Wire colors: ORN, GRY,<br>YEL, and LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ACC CUT RELAY<br></b>Wire colors: GRN, GRY,<br>PUR, and LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:704px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STARTER CUT RELAY<br></b>Wire colors: WHT, RED,<br>GRY, and LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INHIBITER RELAY<br></b>Wire colors: GRY, WHT,<br>BLK, and GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:678px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SRS UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:711px;top:741px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NAVIGATION UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:723px;top:119px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEADLIGHT AUTO LEVELING<br>CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:528px;top:107px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUDIO UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:13px;top:646px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>IMMOBILIZER-KEYLESS<br>CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:610px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

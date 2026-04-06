@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:847px;\" coordsize=\"950,847\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:847px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/SMR7EE0J54200000000DEAD06.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:847px;border-color:#ffffff\">");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:677px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CIGARETTE LIGHTER RELAY<br></b>Wire colors: BLU, WHT,<br>BLK and PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:677px;top:67px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ACCESSORY POWER SOCKET RELAY<br></b>Wire colors: RED, YEL,<br>BLK and PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:439px;top:91px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT FOG LIGHT RELAY<br></b>Wire colors: WHT, RED,<br>BLU and WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:644px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RIGHT SUPER LOCKING RELAY<br></b>Wire colors: BLU, WHT,<br>RED, BLK and WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:692px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LEFT SUPER LOCKING RELAY<br></b>Wire colors: ORN, WHT,<br>GRN, BLK and WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>POWER MIRROR DEFOGGER RELAY<br></b>Wire colors: WHT, ORN,<br>GRY and WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:722px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HORN RELAY<br>(With security)<br></b>Wire colors: WHT, GRN,<br>ORN and WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:186px;top:111px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEATER CONTROL UNIT/<br>CLIMATE CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

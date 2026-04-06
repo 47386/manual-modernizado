@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1071px;\" coordsize=\"950,1071\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1071px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E80A18300000000DAGD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1071px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:562px;top:32px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KOLBENRINGE<br><a href=\"javascript:CtsProc('0','000000000001701','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:552px;top:256px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KOLBENBOLZEN<br><a href=\"javascript:CtsProc('0','000000000001699','iR01')\"></b>Ausbau,</a><br><a href=\"javascript:CtsProc('0','000000000001699','iR02')\">Inspektion,</a><br><a href=\"javascript:CtsProc('0','000000000001699','iR03')\">Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:31px;top:438px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLEUELSTANGE<br><a href=\"javascript:CtsProc('0','000000000001691','i000')\"></b>Axialspiel,</a><br><a href=\"javascript:CtsProc('0','000000000001699','iR02')\">Pleuelkopf Messung,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:117px;top:885px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLEUELSTANGE<br>LAGER<br><a href=\"javascript:CtsProc('0','000000000001692','i000')\"></b>Radialspiel,</a><br><a href=\"javascript:CtsProc('0','000000000001692','iR02')\">Wahl,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:449px;top:966px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLEUEL-<br>LAGERDECKEL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:64px;top:275px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KOLBEN<br><a href=\"javascript:CtsProc('0','000000000001694','i000')\"></b>Ausbau,</a><br><a href=\"javascript:CtsProc('0','000000000001687','i000')\">Messen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:644px;top:758px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTORBLOCK<br><a href=\"javascript:CtsProc('0','000000000001687','i000')\"></b>Zylinderbohrung Inspektion,</a><br><a href=\"javascript:CtsProc('0','000000000001687','i000')\">Verzug Inspektion,</a><br><a href=\"javascript:CtsProc('0','000000000001686','i000')\">Zylinderbohrung Honen,</a><br><a href=\"javascript:CtsProc('0','000000000001694','i140')\">Gratentfernung,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:177px;top:1025px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLEUELSCHRAUBE<br><a href=\"javascript:CtsProc('0','000000000001693','i000')\"></b>Inspektion,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

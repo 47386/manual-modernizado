@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR8EVPD14300014781DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:490px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>POMPA FRENI<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Spurgo impianto freni,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Smontaggio,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Rimontaggio,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPIA IMPIANTO FRENI<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Schema elettrico,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Controllo interruttore freno di stazionamento,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Controllo interruttore livello liquido freni,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:635px;top:283px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TUBI FLESSIBILI e TUBAZIONI FRENI<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Controllo,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Sostituzione tubo flessibile freni,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:651px;top:678px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO POSTERIORE<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"></b>Controllo e sostituzione pastiglie,<br></a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Controllo disco,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Revisione pinza,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:546px;top:815px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO DI STAZIONAMENTO<br><a href=\"javascript:CtsProc('0','000000000004909','i000')\"></b>Controllo e regolazione,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Sostituzione del cavo,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:520px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO ANTERIORE<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"></b>Controllo e sostituzione pastiglie,<br></a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Controllo disco,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Revisione pinza,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:178px;top:874px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDALE FRENO<br></b>Regolazione di pedale freno e <br><a href=\"javascript:CtsProc('0','000000000000027','i000')\">interruttore posizione pedale freno<br></a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:8px;top:730px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVOFRENO<br><a href=\"javascript:CtsProc('0','000000000001204','i000')\"></b>Controllo,</a><br> nel supplemento del<br>manuale d'officina, numero categorico 62SMR20<br><a href=\"javascript:CtsProc('0','000000000001422','i000')\">Sostituzione,</a><br> nel supplemento del<br>manuale d'officina, numero categorico 62SMR20<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

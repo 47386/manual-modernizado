@@ -1,0 +1,246 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A2032411294JMAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+APP-Sensor Signalprüfung
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Bei diesem Verfahren wird der APP-Sensor in vollständig geschlossener Stellung geprüft. In allen anderen Stellungen speichert der APP-Sensor DTCs, die in anderen Fehlersuchverfahren behandelt werden.
+</div>
+</li>
+<li>
+<div>
+Zunächst mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert sind. Werden DTCs gemeldet, erst die Fehlersuche für die gemeldeten DTCs durchführen.
+</div>
+</li>
+<li>
+<div>
+Mehrmals das Gaspedal betätigen, um dessen Funktionsfähigkeit zu prüfen. Wenn die Betätigung nicht normal ist, das Pedal untersuchen. Wenn ein Problem festgestellt wird, 
+<a href="javascript:CtsProc('0','000000000003080','i000')">
+das Gaspedalmodul austauschen.
+</a>
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) (A) unter dem Armaturenbrett auf der Fahrerseite anschließen.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Sicherstellen, dass das HDS mit dem ECM kommuniziert. Wenn das nicht der Fall ist, 
+<a href="javascript:CtsProc('0','000000000003107','i000')">
+die Fehlersuche für den DLC-Schaltkreis durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Bei nicht betätigtem Gaspedal mit dem HDS das Element APP SENSOR (APP-Sensor) in der DATA LIST (Datenliste) abfragen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wird 0 ‰ angezeigt, ist der APP-Sensor in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wenn ein anderer Wert als 0 ‰ angezeigt wird, 
+<a href="javascript:CtsProc('0','000000000003057','i000')">
+das ECM gegebenenfalls mit der neuesten Softwareversion aktualisieren
+</a>
+ oder 
+<a href="javascript:CtsProc('0','000000000003186','iG17')">
+durch ein bekanntermaßen funktionsfähiges ECM ersetzen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i050')">Schritt 5
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Bei nicht betätigtem Gaspedal mit dem HDS das Element APP SENSOR (APP-Sensor) in der DATA LIST (Datenliste) abfragen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wird 0 ‰ angezeigt, ist der APP-Sensor in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wenn ein anderer Wert als 0 ‰ angezeigt wird, 
+<a href="javascript:CtsProc('0','000000000003080','i000')">
+das Gaspedalmodul austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000007896','1');">
+<img src="../tn/SMR9EQ0A2032411294JMAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQ0A2032411294JMAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

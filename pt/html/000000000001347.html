@@ -1,0 +1,649 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72100090652FAPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Diagnóstico de Avarias por DTC: P0652
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P0652:
+</b>
+<div>
+ Baixa Voltagem no Circuito B da Voltagem de Referência do Sensor
+</div>
+<div>
+NOTA: Antes de efectuar o diagnóstico de avarias, tome nota dos dados congelados e 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+reveja a informação geral do diagnóstico de avarias.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Elimine o DTC da memória utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0652?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i040')">Etapa 4
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Avaria intermitente, o sistema está agora bom. Verifique se não existem más ligações ou terminais soltos no sensor CMP, no sensor de posição IMRC, no sensor de pressão do A/C, no sensor da velocidade do veio de saída (contraveio), no sensor de pressão do diferencial do DPF (com sistema DPF) e no ECM.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+DESLIGUE a ignição e aguarde 2 minutos.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Desligue as fichas destes sensores:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sensor CMP
+</div>
+</li>
+<li>
+<div>
+Sensor da posição do IMRC
+</div>
+</li>
+<li>
+<div>
+Sensor da velocidade do veio de saída (contraveio)
+</div>
+</li>
+<li>
+<div>
+Sensor da pressão do A/C
+</div>
+</li>
+<li>
+<div>
+Sensor de pressão do diferencial do DPF (com sistema DPF)
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Elimine o DTC da memória utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Volte a ligar a ficha de cada um destes sensores, um de cada vez:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sensor CMP
+</div>
+</li>
+<li>
+<div>
+Sensor da posição do IMRC
+</div>
+</li>
+<li>
+<div>
+Sensor da velocidade do veio de saída (contraveio)
+</div>
+</li>
+<li>
+<div>
+Sensor da pressão do A/C
+</div>
+</li>
+<li>
+<div>
+Sensor de pressão do diferencial do DPF (com sistema DPF)
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0652?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Substitua o sensor que indicou o DTC quando novamente ligado e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i130')">Etapa 13
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i100')">Etapa 10
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+DESLIGUE a ignição e aguarde 2 minutos.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Desligue as fichas N.ºs 1 (96P) e 2 (58P) do ECM.
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Verifique se há continuidade entre a massa da carroçaria e os terminais N.º 3, N.º 4, N.º 5 N.º 29(com sistema DPF) e a ficha N.º 1 e os terminaisN.º 2 e N.º 13 da ficha do ECM individualmente.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Há continuidade?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Repare o curto-circuito no fio entre os terminais da ficha do ECM e estes sensores e, em seguida, passe à 
+<a href="javascript:parent.Jmp('i130')">Etapa 13
+</a>
+.
+</div>
+<ul type="disc">
+<li>
+<div>
+Terminal N.º 29 da ficha N.º 1 do ECM e do sensor CMP.
+</div>
+</li>
+<li>
+<div>
+Terminal N.º 3 da ficha N.º 1 do ECM e do sensor da posição do IMRC.
+</div>
+</li>
+<li>
+<div>
+Sensor da velocidade do veio de saída (contraveio) e terminal N.º 4 da ficha N.º 1 do ECM.
+</div>
+</li>
+<li>
+<div>
+Sensor da pressão do diferencial do DPF e terminal N.º 5 da ficha N.º 1 do ECM (com sistema DPF).
+</div>
+</li>
+<li>
+<div>
+Sensor de pressão do A/C e terminal N.º 13 da ficha N.º 2 do ECM.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passe à 
+<a href="javascript:parent.Jmp('i170')">Etapa 17
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Volte a ligar todas as fichas.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0652?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos no sensor CMP, no sensor de posição IMRC, no sensor de pressão do A/C, no sensor da velocidade do veio de saída (contraveio), no sensor de pressão do diferencial do DPF (com sistema DPF) e no ECM.
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+O diagnóstico de avarias está concluído. Se forem indicados quaisquer outros DTC Temporários ou DTC, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Volte a ligar todas as fichas.
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+<a href="javascript:CtsProc('0','000000000001299','iG14')">
+Actualize o ECM se este ainda não tiver o software mais recente instalado,
+</a>
+ ou 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+instale um ECM em bom estado.
+</a>
+</div>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Verifique os DTC Temporários ou DTC com o HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+É indicado o DTC P0652?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SIM
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Verifique se não existem más ligações ou terminais soltos no sensor CMP, no sensor de posição IMRC, no sensor de pressão do A/C, no sensor da velocidade do veio de saída (contraveio), no sensor de pressão do diferencial do DPF (com sistema DPF) e no ECM. SE o ECM tiver sido actualizado, 
+<a href="javascript:CtsProc('0','000000000001299','iG15')">
+instale um ECM em bom estado e,
+</a>
+ em seguida, volte a verificar. Se o ECM tiver sido substituído, passe à 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NÃO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se o ECM tiver sido actualizado, o diagnóstico de avarias está concluído. Se o ECM tiver sido substituído, 
+<a href="javascript:CtsProc('0','000000000001102','i000')">
+substitua o ECM original.
+</a>
+: Se tiverem sido indicados quaisquer outros DTC Temporários ou DTC no 
+<a href="javascript:parent.Jmp('i130')">Etapa 13
+</a>
+, passe ao diagnóstico de avarias por DTC indicado.■
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003861','1');">
+<img src="../tn/SMR7E40K72100090652FAPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100090652FAPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

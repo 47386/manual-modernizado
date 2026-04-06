@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EE0J54200000000DEAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GAUGE CONTROL MODULE<br>(SPEEDO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:562px;top:77px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GAUGE CONTROL<br>MODULE (TACH)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:117px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>EPS CONTROL UNIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:26px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNDER-DASH FUSE/<br>RELAY BOX<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:454px;top:631px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HANDS FREE TELEPHONE<br>CONTROL UNIT*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:287px;top:679px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PGM-FI MAIN RELAY 2<br>(Fuel pump relay)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:392px;top:719px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STARTER CUT RELAY<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:725px;top:772px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Built into the under-<br>dash fuse/relay box)<br>IMOES UNIT<br>(Built into the MICU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1059px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>*: With Navigation<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55px;top:891px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Not used<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

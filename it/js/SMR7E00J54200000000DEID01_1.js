@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:980px; height:1103px;\" coordsize=\"980,1103\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:980px;height:1103px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J54200000000DEID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:980px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:422px;top:451px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUTTORE PRINCIPALE ALZACRISTALLI ELETTRICI<br>(Con centralina integrata)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:932px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ RISCALDATORE SEDILE<br>CONDUCENTE (ALTA TEMPERATURA)<br></b>Colori fili: RED, ORN,<br>BLK e GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:997px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ RISCALDATORE SEDILE<br>CONDUCENTE (BASSA TEMPERATURA)<br></b>Colori fili: RED, BRN,<br>BLU/YEL, BLK e BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:745px;top:571px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÈ RISCALDATORE SEDILE PASSEGGERO <br>ANTERIORE (ALTA TEMPERATURA)<br></b>Colori fili: RED, ORN,<br>BLK e GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:747px;top:639px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÈ RISCALDATORE SEDILE PASSEGGERO <br>ANTERIORE (BASSA TEMPERATURA)<br></b>Colori fili: RED, BRN,<br>BLU/YEL, BLK e BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Sedile conducente<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Sedile passeggero anteriore<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1074px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>In figura viene mostrato il modello con guida a sinistra, quello con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

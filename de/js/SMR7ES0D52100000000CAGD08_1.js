@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:367px;\" coordsize=\"950,367\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:367px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ES0D52100000000CAGD08.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:367px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:144px;top:222px;font-weight:normal;font-size:6.49pt;\">");
+write("<nobr><b>Druckgrenzwert<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:239px;top:173px;font-weight:normal;font-size:5.72pt;\">");
+write("<nobr><b>Beginn der <br>Bremsunterstützung<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:373px;top:93px;font-weight:normal;font-size:8.67pt;\">");
+write("<nobr><b>Notbremsung mit Bremsunterstützung<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:448px;top:339px;font-weight:normal;font-size:8.67pt;\">");
+write("<nobr><b>Zeit<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:304px;top:335px;font-weight:normal;font-size:6.49pt;\">");
+write("<nobr><b>Zeitgrenzwert<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:152px;top:148px;font-weight:normal;font-size:8.67pt;\">");
+write("<nobr><b>Druck<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:360px;top:192px;font-weight:normal;font-size:8.67pt;\">");
+write("<nobr><b>Notbremsung ohne Bremsunterstützung<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:687px;top:34px;font-weight:normal;font-size:6.49pt;\">");
+write("<nobr><b>Geringerer Kraftaufwand bei Bremspedalbetätigung<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:461px;top:256px;font-weight:normal;font-size:8.67pt;\">");
+write("<nobr><b>Normalbremsung<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

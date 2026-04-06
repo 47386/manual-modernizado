@@ -1,0 +1,370 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPB54121400000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias no Sistema de Aviso de Esvaziamento
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Indicador do Sistema
+</b>
+</div>
+<div>
+Este sistema tem três indicadores:
+</div>
+<ul type="disc">
+<li>
+<div>
+Indicador (A) de baixa pressão do pneu
+</div>
+</li>
+<li>
+<div>
+Mensagem (MID) (B) de baixa pressão do pneu
+</div>
+</li>
+<li>
+<div>
+Mensagem do SISTEMA DE VERIFICAÇÃO (sistema de aviso de esvaziamento) (MID) (C)
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010464','1');">
+<img src="../tn/SMR9ERPB54121400000BBPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPB54121400000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+O Indicador de Baixa Pressão do Pneu
+</b>
+</div>
+<div>
+Se o sistema detectar baixa pressão do pneu em algum dos quatro pneus, o indicador de baixa pressão do pneu acende, assim como o indicador de mensagem. Continuará aceso até iniciar a inicialização.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+SISTEMA DE VERIFICAÇÃO (Sistema de Aviso de Esvaziamento)
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Se for detectado um problema no sistema, o indicador VSA acende e a mensagem do SISTEMA DE VERIFICAÇÃO (sistema de aviso de esvaziamento) no MID é apresentada e o indicador de baixa pressão do pneu acende após cintilar durante cerca de 75 segundos.
+</div>
+</li>
+<li>
+<div>
+Se o VSA entrar em modo de erro, o sistema de aviso de esvaziamento entra também em modo de erro e pára todo o funcionamento. Se o aviso do sistema de esvaziamento ocorrer durante a aprendizagem, esta será suspensa.
+</div>
+</li>
+</ul>
+<div>
+Se o sistema estiver bom, o indicador de baixa pressão do pneu deve acender quando LIGA (II) a ignição e, em seguida, apaga-se passados 2 segundos. Caso não apague, há um problema com o sistema.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Condições para Rejeição de Dados
+</b>
+</div>
+<div>
+Mesmo que um sistema esteja normal, a detecção de esvaziamento ou aprendizagem não são efectuadas durante as seguintes condições.
+</div>
+<ul type="disc">
+<li>
+<div>
+O pedal dos travões é pressionado.
+</div>
+</li>
+<li>
+<div>
+Durante paragem.
+</div>
+</li>
+<li>
+<div>
+Quando em viagem a velocidade inferior a 25 km/h ou a velocidade de cruzeiro superior a 250 km/h.
+</div>
+</li>
+<li>
+<div>
+Curva apertada, aceleração brusca e desaceleração brusca.
+</div>
+</li>
+<li>
+<div>
+Caso o valor de velocidade das rodas direita e esquerda seja diferente (ou em estradas arenosas, com gravilha, muito acidentadas, com neve ou gelo).
+</div>
+</li>
+<li>
+<div>
+Durante a operação do ABS, EBD, TCS, VSA.
+</div>
+</li>
+<li>
+<div>
+Raio de viragem inferior a 130 m.
+</div>
+</li>
+<li>
+<div>
+Anormalidade no valor da taxa de guinada ou no valor de binário.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Caso o Sistema de Aviso de Esvaziamento Não Funcione Normalmente
+</b>
+</div>
+<div>
+Nos casos seguintes, podem ocorrer falsos avisos ou o esvaziamento pode não ser detectado.
+</div>
+<ul type="disc">
+<li>
+<div>
+Esvaziamento simultâneo de vários pneus (fuga natural, baixa temperatura, etc).
+</div>
+</li>
+<li>
+<div>
+Utilização de pneus não-recomendados.
+</div>
+</li>
+<li>
+<div>
+Pneus com níveis diferentes de desgaste, ou utilização de diferentes marcas e tamanhos.
+</div>
+</li>
+<li>
+<div>
+O crescimento dos novos pneus ocorreu após aprendizagem quando não são mudados todos os quatro pneus ao mesmo tempo.
+</div>
+</li>
+<li>
+<div>
+Inicialização com pressão não recomendada do pneu.
+</div>
+</li>
+<li>
+<div>
+Aplicação temporária de pneus sobressalentes ou correntes nos pneus.
+</div>
+</li>
+<li>
+<div>
+Em estradas arenosas, com gravilha, muito acidentadas, com neve ou gelo.
+</div>
+</li>
+<li>
+<div>
+Com atrelado.
+</div>
+</li>
+<li>
+<div>
+Com transporte no tejadilho.
+</div>
+</li>
+<li>
+<div>
+Com cargas muito pesadas.
+</div>
+</li>
+<li>
+<div>
+Com carga muito desequilibrada.
+</div>
+</li>
+<li>
+<div>
+Rápido esvaziamento como rebentamento do pneu.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="it">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script>
+<!--
+var tDT     = new Array;
+var trOpen  = null;
+var trSel   = null;
+function SearchTreeItem(level, strSitq, strSct, strSc, strSys, strComp, strSupp, strName)
+{
+  var data    = new Array;
+  data.Level  = level;
+  data.Sitq   = strSitq;
+  data.Sct    = strSct;
+  data.Sc     = strSc;
+  data.Sys    = strSys;
+  data.Comp   = strComp;
+  data.Supp   = strSupp;
+  data.Name   = strName;
+  return(data);
+}
+function SearchTreeList()
+{
+  var i=0;
+  var j;
+  tDT[i++]=SearchTreeItem(0,"BA","0","","","","!T80","Informazioni generali");
+  tDT[i++]=SearchTreeItem(0,"NA,NB,NC","","","","","","Specifiche tecniche");
+  tDT[i++]=SearchTreeItem(1,"NA","","","","","","Standard di fabbrica e limiti di servizio");
+  tDT[i++]=SearchTreeItem(2,"NA","A","","","","","Motore");
+  tDT[i++]=SearchTreeItem(2,"NA","E","","","","","Albero di trasmissione con relativo giunto cardanico");
+  tDT[i++]=SearchTreeItem(2,"NA","F","","","","","Sterzo");
+  tDT[i++]=SearchTreeItem(2,"NA","B","","","","","Sospensioni");
+  tDT[i++]=SearchTreeItem(2,"NA","D","","","","","Freni");
+  tDT[i++]=SearchTreeItem(2,"NA","G","","","","","HVAC");
+  tDT[i++]=SearchTreeItem(1,"NB","","","","","","Specifiche di progetto");
+  tDT[i++]=SearchTreeItem(1,"NC","","","","","","Dimensioni carrozzeria");
+  tDT[i++]=SearchTreeItem(0,"BA|JA,JB,JD","|","|","|","|","T80|","Tabella di manutenzione");
+  tDT[i++]=SearchTreeItem(1,"BA","","","","","T80","Lubrificanti e liquidi");
+  tDT[i++]=SearchTreeItem(1,"JA,JB","","","","","","Manutenzione");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","!203","","","","Motore");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","141","","","","Impianto di ricarica");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","144","","","","Impianto di raffreddamento");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","144","261","","","Comandi ventole");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","145","","","","Impianto comando velocità di crociera");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","146","","","","Gruppo testata");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","146","167","","","Albero a camme");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","146","663","","","Gruppo bilancieri");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","146","743","","","Catena di distribuzione/camma");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","146","802","","","Valvole");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","182","","","","Gruppo motore e supporti");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","182","238","","","Gruppo motore");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","182","240","","","Supporti motore");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","183","","","","Monoblocco motore");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","183","162","","","Bielle");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","183","166","","","Albero a gomiti");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","183","602","","","Pistoni");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","184","","","","Sistema di scarico");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","184","750","","","Impianto compressore di sovralimentazione");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","322","","","","Impianto di lubrificazione");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","322","462","","","Componenti spia bassa pressione olio motore");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","465","","","","Impianto di avviamento");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","","","","Alimentazione carburante ed emissioni");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","161","","","Impianto catalizzatore");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","210","","","Sistema gestione motore diesel");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","212","","","Sistema filtro antiparticolato diesel (DPF)");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","234","","","Sistema comando EVAP");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","235","","","Impianto EGR");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","264","","","Impianto alimentazione del carburante");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","302","","","Sistema di comando candelette");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","361","","","Sistema comando del minimo");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","A","203","363","","","Sistema aspirazione aria");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","","","","","Albero di trasmissione con relativo giunto cardanico");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","162","","","","Semiassi");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","162","266","","","Gruppo semiasse anteriore");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","162","365","","","Gruppo albero intermedio");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","","","","Trasmissione e trazione anteriore manuale");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","163","","","Frizione");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","501","","","Montaggio M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","502","","","Gruppo contralbero M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","503","","","Meccanismo cambio M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","504","","","Gruppo albero primario M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","507","","","Differenziale M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","511","","","Impianto di blocco retromarcia M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","514","","","Gruppo albero cambio al minimo retromarcia M/T");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","E","341","711","","","Gruppi di sincronizzazione");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","F","","","","","Sterzo");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","F","181","","","","Componenti EPS");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","B","","","","","Sospensioni");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","B","202","","","","Sospensioni anteriori");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","B","441","","","","Sospensioni posteriori");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","B","541","","","","Ruote e pneumatici");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","D","","","","","Freni");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","D","143","","","","Componenti freni convenzionali");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","D","143","135","","","Componenti spia impianto freni");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","D","521","","","","Sistema VSA (inclusi i sistemi ABS e TCS)");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","D","","608","","","Freno di stazionamento");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","","","","","HVAC");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","101","","","","A/C");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","101","101","","","Compressore A/C");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","101","102","","","Condensatore A/C");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","101","140","","","Gruppo soffiante/evaporatore-riscaldatore");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","105","","","","Comando climatizzatore automatico");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","241","","","","Riscaldamento/ventilazione");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","241","140","","","Gruppo soffiante/evaporatore-riscaldatore");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","G","241","661","","","Dispositivo antiappannamento lunotto");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","","","","","Carrozzeria");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","103","","","","Audio/Intrattenimento");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","142","","","","Comunicazione");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","150","","","","Accendisigari");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","161","","","","Portiere");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","","","","Esterno");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","134","","","Paraurti");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","262","","","Parafanghi");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","263","","","Sportello di riempimento carburante");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","277","","","Dispositivo di apertura dello sportello del bocchettone di rifornimento carburante");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","332","","","Cofano");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","351","","","Dispositivo di apertura del cofano");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","564","","","Dispositivi di apertura");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","734","","","Finitura");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","185","739","","","Portellone");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","201","","","","Telaio");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","201","707","","","Sottotelai");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","221","","","","Strumenti");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","242","","","","Avvisatori acustici");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","262","","","","Interno");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","262","165","","","Console");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","262","202","","","Plancia");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","262","734","","","Finitura");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","263","","","","Spie");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","263","461","","","Segnalazione luci accese");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","263","515","","","Display multifunzione");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","263","702","","","Segnalazione cintura di sicurezza");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","","","","Luci, esterne");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","125","","","Centralina illuminazione automatica");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","131","","","Luci di retromarcia");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","133","","","Luci di arresto");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","271","","","Fendinebbia");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","331","","","Fari");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","349","","","Impianto di livellamento fari");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","666","","","Fari antinebbia posteriori");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","731","","","Luci di posizione posteriori");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","321","736","","","Indicatori di direzione/Luci di emergenza");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","323","","","","Luci, interne");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","323","168","","","Luce vano di carico");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","323","233","","","Impianto di comando luci di cortesia");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","343","","","","Specchietti");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","346","","","","Sistema di comando multiplex integrato (MICS)");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","362","","","","Navigatore/TV");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","363","","","","Comunicazione di rete");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","461","","","","Sedili");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","461","270","","","Sedili anteriori ");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","461","664","","","Sedile posteriore");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","461","704","","","Riscaldatori sedili");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","466","","","","Fermi/apertura con telecomando/antifurto");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","466","362","","","Sistema immobiliser");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","466","434","","","Sistema di accesso con telecomando/allarme antifurto");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","466","605","","","Chiusura centralizzata portiere");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","468","","","","Pannello parasole");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","","","","Impianto elettrico");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","115","","","Prese di corrente accessorie");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","265","","","Scatole reè/fusibili");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","301","","","Distribuzione di massa");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","604","","","Distribuzione alimentazione");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","542","832","","","Cablaggio fili");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","543","","","","Tergi/Lavacristallo");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","544","","","","Finestrini");
+  tDT[i++]=SearchTreeItem(2,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","J","544","606","","","Alzacristalli elettrici");
+  tDT[i++]=SearchTreeItem(0,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","H","","","","","Supporti di guida e sistemi di sicurezza passiva");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","H","462","","","","Cinture di sicurezza");
+  tDT[i++]=SearchTreeItem(1,"A?,B?,C?,D?,E?,F?,HB,JD,K?,L?,M?","H","464","","","","SRS");
+  tDT[i++]=SearchTreeItem(0,"","K","","","","","Ricerca guasti DTC");
+  tDT[i++]=SearchTreeItem(1,"","K","70B","","","","Sensore illuminazione automatica/pioggia");
+  tDT[i++]=SearchTreeItem(1,"","K","711","","","","Centralina comando climatizzatore");
+  tDT[i++]=SearchTreeItem(1,"","K","721","","","","ECM");
+  tDT[i++]=SearchTreeItem(1,"","K","722","","","","Centralina comando EPS");
+  tDT[i++]=SearchTreeItem(1,"","K","732","","","","Modulo di comando quadro strumenti");
+  tDT[i++]=SearchTreeItem(1,"","K","735","","","","Centralina vivavoce");
+  tDT[i++]=SearchTreeItem(1,"","K","737","","","","Centralina riscaldatore");
+  tDT[i++]=SearchTreeItem(1,"","K","742","","","","Centralina immobilizzatore-sistema di accesso con telecomando");
+  tDT[i++]=SearchTreeItem(1,"","K","763","","","","MICU (Centralina di comando multiplex integrata)");
+  tDT[i++]=SearchTreeItem(1,"","K","791","","","","Centralina SRS");
+  tDT[i++]=SearchTreeItem(1,"","K","801","","","","Centralina di comando VSA");
+  tDT[i++]=SearchTreeItem(0,"ZD","","","","","","Schemi elettrici");
+}
+function CreateTree()
+{
+  var nNest = 1;
+  var strEventExpand,strEventClick, strIMG;
+  var i, j, k, n;
+  if (typeof(SearchTreeList) != "function") {
+    return;
+  }
+  tDT.length = 0;
+  SearchTreeList();
+  for (i=0; i < tDT.length; ++i) {
+      if ((i < (tDT.length - 1)) && (tDT[i+1].Level > tDT[i].Level)) {
+        strIMG = "TR_PLUS";
+      }
+      else {
+        strIMG = "TR_ITEM";
+      }
+      strEventExpand = "TreeExpand('" + i + "');";
+      strEventClick = "TreeClick('" + i + "');";
+      with (document) {
+        write("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr>" +
+            "<td valign=\"top\">");
+        for (n=0; n < tDT[i].Level; ++n) {
+          write("<img src=\"../img/TR_ITEM.PNG\">");
+        }
+        write("<img id=\"I" + i + "\" src=\"../img/" + strIMG + ".PNG\" onclick=\"" + strEventExpand +
+            "\" ondblclick=\"" + strEventExpand + "\" style=\"cursor:hand;\">" +
+            "<img id=\"F" + i + "\" src=\"../img/TR_CLOSE.PNG\" onclick=\"" + strEventClick +
+            "\" ondblclick=\"" + strEventClick + "\" style=\"cursor:hand;\">" +
+            "</td><td valign=\"top\">" +
+            "<span id=\"T" + i + "\" onclick=\"" + strEventClick + "\" ondblclick=\"" +
+            strEventClick + "\" style=\"font-size:small;cursor:hand;\">" + tDT[i].Name + "</span>" +
+            "</td></tr></table>");
+      }
+    with (document) {
+      if (i < (tDT.length - 1)) {
+        if (tDT[i+1].Level > tDT[i].Level) {
+          write("<div id=\"C" + i + "\" style=\"display:none;\">");
+          nNest = tDT[i+1].Level;
+        }
+        else if (tDT[i+1].Level < tDT[i].Level) {
+          while (tDT[i+1].Level < nNest) {
+            write("</div>");
+            --nNest;
+          }
+        }
+      }
+      else {
+        while (0 < nNest) {
+          write("</div>");
+          --nNest;
+        }
+      }
+    }
+  }
+}
+function TreeExpand(strID)
+{
+  var objTre = document.all["I" + strID];
+  var objFld = document.all["F" + strID];
+  var objChd = document.all["C" + strID];
+  if (objChd != null) {
+    if (trSel != null) {
+      trSel.style.backgroundColor = "#FFFFFF";
+      trSel = null;
+      if (trOpen != null) {
+        trOpen.src = "../img/TR_CLOSE.PNG";
+        trOpen = null;
+        parent.Tsl('','','','','','');
+      }
+    }
+    with (objChd.style) {
+      if ((display == "none") || (display.length == 0)) {
+        display = "block";
+        objTre.src = "../img/TR_MINUS.PNG";
+      }
+      else {
+        display = "none";
+        objTre.src = "../img/TR_PLUS.PNG";
+      }
+    }
+  }
+}
+function TreeClick(strID)
+{
+  var  htmlName;
+  var objFld  = document.all["F" + strID];
+  var objTtl  = document.all["T" + strID];
+  if (trSel == objTtl) {
+    trSel.style.backgroundColor = "#FFFFFF";
+    trSel = null;
+    trOpen.src = "../img/TR_CLOSE.PNG";
+    trOpen = null;
+    parent.Tsl('','','','','','');
+  }
+  else {
+    if (trSel != null) {
+      trSel.style.backgroundColor = "#FFFFFF";
+      trSel = null;
+    }
+    objTtl.style.backgroundColor = "#FFCC99";
+    trSel = objTtl;
+    if (trOpen != null) {
+      trOpen.src = "../img/TR_CLOSE.PNG";
+      trOpen = null;
+    }
+    objFld.src = "../img/TR_OPEN.PNG";
+    trOpen = objFld;
+    var strKey = tDT[strID].Supp;
+    var strSct = tDT[strID].Sct;
+    var strSc = tDT[strID].Sc;
+    var strSys = tDT[strID].Sys;
+    var strComp = tDT[strID].Comp;
+    var strSitq = tDT[strID].Sitq;
+    parent.Tsl(strKey,strSct,strSc,strSys,strComp,strSitq);
+  }
+}
+//-->
+</script>
+</head>
+<body id="TreeBody" topmargin="10" onLoad="javascript:parent.Old(this)">
+  <div><script>CreateTree();</script></div>
+</body>
+</html>

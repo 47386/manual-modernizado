@@ -1,0 +1,915 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ED4E34137300000MBIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Apprendimento del cambio i-SHIFT
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+È necessario eseguire l'apprendimento del cambio i-SHIFT, così il modulo TCM può apprendere le informazioni. Ci sono due modalità di apprendimento, ‘‘modalità dinamica&quot; e ‘‘modalità statica&quot;; le informazioni di apprendimento sono diverse. L'apprendimento del cambio può essere eseguito solo con il tester HDS selezionando &quot;DYNAMIC MODE LEARNING&quot; (modalità di apprendimento dinamica) o &quot;STATIC MODE LEARNING&quot; (modalità di apprendimento statica) nel menu &quot;ADJUSTMENT&quot; (regolazione). La ‘‘modalità statica&quot; non richiede funzioni di guida che sono invece richieste dalla ‘‘modalità dinamica&quot;.
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento del cambio i-SHIFT (modalità dinamica)
+</b>
+</div>
+<div>
+Di seguito vengono riportate le fasi della modalità dinamica di apprendimento del cambio i-SHIFT con il tester HDS.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Apprendimento posizione attuatore cambio.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Apprendimento posizione di sincronizzazione.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Apprendimento posizione di contatto 1 frizione.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Apprendimento posizione di contatto 2 frizione.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Apprendimento attrito frizione.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Apprendimento posizione di contatto 3 frizione.
+</div>
+<div>
+Operazioni necessarie durante la procedura di apprendimento.
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Sostituzione disco frizione.
+</div>
+</li>
+<li>
+<div>
+Sostituzione spingidisco.
+</div>
+</li>
+<li>
+<div>
+Sostituzione volano.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento del cambio i-SHIFT (modalità statica)
+</b>
+</div>
+<div>
+Di seguito vengono riportate le fasi della modalità statica di apprendimento del cambio i-SHIFT con il tester HDS.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Apprendimento posizione attuatore cambio.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Apprendimento posizione di sincronizzazione.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Apprendimento posizione di contatto 1 frizione.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Apprendimento posizione di contatto 2 frizione.
+</div>
+<div>
+Operazioni necessarie durante la procedura di apprendimento.
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore cambio.
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cilindro idraulico.
+</div>
+</li>
+<li>
+<div>
+Smontaggio/montaggio cambio.
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cambio.
+</div>
+</li>
+</ul>
+<div>
+Quando si eseguono i seguenti interventi di manutenzione, eseguire l'apprendimento.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="50%">
+<col width="25%">
+<col width="25%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+Apprendimento del cambio i-SHIFT (modalità dinamica)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+Apprendimento del cambio i-SHIFT (modalità statica)
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sostituzione dell'attuatore della frizione (modulo TCM).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sostituzione attuatore cambio.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Rimozione/installazione cilindro idraulico.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sostituzione disco frizione.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sostituzione spingidisco.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sostituzione volano.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Rimozione/installazione cambio.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Smontaggio/montaggio cambio.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="87%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="8%">
+<col width="91%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+○:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Manutenzione da eseguire
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+×:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Manutenzione da non eseguire
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento posizione attuatore di cambio marcia
+</b>
+</div>
+<div>
+L'attuatore di cambio marcia funziona automaticamente, apprende la posizione di folle del cambio e la posizione finale delle marce (dalla 1ª alla 6ª e R), quindi memorizza il valore di apprendimento nel modulo TCM.
+</div>
+<div>
+L'apprendimento della posizione dell'attuatore di cambio marcia viene richiesto dopo i seguenti interventi di manutenzione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Rimozione attuatore di cambio marcia.
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cambio.
+</div>
+</li>
+<li>
+<div>
+Smontaggio/montaggio cambio.
+</div>
+</li>
+</ul>
+<div>
+L'apprendimento della posizione dell'attuatore di cambio marcia può essere eseguito con il tester HDS in determinate circostanze:
+</div>
+<ul type="disc">
+<li>
+<div>
+Commutatore di accensione su ON.
+</div>
+</li>
+<li>
+<div>
+Motore non in funzione.
+</div>
+</li>
+<li>
+<div>
+Posizione N.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+I comandi hanno avuto esito positivo per ogni marcia, è possibile cambiare marcia tramite il tester HDS.
+</div>
+</li>
+<li>
+<div>
+In base alla marcia inserita, il cambio può essere difficoltoso. Se non si riesce a cambiare marcia per tre volte di seguito, allora c'è un guasto.
+</div>
+</li>
+<li>
+<div>
+Solitamente, l'apprendimento viene eseguito nell'ordine R-1-2-3-4-5-6; se c'è un guasto alla 2ª, provare a ri-eseguire l'apprendimento nell'ordine R-1-2-3-2-4-2-5-6.
+</div>
+</li>
+</ul>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento posizione di sincronizzazione
+</b>
+</div>
+<div>
+L'attuatore di cambio marcia funziona automaticamente e apprende la messa in fase della sincronizzazione (determina la variazione della coppia motore) già prima che la marcia venga inserita e memorizza il valore di apprendimento nel modulo TCM.
+</div>
+<div>
+L'apprendimento della posizione di sincronizzazione viene richiesto dopo i seguenti interventi di manutenzione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Rimozione attuatore di cambio marcia.
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cambio.
+</div>
+</li>
+<li>
+<div>
+Smontaggio/montaggio cambio.
+</div>
+</li>
+</ul>
+<div>
+L'apprendimento della posizione di sincronizzazione marcia può essere eseguito con il tester HDS in determinate circostanze:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motore in funzione.
+</div>
+</li>
+<li>
+<div>
+Posizione N.
+</div>
+</li>
+<li>
+<div>
+Pedale del freno premuto.
+</div>
+</li>
+<li>
+<div>
+Freno di stazionamento inserito.
+</div>
+</li>
+<li>
+<div>
+L'apprendimento della posizione dell'attuatore del cambio marcia è stato completato.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+I comandi hanno avuto esito positivo per ogni marcia, è possibile cambiare marcia tramite il tester HDS.
+</div>
+</li>
+<li>
+<div>
+Il mancato apprendimento della posizione di sincronizzazione è considerato come guasto.
+</div>
+</li>
+<li>
+<div>
+Quando l'apprendimento della posizione di sincronizzazione viene eseguito assieme a quello della posizione di cambio marcia, i valori di apprendimento sono memorizzati nella memoria EEPROM.
+</div>
+</li>
+</ul>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento posizioni 1·2 del contatto della frizione
+</b>
+</div>
+<div>
+L'attuatore della frizione funziona automaticamente, apprende l'applicazione della coppia iniziale al disco della frizione e memorizza i valori di apprendimento nel modulo TCM.
+</div>
+<div>
+‘‘1&quot; significa che l'attuatore della frizione è stato azionato una volta memorizzando un valore temporaneo; ‘‘2&quot; significa che l'attuatore della frizione è stato azionato due volte ed ha eseguito un apprendimento accurato. Il valore di apprendimento è memorizzato nel modulo TCM.
+</div>
+<div>
+L'apprendimento delle posizioni 1·2 del contatto della frizione è richiesto dopo i seguenti interventi di manutenzione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Rimozione/installazione cilindro idraulico.
+</div>
+</li>
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cambio.
+</div>
+</li>
+<li>
+<div>
+Smontaggio/montaggio cambio.
+</div>
+</li>
+<li>
+<div>
+Sostituzione disco frizione.
+</div>
+</li>
+<li>
+<div>
+Sostituzione spingidisco.
+</div>
+</li>
+<li>
+<div>
+Sostituzione del volano.
+</div>
+</li>
+</ul>
+<div>
+L'apprendimento delle posizioni 1 e 2 del contatto della frizione può essere eseguito con il tester HDS in determinate circostanze:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motore in funzione.
+</div>
+</li>
+<li>
+<div>
+Posizione N.
+</div>
+</li>
+<li>
+<div>
+Pedale del freno premuto.
+</div>
+</li>
+<li>
+<div>
+Freno di stazionamento inserito.
+</div>
+</li>
+<li>
+<div>
+Apprendimento della posizione di sincronizzazione completato.
+</div>
+</li>
+<li>
+<div>
+A motore completamente riscaldato (la coppia motore è stabile).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Il punto di azionamento è stato impostato, la funzione viene attivata quando la leva del cambio passa dalla posizione N alla posizione D.
+</div>
+</li>
+<li>
+<div>
+Eseguire in successione l'apprendimento delle posizioni 1 e 2 del contatto della frizione.
+</div>
+</li>
+<li>
+<div>
+Se il processo di apprendimento non viene completato, non è possibile guidare la vettura.
+</div>
+</li>
+</ul>
+<a name="iR06">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento dell'attrito della frizione
+</b>
+</div>
+<div>
+Il tester HDS memorizza il valori iniziali specificati per un certo modello nel modulo TCM.
+</div>
+<div>
+Inoltre, il tester HDS aumenta la velocità di apprendimento, esegue la prova su strada e invia la regolazione del coefficiente di attrito iniziale al modulo TCM.
+</div>
+<div>
+L'apprendimento dell'attrito della frizione viene richiesto dopo i seguenti interventi di manutenzione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Sostituzione disco frizione.
+</div>
+</li>
+<li>
+<div>
+Sostituzione spingidisco.
+</div>
+</li>
+<li>
+<div>
+Sostituzione volano.
+</div>
+</li>
+</ul>
+<div>
+L'apprendimento dell'attrito della frizione può essere eseguito con il tester HDS in determinate circostanze:
+</div>
+<ul type="disc">
+<li>
+<div>
+L'apprendimento della posizione 2 del contatto della frizione è stato completato.
+</div>
+</li>
+<li>
+<div>
+Con le ruote in presa sul manto stradale, ruotare le ruote e inserire le marce dalla 1ª alla 6ª.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Dal momento che non c'è carico durante il sollevamento, non si può avere la corretta regolazione, quindi collegare il tester HDS ed eseguire la prova su strada.
+</div>
+</li>
+<li>
+<div>
+Durante la prova su strada lo schema di cambio marcia e la modalità automatica non eseguono il passaggio a marcia inferiore.
+</div>
+</li>
+</ul>
+<a name="iR07">
+</a>
+<div class="procedure_sub_title">
+<b>
+Apprendimento posizione 3 del contatto della frizione
+</b>
+</div>
+<div>
+Dopo aver inserito il coefficiente di attrito durante l'apprendimento dell'attrito della frizione, la procedura viene eseguita come nella posizione 2 del contatto della frizione, l'apprendimento viene completato e memorizzato nel modulo TCM.
+</div>
+<div>
+L'apprendimento della posizione del contatto della frizione viene richiesto dopo i seguenti interventi di manutenzione:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sostituzione attuatore frizione (TCM).
+</div>
+</li>
+<li>
+<div>
+Sostituzione disco frizione.
+</div>
+</li>
+<li>
+<div>
+Sostituzione spingidisco.
+</div>
+</li>
+<li>
+<div>
+Sostituzione volano.
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cilindro idraulico.*1
+</div>
+</li>
+<li>
+<div>
+Rimozione/installazione cambio.*1
+</div>
+</li>
+<li>
+<div>
+Smontaggio/montaggio cambio.*1
+</div>
+</li>
+</ul>
+<div>
+L'apprendimento della posizione 3 del contatto della frizione può essere eseguito con il tester HDS in determinate circostanze:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motore in funzione.
+</div>
+</li>
+<li>
+<div>
+Posizione N.
+</div>
+</li>
+<li>
+<div>
+Pedale del freno premuto.
+</div>
+</li>
+<li>
+<div>
+Freno di stazionamento inserito.
+</div>
+</li>
+<li>
+<div>
+Apprendimento della posizione di sincronizzazione completato.
+</div>
+</li>
+<li>
+<div>
+A motore completamente riscaldato (la coppia motore è stabile).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Il punto di azionamento è stato impostato, la funzione viene attivata quando la leva del cambio passa dalla posizione N alla posizione D.
+</div>
+</li>
+<li>
+<div>
+La prova su strada non è necessaria quando si esegue l'intervento di manutenzione *1, quindi eseguire in successione l'apprendimento delle posizioni 1, 2 e 3 del contatto della frizione.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:959px;\" coordsize=\"950,959\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:959px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ32100000000DAGD03.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:959px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NEBELSCHLUSSLEUCHTENANZEIGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:680px;top:116px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FERNLICHTANZEIGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:594px;top:24px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NEBELSCHEINWERFERANZEIGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:632px;top:760px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUTOMATISCHE SCHEINWERFERHÖHENVERSTELLUNG<br>STEUERGERÄT (mit HID)<br><a href=\"javascript:CtsProc('0','000000000000226','i000')\"></b>Eingangstest,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:410px;top:661px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KOMBINATIONSLICHTSCHALTER<br><a href=\"javascript:CtsProc('0','000000000000208','i000')\"></b>Test/Austausch,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:340px;top:726px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BREMSPEDAL-<br>STELLUNGSSCHALTER<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Test,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:207px;top:820px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFERHÖHENVERSTELLUNGSSCHALTER<br>(Ohne HID)<br><a href=\"javascript:CtsProc('0','000000000002144','i000')\"></b>Test/Austausch,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22px;top:712px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(in den Sicherungs-/Relaiskasten unter <br>dem Armaturenbrett eingebaut)<br><a href=\"javascript:CtsProc('0','000000000000260','i000')\"></b>Eingangstest,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000340','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:331px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAGFAHRLICHT<br>RELAIS (Modell KS)<br><a href=\"javascript:CtsProc('0','000000000003741','i000')\"></b>Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:929px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Abgebildet ist ein LHD-Modell; für das RHD-Modell gilt sinngemäß das Gleiche.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

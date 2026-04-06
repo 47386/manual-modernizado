@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:687px;\" coordsize=\"950,687\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:687px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EDAF18100000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:687px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:167px;top:163px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BATERIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:20px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MÓDULO DE CONTROLO<br>DO INDICADOR (CONTA-ROTAÇÕES)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:794px;top:232px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CAIXA DE FUSÍVEIS<br>/RELÉS SOB O TABLIER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:750px;top:413px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>UNIDADE DE CONTROLO EPS<br></b>Remoção/Instalação da<br><a href=\"javascript:CtsProc('0','000000000000054','i000')\">Unidade de Controlo EPS,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:267px;top:73px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CAIXA DE FUSÍVEIS/RELÉS<br>SOB O CAPOT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:91px;top:542px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CAIXA DA DIRECÇÃO<br><a href=\"javascript:CtsProc('0','000000000002094','i000')\"></b>Remoção e Instalação da Caixa da Direcção,</a><br><a href=\"javascript:CtsProc('0','000000000000044','i000')\">Remoção e Instalação da Extremidade da Cremalheira,</a><br><a href=\"javascript:CtsProc('0','000000000000045','i000')\">Remoção/Instalação do Guia de Cremalheira,</a><br><a href=\"javascript:CtsProc('0','000000000000050','i000')\">Substituição do Fole da Rótula da Ponteira da Direcção,</a><br><a href=\"javascript:CtsProc('0','000000000000041','i000')\">Substituição do Calço de Fixação da Caixa da Direcção,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:785px;top:43px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ANÁLISE DE DADOS<br>FICHA (DLC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:673px;top:525px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MOTOR<br></b>Remoção e Instalação<br><a href=\"javascript:CtsProc('0','000000000000055','i000')\"> do Motor<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:653px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>A ilustração apresenta a versão LHD. A versão RHD é similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

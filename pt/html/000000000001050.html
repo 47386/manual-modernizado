@@ -1,0 +1,453 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40A14500024601FCPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Ensaio de Entrada de Sinais do Controlo da Velocidade de Cruzeiro (ECM)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000001299','i500')">
+Ligue o Sistema de Diagnóstico Honda (HDS) à ficha de análise de dados (DLC).
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e o ECM. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Passe ao sistema DIESEK e verifique se existem DTC.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Efectue os seguintes ensaios monitorizando os parâmetros na LISTA DE DADOS do sistema DIESEL com o HDS.
+</div>
+<div>
+NOTA: Avarias intermitentes são normalmente causadas por ligações soltas de circuitos. Ao monitorizar sinais de entrada do controlo da velocidade de cruzeiro, desloque os circuitos e verifique se os resultados do ensaio se alteram.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="14%">
+<col width="20%">
+<col width="22%">
+<col width="41%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Sinal a ser ensaiado
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Condições do ensaio
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Parâmetro: Resultado desejado
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Causa provável se o resultado não for obtido
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor do travão
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedal do travão accionado e, em seguida, solto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR DOS TRAVÕES DA VELOCIDADE DE CRUZEIRO deve indicar DESLIGADO quando o pedal do travão é accionado e LIGADO quando o pedal do travão é solto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor da posição do pedal dos travões 
+avariado
+</div>
+</li>
+<li>
+<div>
+Fusível N.º 3 (10 A) fundido na caixa de fusíveis/relés sob o tablier
+</div>
+</li>
+<li>
+<div>
+Uma interrupção no fio entre o módulo de controlo do motor (ECM) e o interruptor da posição do pedal do travão
+</div>
+</li>
+<li>
+<div>
+Um fio com curto-circuito à massa entre o ECM e o interruptor da posição do pedal do travão
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor da posição do pedal da embraiagem
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedal da embraiagem pressionado e, em seguida, solto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR da EMBRAIAGEM/MUDANÇAS deve indicar DESLIGADO quando o pedal da embraiagem é pressionado e LIGADO quando o pedal da embraiagem é solto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor A da posição do pedal da embraiagem avariado
+</div>
+</li>
+<li>
+<div>
+Interruptor B da posição do pedal da embraiagem avariado
+</div>
+</li>
+<li>
+<div>
+Uma interrupção no fio entre o ECM e o interruptor da posição do pedal da embraiagem
+</div>
+</li>
+<li>
+<div>
+Um fio com curto-circuito à massa entre o ECM e o interruptor da posição do pedal da embraiagem
+</div>
+</li>
+<li>
+<div>
+Massa fraca G401
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor principal do controlo da velocidade de cruzeiro
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor principal do controlo da velocidade de cruzeiro LIGADO e DESLIGADO
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR PRINCIPAL DO CONTROLO DA VELOCIDADE DE CRUZEIRO deverá indicar LIGADO quando o botão geral é LIGADO, e DESLIGADO quando o interruptor principal do controlo da velocidade de cruzeiro está DESLIGADO.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado do controlo da velocidade de cruzeiro avariado
+</div>
+</li>
+<li>
+<div>
+Uma interrupção no fio entre o módulo de controlo do indicador e o interruptor da combinação do controlo da velocidade de cruzeiro.
+</div>
+</li>
+<li>
+<div>
+Um fio com curto-circuito à massa entre o módulo de controlo do indicador e o interruptor combinado do controlo da velocidade de cruzeiro
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor memorizar
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor memorizar/desacelerar pressionado e solto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR DE MEMORIZAÇÃO DO CONTROLO DA VELOCIDADE DE CRUZEIRO deverá indicar LIGADO quando o interruptor memorizar/desacelerar é pressionado, e DESLIGADO quando o interruptor memorizar/desacelerar é solto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado do controlo da velocidade de cruzeiro avariado
+</div>
+</li>
+<li>
+<div>
+Uma interrupção no fio entre o módulo de controlo do indicador e o interruptor da combinação do controlo da velocidade de cruzeiro.
+</div>
+</li>
+<li>
+<div>
+Um fio com curto-circuito à massa entre o módulo de controlo do indicador e o interruptor combinado do controlo da velocidade de cruzeiro
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor retomar
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor retomar/acelerar pressionado e solto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR RETOMAR DO CONTROLO DA VELOCIDADE DE CRUZEIRO deverá indicar LIGADO quando o interruptor retomar/acelerar é pressionado, e DESLIGADO quando o interruptor retomar/acelerar é solto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado do controlo da velocidade de cruzeiro avariado
+</div>
+</li>
+<li>
+<div>
+Uma interrupção no fio entre o módulo de controlo do indicador e o interruptor da combinação do controlo da velocidade de cruzeiro.
+</div>
+</li>
+<li>
+<div>
+Um fio com curto-circuito à massa entre o módulo de controlo do indicador e o interruptor combinado do controlo da velocidade de cruzeiro
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do interruptor cancelar
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor cancelar pressionado e solto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INTERRUPTOR CANCELAR DO CONTROLO DA VELOCIDADE DE CRUZEIRO deverá indicar LIGADO quando o interruptor cancelar é pressionado, e DESLIGADO quando o interruptor cancelar é solto.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor combinado do controlo da velocidade de cruzeiro avariado
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sinal do indicador do controlo da velocidade de cruzeiro
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Arranque o motor, LIGUE o interruptor principal do controlo da velocidade de cruzeiro e conduza o veículo a velocidade superior a 40 km/h. Definir e cancelar o controlo da velocidade de cruzeiro.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O INDICADOR DA VELOCIDADE DE CRUZEIRO deverá indicar LIGADO quando o controlo da velocidade de cruzeiro está memorizado e DESLIGADO quando o controlo da velocidade de cruzeiro é cancelado.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de controlo do indicador avariado
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1023px;\" coordsize=\"950,1023\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1023px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A18300000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1023px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:583px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLACA DEFLECTORA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:679px;top:117px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BLOCO INFERIOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:734px;top:286px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RETENTOR DA CAMBOTA,<br>TOPO DA TRANSMISSÃO<br><a href=\"javascript:CtsProc('0','000000000001094','i210')\"></b>Instalação,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:685px;top:721px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANILHAS DE IMPULSO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:500px;top:917px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAMBOTA<br><a href=\"javascript:CtsProc('0','000000000001090','i000')\"></b>Folga Axial,</a><br><a href=\"javascript:CtsProc('0','000000000001095','iT02')\">Excentricidade,</a><br><a href=\"javascript:CtsProc('0','000000000001095','iT01')\">Ovalização,</a><br><a href=\"javascript:CtsProc('0','000000000001093','i000')\">Remoção,</a><br><a href=\"javascript:CtsProc('0','000000000001094','i000')\">Instalação,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROLAMENTOS PRINCIPAIS<br><a href=\"javascript:CtsProc('0','000000000001096','iR01')\"></b>Folga de Óleo,</a><br><a href=\"javascript:CtsProc('0','000000000001096','iR02')\">Selecção,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:25px;top:689px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLACA DE IMPULSO CKP<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:162px;top:436px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GUIAS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:22px;top:57px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DA POSIÇÃO<br>DA CAMBOTA (CKP)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

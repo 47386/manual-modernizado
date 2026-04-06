@@ -1,0 +1,197 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J26351543881FEPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Unidade de Visualização de Informação Variada - Calibragem do Indicador da Temperatura do Ar Exterior
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: 
+<a href="javascript:CtsProc('0','000000000000060','i000')">
+Para ensaiar o sensor da temperatura do ar exterior.
+</a>
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Descrição
+</b>
+</div>
+<div>
+O sensor da temperatura exterior encontra-se localizado atrás da parte central do pára-choques traseiro. O módulo de controlo do indicador (conta-rotações) utiliza as medidas deste sensor para visualizar a temperatura do ar exterior.
+</div>
+<div>
+Devido à localização do sensor, a temperatura pode ser afectada pelo reflexo do calor da estrada, do calor do motor e do radiador ou da exaustão de calor do trânsito circundante.
+</div>
+<div>
+Estas condições podem aquecer o sensor da temperatura do ar exterior, resultando em leituras incorrectas. Foi programada a lógica no módulo de controlo do indicador (conta-rotações) para ajudar a evitar leituras incorrectas ou oscilantes do indicador da temperatura do ar exterior.
+</div>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Lógica do Indicador da Temperatura do Ar Exterior
+</b>
+</div>
+<div>
+Indicação inicial da temperatura do ar exterior após a ignição ter sido LIGADA (II).
+</div>
+<ul type="disc">
+<li>
+<div>
+Se a temperatura do líquido de arrefecimento do motor for 60 °C ou superior quando a ignição for ligada, o indicador da temperatura do ar exterior irá indicar a mesma temperatura indicada na última vez que a ignição foi desligada, independentemente da temperatura medida pelo sensor da temperatura do ar exterior.
+</div>
+</li>
+<li>
+<div>
+Se a temperatura do líquido de arrefecimento do motor for 59 °C ou inferior quando a ignição for LIGADA (II), será indicada a temperatura actual medida pelo sensor da temperatura do ar exterior.
+</div>
+</li>
+</ul>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Actualize o indicador da temperatura do ar exterior enquanto conduz
+</b>
+</div>
+<div>
+Se a temperatura medida pelo sensor da temperatura do ar exterior for superior à temperatura do indicador da temperatura do ar exterior, o indicador da temperatura exterior irá aumentar 1 °C por minuto após a velocidade do veículo ser superior a 30 km/h durante mais de 1 minuto e 30 segundos. Irá continuar a aumentar até que seja indicada a temperatura actual do ar exterior. Assim, a primeira mudança para o indicador da temperatura do ar exterior é de 1 minuto e 30 segundos após a velocidade do veículo ser superior a 30 km/h. Se a velocidade do veículo descer para um valor inferior a 30 km/h, o indicador não irá ser novamente actualizado até que a velocidade do veículo aumente para 30 km/h  ou mais durante mais de 1 minuto e 30 segundos.
+</div>
+<div>
+Se a temperatura do ar exterior for inferior ao valor da temperatura indicada, a temperatura irá diminuir 1 °C em cada 2 segundos (1 °F cada 1,1 segundos) cada 2 segundos até que seja indicada a temperatura actual do ar exterior, independentemente da velocidade do veículo.
+</div>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Diagnóstico de Avarias
+</b>
+</div>
+<div>
+Se o indicador mostrar — — — °C durante mais de 2 segundos  após ter seleccionado o modo de visualização da temperatura do ar exterior, verifique o sensor da temperatura do ar exterior e efectue a 
+<a href="javascript:CtsProc('0','000000000000421','i000')">
+função de auto-diagnóstico do módulo de controlo do indicador.
+</a>
+</div>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Calibragem
+</b>
+</div>
+<div>
+A temperatura mostrada no indicador da temperatura do ar exterior poderá ser novamente calibrada ±3 °C para ir de encontro às expectativas do cliente.
+</div>
+<div>
+Proceda à calibragem da temperatura do ar exterior com o HDS ou por definição de memória personalizada .
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

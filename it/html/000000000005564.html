@@ -1,0 +1,931 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A20326900000CAIT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function jsResetImage() {
+	_prResetPosition();
+	_prResetImage();
+	return;
+}
+function jsResizeImage(rate) {
+	_prResizeImage(rate);
+	return;
+}
+var z,x,y;
+var gImageGroupList_	= new Array;
+var gIdx_				= 0;
+function _prImageGroupStruct(group_size,rect_size,img_size,p_tag,tp_obj,bl_obj,ul_obj) {
+	this.group		= group_size;
+	this.rect		= rect_size;
+	this.img		= img_size;
+	this.p			= p_tag;
+	this.tp			= tp_obj;
+	this.bl			= bl_obj;
+	this.ul			= ul_obj;
+}
+function _prSizeStruct(newObj,newWidth,newHeight) {
+	this.obj		= newObj;
+	this.width		= newWidth;
+	this.height		= newHeight;
+}
+function _prPTagStruct(newObj,newLeft,newTop,newFontSize) {
+	this.obj		= newObj;
+	this.left		= newLeft;
+	this.top		= newTop;
+	this.fontsize	= newFontSize;
+}
+function _prLineTagStruct(newObj,newFromx,newFromy, newTox, newToy) {
+	this.obj			= newObj;
+	this.fromx		= newFromx;
+	this.fromy		= newFromy;
+	this.tox		= newTox;
+	this.toy		= newToy;
+}
+function _prTPTagStruct(newObj,newFontSize) {
+	this.obj		= newObj;
+	this.fontsize	= newFontSize;
+}
+function _prInitImageInfo(rate) {
+	var endFlag = false;
+	gDefaultRate_ = rate;
+	gIdx_ = 0;
+	var save_i;
+	var iii = 100;
+	for(var i = 1; !endFlag; i++){
+		save_i = i;
+		var groupObject = document.getElementById("group" + i);
+		if(groupObject == null){
+			groupObject = document.getElementById("group" + iii);
+			if(groupObject == null){
+				groupObject = document.getElementById("group" + i + "_noresize");
+				if(groupObject == null){
+					endFlag = true;	
+					break;
+				}
+				continue;
+			}
+			else {
+				i = iii
+				iii++;
+			}
+		}
+		var groupWidth	= _prRemoveUnit(groupObject.style.width);
+		var groupHeight	= _prRemoveUnit(groupObject.style.height);
+		var rectObject	= document.getElementById("rect" + i);
+		var rectWidth	= null;
+		var rectHeight	= null;
+		if(rectObject != null){
+			rectWidth	= _prRemoveUnit(rectObject.style.width);
+			rectHeight	= _prRemoveUnit(rectObject.style.height);
+		}
+		var imgObject	= document.getElementById("img" + i);
+		var imgWidth	= null;
+		var imgHeight	= null;
+		if(imgObject != null){
+			imgWidth	= _prRemoveUnit(imgObject.style.width);
+			imgHeight	= _prRemoveUnit(imgObject.style.height);
+		}
+		var pObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var pTag = document.getElementById("p" + i + "_" + j);
+			if(pTag == null){
+				if(j == 1){
+					endFlag = true;
+				}
+				break;
+			}
+			if(j == 1){
+				pObject		= new Array();
+			}
+			pObject[j-1] = new _prPTagStruct(
+									pTag,
+									_prRemoveUnit(pTag.style.left),
+									_prRemoveUnit(pTag.style.top),
+									_prRemoveUnit(pTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var tpObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var tpTag = document.getElementById("tp" + i + "_" + j);
+			if(tpTag == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				tpObject		= new Array();
+			}
+			tpObject[j-1] = new _prTPTagStruct(
+									tpTag,
+									_prRemoveUnit(tpTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var blObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var baseline = document.getElementById("bl" + i + "_" + j);
+			if(baseline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				blObject		= new Array();
+			}
+			blObject[j-1] = new _prLineTagStruct(
+									baseline,
+									(baseline.from+'').substring(0,(baseline.from+'').indexOf(",")),
+									(baseline.from+'').substring((baseline.from+'').indexOf(",")+1,(baseline.from+'').length),
+									(baseline.to+'').substring(0,(baseline.to+'').indexOf(",")),
+									(baseline.to+'').substring((baseline.to+'').indexOf(",")+1, (baseline.to+'').length)
+								);
+		}
+		endFlag = false;
+		var ulObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var underline = document.getElementById("ul" + i + "_" + j);
+			if(underline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				ulObject		= new Array();
+			}
+			ulObject[j-1] = new _prLineTagStruct(
+									underline,
+									(underline.from+'').substring(0,(underline.from+'').indexOf(",",0)),
+									(underline.from+'').substring((underline.from+'').indexOf(",")+1,(underline.from+'').length),
+									(underline.to+'').substring(0,(underline.to+'').indexOf(",")),
+									(underline.to+'').substring((underline.to+'').indexOf(",")+1, (underline.to+'').length)
+								);
+		}
+		endFlag = false;
+		gImageGroupList_[gIdx_] = new _prImageGroupStruct (
+			new _prSizeStruct(groupObject,groupWidth,groupHeight),
+			new _prSizeStruct(rectObject,rectWidth,rectHeight),
+			new _prSizeStruct(imgObject,imgWidth,imgHeight),
+			pObject,
+			tpObject,
+			blObject,
+			ulObject
+		);
+		gIdx_++;
+		i = save_i;
+	}
+	return ;
+}
+function _prResizeImage(rate) {
+	var  hei = 0;
+	for(var i=0; i<gImageGroupList_.length; i++){
+		if(gImageGroupList_[i].group != null){
+			var obj = gImageGroupList_[i].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[i].rect != null){
+			var obj = gImageGroupList_[i].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].img != null){
+			var obj = gImageGroupList_[i].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].p != null){
+			var obj = gImageGroupList_[i].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[i].tp != null){
+			var obj = gImageGroupList_[i].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[i].bl != null){
+			var obj = gImageGroupList_[i].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[i].ul != null){
+			var obj = gImageGroupList_[i].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	}
+	return hei;
+}
+function _prResizeImageAt(idx,rate) {
+	var  hei = 0;
+		if(gImageGroupList_[idx].group != null){
+			var obj = gImageGroupList_[idx].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[idx].rect != null){
+			var obj = gImageGroupList_[idx].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].img != null){
+			var obj = gImageGroupList_[idx].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].p != null){
+			var obj = gImageGroupList_[idx].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[idx].tp != null){
+			var obj = gImageGroupList_[idx].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[idx].bl != null){
+			var obj = gImageGroupList_[idx].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[idx].ul != null){
+			var obj = gImageGroupList_[idx].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	return hei;
+}
+function _prRemoveUnit(src){
+	var dst = src.substring(0,src.length-2);
+	return dst;
+}
+-->
+</script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("Per ottenere migliori risultati di stampa, selezionare l’orientamento orizzontale dal menu Stampa.");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+<b>
+Impianto PGM-FI
+</b>
+</div>
+<a name="iS01">
+</a>
+<div>
+L'impianto di iniezione programmata (PGM-FI) è un impianto di iniezione carburante Multiport sequenziale.
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Comando dell'alternatore
+</b>
+</div>
+<br>
+<div>
+L'alternatore invia segnali al modulo ECM durante la ricarica.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Relè della frizione del compressore del climatizzatore (A/C)
+</b>
+</div>
+<br>
+<div>
+Quando il modulo ECM riceve una richiesta di raffreddamento dall'impianto A/C, ritarda l'inserimento del compressore e arricchisce la miscela in modo da garantire l'attivazione dell'impianto A/C senza strappi al motore.
+</div>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore rapporto aria/carburante (A/F)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore A/F funziona su di un ampio rapporto aria/carburante. Il sensore A/F è installato a monte del catalizzatore a tre vie (TWC) e invia i segnali al modulo ECM che varia proporzionalmente la durata di iniezione del carburante.
+</div>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID01_1.js">
+</script>
+</div>
+</div>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore pressione barometrica (BARO)
+</b>
+</div>
+<br>
+<div>
+Il sensore BARO si trova all'interno del modulo ECM. Esso converte la pressione atmosferica in un segnale di tensione che modifica la durata base dell'iniezione del carburante.
+</div>
+<a name="iT05">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore posizione albero a camme (CMP)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore CMP rileva la posizione del cilindro N. 1 come riferimento per l'iniezione sequenziale del carburante verso ogni cilindro.
+</div>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID02_1.js">
+</script>
+</div>
+</div>
+<a name="iT06">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Interruttore posizione pedale frizione A (M/T)
+</b>
+</div>
+<br>
+<div>
+<div>
+L'interruttore posizione pedale frizione A segnala al modulo ECM il momento in cui il pedale dell'interruttore della frizione viene premuto. Quando l'interruttore posizione pedale frizione A è azionato, il modulo ECM provoca l'accensione della spia posizione cambio (spia SIL) tramite la linea F-CAN.
+</div>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID03_1.js">
+</script>
+</div>
+</div>
+<a name="iT07">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore posizione albero motore (CKP)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore CKP rileva la velocità dell'albero motore e viene utilizzato dal modulo ECM per determinare la fasatura dell'accensione e dell'iniezione del carburante di ogni cilindro e la mancata accensione del motore.
+</div>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID04_1.js">
+</script>
+</div>
+</div>
+<a name="iT08">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensori temperatura liquido refrigerante motore (ECT) 1 e 2
+</b>
+</div>
+<br>
+<div>
+<div>
+I sensori ECT 1 e 2 sono resistenze che variano in base alla temperatura (termistori). La resistenza diminuisce con l'aumento della temperatura del liquido refrigerante motore.
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Sensore ECT 1
+</b>
+</div>
+<script src="../js/SMR9EQ0A20326900000CAID05_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Sensore ECT 2
+</b>
+</div>
+<script src="../js/SMR9EQ0A20326900000CAID06_1.js">
+</script>
+</div>
+</div>
+<a name="iT09">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore livello olio motore
+</b>
+</div>
+<br>
+<div>
+<div>
+Questo sensore rileva il livello dell'olio motore.
+</div>
+<span style="display:none" id="imgId7">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID07_1.js">
+</script>
+</div>
+</div>
+<a name="iT10">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Controllo della fasatura dell'accensione
+</b>
+</div>
+<br>
+<div>
+La memoria del modulo ECM contiene i valori base relativi alla fasatura dell'accensione corrispondenti a vari regimi del motore e alle varie pressioni assolute del collettore. Regola inoltre la fasatura in base alla temperatura del liquido refrigerante motore e alla temperatura dell'aria aspirata.
+</div>
+<a name="iT11">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Fasatura e durata dell'iniezione
+</b>
+</div>
+<br>
+<div>
+Il modulo ECM contiene memorizzati i valori base della durata di scarico ai vari regimi del motore e pressioni del collettore. Il valore base di durata dello scarico, dopo essere stato letto dalla memoria, viene inoltre modificato dai segnali inviati dai vari sensori per ottenere la durata definitiva dello scarico.
+</div>
+<div>
+Controllando la regolazione del carburante a lungo termine, il modulo ECM rileva guasti a lungo termine nell'impianto di alimentazione e, se necessario, genera codici di guasto (DTC).
+</div>
+<a name="iT12">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore di detonazione
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sistema di comando detonazione regola la fasatura dell'accensione per ridurre il battito in testa.
+</div>
+<span style="display:none" id="imgId8">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID08_1.js">
+</script>
+</div>
+</div>
+<a name="iT13">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore pressione assoluta collettore (MAP)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore MAP converte la pressione assoluta del collettore in segnali elettrici inviati al modulo ECM.
+</div>
+<span style="display:none" id="imgId9">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID09_1.js">
+</script>
+</div>
+</div>
+<a name="iT14">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore portata aria (MAF)/sensore temperatura aria aspirata (IAT)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore portata aria (MAF)/sensore temperatura aria aspirata (IAT) contiene un sensore a filo caldo, un film freddo e un termistore. Si trova nel condotto dell'aria aspirata. La resistenza del sensore a filo caldo, del film freddo e del termistore cambia in base alla temperatura dell'aria aspirata e al flusso dell'aria. Il circuito di comando del sensore MAF controlla la corrente per mantenere il sensore a filo caldo a una temperatura preimpostata. La corrente viene trasformata in tensione nel circuito di comando, quindi viene erogata al modulo ECM.
+</div>
+<span style="display:none" id="imgId10">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID10_1.js">
+</script>
+</div>
+</div>
+<a name="iT15">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore velocità di rotazione albero di uscita (contralbero)
+</b>
+</div>
+<br>
+<div>
+<div>
+Questo sensore rileva la velocità di rotazione del contralbero.
+</div>
+<span style="display:none" id="imgId11">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID11_1.js">
+</script>
+</div>
+</div>
+<a name="iT16">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensore ossigeno riscaldato secondario (sensore HO2S secondario)
+</b>
+</div>
+<br>
+<div>
+<div>
+Il sensore HO2S secondario rileva il contenuto di ossigeno nel gas di scarico a valle del catalizzatore a tre vie (TWC) e invia i segnali al modulo ECM che varia di conseguenza la durata dell'iniezione carburante. Per stabilizzare i segnali di uscita, il sensore è dotato di un riscaldatore interno. Il modulo ECM confronta il segnale di uscita del sensore HO2S con il segnale di uscita del sensore A/F per determinare l'efficienza del catalizzatore. Il sensore HO2S secondario è installato a valle del catalizzatore TWC.
+</div>
+<span style="display:none" id="imgId12">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID12_1.js">
+</script>
+</div>
+</div>
+<a name="iT17">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Spia posizione cambio (spia SIL) (M/T)
+</b>
+</div>
+<br>
+<div>
+<div>
+La spia posizione cambio (spia SIL) (A) guida la sincronizzazione del cambio allo scopo di ottimizzare il consumo effettivo di carburante.
+</div>
+<div>
+Il consumo di carburante viene ottimizzato se il cambio marcia viene eseguito con la spia SIL accesa.
+</div>
+<div>
+Quando la spia SIL si accende, l'indicatore ECO (B) si spegne. Se viene eseguito il cambio marcia quando richiesto dalla spia posizione cambio, l'indicatore ECO segnala il consumo effettivo di carburante.
+</div>
+<span style="display:none" id="imgId13">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQ0A20326900000CAID13_1.js">
+</script>
+</div>
+</div>
+<div>
+<div>
+La spia passaggio alla marcia inferiore richiede di passare a una marcia inferiore in base allo stato dell'accelerazione se la vettura sta procedendo su un tratto in salita o per una maggiore accelerazione su una strada in piano.
+</div>
+<div>
+La spia SIL non richiede di passare in 1a per evitare l'improvviso effetto freno motore.
+</div>
+<span style="display:none" id="imgId14">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Mantenere il motore a basso regime per ottimizzare il consumo di carburante
+</b>
+</div>
+<script src="../js/SMR9EQ0A20326900000CAID14_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId15">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+In caso di aumento dell'accelerazione, la spia SIL suggerisce di passare alla marcia inferiore per evitare un'eccessiva pressione del pedale dell'acceleratore
+</b>
+</div>
+<script src="../js/SMR9EQ0A20326900000CAID15_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId16">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+In caso di salite, traino o accelerazione, la spia SIL ritarda il passaggio alla marcia superiore per evitare un'eccessiva pressione del pedale dell'acceleratore
+</b>
+</div>
+<script src="../js/SMR9EQ0A20326900000CAID16_1.js">
+</script>
+</div>
+</div>
+</div></div>
+</body>
+</html>

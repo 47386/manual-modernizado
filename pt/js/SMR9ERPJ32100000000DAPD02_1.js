@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DAPD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:462px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ILUMINAÇÃO AUTOMÁTICA/SENSOR DA CHUVA<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Ensaio de Entrada de Sinais,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:721px;top:227px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ ELEVADA DOS TRAVÕES<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Substituição,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:679px;top:651px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DA CHAPA DE MATRÍCULA<br><a href=\"javascript:CtsProc('0','000000000000209','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:609px;top:725px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DA MARCHA-ATRÁS<br>(LUZ DO PAINEL TRASEIRO)<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:514px;top:886px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TRASEIRA DE NEVOEIRO<br>(LUZ TRASEIRA INTERIOR)<br><a href=\"javascript:CtsProc('0','000000000004299','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:514px;top:823px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TRASEIRA/LUZ DOS TRAVÕES<br>(LUZ TRASEIRA INTERIOR)<br><a href=\"javascript:CtsProc('0','000000000004299','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000004300','i000')\">Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:198px;top:732px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TRASEIRA/LUZ DOS TRAVÕES<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Substituição da Lâmpada,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:198px;top:810px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DOS PISCAS DE DIRECÇÃO TRASEIROS<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Substituição da Lâmpada,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:625px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FAROL TRASEIRO<br>SENSOR DE NIVELAMENTO (Com HID)<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\"></b>Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\">Diagnóstico de Avarias do Circuito,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:963px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>O modelo LHD é ilustrado, o modelo RHD é similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

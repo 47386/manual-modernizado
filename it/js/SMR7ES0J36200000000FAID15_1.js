@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:475px; height:320px;\" coordsize=\"475,320\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:475px;height:320px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ES0J36200000000FAID15.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:475px;height:320px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:228px;top:53px;font-weight:normal;font-size:8.33pt;\">");
+write("<nobr><b>Avvia diag<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:63px;top:93px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>ECU navigatore<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:41px;top:53px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>Diagnosi in linea<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55px;top:116px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>Antenna GPS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71px;top:139px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>Display<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:81px;top:162px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>Radio<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:338px;top:54px;font-weight:normal;font-size:8.33pt;\">");
+write("<nobr><b>Esci dalla diagnosi<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71px;top:185px;font-weight:normal;font-size:8.97pt;\">");
+write("<nobr><b>Climatizzatore<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:367px;top:107px;font-weight:normal;font-size:8.33pt;\">");
+write("<nobr><b>OK<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:216px;top:104px;font-weight:normal;font-size:6.15pt;\">");
+write("<nobr><b>INDIETRO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EG0D14300000000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:490px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HAUPTZYLINDER<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Bremsanlage entlüften,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">zerlegen,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Zusammenbau,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BREMSANZEIGE<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Schaltplan,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Testen des Feststellbremsschalters</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Testen des Bremsflüssigkeitsstandschalters,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:635px;top:283px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BREMSSCHLAUCH und BREMSLEITUNG<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspektion,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Bremsschläuche austauschen</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:681px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HINTERRADBREMSE<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"></b>Bremsbeläge Inspektion und Austausch,<br></a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Bremsscheibe Inspektion,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Bremssattel Überholung,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:546px;top:815px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FESTSTELLBREMSE<br><a href=\"javascript:CtsProc('0','000000000002150','i000')\"></b>Inspektion und Einstellung,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Seilzug Austausch,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:500px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VORDERRADBREMSE<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"></b>Bremsbeläge Inspektion und Austausch,<br></a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Bremsscheibe Inspektion,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Bremssattel Überholung,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:65px;top:755px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BREMSKRAFTVERSTÄRKER<br><a href=\"javascript:CtsProc('0','000000000001204','i000')\"></b>Inspektion,</a><br><a href=\"javascript:CtsProc('0','000000000001422','i000')\">austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:224px;top:817px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BREMSPEDAL-<br></b>Bremspedal und Bremspedalpositionsschalter<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> Einstellung<br></a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

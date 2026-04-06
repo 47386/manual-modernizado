@@ -1,0 +1,1744 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E20K72100000000BBPT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias nos Sistemas de Combustível e Emissões
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Avarias Intermitentes
+</b>
+</div>
+<div>
+O termo ‘‘&quot;avaria intermitente&quot; significa que um sistema poderá ter tido uma avaria mas que, por agora, se verifica estar bom. Se a lâmpada indicadora de mau funcionamento (MIL) no tablier não acender ou se o visor PGM-FI não ligar, verifique se não existem más ligações ou cavilhas soltas em todas as fichas relacionadas com o circuito que está a diagnosticar. Se a MIL estava acesa mas, em seguida, se apagou, o problema original pode ter sido uma avaria intermitente.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Interrupções e Curtos-circuitos
+</b>
+</div>
+<div>
+‘‘Interrupção'' e ‘‘curto-circuito'' são termos eléctricos comuns. Uma interrupção é uma quebra num fio ou numa ligação. Um curto-circuito é uma ligação acidental de um fio à massa ou a outro fio. Em electrónica simples, tal costuma significar que o sistema não funciona. Em termos electrónicos complexos (como o ECM), isto poderá por vezes significar que há algo que funciona, mas não da forma em que deveria funcionar.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Indicação da MIL
+</b>
+</div>
+<div>
+Nestes modelos, se LIGAR (II) a ignição sem arrancar o motor, a lâmpada indicadora de mau funcionamento (MIL) (A) irá acender-se durante cerca de 20 segundos. Em seguida, desliga-se ou pisca 5 vezes, sob diversas condições. Isto é normal: exibe a condição de auto-avaliação do diagnóstico para os sistemas de controlo de emissões.
+</div>
+<div>
+Se a MIL no conjunto dos indicadores se acender ou se acender o PGM-FI (B) no visor de informações, passe para como utilizar o HDS.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001947','1');">
+<img src="../tn/SMR7E20K72100000000BBPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Indicação do visor (A) SISTEMA DO SENSOR DO NÍVEL DO ÓLEO DO MOTOR
+</b>
+</div>
+<div>
+Se o visor estiver ligado, o sensor do nível do óleo do motor, pode ter tido uma avaria. Ligue o HDS à ficha de análise de dados (DLC) localizada sob o tablier do lado do condutor. Verifique o código de diagnóstico de avarias (DTC) e anote-o. De seguida, consulte o diagnóstico de avarias por DTC indicado e inicie o procedimento de diagnóstico de avarias apropriado.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001948','1');">
+<img src="../tn/SMR7E20K72100000000BBPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Indicação do visor (A) BAIXO NÍVEL DO ÓLEO DO MOTOR
+</b>
+</div>
+<div>
+Se o visor estiver ligado, o nível do óleo do motor, pode ter tido uma avaria. 
+<a href="javascript:CtsProc('0','000000000000713','i000')">
+Verifique o sensor do nível do óleo do motor.
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001949','1');">
+<img src="../tn/SMR7E20K72100000000BBPD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Utilizar o HDS (Sistema de Diagnóstico Honda)
+</b>
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Se a MIL (lâmpada indicadora de mau funcionamento) (ou o visor PGM-FI) se acender
+</b>
+</div>
+<br>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Arranque o motor e verifique a MIL (A) ou o visor PGM-FI (B).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001950','1');">
+<img src="../tn/SMR7E20K72100000000BBPD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<a name="iT01">
+</a>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Se a MIL se mantiver acesa, ligue o HDS à ficha de análise de dados (DLC) (A) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Verifique o código de diagnóstico de avarias (DTC) e anote-o. Verifique também os dados congelados e/ou os dados instantâneos a bordo e efectue um download dos dados localizados. De seguida, consulte o diagnóstico de avarias por DTC indicado e inicie o procedimento de diagnóstico de avarias apropriado.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Os dados congelados indicam as condições do motor quando se detectou a primeira avaria, falha de ignição ou avaria no equilíbrio do combustível.
+</div>
+</li>
+<li>
+<div>
+O HDS pode ler os DTC, os dados congelados, os dados actuais instantâneos a bordo e outros dados do módulo de controlo do motor (ECM).
+</div>
+</li>
+<li>
+<div>
+Para operações específicas, consulte o manual do utilizador que acompanha o HDS.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+<a href="javascript:CtsProc('0','000000000000709','i000')">
+Se não encontrar nenhum DTC, passe ao diagnóstico de avarias da MIL.
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001951','1');">
+<img src="../tn/SMR7E20K72100000000BBPD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Se a MIL não continuar acesa
+</b>
+</div>
+<br>
+<div>
+Se a MIL não se mantiver acesa mas houver um problema de condução, efectue o diagnóstico de avarias por sintomas.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Se não conseguir obter novamente o DTC
+</b>
+</div>
+<br>
+<div>
+Parte do diagnóstico de avarias requer a desmemorização do ECM e tentar obter de novo o DTC. Se a avaria for intermitente e não conseguir obter o código novamente, não continue o procedimento. Prosseguir só resultaria em confusão e, possivelmente, na substituição desnecessária do ECM.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Comando de Desmemorização do HDS
+</b>
+</div>
+<div>
+O ECM memoriza vários dados específicos para corrigir o sistema, mesmo se não existir uma alimentação eléctrica, como quando o terminal negativo da bateria ou o fusível nº 9 IGP (15 A) estiverem desligados. Os dados memorizados com base em peças avariadas deverão ser desmemorizados, utilizando o &quot;COMANDO DE DESMEMORIZAÇÃO&quot; do HDS, se as peças forem substituídas.
+</div>
+<div>
+O HDS tem três tipos de comandos de desmemorização para efectuar esta operação. Estes são: desmemorizar DTC, desmemorizar ECM e desmemorizar padrão da cambota. O comando de desmemorização do DTC apaga todos os códigos DTC armazenados, os dados congelados e instantâneos a bordo. Tal deverá ser efectuado com o HDS após a reprodução do DTC durante o diagnóstico de avarias.
+</div>
+<div>
+O comando de desmemorização do ECM elimina todos os códigos DTC memorizados, dados congelados, instantâneos a bordo e todos os dados específicos para corrigir o sistema, excepto o padrão da cambota (CKP). Se os dados do padrão da cambota (CKP) no ECM foram eliminados, deverá efectuar o procedimento de aprendizagem do padrão da cambota (CKP). O comando de desmemorização do padrão da cambota (CKP) apaga apenas os dados do padrão da cambota (CKP). Este comando é para a reparação de uma falha de ignição ou do sensor CKP.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Comando de Desmemorização da Ferramenta de Pesquisa
+</b>
+</div>
+<div>
+Caso esteja a utilizar uma ferramenta de pesquisa genérica para desmemorizar comandos, tenha em conta que existe apenas uma definição para desmemorizar o ECM, que desmemoriza simultaneamente todos os comandos (aprendizagem do padrão da cambota (CKP), aprendizagem do ralenti, dados congelados, instantâneos a bordo e DTC). Após ter desmemorizado todos os comandos, tem de efectuar estes procedimentos nesta ordem: 
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Procedimento de aprendizagem do ralenti do ECM;
+</a>
+ procedimento de aprendizagem do padrão da cambota (CKP).
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Desmemorização dos DTC
+</b>
+</div>
+<a name="i110">
+</a>
+<ol>
+<li value="1">
+<div>
+Elimine o DTC da memória utilizando o HDS, com o motor desligado.
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="2">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II) e aguarde durante 30 segundos.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="4">
+<div>
+DESLIGUE a ignição e desligue o HDS da DLC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Desmemorização do ECM
+</b>
+</div>
+<a name="i170">
+</a>
+<ol>
+<li value="1">
+<div>
+Desmemorize o ECM utilizando o HDS, com o motor desligado.
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="2">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II) e aguarde durante 30 segundos.
+</div>
+</li>
+</ol>
+<a name="i200">
+</a>
+<ol>
+<li value="4">
+<div>
+DESLIGUE a ignição e desligue o HDS da DLC.
+</div>
+</li>
+</ol>
+<a name="i210">
+</a>
+<ol>
+<li value="5">
+<div>
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Efectue o procedimento de aprendizagem do ralenti do ECM.
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG11">
+</a>
+<div class="servinfosub_title">
+<b>
+Desmemorização da Padrão da Cambota (CKP)/Aprendizagem do Padrão da Cambota (CKP)
+</b>
+</div>
+<a name="iG12">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Desmemorização/Aprendizagem (com o HDS)
+</b>
+</div>
+<a name="i250">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha (A) de análise de dados (DLC) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e o ECM. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i280">
+</a>
+<ol>
+<li value="4">
+<div>
+Seleccione PADRÃO DA CAMBOTA no MENU AFINAÇÕES, com o HDS.
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="5">
+<div>
+Seleccione a APRENDIZAGEM DO PADRÃO DE ARRANQUE com o HDS, e siga as seguintes instruções no ecrã.
+</div>
+</li>
+</ol>
+<a name="i300">
+</a>
+<ol>
+<li value="6">
+<div>
+O procedimento de aprendizagem do padrão CKP foi finalizado.
+</div>
+</li>
+</ol>
+<a name="iG13">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem (sem o HDS)
+</b>
+</div>
+<a name="i350">
+</a>
+<ol>
+<li value="1">
+<div>
+Arranque o motor. Mantenha o motor nas 3.000 rpm (min
+<sup>
+-1
+</sup>
+) sem carga (em ponto-morto), até a ventoinha do radiador se ligar.
+</div>
+</li>
+</ol>
+<a name="i360">
+</a>
+<ol>
+<li value="2">
+<div>
+Efectue um teste de estrada ao veículo numa estrada nivelada: Desacelere (com a borboleta completamente fechada) de uma rotação do motor de 2.500 rpm (min
+<sup>
+-1
+</sup>
+) para 1.000 rpm (min
+<sup>
+-1
+</sup>
+) com a transmissão em 1ª.
+</div>
+</li>
+</ol>
+<a name="i370">
+</a>
+<ol>
+<li value="3">
+<div>
+Efectue um teste de estrada ao veículo numa estrada nivelada: Desacelere (com a borboleta completamente fechada) de uma rotação do motor de 5.000 rpm (min
+<sup>
+-1
+</sup>
+) para 3.000 rpm (min
+<sup>
+-1
+</sup>
+) com a transmissão em 1ª.
+</div>
+</li>
+</ol>
+<a name="i380">
+</a>
+<ol>
+<li value="4">
+<div>
+Repita várias vezes os passos 2 e 3.
+</div>
+</li>
+</ol>
+<a name="i390">
+</a>
+<ol>
+<li value="5">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i400">
+</a>
+<ol>
+<li value="6">
+<div>
+LIGUE a ignição (II) e aguarde durante 30 segundos. O procedimento de aprendizagem do padrão CKP foi finalizado.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001958','1');">
+<img src="../tn/SMR7E20K72100000000BBPD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG14">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Concluir a Sessão de Diagnóstico de Avarias (necessária após qualquer diagnóstico de avarias)
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Efectue o procedimento de aprendizagem do ralenti do ECM.
+</a>
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Desligue o HDS da DLC.
+</div>
+<div>
+NOTA: O ECM faz parte do sistema imobilizador. Se substituir o ECM, terá um código do imobilizador diferente. Para arrancar o motor, terá que reprogramar o código do imobilizador com o HDS.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Diagnosticar Avarias dos Circuitos nas Fichas do ECM
+</b>
+</div>
+<div>
+NOTA: O ECM permanece ligado até 15 minutos depois de a ignição ter sido DESLIGADA. Efectuar uma ligação directa na linha do SCS após DESLIGAR a ignição cancela esta função. Desligar o ECM durante esta função, sem primeiro efectuar ligação directa na linha do SCS pode danificar o ECM.
+</div>
+<a name="i510">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que tem ao dispor o código anti-roubo para a unidade áudio.
+</div>
+</li>
+</ol>
+<a name="i520">
+</a>
+<ol>
+<li value="2">
+<div>
+Retire a bateria.
+</div>
+</li>
+</ol>
+<a name="i530">
+</a>
+<ol>
+<li value="3">
+<div>
+Avance para a linha SCS com o HDS.
+</div>
+</li>
+</ol>
+<a name="i540">
+</a>
+<ol>
+<li value="4">
+<div>
+Retire a tampa (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001960','1');">
+<img src="../tn/SMR7E20K72100000000BBPD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<a name="i550">
+</a>
+<ol>
+<li value="5">
+<div>
+Retire o ECM (D). Desligue as fichas A, B e C do ECM.
+</div>
+<div>
+NOTA: As fichas A, B, e C do ECM têm símbolos (A=□, B=△, C=○) gravados para fins de identificação.
+</div>
+</li>
+</ol>
+<a name="i560">
+</a>
+<ol>
+<li value="6">
+<div>
+Instale a bateria e, em seguida, faça o seguinte:
+</div>
+<ul type="disc">
+<li>
+<div>
+Introduza o código anti-roubo do sistema áudio.
+</div>
+</li>
+<li>
+<div>
+Acerte o relógio.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001961','1');">
+<img src="../tn/SMR7E20K72100000000BBPD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<a name="i570">
+</a>
+<ol>
+<li value="7">
+<div>
+Após o diagnóstico de avarias ter sido efectuado na ficha do ECM, utilize a porta de ensaio do terminal (A) que se encontra acima do terminal que pretende verificar.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001962','1');">
+<img src="../tn/SMR7E20K72100000000BBPD10.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD10_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<a name="i580">
+</a>
+<ol>
+<li value="8">
+<div>
+Ligue um lado dos terminais do cabo de protecção (A) a um multímetro digital (B) disponível no mercado, e ligue o outro lado dos terminais do cabo de protecção a uma tomada banana disponível no mercado (Ferramenta Pomona Electronics Tool nº 3563 ou equivalente) (C).
+</div>
+</li>
+</ol>
+<a name="i590">
+</a>
+<ol>
+<li value="9">
+<div>
+Ligue cuidadosamente a sonda de pino (macho) na porta de ensaio do lado do terminal. Não force a introdução das extremidades nos terminais.
+</div>
+</li>
+</ol>
+<div>
+<img src="../img/NOTICE_PT.PNG">
+<ul type="disc">
+<li>
+<div>
+Para obter resultados precisos, utilize sempre a sonda de pino (macho).
+</div>
+</li>
+<li>
+<div>
+Para evitar que os terminais da ficha sejam danificados, não introduza sondas de equipamento de ensaio, clipes ou outras formas de substituição, visto que podem danificar os terminais. Terminais danificados causam uma má ligação e uma medição incorrecta.
+</div>
+</li>
+<li>
+<div>
+Não perfure o isolamento de um fio. As perfurações podem provocar ligações eléctricas fracas ou intermitentes.
+</div>
+</li>
+</ul>
+</img>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001963','1');">
+<img src="../tn/SMR7E20K72100000000BBPD09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG16">
+</a>
+<div class="servinfosub_title">
+<b>
+Actualização do ECM
+</b>
+</div>
+<div>
+<b>
+Ferramentas Especiais Necessárias
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Sistema de diagnóstico Honda (HDS)
+</div>
+</li>
+<li>
+<div>
+Módulo de interface Honda (HIM)
+</div>
+</li>
+<li>
+<div>
+HDS pocket tester
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Use este procedimento quando tiver de reiniciar o ECM durante o procedimento de diagnóstico de avarias.
+</div>
+</li>
+<li>
+<div>
+Certifique-se de que o HDS/HIM tem a versão do software mais recente.
+</div>
+</li>
+<li>
+<div>
+Antes de actualizar o ECM, certifique-se de que a bateria do veículo está completamente carregada.
+</div>
+</li>
+<li>
+<div>
+Nunca DESLIGUE a ignição durante a actualização. Se houver um problema com a actualização, deixe a ignição LIGADA (II).
+</div>
+</li>
+<li>
+<div>
+Para evitar danificar o ECM, não utilize nada eléctrico (faróis, sistema áudio, travões, A/C, vidros eléctricos, tecto de abrir (se equipado), trancas das portas, etc.).
+</div>
+</li>
+<li>
+<div>
+Para se certificar de que o programa mais recente se encontra instalado, efectue uma actualização ao ECM sempre que o ECM for substituído.
+</div>
+</li>
+<li>
+<div>
+Não pode actualizar um ECM com um programa que já tem. Só aceitará um programa novo.
+</div>
+</li>
+<li>
+<div>
+Uma temperatura elevada no compartimento do motor pode causar um sobreaquecimento do ECM que não permite uma actualização. Se o motor estava a funcionar antes deste procedimento, abra o capot e deixe arrefecer o compartimento do motor.
+</div>
+</li>
+<li>
+<div>
+Se precisar de diagnosticar o módulo de interface Honda (HIM) porque a luz vermelha (N.º 3) do HIM acendeu-se ou cintilou durante a actualização, deixe a ignição LIGADA (II) quando desligar o HIM da ficha de análise de dados (DLC). Isto evitará danificar o ECM.
+</div>
+</li>
+</ul>
+<a name="i610">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE a ignição (II), mas não arranque o motor.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue o HDS à ficha (A) de análise de dados (DLC) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o ECM. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+passe ao diagnóstico de avarias do circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="4">
+<div>
+Saia do sistema de diagnótico HDS, em seguida, seleccione o modo de actualização e siga as instruções no ecrã para actualizar o ECM.
+</div>
+</li>
+</ol>
+<a name="i650">
+</a>
+<ol>
+<li value="5">
+<div>
+Se o software do ECM corresponder à versão mais recente, desligue o HDS/HIM da DLC e volte ao procedimento que estava a efectuar. Se o software do ECM não corresponder à versão mais recente, siga as instruções no ecrã. Se for instruído para escolher o sistema PGM-FI, certifique-se de que actualiza ambos.
+</div>
+<div>
+NOTA: Se para o sistema de actualização de ECM for necessário um arrefecimento do ECM, siga as instruções no  ecrã. Se se deparar com um problema durante o procedimento de actualização, (a programação demora mais de 15 minutos, a barra de estado ultrapassa os 100 ‰, a luz do imobilizador cintila, a tabela do HDS congela, etc.), siga estes passo para minimizar as hipóteses de danificar o ECM:
+</div>
+<ul type="disc">
+<li>
+<div>
+Deixe a ignição LIGADA (II).
+</div>
+</li>
+<li>
+<div>
+Ligue uma bateria auxiliar (não ligue um carregador de baterias).
+</div>
+</li>
+<li>
+<div>
+Desligue o HDS.
+</div>
+</li>
+<li>
+<div>
+Desligue o HDS da DLC.
+</div>
+</li>
+<li>
+<div>
+Reinicie o HDS.
+</div>
+</li>
+<li>
+<div>
+Volte a ligar o HDS à DLC, e tente novamente o procedimento de actualização.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i660">
+</a>
+<ol>
+<li value="6">
+<div>
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Efectue o procedimento de aprendizagem do ralenti do ECM.
+</a>
+</div>
+</li>
+</ol>
+<a name="i670">
+</a>
+<ol>
+<li value="7">
+<div>
+Efectue o procedimento de aprendizagem CKP.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001964','1');">
+<img src="../tn/SMR7E20K72100000000BBPD11.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD11_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG17">
+</a>
+<div class="servinfosub_title">
+<b>
+Substitua o ECM
+</b>
+</div>
+<div>
+<b>
+Ferramentas Especiais Necessárias
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Sistema de diagnóstico Honda (HDS)
+</div>
+</li>
+<li>
+<div>
+Módulo de interface Honda (HIM)
+</div>
+</li>
+<li>
+<div>
+HDS pocket tester
+</div>
+</li>
+</ul>
+<div>
+Utilize este procedimento quando tiver de substituir um ECM em bom estado durante o procedimento de diagnóstico de avarias.
+</div>
+<a name="i710">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que possui o código anti-roubo do sistema áudio.
+</div>
+</li>
+</ol>
+<a name="i720">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue o HDS à ficha (A) de análise de dados (DLC) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i730">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i740">
+</a>
+<ol>
+<li value="4">
+<div>
+Certifique-se de que o HDS comunica com o veículo e o ECM. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i750">
+</a>
+<ol>
+<li value="5">
+<div>
+Retire a bateria.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001965','1');">
+<img src="../tn/SMR7E20K72100000000BBPD12.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD12_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG17">
+</a>
+<a name="i760">
+</a>
+<ol>
+<li value="6">
+<div>
+Retire a tampa (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001966','1');">
+<img src="../tn/SMR7E20K72100000000BBPD13.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG17">
+</a>
+<a name="i770">
+</a>
+<ol>
+<li value="7">
+<div>
+Retire os parafusos (D) e, em seguida, retire o ECM (E).
+</div>
+</li>
+</ol>
+<a name="i780">
+</a>
+<ol>
+<li value="8">
+<div>
+Desligue as fichas A, B e C do ECM.
+</div>
+<div>
+NOTA: As fichas A, B e C do ECM têm símbolos (A=□, B=△, C=○) gravados para fins de identificação.
+</div>
+</li>
+</ol>
+<a name="i790">
+</a>
+<ol>
+<li value="9">
+<div>
+Instale as peças pela ordem inversa da remoção.
+</div>
+</li>
+</ol>
+<a name="i800">
+</a>
+<ol>
+<li value="10">
+<div>
+LIGUE a ignição (II).
+</div>
+<div>
+NOTA: DTC P0630 ‘‘VIN Não Programado ou Variação'' pode ser memorizado porque o VIN não foi programado no ECM. Ignore isto e prossiga com este procedimento.
+</div>
+</li>
+</ol>
+<a name="i810">
+</a>
+<ol>
+<li value="11">
+<div>
+Introduza o VIN no ECM com o HDS.
+</div>
+</li>
+</ol>
+<a name="i820">
+</a>
+<ol>
+<li value="12">
+<div>
+Actualize o ECM caso não possua o software mais recente.
+</div>
+</li>
+</ol>
+<a name="i830">
+</a>
+<ol>
+<li value="13">
+<div>
+Seleccione o SISTEMA IMOBILIZADOR com o HDS.
+</div>
+</li>
+</ol>
+<a name="i840">
+</a>
+<ol>
+<li value="14">
+<div>
+Reprograme o código do imobilizador com o procedimento de substituição do ECM no HDS. Isso irá permitir arrancar o motor.
+</div>
+</li>
+</ol>
+<a name="i850">
+</a>
+<ol>
+<li value="15">
+<div>
+Desmemorize o ECM utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i860">
+</a>
+<ol>
+<li value="16">
+<div>
+<a href="javascript:CtsProc('0','000000000000717','i000')">
+Efectue o procedimento de aprendizagem do ralenti do ECM.
+</a>
+</div>
+</li>
+</ol>
+<a name="i870">
+</a>
+<ol>
+<li value="17">
+<div>
+Efectue o procedimento de aprendizagem do padrão CKP.
+</div>
+</li>
+</ol>
+<a name="i880">
+</a>
+<ol>
+<li value="18">
+<div>
+Introduza o código anti-roubo para o sistema áudio e acerte o relógio.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001967','1');">
+<img src="../tn/SMR7E20K72100000000BBPD14.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20K72100000000BBPD14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG18">
+</a>
+<div class="servinfosub_title">
+<b>
+Estado do OBD
+</b>
+</div>
+<div>
+O estado do OBD indica o estado actual do sistema de cada DTC e todos os parâmetros. Esta função é utilizada para verificar se a reparação por parte do técnico foi finalizada com sucesso. Os resultados dos ensaios de diagnóstico para o DTC são indicados como:
+</div>
+<ul type="disc">
+<li>
+<div>
+PASSOU: O diagnóstico a bordo foi finalizado com sucesso.
+</div>
+</li>
+<li>
+<div>
+FALHOU: O diagnóstico a bordo foi finalizado mas sem sucesso.
+</div>
+</li>
+<li>
+<div>
+EM EXECUÇÃO: Este veículo está em condições de activação dos critérios para o DTC e o diagnóstico a bordo encontra-se em execução.
+</div>
+</li>
+<li>
+<div>
+NÃO CONCLUÍDO: O diagnóstico a bordo encontra-se em execução mas fora das condições de activação do DTC.
+</div>
+</li>
+<li>
+<div>
+FORA DA CONDIÇÃO NORMAL: O veículo permaneceu fora das condições de activação para DTC.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

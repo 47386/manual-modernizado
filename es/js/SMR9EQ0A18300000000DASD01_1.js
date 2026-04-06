@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1007px;\" coordsize=\"950,1007\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1007px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQ0A18300000000DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1007px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:14px;top:360px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RETÉN DE ACEITE<br>RETÉN DE ACEITE, <br>LADO DE LA CAJA DE CAMBIOS<br><a href=\"javascript:CtsProc('0','000000000003022','i230')\"></b>Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:123px;top:479px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLACA DE IMPULSOS DE CMP<br><a href=\"javascript:CtsProc('0','000000000003027','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:277px;top:627px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ARANDELAS DE EMPUJE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:312px;top:962px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE DETONACIONES<br><a href=\"javascript:CtsProc('0','000000000003114','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:717px;top:183px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAPA DEBANCADA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:727px;top:308px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FIJO DE CENTRAJE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:726px;top:484px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CIGÜEÑAL<br><a href=\"javascript:CtsProc('0','000000000003017','i000')\"></b>Juego axial,</a><br><a href=\"javascript:CtsProc('0','000000000003023','i000')\">Excentricidad,</a><br><a href=\"javascript:CtsProc('0','000000000003023','i000')\">Falta de redondez</a><br><a href=\"javascript:CtsProc('0','000000000003021','i000')\">Desmontaje,</a><br><a href=\"javascript:CtsProc('0','000000000003022','i000')\">Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:721px;top:636px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>COJINETES DE BANCADA<br><a href=\"javascript:CtsProc('0','000000000003025','iR01')\"></b>Holgura de engrase,</a><br><a href=\"javascript:CtsProc('0','000000000003025','iR02')\">Selección,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

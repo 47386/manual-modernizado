@@ -1,0 +1,463 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A14500024601FCIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Verifica segnali di entrata regolatore di velocità (modulo ECM)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000003186','i020')">
+Collegare il tester HDS (sistema diagnostico Honda) al connettore trasmissione dati (DLC).
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il 
+commutatore di accensione
+ su ON (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+<a href="javascript:CtsProc('0','000000000003107','i000')">
+Verificare che il tester HDS comunichi con la vettura e con il modulo ECM. In caso contrario, eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Selezionare la voce &quot;PGM-FI&quot; (impianto PGM-FI) e controllare se ci sono DTC.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Eseguire le seguenti verifiche mentre si controllano i parametri indicati alla voce &quot;PGM-FI DATA LIST&quot; (elenco dati impianto PGM-FI) con il tester HDS.
+</div>
+<div>
+NOTA: I guasti intermittenti sono spesso dovuti a collegamenti allentati nei circuiti. Quando si controllano i segnali di ingresso del regolatore di velocità, flettere i fili del circuito e osservare le eventuali variazioni nei risultati della verifica.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="14%">
+<col width="20%">
+<col width="22%">
+<col width="41%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Segnale da verificare
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Condizione della verifica
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Parametro: risultato desiderato
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Possibile causa in assenza di tale risultato
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore freni
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedale del freno premuto e poi rilasciato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE BRAKE SW&quot; (interruttore freno) deve indicare OFF quando il pedale del freno viene premuto e ON quando il pedale del freno viene rilasciato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruttore 
+posizione pedale freno difettoso
+</div>
+</li>
+<li>
+<div>
+Fusibile N. 3 (10 A) bruciato nella scatola fusibili/relè sotto plancia
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo di comando motore (ECM) e l'interruttore posizione pedale freno
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo ECM e l'interruttore posizione pedale freno
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore posizione pedale frizione B
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedale frizione premuto e poi rilasciato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;SHIFT/CLUTCH SW&quot; (interruttore cambio/frizione) deve indicare OFF quando il pedale della frizione viene premuto e ON quando il pedale della frizione viene rilasciato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruttore posizione pedale frizione B difettoso
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo ECM e l'interruttore posizione pedale frizione B
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo ECM e l'interruttore posizione pedale frizione B
+</div>
+</li>
+<li>
+<div>
+Massa G401 difettosa
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore principale regolatore di velocità
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruttore principale regolatore di velocità su ON e OFF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE CONTROL MAIN SW&quot; (interruttore principale regolatore di velocità) deve indicare ON quando l'interruttore principale del regolatore di velocità viene portato su ON e OFF quando l'interruttore principale del regolatore di velocità viene portato su OFF.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Gruppo interruttori regolatore di velocità difettoso
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore SET
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruttore SET/DECEL premuto e rilasciato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE SET SW&quot; (interruttore SET regolatore di velocità) deve indicare ON quando l'interruttore SET/DECEL viene premuto e OFF quando l'interruttore SET/DECEL viene rilasciato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Gruppo interruttori regolatore di velocità difettoso
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore RESUME
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruttore RESUME/ACCEL premuto e rilasciato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE CONTROL RESUME SW&quot; (interruttore RESUME regolatore di velocità) deve indicare ON quando l'interruttore RESUME/ACCEL viene premuto e OFF quando l'interruttore RESUME/ACCEL viene rilasciato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Gruppo interruttori regolatore di velocità difettoso
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale interruttore CANCEL
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruttore CANCEL premuto e rilasciato
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE CANCEL SW&quot; (interruttore CANCEL regolatore di velocità) deve indicare ON quando l'interruttore CANCEL viene premuto e OFF quando l'interruttore CANCEL viene rilasciato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Gruppo interruttori regolatore di velocità difettoso
+</div>
+</li>
+<li>
+<div>
+Interruzione nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+<li>
+<div>
+Cortocircuito verso massa nel filo tra il modulo di comando quadro strumenti e il gruppo interruttori regolatore di velocità
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Segnale spia regolatore di velocità
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Avviare il motore, portare l'interruttore principale del regolatore di velocità su ON e guidare la vettura a una velocità superiore a 40 km/h. Impostare e disattivare il regolatore di velocità.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La voce &quot;CRUISE INDICATOR&quot; (spia regolatore di velocità) deve indicare ON quando il regolatore di velocità viene impostato e OFF quando il regolatore di velocità viene disattivato.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Modulo di comando quadro strumenti difettoso
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

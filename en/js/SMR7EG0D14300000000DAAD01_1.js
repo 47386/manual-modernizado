@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1055px;\" coordsize=\"950,1055\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1055px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EG0D14300000000DAAD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1055px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:490px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MASTER CYLINDER<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Brake System Bleeding,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Disassembly,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Reassembly,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE SYSTEM INDICATOR<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Circuit Diagram,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Parking Brake Switch Test,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Brake Fluid Level Switch Test,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:635px;top:283px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE HOSE and LINE<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspection,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Brake Hose Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:681px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR BRAKE<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"></b>Pad Inspection and Replacement,<br></a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Disc Inspection,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Caliper Overhaul,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:546px;top:815px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PARKING BRAKE<br><a href=\"javascript:CtsProc('0','000000000002150','i000')\"></b>Inspection and Adjustment,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Cable Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:500px;top:923px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRONT BRAKE<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"></b>Pad Inspection and Replacement,<br></a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Disc Inspection,</a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Caliper Overhaul,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:65px;top:755px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE BOOSTER<br><a href=\"javascript:CtsProc('0','000000000001204','i000')\"></b>Inspection,</a><br><a href=\"javascript:CtsProc('0','000000000001422','i000')\">Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:224px;top:817px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRAKE PEDAL<br></b>Brake Pedal and Brake Pedal<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> Position Switch Adjustment,<br></a><br> in the Shop Manual, P/N 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Replacement,</a><br> in the Shop Manual, P/N 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

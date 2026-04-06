@@ -1,0 +1,571 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72100092199FAIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Ricerca guasti in base ai DTC: P2199
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P2199:
+</b>
+<div>
+ Correlazione errata della tensione del sensore IAT 1/2
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Memorizzare tutti i dati congelati e 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+rivedere le informazioni generali della ricerca guasti prima di effettuare la ricerca guasti.
+</a>
+</div>
+</li>
+<li>
+<div>
+Prima di iniziare questa ricerca guasti, controllare se in corrispondenza del condotto dell'aria aspirata ci sono collegamenti difettosi o ostruzioni.
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Cancellare i DTC con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Avviare il motore. Mantenere il regime motore a 2.000 giri/min (min
+<sup>
+-1
+</sup>
+) senza carico (in posizione di folle) finché la ventola del radiatore non si accende, quindi lasciare al minimo.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Eseguire la prova su strada nelle seguenti condizioni:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura liquido refrigerante motore (SENSORE ECT 1) superiore a 80 °C 
+</div>
+</li>
+<li>
+<div>
+Cambio in 3a
+</div>
+</li>
+<li>
+<div>
+Velocità vettura compresa tra 40 km/h e 60 km/h
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Controllare &quot;OBD STATUS&quot; (condizione OBD) per il DTC P2199 nel menu DTC con il tester HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Viene visualizzato &quot;FAILED&quot; (non superata)?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÌ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passare a 
+<a href="javascript:parent.Jmp('i060')">Punto 6
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se viene visualizzato &quot;PASSED&quot; (superata), il guasto è intermittente e al momento il sistema funziona correttamente. Controllare se in corrispondenza del sensore MAF/IAT 1 ci sono collegamenti difettosi o terminali allentati, controllare il sensore MAP/IAT 2 e il modulo ECM e controllare se in corrispondenza del condotto dell'aria aspirata ci sono collegamenti difettosi o ostruzioni. Se viene visualizzato &quot;NOT COMPLETED&quot; (non completata), passare a 
+<a href="javascript:parent.Jmp('i040')">Punto 4
+</a>
+ e ricontrollare.
+</div>
+</td>
+</tr>
+</table>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Portare il commutatore di accensione su OFF.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+<a href="javascript:CtsProc('0','000000000001120','i000')">
+Rimuovere il sensore MAF/IAT 1,
+</a>
+ e 
+<a href="javascript:CtsProc('0','000000000001119','i000')">
+il sensore MAP/IAT 2.
+</a>
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Attendere che il sensore MAF/IAT 1 e il sensore MAP/IAT 2 raggiungano una temperatura inferiore a 25°C.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Annotare la temperatura ambiente.
+</div>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Collegare il sensore MAF/IAT 1 al proprio connettore 2P e il sensore MAP/IAT 2 al proprio connettore 2P, ma non installarli nel condotto dell'aria aspirata.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Osservare velocemente i valori &quot;IAT SENSOR 1&quot; (sensore IAT 1) e &quot;IAT SENSOR 2&quot; (sensore IAT 2) in &quot;DATA LIST&quot; (elenco dati) con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Confrontare singolarmente il valore di &quot;IAT SENSOR 1&quot; (sensore IAT 1) e della temperatura ambiente e il valore &quot;IAT SENSOR 2&quot; (sensore IAT 2) e il valore della temperatura ambiente.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Il valore rilevato da ciascun sensore si discosta di oltre 35°C dal valore della temperatura ambiente?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÌ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Sostituire il sensore il cui valore si discosta di oltre 35°C dal valore della temperatura ambiente, quindi passare a 
+<a href="javascript:parent.Jmp('i140')">Punto 14
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Guasto intermittente, al momento il sistema funziona correttamente. Controllare se i collegamenti del condotto dell'aria aspirata sono difettosi oppure se è ostruito, quindi passare a 
+<a href="javascript:parent.Jmp('i140')">Punto 14
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+<a href="javascript:CtsProc('0','000000000001120','i000')">
+Installare il sensore MAF/IAT 1,
+</a>
+ e 
+<a href="javascript:CtsProc('0','000000000001119','i000')">
+il sensore MAP/IAT 2.
+</a>
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Azzerare il modulo ECM con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Avviare il motore. Mantenere il regime motore a 2.000 giri/min (min
+<sup>
+-1
+</sup>
+) senza carico (in posizione di folle) finché la ventola del radiatore non si accende, quindi lasciare al minimo.
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Eseguire la prova su strada nelle seguenti condizioni:
+</div>
+<ul type="disc">
+<li>
+<div>
+Temperatura liquido refrigerante motore (SENSORE ECT 1) superiore a 80 °C 
+</div>
+</li>
+<li>
+<div>
+Cambio in 3a
+</div>
+</li>
+<li>
+<div>
+Velocità vettura compresa tra 40 km/h e 60 km/h
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Controllare se ci sono DTC temporanei o DTC con il tester HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Viene indicato il DTC P2199?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÌ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Controllare se ci sono collegamenti difettosi o terminali allentati in corrispondenza dei sensori MAF/IAT 1, dei sensori MAP/IAT 2 e del modulo ECM, quindi passare a 
+<a href="javascript:parent.Jmp('i010')">Punto 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Passare a 
+<a href="javascript:parent.Jmp('i200')">Punto 20
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Controllare &quot;OBD STATUS&quot; (condizione OBD) per il DTC P2199 nel menu DTC con il tester HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Viene visualizzato &quot;PASSED&quot; (superata)?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÌ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+La ricerca guasti è terminata. Se viene segnalato un qualsiasi altro DTC temporaneo o DTC al 
+<a href="javascript:parent.Jmp('i190')">Punto 19
+</a>
+, passare alla ricerca guasti in base al DTC segnalato.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Se viene visualizzato &quot;FAILED&quot; (non superata), controllare se ci sono collegamenti difettosi o terminali allentati in corrispondenza dei sensori MAF/IAT 1, MAP/IAT 2 e del modulo ECM, quindi passare a 
+<a href="javascript:parent.Jmp('i010')">Punto 1
+</a>
+. Se viene visualizzato &quot;NOT COMPLETED&quot; (non completata), passare a 
+<a href="javascript:parent.Jmp('i170')">Punto 17
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

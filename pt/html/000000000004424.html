@@ -1,0 +1,935 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPK76300000000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias no Sistema B-CAN
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Efectuar o diagnóstico de avarias aos Problemas Relacionados com o Circuito B-CAN
+</b>
+</div>
+<a name="iG02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Como verificar os DTC com o HDS (método preferencial)
+</b>
+</div>
+<div>
+O HDS é capaz de verificar o estado de comunicação do F-CAN e B-CAN, ler e desmemorizar os DTC, apresentar a lista de dados e efectuar um ensaio de funcionamento.
+</div>
+<a name="iT01">
+</a>
+<div class="procedure_topic_title">
+<b>
+Verifique se há DTC
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha (A) de análise de dados localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo.
+</div>
+<div>
+NOTA: Se o HDS não comunicar com o veículo, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+efectue um diagnóstico de avarias ao circuito DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Seleccione o SISTEMA ELÉCTRICO DA CARROÇARIA e, de seguida, seleccione o menu MODO DE ENSAIO pretendido e verifique os DTC. Se os DTC não pertencerem ao menu seleccionado, seleccione o ícone Verificação de Todos os DTC para visualizar os DTC da Carroçaria.
+</div>
+<div>
+NOTA: Para operações específicas, consulte o manual do utilizador do HDS.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Se forem indicados quaisquer DTC, passe ao diagnóstico de avarias por DTC indicado.
+</div>
+<div>
+NOTA: Se o DTC B1000 estiver memorizado, efectue primeiro um diagnóstico de avarias ao DTC B1000.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011030','1');">
+<img src="../tn/SMR9ERPK76300000000BBPD13.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Efectuar o diagnóstico de avarias aos Problemas Relacionados com o Circuito B-CAN
+</b>
+</div>
+<a name="iG02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Como verificar os DTC com o HDS (método preferencial)
+</b>
+</div>
+<div>
+O HDS é capaz de verificar o estado de comunicação do F-CAN e B-CAN, ler e desmemorizar os DTC, apresentar a lista de dados e efectuar um ensaio de funcionamento.
+</div>
+<a name="iT01">
+</a>
+<div class="procedure_topic_title">
+<b>
+Verifique se há DTC
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha (A) de análise de dados localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBPD13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo.
+</div>
+<div>
+NOTA: Se o HDS não comunicar com o veículo, 
+<a href="javascript:CtsProc('2','000000000001111','i000')">
+efectue um diagnóstico de avarias ao circuito DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Seleccione o SISTEMA ELÉCTRICO DA CARROÇARIA e, de seguida, seleccione o menu MODO DE ENSAIO pretendido e verifique os DTC. Se os DTC não pertencerem ao menu seleccionado, seleccione o ícone Verificação de Todos os DTC para visualizar os DTC da Carroçaria.
+</div>
+<div>
+NOTA: Para operações específicas, consulte o manual do utilizador do HDS.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Se forem indicados quaisquer DTC, passe ao diagnóstico de avarias por DTC indicado.
+</div>
+<div>
+NOTA: Se o DTC B1000 estiver memorizado, efectue primeiro um diagnóstico de avarias ao DTC B1000.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Como verificar os DTC sem o HDS (Utilize apenas se o HDS estiver indisponível)
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Ferramentas Especiais Necessárias
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000013380')">
+<br>
+Ficha de curto-circuito MPCS
+<br>
+ 07WAZ-0010100
+</a>
+</div>
+<div>
+Se o HDS estiver indisponível, utilizando o seguinte método, pode verificar o estado da comunicação B-CAN, DTC e algum estado da comunicação F-CAN relacionada com o módulo de controlo do indicador.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Verifique se há DTC
+</b>
+</div>
+<br>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue a ficha (A) MPCS de curto-circuito à ficha (B) de verificação de serviço da MICU e LIGUE o interruptor (C).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011031','1');">
+<img src="../tn/SMR9ERPK76300000000BBPD14.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Como verificar os DTC sem o HDS (Utilize apenas se o HDS estiver indisponível)
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Ferramentas Especiais Necessárias
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('2','ZOOM000000000013381')">
+<br>
+Ficha de curto-circuito MPCS
+<br>
+ 07WAZ-0010100
+</a>
+</div>
+<div>
+Se o HDS estiver indisponível, utilizando o seguinte método, pode verificar o estado da comunicação B-CAN, DTC e algum estado da comunicação F-CAN relacionada com o módulo de controlo do indicador.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Verifique se há DTC
+</b>
+</div>
+<br>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue a ficha (A) MPCS de curto-circuito à ficha (B) de verificação de serviço da MICU e LIGUE o interruptor (C).
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBPD14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iT02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Após 5 a 10 segundos, os DTC que foram detectados e armazenados individualmente por várias unidades B-CAN, serão indicados um a um no ecrã multi-informações se a linha de comunicação entre a MICU do condutor e o módulo de controlo do indicador estiver boa. Para percorrer os DTC, pressione o botão de selecção/reposição.
+</div>
+</li>
+</ol>
+<div>
+A unidade que memorizou o código pode ser identificada pelo número ilustrado no visor do conta-quilómetros.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="70%">
+<col width="29%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Unidade de Controlo
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Número de Identificação da Unidade de Controlo
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MICU
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+10
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de controlo do indicador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+50
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do aquecedor/unidade de controlo da climatização
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+51
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Iluminação automática/sensor da chuva
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+71
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de Controlo de Telefone Mãos-livres
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+94
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do sensor de estacionamento e de marcha-atrás
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+9A
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+96
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+NOTA: Também pode verificar o estado de comunicação do B-CAN através dos seguintes métodos:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000004308','iS01')">
+A função de auto-diagnóstico MICU Modo de Ensaio 1 e Modo de Ensaio 2 pode verificar alguns estados de comunicação e alguns circuitos de interruptor.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000004392','i000')">
+A função de auto-diagnóstico no módulo de controlo do indicador pode verificar o estado da comunicação.
+</a>
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011032','1');">
+<img src="../tn/SMR9ERPK76300000000BBPD15.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iT02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Após 5 a 10 segundos, os DTC que foram detectados e armazenados individualmente por várias unidades B-CAN, serão indicados um a um no ecrã multi-informações se a linha de comunicação entre a MICU do condutor e o módulo de controlo do indicador estiver boa. Para percorrer os DTC, pressione o botão de selecção/reposição.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBPD15_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+A unidade que memorizou o código pode ser identificada pelo número ilustrado no visor do conta-quilómetros.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="70%">
+<col width="29%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Unidade de Controlo
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Número de Identificação da Unidade de Controlo
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MICU
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+10
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de controlo do indicador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+50
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do aquecedor/unidade de controlo da climatização
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+51
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Iluminação automática/sensor da chuva
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+71
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de Controlo de Telefone Mãos-livres
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+94
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do sensor de estacionamento e de marcha-atrás
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+9A
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+96
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+NOTA: Também pode verificar o estado de comunicação do B-CAN através dos seguintes métodos:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('2','000000000004308','iS01')">
+A função de auto-diagnóstico MICU Modo de Ensaio 1 e Modo de Ensaio 2 pode verificar alguns estados de comunicação e alguns circuitos de interruptor.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('2','000000000004392','i000')">
+A função de auto-diagnóstico no módulo de controlo do indicador pode verificar o estado da comunicação.
+</a>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Como eliminar os DTC utilizando o HDS.
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha (A) de análise de dados localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Elimine os DTC da memória utilizando o HDS.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+BLOQUEIE (0) a ignição e desligue o HDS da ficha de análise de dados (DLC).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011033','1');">
+<img src="../tn/SMR9ERPK76300000000BBPD16.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBPD16_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Como eliminar os DTC sem o HDS.
+</b>
+</div>
+<a name="i510">
+</a>
+<ol>
+<li value="1">
+<div>
+Enquanto no estado de indicação de DTC, pressione e mantenha pressionado o interruptor de SELECÇÃO/REPOSIÇÃO durante mais que 10 segundos.
+</div>
+</li>
+</ol>
+<a name="i520">
+</a>
+<ol>
+<li value="2">
+<div>
+Desligue o interruptor da ficha de curto-circuito MPCS e desligue a ficha da ficha de verificação de serviço da MICU.
+</div>
+</li>
+</ol>
+<a name="i530">
+</a>
+<ol>
+<li value="3">
+<div>
+BLOQUEIE (0) o interruptor da ignição.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

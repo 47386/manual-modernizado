@@ -1,0 +1,25 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:477px; height:417px;\" coordsize=\"477,417\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:477px;height:417px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E80A20360300000CAID02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:477px;height:417px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:300px;top:30px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>TUBO DI SFIATO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:173px;top:25px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>COLLETTORE DI<br>ASPIRAZIONE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:207px;top:182px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>TUBO FLESSIBILE PCV<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:373px;top:218px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>VALVOLA PCV<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:39px;top:362px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>: VAPORI BASAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:39px;top:384px;font-weight:normal;font-size:9.22pt;\">");
+write("<nobr><b>: ARIA FRESCA<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

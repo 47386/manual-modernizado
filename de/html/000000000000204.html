@@ -1,0 +1,197 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J26351543881FEGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Multi-Informationsdisplay - Kalibrierung der Außentemperaturanzeige
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+HINWEIS: 
+<a href="javascript:CtsProc('0','000000000000060','i000')">
+Prüfung des Außenluft-Temperaturfühlers
+</a>
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Beschreibung
+</b>
+</div>
+<div>
+Der Außenluft-Temperaturfühler befindet sich hinter der Mitte des vorderen Stoßfängers. Vom Instrumentensteuermodul (Drehzahlmesser) werden Messungen dieses Sensors zur Anzeige der Außenlufttemperatur verwendet.
+</div>
+<div>
+Aufgrund seiner Position kann der Sensor durch Wärme, die von der Straße reflektiert wird, durch einen heißen Motor oder Kühler sowie heiße Abgase vom umgebenden Verkehr beeinflusst werden.
+</div>
+<div>
+Diese Bedingungen können die Luft um den Außenluft-Temperaturfühler erwärmen und so zu falschen Ablesungen führen. Die in das Instrumentensteuermodul (Drehzahlmesser) geschriebene Logik dient dazu, ungewöhnliche oder schwankende Temperaturablesungen zu vermeiden.
+</div>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Außenlufttemperaturanzeige-Logik
+</b>
+</div>
+<div>
+Anfängliche Außenlufttemperaturanzeige nach Einschalten der Zündung (II)
+</div>
+<ul type="disc">
+<li>
+<div>
+Beträgt die Kühlmitteltemperatur beim Einschalten der Zündung (II) mindestens 60 °C, wird die beim letzten Ausschalten der Zündung angezeigte Außenlufttemperatur unabhängig von der gerade vom Außenluft-Temperaturfühler gemessenen Temperatur eingeblendet.
+</div>
+</li>
+<li>
+<div>
+Beträgt die Kühlmitteltemperatur beim Einschalten der Zündung (II) höchstens 59 °C, wird die augenblicklich vom Außenluft-Temperaturfühler gemessene Temperatur angezeigt.
+</div>
+</li>
+</ul>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Außentemperaturanzeige-Aktualisierung während des Fahrens
+</b>
+</div>
+<div>
+Liegt die vom Außenluft-Temperaturfühler gemessene Temperatur über dem an der Außentemperaturanzeige angegebenen Wert, wird die Außentemperaturanzeige um 1 °C pro Minute ansteigen, nachdem die Fahrzeuggeschwindigkeit länger als 1 Minute und 30 Sekunden über 30 km/h lag. Die Anzeige wird so lange ansteigen, bis die augenblickliche Außenlufttemperatur angezeigt wird. Die erste Änderung der Außentemperaturanzeige findet also 1 Minute und 30 Sekunden nach Beibehaltung einer Fahrzeuggeschwindigkeit von über 30 km/h statt. Fällt die Fahrzeuggeschwindigkeit unter 30 km/h, findet erst dann wieder eine Aktualisierung der Anzeige statt, wenn länger als 1 Minute und 30 Sekunden wieder eine Geschwindigkeit von mindestens 30 km/h  erreicht wurde.
+</div>
+<div>
+Liegt die tatsächliche Außenlufttemperatur unter dem angezeigten Wert, wird die Temperatur alle 2 Sekunden um 1 °C reduziert, bis die augenblickliche Außenlufttemperatur angezeigt wird. Dies erfolgt unabhängig von der Fahrzeuggeschwindigkeit.
+</div>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Fehlersuche
+</b>
+</div>
+<div>
+Wird von der Anzeige — — — °C länger als 2 Sekunden nach Auswahl des Außentemperaturanzeigemodus eingeblendet, muss der Außenluft-Temperaturfühler und die 
+<a href="javascript:CtsProc('0','000000000000421','i000')">
+Instrumentensteuermodul-Selbstdiagnosefunktion geprüft werden.
+</a>
+</div>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Kalibrierung
+</b>
+</div>
+<div>
+Die von der Außentemperaturanzeige angegebene Temperatur kann den Wünschen des Kunden entsprechend auf ±3 °C kalibriert werden.
+</div>
+<div>
+Die Außenlufttemperatur mit dem HDS oder über eine spezifische Speichereinstellung kalibrieren.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

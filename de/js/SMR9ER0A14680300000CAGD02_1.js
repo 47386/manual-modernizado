@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:687px;\" coordsize=\"950,687\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:687px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ER0A14680300000CAGD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:687px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:266px;top:194px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>PRIMÄR-KIPPHEBEL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:371px;top:479px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>EX<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:466px;top:479px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>IN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:174px;top:128px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SEKUNDÄR-KIPPHEBEL B<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:26px;top:589px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SEKUNDÄR-KIPPHEBEL A<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:301px;top:658px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VENTILSTEUERUNG<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:434px;top:322px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ÖLDRUCK<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:754px;top:293px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VENTIL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:818px;top:145px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>KIPPHEBEL-<br>ÖLSTEUERUNGSVENTIL<br><br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:723px;top:59px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

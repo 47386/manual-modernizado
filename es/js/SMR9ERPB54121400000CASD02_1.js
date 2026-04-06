@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:575px;\" coordsize=\"950,575\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:575px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPB54121400000CASD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:575px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:425px;top:72px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Luces testigo<br>(LED y excitación <br>de la pantalla <br>de información<br>múltiple)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:84px;top:32px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSOR <br>DE VELOCIDAD DE LA <br>RUEDA DELANTERA IZQUIERDA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:653px;top:48px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSOR <br>DE VELOCIDAD DE LA RUEDA DELANTERA DERECHA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:522px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSOR <br>DE VELOCIDAD DE LA RUEDA TRASERA DERECHA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:108px;top:523px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSOR DE VELOCIDAD<br>DE LA RUEDA TRASERA IZQUIERDA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:450px;top:26px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Vehículo<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:395px;top:51px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Módulo de control de los indicadores<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:437px;top:182px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>Comunicaciones <br> vía F-CAN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:414px;top:277px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL−<br>MODULADOR <br>DE VSA<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1103px;\" coordsize=\"950,1103\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1103px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9EQ0A18300000000DAPD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:564px;top:36px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEGMENTOS DO PISTÃO<br><a href=\"javascript:CtsProc('0','000000000003032','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:549px;top:163px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PISTÃO<br><a href=\"javascript:CtsProc('0','000000000003021','i000')\"></b>Remoção,</a><br><a href=\"javascript:CtsProc('0','000000000003012','i000')\">Medição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:78px;top:343px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAVILHA DO PISTÃO<br><a href=\"javascript:CtsProc('0','000000000003028','iR01')\"></b>Remoção,</a><br><a href=\"javascript:CtsProc('0','000000000003028','iR02')\">Inspecção,</a><br><a href=\"javascript:CtsProc('0','000000000003028','iR03')\">Instalação,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:522px;top:310px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BIELA<br><a href=\"javascript:CtsProc('0','000000000003017','i000')\"></b>Folga Axial,</a><br><a href=\"javascript:CtsProc('0','000000000003028','iR02')\">Medição do Pé da Biela,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:106px;top:949px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROLAMENTO DA BIELA<br><a href=\"javascript:CtsProc('0','000000000003019','iR01')\"></b>Folga de Óleo,</a><br><a href=\"javascript:CtsProc('0','000000000003019','iR02')\">Selecção,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:641px;top:812px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BLOCO DO MOTOR<br><a href=\"javascript:CtsProc('0','000000000003012','i000')\"></b>Inspecção do Furo do Cilindro,</a><br><a href=\"javascript:CtsProc('0','000000000003012','i000')\">Inspecção Quanto a Empenos,</a><br><a href=\"javascript:CtsProc('0','000000000003011','i000')\">Polimento do Furo do Cilindro,</a><br><a href=\"javascript:CtsProc('0','000000000003021','i160')\">Remoção de Cristas,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:485px;top:992px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAMPA DO ROLAMENTO <br>DA BIELA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:455px;top:1061px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PARAFUSO DA BIELA<br><a href=\"javascript:CtsProc('0','000000000003020','i000')\"></b>Inspecção,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

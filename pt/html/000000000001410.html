@@ -1,0 +1,549 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72200000000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias do EPS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS01">
+</a>
+<div class="servinfosub_title">
+<b>
+Indicador EPS
+</b>
+</div>
+<div>
+Em condições normais, o indicador EPS acende-se quando se LIGA (II) a ignição e, em seguida, apaga-se após o motor arrancar. Isto indica que o LED e o seu circuito estão a funcionar correctamente.
+</div>
+<div>
+Se houver algum problema no sistema após arrancar o motor, o indicador EPS irá permanecer ligado e a assistência eléctrica é desligada.
+</div>
+<div>
+Quando o indicador EPS se acende, a unidade de controlo memoriza o DTC. Neste caso, a unidade de controlo não activará o sistema EPS após o motor arrancar outra vez mas mantém o indicador EPS aceso.
+</div>
+<div>
+Quando o código DTC 51-01, 51-02, ou 51-06 for memorizado na unidade de controlo, o indicador EPS irá permanecer aceso até se desmemorizar o DTC. Quando uma avaria é detectada e o indicador do EPS acende-se, há casos em que o indicador permanece aceso até se DESLIGAR a ignição e casos em que o indicador se apaga automaticamente quando o sistema regressa ao normal. Apesar do sistema estar a funcionar correctamente, o indicador EPS acende-se sob as seguintes condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+A velocidade do veículo desce abruptamente dos 20 km/h ou mais (aplicando travão) e é de menos que 1 km/h e a rotação do motor é de 2.000 rpm (mín
+<sup>
+-1
+</sup>
+) ou superior durante 5 segundos (continuamente) após a desaceleração abrupta.
+</div>
+</li>
+<li>
+<div>
+Ao virar o volante da direcção com a velocidade do veículo a 1 km/h ou menos durante 20 segundos e a velocidade do motor é de 2.000 rpm (mín
+<sup>
+-1
+</sup>
+) ou superior durante pelo menos 10 segundos.
+</div>
+</li>
+<li>
+<div>
+Quando a rotação do motor é de 500 rpm (mín.
+<sup>
+-1
+</sup>
+) ou menos e o veículo está a viajar a uma velocidade de 10 km/h ou mais durante cerca de 3 segundos.
+</div>
+</li>
+</ul>
+<div>
+Para determinar a causa efectiva da avaria, solicite esclarecimentos ao cliente sobre as condições durante as quais a avaria ocorreu, levando em consideração as condições acima referidas.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS02">
+</a>
+<div class="servinfosub_title">
+<b>
+Código de Diagnóstico de Avarias (DTC)
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Se o CPU não pode ser activado, ou falha, o indicador EPS liga-se mas o DTC não é memorizado.
+</div>
+</li>
+<li>
+<div>
+A memória pode conter qualquer número de DTC. No entanto, quando o mesmo DTC é detectado mais de uma vez, o DTC mais recente sobrepõe-se ao DTC anterior, logo, apenas uma ocorrência é memorizada.
+</div>
+</li>
+<li>
+<div>
+O DTC mais baixo é indicado primeiro. Os DTC são indicados numa ordem ascendente e não na ordem pela qual ocorreram.
+</div>
+</li>
+<li>
+<div>
+Os DTC são memorizados na EEPROM (memória não-volátil), logo, os DTC memorizados não podem ser apagados desligando a bateria. Execute os procedimentos especificados para desmemorizar os DTC.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS03">
+</a>
+<div class="servinfosub_title">
+<b>
+Auto-diagnóstico
+</b>
+</div>
+<div>
+O auto-diagnóstico poderá ser classificado em três categorias:
+</div>
+<ul type="disc">
+<li>
+<div>
+Diagnóstico inicial: Executado imediatamente após o motor arrancar e até o indicador EPS se apagar.
+</div>
+</li>
+<li>
+<div>
+Diagnóstico normal: Executado imediatamente após o diagnóstico inicial até se DESLIGAR a ignição.
+</div>
+</li>
+<li>
+<div>
+Diagnóstico da direcção : Efectuado em caso de direcção durante o diagnóstico normal.
+</div>
+</li>
+</ul>
+<div>
+Quando uma avaria é detectada por auto-diagnóstico, a unidade de controlo EPS executa as seguintes funções:
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Liga o indicador EPS.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Memoriza o DTC.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Pára a assistência eléctrica e o funcionamento da direcção manual retoma.
+</div>
+<div>
+NOTA: Para DTC 11-01, 11-02, 12-01, 21-01, 21-02, 22-01 e 35-04 o indicador EPS desliga-se automaticamente e o sistema volta ao normal.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS04">
+</a>
+<div class="servinfosub_title">
+<b>
+Restrição sobre o Funcionamento da Assistência Eléctrica
+</b>
+</div>
+<div>
+Accionamentos de força extrema da direcção repetidos, tais como virar a direcção continuamente para trás e para a frente com o veículo parado, causam um aumento do consumo de potência no motor EPS. O aumento de corrente eléctrica causa o aquecimento do motor. Porque este aquecimento afecta adversamente o sistema, a unidade de controlo monitoriza a corrente eléctrica do motor.
+</div>
+<div>
+Quando a unidade de controlo detecta aquecimento no motor, reduz gradualmente a corrente eléctrica para o motor para proteger o sistema e restringe o funcionamento da assistência eléctrica. O indicador EPS não se acende durante esta função.
+</div>
+<div>
+Quando o binário da direcção não é aplicado ao volante, ou quando a ignição está desligada e o motor arrefece, a unidade de controlo irá restabelecer a assistência eléctrica gradualmente até que esteja completamente restabelecida (após cerca de 8 minutos).
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS05">
+</a>
+<div class="servinfosub_title">
+<b>
+Posição de Ponto Morto do Sensor de Binário
+</b>
+</div>
+<div>
+A unidade de controlo EPS estabelece a posição de ponto-morto do sensor de binário no EEPROM. O ponto-morto do sensor de binário deve ser memorizado sempre que a caixa de direcção, o motor ou a unidade de controlo EPS forem substituídos.
+</div>
+<div>
+NOTA: O ponto-morto do sensor de binário não é afectado quando os DTC estão a ser apagados.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS06">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Diagnosticar Avarias por DTC
+</b>
+</div>
+<div>
+Os procedimentos de diagnóstico de avarias assumem que a causa do problema ainda está presente e que o indicador EPS permanece aceso. Seguir o procedimento quando o indicador EPS não se acende poderá levar a diagnósticos incorrectos.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Solicite esclarecimentos ao cliente sobre as condições em que a avaria ocorreu e tente reproduzir as mesmas condições para o diagnóstico de avarias. Descubra quando é que o indicador EPS se acendeu tal como durante o controlo EPS, após o controlo EPS, quando o veículo se encontrava a uma certa velocidade, etc.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Quando o indicador EPS não se acende durante um teste de estrada mas o diagnóstico de avarias é efectuado baseado no DTC, verifique se há fichas soltas, mau contacto nos terminais, etc., no circuito afectado antes de efectuar o diagnóstico de avarias.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Após o diagnóstico de avarias, desmemorize o DTC e efectue um teste de estrada ao veículo. Certifique-se de que o indicador EPS não se acende.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS07">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Recuperar os DTC
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Com a ignição DESLIGADA, ligue o HDS (sistema de diagnóstico Honda) à ficha de análise de dados (DLC) (A), situada sob o tablier no lado do condutor do veículo.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e a unidade de controlo EPS. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Siga as instruções no HDS para visualizar o(s) DTC no ecrã. Após determinar o DTC, consulte o Diagnóstico de Avarias por DTC.
+</div>
+<div>
+NOTA: Veja o menu de Ajuda do HDS quanto a instruções específicas.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004012','1');">
+<img src="../tn/SMR7E40K72200000000BBPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72200000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iS08">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Eliminar os DTC
+</b>
+</div>
+<a name="i710">
+</a>
+<ol>
+<li value="1">
+<div>
+Com a ignição DESLIGADA, ligue o HDS à ficha de análise de dados (DLC) (A), situada sob o tablier no lado do condutor do veículo.
+</div>
+</li>
+</ol>
+<a name="i720">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i730">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e a unidade de controlo EPS. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i740">
+</a>
+<ol>
+<li value="4">
+<div>
+Elimine o(s) DTC seguindo as instruções no ecrã do HDS.
+</div>
+<div>
+NOTA: Veja o menu de Ajuda do HDS quanto a instruções específicas.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004013','1');">
+<img src="../tn/SMR7E40K72200000000BBPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72200000000BBPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

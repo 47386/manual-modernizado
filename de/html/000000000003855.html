@@ -1,0 +1,1052 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQQK73200000000BBGT20
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Fehlersuche in den Instrumenten
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Das Instrumentensteuermodul (DREHZAHLMESSER) besitzt eine Selbstdiagnosefunktion und eine anpassbare Rückstellfunktion.
+</div>
+<ul type="disc">
+<li>
+<div>
+Prüfung der Summeransteuerung
+</div>
+</li>
+<li>
+<div>
+Prüfung des Anzeige-Steuerkreises
+</div>
+</li>
+<li>
+<div>
+Schalter-Eingangstest
+</div>
+</li>
+<li>
+<div>
+Prüfung der LCD-Segmente
+</div>
+</li>
+<li>
+<div>
+Prüfung der Instrumentenansteuerung (Drehzahlmesser, Kraftstoffanzeige, Kühlmitteltemperaturanzeige)
+</div>
+</li>
+<li>
+<div>
+Prüfung der Datenübertragungsleitungen (der Datenübertragungsleitung des B-CAN (Body Controller Area Network) und der Datenübertragungsleitung des F-CAN (Fast Controller Area Network) zwischen den Instrumenten)
+</div>
+</li>
+<li>
+<div>
+Prüfung der UART-Leitung zwischen Instrumentensteuermodul (DREHZAHLMESSER) und Instrumentensteuermodul (GESCHWINDIGKEITSMESSER)
+</div>
+</li>
+</ul>
+<div>
+HINWEIS: Die Anzeigen werden ebenfalls über die Datenübertragungsleitung gesteuert.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Aufruf der Selbstdiagnosefunktion
+</b>
+</div>
+<div>
+Vor der Durchführung der Selbstdiagnosefunktion die Sicherung Nr. 10 (7,5 A) im Sicherungs-/Relaiskasten unter dem Armaturenbrett sowie die Sicherung Nr. 16 (15 A) im Sicherungs-/Relaiskasten im Motorraum prüfen.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Wähl- und Rückstelltaste SEL/RESET gedrückt halten.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Scheinwerfer einschalten.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Innerhalb von 5 Sekunden die Scheinwerfer ausschalten, einschalten und wieder ausschalten.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Innerhalb von 5 Sekunden die Taste Wähl- und Rückstelltaste SEL/RESET loslassen, dann die Taste drei Mal hintereinander drücken und wieder loslassen.
+</div>
+</li>
+</ol>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Im Selbstdiagnosemodus funktioniert der Helligkeitsregler für die Armaturenbrettbeleuchtung normal.
+</div>
+</li>
+<li>
+<div>
+Im Selbstdiagnosemodus wird mit der Wähl- und Rückstelltaste SEL/RESET die Prüfung der Summer- und der Instrumentenansteuerung gestartet.
+</div>
+</li>
+<li>
+<div>
+ Wenn die Fahrzeuggeschwindigkeit 2 km/h übersteigt oder die Zündung ausgeschaltet wird (0), wird der Selbstdiagnosemodus beendet.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009802','1');">
+<img src="../tn/SMR9EQQK73200000000BBGD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Das Instrumentensteuermodul (DREHZAHLMESSER) besitzt eine Selbstdiagnosefunktion und eine anpassbare Rückstellfunktion.
+</div>
+<ul type="disc">
+<li>
+<div>
+Prüfung der Summeransteuerung
+</div>
+</li>
+<li>
+<div>
+Prüfung des Anzeige-Steuerkreises
+</div>
+</li>
+<li>
+<div>
+Schalter-Eingangstest
+</div>
+</li>
+<li>
+<div>
+Prüfung der LCD-Segmente
+</div>
+</li>
+<li>
+<div>
+Prüfung der Instrumentenansteuerung (Drehzahlmesser, Kraftstoffanzeige, Kühlmitteltemperaturanzeige)
+</div>
+</li>
+<li>
+<div>
+Prüfung der Datenübertragungsleitungen (der Datenübertragungsleitung des B-CAN (Body Controller Area Network) und der Datenübertragungsleitung des F-CAN (Fast Controller Area Network) zwischen den Instrumenten)
+</div>
+</li>
+<li>
+<div>
+Prüfung der UART-Leitung zwischen Instrumentensteuermodul (DREHZAHLMESSER) und Instrumentensteuermodul (GESCHWINDIGKEITSMESSER)
+</div>
+</li>
+</ul>
+<div>
+HINWEIS: Die Anzeigen werden ebenfalls über die Datenübertragungsleitung gesteuert.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Aufruf der Selbstdiagnosefunktion
+</b>
+</div>
+<div>
+Vor der Durchführung der Selbstdiagnosefunktion die Sicherung Nr. 10 (7,5 A) im Sicherungs-/Relaiskasten unter dem Armaturenbrett sowie die Sicherung Nr. 16 (15 A) im Sicherungs-/Relaiskasten im Motorraum prüfen.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Wähl- und Rückstelltaste SEL/RESET gedrückt halten.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Scheinwerfer einschalten.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Innerhalb von 5 Sekunden die Scheinwerfer ausschalten, einschalten und wieder ausschalten.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Innerhalb von 5 Sekunden die Taste Wähl- und Rückstelltaste SEL/RESET loslassen, dann die Taste drei Mal hintereinander drücken und wieder loslassen.
+</div>
+</li>
+</ol>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Im Selbstdiagnosemodus funktioniert der Helligkeitsregler für die Armaturenbrettbeleuchtung normal.
+</div>
+</li>
+<li>
+<div>
+Im Selbstdiagnosemodus wird mit der Wähl- und Rückstelltaste SEL/RESET die Prüfung der Summer- und der Instrumentenansteuerung gestartet.
+</div>
+</li>
+<li>
+<div>
+ Wenn die Fahrzeuggeschwindigkeit 2 km/h übersteigt oder die Zündung ausgeschaltet wird (0), wird der Selbstdiagnosemodus beendet.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQQK73200000000BBGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der Anzeigeansteuerung
+</b>
+</div>
+<div>
+Zu Beginn des Selbstdiagnosemodus blinken die folgenden Anzeigen:
+</div>
+<div>
+ABS-Anzeige, Bremsanzeige, Ladeanzeige, Tempomat-Kontrollanzeige, Tempomatanzeige, EPS-Anzeige, Fernlichtanzeige, Wegfahrsperrenanzeige, Lichtanzeige, Kraftstoffreserveanzeige, Störungsanzeigeleuchte (MIL), Öldruckanzeige, Sicherheitsgurtanzeigen, Alarmanlagenanzeige, SRS-Anzeige, VSA-Anzeige, VSA-Aktivierungsanzeige, Nebelscheinwerferanzeige, Nebelschlussleuchtenanzeige, Hauptwarnanzeige, REV-Anzeige, Abschalt-Anzeige des Beifahrer-Airbags, M/T-Hochschaltanzeige, M/T-Rückschaltanzeige, Schaltstellungsanzeige (i-SHIFT), i-SHIFT-Anzeige sowie i-VTEC-Anzeige.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Schalter-Eingangstest
+</b>
+</div>
+<div>
+Nach dem unterbrochenen Summton zu Beginn der Selbstdiagnose erzeugt der Summer einen Dauerton, wenn einer der folgenden Schaltereingänge von AUS auf EIN geschaltet wird. Der Summer erzeugt zuerst einen hochfrequenten, dann einen niederfrequenten Ton. Der Summer ertönt fünf Mal und geht dann aus. Zusätzlich muss der Summer nacheinander ertönen, wenn der Summer für Folgendes vorhanden ist:
+</div>
+<div>
+Tempomat-Hauptschalter, Schalter SET/RESUME/CANCEL (Einstellen/Wiederaufnahme/Rückstellen), Schalter SEL/RESET (Auswahl/Rückstellen), INFO-Schalter, Umschalttaste km/h / mph, Feststellbremsschalter und VSA AUS-Schalter.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der Summeransteuerung
+</b>
+</div>
+<div>
+Zu Beginn der Selbstdiagnose muss der Summer zeitgleich mit den blinkenden Anzeigen piepen, und zwar immer zuerst hochfrequent und dann niederfrequent. Der Summer erzeugt zuerst einen hochfrequenten, dann einen niederfrequenten Ton. Der Summer ertönt fünf Mal und geht dann aus. Zusätzlich muss der Summer nacheinander ertönen, wenn der Summer vorhanden ist.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der LCD-Segmente
+</b>
+</div>
+<div>
+Zu Beginn des Selbstdiagnosemodus steht im LC-Display ‘‘· · ·''. Die Anzeige blinkt fünf Mal.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009806','1');">
+<img src="../tn/SMR9EQQK73200000000BBGD02.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der LCD-Segmente
+</b>
+</div>
+<div>
+Zu Beginn des Selbstdiagnosemodus steht im LC-Display ‘‘· · ·''. Die Anzeige blinkt fünf Mal.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQQK73200000000BBGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung Anzeigeansteuerung
+</b>
+</div>
+<div>
+Zu Beginn des Selbstdiagnosemodus schlägt die Drehzahlmessernadel voll aus und kehrt dann in die Ausgangsstellung zurück.
+</div>
+<div>
+HINWEIS: Nachdem der Summer verstummt ist und sich die Zeiger wieder ihrer Grundstellung befinden, können die Prüfung der Summeransteuerung (einzelner Ton) und die Prüfung der Instrumentenansteuerung mit der Wähl-/Rückstelltaste SEL/RESET erneut ausgelöst werden.
+</div>
+<div>
+Die Prüfung kann erst beginnen, nachdem der Zeiger in seine Grundstellung zurückgekehrt ist.
+</div>
+<div>
+Wenn sich der Zeiger nicht bewegt oder der Summer nicht ertönt, das Instrumentensteuermodul (Drehzahlmesser) austauschen.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009807','1');">
+<img src="../tn/SMR9EQQK73200000000BBGD03.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung Anzeigeansteuerung
+</b>
+</div>
+<div>
+Zu Beginn des Selbstdiagnosemodus schlägt die Drehzahlmessernadel voll aus und kehrt dann in die Ausgangsstellung zurück.
+</div>
+<div>
+HINWEIS: Nachdem der Summer verstummt ist und sich die Zeiger wieder ihrer Grundstellung befinden, können die Prüfung der Summeransteuerung (einzelner Ton) und die Prüfung der Instrumentenansteuerung mit der Wähl-/Rückstelltaste SEL/RESET erneut ausgelöst werden.
+</div>
+<div>
+Die Prüfung kann erst beginnen, nachdem der Zeiger in seine Grundstellung zurückgekehrt ist.
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQQK73200000000BBGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+Wenn sich der Zeiger nicht bewegt oder der Summer nicht ertönt, das Instrumentensteuermodul (Drehzahlmesser) austauschen.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der Datenübertragungsleitung
+</b>
+</div>
+<div>
+Im Selbstdiagnosemodus setzt die Prüfung der Datenübertragungsleitung nach der Prüfung der LCD-Segmente ein.
+</div>
+<div>
+Wenn alle Segmente aufleuchten, ist die Datenübertragungsleitung in Ordnung. Wenn eine Störung vorliegt, zeigt der Kilometerzähler ‘‘Error'' (Fehler) gefolgt von einer Zahl an.
+</div>
+<ul type="disc">
+<li>
+<div>
+Fehler 1: F-CAN-Datenübertragungsleitung, Fehler
+</div>
+</li>
+<li>
+<div>
+Fehler 2: B-CAN-Datenübertragungsleitung, Fehler
+</div>
+</li>
+<li>
+<div>
+Fehler 3: UART-Datenübertragungsleitung, Fehler
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Fehlercodeliste
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Fehlercode
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Art des Datenübertragungsleitungsfehlers
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+B-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN- und B-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+B-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+FEHLER 1,2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN-, B-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Wenn ‘‘Error 1'' (Fehler 1) angezeigt wird, liegt eine Störung in der Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und F-CAN (Fast Controller Area Network) vor. Prüfen, ob das ECM DTCs gespeichert hat und den zugehörigen Fehlersuchverfahren folgen. Wenn keine DTCs gefunden werden, mit der angegebenen Fehlersuche fortfahren.
+</div>
+</li>
+<li>
+<div>
+Wenn ‘‘Error 2'' (Fehler 2) angezeigt wird, liegt eine Störung in der Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und B-CAN (Body Controller Area Network) vor. Mit der angegebenen Fehlersuche fortfahren (B1155 bis B1160).
+</div>
+</li>
+<li>
+<div>
+Wenn ‘‘Error 3'' (Fehler 3) angezeigt wird, liegt eine Störung in der UART-Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und Instrumentensteuermodul (Geschwindigkeitsmesser) vor. Einen Eingangstest am Instrumentensteuermodul (Drehzahlmesser) durchführen und die Klemme A20 prüfen. Wenn der Kabelbaum in Ordnung ist, ein bekanntermaßen funktionsfähiges Instrumentensteuermodul (Geschwindigkeitsmesser) einbauen und die Prüfung wiederholen.
+</div>
+</li>
+</ul>
+<div>
+Wenn die F-CAN- oder B-CAN-Datenübertragungsleitung gestört ist, mit dem HDS nachsehen, ob DTCs gespeichert sind.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<div class="figure_title">
+<b>
+Anzeigebeispiel
+</b>
+</div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009808','1');">
+<img src="../tn/SMR9EQQK73200000000BBGD04.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Prüfung der Datenübertragungsleitung
+</b>
+</div>
+<div>
+Im Selbstdiagnosemodus setzt die Prüfung der Datenübertragungsleitung nach der Prüfung der LCD-Segmente ein.
+</div>
+<div>
+Wenn alle Segmente aufleuchten, ist die Datenübertragungsleitung in Ordnung. Wenn eine Störung vorliegt, zeigt der Kilometerzähler ‘‘Error'' (Fehler) gefolgt von einer Zahl an.
+</div>
+<ul type="disc">
+<li>
+<div>
+Fehler 1: F-CAN-Datenübertragungsleitung, Fehler
+</div>
+</li>
+<li>
+<div>
+Fehler 2: B-CAN-Datenübertragungsleitung, Fehler
+</div>
+</li>
+<li>
+<div>
+Fehler 3: UART-Datenübertragungsleitung, Fehler
+</div>
+</li>
+</ul>
+<div>
+<br>
+<div class="table_title">
+<b>
+Fehlercodeliste
+</b>
+</div>
+<br>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="19%">
+<col width="80%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Fehlercode
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Art des Datenübertragungsleitungsfehlers
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+B-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN- und B-CAN-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 1,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ERROR 2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+B-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+FEHLER 1,2,3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN-, B-CAN- und UART-Kommunikation
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<div class="figure_title">
+<b>
+Anzeigebeispiel
+</b>
+</div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQQK73200000000BBGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<ul type="disc">
+<li>
+<div>
+Wenn ‘‘Error 1'' (Fehler 1) angezeigt wird, liegt eine Störung in der Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und F-CAN (Fast Controller Area Network) vor. Prüfen, ob das ECM DTCs gespeichert hat und den zugehörigen Fehlersuchverfahren folgen. Wenn keine DTCs gefunden werden, mit der angegebenen Fehlersuche fortfahren.
+</div>
+</li>
+<li>
+<div>
+Wenn ‘‘Error 2'' (Fehler 2) angezeigt wird, liegt eine Störung in der Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und B-CAN (Body Controller Area Network) vor. Mit der angegebenen Fehlersuche fortfahren (B1155 bis B1160).
+</div>
+</li>
+<li>
+<div>
+Wenn ‘‘Error 3'' (Fehler 3) angezeigt wird, liegt eine Störung in der UART-Datenübertragungsleitung zwischen Instrumentensteuermodul (Drehzahlmesser) und Instrumentensteuermodul (Geschwindigkeitsmesser) vor. Einen Eingangstest am Instrumentensteuermodul (Drehzahlmesser) durchführen und die Klemme A20 prüfen. Wenn der Kabelbaum in Ordnung ist, ein bekanntermaßen funktionsfähiges Instrumentensteuermodul (Geschwindigkeitsmesser) einbauen und die Prüfung wiederholen.
+</div>
+</li>
+</ul>
+<div>
+Wenn die F-CAN- oder B-CAN-Datenübertragungsleitung gestört ist, mit dem HDS nachsehen, ob DTCs gespeichert sind.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Beenden der Selbstdiagnosefunktion
+</b>
+</div>
+<div>
+Die Zündung ausschalten (0).
+</div>
+<div>
+HINWEIS: Wenn die Fahrzeuggeschwindigkeit 2 km/h übersteigt, wird die Selbstdiagnosefunktion beendet.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

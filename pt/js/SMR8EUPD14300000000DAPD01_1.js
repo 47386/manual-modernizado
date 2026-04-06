@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1119px;\" coordsize=\"950,1119\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1119px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR8EUPD14300000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1119px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:561px;top:198px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DO SISTEMA DOS TRAVÕES<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Diagrama do Circuito,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Ensaio do Interruptor do Travão de Estacionamento,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Ensaio do Interruptor do Nível do Fluído dos Travões,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:778px;top:560px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO TRASEIRO<br></b>Inspecção da Pastilha e<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"> Substituição,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Inspecção do Disco,<br></a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Reparação Geral da Pinça,<br></a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:634px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO DE ESTACIONAMENTO<br></b>Inspecção e<br><a href=\"javascript:CtsProc('0','000000000004893','i000')\"> Ajuste,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Substituição do Cabo,<br></a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:351px;top:846px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÕES DIANTEIROS<br></b>Inspecção e Substituição da Pastilha:<br><a href=\"javascript:CtsProc('0','000000000001849','i000')\">Modelo do motor K20Z4,</a><br>  no Suplemento do Manual de Oficina, Ref.ª de Peça 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\">Excepto modelo do motor K20Z4,</a><br>  no Manual de Oficina, Refª de Peça 62SMR00B<br>Inspecção do Disco:<br><a href=\"javascript:CtsProc('0','000000000001848','i000')\">Modelo do motor K20Z4,</a><br>  no Suplemento do Manual de Oficina, Ref.ª de Peça 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Excepto modelo do motor K20Z4,</a><br>  no Manual de Oficina, Refª de Peça 62SMR00B<br>Reparação Geral da Pinça:<br><a href=\"javascript:CtsProc('0','000000000001847','i000')\">Modelo do motor K20Z4,</a><br>  no Suplemento do Manual de Oficina, Ref.ª de Peça 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Excepto modelo do motor K20Z4,</a><br>  no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:506px;top:755px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDAL DOS TRAVÕES<br></b>Pedal do Travão e Posição do Pedal do Travão<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> Ajuste do Interruptor,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:765px;top:322px;font-weight:normal;font-size:7.41pt;\">");
+write("<nobr><b>TUBO FLEXÍVEL e LINHA DO TRAVÃO<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspecção,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br>Substituição do Tubo <br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Flexível dos Travões,<br></a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:1088px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>A ilustração apresenta a versão LHD. A versão RHD é similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:510px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVO-FREIO<br></b>Inspecção:<br><a href=\"javascript:CtsProc('0','000000000001846','i000')\">Modelo do motor K20Z4,</a><br>  no Suplemento do Manual de Oficina, Ref.ª de Peça 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002056','i000')\">Excepto modelo do motor K20Z4,</a><br>  no Manual de Oficina, Refª de Peça 62SMR00B<br>Substituição:<br><a href=\"javascript:CtsProc('0','000000000002031','i000')\">Modelo do motor K20Z4,</a><br>  no Suplemento do Manual de Oficina, Ref.ª de Peça 62SMR21<br><a href=\"javascript:CtsProc('0','000000000002118','i000')\">Excepto modelo do motor K20Z4,</a><br>  no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:74px;top:710px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOMBA PRINCIPAL<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Purga do Sistema dos Travões,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Desmontagem,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Montagem,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

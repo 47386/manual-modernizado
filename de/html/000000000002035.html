@@ -1,0 +1,3289 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E83K72100090301FAGT90
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+DTC-Fehlersuche: P0301 (71), P0302 (72), P0303 (73), P0304 (74)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P0301:
+</b>
+<div>
+ Zylinder Nr. 1, Fehlzündung erfasst
+</div>
+<b>
+DTC P0302:
+</b>
+<div>
+ Zylinder Nr. 2, Fehlzündung erfasst
+</div>
+<b>
+DTC P0303:
+</b>
+<div>
+ Zylinder Nr. 3, Fehlzündung erfasst
+</div>
+<b>
+DTC P0304:
+</b>
+<div>
+ Zylinder Nr. 4, Fehlzündung erfasst
+</div>
+<div>
+HINWEIS: Vor der Fehlersuche alle eingefrorenen Daten und On-Board-Schnappschüsse aufzeichnen und 
+<a href="javascript:CtsProc('0','000000000001940','i000')">
+die allgemeinen Informationen zur Fehlersuche lesen.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Den DTC mit dem HDS löschen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Den Motor anlassen und lastfrei im Leerlauf (in neutral) laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Mit dem HDS im DTC-Menü den OBD STATUS (OBD-Status) des DTC P0301, P0302, P0303 oder P0304 abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird NICHT ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn ERFOLGREICH gemeldet wird, mit 
+<a href="javascript:parent.Jmp('i050')">Schritt 5
+</a>
+ fortfahren. Wenn DURCHFÜHRUNG gemeldet wird, den Motor im Leerlauf laufen lassen, bis ein Ergebnis angezeigt wird. Wenn BEDINGUNGEN NICHT ERFÜLLT gemeldet wird, mehrere Minuten warten und die Prüfung wiederholen.
+</div>
+</td>
+</tr>
+</table>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i060')">Schritt 6
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR A
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Mit dem HDS im DTC-Menü den OBD STATUS (OBD-Status) des DTC P0301, P0302, P0303 oder P0304 abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird NICHT ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn ERFOLGREICH gemeldet wird, mit 
+<a href="javascript:parent.Jmp('i080')">Schritt 8
+</a>
+ fortfahren. Wenn DURCHFÜHRUNG gemeldet wird, weiterfahren, bis ein Ergebnis angezeigt wird. Wenn BEDINGUNGEN NICHT ERFÜLLT gemeldet wird, mit 
+<a href="javascript:parent.Jmp('i060')">Schritt 6
+</a>
+ fortfahren und die Prüfung wiederholen.
+</div>
+</td>
+</tr>
+</table>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zeitweise auftretende Störung; das System ist gegenwärtig in Ordnung. Den Schaltkreis der Kraftstoffanlage auf schlechten Kontakt oder Wackelkontakt prüfen.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+<a href="javascript:CtsProc('0','000000000001795','i020')">
+Die Abdeckung vom Ansaugkrümmer nehmen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Den Motor anlassen und auf ein Klickgeräusch am Einspritzventil des fehlerhaften Zylinders achten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Klickt das Einspritzventil?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i120')">Schritt 12
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i420')">Schritt 42
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Die Zündspule des fehlerhaften Zylinders mit der Zündspule eines anderen Zylinders vertauschen.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i160')">Schritt 16
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zeitweise auftretende Fehlzündung aufgrund eines schlechten Kontakts im Zündspulenstecker (zuletzt traten keine Fehlzündungen auf). Sicherstellen, dass die Spulenanschlüsse fest sitzen.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Feststellen, in welchem Zylinder es zur Fehlzündung kam.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Treten die Fehlzündungen jetzt in dem Zylinder auf, dessen Zündspule getauscht wurde?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001807','i000')">
+Die defekte Zündspule austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i170')">Schritt 17
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Die Zündkerze des fehlerhaften Zylinders mit der Zündkerze eines anderen Zylinders vertauschen.
+</div>
+</li>
+</ol>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i210')">Schritt 21
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zeitweise auftretende Fehlzündung aufgrund einer verschmutzten Zündkerze oder dgl. (zuletzt traten keine Fehlzündungen auf)■
+</div>
+</td>
+</tr>
+</table>
+<a name="i210">
+</a>
+<ol>
+<li value="21">
+<div>
+Feststellen, in welchem Zylinder es zur Fehlzündung kam.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Treten die Fehlzündungen jetzt in dem Zylinder auf, dessen Zündkerze getauscht wurde?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die defekte Zündkerze austauschen und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i220')">Schritt 22
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i220">
+</a>
+<ol>
+<li value="22">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="23">
+<div>
+Das Einspritzventil des fehlerhaften Zylinders gegen das Einspritzventil eines anderen Zylinders tauschen.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="24">
+<div>
+Den Motor anlassen und 2 Minuten im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="25">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="26">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i270')">Schritt 27
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zeitweise auftretende Fehlzündung aufgrund eines schlechten Kontakts im Einspritzventilstecker (zuletzt traten keine Fehlzündungen auf). Einspritzventil auf schlechten Kontakt oder Wackelkontakt prüfen.■
+</div>
+</td>
+</tr>
+</table>
+<a name="i270">
+</a>
+<ol>
+<li value="27">
+<div>
+Feststellen, in welchem Zylinder es zur Fehlzündung kam.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Treten die Fehlzündungen in dem Zylinder auf, dessen Einspritzventil getauscht wurde?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+Das defekte Einspritzventil austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i280')">Schritt 28
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i280">
+</a>
+<ol>
+<li value="28">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="29">
+<div>
+Den 3P-Stecker der Zündspule vom fehlerhaften Zylinder trennen.
+</div>
+</li>
+</ol>
+<a name="i300">
+</a>
+<ol>
+<li value="30">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i310">
+</a>
+<ol>
+<li value="31">
+<div>
+Die Spannung zwischen der Klemme Nr. 3 des 3P-Zündspulensteckers und Karosseriemasse messen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Liegt Batteriespannung an?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i320')">Schritt 32
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen Zündspule und Zündspulenrelais beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i320">
+</a>
+<ol>
+<li value="32">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005817','1');">
+<img src="../tn/SMR7E83K72100090301FAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i330">
+</a>
+<ol>
+<li value="33">
+<div>
+Auf Durchgang zwischen der Klemme Nr. 2 des 3P-Zündspulensteckers und Karosseriemasse prüfen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i340')">Schritt 34
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen Zündspule und G101 beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i340">
+</a>
+<ol>
+<li value="34">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i350">
+</a>
+<ol>
+<li value="35">
+<div>
+Die SCS-Leitung mit dem HDS überbrücken.
+</div>
+</li>
+</ol>
+<a name="i360">
+</a>
+<ol>
+<li value="36">
+<div>
+Den ECM-Stecker C (44P) trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005818','1');">
+<img src="../tn/SMR7E83K72100090301FAGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i370">
+</a>
+<ol>
+<li value="37">
+<div>
+Auf Durchgang zwischen Karosseriemasse und der ECM-Steckerklemme des fehlerhaften Zylinders prüfen (siehe Tabelle).
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="26%">
+<col width="15%">
+<col width="31%">
+<col width="26%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+FEHLERHAFTER ZYLINDER
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+DTC
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+ECM-KLEMME
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+KABELFARBE
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0301
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C15
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+YEL/GRN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0302
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C16
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BLU/RED
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0303
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C17
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+WHT/BLU
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0304
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C18
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BRN
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Kurzschluss im Kabel zwischen ECM und der Zündspule beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i380')">Schritt 38
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005819','1');">
+<img src="../tn/SMR7E83K72100090301FAGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i380">
+</a>
+<ol>
+<li value="38">
+<div>
+Auf Durchgang zwischen der Klemme Nr. 1 am 3P-Stecker der betreffenden Zündspule und der ECM-Steckerklemme des fehlerhaften Zylinders prüfen (siehe Tabelle).
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="26%">
+<col width="15%">
+<col width="31%">
+<col width="26%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+FEHLERHAFTER ZYLINDER
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+DTC
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+ECM-KLEMME
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+KABELFARBE
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0301
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C15
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+YEL/GRN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0302
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C16
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BLU/RED
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0303
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C17
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+WHT/BLU
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0304
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C18
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BRN
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i390')">Schritt 39
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen ECM und der Zündspule beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i390">
+</a>
+<ol>
+<li value="39">
+<div>
+Alle Stecker wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i400">
+</a>
+<ol>
+<li value="40">
+<div>
+<a href="javascript:CtsProc('0','000000000001642','i000')">
+Eine Motorverdichtungs- und Zylinderdichtheitsprüfung durchführen.
+</a>
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Hat der Motor beide Tests bestanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i410')">Schritt 41
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Den Motor reparieren und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i410">
+</a>
+<ol>
+<li value="41">
+<div>
+<a href="javascript:CtsProc('0','000000000001650','i000')">
+Die VTEC-Kipphebel testen.
+</a>
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Hat der Motor den Test bestanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i420')">Schritt 42
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001654','i000')">
+Den VTEC-Kipphebel reparieren
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i420">
+</a>
+<ol>
+<li value="42">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="43">
+<div>
+Die SCS-Leitung mit dem HDS überbrücken.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="44">
+<div>
+Den ECM-Stecker C (44P) trennen.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="45">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005820','1');">
+<img src="../tn/SMR7E83K72100090301FAGD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i460">
+</a>
+<ol>
+<li value="46">
+<div>
+Die Spannung zwischen Karosseriemasse und der ECM-Steckerklemme des fehlerhaften Zylinders messen (siehe Tabelle).
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="26%">
+<col width="15%">
+<col width="31%">
+<col width="26%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+FEHLERHAFTER ZYLINDER
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+DTC
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+ECM-KLEMME
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+KABELFARBE
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0301
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BRN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0302
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+RED
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0303
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BLU
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0304
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+YEL
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Liegt Batteriespannung an?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i540')">Schritt 54
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i470')">Schritt 47
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i470">
+</a>
+<ol>
+<li value="47">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i480">
+</a>
+<ol>
+<li value="48">
+<div>
+Den 2P-Stecker des Einspritzventils vom fehlerhaften Zylinder trennen.
+</div>
+</li>
+</ol>
+<a name="i490">
+</a>
+<ol>
+<li value="49">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005821','1');">
+<img src="../tn/SMR7E83K72100090301FAGD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i500">
+</a>
+<ol>
+<li value="50">
+<div>
+Die Spannung zwischen der Klemme Nr. 1 des 2P-Einspritzventilsteckers und Karosseriemasse messen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Liegt Batteriespannung an?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i510')">Schritt 51
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen Einspritzventil und PGM-FI-Hauptrelais 1 beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i510">
+</a>
+<ol>
+<li value="51">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005822','1');">
+<img src="../tn/SMR7E83K72100090301FAGD06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i520">
+</a>
+<ol>
+<li value="52">
+<div>
+Auf Durchgang zwischen Karosseriemasse und der ECM-Steckerklemme des fehlerhaften Zylinders prüfen (siehe Tabelle).
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="26%">
+<col width="15%">
+<col width="31%">
+<col width="26%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+FEHLERHAFTER ZYLINDER
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+DTC
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+ECM-KLEMME
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+KABELFARBE
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0301
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BRN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0302
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+RED
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0303
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BLU
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0304
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+YEL
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Kurzschluss im Kabel zwischen ECM und Einspritzventil beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i530')">Schritt 53
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005823','1');">
+<img src="../tn/SMR7E83K72100090301FAGD07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i530">
+</a>
+<ol>
+<li value="53">
+<div>
+Auf Durchgang zwischen der Klemme Nr. 2 am 2P-Stecker des betreffenden Einspritzventils und der ECM-Steckerklemme des fehlerhaften Zylinders prüfen (siehe Tabelle).
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="26%">
+<col width="15%">
+<col width="31%">
+<col width="26%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+FEHLERHAFTER ZYLINDER
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+DTC
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+ECM-KLEMME
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+KABELFARBE
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0301
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BRN
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0302
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+RED
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0303
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+BLU
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nr. 4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+P0304
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+C8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+YEL
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist Durchgang vorhanden?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i540')">Schritt 54
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung im Kabel zwischen ECM und Einspritzventil beheben und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005824','1');">
+<img src="../tn/SMR7E83K72100090301FAGD08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i540">
+</a>
+<ol>
+<li value="54">
+<div>
+Am Einspritzventil den Widerstand zwischen den Klemmen Nr. 1 und Nr. 2 des 2P-Einspritzventilsteckers messen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Werden 10 - 13 Ω gemessen?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i550')">Schritt 55
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+Das Einspritzventil austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i550">
+</a>
+<ol>
+<li value="55">
+<div>
+Das Einspritzventil des fehlerhaften Zylinders durch ein bekanntermaßen funktionsfähiges Einspritzventil ersetzen.
+</div>
+</li>
+</ol>
+<a name="i560">
+</a>
+<ol>
+<li value="56">
+<div>
+Alle Stecker wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i570">
+</a>
+<ol>
+<li value="57">
+<div>
+Den Motor anlassen und 2 Minuten im Leerlauf laufen lassen.
+</div>
+</li>
+</ol>
+<a name="i580">
+</a>
+<ol>
+<li value="58">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i590">
+</a>
+<ol>
+<li value="59">
+<div>
+CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) in der DATA LIST (Datenliste) 10 Minuten mit dem HDS beobachten.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wurden für CYL1 MISFIRE (Fehlzündung, Zylinder Nr. 1), CYL2 MISFIRE (Fehlzündung, Zylinder Nr. 2), CYL3 MISFIRE (Fehlzündung, Zylinder Nr. 3) und/oder CYL4 MISFIRE (Fehlzündung, Zylinder Nr. 4) Fehlzündungen gezählt?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i700')">Schritt 70
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+Das ursprüngliche Einspritzventil austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i600')">Schritt 60
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i600">
+</a>
+<ol>
+<li value="60">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i610">
+</a>
+<ol>
+<li value="61">
+<div>
+Alle Stecker wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="62">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="63">
+<div>
+Das ECM mit dem HDS zurücksetzen.
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="64">
+<div>
+Das CKP-Muster mit dem HDS löschen.
+</div>
+</li>
+</ol>
+<a name="i650">
+</a>
+<ol>
+<li value="65">
+<div>
+<a href="javascript:CtsProc('0','000000000001785','i000')">
+Das ECM-Leerlauf-Lernverfahren durchführen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i660">
+</a>
+<ol>
+<li value="66">
+<div>
+<a href="javascript:CtsProc('0','000000000001940','iG11')">
+Das CKP-Muster anlernen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i670">
+</a>
+<ol>
+<li value="67">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i680">
+</a>
+<ol>
+<li value="68">
+<div>
+Mit dem HDS nachsehen, ob DTCs oder temporäre DTCs gespeichert sind.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der DTC P0301, P0302, P0303 oder P0304 gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zündspule, Einspritzventil und ECM auf schlechten Kontakt oder Wackelkontakt prüfen und 
+<a href="javascript:CtsProc('0','000000000002034','i000')">
+dem Fehlersuchverfahren des DTC P0300, P0301, P0302, P0303 oder P0304 folgen.
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i690')">Schritt 69
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i690">
+</a>
+<ol>
+<li value="69">
+<div>
+Mit dem HDS im DTC MENU (DTC-Menü) den OBD STATUS (OBD-Status) des DTC P0301, P0302, P0303 bzw. P0304 abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Fehlersuche ist abgeschlossen. Wenn im 
+<a href="javascript:parent.Jmp('i680')">Schritt 68
+</a>
+ ein anderer DTC oder temporärer DTC gemeldet wurde, mit dem zugehörigen Fehlersuchverfahren fortfahren.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn NICHT ERFOLGREICH gemeldet wird, Zündspule, Einspritzventil und ECM auf schlechten Kontakt oder Wackelkontakt prüfen und mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren. Wenn DURCHFÜHRUNG gemeldet wird, weiterfahren, bis ein Ergebnis angezeigt wird. Wenn BEDINGUNGEN NICHT ERFÜLLT gemeldet wird, mit 
+<a href="javascript:parent.Jmp('i670')">Schritt 67
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i700">
+</a>
+<ol>
+<li value="70">
+<div>
+<a href="javascript:CtsProc('0','000000000001940','iG16')">
+Das ECM gegebenenfalls auf die neueste Softwareversion aktualisieren
+</a>
+ oder 
+<a href="javascript:CtsProc('0','000000000001940','iG17')">
+ein bekanntermaßen funktionsfähiges ECM einbauen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i710">
+</a>
+<ol>
+<li value="71">
+<div>
+Das Fahrzeug mehrere Minuten im Bereich der aufgezeichneten eingefrorenen Daten für folgende Parameter Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+MOTORDREHZAHL
+</div>
+</li>
+<li>
+<div>
+VSS
+</div>
+</li>
+<li>
+<div>
+REL TP-SENSOR
+</div>
+</li>
+<li>
+<div>
+Errechneter Lastwert (CLV)
+</div>
+</li>
+<li>
+<div>
+APP-SENSOR
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i720">
+</a>
+<ol>
+<li value="72">
+<div>
+Mit dem HDS nachsehen, ob DTCs oder temporäre DTCs gespeichert sind.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der DTC P0301, P0302, P0303 oder P0304 gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Zündspule, Einspritzventil und ECM auf schlechten Kontakt oder Wackelkontakt prüfen. Wenn das ECM aktualisiert wurde, 
+<a href="javascript:CtsProc('0','000000000001940','iG17')">
+ein bekanntermaßen funktionsfähiges ECM einbauen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i710')">Schritt 71
+</a>
+ fortfahren. Wenn das ECM getauscht wurde, mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i730')">Schritt 73
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i730">
+</a>
+<ol>
+<li value="73">
+<div>
+Mit dem HDS im DTC MENU (DTC-Menü) den OBD STATUS (OBD-Status) des DTC P0301, P0302, P0303 bzw. P0304 abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn das ECM aktualisiert wurde, ist die Fehlersuche jetzt beendet. Wenn das ECM getauscht wurde, 
+<a href="javascript:CtsProc('0','000000000001725','i000')">
+das ursprüngliche ECM austauschen.
+</a>
+ Wenn im 
+<a href="javascript:parent.Jmp('i720')">Schritt 72
+</a>
+ ein anderer DTC oder temporärer DTC gemeldet wurde, mit dem zugehörigen Fehlersuchverfahren fortfahren.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn NICHT ERFOLGREICH gemeldet wird, Zündspule, Einspritzventil und ECM auf schlechten Kontakt oder Wackelkontakt prüfen. Wenn das ECM aktualisiert wurde, 
+<a href="javascript:CtsProc('0','000000000001940','iG17')">
+ein bekanntermaßen funktionsfähiges ECM einbauen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i710')">Schritt 71
+</a>
+ fortfahren. Wenn das ECM getauscht wurde, mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren. Wenn DURCHFÜHRUNG gemeldet wird, weiterfahren, bis ein Ergebnis angezeigt wird. Wenn BEDINGUNGEN NICHT ERFÜLLT gemeldet wird, mit 
+<a href="javascript:parent.Jmp('i710')">Schritt 71
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005825','1');">
+<img src="../tn/SMR7E83K72100090301FAGD09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E83K72100090301FAGD09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

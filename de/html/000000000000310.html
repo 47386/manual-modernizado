@@ -1,0 +1,577 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46643436101FEGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Sender des schlüssellosen Türöffnungssystems Test
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div class="tool_list_title">
+<b>
+Erforderliche Spezialwerkzeuge
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012211')">
+<br>
+Prüfgerät für schlüsselloses Türöffnungssystem
+<br>
+ 07MAJ-SP00400
+</a>
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn sich die Türen mit Hilfe der Fernbedienung entriegeln oder verriegeln lassen, dabei die LED auf der Fernbedienung jedoch nicht aufleuchtet, ist die LED defekt. Die Fernbedienung austauschen.
+</div>
+</li>
+<li>
+<div>
+Wenn eine Tür geöffnet ist, können die Türen nicht mit Hilfe der Fernbedienung verriegelt werden.
+</div>
+</li>
+<li>
+<div>
+Wenn die Türen mit der Fernbedienung entriegelt wurden, jedoch keine der Türen innerhalb von 30 Sekunden geöffnet wird, werden die Türen automatisch wieder verriegelt.
+</div>
+</li>
+<li>
+<div>
+Die Türen lassen sich nicht mit Hilfe der Fernbedienung verriegeln oder entriegeln, wenn der Zündschlüssel im Zündschloss steckt.
+</div>
+</li>
+</ul>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Mit HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Zur Rückstellung der Fernbedienung die Ver- oder Entriegelungstaste fünf- oder sechsmal betätigen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Verriegelungen einwandfrei funktionieren, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Funktioniert eine der Tasten der Fernbedienung nicht, die Fernbedienung austauschen und die Programmierungs-Registrierung für die Fernbedienung durchführen.
+</a>
+</div>
+</li>
+<li>
+<div>
+Wenn die Verriegelungen nicht funktionieren, weiter mit 
+<a href="javascript:parent.Jmp('i020')">Schritt 2
+</a>
+.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den Datenübertragungsstecker anschließen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Im Menü BODY ELECTRICAL (Karosserieelektrik-Menü) die Option KEYLESS (schlüssellose Türöffnung) auswählen, anschließend KEYLESS CHECK (Prüfung schlüssellose Türöffnung) eingeben.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Die Ver- oder Entriegelungstaste drücken und prüfen, was am HDS-Bildschirm angezeigt wird.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wird KEYLESS ENTRY TRANSMITTER CODE IS RECEIVED (Fernbedienungscode für schlüssellose Türöffnung empfangen) angezeigt, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wird DIFFERENT KEYLESS ENTRY TRANSMITTER CODE IS RECEIVED (unterschiedlicher Fernbedienungscode für schlüssellose Türöffnung empfangen) angezeigt, ist die Fernbedienung nicht für das Fahrzeug registriert. Gegebenenfalls neu programmieren und 
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+die Fernbedienung registrieren.
+</a>
+</div>
+</li>
+<li>
+<div>
+Wird KEYLESS ENTRY TRANSMITTER CODE IS NOT RECEIVED (Fernbedienungscode für schlüssellose Türöffnung nicht empfangen) angezeigt, mit 
+<a href="javascript:parent.Jmp('i050')">Schritt 5
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Die Fernbedienung öffnen und auf Beschädigung durch Feuchtigkeit prüfen.
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Bei Beschädigung durch Feuchtigkeit die Fernbedienung austauschen, neu programmieren und die Fernbedienung registrieren.
+</a>
+</div>
+</li>
+<li>
+<div>
+Wenn keine Beschädigung durch Feuchtigkeit festgestellt wird, mit 
+<a href="javascript:parent.Jmp('i060')">Schritt 6
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000833','1');">
+<img src="../tn/SMR7E00J46643436101FEGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FEGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Die Batterie (A) der Fernbedienung erneuern und die Ver- oder Entriegelungstaste drücken. Dabei die Fernbedienung auf dem HDS-Bildschirm kontrollieren.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wird KEYLESS ENTRY TRANSMITTER CODE IS RECEIVED (Fernbedienungscode für schlüssellose Türöffnung empfangen) angezeigt, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wird KEYLESS ENTRY TRANSMITTER CODE IS NOT RECEIVED (Fernbedienungscode für schlüssellose Türöffnung nicht empfangen) angezeigt, mit 
+<a href="javascript:parent.Jmp('i070')">Schritt 7
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Eine bekanntermaßen funktionsfähige Fernbedienung verwenden und die Prüfung mit dem HDS wiederholen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wird (DIFFERENT) KEYLESS ENTRY TRANSMITTER CODE IS RECEIVED ((Anderer) Fernbedienungscode für schlüssellose Türöffnung empfangen) angezeigt, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000000294','i000')">
+Wird KEYLESS ENTRY TRANSMITTER CODE IS NOT RECEIVED (Fernbedienungscode für schlüssellose Türöffnung nicht empfangen) angezeigt, ist das Steuergerät von Wegfahrsperre und schlüssellosem Türöffnungssystem defekt. Dieses austauschen und die Registrierung der Wegfahrsperre durchführen.
+</a>
+</div>
+</li>
+</ul>
+<div>
+HINWEIS: Da die Fernbedienung mit dem Transponder der Wegfahrsperre verbunden ist, erfolgt bei Registrierung des Transponders über das HDS eine automatische Programmierung der Fernbedienung des schlüssellosen Türöffnungssystems.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000834','1');">
+<img src="../tn/SMR7E00J46643436101FEGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FEGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Ohne HDS
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Fernbedienung (A) hinter das Prüfgerät für das schlüssellose Türöffnungssystem (B) setzen.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Türverriegelungstaste drücken.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Anzeigeleuchte (C) aufleuchtet, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wenn die Anzeigeleuchte nicht aufleuchtet, auf Folgendes prüfen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Batterie leer oder schwach, mit 
+<a href="javascript:parent.Jmp('i030')">Schritt 3
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Fernbedienung defekt.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000835','1');">
+<img src="../tn/SMR7E00J46643436101FEGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FEGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Fernbedienung öffnen und auf Beschädigung durch Feuchtigkeit prüfen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn eine Beschädigung durch Feuchtigkeit festgestellt wird, die Fernbedienung austauschen.
+</div>
+</li>
+<li>
+<div>
+Wenn keine Beschädigung durch Feuchtigkeit festgestellt wird, mit 
+<a href="javascript:parent.Jmp('i040')">Schritt 4
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000836','1');">
+<img src="../tn/SMR7E00J46643436101FEGD04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FEGD04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR02">
+</a>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Die Batterie (A) der Fernbedienung erneuern und dann versuchen, die Türen durch fünf- bis sechsmaliges Drücken der Ver- oder Entriegelungstaste zu entriegeln bzw. zu verriegeln.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn sich die Türen ver- und entriegeln lassen, ist die Fernbedienung in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wenn sich die Türen nicht ver- und entriegeln lassen, ist für die weitere Diagnose ein HDS erforderlich.
+</div>
+</li>
+</ul>
+<div>
+HINWEIS: Da die Fernbedienung mit dem Transponder der Wegfahrsperre verbunden ist, erfolgt bei Registrierung des Transponders über das HDS eine automatische Programmierung der Fernbedienung des schlüssellosen Türöffnungssystems.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000837','1');">
+<img src="../tn/SMR7E00J46643436101FEGD05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46643436101FEGD05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

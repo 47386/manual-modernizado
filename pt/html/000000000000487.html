@@ -1,0 +1,800 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00K80100000000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias do Sistema VSA
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Indicador do Sistema
+</b>
+</div>
+<div>
+Este sistema tem quatro indicadores:
+</div>
+<ul type="disc">
+<li>
+<div>
+Indicador do ABS (A)
+</div>
+</li>
+<li>
+<div>
+Indicador do sistema dos travões (B)
+</div>
+</li>
+<li>
+<div>
+Indicador do VSA (C)
+</div>
+</li>
+<li>
+<div>
+Indicador de activação do VSA (D)
+</div>
+</li>
+</ul>
+<div>
+Quando o sistema detecta uma avaria, liga os indicadores apropriados. Dependendo da avaria, a unidade de controlo-modulador do VSA determina quais os indicadores que estão ligados.
+</div>
+<div>
+Quando o sistema está bom, cada indicador acende-se durante cerca de 2 segundos após LIGAR (II) a ignição e, em seguida, apaga-se.
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Indicador do ABS
+</b>
+</div>
+<br>
+<div>
+O indicador do ABS acende-se quando a função ABS se perde. Os travões continuam a funcionar como um sistema convencional.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Indicador do sistema dos travões
+</b>
+</div>
+<br>
+<div>
+O indicador do sistema dos travões acende-se quando a função EBD se perde, o travão de estacionamento é aplicado e o nível do fluído dos travões está baixo.
+</div>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Indicador VSA
+</b>
+</div>
+<br>
+<div>
+O indicador do VSA acende-se quando a função VSA se perde.
+</div>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Indicador de activação do VSA
+</b>
+</div>
+<br>
+<div>
+O indicador de activação do VSA cintila quando a função VSA está activada. O indicador de activação do VSA acende-se quando o VSA está desligado ou a função VSA se perde.
+</div>
+<a name="iT05">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Os indicadores do ABS e VSA apagam-se
+</b>
+</div>
+<br>
+<div>
+Cada indicador apaga-se assim que a avaria desaparece, no entanto, o tempo que a unidade de controlo-modulador do VSA leva para desligar os indicadores varia entre os DTC.
+</div>
+<ul type="disc">
+<li>
+<div>
+DTC 61, 62, ou 85:
+</div>
+<div>
+Os indicadores apagam-se automaticamente quando o sistema regressa ao normal.
+</div>
+</li>
+<li>
+<div>
+DTC 11, 13, 15, 17, 21
+<sup>
+*
+</sup>
+, 22, 25, 26, 27, 31, 32, 33, 34, 35, 36, 37, 38, 45, 46, 47, 48, 54, 65, 66, 67, 68, 72, 73, 74, 75, 76, 81, 91, 92, 97
+<sup>
+**
+</sup>
+, ou 98:
+</div>
+<div>
+Os indicadores permanecem acesos até o interruptor da ignição ser DESLIGADO, quer o sistema regresse ao normal ou não.
+</div>
+<div>
+*: Existem alguns casos em que os indicadores permanecem acesos até o veículo ser conduzido após o sistema regressar ao normal.
+</div>
+<div>
+**: Existem alguns casos em que os indicadores se desligam automaticamente quando o sistema volta ao normal.
+</div>
+</li>
+<li>
+<div>
+DTC 12, 14, 16, 18, 51, 52 ou 53:
+</div>
+<div>
+Os indicadores permanecem acesos até o veículo ser conduzido após o sistema regressar ao normal.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001239','1');">
+<img src="../tn/SMR7E00K80100000000BBPD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K80100000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Código de Diagnóstico de Avarias (DTC)
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+A memória poderá conter 10 DTC. No entanto, quando o mesmo DTC é detectado mais de uma vez, o mais recente sobrepõe-se ao anterior. Portanto, quando o mesmo problema é detectado repetidamente, este é memorizado como sendo apenas um DTC.
+</div>
+</li>
+<li>
+<div>
+Os DTC são indicados pela ordem da sua ocorrência.
+</div>
+</li>
+<li>
+<div>
+Os DTC são memorizados no EEPROM. Por isso, os DTC memorizados não podem ser cancelados, desligando a bateria. Execute o procedimento especificado, para desmemorizar os DTC.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Auto-diagnóstico
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+O auto-diagnóstico poderá ser classificado em duas categorias:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Diagnóstico inicial: Executado imediatamente após LIGAR a ignição (II) e até que os indicadores do ABS e VSA se apaguem.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Diagnóstico normal: Elaborado correctamente, após o diagnóstico inicial e até o interruptor da ignição ser DESLIGADO.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Quando o sistema detecta uma avaria, a unidade de controlo-modulador do VSA muda para modo de avaria segura.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Recuo
+</b>
+</div>
+<div>
+O motor da bomba funciona quando a unidade de controlo-modulador do VSA está a funcionar, e o fluído no reservatório é forçado a sair para a bomba principal, causando recuo no pedal do travão.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Motor da Bomba
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+O motor da bomba funciona quando a unidade de controlo-modulador do VSA está a funcionar.
+</div>
+</li>
+<li>
+<div>
+A unidade de controlo-modulador do VSA verifica o funcionamento do motor da bomba durante o diagnóstico normal quando o veículo é conduzido a mais de 15 km/h pela primeira vez, após o interruptor da ignição ser LIGADO (II). Nesta altura, poderá ouvir o motor a funcionar, mas tal é normal.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG06">
+</a>
+<div class="servinfosub_title">
+<b>
+Substituição do Fluido dos Travões/Purga do Ar
+</b>
+</div>
+<div>
+<a href="javascript:CtsProc('0','000000000000015','i000')">
+Os procedimentos de substituição do fluido dos travões e de purga do ar são idênticos aos procedimentos utilizados em veículos não equipados com o sistema do VSA.
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG07">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Diagnosticar Avarias por DTC
+</b>
+</div>
+<div>
+Os procedimentos de diagnóstico de avarias assumem que a causa da avaria continua presente e o indicador de ABS e/ou VSA permanece aceso. Seguindo um procedimento de diagnóstico de avarias por um código que foi apagado e não é desmemorizado, pode conduzir a diagnósticos incorrectos.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Solicite esclarecimentos ao cliente sobre as condições em que a avaria ocorreu e tente reproduzir as mesmas condições para o diagnóstico de avarias. Descubra quando é que o indicador do ABS e/ou do VSA se acendeu tal como durante o controlo, após o controlo, quando o veículo se encontrava a uma certa velocidade, etc.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Quando o indicador do ABS ou VSA não se acende durante um teste de estrada mas o diagnóstico de avarias é efectuado baseado no DTC, verifique se há fichas soltas, mau contacto nos terminais, etc., antes de efectuar o diagnóstico de avarias.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Após efectuar o diagnóstico de avarias ou após terem sido efectuadas reparações, elimine os DTC da memória e efectue um teste de estrada ao veículo sob condições idênticas que originaram os DTC. Certifique-se que os indicadores do ABS e VSA não acendem.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Verifique se há outra unidade de DTC ligada via F-CAN, se há DTC relacionados com F-CAN, a causa mais provável é de que a ignição estava LIGADA (II) com a ficha da unidade de controlo-modulador do VSA desligada. Elimine os DTC da memória. Verifique os códigos PGM-FI e VSA e efectue o diagnóstico de avarias primeiramente a estes.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Avarias Intermitentes
+</b>
+</div>
+<div>
+O termo ‘‘avaria intermitente&quot; significa que um sistema poderá ter tido uma avaria mas que, por agora, se verifica estar bom. Se o(s) indicador(es) do sistema não se acender, verifique se há ligações soltas, mau contacto entre os terminais relacionados com o circuito que está a diagnosticar. Se os indicadores estavam acesos mas, em seguida, se apagaram, a avaria original pode ter sido uma avaria intermitente.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Utilizar o HDS (Sistema de Diagnóstico Honda)
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Se o(s) indicador(es) do sistema se mantiver(em) aceso(s), ligue o HDS à ficha de 16P de análise de dados (DLC) (A) localizada sob o tablier do condutor.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e com a unidade de controlo-modulador do VSA. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Verifique o código de diagnóstico de avarias (DTC) e anote-o. Verifique igualmente os dados instantâneos a bordo e transfira todos os dados conseguidos. De seguida, consulte o diagnóstico de avarias por DTC indicado e inicie o procedimento de diagnóstico de avarias apropriado.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+A comunicação HDS será interrompida quando o veículo atingir a velocidade de 50 km/h ou mais.
+</div>
+</li>
+<li>
+<div>
+O HDS pode ler os DTC, dados actuais e outros dados do sistema.
+</div>
+</li>
+<li>
+<div>
+Para operações específicas, consulte o menu de Ajuda que acompanha o HDS.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001247','1');">
+<img src="../tn/SMR7E00K80100000000BBPD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K80100000000BBPD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Recuperar os DTC
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Com a ignição DESLIGADA, ligue o HDS à ficha de 16P de análise de dados (DLC), localizada por baixo do lado do condutor do tablier.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e com a unidade de controlo-modulador do VSA. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Siga as instruções no HDS para visualizar o(s) DTC no ecrã. Após determinar o DTC, consulte o diagnóstico de avarias por DTC.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="5">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG11">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Eliminar os DTC
+</b>
+</div>
+<a name="i610">
+</a>
+<ol>
+<li value="1">
+<div>
+Com a ignição DESLIGADA, ligue o HDS à ficha de 16P de análise de dados (DLC), localizada por baixo do lado do condutor do tablier.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="3">
+<div>
+Certifique-se de que o HDS comunica com o veículo e com a unidade de controlo-modulador do VSA. Se tal não se verificar, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+efectue um diagnóstico de avarias ao circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="4">
+<div>
+Elimine o(s) DTC seguindo as instruções no ecrã do HDS.
+</div>
+</li>
+</ol>
+<a name="i650">
+</a>
+<ol>
+<li value="5">
+<div>
+DESLIGUE a ignição.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG12">
+</a>
+<div class="servinfosub_title">
+<b>
+Como diagnosticar avarias dos Circuitos das Fichas da Unidade de Controlo-Modulador do VSA
+</b>
+</div>
+<div>
+Ligue um lado dos terminais do cabo de protecção (A) a um multímetro digital (B) disponível no mercado, e ligue o outro lado dos terminais do cabo de protecção a uma tomada banana disponível no mercado (0,6 mm ou equivalente) (C).
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001250','1');">
+<img src="../tn/SMR7E00K80100000000BBPD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K80100000000BBPD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

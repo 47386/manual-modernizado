@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group8\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:415px;\" coordsize=\"950,415\">");
+write("<v:rect id=\"rect8\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:415px;\">");
+write("<img id=\"img8\" name=\"PrtImgId\" src=\"../img/SMR7E82A20300000000DBPD08.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:415px;border-color:#ffffff\">");
+write("<p id=\"p8_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:738px;top:30px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAIXA DE UNIÃO (4)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:71px;top:17px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>INTERRUPTOR DA<br>POSIÇÃO <br>DO PEDAL DO TRAVÃO (1)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:607px;top:176px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>FICHA DE ANÁLISE DE<br>DADOS (8)*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:58px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAIXA DE UNIÃO (5)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:507px;top:30px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAIXA DE UNIÃO (3)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:274px;top:30px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAIXA DE UNIÃO (2)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:798px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>BOMBA DO COMBUSTÍVEL (9)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:252px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAIXA DE UNIÃO (6)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:413px;top:176px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>INTERRUPTOR DA POSIÇÃO<br>DO PEDAL DA EMBRAIAGEM<br>(7)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:342px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>NOTA:<br>  Ficha com terminais macho (contorno duplo): vista a partir do lado do terminal<br>  Ficha com terminais fêmea (contorno simples): vista do lado dos fios<br>*: Ficha com terminais fêmea (contorno simples): vista do lado do terminal<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,197 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J26351543881FEIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Display multifunzione - Taratura dell'indicatore della temperatura esterna
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA: 
+<a href="javascript:CtsProc('0','000000000000060','i000')">
+Per eseguire la verifica del sensore temperatura esterna.
+</a>
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Descrizione
+</b>
+</div>
+<div>
+Il sensore temperatura esterna è posizionato dietro la parte centrale del paraurti anteriore. Il modulo di comando quadro strumenti (contagiri) utilizza i rilevamenti eseguiti da questo sensore per visualizzare la temperatura esterna.
+</div>
+<div>
+Data l'ubicazione del sensore, la riflessione del calore del manto stradale, il calore sviluppato dal motore e dal radiatore o dai gas di scarico del traffico circostante potrebbero influire sul corretto funzionamento del sensore.
+</div>
+<div>
+Queste condizioni possono comportare il riscaldamento del sensore temperatura esterna causando letture imprecise. La logica è stata scritta nel modulo di comando quadro strumenti (contagiri) per impedire letture anomale o imprecise dell'indicatore temperatura esterna.
+</div>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Logica dell'indicatore temperatura esterna
+</b>
+</div>
+<div>
+L'indicazione iniziale della temperatura esterna viene eseguita dopo avere portato il commutatore di accensione su ON (II).
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la temperatura del liquido refrigerante motore è pari a 60 °C o superiore quando il commutatore di accensione viene portato su ON (II), l'indicatore temperatura esterna visualizza la stessa temperatura visualizzata con il commutatore di accensione su OFF indipendentemente dalla temperatura effettiva rilevata dal sensore temperatura esterna.
+</div>
+</li>
+<li>
+<div>
+Se la temperatura del liquido refrigerante motore è pari a 59 °C o inferiore quando il commutatore di accensione viene portato su ON (II), viene visualizzata la temperatura effettiva rilevata dal sensore temperatura esterna.
+</div>
+</li>
+</ul>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aggiornamento dell'indicatore temperatura esterna durante la guida
+</b>
+</div>
+<div>
+Se la temperatura rilevata dal sensore temperatura esterna è superiore alla temperatura indicata dall'indicatore temperatura esterna, l'indicatore aumenta il valore della temperatura esterna indicato di 1 °C al minuto dopo che la velocità della vettura è rimasta superiore a 30 km/h per più di 1 minuto e 30 secondi. Il valore indicato continua ad aumentare finché l'indicatore non visualizza la temperatura esterna effettiva. Quindi, il primo aggiornamento dell'indicatore temperatura esterna avviene dopo 1 minuto e 30 secondi che la velocità della vettura è rimasta superiore a 30 km/h. Se la velocità della vettura scende sotto i 30 km/h, l'indicatore non si aggiorna finché la velocità della vettura non ritorna nuovamente ad essere pari a 30 km/h o superiore per più di 1 minuto e 30 secondi.
+</div>
+<div>
+Se la temperatura esterna è inferiore a quella indicata, la temperatura diminuisce di 1 °C ogni 2 secondi finché viene indicata la temperatura esterna attuale indipendentemente dalla velocità della vettura.
+</div>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Ricerca guasti
+</b>
+</div>
+<div>
+Se l'indicatore indica — — — °C per più di 2 secondi dopo avere selezionato la modalità di visualizzazione della temperatura esterna, controllare il sensore temperatura esterna e eseguire la 
+<a href="javascript:CtsProc('0','000000000000421','i000')">
+procedura di autodiagnosi del modulo di comando quadro strumenti.
+</a>
+</div>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Calibrazione
+</b>
+</div>
+<div>
+È possibile regolare nuovamente la temperatura esterna indicata dal relativo indicatore a ±3 °C per soddisfare le aspettative del cliente.
+</div>
+<div>
+Regolare la temperatura esterna con il tester HDS o mediante la funzione impostazioni personalizzate.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

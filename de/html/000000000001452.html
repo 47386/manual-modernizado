@@ -1,0 +1,1215 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E4AK72100092002FAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+DTC-Fehlersuche: P2002
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P2002:
+</b>
+<div>
+ DPF-Nutzleistung unter Schwellenwert
+</div>
+<div class="tool_list_title">
+<b>
+Erforderliche Spezialwerkzeuge
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000012779')">
+<br>
+Instrument 600 kPa
+<br>
+ 07YAJ-0010100
+</a>
+</div>
+<div>
+HINWEIS: Vor der Fehlersuche alle eingefrorenen Daten aufzeichnen und 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+die Allgemeinen Informationen zur Fehlersuche nachlesen.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Den DTC mit dem HDS löschen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Den Motor anlassen und im Leerlauf laufen lassen, bis die Kühlmitteltemperatur 70 °C beträgt.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Das Fahrzeug unter folgenden Bedingungen Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+Kühlmitteltemperatur (ECT-SENSOR 1) über 70 °C
+</div>
+</li>
+<li>
+<div>
+Auf ebener Straße
+</div>
+</li>
+<li>
+<div>
+Getriebe im 2. Gang
+</div>
+</li>
+<li>
+<div>
+Fahrzeuggeschwindigkeit über 60 km/h
+</div>
+</li>
+<li>
+<div>
+Mindestens 30 Sekunden fahren
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Den Motor lastfrei (in Neutralstellung) über 3.000 min
+<sup>
+−1
+</sup>
+ (U/min) 20 Sekunden lang drehen lassen.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Den OBD STATUS (OBD-Status) für den DTC P2002 im DTC-Menü des HDS überwachen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird NICHT ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i070')">Schritt 7
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn ERFOLGREICH gemeldet wird, handelt es sich um eine zeitweise auftretende Störung, das System ist gegenwärtig in Ordnung. DPF-Differenzdrucksensor und ECM auf schlechten Kontakt oder lockere Klemmen überprüfen. Wird NICHT VOLLSTÄNDIG angezeigt, mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren und die Prüfung wiederholen.
+</div>
+</td>
+</tr>
+</table>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Am DPF-Differenzdrucksensor und am Dieselpartikelfilter auf lockere Abgasdruckleitungen prüfen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Sind die Leitungen in Ordnung?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i090')">Schritt 9
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Abgasdruckleitung(en) wieder anschließen und mit 
+<a href="javascript:parent.Jmp('i260')">Schritt 26
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+<a href="javascript:CtsProc('0','000000000001428','i000')">
+Das DPF-Gehäuse einer Sichtprüfung unterziehen.
+</a>
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Ist es in Ordnung?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i100')">Schritt 10
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001427','i000')">
+DPF austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i260')">Schritt 26
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Die Abgasdruckleitungen zwischen DPF-Differenzdrucksensor und Dieselpartikelfilter trennen.
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Unterdruck an die vordere Abgasdruckleitung (A) anlegen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der Unterdruck gehalten?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Auf Verstopfung zwischen dem DPF-Differenzdrucksensor und dem Dieselpartikelfilter prüfen und mit 
+<a href="javascript:parent.Jmp('i250')">Schritt 25
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i120')">Schritt 12
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004098','1');">
+<img src="../tn/SMR7E4AK72100092002FAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E4AK72100092002FAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Unterdruck an die hintere Abgasdruckleitung (A) anlegen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der Unterdruck gehalten?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Auf Verstopfung zwischen dem DPF-Differenzdrucksensor und dem Dieselpartikelfilter prüfen und mit 
+<a href="javascript:parent.Jmp('i250')">Schritt 25
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i130')">Schritt 13
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Die vordere Abgasdruckleitung der DPF-Seite verschließen.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Unterdruck an die vordere Abgasdruckleitung anlegen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der Unterdruck gehalten?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i150')">Schritt 15
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die vordere Abgasdruckleitung reparieren und mit 
+<a href="javascript:parent.Jmp('i250')">Schritt 25
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Die hintere Abgasdruckleitung der DPF-Seite verschließen.
+</div>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Unterdruck an die hintere Abgasdruckleitung anlegen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der Unterdruck gehalten?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i170')">Schritt 17
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die hintere Abgasdruckleitung reparieren und mit 
+<a href="javascript:parent.Jmp('i250')">Schritt 25
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Das Element DIESEL PARTICULATE FILTER (DPF) DIFFERENTIAL PRESSURE (DPF-Differentialdruck) in der DATA LIST (Datenliste) mit dem HDS abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Beträgt der Druck ca. 0 - 2 kPa (0 - 0,02 kgf/cm
+<sup>
+2
+</sup>
+)?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i190')">Schritt 19
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001429','i000')">
+Den DPF-Differenzdrucksensor austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i240')">Schritt 24
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004099','1');">
+<img src="../tn/SMR7E4AK72100092002FAGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E4AK72100092002FAGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Die Druckseite der Unterdruckpumpe (A) und das Instrument 600 kPa mit dem DPF-Differenzdrucksensor-Anschluss (B) wie abgebildet verbinden.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Nicht die Unterdruckseite der Unterdruckpumpe mit dem DPF-Differenzdrucksensor-Anschluss (B) verbinden.
+</div>
+</li>
+<li>
+<div>
+Nicht die Unterdruckpumpe mit dem DPF-Differenzdrucksensor-Anschluss (C) verbinden.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i200">
+</a>
+<ol>
+<li value="20">
+<div>
+Langsam 40 kPa (0,41 kgf/cm
+<sup>
+2
+</sup>
+) Druck an den Sensor anlegen.
+</div>
+</li>
+</ol>
+<a name="i210">
+</a>
+<ol>
+<li value="21">
+<div>
+Das Element DIESEL PARTICULATE FILTER (DPF) DIFFERENTIAL PRESSURE (DPF-Differenzdruck) in der DATA LIST (Datenliste) mit dem HDS abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Beträgt der Druck ca. 30 - 50 kPa (0,30 - 0,51 kgf/cm
+<sup>
+2
+</sup>
+)?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i220')">Schritt 22
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001429','i000')">
+Den DPF-Differenzdrucksensor austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i240')">Schritt 24
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i220">
+</a>
+<ol>
+<li value="22">
+<div>
+Langsam 80 kPa (0,81 kgf/cm
+<sup>
+2
+</sup>
+) Druck an den Sensor anlegen.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="23">
+<div>
+Das Element DIESEL PARTICULATE FILTER (DPF) DIFFERENTIAL PRESSURE (DPF-Differenzdruck) in der DATA LIST (Datenliste) mit dem HDS abfragen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Beträgt der Druck ca. 70 - 90 kPa (0,71 - 0,92 kgf/cm
+<sup>
+2
+</sup>
+)?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001430','i000')">
+Das DPF-Element prüfen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i240')">Schritt 24
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001429','i000')">
+Den DPF-Differenzdrucksensor austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i240')">Schritt 24
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i240">
+</a>
+<ol>
+<li value="24">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="25">
+<div>
+Alle Abgasdruckleitungen wieder anschließen.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="26">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="27">
+<div>
+Das ECM mit dem HDS rücksetzen.
+</div>
+</li>
+</ol>
+<a name="i280">
+</a>
+<ol>
+<li value="28">
+<div>
+Den Motor anlassen und im Leerlauf laufen lassen, bis die Kühlmitteltemperatur 70 °C beträgt.
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="29">
+<div>
+Das Fahrzeug unter folgenden Bedingungen Probe fahren:
+</div>
+<ul type="disc">
+<li>
+<div>
+Kühlmitteltemperatur (ECT-SENSOR 1) über 70 °C
+</div>
+</li>
+<li>
+<div>
+Auf ebener Straße
+</div>
+</li>
+<li>
+<div>
+Getriebe im 2. Gang
+</div>
+</li>
+<li>
+<div>
+Fahrzeuggeschwindigkeit über 60 km/h
+</div>
+</li>
+<li>
+<div>
+Mindestens 30 Sekunden fahren
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i300">
+</a>
+<ol>
+<li value="30">
+<div>
+Den Motor lastfrei (in Neutralstellung) über 3.000 min
+<sup>
+−1
+</sup>
+ (U/min) 20 Sekunden lang drehen lassen.
+</div>
+</li>
+</ol>
+<a name="i310">
+</a>
+<ol>
+<li value="31">
+<div>
+Mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert wurden.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird der DTC P2002 gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+DPF-Differenzdrucksensor und ECM auf schlechte Kontakte oder Wackelkontakte überprüfen und mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Mit 
+<a href="javascript:parent.Jmp('i320')">Schritt 32
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+<a name="i320">
+</a>
+<ol>
+<li value="32">
+<div>
+Den OBD STATUS (OBD-Status) für den DTC P2002 im DTC-Menü des HDS überwachen.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+Wird im Bildschirm ERFOLGREICH gemeldet?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+JA
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Fehlersuche ist abgeschlossen. Wenn andere DTCs oder temporäre DTCs bei 
+<a href="javascript:parent.Jmp('i310')">Schritt 31
+</a>
+ gemeldet werden, mit dem zugehörigen Fehlersuchverfahren fortfahren.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NEIN
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Wenn im Bildschirm NICHT ERFOLGREICH gemeldet wird, DPF-Differenzdrucksensor und ECM auf schlechte Kontakte oder lockere Klemmen untersuchen und mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren. Wird NICHT VOLLSTÄNDIG gemeldet, mit 
+<a href="javascript:parent.Jmp('i280')">Schritt 28
+</a>
+ fortfahren.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000004100','1');">
+<img src="../tn/SMR7E4AK72100092002FAGD03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E4AK72100092002FAGD03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

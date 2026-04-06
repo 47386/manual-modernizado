@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:943px;\" coordsize=\"950,943\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:943px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ32300000000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:943px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:545px;top:126px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE SPECCHIETTO DI CORTESIA LATO PASSEGGERO<br><a href=\"javascript:CtsProc('0','000000000000242','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:502px;top:19px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCI DI LETTURA ANTERIORI<br><a href=\"javascript:CtsProc('0','000000000000241','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:502px;top:67px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCI ABITACOLO<br><a href=\"javascript:CtsProc('0','000000000000238','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:597px;top:186px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE SPECCHIETTO DI CORTESIA LATO CONDUCENTE<br><a href=\"javascript:CtsProc('0','000000000000242','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:727px;top:250px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE VANO DI CARICO<br><a href=\"javascript:CtsProc('0','000000000000243','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina,<br>numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:701px;top:685px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUTTORE SERRATURA PORTELLONE<br><a href=\"javascript:CtsProc('0','000000000000244','i000')\"></b>Verifica,</a><br> nel manuale d'officina,<br>numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:562px;top:817px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLAFONIERA (Con tendina parasole)<br><a href=\"javascript:CtsProc('0','000000000000239','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:126px;top:682px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLAFONIERA (Senza tendina parasole)<br><a href=\"javascript:CtsProc('0','000000000000239','i000')\"></b>Verifica/sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:482px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Incorporata nella scatola<br>relè/fusibili sotto plancia)<br><a href=\"javascript:CtsProc('0','000000000000340','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina,<br>numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:915px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La figura mostra la versione con guida a sinistra; la versione con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

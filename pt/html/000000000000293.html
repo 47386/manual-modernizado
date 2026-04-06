@@ -1,0 +1,653 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46636200000FEPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Verificação do Sistema Imobilizador
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha de análise de dados.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Monitorize a Verificação do Sistema na Informação do Imobilizador com o HDS.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Se o HDS indicar ‘‘Normal'', o sistema do imobilizador está bom. Se o HDS mostrar quaisquer outras mensagens, verifique o seguinte:
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="12%">
+<col width="27%">
+<col width="60%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Verificação do Sistema N.º 
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Verificação do Sistema
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Causa Possível
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A chave não está registada
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Esta chave não está registada na unidade de controlo do sistema de trancar/destrancar portas sem chave-imobilizador. Tente registar as chaves com o HDS.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a antena e a chave do imobilizador devido a objectos de metal, tais como correntes para chaves, anilhas para chaves ou outras chaves.
+</div>
+</li>
+<li>
+<div>
+Voltagem da bateria fraca.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro de comunicação entre a chave e a unidade do imobilizador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interrupção intermitente entre o transponder e a unidade de controlo do sistema de trancar/destrancar portas sem chave-imobilizador. 
+</div>
+</li>
+<li>
+<div>
+O tipo de chave do imobilizador é incorrecto e não aprovado pela Honda.
+</div>
+</li>
+<li>
+<div>
+Falha na chave (falha no transponder)
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a antena e a chave do imobilizador devido a objectos de metal, tais como correntes para chaves, anilhas para chaves ou outras chaves.
+</div>
+</li>
+<li>
+<div>
+Voltagem da bateria fraca.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+A -3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Não existe comunicação entre a chave e a unidade do imobilizador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O interruptor da ignição foi ligado com uma chave sem imobilizador.
+</div>
+</li>
+<li>
+<div>
+O tipo de chave do imobilizador é incorrecto e não aprovado pela Honda.
+</div>
+</li>
+<li>
+<div>
+Falha na chave (falha no transponder)
+</div>
+</li>
+<li>
+<div>
+A comunicação não foi boa entre a antena e a chave do imobilizador devido a objectos de metal, tais como correntes para chaves, anilhas para chaves ou outras chaves.
+</div>
+</li>
+<li>
+<div>
+Voltagem da bateria fraca.
+</div>
+</li>
+<li>
+<div>
+Falha na unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+B-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O ECM não está registado
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O ECM não estava registado. Tente registar o ECM com o HDS.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre o ECM e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave e o ECM devido a interferências.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+B-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro no formato de comunicação do ECM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O ECM não estava registado. Tente registar o ECM com o HDS.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre o ECM e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave e o ECM devido a interferências.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+C-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sem registo de unidade Imoes
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+A unidade imoes não estava registada.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido a interferência.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+C-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Erro no formato de comunicação na unidade Imoes
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+A unidade imoes não estava registada.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido a interferência.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Curto-circuito na linha S-net
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Curto-circuito na cablagem do ECM para a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave. (curto-circuito na linha S-net)
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre o ECM e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade do imobilizador-sistema de trancar/destrancar as portas sem chave e o ECM devido a interferências.
+</div>
+</li>
+<li>
+<div>
+Falha na unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</li>
+<li>
+<div>
+Avaria no ECM
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Não existe comunicação entre a Unidade Imoes e a unidade do imobilizador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Fusível fundido
+</div>
+</li>
+<li>
+<div>
+Interrupção na cablagem da unidade Imoes para a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do Imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade Imoes e a unidade de controlo do Imobilizador-sistema de trancar/destrancar as portas sem chave devido a interferência.
+</div>
+</li>
+<li>
+<div>
+Avaria na unidade Imoes 
+</div>
+</li>
+<li>
+<div>
+Falha na unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+D-3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Não existe comunicação entre o ECM e a Unidade do imobilizador
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Fusível fundido
+</div>
+</li>
+<li>
+<div>
+Interrupção na cablagem do ECM para a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre o ECM e a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave devido à fraca voltagem da bateria.
+</div>
+</li>
+<li>
+<div>
+Não existe comunicação entre a unidade de controlo do imobilizador-sistema de trancar/destrancar as portas sem chave e o ECM devido a interferências.
+</div>
+</li>
+<li>
+<div>
+Falha na unidade de controlo do imobilizador-sistema de destrancar/trancar as portas sem chave
+</div>
+</li>
+<li>
+<div>
+Avaria no ECM
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+O registo inicial da Unidade do Imobilizador não está concluído
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+A unidade de controlo do imobilizador-sistema de trancar/destrancar portas sem chave não está registada. Tente registar o unidade de controlo do imobilizador-sistema de trancar/destrancar portas sem chave, utilizando o HDS.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-3
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-4
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+E-5
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-1
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+Modo Especial
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="5" align="left">
+<div>
+LIGUE e DESLIGUE a ignição (II) com a chave registada.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-2
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-3
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-4
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+F-5
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1007px;\" coordsize=\"950,1007\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1007px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ES0J32100000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1007px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:493px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTOR DE NIVELAMENTO DOS FARÓIS<br><a href=\"javascript:CtsProc('0','000000000000227','i000')\"></b>Ensaio de Entrada de Sinais,</a><br><a href=\"javascript:CtsProc('0','000000000000228','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:708px;top:637px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DOS PISCAS DE DIRECÇÃO LATERAIS<br><a href=\"javascript:CtsProc('0','000000000000237','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:622px;top:715px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE NIVELAMENTO DOS FARÓIS DIANTEIROS<br>(Com HID)<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\"></b>Diagnóstico de Avarias do Circuito,</a><br><a href=\"javascript:CtsProc('0','000000000000229','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:542px;top:832px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE HID<br><a href=\"javascript:CtsProc('0','000000000000221','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:413px;top:874px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DIANTEIRA NEVOEIRO<br><a href=\"javascript:CtsProc('0','000000000000216','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000002105','i000')\">Substituição da Lâmpada,</a><br><a href=\"javascript:CtsProc('0','000000000002104','i000')\">Ajuste,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:696px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FAROL<br><a href=\"javascript:CtsProc('0','000000000000218','i000')\"></b>Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000000220','i000')\">Substituição da Lâmpada,</a><br><a href=\"javascript:CtsProc('0','000000000000219','i000')\">Regulação,</a><br><a href=\"javascript:CtsProc('0','000000000000217','i000')\">Diagnóstico de Avarias do Sistema da Lâmpada HID,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:790px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DIANTEIRA DE PRESENÇA<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:824px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DOS PISCAS DE DIRECÇÃO DIANTEIROS<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Substituição da Lâmpada,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:977px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>A versão LHD é ilustrada; a versão RHD é semelhante.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

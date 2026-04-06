@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:831px;\" coordsize=\"950,831\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:831px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7EDDG10500000000DASD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:831px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:255px;top:15px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAJA DE<br>FUSIBLES/RELÉS DEBAJO DEL CAPÓ<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:573px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DEL EMBRAGUE DEL COMPRESOR DEL A/C<br><a href=\"javascript:CtsProc('0','000000000002535','i000')\"></b>Comprobación,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:605px;top:59px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DE CONTROL DEL VENTILADOR<br><a href=\"javascript:CtsProc('0','000000000002535','iR04')\"></b>Comprobación,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:797px;top:327px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:595px;top:701px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE TEMPERATURA DEL AIRE EXTERIOR<br><a href=\"javascript:CtsProc('0','000000000000060','i000')\"></b>Comprobación,</a><br><a href=\"javascript:CtsProc('0','000000000000061','i000')\">Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:655px;top:662px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VENTILADOR DEL RADIADOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:464px;top:768px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VENTILADOR DEL CONDENSADOR DEL A/C<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:244px;top:719px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE PRESIÓN DEL A/C<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:3px;top:797px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Se indica el modelo LHD, el modelo RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

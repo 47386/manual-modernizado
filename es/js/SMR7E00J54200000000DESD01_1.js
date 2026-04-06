@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:980px; height:1103px;\" coordsize=\"980,1103\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:980px;height:1103px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J54200000000DESD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:980px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:363px;top:456px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR MAESTRO DE LOS ELEVALUNAS ELÉCTRICOS<br>(Dispone de unidad de control incorporada)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:935px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÉ DEL CALEFACTOR DEL ASIENTO <br>DEL CONDUCTOR (ALTA)<br></b>Colores de los cables: RED, ORN, <br>BLK y GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:1002px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÉ DEL CALEFACTOR DEL ASIENTO <br>DEL CONDUCTOR (BAJA)<br></b>Colores de los cables: RED, BRN, <br>BLU/YEL, BLK y BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:746px;top:577px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÉ DEL CALEFACTOR <br>DEL ASIENTO DEL ACOMPAÑANTE (ALTA)<br></b>Colores de los cables: RED, ORN, <br>BLK y GRN/YEL<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:747px;top:639px;font-weight:normal;font-size:7.73pt;\">");
+write("<nobr><b>RELÉ DEL CALEFACTOR <br>DEL ASIENTO DEL ACOMPAÑANTE (BAJA)<br></b>Colores de los cables: RED, BRN, <br>BLU/YEL, BLK y BLK<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Asiento del conductor<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516px;top:528px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>Asiento del acompañante<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1074px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Se indica el modelo LHD, el modelo RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

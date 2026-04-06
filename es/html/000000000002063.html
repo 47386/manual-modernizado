@@ -1,0 +1,915 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ED4E34137300000MBST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Aprendizaje del sistema i-SHIFT
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+El aprendizaje del sistema i-SHIFT se debe efectuar de modo que el TCM pueda aprender la información característica del sistema. Hay dos modos de aprendizaje, &quot;Modo dinámico&quot; y &quot;Modo estático&quot;, y la información de aprendizaje es distinta para cada uno de los dos. Sólo se puede ejecutar realizando el APRENDIZAJE DE MODO DINÁMICO o el APRENDIZAJE DE MODO ESTÁTICO en el MENÚ DE AJUSTE con el HDS. El &quot;Modo dinámico&quot; requiere procedimientos de conducción, y el &quot;Modo estático&quot; no requiere ningún procedimiento de conducción.
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje del sistema i-SHIFT (Modo dinámico)
+</b>
+</div>
+<div>
+El aprendizaje del sistema i-SHIFT (modo dinámico) se completa siguiendo los pasos siguientes con el HDS.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Aprendizaje de la posición del actuador del cambio de marchas
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Aprendizaje de la posición de sincronización
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Aprendizaje de la posición de contacto 1 del embrague
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Aprendizaje de la posición de contacto 2 del embrague
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Aprendizaje de la fricción del embrague
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Aprendizaje de la posición de contacto 3 del embrague
+</div>
+<div>
+Tareas necesarias en el proceso de aprendizaje.
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Sustituya el disco del embrague.
+</div>
+</li>
+<li>
+<div>
+Sustituya el plato de presión.
+</div>
+</li>
+<li>
+<div>
+Sustituya el volante.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje del sistema i-SHIFT (Modo estático)
+</b>
+</div>
+<div>
+El aprendizaje del sistema i-SHIFT (modo estático) se completa siguiendo los pasos siguientes con el HDS.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Aprendizaje de la posición del actuador del cambio de marchas
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Aprendizaje de la posición de sincronización
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Aprendizaje de la posición de contacto 1 del embrague
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Aprendizaje de la posición de contacto 2 del embrague
+</div>
+<div>
+Tareas necesarias en el proceso de aprendizaje.
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador de cambio de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje del cilindro esclavo.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+</ul>
+<div>
+Cuando se efectúa el siguiente mantenimiento, lleve a cabo el Aprendizaje.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="50%">
+<col width="25%">
+<col width="25%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+Aprendizaje del sistema i-SHIFT (Modo dinámico)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+Aprendizaje del sistema i-SHIFT (Modo estático)
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sustituya el actuador de cambio de la caja de cambios.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Desmontaje/montaje del cilindro esclavo.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sustituya el disco del embrague.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sustituya el plato de presión.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sustituya el volante.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="87%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="8%">
+<col width="91%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+○:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Mantenimiento que se debe efectuar
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+×:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Mantenimiento que no se debe efectuar
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje de la posición del actuador de cambio
+</b>
+</div>
+<div>
+El actuador del cambio de la caja de cambios funciona automáticamente y aprende la posición de punto muerto de la caja de cambios (referencia de punto muerto) y la posición de los piñones (de 1ª a 6ª y marcha atrás [R]) y memoriza el valor de aprendizaje en el TCM.
+</div>
+<div>
+El aprendizaje de la posición del actuador del cambio de marchas es necesario después de las siguientes operaciones de mantenimiento:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje del actuador de cambio de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+</ul>
+<div>
+El aprendizaje de la posición del actuador del cambio de marchas se puede efectuar utilizando el HDS en las siguientes condiciones:
+</div>
+<ul type="disc">
+<li>
+<div>
+Interruptor de encendido en la posición ON.
+</div>
+</li>
+<li>
+<div>
+El motor no está marcha.
+</div>
+</li>
+<li>
+<div>
+Posición N (punto muerto).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Los comandos se envían para cada piñón y se pueden cambiar con el HDS.
+</div>
+</li>
+<li>
+<div>
+En función de la posición del piñón, puede resultar difícil efectuar el cambio. Si no consigue realizar el cambio tras tres intentos, se considera que ha fallado.
+</div>
+</li>
+<li>
+<div>
+Normalmente, el proceso de aprendizaje se realiza en el orden R-1-2-3-4-5-6; pero si hay un fallo en 2ª, intente repetir el proceso de aprendizaje cambiando a otra marcha en un momento dado siguiendo el orden R-1-2-3-2-4-2-5-6.
+</div>
+</li>
+</ul>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje de la posición de sincronización
+</b>
+</div>
+<div>
+El actuador de cambio de marchas de la caja de cambios funciona automáticamente y aprende la distribución de sincronización (determinada en función del cambio de par del motor) justo antes de que se cambie la velocidad, y almacena el valor de aprendizaje en el TCM.
+</div>
+<div>
+El aprendizaje de la posición de sincronización es necesario después de las siguientes operaciones de mantenimiento:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje del actuador de cambio de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+</ul>
+<div>
+El aprendizaje de la posición de sincronización se puede efectuar utilizando el HDS en las siguientes condiciones:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor en marcha.
+</div>
+</li>
+<li>
+<div>
+Posición N (punto muerto).
+</div>
+</li>
+<li>
+<div>
+Pedal de freno pisado.
+</div>
+</li>
+<li>
+<div>
+Freno de estacionamiento aplicado.
+</div>
+</li>
+<li>
+<div>
+Se ha completado el aprendizaje de la posición del actuador del cambio de marchas.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Los comandos se envían para cada piñón y se pueden cambiar con el HDS.
+</div>
+</li>
+<li>
+<div>
+En el aprendizaje de la posición de sincronización, un solo error se considera un fallo.
+</div>
+</li>
+<li>
+<div>
+Cuando se efectúa junto al aprendizaje de la posición del actuador del cambio, los valores de aprendizaje de ambos procesos se almacenan en la EEPROM.
+</div>
+</li>
+</ul>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje del punto de contacto 1·2 del embrague
+</b>
+</div>
+<div>
+El actuador del embrague funciona automáticamente, aprende la aplicación del par inicial en el disco de embrague y almacena el valor de aprendizaje en el TCM.
+</div>
+<div>
+&quot;1&quot; significa que el actuador del embrague funcionó una vez y aprendió el valor temporal; &quot;2&quot; significa que el actuador del embrague funcionó dos veces y ha completado el aprendizaje correctamente. El valor de aprendizaje se almacena en el TCM.
+</div>
+<div>
+El aprendizaje de la posición de contacto 1·2 del embrague es necesario después de las siguientes operaciones de mantenimiento:
+</div>
+<ul type="disc">
+<li>
+<div>
+Desmontaje/montaje del cilindro esclavo.
+</div>
+</li>
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.
+</div>
+</li>
+<li>
+<div>
+Sustituya el disco del embrague.
+</div>
+</li>
+<li>
+<div>
+Sustituya el plato de presión.
+</div>
+</li>
+<li>
+<div>
+Sustituya el volante.
+</div>
+</li>
+</ul>
+<div>
+El aprendizaje de la posición de contacto 1 y 2 del embrague se puede efectuar utilizando el HDS en las siguientes condiciones:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor en marcha.
+</div>
+</li>
+<li>
+<div>
+Posición N (punto muerto).
+</div>
+</li>
+<li>
+<div>
+Pedal de freno pisado.
+</div>
+</li>
+<li>
+<div>
+Freno de estacionamiento aplicado.
+</div>
+</li>
+<li>
+<div>
+Se ha completado el aprendizaje de la posición de sincronización.
+</div>
+</li>
+<li>
+<div>
+Después de que el motor se haya calentado (el par del motor es estable).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Se ha conectado el activador y la función comienza a aplicarse cuando el cambio de marchas pasa de N a D.
+</div>
+</li>
+<li>
+<div>
+Efectúe el aprendizaje de la posición de contacto 1 y 2 del embrague sucesivamente.
+</div>
+</li>
+<li>
+<div>
+Si no se completa el proceso de aprendizaje, no es posible conducir el vehículo.
+</div>
+</li>
+</ul>
+<a name="iR06">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje de la fricción del embrague
+</b>
+</div>
+<div>
+El HDS almacena los valores iniciales especificados para un determinado modelo en el TCM.
+</div>
+<div>
+Además, el HDS hace que aumente la velocidad de aprendizaje y efectúe una prueba de conducción, y envía un ajuste del coeficiente de fricción del valor inicial al TCM.
+</div>
+<div>
+El aprendizaje de la fricción del embrague es necesario después de las siguientes operaciones de mantenimiento:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Sustituya el disco del embrague.
+</div>
+</li>
+<li>
+<div>
+Sustituya el plato de presión.
+</div>
+</li>
+<li>
+<div>
+Sustituya el volante.
+</div>
+</li>
+</ul>
+<div>
+El aprendizaje de la fricción del embrague se puede efectuar utilizando el HDS en las siguientes condiciones:
+</div>
+<ul type="disc">
+<li>
+<div>
+Se ha completado el proceso de aprendizaje de la posición de contacto 2 del embrague.
+</div>
+</li>
+<li>
+<div>
+Con resistencia de la superficie de la carretera, gire las ruedas del vehículo y ponga las velocidades desde 1ª hasta 6ª.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ya que no hay carga de conducción mientras está levantado el vehículo, no se puede conseguir un ajuste correcto, de modo que se debe conectar el HDS y efectuar una prueba de conducción.
+</div>
+</li>
+<li>
+<div>
+En el modo de prueba de conducción, el patrón de cambio especializado y el modo Auto no efectúan la reducción de marcha.
+</div>
+</li>
+</ul>
+<a name="iR07">
+</a>
+<div class="procedure_sub_title">
+<b>
+Aprendizaje de la posición de contacto 3 del embrague
+</b>
+</div>
+<div>
+Después de introducir el coeficiente de fricción durante el proceso de aprendizaje de la fricción del embrague, el procedimiento se ha realizado de la misma forma que en la posición de contacto 2 del embrague y el aprendizaje final se ha completado y se ha almacenado en el TCM.
+</div>
+<div>
+El aprendizaje del contacto del embrague es necesario después de las siguientes operaciones de mantenimiento:
+</div>
+<ul type="disc">
+<li>
+<div>
+Sustituya el actuador del embrague (TCM).
+</div>
+</li>
+<li>
+<div>
+Sustituya el disco del embrague.
+</div>
+</li>
+<li>
+<div>
+Sustituya el plato de presión.
+</div>
+</li>
+<li>
+<div>
+Sustituya el volante.
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje del cilindro esclavo.*1
+</div>
+</li>
+<li>
+<div>
+Desmontaje/montaje de la caja de cambios.*1
+</div>
+</li>
+<li>
+<div>
+Desmontaje/nuevo montaje de la caja de cambios.*1
+</div>
+</li>
+</ul>
+<div>
+El aprendizaje de la posición de contacto 3 del embrague se puede efectuar utilizando el HDS en las siguientes condiciones:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor en marcha.
+</div>
+</li>
+<li>
+<div>
+Posición N (punto muerto).
+</div>
+</li>
+<li>
+<div>
+Pedal de freno pisado.
+</div>
+</li>
+<li>
+<div>
+Freno de estacionamiento aplicado.
+</div>
+</li>
+<li>
+<div>
+Se ha completado el aprendizaje de la posición de sincronización.
+</div>
+</li>
+<li>
+<div>
+Después de que el motor se haya calentado (el par del motor es estable).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Se ha conectado el activador y la función comienza a aplicarse cuando el cambio de marchas pasa de N a D.
+</div>
+</li>
+<li>
+<div>
+No es necesario efectuar una prueba de conducción al llevar a cabo el mantenimiento para *1, de modo que complete el proceso de aprendizaje de la posición de contacto 1, 2 y 3 del embrague consecutivamente.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

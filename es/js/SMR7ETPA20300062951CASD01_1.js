@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1039px;\" coordsize=\"950,1039\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1039px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ETPA20300062951CASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1039px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:290px;top:297px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOMBA DE VACÍO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:570px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TURBOCOMPRESOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:688px;top:369px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ELECTROVÁLVULA <br>DE CONTROL DE LA <br>SOBREALIMENTACIÓN <br>DEL TURBOCOMPRESOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:660px;top:975px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ELECTROVÁLVULA DE CONTROL <br>DE RECIRCULACIÓN DE LOS GASES DE ESCAPE <br>(EGR)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:335px;top:889px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VÁLVULA <br>DE CONTROL DE LA CORREDERA <br>DEL COLECTOR DE ADMISIÓN (IMRC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:102px;top:991px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PARTE DELANTERA<br> DEL VEHÍCULO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:106px;top:840px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VÁLVULA <br>DE RECIRCULACIÓN <br>DE LOS GASES DE ESCAPE (EGR)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:81px;top:367px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ELCTROVÁLVULA <br>DE CONTROL DE LA CORREDERA<br> DEL COLECTOR ADMISIÓN (IMRC)<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

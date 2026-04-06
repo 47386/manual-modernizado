@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E40A18300000000DASD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:606px;top:34px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SEGMENTOS DEL PISTÓN<br><a href=\"javascript:CtsProc('0','000000000001099','i000')\"></b>Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:629px;top:185px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANILLOS ELÁSTICOS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:242px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BULÓN DEL PISTÓN<br><a href=\"javascript:CtsProc('0','000000000001097','iR01')\"></b>Desmontaje,</a><br><a href=\"javascript:CtsProc('0','000000000001097','iR02')\">Inspección,</a><br><a href=\"javascript:CtsProc('0','000000000001097','iR03')\">Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:637px;top:775px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BLOQUE DE CILINDROS<br><a href=\"javascript:CtsProc('0','000000000001086','i000')\"></b>Inspección del interior de los cilindros,</a><br><a href=\"javascript:CtsProc('0','000000000001086','i000')\">Comprobación del alabeo,</a><br><a href=\"javascript:CtsProc('0','000000000001085','i000')\">Rectificado del diámetro interior del cilindro,</a><br><a href=\"javascript:CtsProc('0','000000000001093','i080')\">Eliminación de rebordes,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:499px;top:934px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>COJINETES DE BIELA<br><a href=\"javascript:CtsProc('0','000000000001091','iR01')\"></b>Holgura de engrase,</a><br><a href=\"javascript:CtsProc('0','000000000001091','iR02')\">Selección,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:437px;top:1047px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TORNILLO DE BIELA<br><a href=\"javascript:CtsProc('0','000000000001092','i000')\"></b>Inspección,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:173px;top:967px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAPA DE LA CABEZA<br>DE LA BIELA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:147px;top:420px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BIELA<br><a href=\"javascript:CtsProc('0','000000000001090','i000')\"></b>Juego axial,</a><br><a href=\"javascript:CtsProc('0','000000000001097','i000')\">Medida del pie de biela,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:109px;top:243px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PISTÓN<br><a href=\"javascript:CtsProc('0','000000000001093','i000')\"></b>Desmontaje,</a><br><a href=\"javascript:CtsProc('0','000000000001086','i000')\">Medida,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,687 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E20A20326400000BAIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Scarico pressione carburante
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+Prima di scollegare le tubazioni o i tubi flessibili del carburante, scaricare la pressione dall'impianto disattivando la pompa carburante e scollegando il tubo/raccordo ad innesto rapido carburante nel vano motore.
+</div>
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Con il tester HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Verificare di essere in possesso del codice antifurto dell'autoradio.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Rimuovere il tappo del bocchettone di rifornimento carburante e scaricare la pressione nel serbatoio carburante.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Da &quot;INSPECTION MENU&quot; (menu controlli) del tester HDS, selezionare &quot;Fuel Pump OFF&quot; (pompa carburante disattivata), quindi avviare il motore e farlo girare al minimo fino a quando non stalla.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Non permettere al motore di scendere sotto i 1.000 giri/min (min
+<sup>
+-1
+</sup>
+), altrimenti il modulo ECM continuerà ad azionare la pompa del carburante.
+</div>
+</li>
+<li>
+<div>
+Durante questa procedura si deve generare un DTC o un DTC temporaneo. 
+<a href="javascript:CtsProc('0','000000000000775','iG07')">
+Controllare i DTC e cancellarli in base alla necessità.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Portare il commutatore di accensione su OFF.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Scollegare il cavo negativo dalla batteria.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Rimuovere il coperchio del raccordo a innesto rapido (A).
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Controllare se il raccordo ad innesto rapido è sporco e pulirlo se necessario.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001663','1');">
+<img src="../tn/SMR7E20A20326400000BAID01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Collocare uno straccio o un panno sul raccordo ad innesto rapido (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001664','1');">
+<img src="../tn/SMR7E20A20326400000BAID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Scollegare il raccordo ad innesto rapido (A): Tenere fermo il connettore (B) con una mano e premere le linguette di ritegno (C) con l'altra mano per sganciarle dalle linguette di bloccaggio (D). Scollegare il connettore.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Non danneggiare la tubazione (E) e gli altri componenti.
+</div>
+</li>
+<li>
+<div>
+Non usare attrezzi.
+</div>
+</li>
+<li>
+<div>
+Se il connettore non si muove, tenere le linguette di ritegno premute, quindi tirare e spingere il connettore più volte finché non si scollega.
+</div>
+</li>
+<li>
+<div>
+Non rimuovere il fermo dal tubo; una volta rimosso, il fermo deve essere sostituito con uno nuovo.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Dopo aver scollegato il raccordo ad innesto rapido, 
+<a href="javascript:CtsProc('0','000000000000686','i040')">
+controllare che non sia sporco o danneggiato.
+</a>
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Ricollegare il cavo negativo della batteria, quindi procedere come segue:
+</div>
+<ul type="disc">
+<li>
+<div>
+Inserire il codice antifurto dell'autoradio.
+</div>
+</li>
+<li>
+<div>
+Impostare l'orologio.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001665','1');">
+<img src="../tn/SMR7E20A20326400000BAID03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Senza il tester HDS
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Verificare di essere in possesso del codice antifurto dell'autoradio.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+<a href="javascript:CtsProc('0','000000000000340','i000')">
+Rimuovere la scatola fusibili/relè sotto plancia,
+</a>
+ quindi rimuovere il relè principale 2 (FUEL PUMP) (A) dell'impianto PGM-FI dalla scatola fusibili/relè sotto plancia.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Reinstallare la scatola fusibili/relè sotto plancia.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Avviare il motore e farlo girare al minimo fino a quando non stalla.
+</div>
+<div>
+NOTA: Se vengono memorizzati dei DTC, cancellarli ed ignorarli.
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Portare il commutatore di accensione su OFF.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Rimuovere il tappo del serbatoio carburante.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Scollegare il cavo negativo dalla batteria.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001666','1');">
+<img src="../tn/SMR7E20A20326400000BAID04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i280">
+</a>
+<ol>
+<li value="8">
+<div>
+Rimuovere il coperchio del raccordo a innesto rapido (A).
+</div>
+</li>
+</ol>
+<a name="i290">
+</a>
+<ol>
+<li value="9">
+<div>
+Controllare se il raccordo ad innesto rapido è sporco e pulirlo se necessario.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001667','1');">
+<img src="../tn/SMR7E20A20326400000BAID05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i300">
+</a>
+<ol>
+<li value="10">
+<div>
+Collocare uno straccio o un panno sul raccordo ad innesto rapido (A).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001668','1');">
+<img src="../tn/SMR7E20A20326400000BAID06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<a name="i310">
+</a>
+<ol>
+<li value="11">
+<div>
+Scollegare il raccordo ad innesto rapido (A): Tenere fermo il connettore (B) con una mano e premere le linguette di ritegno (C) con l'altra mano per sganciarle dalle linguette di bloccaggio (D). Scollegare il connettore.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Non danneggiare la tubazione (E) e gli altri componenti.
+</div>
+</li>
+<li>
+<div>
+Non usare attrezzi.
+</div>
+</li>
+<li>
+<div>
+Se il connettore non si muove, tenere le linguette di ritegno premute, quindi tirare e spingere il connettore più volte finché non si scollega.
+</div>
+</li>
+<li>
+<div>
+Non rimuovere il fermo dal tubo; una volta rimosso, il fermo deve essere sostituito con uno nuovo.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="12">
+<div>
+Dopo aver scollegato il raccordo ad innesto rapido, 
+<a href="javascript:CtsProc('0','000000000000686','i040')">
+controllare che non sia sporco o danneggiato.
+</a>
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="13">
+<div>
+Ricollegare il cavo negativo della batteria, quindi procedere come segue:
+</div>
+<ul type="disc">
+<li>
+<div>
+Inserire il codice antifurto dell'autoradio.
+</div>
+</li>
+<li>
+<div>
+Impostare l'orologio.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001669','1');">
+<img src="../tn/SMR7E20A20326400000BAID07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E20A20326400000BAID07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

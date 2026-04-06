@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ54200000000DEID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MODULO DI COMANDO<br>QUADRO STRUMENTI (TACHIMETRO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:568px;top:77px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MODULO DI COMANDO<br>QUADRO STRUMENTI (CONTAGIRI)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:117px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA EPS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:26px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCATOLA FUSIBILI/RELÈ<br>SOTTO PLANCIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:454px;top:631px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA<br>VIVAVOCE*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:287px;top:679px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ PRINCIPALE 2<br>SISTEMA PGM-FI (relè pompa carburante)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:392px;top:719px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ ESCLUSIONE MOTORINO DI AVVIAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:725px;top:772px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA MICU<br>(Integrata nella scatola<br>fusibili/relè sotto plancia)<br>CENTRALINA IMOES<br>(Integrata nella centralina MICU)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1059px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>*: Con navigatore<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:397px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA ADATTATORE USB<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

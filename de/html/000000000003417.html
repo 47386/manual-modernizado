@@ -1,0 +1,2199 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQDE34137300000BAGT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+i-SHIFT-System Ausfallsicherheitsmaßnahmen-Index
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="15%">
+<col width="45%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+SAE-Fehlercode (DTC)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Störungskriterien
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Ausfallsicherheitsmaßnahme
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0504
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Bremsinformation im F-CAN-Signal
+</div>
+<ul type="disc">
+<li>
+<div>
+Das empfangene Bremssignal hat sich für 3  Fahrzyklen oder mehr nicht geändert.
+</div>
+<div>
+Der i-SHIFT-Fahrzyklus wird unter diesen Bedingungen eingerichtet (Nachdem alle dieser erwähnten Bedingungen erfüllt wurden, wird 1 Fahrzyklus eingerichtet.):
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Zwei Minuten sind nach dem Einschalten (II) der Zündung verstrichen.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Das Getriebe wird in den 3. Gang oder höher geschaltet.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Die Geschwindigkeit hat 16 km/h oder darüber erreicht.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Fahren im manuellen Modus ist unmöglich.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0512
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Anlasserschaltersignal (STS)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0562
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Spannungseingangswert
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal VBATT (+B) wird überwacht, wenn die Spannung 9 V oder weniger erreicht hat.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf (Nimmt die Spannung ab, treten Symptome wie z.B. eine Verzögerung im Motorbetrieb auf).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0563
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Spannungseingangswert
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal VBATT (+B) wird überwacht, wenn die Spannung 28 V oder mehr erreicht hat.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0603
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Prüffunktion des internen TCM-Stromkreises
+</div>
+<ul type="disc">
+<li>
+<div>
+Eine ROMSUM-Überprüfung des Keep Alive Memory (KAM) wird durchgeführt und eine Störung wird angenommen, falls der ROMSUM-Wert nicht übereinstimmt.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Die Steuerung wird beendet und und die Bedingung, bei der eine Störung festgestellt wurde (Gangstellung, Kupplungsstellung) bleibt bestehen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0605
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Prüffunktion des internen TCM-Stromkreises
+</div>
+<ul type="disc">
+<li>
+<div>
+Die ROMSUM im wiederbeschreibbaren Teil des ROM wird überprüft und eine Störung wird angenommen, falls der ROMSUM-Wert nicht übereinstimmt.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Die Steuerung wird beendet und und die Bedingung, bei der eine Störung festgestellt wurde (Gangstellung, Kupplungsstellung) bleibt bestehen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0666
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal des internen TCM-Temperatursensors
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Eingangswert höher oder niedriger als der Konstruktionswert ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0702
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Bestimmung basierend auf dem VCC-Spannungseingangswert
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Eingangswert höher oder niedriger als der Konstruktionswert ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Die Steuerung wird beendet und und die Bedingung, bei der eine Störung festgestellt wurde (Gangstellung, Kupplungsstellung) bleibt bestehen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0780
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Gangstellung während des Schaltens
+</div>
+<ul type="disc">
+<li>
+<div>
+Auch wenn die Synchronstellung nicht erreicht wird, aber das Erreichen des Verbindungsteils im Getriebe mindestens drei Mal fehlgeschlagen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0810
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Wert vom Stellungssensor des Kupplungsstellantriebs
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn sich der Wert des Stellungssensors auch dann nicht ändert, wenn der Kupplungsstellantrieb einen Betätigungsbefehl bekommen hat.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit eine bestimmte Geschwindigkeit überschreitet (schwankt bei beibehaltenem Gang), die Stellung des Kupplungsstellantriebs, wenn die aufgetretene Störung anhält und die Steuerung erfolgt.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter einer bestimmten Geschwindigkeit liegt, erfolgt der Übergang in die Neutralstellung.
+</div>
+</li>
+<li>
+<div>
+Obwohl der Motor erneut angelassen werden kann, ist die Zeit zwischen dem Drücken des Anlasserschalters und dem Starten des Motors länger als gewöhnlich (ca. 1 Sekunde).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0882
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Eingangsspannungswert und dem F-CAN-Signalwert
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Spannungseinganswert im TCM fast 0 V beträgt, auch wenn das Signal IG1 (empfangener F-CAN-Wert) des ECM aktiv ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf (Falls das F-CAN-Signal vom ECM gesendet übertragen wird, erfolgt die Steuerung weiterhin, bis sich das IG1 im ECM ausschaltet).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0883
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Eingangsspannungswert und dem F-CAN-Signalwert
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn Spannungseinganswert im TCM fast gleich oder größer als die Batteriespannung ist, auch wenn das Signal IG1 (empfangener F-CAN-Wert) des ECM ausgeschaltet ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0904
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Sensorsignal
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal PULSES SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal PULSES SELECT unterbrochen ist.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal PULSES SELECT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal PULSES SELECT fast gleich der Batteriespannung ist (BATT Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0909
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Neutralstellungsbreite
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Neutralstellungsbreite des Schaltstellantriebs 15,5 mm oder mehr, oder 25,5 mm oder weniger beträgt.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0910
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Sensorsignal
+</div>
+<ul type="disc">
+<li>
+<div>
+Ausgang vom Sensor ändert sich nicht, auch wenn anhand des Ausgangswerts in der Wählstellantriebstellung keine elektrische Störung im Sensor festgestellt wird.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0914
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Sensorsignal
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal PULSES SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal PULSES SHIFT unterbrochen ist.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal PULSES SHIFT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal PULSES SHIFT fast gleich der Batteriespannung ist (BATT Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet. die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0919
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der im Neutralstellungs-Lernverfahren verbrachten Zeit
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn die Bestätigung einer Neutralstellung nicht möglich ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0920
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Sensorsignal
+</div>
+<ul type="disc">
+<li>
+<div>
+Ausgang vom Sensor ändert sich nicht, auch wenn anhand es Ausgangswerts in der Schaltantriebstellung keine elektrische Störung im Sensor festgestellt wird.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0942
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Gangschalten
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn beim Einlegen des Gangs/Schalten keine Synchronisation erzielt werden kann und der Schaltvorgang abgebrochen wird.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P16C0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die CPU führt bei eingeschalteter (II) Zündung eine Selbstdiagnose durch und stellt fest, ob eine Störung aufgezeichnet wurde. 
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Beendigung der Steuerung durch etwas anderes als eine Änderung der Informationen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Eingangsenergie des Schaltstellantriebs (berechneter Wert).
+</div>
+<ul type="disc">
+<li>
+<div>
+Für einen bestimmten Zeitraum trat eine Eingangsleistung von 2.400 W bis 3.000 W oder eine Energieeingangsleistung von 1.600 W bis 2.000 W auf.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Wert vom Stellungssensor des Kupplungsstellantriebs
+</div>
+<ul type="disc">
+<li>
+<div>
+Der Wert des Stellungssensors des Kupplungsstellantriebs liegt außerhalb des Bereichs für den Konstruktionswert.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit eine bestimmte Geschwindigkeit überschreitet (schwankt bei beibehaltenem Gang), die Stellung des Kupplungsstellantriebs, wenn die aufgetretene Störung anhält und die Steuerung erfolgt.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter einer bestimmten Geschwindigkeit liegt, erfolgt der Übergang in die Neutralstellung.
+</div>
+</li>
+<li>
+<div>
+Obwohl der Motor erneut angelassen werden kann, ist die Zeit zwischen dem Drücken des Anlasserschalters und dem Starten des Motors länger als gewöhnlich (ca. 1 Sekunde).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Kupplungstemperaturwert
+</div>
+<ul type="disc">
+<li>
+<div>
+Falls der Kupplungstemperaturwert 300 °C  oder mehr erreicht.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keine Kriechsteuerung
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose, als das Anlernen der Kupplungskontaktstellung 3 nicht abgeschlossen war oder noch lief
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal VSPOUT
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das Signal VSPOUT 0 V beträgt oder ungefähr gleich der Batteriespannung ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal ECU BRAKE AND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das Signal ECU BRAKE AND 0 V beträgt oder ungefähr gleich der Batteriespannung ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Rückführwert des Anlasseraktivierungssignals (Starter Enable)
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Rückführwert des Anlasserfreigabesignals (Starter Enable) 0 V beträgt oder ungefähr gleich der Batteriespannung ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis basierend auf dem F-CAN-Signal
+</div>
+<ul type="disc">
+<li>
+<div>
+Diagnosesoftwareschutz nicht aktiv.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+<div>
+(Befehle und Änderungen, die für KEY-Inspektion erforderlich sind, können nicht ausgeführt werden.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn das Signal SENSOR SUPPLY SHIFT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19ED
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal SENSOR SHIFT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal SENSOR SUPPLY SHIFT fast gleich der Batteriespannung ist (BATT Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal GND
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR GND SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal SENSOR GND SHIFT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SENSOR
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal DIRECTION SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal DIRECTION SHIFT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SENSOR
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal DIRECTION SHIFT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn das Signal DIRECTION SHIFT fast gleich der Batteriespannung ist (BATT Kurzschluss).
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal DIRECTION SHIFT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn das Signal SENSOR SELECT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal SENSOR SELECT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SUPPLY
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR SUPPLY SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal SENSOR SUPPLY SELECT fast gleich der Batteriespannung ist (BATT Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal GND
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal SENSOR GND SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal SENSOR GND SELECT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SENSOR
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal DIRECTION SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn der Wert in der Leitung für das Signal DIRECTION SELECT ca. 0 V beträgt (GND Kurzschluss).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal SENSOR
+</div>
+<ul type="disc">
+<li>
+<div>
+Das Signal DIRECTION SELECT wird überwacht.
+</div>
+</li>
+<li>
+<div>
+Wenn das Signal DIRECTION SELECT ungefähr der Batteriespannung entspricht (BATT Kurzschluss).
+</div>
+</li>
+<li>
+<div>
+Wenn die Leitung für das Signal DIRECTION SELECT unterbrochen ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnosis basierend auf dem F-CAN-Signal
+</div>
+<ul type="disc">
+<li>
+<div>
+Das am TCM eingegangene Signal für die Drehmomentinstabilität ist auf 10 Minuten oder darüber gesetzt.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose, als das Anlernen der Kupplungskontaktstellung 1/2 abgeschlossen war oder noch lief
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn alle Phasen des Anlernens nicht abgeschlossen waren.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+<div>
+(Es kann nur der 1. oder der Rückwärtsgang geschaltet werden. Fahren bei sehr langsamer Geschwindigkeit möglich.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose, wenn das Anlernen der Gangwechselstellantriebstellung und das Anlernen der Synchronstellung abgeschlossen ist oder läuft
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Steuerung beendet (Anlassen des Motors unmöglich).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Wert für das Anlernen der Gangwechselstellantriebstellung
+</div>
+<ul type="disc">
+<li>
+<div>
+Schaltstellung 1/3/5 liegt bei +10,8 mm oder darüber, +6,8 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Schaltstellung 2/4/6/R liegt bei -6,8 mm oder darüber, -10,8 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Wählstellung 1/2/ liegt bei -2,8 mm oder darüber, -5,8 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Wählstellung 3/4/ liegt bei +2,1 mm oder darüber, -0,9 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Wählstellung 5/6/ liegt bei +7,6 mm oder darüber, +4,6 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Wählstellung R liegt bei +11,95 mm oder darüber, +9,45 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Synchronstellung 1/3/5 liegt bei +7,6 mm oder darüber, -0,4 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Synchronstellung 2/4/6 liegt bei +0,4 mm oder darüber, -7,6 mm oder darunter.
+</div>
+</li>
+</ul>
+<div>
+Ein Fehlercode wird aufgezeichnet, falls eine der zuvor aufgeführten Bedingungen vorhanden ist.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Wert für das Anlernen der Kupplungskontaktstellung
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Kupplungskontaktstellung (langfristig) liegt bei 15 mm oder darüber, oder bei 7,5 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Die Kupplungskontaktstellung (mittelfristig) liegt bei 15 mm oder darüber, oder bei 7,5 mm oder darunter.
+</div>
+</li>
+<li>
+<div>
+Die Kupplungskontaktstellung (kurzfristig) liegt bei 15 mm oder darüber, oder bei 7,5 mm oder darunter.
+</div>
+</li>
+</ul>
+<div>
+Ein Fehlercode wird aufgezeichnet, falls eine der zuvor aufgeführten Bedingungen vorhanden ist.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Reibungskoeffizientwert
+</div>
+<ul type="disc">
+<li>
+<div>
+Der Reibungskoeffizientwert Nr. 1 liegt bei 865 oder darüber, oder bei 171 oder darunter.
+</div>
+</li>
+<li>
+<div>
+Der Reibungskoeffizientwert Nr. 2 liegt bei 865 oder darüber, oder bei 171 oder darunter.
+</div>
+</li>
+<li>
+<div>
+Der Reibungskoeffizientwert Nr. 3 liegt bei 865 oder darüber, oder bei 171 oder darunter.
+</div>
+</li>
+<li>
+<div>
+Der allgemeine Reibungskoeffizientwert liegt bei 865 oder darüber, oder bei 171 oder darunter.
+</div>
+</li>
+</ul>
+<div>
+Ein Fehlercode wird aufgezeichnet, falls eine der zuvor aufgeführten Bedingungen vorhanden ist.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Keines
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2785
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Motortemperaturwert und dem Eingangswert des PCB-Sensors
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Motortemperatur beträgt 195 °C oder mehr.
+</div>
+</li>
+<li>
+<div>
+Der Eingangwert des PCB-Sensors beträgt 118 °C oder mehr.
+</div>
+</li>
+</ul>
+<div>
+Ein Fehlercode wird aufgezeichnet, falls eine der zuvor aufgeführten Bedingungen vorhanden ist.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Schaltgrenze (nur vom 1. in den 5. und R) mittels Schaltkennfeld für die Verwendung während einer Störung.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2786
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf der Eingangsenergie des Schaltstellantriebs (berechneter Wert).
+</div>
+<ul type="disc">
+<li>
+<div>
+Für einen bestimmten Zeitraum trat eine Eingangsleistung von 3.000 W oder mehr oder eine Energieeingangsleistung von 2.000 W oder mehr auf.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Es bleibt der zum Zeitpunkt der Störung gewählte Gang geschaltet (die Kupplung wird durch die Fahrzeuggeschwindigkeit verbunden oder getrennt).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2787
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Kupplungstemperaturwert
+</div>
+<ul type="disc">
+<li>
+<div>
+Falls der Kupplungstemperaturwert 400 °C oder mehr erreicht.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Keine Kriechsteuerung
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0100
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das TCM keine Signale vom ECM empfangen kann.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit eine bestimmte Geschwindigkeit überschreitet (schwankt bei beibehaltenem Gang), die Stellung des Kupplungsstellantriebs, wenn die aufgetretene Störung anhält und die Steuerung erfolgt.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter einer bestimmten Geschwindigkeit liegt, erfolgt der Übergang in die Neutralstellung.
+</div>
+</li>
+<li>
+<div>
+Obwohl der Motor erneut angelassen werden kann, ist die Zeit zwischen dem Drücken des Anlasserschalters und dem Starten des Motors länger als gewöhnlich (ca. 1 Sekunde).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0103
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das TCM keine Signale vom Schaltsteuergerät empfangen kann.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Falls die Fahrzeuggeschwindigkeit mehr als 5 km/h beträgt, die Stellung bei der Störung beibehalten wird und die Steuerung erfolgt (Wechsel zum Auto-Modus vom manuellen Modus).
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter 5 km/h liegt, wird in die Neutralstellung übergegangen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0155
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das TCM keine Signale vom Instrumentensteuermodul empfangen kann.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn ein UNGÜLTIGER Wert in den vom TCM empfangenen ECM-Daten enthalten ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Gespeicherter DTC durch Störung des IAT-Sensors/ECT-Sensors verursacht: Keines
+</div>
+</li>
+<li>
+<div>
+Für DTC, der durch andere ECM-Störungen verursacht wurde: Wenn die Fahrzeuggeschwindigkeit eine bestimmte Geschwindigkeit überschreitet (schwankt bei beibehaltenem Gang), die Stellung des Kupplungsstellantriebs, wenn die aufgetretene Störung anhält und die Steuerung erfolgt.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter einer bestimmten Geschwindigkeit liegt, erfolgt der Übergang in die Neutralstellung.
+</div>
+</li>
+<li>
+<div>
+Obwohl der Motor erneut angelassen werden kann, ist die Zeit zwischen dem Drücken des Anlasserschalters und dem Starten des Motors länger als gewöhnlich (ca. 1 Sekunde).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Falls die Daten, die das TCM vom Schaltsteuergerät empfangen hat eine anormalen oder UNGÜLTIGEN Wert enthalten.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die Ausfallsicherheitsmaßnahme wird gemäß des Störungsmodus klassifiziert.
+</div>
+<ul type="disc">
+<li>
+<div>
+Anomalie im Bereich Auto/Manuell: Die i-SHIFT-Anzeige leuchtet auf. Es kann jedoch nicht zwischen automatisch und manuell geschaltet werden.
+</div>
+</li>
+<li>
+<div>
+Für eine Anomalität in einem anderen Bereich und in den empfangenen Daten: Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Falls die Fahrzeuggeschwindigkeit über 5 km/h liegt, die Stellung bei der Störung beibehalten wird und die Steuerung erfolgt. Wenn die Fahrzeuggeschwindigkeit unter 5 km/h liegt, wird in die Neutralstellung übergegangen.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1261
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn das TCM keine Signale vom VSA empfangen kann.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Falls der Schalthebel nicht in Stellung N steht: Der Gang bleibt beim Auftreten einer Störung geschaltet. Um jedoch ein Absterben des Motors zu verhindern, wird das Öffnen und Schließen der Kupplung gesteuert.
+</div>
+</li>
+<li>
+<div>
+Wenn der Schalthebel in Stellung N steht: Es wird in die Neutralstellung geschaltet und anschließend wird der Neutralstellungsmodus auch dann beibehalten, falls der Schalthebel in andere Stellungen bewegt wird.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1400
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Eine Anomalität ist in den ECM-Daten vorhanden, die vom TCM empfangen werden.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit eine bestimmte Geschwindigkeit überschreitet (schwankt bei beibehaltenem Gang), die Stellung des Kupplungsstellantriebs, wenn die aufgetretene Störung anhält und die Steuerung erfolgt.
+</div>
+</li>
+<li>
+<div>
+Wenn die Fahrzeuggeschwindigkeit unter einer bestimmten Geschwindigkeit liegt, erfolgt der Übergang in die Neutralstellung.
+</div>
+</li>
+<li>
+<div>
+Obwohl der Motor erneut angelassen werden kann, ist die Zeit zwischen dem Drücken des Anlasserschalters und dem Starten des Motors länger als gewöhnlich (ca. 1 Sekunde).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Das TCM erhielt eine Aufforderung zum Herunterschalten, aber beim Schalten wird die maximale Motordrehzahl überschritten.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1402
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Bevor das TCM eine Anforderung zum Zurückschalten in den 5. Gang erhalten hat, hat es eine Anforderung zum Zurückschalten in den 4. Gang erhalten.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1403
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+UNGÜLTIGER Wert in den vom TCM empfangenen VSA-Daten. Wenn 1 Datenstück enthalten ist.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Wenn das VSA-Steuergerät eine Funktionsstörung erkennt: Das Herunterschalten wird beim Betätigen der Bremse verhindert.
+</div>
+</li>
+<li>
+<div>
+Falls das VSA-Steuergerät keine Störung festgestellt hat: Keines
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Es liegt eine Anomalität in den vom TCM empfangenen VSA-Daten vor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Wenn das VSA-Steuergerät eine Funktionsstörung erkennt: Das Herunterschalten wird beim Betätigen der Bremse verhindert.
+</div>
+</li>
+<li>
+<div>
+Falls das VSA-Steuergerät eine Störung festgestellt hat: Keines
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1405
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnose basierend auf dem Signal CAN
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn mehrere UNGÜLTIGE Werte in dem vom TCM empfangenen VSA-Daten enthalten sind.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Die i-SHIFT-Anzeige leuchtet auf.
+</div>
+</li>
+<li>
+<div>
+Falls der Schalthebel nicht in Stellung N steht: Der Gang bleibt beim Auftreten einer Störung geschaltet. Um jedoch ein Absterben des Motors zu verhindern, wird das Öffnen und Schließen der Kupplung gesteuert.
+</div>
+</li>
+<li>
+<div>
+Wenn der Schalthebel in Stellung N steht: Es wird in die Neutralstellung geschaltet und anschließend wird der Neutralstellungsmodus auch dann beibehalten, falls der Schalthebel in andere Stellungen bewegt wird.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

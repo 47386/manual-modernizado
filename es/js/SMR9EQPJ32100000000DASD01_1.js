@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1039px;\" coordsize=\"950,1039\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1039px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ32100000000DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1039px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:493px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTOR DE REGLAJE DE LOS FAROS<br><a href=\"javascript:CtsProc('0','000000000000227','i000')\"></b>Comprobación de la entrada,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000228','i000')\">Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:661px;top:637px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ INTERMITENTE LATERAL INDICADORA DE GIRO<br><a href=\"javascript:CtsProc('0','000000000000237','i000')\"></b>Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:599px;top:711px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE NIVELDEL REGLAJE DE LOS FAROS DELANTERO<br>(Con HID)<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\"></b>Localización de averías en el circuito</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\">Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:554px;top:809px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD HID<br><a href=\"javascript:CtsProc('0','000000000000221','i000')\"></b>Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:413px;top:874px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ ANTINIEBLA TRASERA<br><a href=\"javascript:CtsProc('0','000000000000216','i000')\"></b>Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002105','i000')\">Sustitución de una lámpara,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002104','i000')\">Ajuste,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:696px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FARO<br><a href=\"javascript:CtsProc('0','000000000000218','i000')\"></b>Sustitución,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\">Sustitución de una lámpara,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000219','i000')\">Ajuste,</a><br> en el Manual de taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000217','i000')\">Localización de averías del Sistema de luces HID<br></a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:847px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ DE POSICIÓN DELANTERA<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Sustitución de una lámpara,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:895px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ INTERMITENTE INDICADORA DE GIRO DELANTERA<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Sustitución de una lámpara,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:1011px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Se muestra el modelo LHD; el RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

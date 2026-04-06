@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:847px;\" coordsize=\"950,847\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:847px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/SMR7EE0J54200000000DEPD06.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:847px;border-color:#ffffff\">");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:677px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO ISQUEIRO<br></b>Cores dos fios: BLU, WHT,<br>BLK e PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:688px;top:65px;font-weight:normal;font-size:6.68pt;\">");
+write("<nobr><b>RELÉ DA TOMADA DE <br>ALIMENTAÇÃO PARA ACESSÓRIOS<br></b>Cores dos fios: RED, YEL,<br>BLK e PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:440px;top:91px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DA LUZ DIANTEIRA DE NEVOEIRO<br></b>Cores dos fios: WHT, RED,<br>BLU e WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:644px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DA SUPER FECHADURA DIREITA<br></b>Cores dos fios: BLU, WHT,<br>RED, BLK e WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:692px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DA SUPER FECHADURA ESQUERDA<br></b>Cores dos fios: ORN, WHT,<br>GRN, BLK e WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÉ DO DESEMBACIADOR DO ESPELHO RETROVISOR ELÉCTRICO<br></b>Cores dos fios: WHT, ORN,<br>GRY e WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:722px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÁ DA BUZINA<br>(Com segurança)<br></b>Cores dos fios: WHT, GRN,<br>ORN e WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:162px;top:114px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDADE DE CONTROLO DO AQUECEDOR/ <br>UNIDADE DE CONTROLO DA CLIMATIZAÇÃO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

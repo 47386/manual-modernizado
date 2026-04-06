@@ -1,0 +1,448 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E83K72100092271FAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Localización de averías por DTC: P2271
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P2271:
+</b>
+<div>
+ Señal de circuito del HO2S secundario de contenido rico (Sensor 2) fija
+</div>
+<div>
+NOTA: Antes de realizar la localización de averías, anote todos los datos fijos y cualquier dato instantáneo y 
+<a href="javascript:CtsProc('0','000000000001940','i000')">
+repase la información general sobre localización de averías.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Borre el DTC con el HDS.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Ponga en marcha el motor. Mantenga el motor a 3.000 rpm (min
+<sup>
+-1
+</sup>
+) en vacío (punto muerto) hasta que se ponga en marcha el ventilador del radiador y luego déjelo a ralentí.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Efectúe la prueba de conducción en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del refrigerante del motor (SENSOR ECT 1) está por encima de 80 °C
+</div>
+</li>
+<li>
+<div>
+Velocidad del vehículo entre 56-88 km/h 
+</div>
+</li>
+<li>
+<div>
+Conduzca el vehículo durante 1 minuto o más.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+ Controle el ESTADO OBD del DTC P2271 en el MENÚ DE DTC con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica la pantalla que la comprobación ha FALLADO?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i060')">Paso 6
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Si la pantalla indica que se ha SUPERADO la comprobación, se trata de un fallo intermitente; el sistema funciona bien en este momento. Compruebe la existencia de conexiones defectuosas o cables sueltos en el HO2S secundario (Sensor 2) y en el ECM. Si la pantalla indica EN EJECUCIÓN, siga conduciendo hasta obtener un resultado. Si la indicación de la pantalla es FUERA DE SITUACIÓN, vaya a 
+<a href="javascript:parent.Jmp('i030')">Paso 3
+</a>
+ y vuelva a efectuar la comprobación.
+</div>
+</td>
+</tr>
+</table>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Gire la llave de contacto a la posición OFF.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+<a href="javascript:CtsProc('0','000000000001772','i000')">
+Sustituya el HO2S secundario (Sensor 2).
+</a>
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Gire la llave de contacto a la posición ON (II).
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Reinicie el ECM con el HDS.
+</div>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+<a href="javascript:CtsProc('0','000000000001785','i000')">
+Ejecute el procedimiento de aprendizaje del ralentí del ECM.
+</a>
+</div>
+</li>
+</ol>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Ponga en marcha el motor. Mantenga el motor a 3.000 rpm (min
+<sup>
+-1
+</sup>
+) en vacío (punto muerto) hasta que se ponga en marcha el ventilador del radiador y luego déjelo a ralentí.
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Efectúe la prueba de conducción en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del refrigerante del motor (SENSOR ECT 1) está por encima de 80 °C
+</div>
+</li>
+<li>
+<div>
+Velocidad del vehículo entre 56-88 km/h 
+</div>
+</li>
+<li>
+<div>
+Conduzca el vehículo durante 1 minuto o más.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Compruebe la existencia de DTC permanentes o temporales con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Se produce la indicación del DTC P2271?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de conexiones defectuosas o terminales sueltos en el HO2S secundario (Sensor 2) y en el ECM y, a continuación, vaya a 
+<a href="javascript:parent.Jmp('i010')">Paso 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i140')">Paso 14
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Controle el ESTADO OBD del DTC P2271 en el MENÚ DE DTC con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica la pantalla que se ha SUPERADO la comprobación?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+La localización de averías está terminada. Si se produce la indicación de algún otro DTC temporal o permanente en 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+, vaya a la localización de averías del DTC indicado.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Si no se ha SUPERADO la comprobación, compruebe la existencia de conexiones defectuosas o terminales sueltos en el HO2S secundario (Sensor 2) y en el ECM y, a continuación, vaya a 
+<a href="javascript:parent.Jmp('i010')">Paso 1
+</a>
+. Si la pantalla indica EN EJECUCIÓN, siga conduciendo hasta obtener un resultado. Si la indicación de la pantalla es FUERA DE CONDICIONES, vaya a 
+<a href="javascript:parent.Jmp('i110')">Paso 11
+</a>
+ 
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

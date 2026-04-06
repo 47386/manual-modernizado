@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:223px;\" coordsize=\"950,223\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:223px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9EQDE34137300000CAGD16.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:223px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:215px;top:18px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Bremspedal<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:369px;top:18px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>IG<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:456px;top:18px;font-weight:normal;font-size:7.52pt;\">");
+write("<nobr><b>Anlasserschalter<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:487px;top:51px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>ON<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:370px;top:35px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>ON<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:234px;top:50px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>ON<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:599px;top:18px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Bremspedal<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:623px;top:51px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>ON<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:56px;top:17px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>Schalthebel<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:87px;top:35px;font-weight:normal;font-size:8.66pt;\">");
+write("<nobr><b>N<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

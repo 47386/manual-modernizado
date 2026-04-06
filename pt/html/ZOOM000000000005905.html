@@ -1,0 +1,1316 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ED4E34137300000MBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function jsResetImage() {
+	_prResetPosition();
+	_prResetImage();
+	return;
+}
+function jsResizeImage(rate) {
+	_prResizeImage(rate);
+	return;
+}
+var z,x,y;
+var gImageGroupList_	= new Array;
+var gIdx_				= 0;
+function _prImageGroupStruct(group_size,rect_size,img_size,p_tag,tp_obj,bl_obj,ul_obj) {
+	this.group		= group_size;
+	this.rect		= rect_size;
+	this.img		= img_size;
+	this.p			= p_tag;
+	this.tp			= tp_obj;
+	this.bl			= bl_obj;
+	this.ul			= ul_obj;
+}
+function _prSizeStruct(newObj,newWidth,newHeight) {
+	this.obj		= newObj;
+	this.width		= newWidth;
+	this.height		= newHeight;
+}
+function _prPTagStruct(newObj,newLeft,newTop,newFontSize) {
+	this.obj		= newObj;
+	this.left		= newLeft;
+	this.top		= newTop;
+	this.fontsize	= newFontSize;
+}
+function _prLineTagStruct(newObj,newFromx,newFromy, newTox, newToy) {
+	this.obj			= newObj;
+	this.fromx		= newFromx;
+	this.fromy		= newFromy;
+	this.tox		= newTox;
+	this.toy		= newToy;
+}
+function _prTPTagStruct(newObj,newFontSize) {
+	this.obj		= newObj;
+	this.fontsize	= newFontSize;
+}
+function _prInitImageInfo(rate) {
+	var endFlag = false;
+	gDefaultRate_ = rate;
+	gIdx_ = 0;
+	var save_i;
+	var iii = 100;
+	for(var i = 1; !endFlag; i++){
+		save_i = i;
+		var groupObject = document.getElementById("group" + i);
+		if(groupObject == null){
+			groupObject = document.getElementById("group" + iii);
+			if(groupObject == null){
+				groupObject = document.getElementById("group" + i + "_noresize");
+				if(groupObject == null){
+					endFlag = true;	
+					break;
+				}
+				continue;
+			}
+			else {
+				i = iii
+				iii++;
+			}
+		}
+		var groupWidth	= _prRemoveUnit(groupObject.style.width);
+		var groupHeight	= _prRemoveUnit(groupObject.style.height);
+		var rectObject	= document.getElementById("rect" + i);
+		var rectWidth	= null;
+		var rectHeight	= null;
+		if(rectObject != null){
+			rectWidth	= _prRemoveUnit(rectObject.style.width);
+			rectHeight	= _prRemoveUnit(rectObject.style.height);
+		}
+		var imgObject	= document.getElementById("img" + i);
+		var imgWidth	= null;
+		var imgHeight	= null;
+		if(imgObject != null){
+			imgWidth	= _prRemoveUnit(imgObject.style.width);
+			imgHeight	= _prRemoveUnit(imgObject.style.height);
+		}
+		var pObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var pTag = document.getElementById("p" + i + "_" + j);
+			if(pTag == null){
+				if(j == 1){
+					endFlag = true;
+				}
+				break;
+			}
+			if(j == 1){
+				pObject		= new Array();
+			}
+			pObject[j-1] = new _prPTagStruct(
+									pTag,
+									_prRemoveUnit(pTag.style.left),
+									_prRemoveUnit(pTag.style.top),
+									_prRemoveUnit(pTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var tpObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var tpTag = document.getElementById("tp" + i + "_" + j);
+			if(tpTag == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				tpObject		= new Array();
+			}
+			tpObject[j-1] = new _prTPTagStruct(
+									tpTag,
+									_prRemoveUnit(tpTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var blObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var baseline = document.getElementById("bl" + i + "_" + j);
+			if(baseline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				blObject		= new Array();
+			}
+			blObject[j-1] = new _prLineTagStruct(
+									baseline,
+									(baseline.from+'').substring(0,(baseline.from+'').indexOf(",")),
+									(baseline.from+'').substring((baseline.from+'').indexOf(",")+1,(baseline.from+'').length),
+									(baseline.to+'').substring(0,(baseline.to+'').indexOf(",")),
+									(baseline.to+'').substring((baseline.to+'').indexOf(",")+1, (baseline.to+'').length)
+								);
+		}
+		endFlag = false;
+		var ulObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var underline = document.getElementById("ul" + i + "_" + j);
+			if(underline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				ulObject		= new Array();
+			}
+			ulObject[j-1] = new _prLineTagStruct(
+									underline,
+									(underline.from+'').substring(0,(underline.from+'').indexOf(",",0)),
+									(underline.from+'').substring((underline.from+'').indexOf(",")+1,(underline.from+'').length),
+									(underline.to+'').substring(0,(underline.to+'').indexOf(",")),
+									(underline.to+'').substring((underline.to+'').indexOf(",")+1, (underline.to+'').length)
+								);
+		}
+		endFlag = false;
+		gImageGroupList_[gIdx_] = new _prImageGroupStruct (
+			new _prSizeStruct(groupObject,groupWidth,groupHeight),
+			new _prSizeStruct(rectObject,rectWidth,rectHeight),
+			new _prSizeStruct(imgObject,imgWidth,imgHeight),
+			pObject,
+			tpObject,
+			blObject,
+			ulObject
+		);
+		gIdx_++;
+		i = save_i;
+	}
+	return ;
+}
+function _prResizeImage(rate) {
+	var  hei = 0;
+	for(var i=0; i<gImageGroupList_.length; i++){
+		if(gImageGroupList_[i].group != null){
+			var obj = gImageGroupList_[i].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[i].rect != null){
+			var obj = gImageGroupList_[i].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].img != null){
+			var obj = gImageGroupList_[i].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].p != null){
+			var obj = gImageGroupList_[i].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[i].tp != null){
+			var obj = gImageGroupList_[i].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[i].bl != null){
+			var obj = gImageGroupList_[i].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[i].ul != null){
+			var obj = gImageGroupList_[i].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	}
+	return hei;
+}
+function _prResizeImageAt(idx,rate) {
+	var  hei = 0;
+		if(gImageGroupList_[idx].group != null){
+			var obj = gImageGroupList_[idx].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[idx].rect != null){
+			var obj = gImageGroupList_[idx].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].img != null){
+			var obj = gImageGroupList_[idx].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].p != null){
+			var obj = gImageGroupList_[idx].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[idx].tp != null){
+			var obj = gImageGroupList_[idx].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[idx].bl != null){
+			var obj = gImageGroupList_[idx].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[idx].ul != null){
+			var obj = gImageGroupList_[idx].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	return hei;
+}
+function _prRemoveUnit(src){
+	var dst = src.substring(0,src.length-2);
+	return dst;
+}
+-->
+</script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	window.location.replace(strJump+"?"+strPara);
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">
+Programação do Sistema i-SHIFT
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+O procedimento de aprendizagem do i-SHIFT deve ser feito para que o TCM possa adquirir informações características do sistema. Existem dois modos de procedimento de aprendizagem, ‘‘Modo Dinâmico'' e ‘‘modo Estático'' e a informação do procedimento de aprendizagem é diferente entre os dois modos. Só pode ser efectuado fazendo o PROCEDIMENTO DE APRENDIZAGEM DO MODO DINÂMICO ou o PROCEDIMENTO DE APRENDIZAGEM DO MODO ESTÁTICO no MENU DE AJUSTE com o HDS. O ‘‘modo Dinâmico'' requer procedimentos de condução e o ‘‘modo Estático'' não requer quaisquer procedimentos de condução.
+</div>
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem do Sistema i-SHIFT (Modo Dinâmico)
+</b>
+</div>
+<div>
+O procedimento de aprendizagem do sistema i-SHIFT (Modo Dinâmico) é feito através dos seguintes passos com o HDS.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Procedimento de aprendizagem da posição do actuador das mudanças.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+procedimento de aprendizagem da posição de sincronização.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Procedimento de aprendizagem da posição de contacto 1 da embraiagem.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Procedimento de aprendizagem da posição de contacto 2 da embraiagem.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Procedimento de aprendizagem da fricção da embraiagem.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Procedimento de aprendizagem da posição de contacto 3 da embraiagem.
+</div>
+<div>
+Tarefas necessárias para o processo de aprendizagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Substitua o disco da embraiagem.
+</div>
+</li>
+<li>
+<div>
+Substitua a chapa de pressão.
+</div>
+</li>
+<li>
+<div>
+Substitua o volante do motor.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+procedimento de aprendizagem do Sistema i-SHIFT (Modo Estático)
+</b>
+</div>
+<div>
+O procedimento de aprendizagem do sistema i-SHIFT (modo estático) é feito através dos seguintes passos com o HDS.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Procedimento de aprendizagem da posição do actuador das mudanças.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+procedimento de aprendizagem da posição de sincronização.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Procedimento de aprendizagem da posição de contacto 1 da embraiagem.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Procedimento de aprendizagem da posição de contacto 2 da embraiagem.
+</div>
+<div>
+Tarefas necessárias para o processo de aprendizagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador das mudanças da transmissão.
+</div>
+</li>
+<li>
+<div>
+Remoção/instalação da bomba secundária.
+</div>
+</li>
+<li>
+<div>
+Desmontar/montar a transmissão.
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a transmissão.
+</div>
+</li>
+</ul>
+<div>
+Ao efectuar a seguinte manutenção, fazer o Procedimento de Aprendizagem.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="50%">
+<col width="25%">
+<col width="25%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+Procedimento de Aprendizagem do Sistema i-SHIFT (Modo Dinâmico)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+<b>
+procedimento de aprendizagem do Sistema i-SHIFT (Modo Estático)
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Substitua o actuador das mudanças da transmissão.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Remoção/instalação da bomba secundária.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Substitua o disco da embraiagem.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Substitua a chapa de pressão.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Substitua o volante do motor.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Remover/instalar a transmissão.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Desmontar/montar a transmissão.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+×
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+○
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="87%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="8%">
+<col width="91%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+○:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Manutenção abrangida
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+×:
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+Manutenção não abrangida
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="iR03">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem da Posição do Actuador das Mudanças
+</b>
+</div>
+<div>
+O actuador das mudanças da transmissão funciona automaticamente e procede à aprendizagem da posição de ponto-morto (referência da posição de ponto-morto) e a posição final do carreto (da 1ª à 6ª e R) e regista o valor do procedimento de aprendizagem no TCM.
+</div>
+<div>
+O procedimento de aprendizagem da posição do actuador das mudanças é necessário após estas operações de manutenção:
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Remover/instalar o actuador das mudanças da transmissão.
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a transmissão.
+</div>
+</li>
+<li>
+<div>
+Desmontar/montar a transmissão.
+</div>
+</li>
+</ul>
+<div>
+O procedimento de aprendizagem da posição do actuador das mudanças pode ser efectuado utilizando o HDS sob estas condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Interruptor IG ligado.
+</div>
+</li>
+<li>
+<div>
+Motor em não funcionamento.
+</div>
+</li>
+<li>
+<div>
+Posição N.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Os comandos são ordenados para cada mudança e podem ser alterados pelo HDS.
+</div>
+</li>
+<li>
+<div>
+Dependendo da posição das mudanças, alterar a mudança pode tornar-se difícil. Se for mal sucedido após tentar alterar a mudança três vezes, é considerado Avaria.
+</div>
+</li>
+<li>
+<div>
+Normalmente, o procedimento de aprendizagem é feito pela ordem R-1-2-3-4-5-6; mas se houver uma avaria na 2ª mudança, tente voltar a efectuar o procedimento de aprendizagem de imediato na ordem R-1-2-3-2-4-2-5-6.
+</div>
+</li>
+</ul>
+<a name="iR04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem da Posição de Sicronização
+</b>
+</div>
+<div>
+O actuador das mudanças da transmissão funciona automaticamente e efectua o procedimento de aprendizagem da temporização-sincronização (determinado pela alteração do binário do motor) antes da mudança ser aplicada e regista o valor do procedimento de aprendizagem no TCM.
+</div>
+<div>
+O procedimento de aprendizagem da posição de sincronização é necessário após estas operações de manutenção:
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Remover/instalar o actuador das mudanças da transmissão.
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a transmissão.
+</div>
+</li>
+<li>
+<div>
+Desmontar/montar a transmissão.
+</div>
+</li>
+</ul>
+<div>
+O procedimento de aprendizagem da posição de sincronização pode ser efectuado utilizando o HDS sob estas condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor a funcionar.
+</div>
+</li>
+<li>
+<div>
+Posição N.
+</div>
+</li>
+<li>
+<div>
+Pedal do travão activado.
+</div>
+</li>
+<li>
+<div>
+Travão de estacionamento activado.
+</div>
+</li>
+<li>
+<div>
+O procedimento de aprendizagem da posição do actuador das mudanças foi concluído.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Os comandos são ordenados para cada mudança e podem ser alterados pelo HDS.
+</div>
+</li>
+<li>
+<div>
+No procedimento de aprendizagem da posição de sincronização, se falhar uma vez, tal pode ser considerado uma avaria.
+</div>
+</li>
+<li>
+<div>
+Ao serem efectuados em conjunto com o procedimento de aprendizagem da posição do actuador das mudanças, os valores do procedimento de aprendizagem para ambos os processos são registados no EEPROM.
+</div>
+</li>
+</ul>
+<a name="iR05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de aprendizagem da área de contacto 1·2 da embraiagem
+</b>
+</div>
+<div>
+O actuador da embraiagem funciona, efectua a aprendizagem da aplicação do binário inicial no disco da embraiagem e regista o valor do procedimento de aprendizagem no TCM automaticamente.
+</div>
+<div>
+‘‘1'' significa que o actuador da embraiagem funcionou uma vez e efectuou o procedimento de aprendizagem do valor temporário; ‘‘2'' significa que o actuador da embraiagem funcionou duas vezes e efectuou o procedimento de aprendizagem com precisão. O valor do procedimento de aprendizagem é registado no TCM.
+</div>
+<div>
+O procedimento de aprendizagem da área de contacto 1·2 da embraiagem é necessário após estas operações de manutenção:
+</div>
+<ul type="disc">
+<li>
+<div>
+Remoção/instalação da bomba secundária.
+</div>
+</li>
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a transmissão.
+</div>
+</li>
+<li>
+<div>
+Desmontar/montar a transmissão.
+</div>
+</li>
+<li>
+<div>
+Substitua o disco da embraiagem.
+</div>
+</li>
+<li>
+<div>
+Substitua a chapa de pressão.
+</div>
+</li>
+<li>
+<div>
+Substitua o volante do motor.
+</div>
+</li>
+</ul>
+<div>
+O procedimento de aprendizagem da posição de contacto 1 e 2 da embraiagem pode ser efectuado utilizando o HDS sob estas condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor a funcionar.
+</div>
+</li>
+<li>
+<div>
+Posição N.
+</div>
+</li>
+<li>
+<div>
+Pedal do travão activado.
+</div>
+</li>
+<li>
+<div>
+Travão de estacionamento activado.
+</div>
+</li>
+<li>
+<div>
+O procedimento de aprendizagem da posição de sincronização está concluído.
+</div>
+</li>
+<li>
+<div>
+Após o aquecimento do motor (O binário do motor é estável).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+O dispositivo de accionamento foi definido e a função é iniciada quando o dispositivo das mudanças é alterado de N para D.
+</div>
+</li>
+<li>
+<div>
+Efectue o procedimento de aprendizagem da Posição de contacto 1 e 2 numa sucessão.
+</div>
+</li>
+<li>
+<div>
+Se este processo de aprendizagem não estiver completo, o veículo não pode ser conduzido.
+</div>
+</li>
+</ul>
+<a name="iR06">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem da Fricção da Embraiagem
+</b>
+</div>
+<div>
+O HDS regista os valores iniciais especificados para um certo modelo no TCM.
+</div>
+<div>
+O HDS também funciona para aumentar a velocidade do procedimento de aprendizagem e efectua o teste de condução e envia o ajuste do coeficiente friccional do valor inicial para o TCM.
+</div>
+<div>
+O procedimento de aprendizagem da fricção da embraiagem é necessário após estas operações de manutenção:
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Substitua o disco da embraiagem.
+</div>
+</li>
+<li>
+<div>
+Substitua a chapa de pressão.
+</div>
+</li>
+<li>
+<div>
+Substitua o volante do motor.
+</div>
+</li>
+</ul>
+<div>
+O procedimento de aprendizagem da fricção da embraiagem pode ser efectuado utilizando o HDS sob estas condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+O procedimento de aprendizagem da posição de contacto 2 da embraiagem está concluído.
+</div>
+</li>
+<li>
+<div>
+Com o actuar da resistência da superfície da estrada, gire as rodas do veículo e engrene desde a 1ª até à 6ª.
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Como não há carga durante a elevação, o ajuste correcto não pode ser obtido, por isso ligue o HDS e efectue o teste de condução.
+</div>
+</li>
+<li>
+<div>
+No Modo de Teste de condução, o Padrão das Mudanças e o Auto especializado não efectua a mudança para baixa.
+</div>
+</li>
+</ul>
+<a name="iR07">
+</a>
+<div class="procedure_sub_title">
+<b>
+Procedimento de Aprendizagem da Posição de Contacto 3 da Embraiagem
+</b>
+</div>
+<div>
+Depois do coeficiente de fricção dar entrada durante o processo de aprendizagem da fricção da embraiagem, o procedimento é feito da mesma maneira como na posição de contacto 2 da embraiagem e o procedimento de aprendizagem final é efectuado e registado no TCM.
+</div>
+<div>
+O procedimento de aprendizagem da posição de contacto da embraiagem é necessário após estas operações de manutenção:
+</div>
+<ul type="disc">
+<li>
+<div>
+Substitua o actuador da embraiagem (TCM).
+</div>
+</li>
+<li>
+<div>
+Substitua o disco da embraiagem.
+</div>
+</li>
+<li>
+<div>
+Substitua a chapa de pressão.
+</div>
+</li>
+<li>
+<div>
+Substitua o volante do motor.
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a bomba secundária .*1
+</div>
+</li>
+<li>
+<div>
+Remover/instalar a transmissão.*1
+</div>
+</li>
+<li>
+<div>
+Desmontar/montar a transmissão.*1
+</div>
+</li>
+</ul>
+<div>
+O procedimento de aprendizagem da posição de contacto da embraiagem pode ser efectuado utilizando o HDS sob estas condições:
+</div>
+<ul type="disc">
+<li>
+<div>
+Motor a funcionar.
+</div>
+</li>
+<li>
+<div>
+Posição N.
+</div>
+</li>
+<li>
+<div>
+Pedal do travão activado.
+</div>
+</li>
+<li>
+<div>
+Travão de estacionamento activado.
+</div>
+</li>
+<li>
+<div>
+O procedimento de aprendizagem da posição de sincronização está concluído.
+</div>
+</li>
+<li>
+<div>
+Após o aquecimento do motor (O binário do motor é estável).
+</div>
+</li>
+</ul>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+O dispositivo de accionamento foi definido e a função é iniciada quando o dispositivo das mudanças é alterado de N para D.
+</div>
+</li>
+<li>
+<div>
+O Teste de Condução não é necessário quando efectuar a manutenção para*1, por isso efectue o processo de aprendizagem da posição de contacto 1, 2 e 3 da embraiagem em sucessão.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

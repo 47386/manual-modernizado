@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group8\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:415px;\" coordsize=\"950,415\">");
+write("<v:rect id=\"rect8\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:415px;\">");
+write("<img id=\"img8\" name=\"PrtImgId\" src=\"../img/SMR7ET2A20300000000DBSD08.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:415px;border-color:#ffffff\">");
+write("<p id=\"p8_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:735px;top:30px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAJA DE CONEXIONES (4)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:68px;top:17px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>INTERRUPTOR <br>DE POSICIÓN<br> DEL PEDAL DE LOS FRENOS (1)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:604px;top:175px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CONECTOR <br>DE ENLACE DE DATOS (8)*<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAJA DE CONEXIONES (5)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:505px;top:30px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAJA DE CONEXIONES (3)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:272px;top:29px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAJA DE CONEXIONES (2)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:796px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>BOMBA DE COMBUSTIBLE (9)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:250px;top:188px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>CAJA DE CONEXIONES (6)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:411px;top:176px;font-weight:normal;font-size:7.40pt;\">");
+write("<nobr><b>INTERRUPTOR DE POSICIÓN<br> DEL PEDAL DEL <br>EMBRAGUE (7) (M/T)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p8_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:342px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>NOTA:<br>· Conector con terminales macho (subrayado doble): visto desde el lado del terminal<br>· Conector con terminales hembra (subrayado simple): visto desde el lado del cable.<br>*: Conector con terminales hembra (subrayado sencillo): visto desde el lado del terminal.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

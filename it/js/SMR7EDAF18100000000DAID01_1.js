@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:687px;\" coordsize=\"950,687\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:687px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EDAF18100000000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:687px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:167px;top:163px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>BATTERIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:20px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MODULO DI COMANDO<br>QUADRO STRUMENTI (CONTAGIRI)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:794px;top:232px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SCATOLA FUSIBILI/RELÈ<br>SOTTOPLANCIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:750px;top:413px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CENTRALINA EPS<br></b>Rimozione/installazione<br><a href=\"javascript:CtsProc('0','000000000000054','i000')\">centralina servosterzo elettrico,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:267px;top:73px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SCATOLA FUSIBILI/RELÈ<br>VANO MOTORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:91px;top:542px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SCATOLA STERZO<br><a href=\"javascript:CtsProc('0','000000000002094','i000')\"></b>Rimozione e installazione della scatola dello sterzo,</a><br><a href=\"javascript:CtsProc('0','000000000000044','i000')\">Rimozione e installazione estremità cremagliera,</a><br><a href=\"javascript:CtsProc('0','000000000000045','i000')\">Rimozione/Installazione guida cremagliera,</a><br><a href=\"javascript:CtsProc('0','000000000000050','i000')\">Sostituzione cuffia giunto sferico braccetto sterzo,</a><br><a href=\"javascript:CtsProc('0','000000000000041','i000')\">Sostituzione tamponi supporto scatola sterzo,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:785px;top:43px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TRASMISSIONE DATI<br>CONNETTORE (DLC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:673px;top:525px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MOTORINO<br></b>Rimozione e installazione<br><a href=\"javascript:CtsProc('0','000000000000055','i000')\">motorino,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:653px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>La figura mostra la versione con guida a sinistra. La versione con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

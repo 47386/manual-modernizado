@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group4\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:543px;\" coordsize=\"950,543\">");
+write("<v:rect id=\"rect4\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:543px;\">");
+write("<img id=\"img4\" name=\"PrtImgId\" src=\"../img/SMR7E00J54400000000DAGD04.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:543px;border-color:#ffffff\">");
+write("<p id=\"p4_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:702px;top:59px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ZUSATZFENSTER<br><a href=\"javascript:CtsProc('0','000000000000360','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p4_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:372px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>GUMMIWULST<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:389px;top:18px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CLIP RECHTS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:29px;top:262px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CLIP LINKS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:285px;top:59px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>DICHTUNG<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:271px;top:435px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ZUSATZFENSTER <br>CLIP A, 3<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:652px;top:477px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ZUSATZFENSTER <br>CLIP B<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:425px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>HOCHGESETZTE<br>BREMSLEUCHTE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p4_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:710px;top:318px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>MUTTER, 4<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

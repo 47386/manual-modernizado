@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:543px;\" coordsize=\"950,543\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:543px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7ET3E34137300000CAAD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:543px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:57px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>GAUGE CONTROL <br>MODULE (SPEEDO)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:118px;top:116px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>GAUGE CONTROL <br>MODULE (TACH)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:28px;top:395px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VSA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:274px;top:523px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TCM (Clutch Actuator)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:489px;top:485px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ENGINE CONTROL MODULE (ECM)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:718px;top:395px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>GEAR SHIFT <br>CONTROL MODULE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:138px;top:475px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TRANSMISSION SHIFT <br>CHANGE ACTUATOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:382px;top:23px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>STEERING WHEEL<br>SHIFT SWITCH<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

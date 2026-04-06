@@ -1,0 +1,2175 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ET3E34137300000BAST10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Índice de seguridad contra fallos del sistema i-SHIFT
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="15%">
+<col width="45%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de avería SAE(DTC)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Criterio de avería
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Acción de seguridad contra fallos
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0504
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la información de los frenos en la señal de F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+La señal de frenos recibida no cambió durante 3 ciclos de conducción o más.
+</div>
+<div>
+El ciclo de conducción de i-SHIFT se establece en las siguientes condiciones (una vez que se satisface una de las condiciones mencionadas, se establece 1 ciclo de conducción.):
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+El interruptor de encendido se ha puesto en la posición ON hace dos minutos.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+La marcha seleccionada es la 3ª o una marcha superior.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Se ha alcanzado una velocidad de 16 km/h o más.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Resulta imposible la conducción en modo manual.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0512
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del interruptor del motor de arranque (STS).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0562
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la tensión de entrada.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal VBATT (+B) cuando la tensión alcanza 9 V o menos.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende (cuando la tensión disminuye, aparecen síntomas como ralentización de la respuesta del motor).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0563
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la tensión de entrada.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal VBATT (+B) cuando la tensión alcanza 28 V o más.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0603
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la función de comprobación del circuito interno del TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Efectúa la comprobación ROMSUM de la Memoria perdurable (KAM) y asume una avería si el valor de RONSUM no coincide.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+El control conluye y se conserva el estado cuando se ha detectado una avería (posición del cambio, posición del embrague).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0605
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la función de comprobación del circuito interno del TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Comprueba la RONSUM en la parte regrabable de la ROM y asume una avería si el valor de la RONSUM no coincide.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+El control conluye y se conserva el estado cuando se ha detectado una avería (posición del cambio, posición del embrague).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0666
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del sensor de temperatura interna del TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor de entrada es superior o inferior al valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0702
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Determinación por el valor de la tensión de entrada VCC.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor de entrada es superior o inferior al valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+El control conluye y se conserva el estado cuando se ha detectado una avería (posición del cambio, posición del embrague).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0780
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la posición del cambio cuando se cambian marchas.
+</div>
+<ul type="disc">
+<li>
+<div>
+Aunque no se alcance la posición de sincronización, si no se consigue alcanzar la pieza de conexión en el piñón al menos tres veces.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0810
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por el valor del sensor de posición del actuador del embrague.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor del sensor de posición no cambia aunque se haya enviado el comando para que el actuador del embrague se ponga en funcionamiento.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo supera una velocidad determinada (varía en función de la marcha puesta), la posición del actuador del embrague cuando sucede una avería se mantiene y se realiza el control.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a una velocidad determinada, el modo pasa a punto muerto.
+</div>
+</li>
+<li>
+<div>
+Aunque el motor se haya arrancado de nuevo, el tiempo pasado para arrancar el motor después de pulsar el interruptor del motor de arranque durante más tiempo del normal (aproximadamente 1 segundo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0882
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por el valor de tensión de entrada y el valor de señal de F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor de la tensión de entrada en el TCM se encuentra cerca de 0 V, aunque la señal IG1 (valor de F-CAN recibido) del ECM esté en ON.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende (si la señal de F-CAN del ECM se envía de forma continua, el control continúa hasta que el IG1 en el ECM se desconecta).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0883
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por el valor de tensión de entrada y el valor de señal de F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor de la tensión de entrada en el TCM es aproximadamente igual o mayor al valor de tensión de la batería, aunque la señal IG1 (valor de F-CAN recibido) del ECM esté en OFF.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0904
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE IMPULSOS.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de SELECCIÓN DE IMPULSOS.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de SELECCIÓN DE IMPULSOS está a aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de SELECCIÓN DE IMPULSOS es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0909
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por anchura del punto muerto.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando la anchura del punto muerto del actuador del cambio es 15,5 mm. o superior, ó 25,5 mm. o inferior
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0910
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+La salida del sensor no cambia aunque el valor de salida en la posición del actuador de selección no detecte la avería eléctrica en el sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0914
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE IMPULSOS.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de CAMBIO DE IMPULSOS.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de CAMBIO DE IMPULSOS está a aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de CAMBIO DE IMPULSOS es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijada en la marcha en el momento en que se detecta una avería. Conecta o desconecte el embrague en función de la velocidad del vehículo.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0919
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por tiempo pasado en aprendizaje de la posición de punto muerto.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando no es posible la confirmación de la posición de punto muerto.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0920
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+La salida del sensor no cambia aunque el valor de salida en la posición del actuador de cambio no detecte la avería eléctrica en el sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0942
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por acción de engranaje.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando la posición de sincronización no se puede conseguir aunque el cambio/selección se haya efectuado y se haya engranado la marcha en condición de espera.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P16C0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La CPU efectúa un autodiagnóstico cuando el interruptor de encendido está en la posición ON y determina si se ha registrado la avería o no. 
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Finalización del control aparte de la alteración de la información.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por el valor del sensor de posición del actuador del embrague.
+</div>
+<ul type="disc">
+<li>
+<div>
+El valor del sensor de posición del actuador del embrague supera el intervalo del valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo supera una velocidad determinada (varía en función de la marcha puesta), la posición del actuador del embrague cuando sucede una avería se mantiene y se realiza el control.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a una velocidad determinada, el modo pasa a punto muerto.
+</div>
+</li>
+<li>
+<div>
+Aunque el motor se haya arrancado de nuevo, el tiempo pasado para arrancar el motor después de pulsar el interruptor del motor de arranque durante más tiempo del normal (aproximadamente 1 segundo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor de temperatura del embrague.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el valor de la temperatura del embrague alcanza los 300 °C (572 °F) o más.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Finalización de retención.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico cuando el proceso de aprendizaje de la posición de contacto 3 del embrague no se completó o está en curso.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal VSPOUT.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando la señal VSPOUT es 0 V o aproximadamente igual a la tensión de la batería.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de FRENO DE LA ECU.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando la señal de FRENO DE LA ECU es 0 V o aproximadamente igual a la tensión de la batería.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por el valor de entrada de retorno de la señal de activación del motor de arranque.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el valor de retorno de la señal de activación del motor de arranque es 0 V o aproximadamente igual a la tensión de la batería.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal de F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+La protección del software de diagnóstico no está activada.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+<div>
+(No se pueden efectuar los comandos y alteración necesaria para realizar inspección de LLAVE.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando la señal de CAMBIO DE ALIMENTACIÓN DEL SENSOR es aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19ED
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de CAMBIO DEL SENSOR.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de CAMBIO DE ALIMENTACIÓN DEL SENSOR es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de MASA.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE MASA DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de CAMBIO DE MASA DEL SENSOR.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE DIRECCIÓN.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de CAMBIO DE DIRECCIÓN está a aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de CAMBIO DE DIRECCIÓN.
+</div>
+</li>
+<li>
+<div>
+Cuando la señal de CAMBIO DE DIRECCIÓN es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de CAMBIO DE DIRECCIÓN.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando la señal de SELECCIÓN DEL SENSOR es aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de SELECCIÓN DEL SENSOR.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de ALIMENTACIÓN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE ALIMENTACIÓN DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de SELECCIÓN DE ALIMENTACIÓN DEL SENSOR es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal de MASA.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE MASA DEL SENSOR.
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de SELECCIÓN DE MASA DEL SENSOR.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Controla la señal de SELECCIÓN DE DIRECCIÓN.
+</div>
+</li>
+<li>
+<div>
+Cuando el circuito para la señal de SELECCIÓN DE DIRECCIÓN está a aproximadamente 0 V (cortocircuito con masa)
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por la señal del SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Control de la señal de SELECCIÓN DE DIRECCIÓN.
+</div>
+</li>
+<li>
+<div>
+Cuando la señal de SELECCIÓN DE DIRECCIÓN es aproximadamente igual a la tensión de la batería (cortocircuito de la batería).
+</div>
+</li>
+<li>
+<div>
+Cuando está abierto el circuito para la señal de SELECCIÓN DE DIRECCIÓN
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal de F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+La señal de inestabilidad de par recibida en el TCM se fija en 10 minutos o más.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico cuando el proceso de aprendizaje de la posición de contacto 1/2 del embrague se completó o está en curso.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando no se han completado todas las fases de aprendizaje.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+<div>
+(Solo se puede poner 1ª o marcha atrás. Se puede conducir a una velocidad muy reducida.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico cuando el aprendizaje de la posición del actuador del cambio de marchas y el aprendizaje de la posición de sincronización se han completado o están en curso.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Control finalizado (arranque del motor imposible).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor del proceso de aprendizaje de la posición del actuador del cambio de marchas.
+</div>
+<ul type="disc">
+<li>
+<div>
+La marcha de la posición del cambio 1/3/5 es de +11,4 mm. o más, +7,4 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La posición de la palanca de cambios correspondientes a 2/4/6/R es de -6,2 mm. o más, -10,2 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición de selección 1/2/ es de -2,8 mm. o más, -5,8 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición de selección 3/4/ es de +2,1 mm. o más, -0,9 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición de selección 5/6/ es de +7,6 mm. o más, +4,6 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición de selección R es de +11,95 mm. o más, +9,45 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición del sincronizador 1/3/5 es de +8,2 mm. o más, +0,2 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La marcha de la posición del sincronizador 2/4/6 es de +1,1 mm o más, -6,9 mm o menos.
+</div>
+</li>
+</ul>
+<div>
+Se registra un código de avería si se cumple una de las condiciones anteriores.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor de aprendizaje de la posición de contacto del embrague.
+</div>
+<ul type="disc">
+<li>
+<div>
+La posición de contacto del embrague (largo plazo) es de 14 mm. o más, ó 7 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La posición de contacto del embrague (medio plazo) es de 14 mm. o más, ó 7 mm. o menos.
+</div>
+</li>
+<li>
+<div>
+La posición de contacto del embrague (corto plazo) es de 14 mm. o más, ó 7 mm. o menos.
+</div>
+</li>
+</ul>
+<div>
+Se registra un código de avería si se cumple una de las condiciones anteriores.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor de coeficiente de fricción.
+</div>
+<ul type="disc">
+<li>
+<div>
+El coeficiente de fricción #1 es 865 o más, ó 171 o menos.
+</div>
+</li>
+<li>
+<div>
+El coeficiente de fricción #2 es 865 o más, ó 171 o menos.
+</div>
+</li>
+<li>
+<div>
+El coeficiente de fricción #3 es 865 o más, ó 171 o menos.
+</div>
+</li>
+<li>
+<div>
+El coeficiente de fricción general es 865 o más, ó 171 o menos.
+</div>
+</li>
+</ul>
+<div>
+Se registra un código de avería si se cumple una de las condiciones anteriores.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2785
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor de temperatura del motor y valor de entrada del sensor PCB.
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motor es de 195 °C o más.
+</div>
+</li>
+<li>
+<div>
+El valor de entrada del sensor PCB es de 118 °C o más.
+</div>
+</li>
+</ul>
+<div>
+Se registra un código de avería si se cumple una de las condiciones anteriores.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Límite del cambio de marchas (de 1ª a 5ª y R solamente) según el mapa de cambio para utilizar durante una avería.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2786
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por potencia de entrada del actuador de la marcha (valor calculado).
+</div>
+<ul type="disc">
+<li>
+<div>
+Durante un periodo de tiempo determinado, se produce una potencia de entrada de 3000 W o más, o una potencia de entrada de 2000 o más.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Fijado en la velocidad cuando se ha confirmado una avería (conecta o desconecta el embrague por la velocidad del vehículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2787
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico por valor de temperatura del embrague.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si el valor de la temperatura del embrague alcanza los 400 °C o más.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Finalización de retención.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0100
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el TCM no puede recibir las señales del ECM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo supera una velocidad determinada (varía en función de la marcha puesta), la posición del actuador del embrague cuando sucede una avería se mantiene y se realiza el control.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a una velocidad determinada, el modo pasa a punto muerto.
+</div>
+</li>
+<li>
+<div>
+Aunque el motor se haya arrancado de nuevo, el tiempo pasado para arrancar el motor después de pulsar el interruptor del motor de arranque durante más tiempo del normal (aproximadamente 1 segundo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0103
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el TCM no puede recibir las señales del módulo de control del cambio de marchas.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Si la velocidad del vehículo es superior a 5 km/h, se mantiene la posición con la avería y se efectúa el control (cambio a modo automático desde modo manual).
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a 5 km/h, el modo pasa a punto muerto.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0155
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el TCM no puede recibir las señales procedentes de la línea de comunicaciones del módulo de control de los indicadores.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando se incluye un valor INVÁLIDO en los datos recibidos del ECM por medio del TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Se emite un DTC por una avería en el sensor IAT/avería en el sensor ECT: Ninguno
+</div>
+</li>
+<li>
+<div>
+Para los DTC emitidos a causa de otras averías del ECM: Cuando la velocidad del vehículo supera una velocidad determinada (varía en función de la marcha puesta), la posición del actuador del embrague cuando sucede una avería se mantiene y se realiza el control.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a una velocidad determinada, el modo pasa a punto muerto.
+</div>
+</li>
+<li>
+<div>
+Aunque el motor se haya arrancado de nuevo, el tiempo pasado para arrancar el motor después de pulsar el interruptor del motor de arranque durante más tiempo del normal (aproximadamente 1 segundo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Si los datos recibidos a través del TCM provenientes del módulo de control del cambio de marchas contienen un valor anormal o INVÁLIDO.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+La acción de seguridad contra fallos se clasifica en función del modo de la avería.
+</div>
+<ul type="disc">
+<li>
+<div>
+Anomalía en el intervalo auto/manual: El indicador del i-SHIFT se enciende. Sin embargo, no es posible cambiar entre los modos automático y manual.
+</div>
+</li>
+<li>
+<div>
+Para anomalías en otro intervalo y anomalías en los datos recibidos: El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Si la velocidad del vehículo es superior a 5 km/h, la posición con la avería se mantiene y se efectúa el control. Cuando la velocidad del vehículo es inferior a 5 km/h, el modo pasa a punto muerto.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1261
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando el TCM no puede recibir las señales del ABS o el VSA.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Si la palanca de cambios no está en la posición N: La marcha se fija con una avería. Sin embargo, para evitar que se cale el motor, se controla la apertura y cierre del embrague.
+</div>
+</li>
+<li>
+<div>
+Cuando la palanca de cambios está en la posición N: Cambia la marcha a punto muerto y de este modo se mantiene el modo de punto muerto aunque se mueva la palanca de cambios a otras posiciones.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1400
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Existe una anomalía en los datos del ECM recibidos por medio del TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Cuando la velocidad del vehículo supera una velocidad determinada (varía en función de la marcha puesta), la posición del actuador del embrague cuando sucede una avería se mantiene y se realiza el control.
+</div>
+</li>
+<li>
+<div>
+Cuando la velocidad del vehículo es inferior a una velocidad determinada, el modo pasa a punto muerto.
+</div>
+</li>
+<li>
+<div>
+Aunque el motor se haya arrancado de nuevo, el tiempo pasado para arrancar el motor después de pulsar el interruptor del motor de arranque durante más tiempo del normal (aproximadamente 1 segundo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+El TCM ha recibido una solicitud de reducción de marcha, pero cuando se cambia la marcha, se supera el régimen máximo del motor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1402
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Antes de que el TCM recibiera la solicitud de reducir a 5ª velocidad, recibió la solicitud de reducir a 4ª.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ninguno
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1403
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Valor INVÁLIDO en los datos del ABS o el VSA recibidos por el TCM. Cuando se incluye 1 parte de los datos.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Cuando la unidad de ABS o VSA detecta una avería: Desactiva la reducción de marcha cuando se pisa el freno.
+</div>
+</li>
+<li>
+<div>
+Si la unidad de ABS o VSA no detectó una avería: Ninguno
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Existe una anomalía en los datos del ABS o el VSA recibidos por el TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Cuando la unidad de ABS o VSA detecta una avería: Desactiva la reducción de marcha cuando se pisa el freno.
+</div>
+</li>
+<li>
+<div>
+Si la unidad de ABS o VSA no ha detectado una avería: Ninguno
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1405
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico con la señal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Cuando se incluyen varios valores INVÁLIDOS en los datos del ABS o el VSA recibidos por medio del TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+El indicador del i-SHIFT se enciende.
+</div>
+</li>
+<li>
+<div>
+Si la palanca de cambios no está en la posición N: La marcha se fija con una avería. Sin embargo, para evitar que se cale el motor, se controla la apertura y cierre del embrague.
+</div>
+</li>
+<li>
+<div>
+Cuando la palanca de cambios está en la posición N: Cambia la marcha a punto muerto y de este modo se mantiene el modo de punto muerto aunque se mueva la palanca de cambios a otras posiciones.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

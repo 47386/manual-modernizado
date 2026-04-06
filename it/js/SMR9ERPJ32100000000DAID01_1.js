@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1007px;\" coordsize=\"950,1007\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1007px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1007px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:493px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTORINO LIVELLO FARI<br><a href=\"javascript:CtsProc('0','000000000000227','i000')\"></b>Verifica ingressi,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000228','i000')\">Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:641px;top:594px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICATORE DI DIREZIONE LATERALE<br><a href=\"javascript:CtsProc('0','000000000000237','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:581px;top:667px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSORE LIVELLAMENTO FARI LATO ANTERIORE<br>(Con HID)<br><a href=\"javascript:CtsProc('0','000000000000230','i000')\"></b>Ricerca guasti circuito,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\">Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:537px;top:787px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA HID<br><a href=\"javascript:CtsProc('0','000000000000221','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:423px;top:855px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FENDINEBBIA<br><a href=\"javascript:CtsProc('0','000000000000216','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002105','i000')\">Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000002104','i000')\">Regolazione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:697px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEADLIGHT<br><a href=\"javascript:CtsProc('0','000000000000218','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\">Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000219','i000')\">Regolazione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000217','i000')\">Ricerca guasti del sistema di illuminazione HID,<br></a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:852px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUCE DI POSIZIONE ANTERIORE<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:900px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICATORE DI DIREZIONE ANTERIORE<br><a href=\"javascript:CtsProc('0','000000000000220','i000')\"></b>Sostituzione lampadina,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:9px;top:979px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La figura mostra la versione con guida a sinistra; la versione con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

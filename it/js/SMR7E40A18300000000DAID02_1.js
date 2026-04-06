@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1087px;\" coordsize=\"950,1087\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1087px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7E40A18300000000DAID02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1087px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:606px;top:34px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FASCE ELASTICHE<br><a href=\"javascript:CtsProc('0','000000000001099','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:629px;top:185px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANELLI ELASTICI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:242px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPINOTTO<br><a href=\"javascript:CtsProc('0','000000000001097','iR01')\"></b>Rimozione,</a><br><a href=\"javascript:CtsProc('0','000000000001097','iR02')\">Controllo,</a><br><a href=\"javascript:CtsProc('0','000000000001097','iR03')\">Installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:637px;top:775px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MONOBLOCCO<br><a href=\"javascript:CtsProc('0','000000000001086','i000')\"></b>Controllo camicia cilindro,</a><br><a href=\"javascript:CtsProc('0','000000000001086','i000')\">Controllo deformazione,</a><br><a href=\"javascript:CtsProc('0','000000000001085','i000')\">Microfinitura camicia cilindro,</a><br><a href=\"javascript:CtsProc('0','000000000001093','i080')\">Rimozione nervatura,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:499px;top:934px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CUSCINETTI BIELLA<br><a href=\"javascript:CtsProc('0','000000000001091','iR01')\"></b>Gioco olio,</a><br><a href=\"javascript:CtsProc('0','000000000001091','iR02')\">Selezione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:437px;top:1047px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BULLONE BIELLA<br><a href=\"javascript:CtsProc('0','000000000001092','i000')\"></b>Controllo,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:173px;top:967px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAPPELLO<br>DI BIELLA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:106px;top:418px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BIELLA<br><a href=\"javascript:CtsProc('0','000000000001090','i000')\"></b>Gioco assiale,</a><br><a href=\"javascript:CtsProc('0','000000000001097','i000')\">Misurazione piede di biella,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:109px;top:243px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PISTONE<br><a href=\"javascript:CtsProc('0','000000000001093','i000')\"></b>Rimozione,</a><br><a href=\"javascript:CtsProc('0','000000000001086','i000')\">Misurazione,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

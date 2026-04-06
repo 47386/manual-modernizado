@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="pt">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<script src="../js/SieListFunc.js"></script>
+<script>
+<!--
+var tDT     = new Array;
+var cdInfo  = new Array;
+var trSel   = null;
+function SieTitleList()
+{
+  var i=0;
+  var j;
+  tDT[i++]=SieTitleItem("SMR7E00R00000000000YCPT01","000000000000490","019","Informações Especiais","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R00000000000YCPT02","000000000000491","019","Símbolos","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT01","000000000000492","020","Informação do Sistema Complementar de Retenção (SRS)","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT02","000000000000493","020","Substituição de Componentes SRS/ Inspecção após Activação ","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT06","000000000000494","020","Remoção/Instalação de Peças Exteriores","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT07","000000000000495","020","Construção da Carroçaria","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT08","000000000000496","020","Barras de Reforço da Porta e do Pára-choques","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT09","000000000000497","020","Reparação de chapa de aço zincado","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCPT10","000000000000498","020","Área Estrutural da Chapa de Aço de Elevada Tensão e Precauções para a sua Reparação","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCPT01","000000000000499","020","Precauções de Segurança de Pintura","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCPT02","000000000000500","020","Informações Gerais de Pintura","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCPT04","000000000000501","020","Características dos Materiais Plásticos","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCPT06","000000000000502","020","Camada de Primário de Protecção Anti-Gravilha - Precauções Gerais de Segurança","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCPT07","000000000000503","020","Camada de Primário de Protecção Anti-Gravilha - Diagrama do Revestimento","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT01","000000000000504","020","Divisória Dianteira - Diagrama de soldaduras da carroçaria na produção em série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT02","000000000000505","020","Remoção da Divisória Dianteira","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT03","000000000000506","020","Instalação da Divisória Dianteira","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT04","000000000000507","020","Cava da Roda Dianteira/ Corpo do Amortecedor - Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT05","000000000000508","020","Remoção da Cava da roda dianteira / Corpo do Amortecedor","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT06","000000000000509","020","Instalação da Cava da roda dianteira / Corpo do Amortecedor","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT07","000000000000510","020","Estrutura Lateral Dianteira/ Suporte Lateral - Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT08","000000000000511","020","Remoção da Estrutura Lateral Dianteira / Suporte Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT09","000000000000512","020","Instalação da Estrutura Lateral Dianteira / Suporte Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT10","000000000000513","020","Painel Exterior do Pilar Dianteiro- Diagrama de soldaduras da carroçaria na produção em série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT11","000000000000514","020","Remoção do Painel Exterior do Pilar Dianteiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT12","000000000000515","020","Instalação do Painel Exterior do Pilar Dianteiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT13","000000000000516","020","Painel Exterior da Embaladeira Lateral- Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT14","000000000000517","020","Remoção do Painel Exterior da Embaladeira Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT15","000000000000518","020","Instalação do Painel Exterior da Embaladeira Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT16","000000000000519","020","Painel do Tejadilho - Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT17","000000000000520","020","Remoção do Painel do Tejadilho","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT18","000000000000521","020","Instalação do Painel do Tejadilho","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT19","000000000000522","020","Painel Exterior Lateral Traseiro - Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT20","000000000000523","020","Remoção do Painel Exterior Lateral Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT21","000000000000524","020","Instalação do Painel Exterior Lateral Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT22","000000000000525","020","Painel Traseiro - Diagrama de soldaduras da carroçaria na produção em série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT23","000000000000526","020","Remoção do Painel Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT24","000000000000527","020","Istalação do Painel Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT25","000000000000528","020","Piso Traseiro e Travessão do Piso Traseiro - Diagrama de Soldaduras da Carroçaria na Produção em Série","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT26","000000000000529","020","Remoção do Piso Traseiro e do Travessão do Piso Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDPT27","000000000000530","020","Instalação do Piso Traseiro e do Travessão do Piso Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R311000K5351YDPT02","000000000000531","020","Dimensões do Isolador do Piso","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT01","000000000000532","020","Cotas de Medição da Parte Superior da Carroçaria - Compartimento do Motor","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT03","000000000000533","020","Cotas de Medição da Parte Superior da Carroçaria - Posição da Extensão Inferior da Cava da Roda Dianteira","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT04","000000000000534","020","Cotas de Medição da Parte Superior da Carroçaria - Compartimento do Passageiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT05","000000000000535","020","Cotas de Medição da Parte Superior da Carroçaria - Posições da Calha do Pilar Traseiro e do Painel Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT06","000000000000536","020","Cotas de Medição da Parte Inferior da Carroçaria - Compartimento do Motor e Vista Inferior do Piso Dianteiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT07","000000000000537","020","Cotas de Medição da Parte Inferior da Carroçaria - Vista Inferior dos Pisos Dianteiro e Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT08","000000000000538","020","Tabelas de Reparação da Abertura - Pára-brisas e Abertura das Portas","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT09","000000000000539","020","Tabela de Reparação da Abertura - Abertura do Tejadilho de Vidro e da Porta da Bagageira","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT10","000000000000540","020","Tabela de Reparação da Estrutura - Vista Superior","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDPT11","000000000000541","020","Tabela de Reparação da Estrutura - Vista Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT01","000000000000542","020","Verificação da Pintura e da Carroçaria - Verificação da Pintura Exterior e da Corrosão nos Painéis","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT02","000000000000543","020","Verificação da Pintura e da Carroçaria - Verificação da Corrosão da Parte Inferior da Carroçaria","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT03","000000000000544","020","Secção Transversal da Carroçaria e Selantes – Precauções Gerais de Segurança","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT04","000000000000545","020","Secção Transversal da Carroçaria e Selantes - Compartimento do Motor, Cava da Roda Dianteira e Corpo do Amortecedor","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT05","000000000000546","020","Secção Transversal da Carroçaria e Selantes - Parte Superior do Tablier, Parte Inferior do Tablier e Piso Dianteiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT06","000000000000547","020","Secção Transversal da Carroçaria e Selantes - Piso Dianteiro e Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT07","000000000000548","020","Secção Transversal da Carroçaria e Selantes - Painel Exterior Lateral Traseiro e Painel Traseiro","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT08","000000000000549","020","Secção Transversal da Carroçaria e Selantes – Cava da Roda Traseira","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT09","000000000000550","020","Secção Transversal da Carroçaria e Selantes - Painel do Tejadilho e Embaladeira Lateral","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT10","000000000000551","020","Tratamentos Anti-Ferrugem - Precauções Gerais de Segurança","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT11","000000000000552","020","Tratamentos Anti-Ferrugem – Diagrama de Sub-Camada","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDPT12","000000000000553","020","Tratamentos Anti-Ferrugem - Áreas a Revestir com Produto Interno Anti-Ferrugem","","","","");
+  tDT[i++]=SieTitleItem("SMR7E80R11100000000YCPT03","000000000002017","020","Localizações dos Números de Identificação","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R11100000000YCPT04","000000000002018","020","Pontos de Elevação e de Apoio","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R11100000000YCPT05","000000000002019","020","Especificações da Carroçaria/Alinhamento das rodas","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R21100000000YCPT03","000000000002020","020","Especificações das Tintas da Tabela de Cores","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R21100000000YCPT05","000000000002021","020","Tipos e Materiais de Peças Exteriores de Plástico","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R31100000000YDPT28","000000000002022","020","Remoção do Suporte da Travessa Dianteira","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R31100000000YDPT29","000000000002023","020","Instalação do Suporte da Travessa Dianteira","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R311000K5351YDPT01","000000000002024","020","Localizações do Isolador do Piso","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R311000K5351YDPT02","000000000002025","020","Dimensões do Isolador do Piso - Suplemento","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R41100000000YDPT02","000000000002026","020","Cotas de Medição da Parte Superior da Carroçaria - Posição do Apoio do Motor/Transmissão","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R41100000000YDPT12","000000000002027","020","Tabela de Reparação da Estrutura - Vista Superior e Vista Lateral: Suplemento","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7E80R41100000000YDPT13","000000000002028","020","Cotas de Medição da Parte Inferior da Carroçaria - Posição de Instalação do Suporte da Travessa Dianteira","","K20Z","","");
+  tDT[i++]=SieTitleItem("SMR7EZAR00000000000YCPT01","000000000004947","019","Informações Especiais","","","","");
+  tDT[i++]=SieTitleItem("SMR7EZAR00000000000YCPT02","000000000004948","019","Símbolos","","","","");
+}
+function Fsl(strKey, strSct, strSc, strSys, strComp, strSitq, strKeywords)
+{
+  CreateConditionInfo(strKey.toUpperCase(), strSct, strSc, strSys, strComp, strSitq);
+  var displayCount = SetDisplayFlag(strKeywords);
+  with(document)
+  {
+    write("<html lang=\"pt\">\n");
+    write("<head>\n");
+    write("<meta name=\"author\" content=\"HONDA MOTOR Co.,Ltd.\">\n");
+    write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n");
+    write("<meta http-equiv=\"Content-Style-Type\" content=\"text/css\">\n");
+    write("<meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\">\n");
+    write("<link href=\"../css/ViewerStyle.css\" rel=\"stylesheet\">\n");
+    write("<script>\n");
+    write("<!--\n");
+    write("function Chh(height)\n");
+    write("{\n");
+    write("   document.body.bottomMargin = 0;\n");
+    write("   setTimeout('ChhDelay('+height+')',10);\n");
+    write("}\n");
+    write("function ChhDelay(height)\n");
+    write("{\n");
+    write("   var  dataObj = document.getElementById(\"scroll\");\n");
+    write("   dataObj.style.height = height-dataObj.offsetTop;\n");
+    write("   dataObj.style.width = idTitle.clientWidth;\n");
+    write("}\n");
+    write("//-->\n");
+    write("<\/script>\n");
+    write("<\/head>\n");
+    write("<body class=\"MainBody\">\n");
+    write("<table class=\"SubTitle\" cellspacing=0 cellpadding=0 width=\"100%\">\n");
+    write("<tr>\n");
+    write("<td class=\"SubTitle-L\" nowrap></td>\n");
+    write("<td class=\"SubTitle\" nowrap><b>Shop Manual Search Result</b></td>\n");
+    write("<td class=\"SubTitleComment\" nowrap></td>\n");
+    write("<td class=\"SubTitle-R\" nowrap>\n");
+    write("<table width=\"100%\" height=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td valign=\"middle\">\n");
+    write("<a href=\"#\" onClick=\"javascript:parent.Cts('000000000002826','000?FN2,2009');\"><img src=\"../img/ABBREVIATION.PNG\" alt=\"Abbreviation\" border=\"0\"></a>\n");
+    write("</td></tr></table>\n");
+    write("</td>\n");
+    write("</tr>\n");
+    write("</table>\n");
+  }
+  document.write("<div class=\"TableLayout\" style=\"overflow:auto;width:100%;display:block\">");
+  document.write("<table id=\"idTitle\" cellspacing=\"1\" width=\"100%\"><tr class=\"TableColumnTitle\" style=\"color:#FFFFFF;background-color:#999999;\">" +
+              "<td width=\"30\"></td>" +
+              "<td align=\"center\" style=\"font-size:medium\">Title</td>");
+  document.write("<td width=\"15\"></td></tr></table></div>");
+  document.write("<div class=\"TableLayout\" id=\"scroll\" style=\"overflow:auto;width:100%;height:5;display:block\">");
+  document.write("<table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" width=\"100%\" style=\"table-layout:fixed\">");
+  if(displayCount == 0) {
+    document.write("<tr><td>Ou não há qualquer S/M a aplicar.</td></tr>");
+  }
+  else {
+    for (i=0; i < tDT.length; ++i) {
+      if (tDT[i].Display == true) {
+        strEventClick = "javascript:parent.Cts('" + tDT[i].contentsNum + "','000?FN2,2009')";
+          strText = tDT[i].Title;
+          if (tDT[i].ScSys.length != 0) {
+             strText += "(" + tDT[i].ScSys + ")";
+          }
+          if (tDT[i].Dgc.length != 0) {
+            strText += "(" + tDT[i].Dgc + ")";
+          }
+          document.write("<tr class=\"TableData\" style=\"padding-bottom:3px;\"><td width=\"30\">\n");
+          document.write("<span onClick=\"" + strEventClick + "\">" + 
+              "<img src=\"../img/" + tDT[i].Symbol + ".PNG\"" + "\" style=\"cursor:hand;\"></span></td>\n");
+          document.write("<td valign=\"top\">" +
+              "<a href=\"" + strEventClick + "\" style=\"font-size:small;\">" + strText + "</a></td></tr>\n");
+      }
+    }
+  }
+  with(document)
+  {
+    write("</table></div>");
+    write("</body>\n");
+    write("</html>\n");
+  }
+}
+function CreateList()
+{
+  var nNest = 1;
+  var strEventClick, strText, strIMG;
+  var i, j, k, n;
+  if (typeof(SieTitleList) != "function") {
+    return;
+  }
+  tDT.length = 0;
+  SieTitleList();
+}
+//-->
+</script>
+</head>
+<body id="TreeBody" topmargin="10" onLoad="javascript:parent.Old(this)">
+  <div><script>CreateList();</script></div>
+</body>
+</html>

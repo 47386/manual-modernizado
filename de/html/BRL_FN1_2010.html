@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="de">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<script src="../js/SieListFunc.js"></script>
+<script>
+<!--
+var tDT     = new Array;
+var cdInfo  = new Array;
+var trSel   = null;
+function SieTitleList()
+{
+  var i=0;
+  var j;
+  tDT[i++]=SieTitleItem("SMR7E00R00000000000YCGT01","000000000000490","019","Wichtige Hinweise","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R00000000000YCGT02","000000000000491","019","Symbole","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT01","000000000000492","020","Informationen zum Zusatz-Rückhaltesystem (SRS)","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT02","000000000000493","020","SRS-Bauteile Austausch / Inspektion nach dem Entfalten","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT06","000000000000494","020","Außenteile Ausbau/Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT07","000000000000495","020","Karosserieaufbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT08","000000000000496","020","Stoßfängerverstärkungsstreben","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT09","000000000000497","020","Reparatur verzinkter Stahlbleche","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R11100000000YCGT10","000000000000498","020","Rahmenabschnitte aus hochzugfestem Stahl und besondere Maßnahmen bei Reparatur","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCGT01","000000000000499","020","Sicherheitsmaßnahmen für das Lackieren","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCGT02","000000000000500","020","Allgemeine Informationen zur Lackierung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCGT04","000000000000501","020","Eigenschaften von Kunststoffwerkstoffen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCGT06","000000000000502","020","Weich-Steinschlagfüller - Allgemeine Sicherheitsmaßnahmen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R21100000000YCGT07","000000000000503","020","Weich-Steinschlagfüller, Auftragsschema","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT01","000000000000504","020","Vordere Trennwand,  Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT02","000000000000505","020","Vordere Trennwand Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT03","000000000000506","020","Vordere Trennwand Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT04","000000000000507","020","Vorderradkasten / Stoßdämpfergehäuse, Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT05","000000000000508","020","Vorderradkasten / Stoßdämpfergehäuse Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT06","000000000000509","020","Vorderradkasten / Stoßdämpfergehäuse Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT07","000000000000510","020","Vorderer Seitenrahmen / Ausleger, Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT08","000000000000511","020","Vorderer Seitenrahmen / Ausleger Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT09","000000000000512","020","Vorderer Seitenrahmen / Ausleger Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT10","000000000000513","020","A-Säulen-Außenblech,  Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT11","000000000000514","020","A-Säulen-Außenblech Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT12","000000000000515","020","A-Säulen-Außenblech Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT13","000000000000516","020","Äußeres Seitenschwellerblech, Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT14","000000000000517","020","Äußeres Seitenschwellerblech Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT15","000000000000518","020","Äußeres Seitenschwellerblech Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT16","000000000000519","020","Dachblech, Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT17","000000000000520","020","Dachblech Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT18","000000000000521","020","Dachblech Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT19","000000000000522","020","Hinteres Seitenwand-Außenblech - Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT20","000000000000523","020","Hinteres Seitenwand-Außenblech Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT21","000000000000524","020","Hinteres Seitenwand-Außenblech Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT22","000000000000525","020","Heckabschlussblech - Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT23","000000000000526","020","Heckabschlussblech Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT24","000000000000527","020","Heckabschlussblech Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT25","000000000000528","020","Hinteres Bodenblech und hinterer Bodenblech-Querträger - Karosserieschweißdiagramm für die Serienfertigung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT26","000000000000529","020","Hinteres Bodenblech und hinterer Bodenblech-Querträger Ausbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R31100000000YDGT27","000000000000530","020","Hinteres Bodenblech und hinterer Bodenblech-Querträger Einbau","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R311000K5351YDGT02","000000000000531","020","Maße der Bodenisolierung","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT01","000000000000532","020","Abmessungen obere Karosserie, Motorraum","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT03","000000000000533","020","Aufbaumaße - Verlängerung unten am vorderen Radkasten","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT04","000000000000534","020","Abmessungen obere Karosserie, Innenraum","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT05","000000000000535","020","Aufbaumaße - Heckblech und Hecksäulenrinne","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT06","000000000000536","020","Abmessungen untere Karosserie, Motorraum und vorderes Bodenblech, Ansicht von unten","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT07","000000000000537","020","Unterbodenmaße - Vorderes und hinteres Bodenblech, Ansicht von unten","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT08","000000000000538","020","Reparaturschema für Öffnungen - Windschutzscheiben- und Türöffnungen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT09","000000000000539","020","Reparaturschema für Öffnungen - Glasdach- und Heckklappenöffnungen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT10","000000000000540","020","Rahmenreparaturschema, Aufsicht","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R41100000000YDGT11","000000000000541","020","Rahmenreparaturschema, Seitenansicht","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT01","000000000000542","020","Lack- und Karosseriekontrolle - Außenlackierung und Blechkorrosion","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT02","000000000000543","020","Lack- und Karosseriekontrolle - Unterbodenkorrosion","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT03","000000000000544","020","Schnittpunkt von Karosserie und Dichtungsbereichen - Allgemeine Sicherheitsmaßnahmen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT04","000000000000545","020","Schnittpunkt von Karosserie und Dichtungsbereichen, Motorraum, vorderer Radkasten und Stoßdämpfergehäuse","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT05","000000000000546","020","Schnittpunkt von Karosserie und Dichtungsbereichen - Oberes und unteres Armaturenbrett und vorderes Bodenblech","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT06","000000000000547","020","Schnittpunkt von Karosserie und Dichtungsbereichen, vorderes und hinteres Bodenblech","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT07","000000000000548","020","Schnittpunkt von Karosserie und Dichtungsbereichen, hinteres Seitenwand-Außenblech und Rückwand","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT08","000000000000549","020","Querschnitt von Karosserie und Dichtungsbereichen, hinterer Radkasten","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT09","000000000000550","020","Schnittpunkt von Karosserie und Dichtungsbereichen - Dachblech und Seitenschweller","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT10","000000000000551","020","Rostschutzbehandlung - Allgemeine Sicherheitsmaßnahmen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT11","000000000000552","020","Rostschutzbehandlung, Grundierungsbereiche","","","","");
+  tDT[i++]=SieTitleItem("SMR7E00R51100000000YDGT12","000000000000553","020","Rostschutzbehandlung - Anwendungsbereiche für Rostschutzmittel innen","","","","");
+  tDT[i++]=SieTitleItem("SMR7E20R11100000000YCGT03","000000000000850","020","Lage der Identifikationsnummern","","R18A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R11100000000YCGT04","000000000002047","020","Ansetzpunkte für Wagenheber und Abstützböcke","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R11100000000YCGT05","000000000002048","020","Karosseriespezifikationen/Spureinstellung","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R21100000000YCGT03","000000000002049","020","Farbtabelle Lackierungen","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R21100000000YCGT05","000000000002050","020","Art und Material der Kunststoffaußenteile","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R311000K5351YDGT01","000000000002051","020","Anordnung der Bodenisolierung","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EA0R41100000000YDGT02","000000000002052","020","Abmessungen obere Karosserie, Anordnungen Motor-/Getriebeaufhängung","","R18A/N22A","","");
+  tDT[i++]=SieTitleItem("SMR7EZAR00000000000YCGT01","000000000004947","019","Wichtige Hinweise","","","","");
+  tDT[i++]=SieTitleItem("SMR7EZAR00000000000YCGT02","000000000004948","019","Symbole","","","","");
+}
+function Fsl(strKey, strSct, strSc, strSys, strComp, strSitq, strKeywords)
+{
+  CreateConditionInfo(strKey.toUpperCase(), strSct, strSc, strSys, strComp, strSitq);
+  var displayCount = SetDisplayFlag(strKeywords);
+  with(document)
+  {
+    write("<html lang=\"de\">\n");
+    write("<head>\n");
+    write("<meta name=\"author\" content=\"HONDA MOTOR Co.,Ltd.\">\n");
+    write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n");
+    write("<meta http-equiv=\"Content-Style-Type\" content=\"text/css\">\n");
+    write("<meta http-equiv=\"Content-Script-Type\" content=\"text/javascript\">\n");
+    write("<link href=\"../css/ViewerStyle.css\" rel=\"stylesheet\">\n");
+    write("<script>\n");
+    write("<!--\n");
+    write("function Chh(height)\n");
+    write("{\n");
+    write("   document.body.bottomMargin = 0;\n");
+    write("   setTimeout('ChhDelay('+height+')',10);\n");
+    write("}\n");
+    write("function ChhDelay(height)\n");
+    write("{\n");
+    write("   var  dataObj = document.getElementById(\"scroll\");\n");
+    write("   dataObj.style.height = height-dataObj.offsetTop;\n");
+    write("   dataObj.style.width = idTitle.clientWidth;\n");
+    write("}\n");
+    write("//-->\n");
+    write("<\/script>\n");
+    write("<\/head>\n");
+    write("<body class=\"MainBody\">\n");
+    write("<table class=\"SubTitle\" cellspacing=0 cellpadding=0 width=\"100%\">\n");
+    write("<tr>\n");
+    write("<td class=\"SubTitle-L\" nowrap></td>\n");
+    write("<td class=\"SubTitle\" nowrap><b>Suchergebnis</b></td>\n");
+    write("<td class=\"SubTitleComment\" nowrap></td>\n");
+    write("<td class=\"SubTitle-R\" nowrap>\n");
+    write("<table width=\"100%\" height=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td valign=\"middle\">\n");
+    write("<a href=\"#\" onClick=\"javascript:parent.Cts('000000000003841','000?FN1,2010');\"><img src=\"../img/ABBREVIATION.PNG\" alt=\"Abbreviation\" border=\"0\"></a>\n");
+    write("</td></tr></table>\n");
+    write("</td>\n");
+    write("</tr>\n");
+    write("</table>\n");
+  }
+  document.write("<div class=\"TableLayout\" style=\"overflow:auto;width:100%;display:block\">");
+  document.write("<table id=\"idTitle\" cellspacing=\"1\" width=\"100%\"><tr class=\"TableColumnTitle\" style=\"color:#FFFFFF;background-color:#999999;\">" +
+              "<td width=\"30\"></td>" +
+              "<td align=\"center\" style=\"font-size:medium\">Titel</td>");
+  document.write("<td width=\"15\"></td></tr></table></div>");
+  document.write("<div class=\"TableLayout\" id=\"scroll\" style=\"overflow:auto;width:100%;height:5;display:block\">");
+  document.write("<table border=\"0\" cellpadding=\"0\" cellspacing=\"1\" width=\"100%\" style=\"table-layout:fixed\">");
+  if(displayCount == 0) {
+    document.write("<tr><td>Karosserie-Reparaturhandbuch ist nicht verfügbar.</td></tr>");
+  }
+  else {
+    for (i=0; i < tDT.length; ++i) {
+      if (tDT[i].Display == true) {
+        strEventClick = "javascript:parent.Cts('" + tDT[i].contentsNum + "','000?FN1,2010')";
+          strText = tDT[i].Title;
+          if (tDT[i].ScSys.length != 0) {
+             strText += "(" + tDT[i].ScSys + ")";
+          }
+          if (tDT[i].Dgc.length != 0) {
+            strText += "(" + tDT[i].Dgc + ")";
+          }
+          document.write("<tr class=\"TableData\" style=\"padding-bottom:3px;\"><td width=\"30\">\n");
+          document.write("<span onClick=\"" + strEventClick + "\">" + 
+              "<img src=\"../img/" + tDT[i].Symbol + ".PNG\"" + "\" style=\"cursor:hand;\"></span></td>\n");
+          document.write("<td valign=\"top\">" +
+              "<a href=\"" + strEventClick + "\" style=\"font-size:small;\">" + strText + "</a></td></tr>\n");
+      }
+    }
+  }
+  with(document)
+  {
+    write("</table></div>");
+    write("</body>\n");
+    write("</html>\n");
+  }
+}
+function CreateList()
+{
+  var nNest = 1;
+  var strEventClick, strText, strIMG;
+  var i, j, k, n;
+  if (typeof(SieTitleList) != "function") {
+    return;
+  }
+  tDT.length = 0;
+  SieTitleList();
+}
+//-->
+</script>
+</head>
+<body id="TreeBody" topmargin="10" onLoad="javascript:parent.Old(this)">
+  <div><script>CreateList();</script></div>
+</body>
+</html>

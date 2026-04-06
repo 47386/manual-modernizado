@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:815px;\" coordsize=\"950,815\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:815px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR7E00R31100000000YDAD58.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:815px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:144px;top:124px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR COMBINATION<br>ADAPTOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:100px;top:614px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PILLAR GUTTER LOWER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:130px;top:779px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PILLAR EXTENSION<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:583px;top:567px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>JACK HOLDER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:791px;top:590px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PANEL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:692px;top:208px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PILLAR<br>CORNER STIFFENER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:629px;top:117px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PILLAR LOWER STIFFENER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:622px;top:24px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR PILLAR GUTTER UPPER<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

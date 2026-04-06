@@ -1,0 +1,507 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00K79100000000BBIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Come effettuare la ricerca guasti nell'SRS
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+DTC (Codici di guasto)
+</b>
+</div>
+<div>
+La funzione di autodiagnosi del sistema SRS permette di localizzare le cause dei guasti al sistema e di memorizzarne le relative informazioni. Per rendere più semplice la ricerca guasti, è possibile richiamare questi dati attraverso un circuito di trasmissione dati.
+</div>
+<ul type="disc">
+<li>
+<div>
+Portando il commutatore di accensione su ON (II), la spia del sistema SRS si accende. Se si spegne dopo 6 secondi, il sistema funziona correttamente.
+</div>
+</li>
+<li>
+<div>
+In caso di anomalie, il sistema localizza e definisce il problema, memorizza le informazioni ed accende la spia del sistema SRS. I dati rimangono memorizzati anche se si porta il commutatore di accensione su OFF o se si scollega la batteria.
+</div>
+</li>
+<li>
+<div>
+Collegando un tester HDS al connettore trasmissione dati (DLC) 16P per cortocircuitare il terminale SCS e portando il commutatore di accensione su ON (II), la spia del sistema SRS segnala il codice di guasto (DTC) tramite il numero di lampeggi.
+</div>
+</li>
+<li>
+<div>
+Collegando il tester HDS al connettore trasmissione dati (DLC) 16P è possibile richiamare il DTC nel menu &quot;SRS&quot; dei tester Honda.
+</div>
+</li>
+<li>
+<div>
+Dopo aver letto e memorizzato il DTC, effettuare la procedura di ricerca guasti inerente a tale codice.
+</div>
+</li>
+</ul>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Precauzioni
+</b>
+</div>
+<br>
+<ul type="disc">
+<li>
+<div>
+Per il controllo del sistema, utilizzare solamente un multimetro digitale. Se il multimetro non è originale Honda, verificare che la corrente di uscita sia pari a 10 mA (0,01A) o inferiore nel caso in cui lo strumento sia regolato a fondoscala dell'ohmmetro. L'utilizzo di un tester con un'uscita superiore potrebbe danneggiare il circuito dell'airbag o provocarne l'attivazione accidentale, con rischio di lesioni personali.
+</div>
+</li>
+<li>
+<div>
+Quando si porta il commutatore di accensione su ON (II) o su OFF per meno di 3 minuti, non urtare la centralina del sistema SRS in quanto gli airbag potrebbero attivarsi accidentalmente, causando danni o lesioni personali.
+</div>
+</li>
+<li>
+<div>
+Prima di rimuovere il cablaggio del sistema SRS, scollegare il connettore dell'airbag lato conducente, il connettore dell'airbag lato passeggero anteriore, entrambi i connettori degli airbag laterali ed entrambi i connettori dei pretensionatori delle cinture di sicurezza.
+</div>
+</li>
+<li>
+<div>
+Verificare che la batteria sia sufficientemente carica. Qualora la batteria fosse parzialmente o completamente scarica, i valori rilevati saranno errati.
+</div>
+</li>
+<li>
+<div>
+Non portare il puntale del tester a contatto con i terminali nella centralina del sistema SRS o i connettori del cablaggio e non collegare i terminali con un ponticello. Utilizzare solamente i puntali per verifica posteriore e il tester HDS. Eseguire la verifica posteriore dei connettori con dispositivo di bloccaggio caricato a molla.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Lettura dei DTC
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Verificare che il commutatore di accensione sia su OFF.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Collegare il tester HDS al DLC (A).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Verificare che il tester HDS comunichi con la vettura e la centralina del sistema SRS. In caso contrario, eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Usare il tester HDS per controllare la presenza di DTC.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Leggere il DTC.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Portare il commutatore di accensione su OFF ed attendere 10 secondi.
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Scollegare il tester HDS dal DLC.
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Effettuare la ricerca guasti appropriata per il DTC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001113','1');">
+<img src="../tn/SMR7E00K79100000000BBID01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBID01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Cancellazione della memoria dei DTC
+</b>
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Verificare che il commutatore di accensione sia su OFF.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Collegare il tester HDS al DLC (A).
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Verificare che il tester HDS comunichi con la vettura e la centralina del sistema SRS. In caso contrario, eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Nel menu SRS sul tester HDS, selezionare &quot;SRS&quot;, quindi &quot;DTC&quot; per cancellare i DTC.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Portare il commutatore di accensione su OFF ed attendere 10 secondi.
+</div>
+</li>
+</ol>
+<a name="i270">
+</a>
+<ol>
+<li value="7">
+<div>
+Scollegare il tester HDS dal DLC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000001114','1');">
+<img src="../tn/SMR7E00K79100000000BBID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00K79100000000BBID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Ricerca guasti intermittenti
+</b>
+</div>
+<div>
+Se si verifica un guasto, ma questo non si ripete, la centralina lo memorizza come guasto intermittente e la spia del sistema SRS si accende.
+</div>
+<div>
+Dopo aver controllato il DTC, effettuare la ricerca guasti procedendo come segue:
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Leggere il DTC (vedere ‘‘Lettura del DTC'').
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Cancellazione memoria DTC (vedere ‘‘Cancellazione della memoria dei DTC'').
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Inserire il freno di stazionamento, avviare il motore e lasciarlo girare al minimo.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+La spia del sistema SRS si accende per circa 6 secondi e poi si spegne.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="5">
+<div>
+Scuotere il cablaggio e i connettori e controllare se ci sono collegamenti allentati, terminali non inseriti correttamente e masse difettose.
+</div>
+</li>
+</ol>
+<a name="i460">
+</a>
+<ol>
+<li value="6">
+<div>
+Eseguire una prova su strada (accelerazione rapida, frenata rapida, sterzata), girare il volante completamente a sinistra e a destra e tenerlo in posizione per 5-10 secondi. Se il guasto si ripete, la spia del sistema SRS si accende.
+</div>
+<div>
+NOTA: Un arrotolatore difettoso potrebbe provocare collegamenti intermittenti in corrispondenza dell'airbag lato conducente.
+</div>
+</li>
+</ol>
+<a name="i470">
+</a>
+<ol>
+<li value="7">
+<div>
+Se non si riesce a riprodurre il guasto intermittente, il sistema in quel momento è in ordine.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

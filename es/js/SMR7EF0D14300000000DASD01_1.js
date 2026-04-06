@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:879px;\" coordsize=\"950,879\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:879px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EF0D14300000000DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:879px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:752px;top:183px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TUBERÍA y MANGUITO DE FRENOS<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspección,</a><br>Sustitución de un manguito <br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">del sistema de frenos,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:563px;top:93px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZ TESTIGO DEL SISTEMA DE FRENOS<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Diagrama del circuito,</a><br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Comprobación del interruptor del freno de estacionamiento,</a><br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Comprobación del interruptor del nivel del líquido de frenos</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:487px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVOFRENO<br><a href=\"javascript:CtsProc('0','000000000002056','i000')\"></b>Inspección,</a><br><a href=\"javascript:CtsProc('0','000000000002118','i000')\">Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:723px;top:530px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO TRASERO<br></b>Inspección de las pastillas e<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"> de estacionamiento</a><br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Inspección de los discos,</a><br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Revisión general de las pinzas de freno,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:601px;top:635px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO DE ESTACIONAMIENTO<br><a href=\"javascript:CtsProc('0','000000000002150','i000')\"></b>Inspección y ajuste,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Sustitución del cable,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:369px;top:652px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FRENO DELANTERO<br></b>Inspección de las pastillas e<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"> de estacionamiento</a><br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Inspección de los discos,</a><br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Revisión general de las pinzas de freno,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:183px;top:758px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DE POSICIÓN DEL PEDAL DE FRENO<br></b>Pedal de freno y Ajuste del interruptor <br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> de posición del pecal de freno,</a><br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Sustitución,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:11px;top:593px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CILINDRO MAESTRO<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Purga del sistema de frenos<br></a><br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Sustitución,</a><br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">desmontaje,</a><br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Montaje,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:847px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La ilustración hace referencia al modelo LHD. El modelo RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

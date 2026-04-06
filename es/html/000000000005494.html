@@ -1,0 +1,1614 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR8EM0000000000000JCST22
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function jsResetImage() {
+	_prResetPosition();
+	_prResetImage();
+	return;
+}
+function jsResizeImage(rate) {
+	_prResizeImage(rate);
+	return;
+}
+var z,x,y;
+var gImageGroupList_	= new Array;
+var gIdx_				= 0;
+function _prImageGroupStruct(group_size,rect_size,img_size,p_tag,tp_obj,bl_obj,ul_obj) {
+	this.group		= group_size;
+	this.rect		= rect_size;
+	this.img		= img_size;
+	this.p			= p_tag;
+	this.tp			= tp_obj;
+	this.bl			= bl_obj;
+	this.ul			= ul_obj;
+}
+function _prSizeStruct(newObj,newWidth,newHeight) {
+	this.obj		= newObj;
+	this.width		= newWidth;
+	this.height		= newHeight;
+}
+function _prPTagStruct(newObj,newLeft,newTop,newFontSize) {
+	this.obj		= newObj;
+	this.left		= newLeft;
+	this.top		= newTop;
+	this.fontsize	= newFontSize;
+}
+function _prLineTagStruct(newObj,newFromx,newFromy, newTox, newToy) {
+	this.obj			= newObj;
+	this.fromx		= newFromx;
+	this.fromy		= newFromy;
+	this.tox		= newTox;
+	this.toy		= newToy;
+}
+function _prTPTagStruct(newObj,newFontSize) {
+	this.obj		= newObj;
+	this.fontsize	= newFontSize;
+}
+function _prInitImageInfo(rate) {
+	var endFlag = false;
+	gDefaultRate_ = rate;
+	gIdx_ = 0;
+	var save_i;
+	var iii = 100;
+	for(var i = 1; !endFlag; i++){
+		save_i = i;
+		var groupObject = document.getElementById("group" + i);
+		if(groupObject == null){
+			groupObject = document.getElementById("group" + iii);
+			if(groupObject == null){
+				groupObject = document.getElementById("group" + i + "_noresize");
+				if(groupObject == null){
+					endFlag = true;	
+					break;
+				}
+				continue;
+			}
+			else {
+				i = iii
+				iii++;
+			}
+		}
+		var groupWidth	= _prRemoveUnit(groupObject.style.width);
+		var groupHeight	= _prRemoveUnit(groupObject.style.height);
+		var rectObject	= document.getElementById("rect" + i);
+		var rectWidth	= null;
+		var rectHeight	= null;
+		if(rectObject != null){
+			rectWidth	= _prRemoveUnit(rectObject.style.width);
+			rectHeight	= _prRemoveUnit(rectObject.style.height);
+		}
+		var imgObject	= document.getElementById("img" + i);
+		var imgWidth	= null;
+		var imgHeight	= null;
+		if(imgObject != null){
+			imgWidth	= _prRemoveUnit(imgObject.style.width);
+			imgHeight	= _prRemoveUnit(imgObject.style.height);
+		}
+		var pObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var pTag = document.getElementById("p" + i + "_" + j);
+			if(pTag == null){
+				if(j == 1){
+					endFlag = true;
+				}
+				break;
+			}
+			if(j == 1){
+				pObject		= new Array();
+			}
+			pObject[j-1] = new _prPTagStruct(
+									pTag,
+									_prRemoveUnit(pTag.style.left),
+									_prRemoveUnit(pTag.style.top),
+									_prRemoveUnit(pTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var tpObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var tpTag = document.getElementById("tp" + i + "_" + j);
+			if(tpTag == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				tpObject		= new Array();
+			}
+			tpObject[j-1] = new _prTPTagStruct(
+									tpTag,
+									_prRemoveUnit(tpTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var blObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var baseline = document.getElementById("bl" + i + "_" + j);
+			if(baseline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				blObject		= new Array();
+			}
+			blObject[j-1] = new _prLineTagStruct(
+									baseline,
+									(baseline.from+'').substring(0,(baseline.from+'').indexOf(",")),
+									(baseline.from+'').substring((baseline.from+'').indexOf(",")+1,(baseline.from+'').length),
+									(baseline.to+'').substring(0,(baseline.to+'').indexOf(",")),
+									(baseline.to+'').substring((baseline.to+'').indexOf(",")+1, (baseline.to+'').length)
+								);
+		}
+		endFlag = false;
+		var ulObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var underline = document.getElementById("ul" + i + "_" + j);
+			if(underline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				ulObject		= new Array();
+			}
+			ulObject[j-1] = new _prLineTagStruct(
+									underline,
+									(underline.from+'').substring(0,(underline.from+'').indexOf(",",0)),
+									(underline.from+'').substring((underline.from+'').indexOf(",")+1,(underline.from+'').length),
+									(underline.to+'').substring(0,(underline.to+'').indexOf(",")),
+									(underline.to+'').substring((underline.to+'').indexOf(",")+1, (underline.to+'').length)
+								);
+		}
+		endFlag = false;
+		gImageGroupList_[gIdx_] = new _prImageGroupStruct (
+			new _prSizeStruct(groupObject,groupWidth,groupHeight),
+			new _prSizeStruct(rectObject,rectWidth,rectHeight),
+			new _prSizeStruct(imgObject,imgWidth,imgHeight),
+			pObject,
+			tpObject,
+			blObject,
+			ulObject
+		);
+		gIdx_++;
+		i = save_i;
+	}
+	return ;
+}
+function _prResizeImage(rate) {
+	var  hei = 0;
+	for(var i=0; i<gImageGroupList_.length; i++){
+		if(gImageGroupList_[i].group != null){
+			var obj = gImageGroupList_[i].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[i].rect != null){
+			var obj = gImageGroupList_[i].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].img != null){
+			var obj = gImageGroupList_[i].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].p != null){
+			var obj = gImageGroupList_[i].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[i].tp != null){
+			var obj = gImageGroupList_[i].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[i].bl != null){
+			var obj = gImageGroupList_[i].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[i].ul != null){
+			var obj = gImageGroupList_[i].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	}
+	return hei;
+}
+function _prResizeImageAt(idx,rate) {
+	var  hei = 0;
+		if(gImageGroupList_[idx].group != null){
+			var obj = gImageGroupList_[idx].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[idx].rect != null){
+			var obj = gImageGroupList_[idx].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].img != null){
+			var obj = gImageGroupList_[idx].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].p != null){
+			var obj = gImageGroupList_[idx].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[idx].tp != null){
+			var obj = gImageGroupList_[idx].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[idx].bl != null){
+			var obj = gImageGroupList_[idx].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[idx].ul != null){
+			var obj = gImageGroupList_[idx].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	return hei;
+}
+function _prRemoveUnit(src){
+	var dst = src.substring(0,src.length-2);
+	return dst;
+}
+-->
+</script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("Para un mayor resultado de impresión, seleccione “paisaje” en el menú de impresión.");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Programa de mantenimiento en Condiciones severas - Australia y Nueva Zelanda
+</div>
+<div align="right">200,000km(10year)
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<div>
+<b>
+Modelo tipo R
+</b>
+</div>
+<div>
+Siga el Programa de Mantenimiento en Condiciones Severas si el cliente conduce su vehículo PRINCIPALMENTE bajo una o más de las condiciones siguientes.
+</div>
+<ul type="disc">
+<li>
+<div>
+Conducción de menos de 8 km por viaje o, a temperaturas bajo cero, menos de 16 km por viaje.
+</div>
+</li>
+<li>
+<div>
+Conducción en condiciones de temperaturas extremas superiores a los 35 °C.
+</div>
+</li>
+<li>
+<div>
+Ralentí prolongado o largos períodos de conducción con paradas frecuentes.
+</div>
+</li>
+<li>
+<div>
+Conducción con remolque, baca o por carreteras de montaña.
+</div>
+</li>
+<li>
+<div>
+Conducción en carreteras con barro, polvo o hielo derretido.
+</div>
+</li>
+</ul>
+<div>
+NOTA: Si el cliente conduce su vehículo OCASIONALMENTE bajo condiciones severas, siga el Programa de Mantenimiento en Condiciones Normales.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="3%">
+<col width="96%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<br>
+<b>
+<div>
+El mantenimiento debe realizarse al alcanzar la distancia indicada o el tiempo indicado, lo que se cumpla antes.
+</div>
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001606','i000')">
+Revise la correa de transmisión
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe la existencia de grietas y daños y, a continuación, compruebe la posición del indicador del tensor automático de la correa de accionamiento.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001784','i000')">
+Revise la velocidad de ralentí
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000002150','i000')">
+Compruebe el ajuste del freno de estacionamiento
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe el funcionamiento del freno de estacionamiento
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000219','i000')">
+Compruebe la alineación de los faros
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe la posición de los faros
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+Efectúe una prueba de conducción (ruido, estabilidad, funcionamiento del tablero de instrumentos)
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<div class="dis_mentenance_item_title">
+<b>
+Revise visualmente los siguientes puntos:
+</b>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe que la instalación y la posición son correctas, y compruebe si existen grietas, deterioro, óxido o fugas
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe que tornillos, tuercas y racores están bien apretados. Vuelva a apretarlos si es necesario
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000021','i000')">
+Manguitos y tuberías de frenos (incluyendo el VSA)
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe la existencia de daños y fugas en el cilindro maestro y en el modulador de VSA.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+Compruebe el nivel de líquido y vea si existen fugas.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe los niveles y si fuera necesario, busque la existencia de fugas
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001613','i000')">
+Refrigerante del motor
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001878','i150')">
+Líquido del embrague 
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001871','i000')">
+Aceite de la caja de cambios manual
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000015','i000')">
+Líquido de frenos
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000000347','i000')">
+Líquido del limpiaparabrisas
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001703','i000')">
+Sistema de escape
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe la existencia de daños, fugas y la estanqueidad en el tubo de escape y en el silenciador
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001754','i000')">
+Tuberías
+</a>
+ y 
+<a href="javascript:CtsProc('0','000000000001751','i000')">
+conexiones de combustible
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Revise los tubos de combustible para ver si hay conexiones flojas, grietas o deterioro.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Apriete de nuevo las conexiones flojas y cambie las piezas dañadas.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<br>
+<b>Cada 5.000 km o 6 meses
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001823','i000')">
+Cambie el aceite del motor
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 10.000 km o 6 meses
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001818','i000')">
+Cambie el filtro de aceite del motor
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000002365','i000')">
+Revise los frenos delanteros y traseros
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe el espesor de los discos y las pastillas de freno Compruebe la existencia de grietas y daños.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de grietas, zonas vitrificadas, desgastes y suciedad en los forros de freno.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<div class="com_mentenance_item_title">
+<b>
+Revise visualmente los siguientes puntos:
+</b>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000042','i000')">
+Extremos de los tirantes, caja de la dirección y fundas guardapolvo
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe el engrase de la cremallera y del varillaje de la dirección.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de daños y fugas de grasa en las fundas guardapolvo.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000004803','i000')">
+Componentes de la suspensión
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe que los tornillos están bien apretados.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de daños y deterioro en todas las fundas guardapolvo.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000034','i000')">
+Fundas guardapolvo de los palieres
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de grietas en la funda guardapolvo y en su abrazadera.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe el engrase de la cremallera.
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 20.000 km.
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001792','i000')">
+Cambie el elemento filtrante del filtro de aire
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Utilice el programa de mantenimiento en condiciones normales salvo si hay mucho polvo.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 40.000 km
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001664','i000')">
+Revise el reglaje de las válvulas
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Compruebe el reglaje de válvulas
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 100.000 km.
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001808','i000')">
+Cambie las bujías
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 200.000 km o 10 años, cambiándolo luego cada 100.000 km o 5 años
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000001612','i000')">
+Cambie el refrigerante del motor
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Utilice Anticongelante/Refrigerante original Tipo 2 de Honda para todo el año.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 3 años
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000015','i000')">
+Cambie el líquido de frenos
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Utilice sólo líquido de frenos DOT 3 o DOT 4. Recomendamos el líquido de frenos original de Honda.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<br>
+</td>
+<td class="ViewerTD">
+<img style="margin-left:15px;" src="../img/MARKLINE_2.PNG">
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe que el nivel del líquido de frenos está entre las marcas superior e inferior del depósito
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 30.000 km o 1 año
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+<a href="javascript:CtsProc('0','000000000000056','i000')">
+Cambie el filtro de polvo y de polen
+</a>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+<div>
+  Si el vehículo circula principalmente por zonas urbanas con altas   concentraciones de hollín en el aire o mucho polvo o el caudal de aire   procedente del sistema de calefacción y refrigeración es inferior al normal.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<b>Cada 10.000 km.
+</b>
+<table width="100%" class="Viewer" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="ViewerTD">
+<table class="Viewer" border="0">
+<tr>
+<td class="ViewerTD">
+<img src="../img/MARKLINE_1.PNG">
+</td>
+<td class="ViewerTD">
+<div class="mentenance_item_title">
+Cambie la posición de los neumáticos (Compruebe la presión de inflado y su estado una vez al mes, por lo menos)
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD">
+</td>
+</tr>
+</table>
+<div>
+<table width="100%" class="Viewer" frame="void" style="table-layout:fixed;">
+<col width="3%">
+<col width="96%">
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:none;border-bottom-style:none;border-top-style:none;" align="left">
+<div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</div></div>
+</body>
+</html>

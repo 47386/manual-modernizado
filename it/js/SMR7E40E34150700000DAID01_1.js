@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:927px;\" coordsize=\"950,927\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:927px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40E34150700000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:927px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:414px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GRUPPO DIFFERENZIALE<br><a href=\"javascript:CtsProc('0','000000000001251','i000')\"></b>Ispezione gioco,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:512px;top:840px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>DISTANZIALE, 46 x 80 x 1 mm<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:513px;top:772px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PISTA ESTERNA CUSCINETTO, 45 x 80 x 21 mm<br><a href=\"javascript:CtsProc('0','000000000001252','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:512px;top:667px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CUSCINETTO CONICO, 45 x 80 x 21 mm<br><a href=\"javascript:CtsProc('0','000000000001253','i000')\"></b>Sostituzione,</a><br><a href=\"javascript:CtsProc('0','000000000001255','i000')\">Regolazione precarico,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:517px;top:22px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPESSORE, 81 mm<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:518px;top:72px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>DISTANZIALE, 46 x 81 x 1 mm<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:513px;top:261px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CUSCINETTO CONICO, 45 x 81 x 18 mm<br><a href=\"javascript:CtsProc('0','000000000001253','i000')\"></b>Sostituzione,</a><br><a href=\"javascript:CtsProc('0','000000000001255','i000')\">Regolazione precarico,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:513px;top:143px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PISTA ESTERNA CUSCINETTO, 45 x 81 x 18 mm<br><a href=\"javascript:CtsProc('0','000000000001252','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

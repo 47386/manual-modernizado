@@ -1,0 +1,1891 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQPJ36200000000CAPT20
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function jsResetImage() {
+	_prResetPosition();
+	_prResetImage();
+	return;
+}
+function jsResizeImage(rate) {
+	_prResizeImage(rate);
+	return;
+}
+var z,x,y;
+var gImageGroupList_	= new Array;
+var gIdx_				= 0;
+function _prImageGroupStruct(group_size,rect_size,img_size,p_tag,tp_obj,bl_obj,ul_obj) {
+	this.group		= group_size;
+	this.rect		= rect_size;
+	this.img		= img_size;
+	this.p			= p_tag;
+	this.tp			= tp_obj;
+	this.bl			= bl_obj;
+	this.ul			= ul_obj;
+}
+function _prSizeStruct(newObj,newWidth,newHeight) {
+	this.obj		= newObj;
+	this.width		= newWidth;
+	this.height		= newHeight;
+}
+function _prPTagStruct(newObj,newLeft,newTop,newFontSize) {
+	this.obj		= newObj;
+	this.left		= newLeft;
+	this.top		= newTop;
+	this.fontsize	= newFontSize;
+}
+function _prLineTagStruct(newObj,newFromx,newFromy, newTox, newToy) {
+	this.obj			= newObj;
+	this.fromx		= newFromx;
+	this.fromy		= newFromy;
+	this.tox		= newTox;
+	this.toy		= newToy;
+}
+function _prTPTagStruct(newObj,newFontSize) {
+	this.obj		= newObj;
+	this.fontsize	= newFontSize;
+}
+function _prInitImageInfo(rate) {
+	var endFlag = false;
+	gDefaultRate_ = rate;
+	gIdx_ = 0;
+	var save_i;
+	var iii = 100;
+	for(var i = 1; !endFlag; i++){
+		save_i = i;
+		var groupObject = document.getElementById("group" + i);
+		if(groupObject == null){
+			groupObject = document.getElementById("group" + iii);
+			if(groupObject == null){
+				groupObject = document.getElementById("group" + i + "_noresize");
+				if(groupObject == null){
+					endFlag = true;	
+					break;
+				}
+				continue;
+			}
+			else {
+				i = iii
+				iii++;
+			}
+		}
+		var groupWidth	= _prRemoveUnit(groupObject.style.width);
+		var groupHeight	= _prRemoveUnit(groupObject.style.height);
+		var rectObject	= document.getElementById("rect" + i);
+		var rectWidth	= null;
+		var rectHeight	= null;
+		if(rectObject != null){
+			rectWidth	= _prRemoveUnit(rectObject.style.width);
+			rectHeight	= _prRemoveUnit(rectObject.style.height);
+		}
+		var imgObject	= document.getElementById("img" + i);
+		var imgWidth	= null;
+		var imgHeight	= null;
+		if(imgObject != null){
+			imgWidth	= _prRemoveUnit(imgObject.style.width);
+			imgHeight	= _prRemoveUnit(imgObject.style.height);
+		}
+		var pObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var pTag = document.getElementById("p" + i + "_" + j);
+			if(pTag == null){
+				if(j == 1){
+					endFlag = true;
+				}
+				break;
+			}
+			if(j == 1){
+				pObject		= new Array();
+			}
+			pObject[j-1] = new _prPTagStruct(
+									pTag,
+									_prRemoveUnit(pTag.style.left),
+									_prRemoveUnit(pTag.style.top),
+									_prRemoveUnit(pTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var tpObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var tpTag = document.getElementById("tp" + i + "_" + j);
+			if(tpTag == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				tpObject		= new Array();
+			}
+			tpObject[j-1] = new _prTPTagStruct(
+									tpTag,
+									_prRemoveUnit(tpTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var blObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var baseline = document.getElementById("bl" + i + "_" + j);
+			if(baseline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				blObject		= new Array();
+			}
+			blObject[j-1] = new _prLineTagStruct(
+									baseline,
+									(baseline.from+'').substring(0,(baseline.from+'').indexOf(",")),
+									(baseline.from+'').substring((baseline.from+'').indexOf(",")+1,(baseline.from+'').length),
+									(baseline.to+'').substring(0,(baseline.to+'').indexOf(",")),
+									(baseline.to+'').substring((baseline.to+'').indexOf(",")+1, (baseline.to+'').length)
+								);
+		}
+		endFlag = false;
+		var ulObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var underline = document.getElementById("ul" + i + "_" + j);
+			if(underline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				ulObject		= new Array();
+			}
+			ulObject[j-1] = new _prLineTagStruct(
+									underline,
+									(underline.from+'').substring(0,(underline.from+'').indexOf(",",0)),
+									(underline.from+'').substring((underline.from+'').indexOf(",")+1,(underline.from+'').length),
+									(underline.to+'').substring(0,(underline.to+'').indexOf(",")),
+									(underline.to+'').substring((underline.to+'').indexOf(",")+1, (underline.to+'').length)
+								);
+		}
+		endFlag = false;
+		gImageGroupList_[gIdx_] = new _prImageGroupStruct (
+			new _prSizeStruct(groupObject,groupWidth,groupHeight),
+			new _prSizeStruct(rectObject,rectWidth,rectHeight),
+			new _prSizeStruct(imgObject,imgWidth,imgHeight),
+			pObject,
+			tpObject,
+			blObject,
+			ulObject
+		);
+		gIdx_++;
+		i = save_i;
+	}
+	return ;
+}
+function _prResizeImage(rate) {
+	var  hei = 0;
+	for(var i=0; i<gImageGroupList_.length; i++){
+		if(gImageGroupList_[i].group != null){
+			var obj = gImageGroupList_[i].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[i].rect != null){
+			var obj = gImageGroupList_[i].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].img != null){
+			var obj = gImageGroupList_[i].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].p != null){
+			var obj = gImageGroupList_[i].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[i].tp != null){
+			var obj = gImageGroupList_[i].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[i].bl != null){
+			var obj = gImageGroupList_[i].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[i].ul != null){
+			var obj = gImageGroupList_[i].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	}
+	return hei;
+}
+function _prResizeImageAt(idx,rate) {
+	var  hei = 0;
+		if(gImageGroupList_[idx].group != null){
+			var obj = gImageGroupList_[idx].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[idx].rect != null){
+			var obj = gImageGroupList_[idx].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].img != null){
+			var obj = gImageGroupList_[idx].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].p != null){
+			var obj = gImageGroupList_[idx].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[idx].tp != null){
+			var obj = gImageGroupList_[idx].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[idx].bl != null){
+			var obj = gImageGroupList_[idx].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[idx].ul != null){
+			var obj = gImageGroupList_[idx].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	return hei;
+}
+function _prRemoveUnit(src){
+	var dst = src.substring(0,src.length-2);
+	return dst;
+}
+-->
+</script>
+<script>
+<!--
+function Apf() {
+   _prInitImageInfo(100);
+   window.focus();
+   if(gImageGroupList_.length == 0) {
+      window.print();
+   }
+   else {
+      divBody.style.display = "none";
+      var  img_pos,img_hei;
+      var  img_rate = 1.0;
+      var  i;
+      var  obj;
+      var  paper_wid,paper_hei,paper_len;
+      paper_wid = 640.0;
+      paper_hei = 950.0;
+      paper_len = 980.0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+           obj = gImageGroupList_[i].group;
+         }
+      }
+      if(paper_wid > paper_hei) {
+         alert("Para obter os melhores resultados de impressão, seleccione a orientação “horizontal” no menu da impressão.");
+      }
+      for(i=0; i<gImageGroupList_.length; i++){
+         if(gImageGroupList_[i].group != null){
+            obj = gImageGroupList_[i].group;
+            if(img_rate > paper_wid/obj.width) {
+               img_rate =  paper_wid/obj.width;
+            }
+            if(img_rate > paper_hei/obj.height) {
+               img_rate =  paper_hei/obj.height;
+            }
+         }
+      }
+      _prResizeImage(img_rate);
+      window.scrollTo(0,10000);
+      var totalHei = document.body.scrollTop+document.body.clientHeight-img_hei;
+      divBody.style.display = "block";
+      var  idObj;
+      var groupObject = document.getElementById("group" + i);
+      var   beforeOffset = 0;
+      var   current_pos;
+      var   img_pos = img_dis = 0;
+      for(i=0; i<gImageGroupList_.length; i++){
+         idObj =document.getElementById("imgId" + (i+1));
+         if(idObj != null) {
+            idObj.style.display = "block";
+            current_pos = idObj.offsetTop;
+            if(gImageGroupList_[i].group != null){
+               obj = gImageGroupList_[i].group;
+               img_dis = current_pos - beforeOffset;
+               if(i == 0) {
+                  var pageCnt = Math.floor(current_pos/paper_hei);
+                  img_dis = img_dis - paper_hei*pageCnt;
+               }
+               img_hei = obj.height*img_rate;
+               img_pos += parseInt(img_dis);
+               if(parseInt(img_pos) > paper_len) {
+                  img_pos = img_pos - paper_len;
+               }
+               img_pos += parseInt(img_hei);
+               idObj.style.display = "none";
+               if(parseInt(img_pos) > paper_len) {
+                  idObj.style.display = "block";
+                  img_pos = parseInt(img_hei) + 50;
+               }
+               beforeOffset = current_pos + parseInt(img_hei);
+            }
+         }
+      }
+      window.print();
+      divBody.style.display = "none";
+      _prResizeImage(100/100);
+      divBody.style.display = "block";
+      window.scrollTo(0,0);
+   }
+}
+-->
+</script>
+<body onload="javascript:parent.Old(this)" style="font-family:sans-serif;">
+<div id="divBody" style="display:block">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+<b>
+Configuração do Bus GA-Net
+</b>
+</div>
+<a name="iS03">
+</a>
+<div>
+<div>
+O bus GA-Net transmite comandos áudio e de navegação através dos componentes áudio e de navegação.
+</div>
+<div>
+Estes comandos incluem sinais do botão rígido da navegação, selecções áudio por voz e nomes de músicas. Uma vez que todo o bus está em ‘‘corrente em margarida'' entre componentes (ver diagrama), qualquer curto-circuito ou interrupção na cablagem do bus GA-Net causará uma desactivação parcial ou total destas funções. Naturalmente, a adição de qualquer acessório áudio deve manter a continuidade do bus bus GA-Net, instalando o cabo ‘‘Y'' incluído no kit acessório.
+</div>
+<span style="display:none" id="imgId1">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD04_1.js">
+</script>
+</div>
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sensor de Aceleração Lateral-Taxa de Guinada
+</b>
+</div>
+<br>
+<div>
+O sensor de aceleração lateral-taxa de guinada (na unidade de navegação) detecta a mudança de direcção (velocidade angular) do veículo. O sensor é um giroscópio de oscilação incorporado na unidade de navegação.
+</div>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Estrutura do Elemento do Sensor
+</b>
+</div>
+<br>
+<div>
+O elemento do sensor tem a forma de um garfo de sintonização e está formado pelas peças piezoeléctricas, o bloco de metal e a cavilha de apoio. Há quatro peças piezoeléctricas: uma para direccionar os osciladores, uma para monitorizar e manter a oscilação a uma frequência regular e duas para detectar a velocidade angular. Os dois osciladores, que tem uma torção de 90 graus no centro, estão ligados na parte inferior pelo bloco de metal e seguros pela cavilha de apoio. Uma peça piezoeléctrica de detecção está colocada no topo de cada oscilador. A peça piezoeléctrica de condução está colocada na parte inferior de um oscilador e a peça piezoeléctriva de monitorização está colocada na parte inferior do outro oscilador.
+</div>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Princípios do Giroscópio de Oscilação
+</b>
+</div>
+<br>
+<div>
+As peças piezoeléctricas têm características de transferência electro/mecânicas. Dobram-se verticalmente quando é aplicada voltagem em ambos os lados das peças e gera-se voltagem entre ambos os lados das peças piezoeléctricas quando são dobradas por uma força externa. O giroscópio de oscilação funciona utilizando esta característica das peças piezoeléctricas e a Força de Coriolis. (A força de Coriolis deflecte objectos em movimento como resultado da rotação da Terra.) No giroscópio de oscilação, esta força desloca o elemento do sensor quando é aplicada velocidade angular.
+</div>
+<a name="iT05">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Funcionamento
+</b>
+</div>
+<br>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+As peças piezoeléctricas de condução fazem oscilar o oscilador dobrando-se e voltando à posição inical repetidamente quando se aplica uma voltagem AC de 6kHz à peça. O oscilador lateral de monitorização emite ressonância porque está ligado ao oscilador lateral de condução pelo bloco de metal.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+A peça piezoeléctrica de monitorização dobra em proporção à oscilação e a voltagem de saída (o sinal de monitorização). O circuito de controlo da unidade de navegação controla o sinal de condução para estabilizar o sinal de monitorização.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Quando o veículo para, as peças piezoeléctricas de detecção oscilam de direita à esquerda com os osciladores, mas não sai nenhum sinal porque as peças não estão dobradas (sem força angular).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Quando o veículo vira à direita, o elemento do sensor desloca-se num movimento circular com o oscilador direito dobrando-se para a frente e o oscilador esquerdo para trás. O número de dobragens para a frente/para trás varia de acordo com a velocidade angular do veículo.
+</div>
+</li>
+</ol>
+<div>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+A voltagem de saída das peças piezoeléctricas de detecção (o sinal da taxa de guinada) de acordo com o número de dobragens. A mudança de direcção do veículo é determinada pela medição desta voltagem.
+</div>
+</li>
+</ol>
+<span style="display:none" id="imgId2">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD05_1.js">
+</script>
+</div>
+</div>
+<a name="iT06">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sistema Global de Posicionamento (GPS)
+</b>
+</div>
+<br>
+<div>
+<div>
+O sistema global de posicionamento (GPS) permite que o sistema de navegação determine a posição actual do veículo, utilizando os sinais transmitidos pelos satélites em órbita à volta da terra. Os satélites transmitem o sinal de identificação de satélite, informação sobre a órbita, o sinal da hora de transmissão e outra informação. Quando o receptor do GPS recebe o sinal simultaneamente de quatro ou mais satélites, calcula a posição actual do veículo com base na distância até cada satélite e na posição dos mesmos nas respectivas órbitas.
+</div>
+<span style="display:none" id="imgId3">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Imagem de detecção da Posição com o satélite GPS
+</b>
+</div>
+<script src="../js/SMR9EQPJ36200000000CAPD06_1.js">
+</script>
+</div>
+</div>
+<a name="iT07">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Precisão do GPS
+</b>
+</div>
+<br>
+<div>
+A precisão do GPS varia de acordo com o número de satélites de onde são recebidos sinais assim como a vista do céu. A precisão é indicada pela cor do ícone GPS indicado no visor.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="16%">
+<col width="16%">
+<col width="28%">
+<col width="40%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+COR DO ÍCONE GPS
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+NÚMERO DE SATÉLITES
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+CONDIÇÃO
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+DESCRIÇÃO
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sem ícone
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+Nenhum
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Avariado
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O GPS não pode ser utilizado devido a um receptor GPS avariado, uma interrupção no fio ou outra avaria ou interferência.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ícone GPS branco
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+2 ou menos
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Impossível detectar a posição do veículo
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A função GPS é normal. O número de sinais de satélite recebidos pelo GPS é demasiado reduzido para detectar a posição do veículo.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" rowspan="2" align="left">
+<div>
+Ícone GPS verde
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Posição do veículo detectável em 2 dimensões
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A longitude e a latitude da posição do veículo pode ser detectada. (Precisão inferior à detecção em três dimensões)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+4 ou mais
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Posição do veículo detectável em 3 dimensões (elevação visualizada)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A longitude, a latitude e a altitude da posição do veículo pode ser detectada. (Precisão superior à detecção em duas dimensões)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="iT08">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Antena GPS
+</b>
+</div>
+<br>
+<div>
+A antena GPS amplifica e transmite os sinais recebidas dos satélites ao receptor do GPS.
+</div>
+<a name="iT09">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Receptor do GPS e Relógio
+</b>
+</div>
+<br>
+<div>
+O receptor do GPS está incorporado na unidade de navegação. Este calcula a posição do veículo ao receber o sinal da antena GPS. O tempo actual, a posição do veículo e a condição de recepção do sinal são transmitidas pelo receptor GPS para a unidade de controlo de navegação para ajustar a posição do veículo.
+</div>
+<a name="iT10">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sistema de Dados por Rádio -Canal de Mensagens de Trânsito (RDS-TMC)
+</b>
+</div>
+<br>
+<div>
+<div>
+O Sistema de Dados por Rádio - Canal de Mensagens de Trânsito (RDS-TMC) é uma transmissão para enviar informação de trânsito e de percurso para o condutor. Os dados RDS-TMC são normalmente codificados utilizando a sub-portadora 57 kHz±3 kHz da frequência FM.
+</div>
+<div>
+O sistema RDS-TMC utiliza um descodificador na unidade de navegação para descodificar os dados da informação de trânsito. Está integrado directamente no sistema de navegação.
+</div>
+<div>
+A informação de trânsito é indicada com a orientação do percurso da navegação. É utilizada para evitar congestionamentos de trânsito e de acidentes (para mais informações, consulte o manual de instruções do sistema de navegação).
+</div>
+<span style="display:none" id="imgId4">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD07_1.js">
+</script>
+</div>
+</div>
+<a name="iT11">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Unidade de Navegação
+</b>
+</div>
+<br>
+<div>
+A unidade de navegação calcula a posição do veículo e guia-o até o seu destino. A unidade executa a correcção de correspondência por mapa, a correcção do GPS e a afinação da distância. Também controla as funções de menu e a unidade de DVD-ROM e interpreta os comandos por voz. Com controlo de todos estes itens, a unidade de navegação produz o sinal da imagem de navegação e, em seguida, transmite o sinal à unidade de controlo do painel de visualização e instruções áudio de condução à unidade áudio.
+</div>
+<a name="iT12">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Cálculo da Posição do Veículo
+</b>
+</div>
+<br>
+<div>
+A unidade de navegação calcula a posição do veículo (a direcção da condução e a posição actual), recebendo os sinais de mudança de direcção do sensor de taxa de guinada e os sinais de distância de viagem do sinal de impulso da velocidade do veículo (VSP) do ECM.
+</div>
+<a name="iT13">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Afinação da Correspondência por Mapa
+</b>
+</div>
+<br>
+<div>
+A afinação da correspondência por mapa consegue-se indicando a posição do veículo nas estradas do mapa. Os dados do mapa transmitidos da DVD-ROM são comparados com os dados da posição do veículo e a posição do veículo é indicada na estrada mais próxima. A afinação da correspondência por mapa não ocorre quando o veículo viaja numa estrada que não aparece no mapa ou quando a posição do veículo for distante de uma estrada no mapa.
+</div>
+<a name="iT14">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Afinação do GPS
+</b>
+</div>
+<br>
+<div>
+A afinação do GPS consegue-se indicando a posição do veículo como a posição GPS do veículo. A unidade de navegação compara os seus dados da posição do veículo calculados com os dados da posição do veículo do GPS. Se a diferença entre os dois for grande, a posição indicada do veículo é ajustada de acordo com a posição GPS do veículo.
+</div>
+<a name="iT15">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Afinação da Distância
+</b>
+</div>
+<br>
+<div>
+A afinação da distância diminui a diferença entre o sinal da distância percorrida do VSP e os dados de distância no mapa. A unidade de navegação compara os seus dados da posição do veículo calculados com os dados da posição do veículo do GPS. A unidade de navegação em seguida diminui o valor de sintonização quando a posição do veículo está sempre a frente da posição do veículo do GPS e aumenta o valor de sintonização quando a posição do veículo está sempre atrás da posição do veículo do GPS.
+</div>
+<a name="iT16">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Orientação do Itinerário
+</b>
+</div>
+<br>
+<div>
+A unidade de navegação pode definir caminhos diferentes para um destino seleccionado. Dispõe de cinco opções:
+</div>
+<ul type="disc">
+<li>
+<div>
+O trajecto que inclui a auto-estrada recomendada.
+</div>
+</li>
+<li>
+<div>
+O trajecto que não inclui (e que por vezes inclui) a auto-estrada recomendada.
+</div>
+</li>
+<li>
+<div>
+O trajecto mais curto possível.
+</div>
+</li>
+<li>
+<div>
+O trajecto que dá preferência à estrada o mais ampla possível.
+</div>
+</li>
+<li>
+<div>
+O trajecto mais curto possível e que não inclui a auto-estrada recomendada.
+</div>
+</li>
+</ul>
+<a name="iT17">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Orientação através de Áudio
+</b>
+</div>
+<br>
+<div>
+A unidade de navegação transmite instruções áudio de condução por áudio antes de entrar numa intersecção ou de passar um cruzamento. As instruções áudio são transmitidas pela unidade áudio e os altifalantes dianteiros.
+</div>
+<div>
+NOTA: Os altifalantes dianteiros estão em modo silencioso sempre que o sistema de navegação transmite comandos de direcção e todos os altifalantes estão em modo silencioso quando o sistema de comando por voz está a ser utilizado.
+</div>
+<a name="iT18">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Sinal de Modo Silencioso Logic
+</b>
+</div>
+<br>
+<div>
+O modo silencioso áudio logic é dirigido pela unidade áudio. A unidade áudio determina que fonte áudio tem prioridade na utilização dos altifalantes.
+</div>
+<div>
+A prioridade das fontes áudio é a seguinte:
+</div>
+<div>
+O HFT tem prioridade, seguido pela navegação e, por fim, o rádio/leitor de CD-DVD. A prioridade passa do HFT para a unidade áudio pelos respectivos fios do modo silencioso. O sinal do modo silencioso da navegação passa para a unidade áudio no bus GA-net.
+</div>
+<div>
+A unidade de navegação desactiva temporariamente os botões de comando por voz, continuando a permitir que a orientação seja ouvida. Adicionalmente, a unidade áudio suprime o sinal áudio da unidade áudio, do leitor de CDs ou de outros acessórios áudio.
+</div>
+<div>
+Quando o sistema de navegação envia um comando de orientação do itinerário por voz, o altifalante dianteiro áudio está em modo silencioso e a voz de navegação é ouvida através dos altifalantes dianteiros.
+</div>
+<div>
+Quando o sistema de navegação de comando por voz está a ser utilizado, todos os altifalantes encontram-se em modo silencioso, sendo ouvidas as instruções de navegação por voz através dos altifalantes dianteiros.
+</div>
+<a name="iT19">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Ângulo Solar
+</b>
+</div>
+<br>
+<div>
+O sistema de navegação utiliza o ângulo solar em conjunto com o sensor da luz solar, para controlar o fluxo de ar A/C do condutor/passageiro.
+</div>
+<a name="iT20">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Orientação Fora da Estrada (linha tracejada)
+</b>
+</div>
+<br>
+<div>
+Os pontos de orientação fora da estrada que podem ser seguidos no mapa, tracejam o seu itinerário de volta para uma estrada (digitalizada) do mapa.
+</div>
+<a name="iT21">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Relógio e Fuso Horário
+</b>
+</div>
+<br>
+<div>
+A configuração do relógio permite-lhe definir hora de memorizações de luz diurna, fuso horário automático e ajuste da hora.
+</div>
+<a name="iT22">
+</a>
+<br>
+<div class="topic_title">
+<b>
+DVD-ROM
+</b>
+</div>
+<br>
+<div>
+O DVD inclui:
+</div>
+<ul type="disc">
+<li>
+<div>
+Dados do Mapa
+</div>
+</li>
+<li>
+<div>
+Ponto de Interesse (POI)
+</div>
+</li>
+<li>
+<div>
+Software de navegação
+</div>
+</li>
+</ul>
+<a name="iT23">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Unidade Áudio
+</b>
+</div>
+<br>
+<div>
+A unidade áudio recebe as instruções áudio de orientação da unidade de navegação e transmite as instruções através do altifalante dianteiro mesmo quando o sistema áudio está a ser utilizado.
+</div>
+<div>
+NOTA: Se o volume de navegação e/ou o feedback de voz estiver desligado, esta função fica desactivada.
+</div>
+<a name="iT24">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Visor da Navegação
+</b>
+</div>
+<br>
+<div>
+<div>
+O visor da navegação utiliza um visor de cristais líquidos (LCD). O visor LCD tem 7 polegadas na diagonal, transístor de película fina (TFT), do tipo de riscas com 336,960 elementos de imagem. A película de cor e a luz fluorescente encontram-se dispostas na parte de trás da película de cristais líquidos.
+</div>
+<span style="display:none" id="imgId5">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD08_1.js">
+</script>
+</div>
+</div>
+<a name="iT25">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Microfone (Mic)
+</b>
+</div>
+<br>
+<div>
+Recebe comandos por voz e transmite-os para interpretação na unidade de navegação ou na unidade de controlo do Telefone Mãos-Livres.
+</div>
+<div>
+Ambos os sistemas partilham o mesmo microfone.
+</div>
+<a name="iT26">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Botão CONVERSAÇÃO NAVEGAÇÃO
+</b>
+</div>
+<br>
+<div>
+Activa o sistema de comando por voz na unidade de navegação para aceitar comandos por voz.
+</div>
+<a name="iT27">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Botão RETROCEDER NAVEGAÇÃO
+</b>
+</div>
+<br>
+<div>
+<div>
+Volta para o ecrã anterior (função semelhante ao botão CANCELAR).
+</div>
+<span style="display:none" id="imgId6">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD09_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId7">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD10_1.js">
+</script>
+</div>
+</div>
+<a name="iT28">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Glossário
+</b>
+</div>
+<br>
+<div>
+O seguinte é um glossário de termos relacionados com o Sistema de Navegação Reconhecimento de Voz.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="28%">
+<col width="71%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Item
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Definição
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Livro de Moradas
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O sistema HFL consegue importar uma cópia da lista telefónica de um telefone compatível e aprovado para HFL e consegue apresentar a lista telefónica importada no ecrã de navegação como o livro de moradas. Consulte o Manual de Instruções para mais informações.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+B-CAN
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Bus de CAN da Carroçaria (veja CAN)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Linha tracejada (Pontos brancos)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pontos de orientação fora de estrada que podem ser seguidos no mapa para voltar a tracejar o seu itinerário de volta para uma estrada (digitalizada) do mapa. Esta função pode ser ligada/desligada no ecrã 1 da Configuração.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CAN
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Controlador da Área de Rede. Esta rede de comunicação permite que os processadores do veículo enviem/recebam informação. Os impulsos de combustível utilizados pelo computador de bordo MID são recebidos a partir do ECM/PCM, utilizando o bus F-CAN (Controlador Rápido da Área de Rede).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CPU
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade Central de Processamento. O dispositivo central na unidade de navegação que coordena o resto das funções electrónicas.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CSS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sensor da Velocidade do Contraveio (Saída). Este sensor lê a velocidade do veio de saída na transmissão e fornece um impulso de velocidade ao ECM/PCM.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Base de dados
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Isto consiste em do Mapa e os dados POI (Pontos De Interesse) memorizados no DVD.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+DBW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Comandos Eléctricos. Permite o controlo eléctrico da borboleta sem necessidade de uma ligação mecânica.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+DTC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Códigos de Diagnóstico de Avarias. Utilize a tabela HDS para obter e diagnosticar a causa destes códigos.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Cálculo de Ponto Morto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A utilização do sinal de velocidade e do sensor da taxa de guinada para posicionar o veículo no mapa, mesmo quando o sinal GPS está obstruído devido a edifícios altos ou enquanto a conduzir num túnel.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Estrada Digitalizada
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Uma estrada que aparece no ecrã de navegação. O nome da estrada aparece na parte inferior do ecrã de navegação. Se o utilizador estiver a conduzir fora da estrada, o sistema de navegação apresenta Não numa estrada digitalizada e se conduzir 1/2 milha, irá aparecer a linha tracejada.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ecrã de Exoneração de Responsabilidade
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ecrã com informação de aviso. Deve ser lido cuidadosamente pelo cliente, de forma a ser compreendido, quando utilizar o sistema de navegação.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+DVD ou DVD-ROM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Digital Versatile Disk (Disco Versátil Digital). O programa e base de dados de navegação encontram-se no disco. Consulte o Manual de Instruções da Navegação para obter informações sobre a encomenda de um DVD de actualização ou substituição.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+ECM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de Controlo do Motor. Caracteristicamente referido como ECM.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+FAQ
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Perguntas Frequentes Consulte no Manual de Instruções da Navegação uma lista com as FAQ dos clientes, bem como informações relativas ao diagnóstico de avarias.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+F-CAN
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Bus de CAN rápido (veja CAN)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+GA-Net
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O GA-Net permite que a unidade áudio comunique com todos os componentes áudio e de navegação num veículo. Se houver uma interrupção no GA-Net, os componentes ou a totalidade do sistema de áudio e de navegação podem aparentar mau funcionamento.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+GPS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sistema Global de Posicionamento. Uma rede de 24 satélites em órbita à volta da Terra. O sistema de navegação pode simultaneamente receber sinais de até 12 satélites para posicionar com precisão o veículo no mapa.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="28%">
+<col width="71%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Item
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Definição
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+HDS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sistema de Diagnóstico Honda. Um tablet PC seguro manualmente para utilização no diagnóstico de problemas do veículo. Este dispositivo pode ser utilizado para obter códigos DTC para diagnóstico de problemas relacionados com o sistema de navegação e CAN.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+HFT
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O Telefone Mãos-Livres utiliza tecnologia Bluetooth como uma ligação sem fios entre o sistema e um telemóvel compatível com Bluetooth aprovado. Consulte o manual de instruções do veículo ou o Guia de Arranque Rápido para mais informações.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+H/U
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Unidade Principal. O conjunto do visor do sistema de navegação no tablier.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Inicialização
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Isto refere-se ao período necessário para voltar a receber a informação orbital por satélite GPS sempre que o sistema de navegação esteja desligado. Isto pode demorar de 10 a 45 minutos.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+LCD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Visor de Cristais Líquidos (o ecrã de navegação)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Correspondência por Mapa
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A informação GPS recebida permite ao sistema de navegação de posicionar o veículo no mapa. A correspondência por mapa é efectuada se o ecrã do mapa está a mostrar o nome da estrada actual na área não visível devido ao botão.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Mic
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Abreviatura para microfone utilizada para comandos por voz recebidos. Encontra-se na proximidade da luz do mapa no tecto.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MID
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Visor de Multi-Informações
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MW
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Janela de Manobras. Enquanto está a caminho do próximo destino, esta janela dá-lhe informações relativas à próxima manobra.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Navi
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Abreviatura para Sistema de Navegação.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Orientação Fora da Estrada
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ver Linha Tracejada
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Fora de Estrada
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Isto aparece quando o utilizador sai das estradas registadas no mapa. Os pontos de orientação fora da estrada (linha tracejada) são apresentados se esta opção estiver activada no menu da configuração. O utilizador pode utilizar estes pontos para voltar para uma estrada do mapa. Na parte inferior do ecrã de navegação aparece ‘‘Não em estrada digitalizada&quot;.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Áreas Exteriores
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Áreas tipicamente rurais que só têm as estradas principais registadas em mapa. Todos as restantes estradas são indicadas num tom castanho claro, apenas como referência, uma vez que não foram verificadas.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Emparelhadas
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ligar o seu telemóvel ao HFT
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+PC Card Slot
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A slot PC Card (PCMCIA, tipo II) é para uso exclusivo da fábrica. Certifique-se de que a porta deslizante está sempre fechada; se for aberta, aparece uma mensagem de erro no ecrã (se equipado).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+PCM
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de Controlo do Grupo de Potência. A unidade fornece o sinal de velocidade do sistema de navegação e o sinal de carga através da rede F-CAN. Também referido como ECM.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+PCMCIA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Um termo definido pela indústria informática que se refere ao padrão de PC Card Slot.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="28%">
+<col width="71%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Item
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Definição
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+PIN
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Número de Identificação Pessoal, um número aleatório de 4 dígitos criado pelo cliente para proteger a informação pessoal.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+POI
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ponto de Interesse. Representam empresas, escolas, etc., encontradas na opção locais do menu principal.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Polígono
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Áreas coloridas no ecrã do mapa que representam parques, escolas, etc. Consulte o Manual do Sistema de Navegação Em Direcção ao Seu Destino para uma lista com as cores atribuídas.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+QWERTY
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Disposição do teclado semelhante ao teclado de uma máquina de escrever. A disposição do teclado pode ser alterado para a disposição alfabética no modo de Configuração.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ficha de serviço SCS
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A ficha de 2 pinos do sinal de verificação de serviço utilizada para colocar o sistema de navegação no modo de diagnóstico.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Código de Segurança
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Código necessário para activar o sistema de navegação. O número de série pode ser localizado nos ecrãs de diagnóstico (Verificação da Unidade, Unidade de Controlo de Navegação) ou no lado inferior da unidade de navegação.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Botões do Ecrã de Toque ou Sensor de Toque
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O painel de visualização áudio-HVAC tem 2 camadas de película transparente no painel do ecrã. Se tocar no painel do ecrã, as camadas de película são accionadas e a unidade de visualização detecta o ponto de contacto.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sintonização
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Uma actualização contínua dos factores de escala do sistema de navegação interno. Consulte a afinação individual do sensor em Descrição do Sistema ou 
+<a href="javascript:CtsProc('0','000000000003676','i000')">
+Modo de Diagnóstico do Sistema
+</a>
+ neste manual.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Estradas Não Verificadas
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Estas estradas não foram verificadas quanto a sentidos obrigatórios, sentidos únicos, etc. São indicadas no mapa em castanho claro. Nestas áreas, pode introduzir as moradas de destino mas, dependendo da sua escolha na configuração de Itinerário Não Verificado, a orientação por voz pode terminar na última estrada verificada mais próxima do seu destino.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Estradas Verificadas
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Estas estradas consistem em áreas de cobertura metropolitana detalhada e de todas as outras estradas de ligação inter-cidade. Estas estradas são indicadas a preto no mapa.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+VP
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Posição do Veículo. Quando se encontra no modo de mapa, este ícone circular apresenta a posição do veículo no mapa. Toque neste ícone para visualizar a latitude, longitude e elevação da sua actual posição.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+VR
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Reconhecimento por Voz. Isto permite o comando por voz de muitas funções de navegação. O hardware é constituído por num microfone, interruptor de comando por voz (botões Conversação/Retroceder) e altifalantes dianteiros. Veja a descrição geral para obter mais informações.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+VSP
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Impulso da Velocidade do Veículo. Este sinal de impulso do PCM (através de CSS) é utilizado para actualizar a posição do Veículo no mapa. Estes impulsos não indicam a direcção (retroceder ou avançar). No caso de marcha-atrás, a navegação recebe um sinal e encaminha o VP para retroceder no mapa.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sensor de Guinada
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Este dispositivo encontra-se na unidade de navegação e sente a força lateral de torção gerada quando o veículo faz curvas. Veja neste manual a descrição detalhada que explica como o sensor funciona.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<a name="iT29">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Fichas da unidade de navegação
+</b>
+</div>
+<br>
+<span style="display:none" id="imgId8">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<script src="../js/SMR9EQPJ36200000000CAPD11_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId9">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Ficha de 20P do visor da navegação
+</b>
+</div>
+<script src="../js/SMR9EQPJ36200000000CAPD12_1.js">
+</script>
+</div>
+<span style="display:none" id="imgId10">
+<div style="page-break-after:always;">
+</div>
+</span>
+<div>
+<div class="figure_title">
+<b>
+Ficha de 5P do indicador de interface
+</b>
+</div>
+<script src="../js/SMR9EQPJ36200000000CAPD13_1.js">
+</script>
+</div>
+</div></div>
+</body>
+</html>

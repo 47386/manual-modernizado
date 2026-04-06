@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR7ES0J32100000000DAAD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:462px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUTOMATIC LIGHTING/RAIN SENSOR<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Input Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:720px;top:226px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HIGH MOUNT BRAKE LIGHT<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:669px;top:651px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LICENSE PLATE LIGHT<br><a href=\"javascript:CtsProc('0','000000000000209','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000209','i000')\">Bulb Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:579px;top:712px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BACK-UP LIGHT<br>(REAR PANEL LIGHT)<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Bulb Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:579px;top:775px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR FOG LIGHT<br>(REAR PANEL LIGHT)<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:420px;top:853px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAILLIGHT/BRAKE LIGHT<br>(INNER TAILLIGHT)<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Bulb Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:192px;top:733px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAILLIGHT/BRAKE LIGHT<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Bulb Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:192px;top:780px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR TURN SIGNAL LIGHT<br><a href=\"javascript:CtsProc('0','000000000000231','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000233','i000')\">Bulb Replacement,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:625px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>REAR HEADLIGHT<br>LEVELING SENSOR (With HID)<br><a href=\"javascript:CtsProc('0','000000000000229','i000')\"></b>Replacement,</a><br><a href=\"javascript:CtsProc('0','000000000000230','i000')\">Circuit Troubleshooting,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:961px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>LHD type is shown, RHD type is similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

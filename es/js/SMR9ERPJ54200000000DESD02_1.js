@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:815px;\" coordsize=\"950,815\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:815px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DESD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:815px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:17px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE CORTE IG2<br></b>Colores de los cables: ORN, GRY,<br>YEL y LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:65px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE CORTE ACC<br></b>Colores de los cables: GRN, GRY,<br>PUR, y LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:704px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE CORTE DEL MOTOR DE ARRANQUE<br></b>Colores de los cables: WHT, RED,<br>GRY y LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:754px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DEL INHIBIDOR<br></b>Colores de los cables: GRY, WHT,<br>BLK y GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:678px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD SRS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:711px;top:741px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE NAVEGACIÓN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:683px;top:115px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL<br>DEL REGLAJE AUTOMÁTICO DE LOS FAROS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:528px;top:107px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE AUDIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:13px;top:646px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL <br>DE ENTRADA SIN LLAVE-NMOVILIZADOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:610px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

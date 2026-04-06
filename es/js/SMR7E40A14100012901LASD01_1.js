@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1071px;\" coordsize=\"950,1071\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1071px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A14100012901LASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1071px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:431px;top:21px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROTOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:562px;top:77px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FIADOR DEL COJINETE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:633px;top:140px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>COJINETE DELANTERO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:775px;top:185px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CARCASA DEL LADO DE LA <br>TRANSMISIÓN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:829px;top:326px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>POLEA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:829px;top:585px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAPA DE LA POLEA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:436px;top:1022px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CONJUNTO DE LA <br>CARCASA TRASERA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:262px;top:941px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CONJUNTO <br>PORTAESCOBILLAS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:105px;top:829px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TAPA DE CIERRE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:67px;top:373px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AISLADOR DE <br>TERMINAL<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

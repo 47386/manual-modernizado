@@ -1,0 +1,706 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPJ14235000000BBGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Fehlersuche im HTS-System
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Mit dem HDS auf DTCs prüfen
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Sicherstellen, dass die Zündung ausgeschaltet ist (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) (A) unter dem Armaturenbrett auf der Fahrerseite anschließen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Prüfen, ob das HDS mit dem Fahrzeug und dem HFT-Steuergerät kommuniziert. Ist dies nicht der Fall, eine Fehlersuche im DLC-Schaltkreis durchführen.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Im Menü BODY ELECTRICAL (Karosserieelektrik) das Element &quot;HandsFreeLink&quot; (Freisprecheinrichtung) wählen.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Im Menü &quot;HandsFreeLink&quot; das Element &quot;DTCs&quot; wählen.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Nachsehen, ob DTCs gespeichert sind. Werden DTCs gemeldet, die DTCs notieren und mit der angegebenen DTC-Fehlersuche fortfahren. Wenn keine DTCs gemeldet werden, zur Fehlersuche nach Symptomen wechseln.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Nach der Fehlersuche die DTCs mit dem HDS löschen.
+</div>
+</li>
+<li>
+<div>
+Die Bedienung des HDS und die einzelnen Vorgänge sind in der zugehörigen Bedienungsanleitung beschrieben.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+Das HFT ist eine Freisprecheinrichtung. Die Qualität einer Telefonverbindung und die Signalstärke können hiermit nicht beeinflusst werden. Um möglichst gute Bedingungen zu schaffen, sollte das Telefon nicht z. B. in einer Metallhülle oder in einer Tasche unter dem Sitz verstaut werden.
+</div>
+<div>
+Dieser Abschnitt behandelt nur einige von vielen Funktionen des HFT-Systems. Es wird erklärt, wie Sie das Telefon mit dem HFT verbinden, und wie Sie Anrufe mit einfachen Sprachbefehlen einleiten und entgegennehmen. Eine vollständige Beschreibung des Systems finden Sie im Fahrerhandbuch und in der Bedienungsanleitung der Freisprecheinrichtung.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000010673','1');">
+<img src="../tn/SMR9ERPJ14235000000BBGD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Mit dem HDS auf DTCs prüfen
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Sicherstellen, dass die Zündung ausgeschaltet ist (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) (A) unter dem Armaturenbrett auf der Fahrerseite anschließen.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPJ14235000000BBGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Prüfen, ob das HDS mit dem Fahrzeug und dem HFT-Steuergerät kommuniziert. Ist dies nicht der Fall, eine Fehlersuche im DLC-Schaltkreis durchführen.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Im Menü BODY ELECTRICAL (Karosserieelektrik) das Element &quot;HandsFreeLink&quot; (Freisprecheinrichtung) wählen.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Im Menü &quot;HandsFreeLink&quot; das Element &quot;DTCs&quot; wählen.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Nachsehen, ob DTCs gespeichert sind. Werden DTCs gemeldet, die DTCs notieren und mit der angegebenen DTC-Fehlersuche fortfahren. Wenn keine DTCs gemeldet werden, zur Fehlersuche nach Symptomen wechseln.
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Nach der Fehlersuche die DTCs mit dem HDS löschen.
+</div>
+</li>
+<li>
+<div>
+Die Bedienung des HDS und die einzelnen Vorgänge sind in der zugehörigen Bedienungsanleitung beschrieben.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+Das HFT ist eine Freisprecheinrichtung. Die Qualität einer Telefonverbindung und die Signalstärke können hiermit nicht beeinflusst werden. Um möglichst gute Bedingungen zu schaffen, sollte das Telefon nicht z. B. in einer Metallhülle oder in einer Tasche unter dem Sitz verstaut werden.
+</div>
+<div>
+Dieser Abschnitt behandelt nur einige von vielen Funktionen des HFT-Systems. Es wird erklärt, wie Sie das Telefon mit dem HFT verbinden, und wie Sie Anrufe mit einfachen Sprachbefehlen einleiten und entgegennehmen. Eine vollständige Beschreibung des Systems finden Sie im Fahrerhandbuch und in der Bedienungsanleitung der Freisprecheinrichtung.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Tipps zur Sprachsteuerung
+</b>
+</div>
+<div>
+Um einen Befehl zu sprechen, drücken Sie die Sprech-Taste (und lassen sie wieder los). Nach dem Piepton sprechen Sie Ihren Befehl klar und deutlich. Das HFT-Mikrofon befindet sich an der Decke vorn zwischen den Leseleuchten.
+</div>
+<div>
+Wenn das HFT-System Ihren Befehl nicht versteht, hören Sie ‘‘Pardon&quot; (bzw. auf deutsch z. B. &quot;Wie bitte?&quot;). Wenn auch Ihr zweiter Versuch nicht verstanden wird, heißt es so etwas wie ‘‘Bitte wiederholen Sie&quot;. Wenn Sie den Befehl dann wiederholen und auch der dritte Versuch fehlschlägt, verweist Sie das HFT an das Hilfe-Menü.
+</div>
+<div>
+Mit einem Befehl wie ‘‘Freisprechhilfe&quot; (den genauen Befehl entnehmen Sie bitte der deutschsprachigen Anleitung) können Sie jederzeit eine Liste der verfügbaren Befehle anfordern.
+</div>
+<div>
+Es können auch mehrere Sprachbefehle zusammen gegeben werden. Sie können zum Beispiel sagen ‘‘Wähle 123-456-7890.&quot;
+</div>
+<div>
+Eine Telefonnummer, die angerufen werden soll, können Sie entweder gleich als Zahl oder in Blöcken zu 3, 4, 7, 10 oder 11 Ziffern sprechen.
+</div>
+<div>
+Um eine Aufforderung des HFT zu überspringen, drücken Sie während das HFT spricht, kurz die Sprech-Taste. Das HFT wartet dann auf die nächste Spracheingabe.
+</div>
+<div>
+Um in der Sprachbefehlssequenz einen Schritt zurückzugehen, drücken Sie kurz die Zurück-Taste oder sprechen den Befehl für ‘‘Zurück&quot;.
+</div>
+<div>
+Wenn das HFT nichts mehr von Ihnen hört, klinkt es sich nach einer Weile aus und beendet die Spracherkennung. Das nächste Mal, wenn Sie die Sprech-Taste drücken, hört das HFT dann wieder ab dem Punkt mit, an dem es sich ausgeklinkt hat.
+</div>
+<div>
+Indem Sie die Zurück-Taste gedrückt halten oder die Sprech-Taste drücken und wieder loslassen, können Sie eine angefangene Sprachbefehlssequenz jederzeit beenden. Warten Sie auf den Piepton, und sprechen Sie den Befehl für ‘‘Abbrechen&quot;. Wenn Sie das nächste Mal die Sprech-Taste betätigen, beginnt das HFT dann vom Hauptmenü aus.
+</div>
+<div>
+Das HFT kehrt auch zu seinem Hauptmenü zurück, nachdem eine Sprachbefehlssequenz beendet ist. Wenn Sie dann das nächste Mal die Sprech-Taste betätigen, sind Sie im Hauptmenü des HFT.
+</div>
+<div>
+Beachten Sie, dass Sie die Zurück-Taste drücken müssen, um das Hauptmenü zu verlassen, weil sonst die Audioanlage stumm geschaltet bleibt.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Paarung zum Mobiltelefon herstellen (nur ein Mal erforderlich)
+</b>
+</div>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Telefonpaarung kann nicht während der Fahrt hergestellt werden.
+</div>
+</li>
+<li>
+<div>
+Das Telefon muss sich zur Paarung im Erkennungsmodus befinden.
+</div>
+</li>
+<li>
+<div>
+Das HFT kann mit bis zu sechs Bluetooth-fähigen Mobiltelefonen gepaart werden.
+</div>
+</li>
+</ul>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Schalten Sie das Telefon ein, und folgen Sie den Anweisungen zur Aktivierung von Bluetooth.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Drücken Sie die Sprech-Taste, und geben Sie dem HFT diese Sprachbefehle: (Es handelt sich hierbei um die englischsprachigen Befehle und ungefähren deutschen Entsprechungen. Den genauen Wortlaut der Befehle entnehmen Sie bitte dem Fahrerhandbuch oder der Bedienungsanleitung des Systems.)
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="40%">
+<col width="60%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+Sie sagen
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+Sie hören
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Phone setup'' (Telefoneinrichtung)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Phone setup options are status, pair, edit, delete, and list.'' (Die Telefoneinrichtoptionen sind Status, Paaren, Bearbeiten, Löschen und Auflisten.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Pair'' (Paaren)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘The pairing process requires operation of your mobile phone. (Während der Paarung muss auch das Mobiltelefon bedient werden.) For safety, only perform this function while the vehicle is stopped. (Die Funktion soll darum aus Sicherheitsgründen nur bei stehendem Fahrzeug ausgeführt werden.) State a four-digit code for pairing. (Nennen Sie einen vierstelligen Paarungscode.) Note this code, it will be requested by the phone.'' (Bitte notieren Sie diesen Code, er wird von Ihrem Handy angefordert.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘1. 2. 3. 4.'' (beliebige vierstellige Ziffernfolge)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘1. 2. 3. 4. is this correct?'' (1. 2. 3. 4. Ist das richtig?)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Yes'' (Ja.)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Searching for a Bluetooth phone. (Suche ein Bluetooth-Telefon.) Make sure the phone you are trying to pair is in Discovery mode!'' (Bitte schalten Sie am Partnertelefon den Erkennungsmodus ein!)
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Schalten Sie das Telefon wie in der Bedienungsanleitung des Telefons beschrieben in den Erkennungsmodus. Das Telefon sucht nach dem HFT. Wenn Sie in der Geräteliste des Telefons &quot;Hands Free Telephone&quot;, &quot;Freisprecheinrichtung&quot; o. ä. sehen, wählen Sie diese Option.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Bei der entsprechenden Aufforderung geben Sie die in Schritt 2 angelegte vierstellige PIN in das Telefon ein. Das HFT sagt ‘‘A new phone has been found. (Es wurde ein neues Telefon gefunden.) Would you like to name this phone?'' (Wie soll das Telefon heißen?)
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Drücken Sie erst kurz die Sprech-Taste, und sagen Sie dann den Namen des Telefons, also zum Beispiel ‘‘Heidis Telefon&quot;. Die Antwort lautet ‘‘John's phone has been successfully paired'' (Heidis Telefon wurde erfolgreich gepaart), und das System kehrt zum Hauptmenü zurück.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Um ein weiteres Telefon zu paaren, wiederholen Sie die Schritte 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ bis 5.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Löschen des Zugriffscodes
+</b>
+</div>
+<div>
+Wenn das HFT-System gesperrt ist und der Zugriffscode vergessen wurde oder verloren gegangen ist, tun Sie Folgendes:
+</div>
+<a name="i310">
+</a>
+<ol>
+<li value="1">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) anschließen.
+</div>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="3">
+<div>
+Im Menü ‘‘Body Electrical'' (Karosserieelektrik) die Option ‘‘HandsFreeLink'' (Freisprecheinrichtung) auswählen.
+</div>
+</li>
+</ol>
+<a name="i340">
+</a>
+<ol>
+<li value="4">
+<div>
+Wählen Sie ‘‘Miscellaneous Tests&quot; (Diverse Tests) und anschließend ‘‘Pass code reset&quot; (Zugriffscode zurücksetzen).
+</div>
+</li>
+</ol>
+<a name="i350">
+</a>
+<ol>
+<li value="5">
+<div>
+Befolgen Sie die Anweisungen des HDS-Systems zum Zurücksetzen des Zugriffscodes.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Selbstdiagnosefunktion
+</b>
+</div>
+<div>
+HINWEIS: Dieses Verfahren sollte nur angewandt werden, wenn kein HDS zur Verfügung steht.
+</div>
+<div>
+Um die Selbstdiagnosefunktion zu aktivieren, wie folgt vorgehen:
+</div>
+<a name="i610">
+</a>
+<ol>
+<li value="1">
+<div>
+Die Zündung einschalten (II).
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Zurück-Taste der Freisprecheinrichtung mindestens 5 Sekunden gedrückt halten.
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="3">
+<div>
+Wenn die Freisprecheinrichtung in den Selbstdiagnosemodus schaltet, geschieht Folgendes:
+</div>
+<ul type="disc">
+<li>
+<div>
+Ist kein DTC gespeichert, meldet das Steuergerät der Freisprecheinrichtung ‘‘The hands free system is OK'' (bzw. auf deutsch z. B. &quot;Freisprecheinrichtung in Ordnung&quot;).
+</div>
+</li>
+<li>
+<div>
+Ist ein DTC gespeichert, meldet das Steuergerät der Freisprecheinrichtung ‘‘The hands free system needs to be serviced'' (bzw. auf deutsch z. B. &quot;Die Freisprecheinrichtung muss gewartet werden&quot;).
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Die Selbstdiagnosefunktion kann nur aktiviert werden, wenn sich das HFT im Ruhezustand befindet.
+</div>
+</li>
+<li>
+<div>
+Die Selbstdiagnosefunktion beginnt, nachdem die Taste 5 Sekunden gedrückt wurde, und endet mit der Rückkehr des Geräts in den Ruhezustand.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

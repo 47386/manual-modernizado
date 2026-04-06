@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:863px;\" coordsize=\"950,863\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:863px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ54300000000DAID02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:863px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:725px;top:273px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UGELLI IMPIANTO LAVACRISTALLI<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina,<br>numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:20px;top:596px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TUBI DI LAVAGGIO<br><a href=\"javascript:CtsProc('0','000000000000350','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:612px;top:708px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTORINO LAVAFARI<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Verifica,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:496px;top:764px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTORINO LAVACRISTALLO<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Verifica,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:169px;top:697px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERBATOIO LAVAGGIO<br><a href=\"javascript:CtsProc('0','000000000000347','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:569px;top:19px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSORE ILLUMINAZIONE AUTOMATICA/PIOGGIA<br>SENSORE PIOGGIA<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Verifica ingressi,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:679px;top:619px;font-weight:normal;font-size:6.87pt;\">");
+write("<nobr><b>LAVAFARI<br>UGELLI<br><a href=\"javascript:CtsProc('0','000000000000349','i000')\"></b>Sostituzione,<br></a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:834px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La figura mostra la versione con guida a sinistra; la versione con guida a destra è simile.<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:189px;font-weight:normal;font-size:6.87pt;\">");
+write("<nobr><b>MOTORINO TERGILUNOTTO<br><a href=\"javascript:CtsProc('0','000000000000353','i000')\"></b>Verifica,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000354','i000')\">Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:640px;top:136px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BRACCI e LEVERAGGIO TERGICRISTALLI<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>Sostituzione,</a><br> nel manuale d'officina, numero categorico 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

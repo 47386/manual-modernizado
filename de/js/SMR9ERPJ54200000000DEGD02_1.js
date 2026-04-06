@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:815px;\" coordsize=\"950,815\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:815px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ54200000000DEGD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:815px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>IG2-TRENNRELAIS<br></b>Kabelfarben: ORN, GRY,<br>YEL und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:296px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ACC-TRENNRELAIS <br></b>Kabelfarben: GRN, GRY,<br>PUR und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:704px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANLASSER-TRENNRELAIS<br></b>Kabelfarben: WHT, RED,<br>GRY und LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:220px;top:754px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SICHERHEITSRELAIS<br></b>Kabelfarben: GRY, WHT,<br>BLK und GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:678px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SRS-EINHEIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:711px;top:741px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NAVIGATIONSEINHEIT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:723px;top:119px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUEREINHEIT DER AUTOMATISCHEN <br>SCHEINWERFERHÖHENVERSTELLUNG<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:528px;top:107px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUDIOGERÄT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:13px;top:646px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERGERÄT VON WEGFAHRSPERRE UND <br>SCHLÜSSELLOSEM <br>TÜRÖFFNUNGSSYSTEM<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:610px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ECM<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

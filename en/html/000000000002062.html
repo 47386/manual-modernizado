@@ -1,0 +1,199 @@
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ED4E34137300000FEAT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+i-SHIFT System Functional Test
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iR01">
+</a>
+<div class="procedure_sub_title">
+<b>
+Clutch Actuator Full Stroke Operation
+</b>
+</div>
+<div>
+By the command from the HDS, the master cylinder in the clutch actuator is moved to full stroke position.
+</div>
+<div>
+This functional test can be done under these conditions:
+</div>
+<ul type="disc">
+<li>
+<div>
+IG switch on.
+</div>
+</li>
+<li>
+<div>
+Engine not running.
+</div>
+</li>
+<li>
+<div>
+N position.
+</div>
+</li>
+<li>
+<div>
+Drivers side door closed.
+</div>
+</li>
+</ul>
+<a name="iR02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Engage Gears
+</b>
+</div>
+<div>
+By the command from the HDS, the clutch actuator and transmission shift change actuator operates, and shifts to any gear.
+</div>
+<div>
+This functional test can be done under these conditions:
+</div>
+<ul type="disc">
+<li>
+<div>
+IG switch on.
+</div>
+</li>
+<li>
+<div>
+Engine not running.
+</div>
+</li>
+<li>
+<div>
+N position.
+</div>
+</li>
+<li>
+<div>
+Synchronizing position learning has been completed.
+</div>
+</li>
+</ul>
+<div>
+NOTE:
+</div>
+<ul type="disc">
+<li>
+<div>
+Specify a gear, and forcibly shift to that gear (usual steering wheel shift switch is until 2nd).
+</div>
+</li>
+<li>
+<div>
+When diagnosing malfunction of the TCM or Motor, use it depending on the cause of malfunction.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

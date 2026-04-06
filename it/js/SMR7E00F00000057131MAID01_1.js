@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:751px;\" coordsize=\"950,751\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:751px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00F00000057131MAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:751px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:756px;top:692px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CUFFIA GIUNTO SFERICO<br></b>Controllare se ci sono<br>danni o deterioramenti.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:523px;top:704px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CONTRODADO BRACCETTO STERZO<br></b>Controllare se il controdado è allentato.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:236px;top:398px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CUFFIA<br></b>Controllare se ci sono danni <br>o deterioramenti.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:268px;top:659px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SCATOLA STERZO<br></b>Controllare se i componenti di fissaggio sono allentati.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:661px;top:449px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>GIUNTO SFERICO ESTREMITÀ BRACCETTO STERZO<br></b>Controllare se il movimento è <br>difettoso<br>o è danneggiato.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:377px;top:253px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>PIANTONE STERZO<br></b>Controllare se i componenti<br>di fissaggio sono allentati.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:704px;top:291px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SNODI STERZO<br></b>Controllare se i bulloni degli snodi sono <br>allentati o<br>se il movimento è difettoso.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:268px;top:691px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>TAMPONI SUPPORTO SCATOLA STERZO<br></b>Controllare se sono deteriorati.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1103px;\" coordsize=\"950,1103\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1103px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A14600000000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:733px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ZYLINDERKOPFDECKEL<br><a href=\"javascript:CtsProc('0','000000000001056','i000')\"></b>Ausbau,</a><br><a href=\"javascript:CtsProc('0','000000000001057','i000')\">Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:700px;top:238px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERKETTE<br><a href=\"javascript:CtsProc('0','000000000001066','i000')\"></b>Ausbau,</a><br><a href=\"javascript:CtsProc('0','000000000001067','i000')\">Einbau,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:367px;top:390px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERKETTENFÜHRUNG B<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:198px;top:478px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERGEHÄUSE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:739px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERGEHÄUSEDECKEL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:91px;top:1058px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KURBELWELLEN-RIEMENSCHEIBENSCHRAUBE<br><a href=\"javascript:CtsProc('0','000000000001068','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:376px;top:1024px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KURBELWELLEN-RIEMENSCHEIBEN<br><a href=\"javascript:CtsProc('0','000000000001068','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:482px;top:956px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUTOMATISCHER SPANNER<br><a href=\"javascript:CtsProc('0','000000000001069','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:581px;top:887px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPANNHEBEL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:830px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STEUERKETTENFÜHRUNG A<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

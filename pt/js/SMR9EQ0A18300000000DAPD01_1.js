@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1007px;\" coordsize=\"950,1007\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1007px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQ0A18300000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1007px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:363px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RETENTOR DA CAMBOTA<br>VEDANTE, TOPO DA TRANSMISSÃO<br><a href=\"javascript:CtsProc('0','000000000003022','i230')\"></b>Instalação,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:123px;top:479px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PLACA DE IMPULSO CKP<br><a href=\"javascript:CtsProc('0','000000000003027','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:277px;top:627px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ANILHAS DE IMPULSO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:312px;top:962px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SENSOR DE DETONAÇÃO<br><a href=\"javascript:CtsProc('0','000000000003114','i000')\"></b>Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:717px;top:183px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PONTE DA TAMPA DO ROLAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:727px;top:308px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>GUIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:726px;top:484px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAMBOTA<br><a href=\"javascript:CtsProc('0','000000000003017','i000')\"></b>Folga Axial,</a><br><a href=\"javascript:CtsProc('0','000000000003023','i000')\">Excentricidade,</a><br><a href=\"javascript:CtsProc('0','000000000003023','i000')\">Ovalização,</a><br><a href=\"javascript:CtsProc('0','000000000003021','i000')\">Remoção,</a><br><a href=\"javascript:CtsProc('0','000000000003022','i000')\">Instalação,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:721px;top:636px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROLAMENTOS PRINCIPAIS<br><a href=\"javascript:CtsProc('0','000000000003025','iR01')\"></b>Folga de Óleo,</a><br><a href=\"javascript:CtsProc('0','000000000003025','iR02')\">Selecção,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

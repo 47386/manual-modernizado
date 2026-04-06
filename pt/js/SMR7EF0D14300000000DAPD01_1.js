@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:879px;\" coordsize=\"950,879\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:879px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7EF0D14300000000DAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:879px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:752px;top:183px;font-weight:normal;font-size:8.18pt;\">");
+write("<nobr><b>TUBO FLEXÍVEL e LINHA DO TRAVÃO<br><a href=\"javascript:CtsProc('0','000000000000021','i000')\"></b>Inspecção,</a><br><a href=\"javascript:CtsProc('0','000000000000020','i000')\">Substituição do Tubo Flexível do Travão,<br></a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:563px;top:93px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DO SISTEMA DOS TRAVÕES<br><a href=\"javascript:CtsProc('0','000000000000029','i000')\"></b>Diagrama do Circuito,</a><br><a href=\"javascript:CtsProc('0','000000000000031','i000')\">Ensaio do Interruptor do Travão de Estacionamento,</a><br><a href=\"javascript:CtsProc('0','000000000000030','i000')\">Ensaio do Interruptor do Nível do Fluído dos Travões,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:487px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SERVO-FREIO<br><a href=\"javascript:CtsProc('0','000000000002056','i000')\"></b>Inspecção,</a><br><a href=\"javascript:CtsProc('0','000000000002118','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:731px;top:530px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO TRASEIRO<br></b>Inspecção da Pastilha e<br><a href=\"javascript:CtsProc('0','000000000000025','i000')\"> Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000000019','i000')\">Inspecção do Disco</a><br><a href=\"javascript:CtsProc('0','000000000000018','i000')\">Reparação Geral da Pinça</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:601px;top:635px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÃO DE ESTACIONAMENTO<br><a href=\"javascript:CtsProc('0','000000000002150','i000')\"></b>Inspecção e afinação,</a><br><a href=\"javascript:CtsProc('0','000000000000014','i000')\">Substituição do Cabo,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:369px;top:652px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>TRAVÕES DIANTEIROS<br></b>Inspecção da Pastilha e<br><a href=\"javascript:CtsProc('0','000000000002129','i000')\"> Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000002128','i000')\">Inspecção do Disco</a><br><a href=\"javascript:CtsProc('0','000000000002127','i000')\">Reparação Geral da Pinça</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:183px;top:758px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDAL DOS TRAVÕES<br></b>Afinação do Pedal dos Travões e do Interruptor<br><a href=\"javascript:CtsProc('0','000000000000027','i000')\"> da Posição do Pedal dos Travões,</a><br><a href=\"javascript:CtsProc('0','000000000000026','i000')\">Substituição,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:11px;top:593px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BOMBA PRINCIPAL<br><a href=\"javascript:CtsProc('0','000000000000015','i000')\"></b>Purga do Sistema dos Travões,<br></a><br><a href=\"javascript:CtsProc('0','000000000000022','i000')\">Substituição,</a><br><a href=\"javascript:CtsProc('0','000000000000023','i000')\">Desmontagem,</a><br><a href=\"javascript:CtsProc('0','000000000000024','i000')\">Montagem,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:17px;top:847px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>A ilustração apresenta a versão LHD. A versão RHD é similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1071px;\" coordsize=\"950,1071\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1071px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A18223800000KCID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1071px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:155px;top:98px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STAFFA SUPPORTO LATERALE MOTORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:614px;top:19px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STAFFA DEL SUPPORTO DEL CAMBIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:119px;top:1010px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STAFFA BRACCIO DI REAZIONE INFERIORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:523px;top:1034px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>STAFFA COMPRESSORE A/C<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:131px;top:422px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>10 x 1,25 mm<br>60 N·m <br>(6,1 kgf·m)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:29px;top:683px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>8 x 1,25 mm<br>22 N·m <br>(2,2 kgf·m)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:789px;top:994px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>10 x 1,25 mm<br>44 N·m <br>(4,5 kgf·m)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:158px;top:617px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>12 x 1,25 mm<br>74 N·m <br>(7,5 kgf·m)<br></b>Sostituire.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:459px;top:204px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>10 x 1,25 mm<br>59 N·m <br>(6,0 kgf·m)<br>Sostituire.</b><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

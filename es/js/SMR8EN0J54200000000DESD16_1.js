@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:879px;\" coordsize=\"950,879\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:879px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/SMR8EN0J54200000000DESD16.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:879px;border-color:#ffffff\">");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:672px;top:6px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ <br>DE LA TOMA DE CORRIENTE DE <br>LOS ACCESORIOS DELANTERA<br></b>Colores de los cables: BLU, WHT,<br>BLK y PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:80px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE LA TOMA DE <br>CORRIENTE TRASERA DE LOS ACCESORIOS<br></b>Colores de los cables: RED, YEL,<br>BLK y PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:438px;top:144px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE LUCES ANTINIEBLA DELANTERAS<br></b>Colores de los cables: WHT, RED,<br>BLU y WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:668px;top:673px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DEL BLOQUEO SUPER DERECHO<br></b>Colores de los cables: BLU, WHT,<br>RED, BLK y WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:668px;top:721px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DEL BLOQUEO SÚPER IZQUIERDO<br></b>Colores de los cables: ORN, WHT,<br>GRN, BLK y WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:444px;top:816px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DEL ANTIVAHO DEL ESPEJO RETROVISOR ELÉCTRICO<br></b>Colores de los cables: WHT, ORN,<br>GRY y WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:444px;top:751px;font-weight:normal;font-size:8.00pt;\">");
+write("<nobr><b>RELÉ DE BOCINA<br>(con sistema de seguridad)<br></b>Colores de los cables: WHT, GRN,<br>ORN y WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:159px;top:144px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL DEL CALEFACTOR/<br>UNIDAD DE CONTROL DEL CLIMATIZADOR<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

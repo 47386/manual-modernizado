@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:911px;\" coordsize=\"950,911\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:911px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR8EL0J54200000000DEID12.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:911px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:276px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ ESCLUSIONE IG2<br></b>Colori fili: ORN, GRY,<br>YEL e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:276px;top:71px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ ESCLUSIONE ACC<br></b>Colori fili: RED, GRY,<br>GRN e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:235px;top:796px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ ESCLUSIONE MOTORINO DI AVVIAMENTO<br></b>Colori fili: WHT, RED,<br>GRY e LT GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:235px;top:848px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELÈ DI INIBIZIONE<br></b>Colori fili: GRY, WHT,<br>BLK e GRN<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:360px;top:700px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA SRS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:435px;top:739px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA LAVAFARI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:712px;top:801px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA NAVIGATORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:732px;top:27px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA LIVELLAMENTO<br>AUTOMATICO FARI<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:626px;top:79px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNITÀ AUDIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:466px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CENTRALINA<br>IMMOBILIZZATORE/<br>SISTEMA DI ACCESSO<br>CON TELECOMANDO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

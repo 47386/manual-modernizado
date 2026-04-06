@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group2\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:863px;\" coordsize=\"950,863\">");
+write("<v:rect id=\"rect2\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:863px;\">");
+write("<img id=\"img2\" name=\"PrtImgId\" src=\"../img/SMR9EQPJ54300000000DAGD02.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:863px;border-color:#ffffff\">");
+write("<p id=\"p2_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:725px;top:273px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEIBENWASCHDÜSEN<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:20px;top:596px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WASCHANLAGENSCHLÄUCHE<br><a href=\"javascript:CtsProc('0','000000000000350','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:612px;top:708px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFERWASCHANLAGENMOTOR<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Test,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:496px;top:764px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WASCHANLAGENMOTOR<br><a href=\"javascript:CtsProc('0','000000000000348','i000')\"></b>Test,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:169px;top:697px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VORRATSBEHÄLTER/SCHEIBENWASCHANLAGE<br><a href=\"javascript:CtsProc('0','000000000000347','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:569px;top:19px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>AUTOMATISCHE BELEUCHTUNGSREGELUNG/<br>REGENSENSOR<br><a href=\"javascript:CtsProc('0','000000000000211','i000')\"></b>Eingangstest,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:679px;top:619px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHEINWERFERWASCHANLAGEN-<br>DÜSEN<br><a href=\"javascript:CtsProc('0','000000000000349','i000')\"></b>austauschen,<br></a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:834px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>Abgebildet ist ein LHD-Modell; für das RHD-Modell gilt sinngemäß das Gleiche.<br></nobr>");
+write("</p>");
+write("<p id=\"p2_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:658px;top:189px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WISCHERMOTOR<br><a href=\"javascript:CtsProc('0','000000000000353','i000')\"></b>Test,</a><br> im Werkstatthandbuch 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000354','i000')\">austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p2_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:640px;top:136px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WISCHERARME und -GESTÄNGE<br><a href=\"javascript:CtsProc('0','000000000000351','i000')\"></b>austauschen,</a><br> im Werkstatthandbuch 62SMR00B<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

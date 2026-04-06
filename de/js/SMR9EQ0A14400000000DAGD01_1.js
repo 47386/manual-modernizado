@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR9EQ0A14400000000DAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:726px;top:559px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>THERMOSTATGEHÄUSE<br><a href=\"javascript:CtsProc('0','000000000002935','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:100px;top:709px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>THERMOSTAT<br><a href=\"javascript:CtsProc('0','000000000002932','i000')\"></b>Test,</a><br><a href=\"javascript:CtsProc('0','000000000002933','i000')\">austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:749px;top:944px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KÜHLER-<br><a href=\"javascript:CtsProc('0','000000000002926','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:227px;top:883px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MOTORKÜHLMITTELTEMPERATUR<br>(ECT) SENSOR 2<br><a href=\"javascript:CtsProc('0','000000000003109','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:442px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WASSERPUMPE<br><a href=\"javascript:CtsProc('0','000000000002938','i000')\"></b>Inspektion,</a><br><a href=\"javascript:CtsProc('0','000000000002937','i000')\">austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:98px;top:812px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BAUGRUPPE A/C-KONDENSATORLÜFTER<br><a href=\"javascript:CtsProc('0','000000000002926','i000')\"></b>austauschen,</a><br><a href=\"javascript:CtsProc('0','000000000002931','i000')\">Lüftermotor Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:390px;top:932px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KÜHLERLÜFTER-BAUGRUPPE<br><a href=\"javascript:CtsProc('0','000000000002926','i000')\"></b>austauschen,</a><br><a href=\"javascript:CtsProc('0','000000000002931','i000')\">Lüftermotor Test,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:728px;top:375px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>WASSERAUSLASS<br><a href=\"javascript:CtsProc('0','000000000002936','i000')\"></b>austauschen,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:65px;top:166px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>KÜHLMITTELABSCHEIDER<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:4px;top:566px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>VERBINDUNGSLEITUNG<br><a href=\"javascript:CtsProc('0','000000000002930','i000')\"></b>austauschen,<br></a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

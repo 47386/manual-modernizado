@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:991px;\" coordsize=\"950,991\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:991px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E80A18300000000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:991px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:40px;top:595px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CUSCINETTI DI BANCO<br><a href=\"javascript:CtsProc('0','000000000001697','iR01')\"></b>Gioco olio,</a><br><a href=\"javascript:CtsProc('0','000000000001697','iR02')\">Selezione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:714px;top:322px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SPINE DI CENTRAGGIO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:632px;top:208px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BLOCCO INFERIORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:211px;top:39px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PIASTRA DI PROTEZIONE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:42px;top:733px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ALBERO MOTORE<br><a href=\"javascript:CtsProc('0','000000000001691','i000')\"></b>Gioco assiale,</a><br><a href=\"javascript:CtsProc('0','000000000001696','iT02')\">Eccentricità,</a><br><a href=\"javascript:CtsProc('0','000000000001696','iT01')\">Ovalizzazione,</a><br><a href=\"javascript:CtsProc('0','000000000001694','i000')\">Rimozione,</a><br><a href=\"javascript:CtsProc('0','000000000001695','i000')\">Installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:654px;top:554px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PARAOLIO ALBERO MOTORE,<br>LATO CAMBIO<br><a href=\"javascript:CtsProc('0','000000000001695','i220')\"></b>Installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:624px;top:701px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RONDELLE REGGISPINTA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:607px;top:35px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PIASTRA DI PROTEZIONE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:553px;top:953px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MONOBLOCCO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

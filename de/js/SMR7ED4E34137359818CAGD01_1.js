@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:943px;\" coordsize=\"950,943\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:943px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ED4E34137359818CAGD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:943px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:506px;top:179px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHALTELASTIZITÄT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:260px;top:649px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BÜRSTEN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:380px;top:665px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCAHLTSTELLANTRIEBMOTOR DREHIMPULS-/DREHRICHTUNGSSENSOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:421px;top:703px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHNECKENRADGETRIEBE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:432px;top:749px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHALTELASTIZITÄT<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:327px;top:902px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ZAHNSTANGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:452px;top:910px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHALTSTELLANTRIEBSTANGE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:50px;top:671px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SCHALTSTELLANTRIEBMOTOR<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

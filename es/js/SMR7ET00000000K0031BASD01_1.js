@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:719px;\" coordsize=\"950,719\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:719px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7ET00000000K0031BASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:719px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:17px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>NOTA: La ilustración muestra un modelo LHD; el modelo RHD es similar.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:365px;top:50px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>INFORMACIÓN DE<br>ADVERTENCIA SOBRE EL SRS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:55px;top:97px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE PRECAUCIÓN SOBRE EL AIRBAG DEL ACOMPAÑANTE<br>EN EL ASIENTO PARA NIÑOS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:26px;top:160px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE PELIGRO DEL MÓDULO DEL AIRBAG<br>DEL ACOMPAÑANTE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:303px;top:674px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE AVISO DEL MONITOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:4px;top:635px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE AVISO DE LA COLUMNA DE LA DIRECCIÓN<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:684px;top:571px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE PRECAUCIÓN DEL TENSOR DEL<br>CINTURÓN DE SEGURIDAD DELANTERO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:757px;top:402px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE PELIGRO <br>DEL MÓDULO <br>DEL AIRBAG LATERAL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:682px;top:676px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>ETIQUETA DE PRECAUCIÓN DEL TENSOR DEL<br>CINTURÓN DE SEGURIDAD DELANTERO<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

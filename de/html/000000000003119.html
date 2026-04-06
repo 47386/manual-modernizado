@@ -1,0 +1,240 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQ0A20326943364MAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Motorölstandsensor Inspektion
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+HINWEIS:
+</div>
+<ul type="disc">
+<li>
+<div>
+Mit dieser Vorgehensweise wird geprüft, ob der Motorölstandsensor normal funktioniert.
+</div>
+</li>
+<li>
+<div>
+Diese Vorgehensweise auf einem ebenen Untergrund durchführen.
+</div>
+</li>
+<li>
+<div>
+Sicherstellen, dass der Kunde vor dieser Vorgehensweise kein Öl nachgefüllt hat.
+</div>
+</li>
+<li>
+<div>
+Vor dieser Vorgehensweise auf Öldichtheit prüfen.
+</div>
+</li>
+<li>
+<div>
+Sicherstellen, dass das Fahrzeug mit dem Original-Ölmess-Stab ausgestattet ist.
+</div>
+</li>
+<li>
+<div>
+Zunächst mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert sind. Wenn temporäre DTCs oder DTCs gemeldet werden, zuerst die zugehörigen Fehlersuchverfahren und danach diese Vorgehensweise durchführen.
+</div>
+</li>
+</ul>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Den Motor anlassen. Den Motor mit 3.000 min
+<sup>
+-1
+</sup>
+ (U/min) ohne Last (Getriebe in Neutralstellung) laufen lassen, bis der Kühlerlüfter anspringt.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die Zündung ausschalten (0) und 5 Minuten warten.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Den Motorölstand mit dem Ölmess-Stab prüfen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Motorölstand in Ordnung ist und der Kunde kein Öl nachgefüllt hat, nachdem die Motoröllampe aufleuchtete, 
+<a href="javascript:CtsProc('0','000000000003118','i000')">
+den Ölstandsensor austauschen
+</a>
+ und mit 
+<a href="javascript:parent.Jmp('i040')">Schritt 4
+</a>
+ fortfahren.
+</div>
+</li>
+<li>
+<div>
+Wenn der Motorölstand nicht in Ordnung ist, 
+<a href="javascript:CtsProc('0','000000000003163','i000')">
+diesen entsprechend korrigieren,
+</a>
+ mit 
+<a href="javascript:parent.Jmp('i010')">Schritt 1
+</a>
+ fortfahren und die Prüfung wiederholen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Den Motor anlassen. Den Motor mit 3.000 min
+<sup>
+-1
+</sup>
+ (U/min) ohne Last (Getriebe in Neutralstellung) laufen lassen, bis der Kühlerlüfter anspringt.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Mit dem HDS prüfen, ob DTCs oder temporäre DTCs gespeichert wurden.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn keine DTCs gemeldet werden, ist der Motorölstandsensor in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Wenn ein DTC oder temporärer DTC gemeldet wird, mit dem zugehörigen Fehlersuchverfahren fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:1103px;\" coordsize=\"950,1103\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:1103px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E20A14100012901LAPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:1103px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:254px;top:49px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROTOR<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:399px;top:111px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>FIXADOR DO ROLAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:516px;top:159px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROLAMENTO DIANTEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:649px;top:208px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CORPO DO LADO DO ACCIONAMENTO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:824px;top:605px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>POLIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:795px;top:368px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PORCA DE FREIO DA POLIA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:427px;top:1065px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CONJUNTO DO CORPO TRASEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:195px;top:1020px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ISOLADOR DO TERMINAL<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:103px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ROLAMENTO TRASEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:72px;top:925px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PROTECÇÃO TÉRMICA<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

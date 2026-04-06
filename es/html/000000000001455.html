@@ -1,0 +1,771 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E4AK72100092084FAST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Localización de averías por DTC: P2084
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<b>
+DTC P2084:
+</b>
+<div>
+ Correlación incorrecta de los sensores EGT 1/2
+</div>
+<div>
+NOTA: Antes de proceder a la localización de averías, registre todos los datos fijos y 
+<a href="javascript:CtsProc('0','000000000001299','i000')">
+revise la Información general sobre la localización de averías.
+</a>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ponga en marcha el motor, y manténgalo en ralentí hasta que la temperatura del refrigerante del motor sea 70°C°
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Mantenga el motor a una velocidad de 2.000 rpm (min
+<sup>
+-1
+</sup>
+) sin carga (en punto muerto) durante 3 minutos.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Anote el valor de la TEMPERATURA DE GAS DE ESCAPE (EGT) 1 y el de la TEMPERATURA DEL GAS DE ESCAPE (EGT) 2 en la LISTA DE DATOS con el HDS.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Compuebe el valor de los dos sensores.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Difiere algún valor de los sensores en más de 50° C° de 150 °C°?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Sustituya el sensor que difiera en más de 50 °C° de 150 °C°, y a continuación,vaya a 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i050')">Paso 5
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Efectúe la prueba de carretera en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+Caja de cambios en 2ª
+</div>
+</li>
+<li>
+<div>
+Velocidad del vehículo de 70 km/h
+</div>
+</li>
+<li>
+<div>
+Conduzca durante 30 segundos o más
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Anote el valor de la TEMPERATURA DE GAS DE ESCAPE (EGT) 1 y el de la TEMPERATURA DEL GAS DE ESCAPE (EGT) 2 en la LISTA DE DATOS con el HDS.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Compuebe el valor de los dos sensores.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Difiere algún valor de los sensores en más de 20° C° de 260 °C°?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Sustituya el sensor que difiera en más de 20 °C° de 260 °C°, y a continuación,vaya a 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i080')">Paso 8
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Ponga en marcha el motor, y manténgalo en ralentí hasta que la temperatura del refrigerante del motor sea 70°C°
+</div>
+</li>
+</ol>
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Efectúe la prueba de carretera en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motor del refrigerante (SENSOR ECT 1) está por encima de 70 °C °
+</div>
+</li>
+<li>
+<div>
+En carretera lisa
+</div>
+</li>
+<li>
+<div>
+Caja de cambios en 2ª
+</div>
+</li>
+<li>
+<div>
+Velocidad del vehículo de 70 km/h
+</div>
+</li>
+<li>
+<div>
+Conduzca durante 30 segundos o más
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+Compruebe la  TEMPERATURA DE LOS GASES DE ESCAPE 1 (EGT) en LISTA DE DATOS con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica aproximadamente 260° C° o más?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i110')">Paso 11
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Continúe conduciendo hasta que la temperatura sea superior a 260° C,° y a continuación, vaya a
+<a href="javascript:parent.Jmp('i110')">Paso 11
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i110">
+</a>
+<ol>
+<li value="11">
+<div>
+Efectúe la prueba de carretera en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motor del refrigerante (SENSOR ECT 1) está por encima de 70 °C °
+</div>
+</li>
+<li>
+<div>
+En carretera lisa
+</div>
+</li>
+<li>
+<div>
+Caja de cambios en 2ª
+</div>
+</li>
+<li>
+<div>
+Desacelere ( con la válvula del acelerador completamente cerrada) desde una velocidad de motor de 3.500 rpm (min
+<sup>
+-1
+</sup>
+) sin aplicar los frenos.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="12">
+<div>
+Monitorice el ESTADO OBD para DTC P2084 en el menú de DTC con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica la pantalla que NO se ha SUPERADO la comprobación?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+<a href="javascript:CtsProc('0','000000000001432','i000')">
+Sustituya el sensor EGT 2,
+</a>
+ y vaya a 
+<a href="javascript:parent.Jmp('i130')">Paso 13
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Si en la pantalla se indica que es correcto, fallo intermitente, el sistema funciona correctamente en este momento. Compruebe la existencia de conexiones defectuosas o terminales sueltos en los sensores EGT 1 y 2 y en el PCM. Si NO se ha TERMINADO la comprobación, vaya a 
+<a href="javascript:parent.Jmp('i080')">Paso 8
+</a>
+ y vuelva a efectuarla.
+</div>
+</td>
+</tr>
+</table>
+<a name="i130">
+</a>
+<ol>
+<li value="13">
+<div>
+Reinicie el ECM con el HDS.
+</div>
+</li>
+</ol>
+<a name="i140">
+</a>
+<ol>
+<li value="14">
+<div>
+Ponga en marcha el motor, y manténgalo en ralentí hasta que la temperatura del refrigerante del motor sea 70°C°
+</div>
+</li>
+</ol>
+<a name="i150">
+</a>
+<ol>
+<li value="15">
+<div>
+Efectúe la prueba de carretera en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motor del refrigerante (SENSOR ECT 1) está por encima de 70 °C °
+</div>
+</li>
+<li>
+<div>
+En carretera lisa
+</div>
+</li>
+<li>
+<div>
+Caja de cambios en 2ª
+</div>
+</li>
+<li>
+<div>
+Velocidad del vehículo de 70 km/h
+</div>
+</li>
+<li>
+<div>
+Conduzca durante 30 segundos o más
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i160">
+</a>
+<ol>
+<li value="16">
+<div>
+Compruebe la  TEMPERATURA DE LOS GASES DE ESCAPE 1 (EGT) en LISTA DE DATOS con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica aproximadamente 260° C° o más?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i170')">Paso 17
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Continúe conduciendo hasta que la temperatura sea superior a 260° C,° y a continuación, vaya a
+<a href="javascript:parent.Jmp('i170')">Paso 17
+</a>
+</div>
+</td>
+</tr>
+</table>
+<a name="i170">
+</a>
+<ol>
+<li value="17">
+<div>
+Efectúe la prueba de carretera en las condiciones siguientes:
+</div>
+<ul type="disc">
+<li>
+<div>
+La temperatura del motor del refrigerante (SENSOR ECT 1) está por encima de 70 °C °
+</div>
+</li>
+<li>
+<div>
+En carretera lisa
+</div>
+</li>
+<li>
+<div>
+Caja de cambios en 2ª
+</div>
+</li>
+<li>
+<div>
+Desacelere ( con la válvula del acelerador completamente cerrada) desde una velocidad de motor de 3.500 rpm (min
+<sup>
+-1
+</sup>
+) sin aplicar los frenos.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i180">
+</a>
+<ol>
+<li value="18">
+<div>
+Compruebe la existencia de DTC permanentes o temporales con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Se produce la indicación del DTC P2084?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Compruebe la existencia de cables sueltos o conexiones defectuosas en el sensor 1y 2 del EGT y el ECM y, a continuación, vaya a 
+<a href="javascript:parent.Jmp('i010')">Paso 1
+</a>
+.
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Vaya a 
+<a href="javascript:parent.Jmp('i190')">Paso 19
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+<a name="i190">
+</a>
+<ol>
+<li value="19">
+<div>
+Monitorice el ESTADO OBD para DTC P2084 en el menú de DTC con el HDS.
+</div>
+</li>
+</ol>
+<table class="Viewer" frame="void" style="margin-left:40px;">
+<tr>
+<td class="ViewerTD">
+<i>
+<div>
+<i>
+¿Indica la pantalla si se ha SUPERADO la comprobación?
+</i>
+</div>
+</i>
+</td>
+</tr>
+</table>
+<table class="Viewer" frame="void" style="margin-left:50px;">
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+SÍ
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+La localización de averías está terminada. Si se produce la indicación de algún otro DTC temporal o permanente en 
+<a href="javascript:parent.Jmp('i180')">Paso 18
+</a>
+, vaya a la localización de averías del DTC indicado.■
+</div>
+</td>
+</tr>
+<tr>
+<td width="30" class="ViewerTD">
+<b>
+NO
+</b>
+</td>
+<td width="10" class="ViewerTD" align="center">-
+</td>
+<td class="ViewerTD">
+<div>
+Si la pantalla indica FAILED (fallo) , compruebe la existencia de conexiones defectuosas o de terminales sueltos en el sensor EGT 1, sensor EGT 2 y en el ECM y, a continuación, vaya a 
+<a href="javascript:parent.Jmp('i010')">Paso 1
+</a>
+. Si en la pantalla se indica NOT COMPLETED (sin completar), vaya a 
+<a href="javascript:parent.Jmp('i140')">Paso 14
+</a>
+.
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

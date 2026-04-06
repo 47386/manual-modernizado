@@ -1,0 +1,369 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46636200000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias do Sistema do Imobilizador
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Verificação Geral antes de efectuar o Diagnóstico de Avarias
+</b>
+</div>
+<div>
+Antes de efectuar o diagnóstico de avarias ao sistema do imobilizador, verifique os seguintes itens gerais e resolva-os, se aplicável:
+</div>
+<ul type="disc">
+<li>
+<div>
+A bateria está fraca; carregue totalmente a bateria e, em seguida, efectue o diagnóstico de avarias ao sistema do imobilizador.
+</div>
+</li>
+<li>
+<div>
+A chave da ignição não é uma peça genuína Honda; utilize o registo em branco da chave aprovada pela Honda e, em seguida, efectue o diagnóstico de avarias do sistema do imobilizador.
+</div>
+</li>
+<li>
+<div>
+É utilizada uma anilha para chave, ou chaves, ou um porta-chaves; retire daí a chave e efectue o diagnóstico de avarias do sistema do imobilizador com apenas uma chave.
+</div>
+</li>
+<li>
+<div>
+A peça eléctrica de mercado secundário está fixa; retire-a e, em seguida, efectue o diagnóstico de avarias ao sistema do imobilizador.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Diagnóstico de Avarias por Sintomas pelo Padrão de Iluminação do Indicador do Imobilizador
+</b>
+</div>
+<div>
+O padrão do indicador do imobilizador pode ajudar a efectuar um diagnóstico de avarias ao estado do sistema do imobilizador. Seguem-se as descrições dos quatro padrões possíveis:
+</div>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Operação normal
+</b>
+</div>
+<br>
+<div>
+Se o código do imobilizador for identificado, o indicador do imobilizador acende-se durante 2 segundos e, em seguida, apaga-se depois de LIGAR a ignição (II).
+</div>
+<div>
+O indicador do imobilizador não se acende quando a ignição está DESLIGADA.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Código do imobilizador não identificado
+</b>
+</div>
+<br>
+<div>
+Se o código do imobilizador não for identificado, o indicador do imobilizador acende-se durante 2 segundos e, em seguida, cintila depois de LIGAR a ignição (II).
+</div>
+<div>
+O indicador do imobilizador cintila dez vezes e, em seguida, apaga-se quando a ignição está DESLIGADA.
+</div>
+<a name="iT03">
+</a>
+<br>
+<div class="topic_title">
+<b>
+O indicador do imobilizador não se acende
+</b>
+</div>
+<br>
+<div>
+Se o indicador do imobilizador não se acender depois de LIGAR a ignição (II), pode haver uma interrupção ou curto-circuito nas linhas F-CAN entre o ECM e o módulo de controlo do indicador. Verifique a lâmpada indicadora de mau funcionamento (MIL). Se a MIL permanecer acesa, 
+<a href="javascript:CtsProc('0','000000000000775','i000')">
+passe ao diagnóstico de avarias do sistema da PGM-FI.
+</a>
+</div>
+<a name="iT04">
+</a>
+<br>
+<div class="topic_title">
+<b>
+O indicador do imobilizador não apaga
+</b>
+</div>
+<br>
+<div>
+Se o indicador do imobilizador não se apagar depois de LIGAR (II) a ignição, 
+<a href="javascript:CtsProc('0','000000000004799','i000')">
+efectue a função de auto-diagnóstico do módulo de controlo do indicador (conta-rotações).
+</a>
+ Se o circuito principal do indicador estiver bom, efectue a VERIFICAÇÃO DO SISTEMA com o HDS. Antes de efectuar o diagnóstico de avarias ao sistema do imobilizador, verifique os seguintes pontos gerais e resolva-os, se aplicável.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Diagnóstico de Avarias por Sintomas Utilizando Funções de Circuitos Avariados
+</b>
+</div>
+<div>
+Se ocorrer uma avaria no circuito do imobilizador, utilize a tabela para ter uma referência cruzada da função de avarias à(s) linha(s) que deve ser verificada:
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000000794','1');">
+<img src="../tn/SMR7E00J46636200000BBPD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Diagnóstico de Avarias por Sintomas Utilizando Funções de Circuitos Avariados
+</b>
+</div>
+<div>
+Se ocorrer uma avaria no circuito do imobilizador, utilize a tabela para ter uma referência cruzada da função de avarias à(s) linha(s) que deve ser verificada:
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E00J46636200000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Verificação do Sistema
+</b>
+</div>
+<div>
+NOTA: O HDS pode ser utilizado para verificar o estado do registo da chave do imobilizador, o registo do ECM e a comunicação entre a chave da ignição e a unidade de controlo sem chave-imobilizador efectuando uma VERIFICAÇÃO DO SISTEMA.
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à ficha de análise de dados e, em seguida, LIGUE a ignição (II).
+</div>
+<div>
+NOTA: Se o HDS não comunicar com o veículo, 
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+passe ao diagnóstico de avarias do circuito da DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Seleccione ‘‘IMOBILIZADOR'' no ‘‘MENU DE SELECÇÃO DO SISTEMA'' e, em seguida, entre em ‘‘CONFIGURAÇÃO DO IMOBILIZADOR''.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Efectue a ‘‘VERIFICAÇÃO DO SISTEMA&quot; com o HDS. Se existir um número de verificação do sistema, efectue o diagnóstico de avarias do item indicado.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Efectue o diagnóstico de avarias por sintomas.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

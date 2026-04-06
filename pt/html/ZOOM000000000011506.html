@@ -1,0 +1,2574 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7ET3E34137300000BAPT10
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+function jsResetImage() {
+	_prResetPosition();
+	_prResetImage();
+	return;
+}
+function jsResizeImage(rate) {
+	_prResizeImage(rate);
+	return;
+}
+var z,x,y;
+var gImageGroupList_	= new Array;
+var gIdx_				= 0;
+function _prImageGroupStruct(group_size,rect_size,img_size,p_tag,tp_obj,bl_obj,ul_obj) {
+	this.group		= group_size;
+	this.rect		= rect_size;
+	this.img		= img_size;
+	this.p			= p_tag;
+	this.tp			= tp_obj;
+	this.bl			= bl_obj;
+	this.ul			= ul_obj;
+}
+function _prSizeStruct(newObj,newWidth,newHeight) {
+	this.obj		= newObj;
+	this.width		= newWidth;
+	this.height		= newHeight;
+}
+function _prPTagStruct(newObj,newLeft,newTop,newFontSize) {
+	this.obj		= newObj;
+	this.left		= newLeft;
+	this.top		= newTop;
+	this.fontsize	= newFontSize;
+}
+function _prLineTagStruct(newObj,newFromx,newFromy, newTox, newToy) {
+	this.obj			= newObj;
+	this.fromx		= newFromx;
+	this.fromy		= newFromy;
+	this.tox		= newTox;
+	this.toy		= newToy;
+}
+function _prTPTagStruct(newObj,newFontSize) {
+	this.obj		= newObj;
+	this.fontsize	= newFontSize;
+}
+function _prInitImageInfo(rate) {
+	var endFlag = false;
+	gDefaultRate_ = rate;
+	gIdx_ = 0;
+	var save_i;
+	var iii = 100;
+	for(var i = 1; !endFlag; i++){
+		save_i = i;
+		var groupObject = document.getElementById("group" + i);
+		if(groupObject == null){
+			groupObject = document.getElementById("group" + iii);
+			if(groupObject == null){
+				groupObject = document.getElementById("group" + i + "_noresize");
+				if(groupObject == null){
+					endFlag = true;	
+					break;
+				}
+				continue;
+			}
+			else {
+				i = iii
+				iii++;
+			}
+		}
+		var groupWidth	= _prRemoveUnit(groupObject.style.width);
+		var groupHeight	= _prRemoveUnit(groupObject.style.height);
+		var rectObject	= document.getElementById("rect" + i);
+		var rectWidth	= null;
+		var rectHeight	= null;
+		if(rectObject != null){
+			rectWidth	= _prRemoveUnit(rectObject.style.width);
+			rectHeight	= _prRemoveUnit(rectObject.style.height);
+		}
+		var imgObject	= document.getElementById("img" + i);
+		var imgWidth	= null;
+		var imgHeight	= null;
+		if(imgObject != null){
+			imgWidth	= _prRemoveUnit(imgObject.style.width);
+			imgHeight	= _prRemoveUnit(imgObject.style.height);
+		}
+		var pObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var pTag = document.getElementById("p" + i + "_" + j);
+			if(pTag == null){
+				if(j == 1){
+					endFlag = true;
+				}
+				break;
+			}
+			if(j == 1){
+				pObject		= new Array();
+			}
+			pObject[j-1] = new _prPTagStruct(
+									pTag,
+									_prRemoveUnit(pTag.style.left),
+									_prRemoveUnit(pTag.style.top),
+									_prRemoveUnit(pTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var tpObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var tpTag = document.getElementById("tp" + i + "_" + j);
+			if(tpTag == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				tpObject		= new Array();
+			}
+			tpObject[j-1] = new _prTPTagStruct(
+									tpTag,
+									_prRemoveUnit(tpTag.style.fontSize)
+								);
+		}
+		endFlag = false;
+		var blObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var baseline = document.getElementById("bl" + i + "_" + j);
+			if(baseline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				blObject		= new Array();
+			}
+			blObject[j-1] = new _prLineTagStruct(
+									baseline,
+									(baseline.from+'').substring(0,(baseline.from+'').indexOf(",")),
+									(baseline.from+'').substring((baseline.from+'').indexOf(",")+1,(baseline.from+'').length),
+									(baseline.to+'').substring(0,(baseline.to+'').indexOf(",")),
+									(baseline.to+'').substring((baseline.to+'').indexOf(",")+1, (baseline.to+'').length)
+								);
+		}
+		endFlag = false;
+		var ulObject		= null;
+		for(var j = 1; !endFlag; j++){
+			var underline = document.getElementById("ul" + i + "_" + j);
+			if(underline == null){
+				if(j == 1){
+					endFlag = true;  
+				}
+				break;
+			}
+			if(j == 1){
+				ulObject		= new Array();
+			}
+			ulObject[j-1] = new _prLineTagStruct(
+									underline,
+									(underline.from+'').substring(0,(underline.from+'').indexOf(",",0)),
+									(underline.from+'').substring((underline.from+'').indexOf(",")+1,(underline.from+'').length),
+									(underline.to+'').substring(0,(underline.to+'').indexOf(",")),
+									(underline.to+'').substring((underline.to+'').indexOf(",")+1, (underline.to+'').length)
+								);
+		}
+		endFlag = false;
+		gImageGroupList_[gIdx_] = new _prImageGroupStruct (
+			new _prSizeStruct(groupObject,groupWidth,groupHeight),
+			new _prSizeStruct(rectObject,rectWidth,rectHeight),
+			new _prSizeStruct(imgObject,imgWidth,imgHeight),
+			pObject,
+			tpObject,
+			blObject,
+			ulObject
+		);
+		gIdx_++;
+		i = save_i;
+	}
+	return ;
+}
+function _prResizeImage(rate) {
+	var  hei = 0;
+	for(var i=0; i<gImageGroupList_.length; i++){
+		if(gImageGroupList_[i].group != null){
+			var obj = gImageGroupList_[i].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[i].rect != null){
+			var obj = gImageGroupList_[i].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].img != null){
+			var obj = gImageGroupList_[i].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[i].p != null){
+			var obj = gImageGroupList_[i].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[i].tp != null){
+			var obj = gImageGroupList_[i].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[i].bl != null){
+			var obj = gImageGroupList_[i].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[i].ul != null){
+			var obj = gImageGroupList_[i].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	}
+	return hei;
+}
+function _prResizeImageAt(idx,rate) {
+	var  hei = 0;
+		if(gImageGroupList_[idx].group != null){
+			var obj = gImageGroupList_[idx].group;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+			obj.obj.coordsize = (obj.width * rate) + ',' + (obj.height * rate);
+			hei = obj.height * rate
+		}
+		if(gImageGroupList_[idx].rect != null){
+			var obj = gImageGroupList_[idx].rect;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].img != null){
+			var obj = gImageGroupList_[idx].img;
+			obj.obj.style.width = (obj.width * rate) + 'px';
+			obj.obj.style.height = (obj.height * rate) + 'px';
+		}
+		if(gImageGroupList_[idx].p != null){
+			var obj = gImageGroupList_[idx].p;
+			for(var j=0; j<obj.length; j++){
+				var p = obj[j];
+				if(p.left != ""){
+					p.obj.style.left		= (p.left * rate) + 'px';
+				}
+				if(p.top != ""){
+					p.obj.style.top			= (p.top * rate) + 'px';
+				}
+				if(p.fontsize != ""){
+					p.obj.style.fontSize	= (p.fontsize * rate) + 'pt';
+				}
+			}
+		}
+		if(gImageGroupList_[idx].tp != null){
+			var obj = gImageGroupList_[idx].tp;
+			for(var j=0; j<obj.length; j++){
+				var tp = obj[j];
+				if(tp.fontsize != ""){
+					if(tp.fontsize*rate < 5.5){
+						tp.obj.style.fontSize	= '5.5pt';
+					}
+					else{
+						tp.obj.style.fontSize	= (tp.fontsize * rate) + 'pt';
+					}
+				}
+			}
+		}
+		if(gImageGroupList_[idx].bl != null){
+			var obj = gImageGroupList_[idx].bl;
+			for(var j=0; j<obj.length; j++){
+				var bl = obj[j];
+				var fromx,tox;
+				if(bl.fromx != ""){
+					fromx = bl.fromx * rate;
+					bl.obj.from	= fromx + "," + (bl.fromy * rate);
+				}
+				if(bl.tox != ""){
+					tox = bl.tox * rate;
+					if((0 >=tox-fromx) && (fromx-tox) < 1) {
+						tox = tox-1;
+					}
+					if((0 <= tox-fromx) && (tox-fromx) < 1) {
+						tox = tox+1;
+					}
+					bl.obj.to	= tox + "," + (bl.toy * rate);
+				}
+			}
+		}
+		if(gImageGroupList_[idx].ul != null){
+			var obj = gImageGroupList_[idx].ul;
+			for(var j=0; j<obj.length; j++){
+				var ul = obj[j];
+				if(ul.fromx != ""){
+					ul.obj.from	= (ul.fromx * rate) + "," + (ul.fromy * rate);
+				}
+				if(ul.tox != ""){
+					ul.obj.to	= (ul.tox * rate) + "," + (ul.toy * rate);
+				}
+			}
+		}
+	return hei;
+}
+function _prRemoveUnit(src){
+	var dst = src.substring(0,src.length-2);
+	return dst;
+}
+-->
+</script>
+<script>
+<!--
+var   totalImg = 0;
+var   dispNum=1;
+function prOnLoadProc() {
+	_prInitImageInfo(100);
+	_prResizeImage(100/100);
+	divBody.style.display = "block"
+	return;
+}
+function PrintFunc()
+{
+	divBody.style.display = "none";
+	var  img_hei = _prResizeImage(67/100);
+	divBody.style.display = "block";
+	var  graphTd = document.getElementById("graphTd");
+	if(graphTd.width == "100%")
+	{
+      var   current_pos;
+      var   img_pos = 0;
+         current_pos = graphTd.offsetTop;
+		var pageCnt = Math.floor(current_pos/950);
+		var img_pos = current_pos - (pageCnt*950);
+		if(img_pos+img_hei > 950)
+		{
+			var  pageElement = document.getElementById("page_onoff");
+			if(pageElement != null)
+			{
+				pageElement.style.display = "block";
+			}
+		}
+	}
+	window.print();
+	divBody.style.display = "none";
+	_prResizeImage(100/100);
+	divBody.style.display = "block";
+	window.scrollTo(0,0);
+}
+function CloseFunc()
+{
+	window.close();
+}
+function JumpFunc(strJump)
+{
+	window.location.replace(strJump+"?"+strPara);
+}
+//-->
+</script>
+<body onLoad="prOnLoadProc();" style="font-family:sans-serif;">
+<div id="divBody" style="display:none">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div style="position:absolute;right=10;">
+<input type="image" src="../img/PRINT_PREVIEW.PNG" onClick="PrintFunc()">
+<input type="image" src="../img/GL_PREV_DISABLE.PNG" onClick="BackFunc()" disabled>
+<input type="image" src="../img/GL_NEXT_DISABLE.PNG" onClick="NextFunc()" disabled>
+<input type="image" src="../img/GL_CANCEL.PNG" onClick="CloseFunc()">
+</div><br>
+<div class="top_title">
+Índice de Acção de Avaria Segura do Sistema i-SHIFT
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="15%">
+<col width="45%">
+<col width="39%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Código de Avaria SAE (DTC)
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Critério de Avaria
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Acção de Avaria Segura
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0504
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela informação do travão no sinal F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+O sinal do travão recebido não mudou durante 3 ciclos de condução ou mais.
+</div>
+<div>
+O ciclo de condução i-SHIFT é estabelecido sob estas condições (Uma vez que todas as condições mencionadas estiverem cumpridas, é estabelecido 1 ciclo de condução.):
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Passado dois minutos após o interruptor da ignição estar LIGADO.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+A mudança é alterada para 3ª ou superior.
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+A velocidade chegou aos 16 km/h ou superior.
+</div>
+</td>
+</tr>
+</table>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+É impossível conduzir no modo manual.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0512
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo Sinal do Interruptor do Motor de Arranque (STS).
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0562
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela entrada de voltagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal VBATT (+B) quando a voltagem atinge 9 V ou menos.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador i-SHIFT liga-se (Quando a voltagem diminui, ocorrem sintomas tais como atraso no funcionamento do motor).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0563
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela entrada de voltagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal VBATT (+B) quando a voltagem atinge 28 V ou mais.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0603
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela função de verificação do circuito interno do TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Efectua a verificação ROMSUM da Memória &quot;Keep Alive&quot; (KAM) e assume uma avaria se o valor RONSUM não for igual.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+O Controlo termina e a condição quando uma avaria é detectada (posição da mudança, posição da embraiagem) é mantida.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0605
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela função de verificação do circuito interno do TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Verifica o RONSUM na parte regravável do ROM e assume a avaria se o valor RONSUM não for igual.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+O Controlo termina e a condição quando uma avaria é detectada (posição da mudança, posição da embraiagem) é mantida.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0666
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do sensor de temperatura interior do TCM.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor de entrada é superior ou inferior que o valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0702
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Determinado pelo valor de entrada da voltagem VCC.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor de entrada é superior ou inferior que o valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+O Controlo termina e a condição quando uma avaria é detectada (posição da mudança, posição da embraiagem) é mantida.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0780
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela posição das mudanças ao alterar de mudança.
+</div>
+<ul type="disc">
+<li>
+<div>
+Mesmo que a posição de sincronização não seja alcançada, mas alcançar a parte de ligação na mudança falhou pelo menos três vezes.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0810
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor do sensor da posição do actuador da embraiagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor do sensor de posição não muda mesmo que o actuador da embraiagem tenha sido comandado para funcionar.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Quando o veículo excede uma certa velocidade (varia com a mudança retida), a posição do actuador da embraiagem quando a avaria ocorreu é retida e é feito o controlo.
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a uma certa velocidade, o modo passa a Ponto-morto.
+</div>
+</li>
+<li>
+<div>
+Embora o motor possa voltar a arrancar, o tempo percorrido para arrancar o motor após pressionar o interruptor do motor de arranque é superior ao que é normal (cerca de 1 seg.).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0882
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor de entrada da voltagem e o valor do sinal F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor de entrada da voltagem no TCM é de quase 0 V, mesmo que o sinal IG1 (valor F-CAN recebido) do ECM esteja LIGADO.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador i-SHIFT acende (Se o sinal F-CAN do ECM é enviado continuamente, o controlo continua até o IG1 no ECM DESLIGAR).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0883
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor de entrada da voltagem e o valor do sinal F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor de entrada da voltagem no TCM é quase igual ou superior ao da voltagem da bateria, mesmo que o sinal IG1 (valor F-CAN recebido) do ECM esteja DESLIGADO.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0904
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DE IMPULSOS.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DE IMPULSOS está aberta.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DE IMPULSOS tem cerca de 0 V (Curto-circuito à massa).
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DE IMPULSOS é quase idêntico á voltagem da bateria (BAT fraca).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0909
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo alcance do ponto-morto.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o alcance do ponto-morto do actuador de mudança é de 15,5 mm ou superior ou 25,5 mm ou inferior
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0910
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+A saída do sensor não altera mesmo que o valor de saída na posição do actuador de selecção não detecte uma avaria eléctrica no sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0914
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de IMPULSOS DAS MUDANÇAS.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de IMPULSOS DAS MUDANÇAS está aberta.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de IMPULSOS DAS MUDANÇAS tem cerca de 0 V (curto-circuito à massa).
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de IMPULSOS DAS MUDANÇAS é quase idêntica á voltagem da bateria (curto-circuito à BAT).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria. Liga ou desliga a embraiagem pela velocidade do veículo.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0919
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo tempo gasto no processo de aprendizagem da posição em ponto-morto.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando não é possível uma confirmação da posição em ponto-morto.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0920
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do sensor.
+</div>
+<ul type="disc">
+<li>
+<div>
+A saída do sensor não altera mesmo que o valor de saída na posição do actuador das mudanças não detecte uma avaria eléctrica no sensor.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P0942
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela acção na mudança.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando a posição de sincronização não pode ser alcançada mesmo que a mudança/selecção seja accionada e a acção na mudança seja feita na condição de parado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P16C0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O CPU efectua o auto-diagnóstico enquanto o interruptor da ignição está LIGADO e determina se a avaria foi registada ou não. 
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fim de controlo à excepção de alteração de informação.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor do sensor da posição do actuador da embraiagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+O valor do sensor da posição do actuador da embraiagem está além do alcance do valor designado.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Quando o veículo excede uma certa velocidade (varia com a mudança retida), a posição do actuador da embraiagem quando a avaria ocorreu é retida e é feito o controlo.
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a uma certa velocidade, o modo passa a Ponto-morto.
+</div>
+</li>
+<li>
+<div>
+Embora o motor possa voltar a arrancar, o tempo percorrido para arrancar o motor após pressionar o interruptor do motor de arranque é superior ao que é normal (cerca de 1 seg.).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor da temperatura da embraiagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se o valor da temperatura da embraiagem atingir 300 °C  ou mais.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Fim da aderência.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico quando o Processo de Aprendizagem da Posição 3 de Contacto da Embraiagem não foi completado ou em progresso.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E8
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal VSPOUT.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o sinal VSPOUT é de 0 V ou aproximadamente igual à voltagem da bateria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19E9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do TRAVÃO ECU AND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o sinal do TRAVÃO ECU AND é de 0 V ou aproximadamente igual à voltagem da bateria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor de entrada de retorno do sinal de Activação do Motor de Arranque.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o valor do sinal de Activação do Motor de Arranque é de 0 V ou aproximadamente igual à voltagem da bateria.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Protecção do software de diagnóstico não activa.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+<div>
+(Não consegue efectuar os comandos e a alteração necessária para a inspecção da CHAVE.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de COMUTAÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando o sinal de COMUTAÇÃO DA ALIMENTAÇÃO DO SENSOR tem cerca de 0 V (Curto-circuito à massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19ED
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de COMUTAÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de COMUTAÇÃO DO SENSOR está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de COMUTAÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de COMUTAÇÃO DA ALIMENTAÇÃO DO SENSOR é quase idêntica á voltagem da bateria (BAT fraca).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19EF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal GND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de COMUTAÇÃO DO GND DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de COMUTAÇÃO DO GND DO SENSOR está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F0
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de MUDANÇA DE DIRECÇÃO.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de MUDANÇA DE DIRECÇÃO tem cerca de 0 V (Curto-circuito à massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F2
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de MUDANÇA DE DIRECÇÃO.
+</div>
+</li>
+<li>
+<div>
+Quando o sinal de MUDANÇA DE DIRECÇÃO é quase idêntico á voltagem da bateria (BAT fraca).
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de MUDANÇA DE DIRECÇÃO está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F3
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando o sinal de SELECÇÃO DO SENSOR tem cerca de 0 V (Curto-circuito à massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F4
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DO SENSOR está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F5
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal da ALIMENTAÇÃO.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DA ALIMENTAÇÃO DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DA ALIMENTAÇÃO DO SENSOR é quase idêntica á voltagem da bateria (BAT fraca).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F6
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal GND.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DO GND DO SENSOR.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DO SENSOR está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F7
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitoriza o sinal de SELECÇÃO DA DIRECÇÃO.
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DE DIRECÇÃO tem cerca de 0 V (Curto-circuito à massa).
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19F9
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo sinal do SENSOR.
+</div>
+<ul type="disc">
+<li>
+<div>
+Monitor do sinal de SELECÇÃO DA DIRECÇÃO.
+</div>
+</li>
+<li>
+<div>
+Quando o sinal de SELECÇÃO DA DIRECÇÃO representa uma voltagem bruta da bateria (Curto-circuito à BAT).
+</div>
+</li>
+<li>
+<div>
+Quando a linha para o sinal de SELECÇÃO DA DIRECÇÃO está aberta.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FA
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal F-CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+O sinal de instabilidade do binário recebido no TCM está definido para 10 minutos ou mais.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FB
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico quando o Processo de Aprendizagem da Posição 1/2 de Contacto da Embraiagem foi completo ou em progresso.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando todas as fases do processo de aprendizagem não foram completadas.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+<div>
+(Só a 1ª ou a marcha-atrás podem ser engrenadas. Conduza a uma velocidade reduzida.)
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FC
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico quando o Processo de Aprendizagem da Posição do Actuador das Mudanças e da Posição de Sincronização é finalizado ou em progresso.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Controlo finalizado (O arranque do motor é impossível).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FD
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor do Processo de Aprendizagem da Posição do Actuador das Mudanças.
+</div>
+<ul type="disc">
+<li>
+<div>
+A Posição das Mudanças 1/3/5 é +11,4 mm ou superior, +7,4 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição das Mudanças 2/4/6/R é −6,2 mm ou superior, −10,2 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição das Mudanças 1/2 é −2,8 mm ou superior, −5,8 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição das Mudanças 3/4/ é 2,1 mm ou superior, −0,9 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição das Mudanças 5/6/ é +7,6 mm ou superior, +4,6 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição das Mudança R é +11,95 mm ou superior, +9,45 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+O Carreto da Posição do Sincronizador 1/3/5 é +8,2 mm ou superior, +0,2 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+O Carreto da Posição do Sincronizador 2/4/6 é +1,1 mm ou superior, −6,9 mm ou inferior.
+</div>
+</li>
+</ul>
+<div>
+É registado um código de avaria se existir uma das condições acima referidas.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FE
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor do processo de aprendizagem da Posição de Contacto da Embraiagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+A Posição de contacto da Embraiagem (longo prazo) é 14 mm ou superior ou 7 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição de contacto da Embraiagem (médio prazo) é 14 mm ou superior, ou 7 mm ou inferior.
+</div>
+</li>
+<li>
+<div>
+A Posição de Contacto da Embraiagem (curto prazo) é 14 mm ou superior, ou 7 mm ou inferior.
+</div>
+</li>
+</ul>
+<div>
+É registado um código de avaria se existir uma das condições acima referidas.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P19FF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor do Coeficiente da Fricção.
+</div>
+<ul type="disc">
+<li>
+<div>
+O Coeficiente de Fricção #1 é 865 ou superior, ou 171 ou inferior.
+</div>
+</li>
+<li>
+<div>
+O Coeficiente de Fricção #2 é 865 ou superior, ou 171 ou inferior.
+</div>
+</li>
+<li>
+<div>
+O Coeficiente de Fricção #3 é 865 ou superior, ou 171 ou inferior.
+</div>
+</li>
+<li>
+<div>
+O Coeficiente de Fricção Geral é 865 ou superior, ou 171 ou inferior.
+</div>
+</li>
+</ul>
+<div>
+É registado um código de avaria se existir uma das condições acima referidas.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2785
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor da temperatura do motor e pelo valor de entrada do sensor PCB.
+</div>
+<ul type="disc">
+<li>
+<div>
+A temperatura do motor é de 195 °C ou superior.
+</div>
+</li>
+<li>
+<div>
+O valor de entrada do sensor PCB é de 118 °C ou superior.
+</div>
+</li>
+</ul>
+<div>
+É registado um código de avaria se existir uma das condições acima referidas.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+O limite das mudanças (apenas da 1ª à 5ª e R) pelo esquema das mudanças para uso durante a ocorrência da avaria.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2786
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pela energia de entrada do actuador das mudanças (valor calculado).
+</div>
+<ul type="disc">
+<li>
+<div>
+Durante um certo período de tempo, ocorreu uma entrada de 3000 W ou superior, ou uma entrada de energia de 2000 ou superior.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fixo na mudança quando foi confirmada uma avaria (liga ou desliga a embraiagem pela velocidade do veículo).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+P2787
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico pelo valor da temperatura da embraiagem.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se o valor da temperatura da embraiagem atingir 400 °C ou superior.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Fim da aderência.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0100
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o TCM não consegue receber sinais do ECM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Quando o veículo excede uma certa velocidade (varia com a mudança retida), a posição do actuador da embraiagem quando a avaria ocorreu é retida e é feito o controlo.
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a uma certa velocidade, o modo passa a Ponto-morto.
+</div>
+</li>
+<li>
+<div>
+Embora o motor possa voltar a arrancar, o tempo percorrido para arrancar o motor após pressionar o interruptor do motor de arranque é superior ao que é normal (cerca de 1 seg.).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0103
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o TCM não consegue receber sinais do módulo de controlo das mudanças.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Se a velocidade do veículo for superior a 5 km/h, a posição com avaria é retida e o controlo é feito (mudança do modo manual para o modo automático).
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a 5 Km/h, o modo passa a Ponto-morto.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0155
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o TCM não consegue receber sinais do módulo de controlo do indicador.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando é incluído um valor INVÁLIDO nos dados do ECM recebidos pelo TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Definição do DTC causada pela avaria do sensor IAT/ECT: Nenhum
+</div>
+</li>
+<li>
+<div>
+Para definição do DTC causada por outras avarias do ECM: Quando o veículo excede uma certa velocidade (varia com a mudança retida), a posição do actuador da embraiagem quando a avaria ocorreu é retida e é feito o controlo.
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a uma certa velocidade, o modo passa a Ponto-morto.
+</div>
+</li>
+<li>
+<div>
+Embora o motor possa voltar a arrancar, o tempo percorrido para arrancar o motor após pressionar o interruptor do motor de arranque é superior ao que é normal (cerca de 1 seg.).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U0404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se os dados recebidos pelo TCM do módulo de controlo das mudanças tiverem valores anormais ou INVÁLIDOS.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+A acção avaria segura é classificada de acordo com o modo da avaria.
+</div>
+<ul type="disc">
+<li>
+<div>
+Anomalia da gama Automático/Manual: O indicador do i-SHIFT acende-se. Contudo, alterar entre Automático e manual não é possível.
+</div>
+</li>
+<li>
+<div>
+Para anomalias noutras gamas e anomalias nos dados recebidos: O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Se a velocidade do veículo for superior a 5 Km/h, a posição com avaria é retida e é feito o controlo. Quando a velocidade do veículo é inferior a 5 Km/h, o modo passa a Ponto-morto.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1261
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando o TCM não consegue receber sinais do ABS ou VSA.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Se a alavanca das mudanças não estiver na posição N: A mudança é fixada na ocorrência da avaria. Contudo, para prevenir que o motor vá abaixo, a abertura e fecho da embraiagem é controlada.
+</div>
+</li>
+<li>
+<div>
+Quando a alavanca das mudanças está na posição N: Altera a mudança para Ponto-morto e posteriormente, o modo em Ponto-morto é mantido mesmo que a alavanca das mudanças seja movida para outras posições.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1400
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Existe anomalia nos dados do ECM recebidos pelo TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Quando o veículo excede uma certa velocidade (varia com a mudança retida), a posição do actuador da embraiagem quando a avaria ocorreu é retida e é feito o controlo.
+</div>
+</li>
+<li>
+<div>
+Quando a velocidade do veículo é inferior a uma certa velocidade, o modo passa a Ponto-morto.
+</div>
+</li>
+<li>
+<div>
+Embora o motor possa voltar a arrancar, o tempo percorrido para arrancar o motor após pressionar o interruptor do motor de arranque é superior ao que é normal (cerca de 1 seg.).
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1401
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+O TCM recebeu um pedido de mudanças para baixa, mas quando a mudança é alterada, a velocidade máxima do motor é excedida.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1402
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Antes do TCM receber o pedido de mudança para baixa da 5ª, recebeu o pedido de mudança para baixa da 4ª.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Nenhum
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1403
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Valor INVÁLIDO nos dados do ABS ou VSA recebidos pelo TCM. Quando 1 parte dos dados é incluída.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Quando a unidade ABS ou VSA detecta uma avaria: Desactiva a mudança para baixa quando o travão é pressionado.
+</div>
+</li>
+<li>
+<div>
+Se a unidade ABS ou VSA não detectou uma avaria: Nenhum
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1404
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Existe anomalia nos dados do ABS ou VSA recebidos pelo TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Quando a unidade ABS ou VSA detecta uma avaria: Desactiva a mudança para baixa quando o travão é pressionado.
+</div>
+</li>
+<li>
+<div>
+Se a unidade ABS ou VSA não detectou uma avaria: Nenhum
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+U1405
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Diagnóstico utilizando o sinal CAN.
+</div>
+<ul type="disc">
+<li>
+<div>
+Quando múltiplos valores INVÁLIDOS são incluídos nos dados ABS ou VSA recebidos pelo TCM.
+</div>
+</li>
+</ul>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+O indicador do i-SHIFT acende-se.
+</div>
+</li>
+<li>
+<div>
+Se a alavanca das mudanças não estiver na posição N: A mudança é fixada na ocorrência da avaria. Contudo, para prevenir que o motor vá abaixo, a abertura e fecho da embraiagem é controlada.
+</div>
+</li>
+<li>
+<div>
+Quando a alavanca das mudanças está na posição N: Altera a mudança para Ponto-morto e posteriormente, o modo em Ponto-morto é mantido mesmo que a alavanca das mudanças seja movida para outras posições.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+<div>
+</div>
+<br>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div style="display:none;" id="page_onoff">
+<div style="page-break-after:always;">
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

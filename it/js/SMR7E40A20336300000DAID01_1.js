@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:655px;\" coordsize=\"950,655\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:655px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40A20336300000DAID01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:655px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:591px;top:15px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>COMANDO SOVRAPRESSIONE TURBOCOMPRESSORE<br>ELETTROVALVOLA<br><a href=\"javascript:CtsProc('0','000000000001165','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:402px;top:577px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SENSORE POSIZIONE<br>COMANDO SCORRIMENTO<br>COLLETTORE DI ASPIRAZIONE (IMRC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:686px;top:496px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CONDOTTO DI ASPIRAZIONE<br><a href=\"javascript:CtsProc('0','000000000001161','i000')\"></b>Rimozione/installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:110px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>COMANDO SCORRIMENTO COLLETTORE DI ASPIRAZIONE<br>VALVOLA (IMRC)<br><a href=\"javascript:CtsProc('0','000000000001466','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:472px;font-weight:normal;font-size:4.00pt;\">");
+write("<nobr><b>SENSORE POSIZIONE COMANDO SCORRIMENTO COLLETTORE DI ASPIRAZIONE (IMRC)<br>ELETTROVALVOLA DI COMANDO SCORRIMENTO COLLETTORE DI ASPIRAZIONE (IMRC)<br><a href=\"javascript:CtsProc('0','000000000001160','i000')\"></b>Sostituzione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:1px;top:620px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b></b>*: La figura mostra la versione con guida a sinistra.<br></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:593px;top:548px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>VALVOLA DI REGOLAZIONE ASPIRAZIONE (ISV)<br><a href=\"javascript:CtsProc('0','000000000001164','i000')\"></b>Pulizia,</a><br><a href=\"javascript:CtsProc('0','000000000001163','i000')\">Rimozione/installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:812px;top:326px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>SCATOLA FUSIBILI/RELÈ<br>VANO MOTORE<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:71px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>FILTRO ARIA<br><a href=\"javascript:CtsProc('0','000000000001158','i000')\"></b>Rimozione/installazione,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p1_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:657px;top:102px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>CARTUCCIA FILTRO ARIA<br><a href=\"javascript:CtsProc('0','000000000001159','i000')\"></b>Controllo/sostituzione,</a><br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

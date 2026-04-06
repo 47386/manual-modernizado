@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:863px;\" coordsize=\"950,863\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:863px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E40F18100000000DASD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:863px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:193px;top:621px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAJA DE CAMBIOS DE LA DIRECCIÓN<br><a href=\"javascript:CtsProc('0','000000000001272','i000')\"></b>Desmontaje y montaje del mecanismo de la direccion,</a><br><a href=\"javascript:CtsProc('0','000000000000044','i000')\">Desmontaje y montaje del extremo de la cremallera,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000045','i000')\">Desmontaje/Montaje de la guía de la cremallera</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000050','i000')\">Sustitución del fuelle guardapolvo de la rótula del tirante,</a><br> en el Manual de Taller, R/P 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000041','i000')\">Sustitución del cojín de fijación de la caja de la dirección,</a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:159px;top:69px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAJA DE<br>FUSIBLES/RELÉS DEBAJO DEL CAPÓ<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:350px;top:17px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MÓDULO <br>DE CONTROL DE LOS INDICADORES (TAC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:714px;top:208px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>CAJA DE FUSIBLES/RELÉS <br>SITUADA DEBAJO DEL SALPICADERO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:685px;top:53px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ENLACE DE DATOS<br>CONECTOR (DLC)<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:146px;top:149px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>BATERÍA<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:696px;top:489px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LAVAPARABRISAS<br><a href=\"javascript:CtsProc('0','000000000000055','i000')\"></b>Desmontaje y montaje del motor,<br></a><br> en el Manual de Taller, R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:751px;top:385px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>UNIDAD DE CONTROL DE LA EPS<br></b>Desmontaje/Montaje <br><a href=\"javascript:CtsProc('0','000000000000054','i000')\">de la unidad de control del EPS,<br></a><br> en el Manual de Taller, <br>R/P 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:2px;top:833px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>La ilustración hace referencia al modelo LHD. El modelo RHD es similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

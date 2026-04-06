@@ -1,0 +1,449 @@
+<html lang="es" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E3AA14500024601FCST00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Comprobación de la entrada (ECM) del control de la velocidad de crucero
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000000775','i020')">
+Conecte el Sistema de diagnóstico de Honda (HDS) al conector de enlace de datos (DLC).
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Gire la 
+llave de contacto a la posición
+ ON (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Asegúrese de que el HDS establece comunicación con el vehículo y con el ECM. Si no lo hace, efectúe la localización de averías del circuito del DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Vaya a la PGM-FI y compruebe los DTC.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Realice las siguientes pruebas mientras controla los parámetros de la LISTA DE DATOS DE PGM-FI con el HDS.
+</div>
+<div>
+NOTA: Los fallos intermitentes se deben con frecuencia a conexiones flojas en los circuitos. Durante la comprobación de las entradas del control de la velocidad de crucero, agite sus circuitos y observe si se produce algún cambio en los resultados.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="14%">
+<col width="20%">
+<col width="22%">
+<col width="41%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Señal a comprobar
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Circunstancias en que se realiza la comprobación
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Parámetro: Resultado deseado
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Posible causa si no se obtiene el resultado deseado
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor de freno
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedal del freno pisado y luego suelto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+INTERRUPTOR DE FRENOS DE VELOCIDAD DE CRUCERO debe indicar OFF con el pedal de freno pisado y ON cuando se suelta el pedal.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor de posición de pedal de freno
+ defectuoso
+</div>
+</li>
+<li>
+<div>
+Fusible Nº 3 (10 A) fundido en la caja de fusibles/relés situada debajo del salpicadero
+</div>
+</li>
+<li>
+<div>
+Circuito abierto en el cable entre el módulo de control del motor (ECM) y el interruptor de posición del pedal de freno.
+</div>
+</li>
+<li>
+<div>
+Derivación a masa en el cable entre el ECM y el interruptor de posición del pedal de freno.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor de posición del pedal de embrague
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Pedal del embrague pisado y luego suelto
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+SHIFT/CLUTCH SW debe estar en OFF con el pedal del embrague pisado y en ON cuando se suelta este pedal.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor de posición del pedal del embrague defectuoso
+</div>
+</li>
+<li>
+<div>
+Circuito abierto en el cable entre el ECM y el interruptor de posición del pedal del embrague.
+</div>
+</li>
+<li>
+<div>
+Derivación a masa en el cable entre el ECM y el interruptor de posición del pedal del embrague.
+</div>
+</li>
+<li>
+<div>
+Masa defectuosa G401
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor principal de control de la velocidad de crucero
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor principal del control de la velocidad de crucero en ON y en OFF
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+INTERRUPTOR PRINCIPAL DEL CONTROL DE LA VELOCIDAD DE CRUCERO debe indicar ON cuando el interruptor maestro del control de la velocidad de crucero está en ON y OFF cuando está en OFF.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado del control de la velocidad de crucero defectuoso
+</div>
+</li>
+<li>
+<div>
+Circuito abierto en el cable entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+<li>
+<div>
+Existe una derivación a masa en el cable, entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor de establecimiento
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor de establecimiento/decelearación pulsado y soltado
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+INTERRUPTOR DE ESTABLECIMIENTO DEL CONTROL DE LA VELOCIDAD DE CRUCERO debe indicar ON cuando se pulsa el botón de establecimiento/deceleración y OFF cuando se suelta el botón.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado del control de la velocidad de crucero defectuoso
+</div>
+</li>
+<li>
+<div>
+Circuito abierto en el cable entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+<li>
+<div>
+Existe una derivación a masa en el cable, entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor de reanudación
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor de reanudación/aceleración pulsado y soltado
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+INTERRUPTOR DE REANUDACIÓN DEL CONTROL DE LA VELOCIDAD DE CRUCERO debe indicar ON cuando se pulsa el botón de reanudación/aceleración y OFF cuando se suelta el botón.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Interruptor combinado del control de la velocidad de crucero defectuoso
+</div>
+</li>
+<li>
+<div>
+Circuito abierto en el cable entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+<li>
+<div>
+Existe una derivación a masa en el cable, entre el módulo de control de los indicadores y el interruptor combinado del control de la velocidad de crucero.
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal del interruptor de cancelación
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor de cancelación pulsado y soltado
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+INTERRUPTOR DE CANCELACIÓN DEL CONTROL DE LA VELOCIDAD DE CRUCERO debe indicar ON cuando se pulsa el interruptor de cancelación y OFF cuando se suelta el interruptor.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Interruptor combinado del control de la velocidad de crucero defectuoso
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Señal de la luz testigo del control de la velocidad de crucero
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Ponga en marcha el motor, conecte el interruptor principal del control de la velocidad de crucero y circule con el vehículo a una velocidad superior a 40 km/h. Establezca y cancele el control de la velocidad de crucero.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+LUZ TESTIGO DE VELOCIDAD DE CRUCERO debe indicar ON cuando el control de velocidad de crucero está activado y OFF cuando se cancela.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Módulo de control de los indicadores defectuoso
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9EQPJ14235000000BBPT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Como Diagnosticar Avarias no Sistema do Telefone Mãos-livres
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Verificar os DTC com o HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que a ignição está BLOQUEADA (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue o HDS à ficha (A) de análise de dados (DLC) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Certifique-se de que o HDS comunica com o veículo e a unidade de controlo do Telefone Mãos-Livres. Se tal não se verificar, efectue um diagnóstico de avarias ao circuito da DLC.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Seleccione HandsFreeLink no menu do SISTEMA ELÉCTRICO DA CARROÇARIA.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Seleccione DTC no menu HandsFreeLink.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Verifique se há DTC. Se forem indicados quaisquer DTC, anote os DTC e, em seguida, passe ao diagnóstico de avarias por DTC indicado. Se não for indicado nenhum DTC, consulte o diagnóstico de avarias por sintomas.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Após o diagnóstico de avarias, elimine os DTC da memória com o HDS.
+</div>
+</li>
+<li>
+<div>
+Para operações específicas, consulte o manual do utilizador do HDS.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+O HFT possibilita ao utilizador a conveniência de um funcionamento mãos-livres. Não pode controlar o desempenho do telefone (qualidade de chamadas e força do sinal). Para evitar problemas de desempenho, não coloque o telefone numa mala metálica ou numa carteira debaixo do banco.
+</div>
+<div>
+Este guia só apresenta algumas das características do HFT. Mostra-lhe como emparelhar o seu telefone ao HFT para depois efectuar e receber chamadas, tudo através de simples comandos por voz. Se pretende completar a descrição deste sistema, consulte o manual do proprietário e o guia de arranque rápido.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000009340','1');">
+<img src="../tn/SMR9EQPJ14235000000BBPD01.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Como Verificar os DTC com o HDS
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Certifique-se de que a ignição está BLOQUEADA (0).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Ligue o HDS à ficha (A) de análise de dados (DLC) localizada sob o tablier do lado do condutor.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9EQPJ14235000000BBPD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+LIGUE a ignição (II).
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Certifique-se de que o HDS comunica com o veículo e a unidade de controlo do Telefone Mãos-Livres. Se tal não se verificar, efectue um diagnóstico de avarias ao circuito da DLC.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Seleccione HandsFreeLink no menu do SISTEMA ELÉCTRICO DA CARROÇARIA.
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Seleccione DTC no menu HandsFreeLink.
+</div>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Verifique se há DTC. Se forem indicados quaisquer DTC, anote os DTC e, em seguida, passe ao diagnóstico de avarias por DTC indicado. Se não for indicado nenhum DTC, consulte o diagnóstico de avarias por sintomas.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Após o diagnóstico de avarias, elimine os DTC da memória com o HDS.
+</div>
+</li>
+<li>
+<div>
+Para operações específicas, consulte o manual do utilizador do HDS.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+O HFT possibilita ao utilizador a conveniência de um funcionamento mãos-livres. Não pode controlar o desempenho do telefone (qualidade de chamadas e força do sinal). Para evitar problemas de desempenho, não coloque o telefone numa mala metálica ou numa carteira debaixo do banco.
+</div>
+<div>
+Este guia só apresenta algumas das características do HFT. Mostra-lhe como emparelhar o seu telefone ao HFT para depois efectuar e receber chamadas, tudo através de simples comandos por voz. Se pretende completar a descrição deste sistema, consulte o manual do proprietário e o guia de arranque rápido.
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Sugestões para o Comando por Voz
+</b>
+</div>
+<div>
+Para dar comandos por voz, pressione e solte o botão de Conversação. Aguarde sempre um sinal sonoro e, em seguida, dê o seu comando de uma forma clara e num tom de voz natural. O microfone do HFT encontra-se no tecto, nos projectores dianteiros.
+</div>
+<div>
+Se o HFT não reconhecer o seu comando por voz, irá ouvir ‘‘Pardon&quot; (&quot;Desculpe''). Se após ter repetido o seu comando este continuar a não ser reconhecido, irá ouvir ‘‘Please repeat&quot; (&quot;Por favor repetir''). Se depois de voltar a repetir o seu comando, este continuar a não ser reconhecido, o HFT reencaminha-o para o menu de Ajuda.
+</div>
+<div>
+Para ouvir a qualquer altura uma lista de opções disponíveis, diga ‘‘Hands free help&quot; (&quot;Ajuda mãos-livres'').
+</div>
+<div>
+Pode dar vários comandos por voz simultaneamente. Por exemplo, pode dizer ‘‘Dial 123-456-7890&quot; (&quot;Marcar 123-456-7890'').
+</div>
+<div>
+Para dar vários números numa chamada ou num comando de marcação por voz, pode dizê-los todos de uma só vez ou separadamente em blocos de 3, 4, 7, 10 ou 11.
+</div>
+<div>
+Para saltar uma instrução de voz, pressione e solte o botão de Conversação enquanto o HFT fala. O HFT aguarda o seu próximo comando por voz.
+</div>
+<div>
+Para retroceder um passo na sequência do comando por voz, pressione e solte o botão Retroceder ou diga ‘‘Go back&quot; (&quot;Retroceder'').
+</div>
+<div>
+Se não dizer nada enquanto o HFT aguarda o seu comando por voz, este desliga-se e desactiva o seu reconhecimento de voz. A próxima vez que pressionar e soltar o botão de Conversação, o HFT começa a ouvir a partir do momento da desactivação.
+</div>
+<div>
+Para parar a qualquer altura uma sequência de comando por voz, pressione e segure o botão de Retroceder ou pressione e solte o botão de Conversação, aguarde um sinal sonoro e diga ‘‘Cancel'' (&quot;Cancelar&quot;). A próxima vez que pressionar e soltar o botão de Conversação, o HFT inicia a partir do seu menu principal.
+</div>
+<div>
+Quando terminar uma sequência do comando por voz, o HFT volta para o seu menu principal. A próxima vez que pressionar e soltar o botão de Conversação, encontrar-se-á no menu principal.
+</div>
+<div>
+Não se esqueça de pressionar e segurar o botão Retroceder até sair do menu principal, caso contrário, o sistema áudio permanece em modo silencioso.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Emparelhar O Seu Telemóvel (Num Só Procedimento)
+</b>
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Não pode emparelhar um telefone se o automóvel se encontra em movimento.
+</div>
+</li>
+<li>
+<div>
+O seu telefone deve encontrar-se no modo de Procura.
+</div>
+</li>
+<li>
+<div>
+Podem ser emparelhados até seis telefones compatíveis com Bluetooth pelo HFT.
+</div>
+</li>
+</ul>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o seu telefone e siga as instruções para activar o Bluetooth.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Dê estes comandos por voz ao HFT, pressionando o botão de conversação.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="40%">
+<col width="60%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+Voz de comando
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+Resposta
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Phone setup'' (&quot;Configuração do telefone'')
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘As opções de configuração do telefone são status, pair, edit, delete, and list&quot; (estado, emparelhar, editar, eliminar e lista).
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Pair&quot; (&quot;Emparelhar'')
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘O funcionamento do seu telemóvel é necessário para o processo de emparelhamento. Por razões de segurança, efectue esta função somente quando o veículo de encontra parado. Diga um código de quatro dígitos para o emparelhamento. Anote este código, uma vez que vai ser solicitado pelo telefone.''
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘1. 2. 3. 4.'' (Pode ser qualquer código de quatro dígitos.)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘1. 2. 3. 4. is this correct?&quot; (&quot;1. 2. 3. 4. está correcto?'')
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Yes'' (&quot;Sim&quot;)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+‘‘Procurar um telefone com Bluetooth. Certifique-se de que o seu se encontra no modo de Procura durante o emparelhamento!''
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Siga as instruções do fabricante do telemóvel para colocar o telefone no modo de Procura. O telefone vai procurar o HFT. Seleccione Telefone Mãos-Livres na lista de dispositivos do telefone.
+</div>
+</li>
+</ol>
+<a name="i240">
+</a>
+<ol>
+<li value="4">
+<div>
+Quando pedido, introduza o PIN de quatro dígitos da operação 2 no seu telefone. Ouvirá o HFT a dizer ‘‘A new phone has been found (&quot;Foi encontrado um novo telefone&quot;). Would you like to name this phone?'' (&quot;Pretende atribuir um nome a este telefone?'')
+</div>
+</li>
+</ol>
+<a name="i250">
+</a>
+<ol>
+<li value="5">
+<div>
+Pressione e solte o botão de Conversação e diga o nome do telefone. Por exemplo, diga ‘‘John's phone'' (&quot;Telefone do John''). Vai ouvir ‘‘John's phone has been successfully paired'' (&quot;O telefone do John foi emparelhado com sucesso'') e volta para o menu principal.
+</div>
+</li>
+</ol>
+<a name="i260">
+</a>
+<ol>
+<li value="6">
+<div>
+Para emparelhar outro telefone, repita 
+<a href="javascript:parent.Jmp('i010')">Etapa 1
+</a>
+ a 5.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Desmemorização do Código de Activação
+</b>
+</div>
+<div>
+Se o sistema está bloqueado e o código de activação foi perdido ou esquecido, efectue o seguinte.
+</div>
+<a name="i310">
+</a>
+<ol>
+<li value="1">
+<div>
+Ligue o HDS à DLC.
+</div>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="2">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="3">
+<div>
+A partir do ‘‘Menu do Sistema Eléctrico da Carroçaria'' seleccione ‘‘HandsFreeLink''.
+</div>
+</li>
+</ol>
+<a name="i340">
+</a>
+<ol>
+<li value="4">
+<div>
+Seleccione ‘‘Ensaios Diversos'' e, em seguida, seleccione ‘‘Desmemorização do código de activação''.
+</div>
+</li>
+</ol>
+<a name="i350">
+</a>
+<ol>
+<li value="5">
+<div>
+Siga as indicações do sistema do HDS para desmemorizar o código de activação.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Função de Auto-diagnóstico
+</b>
+</div>
+<div>
+NOTA: Este procedimento só deverá ser utilizado se o HDS não estiver disponível.
+</div>
+<div>
+Para executar a função de auto-diagnóstico, faça o seguinte:
+</div>
+<a name="i610">
+</a>
+<ol>
+<li value="1">
+<div>
+LIGUE (II) a ignição.
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="2">
+<div>
+Pressione o botão Retroceder HFT e mantenha-o pressionado durante mais de 5 segundos.
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="3">
+<div>
+Quando o sistema do Telefone Mãos-Livres entre na função de auto-diagnóstico, irá ocorrer o seguinte.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se não houver nenhum DTC, a unidade de controlo de Telefone Mãos-Livres transmite uma mensagem audível ‘‘European hands free system is OK'' (&quot;O sistema de mãos-livres europeu está pronto&quot;).
+</div>
+</li>
+<li>
+<div>
+Se houver algum DTC, a unidade de controlo de Telefone Mãos-Livres transmite uma mensagem audível ‘‘European hands free system needs to be serviced'' (&quot;O sistema de mãos-livres necessita de reparação&quot;).
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+A função de auto-diagnóstico só pode ser iniciada enquanto o HFT está em estado de suspensão.
+</div>
+</li>
+<li>
+<div>
+A função de auto-diagnóstico terá início mal se detecte a pressão durante os 5 segundos e termina quando a unidade voltar ao seu estado de suspensão.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

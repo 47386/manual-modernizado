@@ -1,0 +1,422 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E80A20326934595FAGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Einspritzventil Test
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+HINWEIS: Vor dem Test folgende Punkte prüfen: Leerlaufdrehzahl, Zündzeitpunkt und Leerlauf-CO-Gehalt
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Versuchen, den Motor anzulassen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Springt der Motor an, mit 
+<a href="javascript:parent.Jmp('i020')">Schritt 2
+</a>
+ fortfahren.
+</div>
+</li>
+<li>
+<div>
+Wenn der Motor nicht anspringt, mit 
+<a href="javascript:parent.Jmp('i070')">Schritt 7
+</a>
+ fortfahren.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Das HDS an den Datenübertragungsstecker (DLC) (A) unter dem Armaturenbrett auf der Fahrerseite anschließen.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Im INSPECTION MENU (Menü &quot;Inspektion&quot;) des HDS die Option ONE INJECTOR (ein Einspritzventil) wählen.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Die Einspritzventile nacheinander deaktivieren, indem die Nummer eines Einspritzventils gewählt wird, mit dem fortgefahren werden soll.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Darauf achten, wie sich die Leerlaufdrehzahl jeweils ändert.
+</div>
+<ul type="disc">
+<li>
+<div>
+Ist der Abfall der Leerlaufdrehzahl bei allen Zylindern annähernd gleich, so sind die Einspritzventile in Ordnung.
+</div>
+</li>
+<li>
+<div>
+Bleibt die Leerlaufdrehzahl oder -qualität beim Abziehen eines Einspritzventils unverändert, ist dieses Einspritzventil vermutlich defekt. 
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+Das Einspritzventil austauschen und den Test wiederholen.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Mit einem Stethoskop horchen, ob von allen Einspritzventilen ein Klickgeräusch zu hören ist, wenn der Motor im Leerlauf dreht.
+</div>
+<ul type="disc">
+<li>
+<div>
+Ist bei einem Einspritzventil kein typisches Klickgeräusch zu hören, das 
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+betreffende Einspritzventil austauschen und erneut auf Geräusch prüfen.
+</a>
+</div>
+</li>
+<li>
+<div>
+Wenn wieder kein Klicken zu hören ist, folgende Punkte kontrollieren:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kabelbruch oder schlechter Kontakt im Kabel ORN zwischen PGM-FI-Hauptrelais 1 und Verteileranschluss
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung oder Korrosion am Verteileranschluss
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kabelbruch oder schlechter Kontakt am Kabel YEL/BLK zwischen Verteileranschluss und Einspritzventil
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kurzschluss, Kabelbruch oder schlechter Kontakt am Kabel zwischen Einspritzventil und ECM.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Wenn alle Punkte in Ordnung sind, ist der Test abgeschlossen.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i070">
+</a>
+<ol>
+<li value="7">
+<div>
+Die Zündung ausschalten (0).
+</div>
+</li>
+</ol>
+<a name="i080">
+</a>
+<ol>
+<li value="8">
+<div>
+Den Stecker des Einspritzventils trennen.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005016','1');">
+<img src="../tn/SMR7E80A20326934595FAGD01.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326934595FAGD01_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i090">
+</a>
+<ol>
+<li value="9">
+<div>
+Den Widerstand zwischen den Klemmen Nr. 1 und Nr. 2 des Einspritzventils (A) messen. Der Widerstand muss 10 bis 13 Ω betragen.
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Widerstand dem Sollwert entspricht, mit 
+<a href="javascript:parent.Jmp('i100')">Schritt 10
+</a>
+ fortfahren.
+</div>
+</li>
+<li>
+<div>
+Entspricht der Widerstand nicht diesen Vorgaben, 
+<a href="javascript:CtsProc('0','000000000001774','i000')">
+das Einspritzventil austauschen.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="i100">
+</a>
+<ol>
+<li value="10">
+<div>
+<a href="javascript:CtsProc('0','000000000001746','i000')">
+Den Kraftstoffdruck prüfen.
+</a>
+</div>
+<ul type="disc">
+<li>
+<div>
+Wenn der Kraftstoffdruck im Sollbereich ist, folgende Punkte prüfen:
+</div>
+</li>
+<table class="Viewer">
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kabelbruch oder schlechter Kontakt im Kabel ORN zwischen PGM-FI-Hauptrelais 1 und Verteileranschluss
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Unterbrechung oder Korrosion am Verteileranschluss
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kabelbruch oder schlechter Kontakt am Kabel YEL/BLK zwischen Verteileranschluss und Einspritzventil
+</div>
+</td>
+</tr>
+<tr>
+<td width="10" class="ViewerTD" align="right">-
+</td>
+<td class="ViewerTD">
+<div>
+Kurzschluss, Kabelbruch oder schlechter Kontakt am Kabel zwischen Einspritzventil und ECM.
+</div>
+</td>
+</tr>
+</table>
+<li>
+<div>
+Wenn der Kraftstoffdruck nicht vorschriftsmäßig war, 
+<a href="javascript:CtsProc('0','000000000001746','i000')">
+die Prüfung wiederholen.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000005017','1');">
+<img src="../tn/SMR7E80A20326934595FAGD02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E80A20326934595FAGD02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

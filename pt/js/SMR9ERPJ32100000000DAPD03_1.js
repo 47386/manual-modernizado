@@ -1,0 +1,37 @@
+with(document) {
+write("<v:group id=\"group3\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:959px;\" coordsize=\"950,959\">");
+write("<v:rect id=\"rect3\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:959px;\">");
+write("<img id=\"img3\" name=\"PrtImgId\" src=\"../img/SMR9ERPJ32100000000DAPD03.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:959px;border-color:#ffffff\">");
+write("<p id=\"p3_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:620px;top:65px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DA LUZ TRASEIRA DE NEVOEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:659px;top:116px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DOS MÁXIMOS<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:594px;top:24px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INDICADOR DA LUZ DIANTEIRA DE NEVOEIRO<br></b></nobr>");
+write("</p>");
+write("<p id=\"p3_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:689px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NIVELAMENTO AUTOMÁTICO DOS FARÓIS<br>UNIDADE DE CONTROLO (Com HID)<br><a href=\"javascript:CtsProc('0','000000000000226','i000')\"></b>Ensaio de Entrada de Sinais,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:484px;top:691px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR COMBINADO DAS LUZES<br><a href=\"javascript:CtsProc('0','000000000000208','i000')\"></b>Ensaio/Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:375px;top:758px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>PEDAL DOS TRAVÕES<br>PEDAL DA POSIÇÃO<br><a href=\"javascript:CtsProc('0','000000000000215','i000')\"></b>Ensaio,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:210px;top:843px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>INTERRUPTOR DE NIVELAMENTO DOS FARÓIS<br>(Sem HID)<br><a href=\"javascript:CtsProc('0','000000000002144','i000')\"></b>Ensaio/Substituição,</a><br> no Manual de Oficina, Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:18px;top:707px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>MICU<br>(Incorporados na<br>caixa de fusíveis/relés sob o tablier)<br><a href=\"javascript:CtsProc('0','000000000000210','i000')\"></b>Ensaio de Entrada de Sinais,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br><a href=\"javascript:CtsProc('0','000000000000340','i000')\">Substituição,</a><br> no Manual de Oficina,<br> Refª de Peça 62SMR00B<br></nobr>");
+write("</p>");
+write("<p id=\"p3_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:331px;top:20px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>LUZES DIURNAS DE PRESENÇA<br>RELÉ (modelo KS)<br><a href=\"javascript:CtsProc('0','000000000004377','i000')\"></b>Ensaio,</a><br></nobr>");
+write("</p>");
+write("<p id=\"p3_10\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:5px;top:930px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b></b>O modelo LHD é ilustrado, o modelo RHD é similar.<br></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

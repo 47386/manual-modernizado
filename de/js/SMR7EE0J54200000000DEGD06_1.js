@@ -1,0 +1,31 @@
+with(document) {
+write("<v:group id=\"group6\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:847px;\" coordsize=\"950,847\">");
+write("<v:rect id=\"rect6\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:847px;\">");
+write("<img id=\"img6\" name=\"PrtImgId\" src=\"../img/SMR7EE0J54200000000DEGD06.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:847px;border-color:#ffffff\">");
+write("<p id=\"p6_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:677px;top:18px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ZIGARETTENANZÜNDERRELAIS<br></b>Kabelfarben: BLU, WHT,<br>BLK und PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:677px;top:67px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>ZUSATZSTROMBUCHSENRELAIS<br></b>Kabelfarben: RED, YEL,<br>BLK und PUR<br></nobr>");
+write("</p>");
+write("<p id=\"p6_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:91px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>NEBELSCHEINWERFERRELAIS<br></b>Kabelfarben: WHT, RED,<br>BLU und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:644px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELAIS SUPER-VERRIEGELUNG, RECHTS<br></b>Kabelfarben: BLU, WHT,<br>RED, BLK und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:671px;top:692px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>SUPER-VERRIEGELUNGSRELAIS, LINKS<br></b>Kabelfarben: ORN, WHT,<br>GRN, BLK und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:446px;top:786px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>RELAIS SPIEGELHEIZUNG ELEKTRISCH VERSTELLBARE AUSSENSPIEGEL<br></b>Kabelfarben: WHT, ORN,<br>GRY und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:447px;top:722px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HUPENRELAIS (mit Alarmanlage)<br></b>Kabelfarben: WHT, GRN,<br>ORN und WHT<br></nobr>");
+write("</p>");
+write("<p id=\"p6_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:179px;top:111px;font-weight:normal;font-size:8.69pt;\">");
+write("<nobr><b>HEIZUNGSSTEUERGERÄT / <br>KLIMAREGLEREINHEIT<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

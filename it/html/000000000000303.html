@@ -1,0 +1,218 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E00J46643400000FEIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Verifica funzione sistema di accesso con telecomando
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+La sirena di allarme può venire alimentata attraverso la batteria Ni-MH interna se la tensione della batteria è bassa o se il terminale della batteria lato vettura è scollegato.
+</div>
+</li>
+<li>
+<div>
+Se il pomello di blocco viene premuto prima che la portiera sia chiusa, il cicalino suona una volta ed l'impianto ad ultrasuoni non si attiva.
+</div>
+</li>
+</ul>
+<a name="iT01">
+</a>
+<div class="procedure_topic_title">
+<b>
+Verifica funzionale sensore ad ultrasuoni
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Aprire il finestrino lato conducente.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Chiudere tutte le portiere, quindi bloccare la portiera con il telecomando o con l'interruttore cilindro chiave.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Attendere circa 25 secondi per l'inserimento dell'impianto antifurto. Se l'impianto antifurto è inserito, la spia antifurto lampeggia.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Introdurre una mano nell'abitacolo dal finestrino lato conducente.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la sirena si attiva e le luci di emergenza lampeggiano, il sensore ad ultrasuoni funziona correttamente, passare a 
+<a href="javascript:parent.Jmp('i050')">Punto 5
+</a>
+.
+</div>
+</li>
+<li>
+<div>
+Se la sirena non si attiva e le luci di emergenza non lampeggiano, 
+<a href="javascript:CtsProc('0','000000000000314','i000')">
+sostituire il sensore a ultrasuoni.
+</a>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<a name="iT02">
+</a>
+<div class="procedure_topic_title">
+<b>
+Verifica funzionale batteria interna sirena di allarme
+</b>
+</div>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Mentre la sirena è attiva, aprire il cofano e scollegare i terminali della batteria.
+</div>
+<ul type="disc">
+<li>
+<div>
+Se la sirena suona in continuazione, la batteria interna funziona correttamente.
+</div>
+</li>
+<li>
+<div>
+Se la sirena smette di suonare, sostituire la sirena di allarme.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

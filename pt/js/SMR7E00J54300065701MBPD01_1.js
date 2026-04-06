@@ -1,0 +1,34 @@
+with(document) {
+write("<v:group id=\"group1\"  name=\"PrtGrpId\" class=\"drag\" style=\"position:relative; width:950px; height:623px;\" coordsize=\"950,623\">");
+write("<v:rect id=\"rect1\" name=\"PrtRectId\"class=\"drag\"  style=\"width:950px;height:623px;\">");
+write("<img id=\"img1\" name=\"PrtImgId\" src=\"../img/SMR7E00J54300065701MBPD01.PNG\" border=\"1\" class=\"drag\" style=\"position:absolute;left:0px;top:0px;width:950px;height:623px;border-color:#ffffff\">");
+write("<p id=\"p1_1\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:472px;top:16px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>C<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_2\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:589px;top:375px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>c<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_3\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:344px;top:376px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>d<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_4\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:441px;top:385px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>e<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_5\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:505px;top:385px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>e<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_6\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:507px;top:556px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>a<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_7\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:302px;top:554px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>b<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_8\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:237px;top:552px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>A<br></b></nobr>");
+write("</p>");
+write("<p id=\"p1_9\" name=\"PrtPId\" class=\"drag\" style=\"position:absolute;left:163px;top:498px;font-weight:normal;font-size:8.68pt;\">");
+write("<nobr><b>B<br></b></nobr>");
+write("</p>");
+write("</v:rect>");
+write("</v:group>");
+}

@@ -1,0 +1,449 @@
+<html lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E3AA14500024601FCGT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Tempomat (ECM) Eingangstest
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000000775','i020')">
+Das Honda-Diagnosesystem (HDS) an den Datenübertragungsstecker (DLC) anschließen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Die 
+Zündung einschalten (II)
+.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+<a href="javascript:CtsProc('0','000000000000701','i000')">
+Sicherstellen, dass das HDS mit dem Fahrzeug und dem ECM kommuniziert. Wenn dies nicht der Fall ist, den DLC-Schaltkreis auf Fehler untersuchen.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+PGM-FI aufrufen und auf DTCs prüfen.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Folgende Tests während der Überwachung der Parameter in der PGM-FI DATA LIST (PGM-FI-Datenliste) mit dem HDS durchführen.
+</div>
+<div>
+HINWEIS: Zeitweise auftretende Fehler werden oftmals durch Wackelkontakte verursacht. Während des Überwachens der Tempomat-Eingänge die entsprechenden Kabelverbindungen bewegen und feststellen, ob sich die Testergebnisse ändern.
+</div>
+<div>
+<table width="87%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="14%">
+<col width="20%">
+<col width="22%">
+<col width="41%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Zu testendes Signal
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Testbedingung
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Parameter: Erwünschtes Ergebnis
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Mögliche Ursache, wenn das Ergebnis nicht erzielt wird
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Bremsschaltersignal
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Bremspedal betätigen und dann loslassen
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE BRAKE SW muss bei betätigtem Bremspedal OFF und bei unbetätigtem Bremspedal ON anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Bremspedalstellungsschalter
+ defekt
+</div>
+</li>
+<li>
+<div>
+Sicherung Nr. 3 (10 A) im Sicherungs-/Relaiskasten unter dem Armaturenbrett durchgebrannt
+</div>
+</li>
+<li>
+<div>
+Unterbrechung im Kabel zwischen Motorsteuergerät (ECM) und Bremspedalstellungsschalter
+</div>
+</li>
+<li>
+<div>
+Masseschluss in einem Kabel zwischen ECM und Bremspedalstellungsschalter
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal des Kupplungspedalstellungsschalters
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Kupplungspedal betätigen und dann loslassen
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+SHIFT/CLUTCH SW muss bei betätigtem Kupplungspedal OFF und bei unbetätigtem Kupplungspedal ON anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Kupplungspedalstellungsschalter defekt
+</div>
+</li>
+<li>
+<div>
+Unterbrechung im Kabel zwischen ECM und Kupplungspedalstellungsschalter
+</div>
+</li>
+<li>
+<div>
+Masseschluss in einem Kabel zwischen ECM und Kupplungspedalstellungsschalter
+</div>
+</li>
+<li>
+<div>
+Unzureichende Masseverbindung (G401)
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal des Tempomat-Hauptschalters
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Tempomat-Hauptschalter ein- und ausschalten
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE CONTROL MAIN SW muss bei eingeschaltetem Tempomat-Hauptschalter ON und bei ausgeschaltetem Tempomat-Hauptschalter OFF anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Tempomat-Kombischalter defekt
+</div>
+</li>
+<li>
+<div>
+Unterbrechung im Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+<li>
+<div>
+Masseschluss in einem Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal des Schalters Set (Einstellen)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Schalter Set/Decel (Einstellen/Verzögerung) betätigen und freigeben
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE CONTROL SET SW muss bei betätigtem Schalter Set/Decel (Einstellen/Verzögerung) ON und bei freigegebenem Schalter Set/Decel (Einstellen/Verzögerung) OFF anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Tempomat-Kombischalter defekt
+</div>
+</li>
+<li>
+<div>
+Unterbrechung im Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+<li>
+<div>
+Masseschluss in einem Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal des Schalters Resume (Wiederaufnahme)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Schalter Resume/Accel (Wiederaufnahme/Beschleunigung) betätigen und freigeben
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE CONTROL RESUME SW muss bei gedrücktem Schalter Resume/Accel (Wiederaufnahme/Beschleunigung) ON und bei freigegebenem Schalter Resume/Accel (Wiederaufnahme/Beschleunigung) OFF anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<ul type="disc">
+<li>
+<div>
+Tempomat-Kombischalter defekt
+</div>
+</li>
+<li>
+<div>
+Unterbrechung im Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+<li>
+<div>
+Masseschluss in einem Kabel zwischen Instrumentensteuermodul und Tempomat-Kombischalter
+</div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal des Schalters Cancel (Rückstellung)
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Schalter Cancel (Rückstellung) betätigen und freigeben
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE CONTROL CANCEL SW muss bei betätigtem Schalter Cancel (Rückstellung) ON und bei freigegebenen Schalter Cancel (Rückstellung) OFF anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Tempomat-Kombischalter defekt
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Signal der Tempomat-Kontrollanzeige
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Motor anlassen, Tempomat-Hauptschalter einschalten und das Fahrzeug schneller als 40 km/h fahren. Tempomat einstellen und deaktivieren.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+CRUISE INDICATOR muss bei eingestelltem Tempomat ON und bei zurückgestelltem Tempomat OFF anzeigen.
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Instrumentensteuermodul defekt
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+</div>
+<br>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

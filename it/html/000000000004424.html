@@ -1,0 +1,935 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR9ERPK76300000000BBIT00
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Come eseguire la ricerca guasti del sistema B-CAN
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Esecuzione della ricerca guasti dei circuiti del sistema B-CAN
+</b>
+</div>
+<a name="iG02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Come controllare se ci sono DTC con il tester HDS (metodo consigliato)
+</b>
+</div>
+<div>
+Il tester HDS consente di controllare lo stato della comunicazione dei sistemi F-CAN e B-CAN, leggere e cancellare i DTC, visualizzare l'elenco dati ed eseguire verifiche funzionali.
+</div>
+<a name="iT01">
+</a>
+<div class="procedure_topic_title">
+<b>
+Controllare se ci sono DTC.
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al connettore trasmissione dati (A) posto sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con la vettura.
+</div>
+<div>
+NOTA: Se il tester HDS non è in grado di comunicare con la vettura, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Selezionare il menu &quot;BODY ELECTRICAL&quot; (impianto elettrico carrozzeria), quindi selezionare il menu &quot;TEST MODE&quot; (modalità di verifica) desiderato e controllare se ci sono DTC. Se i DTC non sono riportati nel menu selezionato, selezionare l'icona &quot;ALL DTC CHECK&quot; (controllo di tutti i DTC) per visualizzare tutti i DTC relativi alla carrozzeria.
+</div>
+<div>
+NOTA: Per le istruzioni specifiche, fare riferimento al manuale dell'utente del tester HDS.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Se vengono segnalati DTC, passare alla relativa ricerca guasti in base ai DTC segnalati.
+</div>
+<div>
+NOTA: Se viene memorizzato il DTC B1000, eseguire prima la ricerca guasti relativa al DTC B1000.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011030','1');">
+<img src="../tn/SMR9ERPK76300000000BBID13.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Esecuzione della ricerca guasti dei circuiti del sistema B-CAN
+</b>
+</div>
+<a name="iG02">
+</a>
+<div class="procedure_sub_title">
+<b>
+Come controllare se ci sono DTC con il tester HDS (metodo consigliato)
+</b>
+</div>
+<div>
+Il tester HDS consente di controllare lo stato della comunicazione dei sistemi F-CAN e B-CAN, leggere e cancellare i DTC, visualizzare l'elenco dati ed eseguire verifiche funzionali.
+</div>
+<a name="iT01">
+</a>
+<div class="procedure_topic_title">
+<b>
+Controllare se ci sono DTC.
+</b>
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al connettore trasmissione dati (A) posto sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBID13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con la vettura.
+</div>
+<div>
+NOTA: Se il tester HDS non è in grado di comunicare con la vettura, 
+<a href="javascript:CtsProc('2','000000000001111','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Selezionare il menu &quot;BODY ELECTRICAL&quot; (impianto elettrico carrozzeria), quindi selezionare il menu &quot;TEST MODE&quot; (modalità di verifica) desiderato e controllare se ci sono DTC. Se i DTC non sono riportati nel menu selezionato, selezionare l'icona &quot;ALL DTC CHECK&quot; (controllo di tutti i DTC) per visualizzare tutti i DTC relativi alla carrozzeria.
+</div>
+<div>
+NOTA: Per le istruzioni specifiche, fare riferimento al manuale dell'utente del tester HDS.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Se vengono segnalati DTC, passare alla relativa ricerca guasti in base ai DTC segnalati.
+</div>
+<div>
+NOTA: Se viene memorizzato il DTC B1000, eseguire prima la ricerca guasti relativa al DTC B1000.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Come controllare se ci sono DTC senza il tester HDS (metodo adottabile solo se non si dispone del tester HDS)
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('0','ZOOM000000000013380')">
+<br>
+Connettore di cortocircuito MPCS
+<br>
+ 07WAZ-0010100
+</a>
+</div>
+<div>
+Se il tester HDS non è disponibile, adottando il metodo seguente è possibile controllare lo stato della comunicazione del sistema B-CAN, la presenza dei DTC e lo stato della comunicazione del sistema F-CAN relativo al modulo di comando del quadro strumenti.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Controllare se ci sono DTC.
+</b>
+</div>
+<br>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Collegare il connettore di cortocircuito MPCS (A) al connettore di controllo (B) della centralina MICU, quindi portare l'interruttore (C) su ON.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011031','1');">
+<img src="../tn/SMR9ERPK76300000000BBID14.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Come controllare se ci sono DTC senza il tester HDS (metodo adottabile solo se non si dispone del tester HDS)
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<div>
+<a href="javascript:PrtProc('2','ZOOM000000000013381')">
+<br>
+Connettore di cortocircuito MPCS
+<br>
+ 07WAZ-0010100
+</a>
+</div>
+<div>
+Se il tester HDS non è disponibile, adottando il metodo seguente è possibile controllare lo stato della comunicazione del sistema B-CAN, la presenza dei DTC e lo stato della comunicazione del sistema F-CAN relativo al modulo di comando del quadro strumenti.
+</div>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Controllare se ci sono DTC.
+</b>
+</div>
+<br>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Collegare il connettore di cortocircuito MPCS (A) al connettore di controllo (B) della centralina MICU, quindi portare l'interruttore (C) su ON.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBID14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<span style="display:block" id="imgDispId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iT02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Dopo 5-10 secondi, i DTC rilevati e memorizzati singolarmente dai vari componenti del sistema B-CAN vengono segnalati uno ad uno sul display multifunzione se la linea di comunicazione tra la centralina MICU lato conducente e il modulo di comando quadro strumenti è in ordine. Per far scorrere i DTC, premere l'interruttore di selezione/azzeramento.
+</div>
+</li>
+</ol>
+<div>
+La centralina che ha memorizzato il DTC può essere identificata dal numero visualizzato sul display del contachilometri totalizzatore.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="70%">
+<col width="29%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Centralina
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Numero identificativo centralina
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MICU
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+10
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Modulo di comando quadro strumenti
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+50
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina riscaldamento/centralina climatizzatore
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+51
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sensore illuminazione automatica/pioggia
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+71
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina vivavoce
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+94
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina sensori di parcheggio e retromarcia
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+9A
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+96
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+NOTA: Inoltre, è possibile controllare lo stato della comunicazione del sistema B-CAN adottando i metodi seguenti:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000004308','iS01')">
+Mediante le modalità di verifica 1 e 2 della funzione di autodiagnosi della centralina MICU, che consentono di controllare lo stato della comunicazione e alcuni circuiti degli interruttori.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('0','000000000004392','i000')">
+Mediante la funzione di autodiagnosi del modulo di comando del quadro strumenti, che consente di controllare lo stato della comunicazione.
+</a>
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011032','1');">
+<img src="../tn/SMR9ERPK76300000000BBID15.png">
+</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="imgPrtId">
+<table width="100%" class="Viewer">
+<tr>
+<td width="100%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iT02">
+</a>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Dopo 5-10 secondi, i DTC rilevati e memorizzati singolarmente dai vari componenti del sistema B-CAN vengono segnalati uno ad uno sul display multifunzione se la linea di comunicazione tra la centralina MICU lato conducente e il modulo di comando quadro strumenti è in ordine. Per far scorrere i DTC, premere l'interruttore di selezione/azzeramento.
+</div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" id="graphTd" valign="top">
+<span style="display:block" id="imgId1">
+<div>
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBID15_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td width="100%" class="ViewerTD" valign="top">
+<div>
+La centralina che ha memorizzato il DTC può essere identificata dal numero visualizzato sul display del contachilometri totalizzatore.
+</div>
+<div>
+<table width="100%" class="Viewer" frame="border" style="table-layout:fixed;">
+<col width="70%">
+<col width="29%">
+<thead>
+<tr>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Centralina
+</b>
+</div>
+</th>
+<th class="ViewerTH" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+<b>
+Numero identificativo centralina
+</b>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+MICU
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+10
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Modulo di comando quadro strumenti
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+50
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina riscaldamento/centralina climatizzatore
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+51
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Sensore illuminazione automatica/pioggia
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+71
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina vivavoce
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+94
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina sensori di parcheggio e retromarcia
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+9A
+</div>
+</td>
+</tr>
+<tr>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="left">
+<div>
+Centralina immobilizzatore-sistema di accesso con telecomando
+</div>
+</td>
+<td class="ViewerTD" style="border-left-style:none;border-right-style:solid;border-bottom-style:solid;border-top-style:none;" align="center">
+<div>
+96
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+NOTA: Inoltre, è possibile controllare lo stato della comunicazione del sistema B-CAN adottando i metodi seguenti:
+</div>
+<ul type="disc">
+<li>
+<div>
+<a href="javascript:CtsProc('2','000000000004308','iS01')">
+Mediante le modalità di verifica 1 e 2 della funzione di autodiagnosi della centralina MICU, che consentono di controllare lo stato della comunicazione e alcuni circuiti degli interruttori.
+</a>
+</div>
+</li>
+<li>
+<div>
+<a href="javascript:CtsProc('2','000000000004392','i000')">
+Mediante la funzione di autodiagnosi del modulo di comando del quadro strumenti, che consente di controllare lo stato della comunicazione.
+</a>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</span>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG04">
+</a>
+<div class="servinfosub_title">
+<b>
+Come cancellare i DTC con il tester HDS
+</b>
+</div>
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al connettore trasmissione dati (A) posto sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Cancellare i DTC con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Portare il commutatore di accensione su LOCK (0) e scollegare il tester HDS dal connettore trasmissione dati (DLC).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000011033','1');">
+<img src="../tn/SMR9ERPK76300000000BBID16.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR9ERPK76300000000BBID16_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG05">
+</a>
+<div class="servinfosub_title">
+<b>
+Come cancellare i DTC senza il tester HDS
+</b>
+</div>
+<a name="i510">
+</a>
+<ol>
+<li value="1">
+<div>
+In fase di segnalazione dei DTC, mantenere premuto l'interruttore di selezione/azzeramento per più di 10 secondi.
+</div>
+</li>
+</ol>
+<a name="i520">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare l'interruttore del connettore di cortocircuito MPCS su OFF e scollegare il connettore dal connettore di controllo della centralina MICU.
+</div>
+</li>
+</ol>
+<a name="i530">
+</a>
+<ol>
+<li value="3">
+<div>
+Portare il commutatore di accensione su LOCK (0).
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

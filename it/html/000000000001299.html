@@ -1,0 +1,1434 @@
+<html lang="it" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>(
+SMR7E40K72100000000BBIT01
+)</title>
+<script>
+<!--
+var bufCookie = new Array;
+var strKey,strVal;
+var nPos=0;
+var strPara = location.href.split("?")[1];
+if((typeof(strPara) == "undefined") || (strPara == null)){
+	bufCookie = document.cookie.split(";");
+	while (nPos < bufCookie.length) {
+		strKey = bufCookie[nPos].split("=")[0];
+		strVal = bufCookie[nPos].split("=")[1];
+		if(strKey == "CurrentYearType"){
+			strPara = strVal;
+			break;
+		}
+		nPos++;
+	}
+}
+if((typeof(strPara) != "undefined") && (strPara != null)){
+	document.title = strPara + document.title;
+	document.cookie = "CurrentYearType="+strPara+";";
+	var strUrl = location.href.split("?")[0];
+	if(strUrl != location.href) {
+		location.replace(strUrl);
+	}
+}
+function CtsProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Cts(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Cts(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Cts(Key,strData);
+	}
+	else {
+		parent.Cts(Key,strData);
+	}
+}
+
+function PrtProc(Type,Key,Anc) {
+	var  strData;
+	strData = Anc
+	if((typeof(strPara) != "undefined") && (strPara != null)){
+		strData += '?'+strPara
+	}
+	if(Type == '0') {
+		parent.Prt(Key,strData);
+	}
+	else if(Type == '1') {
+		parent.parent.Prt(Key,strData);
+	}
+	else if(Type == '2') {
+		opener.top.Prt(Key,strData);
+	}
+	else {
+		parent.Prt(Key,strData);
+	}
+}
+-->
+</script>
+<link href="../css/ViewerStyle.css" rel="stylesheet">
+<style>
+	v\:*	{ behavior: url(#default#VML); }
+	.drag	{ position: relative; cursor:   hand; }
+</style>
+</head>
+<script>
+<!--
+var load_flag = false;
+function onLoadProc() {
+	parent.Old(this);
+	load_flag = true;
+}
+-->
+</script>
+<script src="../js/PrinterSize.js"></script>
+<script src="../js/StandardPrintFunc.js"></script>
+<body onload="javascript:onLoadProc()" style="font-family:sans-serif;">
+<div xmlns:v="urn:schemas-microsoft-com:vml">
+<div class="top_title">
+Come effettuare la ricerca guasti negli impianti di alimentazione carburante ed emissioni
+</div>
+<div>
+</div>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG01">
+</a>
+<div class="servinfosub_title">
+<b>
+Guasti intermittenti
+</b>
+</div>
+<div>
+Il termine ‘‘guasto intermittente&quot; indica che uno dei sistemi potrebbe aver subito un guasto, ma ora funziona correttamente. Se non si accende la spia guasti (MIL) sulla plancia o non compare la segnalazione sul display dell'impianto PGM-FI, controllare se ci sono collegamenti difettosi o terminali allentati in corrispondenza di tutti i connettori correlati al circuito di cui si sta effettuando la ricerca guasti. Se la spia MIL si è prima accesa e poi spenta, il guasto originario potrebbe essere di tipo intermittente.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG02">
+</a>
+<div class="servinfosub_title">
+<b>
+Interruzioni e cortocircuiti
+</b>
+</div>
+<div>
+‘‘Interruzione&quot; e ‘‘cortocircuito&quot; sono termini elettrici molto comuni. Un'interruzione è la rottura di un filo o di un collegamento. Un cortocircuito è il collegamento accidentale di un filo con la massa o con un altro filo. Nell'elettronica elementare, ciò in genere significa che qualcosa non funziona. Con l'elettronica complessa (come i moduli ECM), ciò può significare che qualcosa funziona, ma non come dovrebbe.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<div class="servinfosub_title">
+<b>
+Spia MIL
+</b>
+</div>
+<div>
+Su questi modelli, portando il commutatore di accensione su ON (II) senza avviare il motore, la spia guasti (MIL) (A) si accende per circa 20 secondi. Quindi si spegne o lampeggia per 5 volte a seconda delle condizioni. Ciò è normale: indica infatti la condizione di autoverifica diagnostica degli impianti di controllo delle emissioni.
+</div>
+<div>
+Se si accende la spia MIL nel quadro strumenti o compare la segnalazione dell'impianto PGM-FI (B) sul display multifunzione, passare a &quot;Come utilizzare il tester HDS&quot;.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003693','1');">
+<img src="../tn/SMR7E40K72100000000BBID02.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID02_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG04">
+</a>
+<div class="procedure_sub_title">
+<b>
+Segnalazione sul display sistema sensore livello olio motore (A)
+</b>
+</div>
+<div>
+Se viene visualizzata la segnalazione, il sensore livello olio motore potrebbe aver subito un guasto. Collegare il tester HDS al connettore trasmissione dati (DLC) posto sotto la plancia lato conducente. Controllare il codice di guasto (DTC) e annotarlo. A questo punto, fare riferimento alla ricerca guasti in base al DTC segnalato e iniziare la procedura di ricerca guasti appropriata.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003694','1');">
+<img src="../tn/SMR7E40K72100000000BBID03.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID03_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG05">
+</a>
+<div class="procedure_sub_title">
+<b>
+Segnalazione sul display del basso livello dell'olio motore (A)
+</b>
+</div>
+<div>
+Se viene visualizzata la segnalazione, il livello dell'olio motore potrebbe non essere corretto. 
+<a href="javascript:CtsProc('0','000000000001122','i000')">
+Controllare il sensore livello olio motore.
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003695','1');">
+<img src="../tn/SMR7E40K72100000000BBID04.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID04_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG06">
+</a>
+<div class="procedure_sub_title">
+<b>
+Segnalazione sul display controllo impianto DPF (A)
+</b>
+</div>
+<div>
+<a href="javascript:CtsProc('0','000000000001426','i000')">
+Se viene visualizzata la segnalazione, eseguire la rigenerazione del filtro DPF.
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003696','1');">
+<img src="../tn/SMR7E40K72100000000BBID05.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID05_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG03">
+</a>
+<a name="iG07">
+</a>
+<div class="procedure_sub_title">
+<b>
+Segnalazione sul display necessaria rigenerazione filtro DPF (A)
+</b>
+</div>
+<div>
+<a href="javascript:CtsProc('0','000000000001426','i000')">
+Se viene visualizzata la segnalazione, il filtro DPF potrebbe essere ostruito. Eseguire la rigenerazione del filtro DPF.
+</a>
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003697','1');">
+<img src="../tn/SMR7E40K72100000000BBID06.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID06_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div class="servinfosub_title">
+<b>
+Come utilizzare il tester HDS (sistema diagnostico Honda)
+</b>
+</div>
+<div>
+Quando il modulo ECM rileva un errore di funzionamento nell'impianto, si accende la spia MIL (A) nel quadro strumenti o la spia dell'impianto PGM-FI (B) nel display multifunzione.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003698','1');">
+<img src="../tn/SMR7E40K72100000000BBID07.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID07_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<div>
+Quando il tester HDS viene collegato al connettore trasmissione dati (DLC) (A) (situato sotto la plancia lato conducente), il codice di guasto (DTC) viene segnalato quando il commutatore di accensione viene portato su ON (II).
+</div>
+<div>
+Se la spia MIL o la spia dell'impianto PGM-FI si accendono oppure si sospetta un problema di guida, eseguire la seguente procedura:
+</div>
+<a name="i010">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al DLC (per le istruzioni specifiche, consultare il manuale dell'utente del tester HDS).
+</div>
+</li>
+</ol>
+<a name="i020">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II), selezionare &quot;DIESEL system&quot; (sistema diesel) e leggere i DTC nel menu DTC sulla schermata del tester.
+</div>
+</li>
+</ol>
+<a name="i030">
+</a>
+<ol>
+<li value="3">
+<div>
+Registrare tutti i DTC e i dati congelati.
+</div>
+</li>
+</ol>
+<a name="i040">
+</a>
+<ol>
+<li value="4">
+<div>
+Eseguire la ricerca guasti per i DTC segnalati.
+</div>
+</li>
+</ol>
+<a name="i050">
+</a>
+<ol>
+<li value="5">
+<div>
+Se non è possibile controllare i DTC e la spia MIL rimane accesa, 
+<a href="javascript:CtsProc('0','000000000001118','i000')">
+eseguire la ricerca guasti del circuito della spia MIL.
+</a>
+</div>
+</li>
+</ol>
+<a name="i060">
+</a>
+<ol>
+<li value="6">
+<div>
+Se non è possibile controllare il DTC e la spia dell'impianto PGM-FI rimane accesa, controllare i sintomi dell'impianto di avviamento.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003699','1');">
+<img src="../tn/SMR7E40K72100000000BBID08.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID08_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<a name="iT01">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Se la spia MIL e/o la spia dell'impianto PGM-FI non si accendono
+</b>
+</div>
+<br>
+<div>
+Se la spia MIL non si accende e/o non viene visualizzata la segnalazione dell'impianto PGM-FI sul display ma c'è un problema di guida, eseguire la ricerca guasti in base ai sintomi.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG08">
+</a>
+<a name="iT02">
+</a>
+<br>
+<div class="topic_title">
+<b>
+Se non è possibile duplicare il DTC
+</b>
+</div>
+<br>
+<div>
+Alcune ricerche guasti richiedono di ripristinare il modulo ECM e di duplicare il DTC. Se il guasto è intermittente e non è possibile duplicare il DTC, non proseguire con la procedura. Ciò potrebbe provocare confusione e, probabilmente, portare ad una sostituzione inutile del modulo ECM.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG09">
+</a>
+<div class="servinfosub_title">
+<b>
+Comando di cancellazione tester HDS
+</b>
+</div>
+<div>
+Il modulo ECM interno memorizza dati specifici di vario genere per correggere il sistema anche in assenza di alimentazione elettrica, ad esempio se il terminale negativo della batteria o il fusibile N. 9 IGP (20 A) sono stati scollegati. Tuttavia, i dati memorizzati relativi ai componenti difettosi devono essere cancellati utilizzando il comando di cancellazione del tester HDS, se il componenti sono stati sostituiti.
+</div>
+<div>
+Il tester HDS è dotato di tre tipi di comandi di cancellazione. il comando di cancellazione dei DTC e il comando di azzeramento del modulo ECM. Il comando di cancellazione dei DTC elimina tutti i DTC memorizzati e i dati congelati. Può essere effettuato con il tester HDS dopo aver riprodotto i DTC durante la ricerca guasti. Il comando di azzeramento del modulo ECM elimina tutti i DTC memorizzati, i dati congelati e tutti i dati specifici per correggere il sistema.
+</div>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG10">
+</a>
+<div class="servinfosub_title">
+<b>
+Cancellazione del DTC
+</b>
+</div>
+<a name="i110">
+</a>
+<ol>
+<li value="1">
+<div>
+Cancellare i DTC con il tester HDS a motore fermo.
+</div>
+</li>
+</ol>
+<a name="i120">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su OFF ed attendere 1 minuto.
+</div>
+</li>
+</ol>
+<a name="i130">
+</a>
+<ol>
+<li value="3">
+<div>
+Scollegare il tester HDS dal connettore DLC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG11">
+</a>
+<div class="servinfosub_title">
+<b>
+Azzeramento modulo ECM
+</b>
+</div>
+<div>
+Questo comando cancella i dati specifici memorizzati da ciascuna vettura come ad esempio i DTC e i dati congelati.
+</div>
+<a name="i210">
+</a>
+<ol>
+<li value="1">
+<div>
+Azzerare il modulo ECM con il tester HDS a motore fermo.
+</div>
+</li>
+</ol>
+<a name="i220">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su OFF ed attendere 1 minuto.
+</div>
+</li>
+</ol>
+<a name="i230">
+</a>
+<ol>
+<li value="3">
+<div>
+Scollegare il tester HDS dal connettore DLC.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG12">
+</a>
+<div class="servinfosub_title">
+<b>
+Come terminare una sessione di ricerca guasti (necessario al termine di ogni ricerca guasti)
+</b>
+</div>
+<a name="i310">
+</a>
+<ol>
+<li value="1">
+<div>
+Azzerare il modulo ECM con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i320">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su OFF.
+</div>
+</li>
+</ol>
+<a name="i330">
+</a>
+<ol>
+<li value="3">
+<div>
+Scollegare il tester HDS dal connettore DLC.
+</div>
+<div>
+NOTA: Il modulo ECM è parte del sistema immobilizzatore. Se si sostituisce il modulo ECM, questo avrà un codice immobilizzatore diverso. Per avviare il motore, è necessario riscrivere il codice immobilizzatore con il tester HDS.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG13">
+</a>
+<div class="servinfosub_title">
+<b>
+Come eseguire la ricerca guasti dei circuiti in corrispondenza dei connettori del modulo ECM
+</b>
+</div>
+<div class="tool_list_title">
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<br>
+Set puntali tester per modulo ECM
+<br>
+ 070AJ-RBD0200
+<a name="i410">
+</a>
+<ol>
+<li value="1">
+<div>
+<a href="javascript:CtsProc('0','000000000001590','i000')">
+Rimuovere la console centrale.
+</a>
+</div>
+</li>
+</ol>
+<a name="i420">
+</a>
+<ol>
+<li value="2">
+<div>
+<a href="javascript:CtsProc('0','000000000000196','i000')">
+Rimuovere il pannello battitacco lato passeggero.
+</a>
+</div>
+</li>
+</ol>
+<a name="i430">
+</a>
+<ol>
+<li value="3">
+<div>
+Portare il commutatore di accensione su OFF ed attendere 2 minuti.
+</div>
+</li>
+</ol>
+<a name="i440">
+</a>
+<ol>
+<li value="4">
+<div>
+Scollegare i connettori (A) del modulo ECM e portare il puntale del tester a contatto con i terminali dal lato terminale dei connettori.
+</div>
+</li>
+</ol>
+<a name="i450">
+</a>
+<ol>
+<li value="5">
+<div>
+Controllare il diametro del terminale del connettore e selezionare un puntale (maschio) idoneo.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003706','1');">
+<img src="../tn/SMR7E40K72100000000BBID09.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID09_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG13">
+</a>
+<a name="i460">
+</a>
+<ol>
+<li value="6">
+<div>
+Quando si esegue la diagnosi/ricerca guasti in corrispondenza del connettore del modulo ECM, utilizzare il foro di rilevamento (A) che si trova sopra il terminale che si desidera controllare.
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003707','1');">
+<img src="../tn/SMR7E40K72100000000BBID11.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID11_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG13">
+</a>
+<a name="i470">
+</a>
+<ol>
+<li value="7">
+<div>
+Collegare uno dei terminali del cavetto di prolunga (A) a un multimetro digitale (B) reperibile in commercio e l'altro terminale del cavetto di prolunga al puntale del tester.
+</div>
+</li>
+</ol>
+<a name="i480">
+</a>
+<ol>
+<li value="8">
+<div>
+Inserire con delicatezza il puntale (maschio) nei terminali del connettore lato terminale. Non spingere a forza il puntale nei terminali.
+</div>
+<div>
+<img src="../img/NOTICE_IT.PNG">
+<ul type="disc">
+<li>
+<div>
+Per ottenere risultati precisi, utilizzare sempre puntali (maschio).
+</div>
+</li>
+<li>
+<div>
+Per evitare di danneggiare i terminali dei connettori, non inserire puntali di tester, graffette, o altri oggetti che potrebbero danneggiare i terminali. I terminali danneggiati provocano collegamenti difettosi e misurazioni errate.
+</div>
+</li>
+<li>
+<div>
+Non perforare la guaina isolante del filo. Eventuali perforazioni possono essere causa di connessioni elettriche insufficienti o intermittenti.
+</div>
+</li>
+</ul>
+</img>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003708','1');">
+<img src="../tn/SMR7E40K72100000000BBID10.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID10_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG14">
+</a>
+<div class="servinfosub_title">
+<b>
+Aggiornamento del modulo ECM
+</b>
+</div>
+<div>
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Tester HDS (sistema diagnostico Honda)
+</div>
+</li>
+<li>
+<div>
+Modulo di interfaccia Honda (HIM)
+</div>
+</li>
+<li>
+<div>
+Tester HDS tascabile
+</div>
+</li>
+</ul>
+<div>
+Utilizzare questa procedura quando si deve aggiornare il modulo ECM durante le procedure di ricerca guasti.
+</div>
+<div>
+NOTA:
+</div>
+<ul type="disc">
+<li>
+<div>
+Verificare che sul tester HDS/modulo HIM sia stata installata l'ultima versione software.
+</div>
+</li>
+<li>
+<div>
+Prima di aggiornare il modulo ECM, verificare che la batteria sia completamente carica.
+</div>
+</li>
+<li>
+<div>
+Non portare mai il commutatore di accensione su OFF durante l'aggiornamento. In caso di difficoltà di esecuzione dell'aggiornamento, lasciare il commutatore di accensione su ON (II).
+</div>
+</li>
+<li>
+<div>
+Per evitare di danneggiare il modulo ECM, durante l'aggiornamento, non azionare alcun impianto elettrico [fari, impianto audio, freni, climatizzatore, alzacristalli elettrici, tettuccio apribile (se in dotazione), blocchi portiere, ecc.].
+</div>
+</li>
+<li>
+<div>
+Per verificare di aver installato l'ultima versione software, eseguire l'aggiornamento del modulo ECM ogni volta che viene sostituito.
+</div>
+</li>
+<li>
+<div>
+Non è possibile aggiornare il modulo ECM con la stessa versione software. Accetterà solamente una nuova versione del programma.
+</div>
+</li>
+<li>
+<div>
+Una temperatura elevata del vano motore può provocare un eccessivo surriscaldamento del modulo ECM, non consentendo di eseguire l'aggiornamento. Se, prima dell'esecuzione della procedura, il motore era in funzione, aprire il cofano e lasciare raffreddare il vano motore.
+</div>
+</li>
+<li>
+<div>
+Se è necessario effettuare la diagnosi del modulo interfaccia Honda (HIM) poiché l'indicatore rosso (N. 3) del modulo HIM si è acceso o ha lampeggiato durante l'aggiornamento, lasciare il commutatore di accensione su ON (II) quando si scollega il modulo HIM dal connettore trasmissione dati (DLC). Questo dovrà prevenire il danneggiamento del modulo ECM.
+</div>
+</li>
+</ul>
+<a name="i490">
+</a>
+<ol>
+<li value="1">
+<div>
+Portare il commutatore di accensione su ON (II), ma non avviare il motore.
+</div>
+</li>
+</ol>
+<a name="i500">
+</a>
+<ol>
+<li value="2">
+<div>
+Collegare il tester HDS al connettore trasmissione dati (DLC) (A) posto sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i510">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con il modulo ECM. In caso contrario, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i520">
+</a>
+<ol>
+<li value="4">
+<div>
+Scollegare il tester HDS, quindi selezionare la modalità di aggiornamento e seguire i messaggi sullo schermo per aggiornare il modulo ECM.
+</div>
+</li>
+</ol>
+<a name="i530">
+</a>
+<ol>
+<li value="5">
+<div>
+Se il modulo ECM è già stato aggiornato all'ultima versione software, scollegare il tester HDS o il modulo HIM dal connettore DLC, quindi ritornare alla procedura in corso. Se non si possiede l'ultima versione software del modulo ECM, seguire le istruzioni sullo schermo. Se il messaggio sullo schermo richiede la selezione del sistema diesel, aggiornare entrambi.
+</div>
+<div>
+NOTA: Se il sistema di aggiornamento del modulo ECM prevede che venga fatto raffreddare il modulo ECM, seguire le istruzioni sullo schermo. Se si verifica un problema durante la procedura di aggiornamento, (la programmazione richiede più di 30 minuti, la barra di stato supera il 100 ‰, la spia dell'immobilizzatore lampeggia, il tester HDS si blocca ecc.), eseguire le seguenti procedure per minimizzare il rischio di danneggiare il modulo ECM:
+</div>
+<ul type="disc">
+<li>
+<div>
+Lasciare il commutatore di accensione in posizione ON (II).
+</div>
+</li>
+<li>
+<div>
+Collegare una batteria ausiliaria (non collegare un caricabatteria).
+</div>
+</li>
+<li>
+<div>
+Spegnere il tester HDS.
+</div>
+</li>
+<li>
+<div>
+Scollegare il tester HDS dal connettore DLC.
+</div>
+</li>
+<li>
+<div>
+Riavviare il tester HDS.
+</div>
+</li>
+<li>
+<div>
+Ricollegare il tester HDS al connettore DLC e provare ad eseguire nuovamente la procedura di aggiornamento.
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003709','1');">
+<img src="../tn/SMR7E40K72100000000BBID12.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID12_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<div class="servinfosub_title">
+<b>
+Sostituzione del modulo ECM
+</b>
+</div>
+<div>
+<b>
+Attrezzi speciali richiesti
+</b>
+</div>
+<ul type="disc">
+<li>
+<div>
+Tester HDS (sistema diagnostico Honda)
+</div>
+</li>
+<li>
+<div>
+Modulo di interfaccia Honda (HIM)
+</div>
+</li>
+<li>
+<div>
+Tester HDS tascabile
+</div>
+</li>
+</ul>
+<div>
+Utilizzare questa procedura quando si deve sostituire un modulo ECM funzionante durante le procedure di ricerca guasti.
+</div>
+<a name="i540">
+</a>
+<ol>
+<li value="1">
+<div>
+Collegare il tester HDS al connettore trasmissione dati (DLC) (A) posto sotto la plancia lato conducente.
+</div>
+</li>
+</ol>
+<a name="i550">
+</a>
+<ol>
+<li value="2">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+</li>
+</ol>
+<a name="i560">
+</a>
+<ol>
+<li value="3">
+<div>
+Verificare che il tester HDS comunichi con il modulo ECM. In caso contrario, 
+<a href="javascript:CtsProc('0','000000000001111','i000')">
+eseguire la ricerca guasti del circuito del connettore DLC.
+</a>
+</div>
+</li>
+</ol>
+<a name="i570">
+</a>
+<ol>
+<li value="4">
+<div>
+Portare il commutatore di accensione su OFF e attendere 2 minuti.
+</div>
+</li>
+</ol>
+<a name="i580">
+</a>
+<ol>
+<li value="5">
+<div>
+<a href="javascript:CtsProc('0','000000000001590','i000')">
+Rimuovere la console centrale.
+</a>
+</div>
+</li>
+</ol>
+<a name="i590">
+</a>
+<ol>
+<li value="6">
+<div>
+<a href="javascript:CtsProc('0','000000000000196','i000')">
+Rimuovere il pannello battitacco lato passeggero.
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003710','1');">
+<img src="../tn/SMR7E40K72100000000BBID13.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID13_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG15">
+</a>
+<a name="i600">
+</a>
+<ol>
+<li value="7">
+<div>
+Scollegare i connettori (A) del modulo ECM.
+</div>
+</li>
+</ol>
+<a name="i610">
+</a>
+<ol>
+<li value="8">
+<div>
+Rimuovere la staffa (B), quindi rimuovere il modulo ECM (C).
+</div>
+</li>
+</ol>
+<a name="i620">
+</a>
+<ol>
+<li value="9">
+<div>
+Installare i componenti nell'ordine inverso rispetto alla rimozione.
+</div>
+</li>
+</ol>
+<a name="i630">
+</a>
+<ol>
+<li value="10">
+<div>
+Portare il commutatore di accensione su ON (II).
+</div>
+<div>
+NOTA: Viene memorizzato il DTC P0630 ‘‘Mancata programmazione o corrispondenza codice VIN'' a causa della mancata programmazione del codice VIN nel modulo ECM. Ignorare il DTC e continuare con la procedura.
+</div>
+</li>
+</ol>
+<a name="i640">
+</a>
+<ol>
+<li value="11">
+<div>
+Inserire il codice VIN nel modulo ECM con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i650">
+</a>
+<ol>
+<li value="12">
+<div>
+Con il tester HDS, selezionare la voce &quot;IMMOBILIZER SYSTEM&quot; (immobilizzatore).
+</div>
+</li>
+</ol>
+<a name="i660">
+</a>
+<ol>
+<li value="13">
+<div>
+Riscrivere il codice immobilizzatore con la procedura di sostituzione del modulo ECM nel sistema HDS. Questo consente di avviare il motore.
+</div>
+</li>
+</ol>
+<a name="i670">
+</a>
+<ol>
+<li value="14">
+<div>
+Azzerare il modulo ECM con il tester HDS.
+</div>
+</li>
+</ol>
+<a name="i680">
+</a>
+<ol>
+<li value="15">
+<div>
+Con impianto DPF: 
+<a href="javascript:CtsProc('0','000000000001426','i000')">
+Eseguire la rigenerazione del filtro DPF.
+</a>
+</div>
+</li>
+</ol>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+<div>
+<span style="display:block" id="imgDispId">
+<a href="javascript:PrtProc('0','ZOOM000000000003711','1');">
+<img src="../tn/SMR7E40K72100000000BBID14.png">
+</a>
+</span>
+<span style="display:none" id="imgPrtId">
+<span style="display:none" id="prePageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+<script src="../js/SMR7E40K72100000000BBID14_1.js">
+</script>
+<span style="display:none" id="postPageId">
+<div style="page-break-after:always;">
+</div>
+</span>
+</span>
+</div>
+</td>
+</tr>
+</table>
+<span style="display:none" id="hrDivId">
+<div style="page-break-after:always">
+</div>
+</span>
+<hr width="100%" size="2" id="hrId" color="gray">
+<table width="100%" class="Viewer">
+<tr>
+<td width="80%" class="ViewerTD" id="textTd" valign="top">
+<a name="iG16">
+</a>
+<div class="servinfosub_title">
+<b>
+Stato OBD
+</b>
+</div>
+<div>
+Lo stato OBD mostra lo stato attuale del sistema di ciascun DTC e di tutti i parametri. Questa funzione viene utilizzata per vedere se le riparazioni sono state completate con successo. I risultati delle verifiche diagnostiche per i DTC vengono visualizzati in questo modo:
+</div>
+<ul type="disc">
+<li>
+<div>
+&quot;PASSED&quot; (superata): La diagnosi di bordo è stata completata con successo.
+</div>
+</li>
+<li>
+<div>
+&quot;FAILED&quot; (non superata): La diagnosi di bordo è stata completata ma non è stata superata.
+</div>
+</li>
+<li>
+<div>
+&quot;NOT COMPLETED&quot; (non completata): La diagnosi di bordo è in corso ma fuori dalle condizioni di abilitazione dei DTC.
+</div>
+</li>
+</ul>
+</td>
+<td width="20%" class="ViewerTD" id="graphTd" valign="top">
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
