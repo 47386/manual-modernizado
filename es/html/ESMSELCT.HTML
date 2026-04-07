@@ -17,7 +17,7 @@ var gModelInfo;
 var gSmFlag,gBrmFlag;
 var gKey,gSct,gSc,gSys,gComp,gSitq,gKeyword;
 if (typeof(parent.document.ESM) != "object") {
-  location.href = "../../HONDAESM.HTML";
+  location.href = "../../index.html";
 }
 parent.document.title = "CIVIC 3D Manual del taller (HONDA MOTOR Co.,Ltd.)";
 document.ESM = parent.document.ESM;
@@ -173,7 +173,7 @@ function WordSearch()
 {
   var  strTree;
 
-  gESM.Keyword = document.all("txtWord").value;
+  gESM.Keyword = document.getElementById('txtWord').value;
   document.ESM = gESM;
   parent.document.ESM = document.ESM;
   if(radSM.checked == true) {
@@ -183,7 +183,7 @@ function WordSearch()
     strTree = "BRL_";
   }
   else {
-    document.iframeTree.location = "./ESMBLANK.HTML";
+    window.frames["SelTree"].location = "./ESMBLANK.HTML";
     return;
   }
   strTree += gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_";
@@ -201,7 +201,7 @@ function ClearSearch()
   gESM.Comp = "";        
   gESM.Sitq = "";        
   gESM.Keyword = "";     
-  document.all("txtWord").value = "";
+  document.getElementById('txtWord').value = "";
 
   parent.F12.location="./ESMBLANK.HTML";
   if(radSM.checked == true) {
@@ -211,12 +211,12 @@ function ClearSearch()
     strTree = "BRT_";
   }
   else {
-    document.iframeTree.location = "./ESMBLANK.HTML";
+    window.frames["SelTree"].location = "./ESMBLANK.HTML";
     return;
   }
   strTree += gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_";
   strTree += gModelInfo[gESM.mySel].Year + ".html";
-  document.iframeTree.location = strTree;
+  window.frames["SelTree"].location = strTree;
 
 }
 function SortComp(p1, p2)
@@ -271,12 +271,12 @@ function OnChangeModelCode()
     strTree = "BRT_";
   }
   else {
-    document.iframeTree.location = "./ESMBLANK.HTML";
+    window.frames["SelTree"].location = "./ESMBLANK.HTML";
     return;
   }
   strTree += gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_";
   strTree += gModelInfo[gESM.mySel].Year + ".html";
-  document.iframeTree.location = strTree;
+  window.frames["SelTree"].location = strTree;
 }
 function OnChangeModel()
 {
@@ -313,12 +313,12 @@ function OnChangeIndv(fReload, nIndex)
     strTree = "BRT_";
   }
   else {
-    document.iframeTree.location = "./ESMBLANK.HTML";
+    window.frames["SelTree"].location = "./ESMBLANK.HTML";
     return;
   }
   strTree += gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_";
   strTree += gModelInfo[gESM.mySel].Year + ".html";
-  document.iframeTree.location = strTree;
+  window.frames["SelTree"].location = strTree;
   parent.ChangeModelType(true);
 
 }
@@ -327,7 +327,7 @@ function Old(obj){
     
     return;
   }
-  if(obj.name == iframeTree.name){
+  if(obj.name == document.getElementById('iframeTree').name){
     divSysCompTreeSearching.style.display = "none";
     divSysCompTreeSearched.style.display = "block";
     gESM.Key = "";         

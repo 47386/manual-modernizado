@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="HONDA MOTOR Co.,Ltd.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual del Taller Honda Civic (HONDA MOTOR Co.,Ltd.)</title>
+<script src="./_COM/HONDAESM.JS"></script>
+<script src="./_COM/MESSAGE.JS"></script>
+<script src="./_COM/LANGINFO.JS"></script>
+<script>
+var gESM, gLng, gMSG, gModelInfo, fn;
+var fStart = (GetCookie("EsmStart") == "true") ? false : true;
+
+if (fStart || !document.referrer) {
+  gESM       = new Array;
+  gLng       = new Array;
+  gMSG       = new Array;
+  gModelInfo = new Array;
+  fn         = new Array;
+
+  gESM.Lng       = gLng;
+  gESM.lngSel    = -1;
+  gESM.MsgC      = gMSG;
+  gESM.ModelInfo = gModelInfo;
+  gESM.mySel     = -1;
+  gESM.mcSel     = -1;
+  gESM.subSel    =  0;
+  gESM.subUse    =  0;
+  gESM.mdlSel    =  0;
+  gESM.manTyp    = 'SM';
+  gESM.smFlag    = -1;
+  gESM.brmFlag   = -1;
+  document.ESM   = gESM;
+  SetLang();
+
+  gESM.Key     = "";
+  gESM.Sct     = "";
+  gESM.Sc      = "";
+  gESM.Sys     = "";
+  gESM.Comp    = "";
+  gESM.Sitq    = "";
+  gESM.Keyword = "";
+
+  fn.GetCookie  = GetCookie;
+  fn.SetCookie  = SetCookie;
+  fn.FormatStr  = FormatStr;
+  fn.ChangeLang = ChangeLang;
+  gESM.fn = fn;
+} else {
+  document.ESM   = parent.document.ESM;
+  gESM           = document.ESM;
+  gLng           = gESM.Lng;
+  gMSG           = gESM.MsgC;
+  gModelInfo     = gESM.ModelInfo;
+  fn             = gESM.fn;
+}
+fn.SetCookie("EsmStart", "true", true);
+
+function Initialize()
+{
+  var strLang, strYear, strCode, strData;
+  var i;
+
+  if (gESM.Lng.length <= 0) {
+    alert("No se encontró información de idioma.");
+    return;
+  }
+
+  if (fStart || (gESM.lngSel < 0)) {
+    strLang = GetCookie("EsmLang");
+    if (strLang.length > 0) {
+      gESM.subSel = strLang.substr(strLang.length, 1);
+      strLang = strLang.substr(0, strLang.length - 1);
+      gESM.lngSel = -1;
+      for (i = 0; i < gESM.Lng.length; ++i) {
+        strCode = gESM.Lng[i].Code;
+        if (strLang.toUpperCase() == strCode.toUpperCase()) {
+          gESM.lngSel = i;
+          break;
+        }
+      }
+    }
+  }
+  if (fStart || (gESM.mySel < 0)) {
+    strYear = GetCookie("EsmYear");
+    if (strYear.length > 0) {
+      gESM.mySel = -1;
+      for (i = 0; i < gESM.ModelInfo.length; ++i) {
+        strData = gESM.ModelInfo[i].Year;
+        if (strYear.toUpperCase() == strData.toUpperCase()) {
+          gESM.mySel = i;
+          break;
+        }
+      }
+    }
+    if ((gESM.mySel >= 0) && (gESM.mcSel < 0)) {
+      strCode = GetCookie("EsmCode");
+      if (strCode.length > 0) {
+        gESM.mcSel = -1;
+        for (i = 0; i < gESM.ModelInfo[gESM.mySel].CodeList.length; ++i) {
+          strData = gESM.ModelInfo[gESM.mySel].CodeList[i].Code;
+          if (strCode.toUpperCase() == strData.toUpperCase()) {
+            gESM.mcSel = i;
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  if (gESM.lngSel < 0) { gESM.lngSel = 2; } // default: Spanish
+  if (gESM.mySel  < 0) { gESM.mySel  = 0; }
+  if (gESM.mcSel  < 0) { gESM.mcSel  = 0; }
+}
+
+function Old(obj)
+{
+  if (obj == null) { return; }
+  obj.Fsl(gESM.Key, gESM.Sct, gESM.Sc, gESM.Sys, gESM.Comp, gESM.Sitq, gESM.Keyword);
+  obj.Chh(obj.document.body.clientHeight);
+}
+
+function Tsl(key, sct, sc, sys, comp, sitq)
+{
+  gESM.Key  = key;
+  gESM.Sct  = sct;
+  gESM.Sc   = sc;
+  gESM.Sys  = sys;
+  gESM.Comp = comp;
+  gESM.Sitq = sitq;
+}
+
+function Cts(key, anc)
+{
+  var dir = window.location.href.substring(0, window.location.href.lastIndexOf("/")) + "/" + gESM.Lng[gESM.lngSel].Code + "/html/";
+  if (!anc) { anc = ""; } else { anc = "#" + anc; }
+  var url = key + ".html" + anc;
+  jsShopPopUpHistWindow(url, key, anc);
+}
+
+function Jmp(anc) {}
+function Prt(key) {}
+function Scl(sys, comp) {}
+
+var win = null;
+function jsShopPopUpHistWindow(url, key, anc)
+{
+  var w = 1024, h = 668;
+  var t = (screen.availHeight - h) / 2;
+  var l = (screen.availWidth  - w) / 2;
+  var newUrl = window.location.href.substring(0, window.location.href.lastIndexOf("/")) + "/" + gESM.Lng[gESM.lngSel].Code + "/html/ESMManualMain.html?url=" + encodeURIComponent(url) + "&key=" + key + "&anc=" + anc;
+  if (win == null || win.closed) {
+    win = window.open(newUrl, "ESM", "toolbar=yes,menubar=yes,status=yes,scrollbars=no,resizable=yes,top=" + t + ",left=" + l + ",width=" + w + ",height=" + h);
+  } else {
+    win.location.href = newUrl;
+  }
+  if (win) { win.focus(); }
+}
+
+function OnLoad()
+{
+  if (gESM.subSel == 0) { gESM.subSel = 1; }
+  if (gESM.subSel == 1 && (gESM.subUse & 1) == 0) { gESM.subSel = 2; }
+  if (gESM.subSel == 2 && (gESM.subUse & 2) == 0) { gESM.subSel = 1; }
+  ChangeLang(false);
+}
+
+function OnUnload()
+{
+  var f10 = document.getElementById('F10');
+  var f11 = document.getElementById('F11');
+  var f12 = document.getElementById('F12');
+  if (f10) f10.src = "./_COM/ESMTITLE.HTML";
+  if (f11) f11.src = "./_COM/ESMSELCT.HTML";
+  if (f12) f12.src = "./_COM/ESMBLANK.HTML";
+}
+
+Initialize();
+window.onload = OnLoad;
+window.onunload = OnUnload;
+</script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+#layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#header {
+  height: 71px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+#body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+#nav {
+  width: 370px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+}
+#content {
+  flex: 1;
+  overflow: hidden;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+</style>
+</head>
+<body>
+<div id="layout">
+  <div id="header">
+    <iframe id="F10" name="F10" src="./_COM/ESMTITLE.HTML" scrolling="no" title="Cabecera"></iframe>
+  </div>
+  <div id="body">
+    <div id="nav">
+      <iframe id="F11" name="F11" src="./_COM/ESMSELCT.HTML" title="Navegación"></iframe>
+    </div>
+    <div id="content">
+      <iframe id="F12" name="F12" src="./_COM/ESMBLANK.HTML" title="Contenido"></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>
