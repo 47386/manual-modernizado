@@ -70,7 +70,7 @@ function Initialize()
   if (fStart || (gESM.lngSel < 0)) {
     strLang = GetCookie("EsmLang");
     if (strLang.length > 0) {
-      gESM.subSel = strLang.substr(strLang.length, 1);
+      gESM.subSel = strLang.substr(strLang.length - 1, 1);
       strLang = strLang.substr(0, strLang.length - 1);
       gESM.lngSel = -1;
       for (i = 0; i < gESM.Lng.length; ++i) {

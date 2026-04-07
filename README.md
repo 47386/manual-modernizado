@@ -9,7 +9,7 @@ Manual de Taller electrónico (Honda ESM — Electronic Service Manual) del **Ho
 1. Descarga o clona este repositorio en tu equipo.
 2. Abre el archivo **`index.html`** con tu navegador web (Chrome, Firefox, Edge o Safari).
 
-> **Nota:** Debido a restricciones de seguridad de los navegadores (`CORS`/`same-origin policy`), el manual funciona mejor cuando se sirve desde un servidor local. Si abres el archivo directamente con `file://` y hay problemas de carga, usa la opción 2.
+> **Nota:** Debido a restricciones de seguridad de los navegadores (`CORS` — Cross-Origin Resource Sharing / `same-origin policy`), el manual funciona mejor cuando se sirve desde un servidor local. Si abres el archivo directamente con `file://` y hay problemas de carga, usa la opción 2.
 
 ### Opción 2: Servir con un servidor local
 
