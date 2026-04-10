@@ -12,9 +12,7 @@
 <script src="./_COM/LANGINFO.JS"></script>
 <script>
 <!--
-if (!CheckEnvironment()) {                                            
-  close();                                                            
-}                                                                     
+/* CheckEnvironment() desactivado: compatible con navegadores modernos */
 var gESM, gLng, gMSG, gModelInfo, fn;
 var fStart    = (GetCookie("EsmStart") == "true")? false:true;
 if (fStart || !document.referrer) {
@@ -70,29 +68,6 @@ else {
 fn.SetCookie("EsmStart","true", true);
 function CheckEnvironment()
 {
-  var nPos;
-
-  with (navigator) {
-    if (appName.charAt(0) != "M") {
-      alert("Execute the Microsoft Internet Explorer(R).");
-      return(false);
-    }
-    if (appVersion.charAt(0) < "4") {
-      alert("Execute the Microsoft Internet Explorer(R); Version more than 5.0.");
-      return(false);
-    }
-    nPos = appVersion.indexOf("MSIE ");
-    if (nPos > 0) {
-      if (appVersion.charAt(nPos+5) < "4") {
-        alert("Execute the Microsoft Internet Explorer(R); Version more than 5.0.");
-        return(false);
-      }
-    }
-    if (platform != "Win32") {
-      alert("Execute under the Microsoft Windows(R) only.");
-      return(false);
-    }
-  }
   return(true);
 }
 function Initialize()
@@ -230,7 +205,7 @@ function jsShopPopUpHistWindow(url,key,anc)
 
   var t = (screen.availHeight- h)/2;
   var l = (screen.availWidth - w)/2;
-  var newUrl = window.location.href.substring(0,window.location.href.lastIndexOf("/")) + "/" +gESM.Lng[gESM.lngSel].Code+"/html/"+"ESMManualMain.html?url="+escape(url)+"&key="+key+"&anc="+anc;
+  var newUrl = window.location.href.substring(0,window.location.href.lastIndexOf("/")) + "/" +gESM.Lng[gESM.lngSel].Code+"/html/"+"ESMManualMain.html?url="+encodeURIComponent(url)+"&key="+key+"&anc="+anc;
   if(win == null || win.closed){
 		
     win = jsDispPopup(w, h, "toolbar=yes,menubar=yes,status=yes,scrollbars=no,resizable=yes,top="+t+",left="+l, newUrl, true);
@@ -248,7 +223,7 @@ function jsDispPopup(pwidth, pheight, poption, purl, focusflg)
   var wmargin = 50;
   var ww = screen.availWidth;
   var wh = screen.availHeight;
-  if (window.event != null) {
+  if (typeof window.event != 'undefined' && window.event != null) {
     var wx = window.event.screenX;
     var wy = window.event.screenY;
   }
