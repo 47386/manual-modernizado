@@ -16,11 +16,24 @@ var gSIE, gMSG, sDT;
 var gModelInfo;
 var gSmFlag,gBrmFlag;
 var gKey,gSct,gSc,gSys,gComp,gSitq,gKeyword;
-if (typeof(parent.document.ESM) != "object") {
-  location.href = "../../index.html";
+try {
+  if (typeof(parent.document.ESM) != "object") {
+    if (typeof(parent.gESM) == "object") {
+      document.ESM = parent.gESM;
+    } else {
+      location.href = "../../index.html";
+    }
+  } else {
+    document.ESM = parent.document.ESM;
+  }
+} catch(e) {
+  if (typeof(parent.gESM) == "object") {
+    document.ESM = parent.gESM;
+  } else {
+    location.href = "../../index.html";
+  }
 }
-parent.document.title = "CIVIC 3D Manual del taller (HONDA MOTOR Co.,Ltd.)";
-document.ESM = parent.document.ESM;
+try { parent.document.title = "CIVIC 3D Manual del taller (HONDA MOTOR Co.,Ltd.)"; } catch(e) {}
 gESM = document.ESM;
 gMSG = gESM.MsgC;
 gLng = gESM.Lng;
@@ -103,6 +116,11 @@ function Initialize()
 {
   var fChange = false;
   var i;
+  var cmbMY = document.getElementById('cmbMY');
+  var cmbMC = document.getElementById('cmbMC');
+  var cmbLang = document.getElementById('cmbLang');
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
 
   gMSG.length = 0;
   sDT = new Array;
@@ -172,10 +190,12 @@ function SetSubject(fChange)
 function WordSearch()
 {
   var  strTree;
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
 
   gESM.Keyword = document.getElementById('txtWord').value;
   document.ESM = gESM;
-  parent.document.ESM = document.ESM;
+  try { parent.document.ESM = document.ESM; } catch(e) {}
   if(radSM.checked == true) {
     strTree = "SML_";
   }
@@ -188,11 +208,13 @@ function WordSearch()
   }
   strTree += gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_";
   strTree += gModelInfo[gESM.mySel].Year + ".html";
-  parent.F12.location = strTree;
+  parent.document.getElementById('F12').src = "./" + gLng[gESM.lngSel].Code + "/html/" + strTree;
 }
 function ClearSearch()
 {
   var  strTree;
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
 
   gESM.Key = "";         
   gESM.Sct = "";         
@@ -203,7 +225,7 @@ function ClearSearch()
   gESM.Keyword = "";     
   document.getElementById('txtWord').value = "";
 
-  parent.F12.location="./ESMBLANK.HTML";
+  parent.document.getElementById('F12').src="./_COM/ESMBLANK.HTML";
   if(radSM.checked == true) {
     strTree = "SMT_";
   }
@@ -232,16 +254,20 @@ function SortComp(p1, p2)
 }
 function OnChangeLang()
 {
+  var cmbLang = document.getElementById('cmbLang');
+  var cmbMY = document.getElementById('cmbMY');
   gESM.lngSel = cmbLang.selectedIndex;
   parent.ChangeLang(true);
   cmbMY.selectedIndex = 0;
 }
 function OnChangeText()
 {
-  parent.F12.location="./ESMBLANK.HTML";
+  parent.document.getElementById('F12').src="./_COM/ESMBLANK.HTML";
 }
 function OnChangeModelYear()
 {
+  var cmbMY = document.getElementById('cmbMY');
+  var cmbMC = document.getElementById('cmbMC');
   gESM.mySel= cmbMY.selectedIndex;
   SetSubject(true);
   parent.ChangeModelYear(true);
@@ -260,10 +286,13 @@ function OnChangeModelYear()
 function OnChangeModelCode()
 {
   var  strTree;
+  var cmbMC = document.getElementById('cmbMC');
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
 
   gESM.mcSel = cmbMC.selectedIndex;
   parent.ChangeModelCode(true);
-  parent.F12.location="./ESMBLANK.HTML";
+  parent.document.getElementById('F12').src="./_COM/ESMBLANK.HTML";
   if(radSM.checked == true) {
     strTree = "SMT_";
   }
@@ -286,6 +315,8 @@ function OnChangeModel()
 }
 function OnChangeIndv(fReload, nIndex)
 {
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
   if(gESM.mdlSel==nIndex){
     if(!fReload){
       return;
@@ -302,7 +333,7 @@ function OnChangeIndv(fReload, nIndex)
     radBM.checked=true;
     gESM.manTyp = "BM";
   }
-  parent.F12.location="./ESMBLANK.HTML";
+  parent.document.getElementById('F12').src="./_COM/ESMBLANK.HTML";
 
   var  strTree;
 
@@ -328,6 +359,8 @@ function Old(obj){
     return;
   }
   if(obj.name == document.getElementById('iframeTree').name){
+    var divSysCompTreeSearching = document.getElementById('divSysCompTreeSearching');
+    var divSysCompTreeSearched = document.getElementById('divSysCompTreeSearched');
     divSysCompTreeSearching.style.display = "none";
     divSysCompTreeSearched.style.display = "block";
     gESM.Key = "";         
@@ -351,7 +384,7 @@ function Tsl(key,sct,sc,sys,comp,sitq){
   gESM.Comp = comp;        
   gESM.Sitq = sitq;        
   document.ESM = gESM;
-  parent.F12.location="./ESMBLANK.HTML";
+  parent.document.getElementById('F12').src="./_COM/ESMBLANK.HTML";
 
 }
 
@@ -438,7 +471,7 @@ function Scl(sys,comp){
     <tr>
       <td></td>
       <td>
-        <div id="divSysCompTreeSearching" style="display:none" class="SearchMessage" ondblclick="divSysCompTreeSearching.style.display='none';divSysCompTreeSearched.style.display='block';">Now&nbsp;Searching...</div>
+        <div id="divSysCompTreeSearching" style="display:none" class="SearchMessage" ondblclick="document.getElementById('divSysCompTreeSearching').style.display='none';document.getElementById('divSysCompTreeSearched').style.display='block';">Now&nbsp;Searching...</div>
         <div id="divSysCompTreeSearched" style="display:none">
           <iframe id="iframeTree" src="./ESMBLANK.HTML" name="SelTree" width="300" height="210"></iframe>
         </div>

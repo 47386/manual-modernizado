@@ -99,9 +99,9 @@ function ChangeLang(fSub)
     wnd.location.reload();                                          
   }                                                                 
   else { 
-    wnd.F10.location=strPath+strLang+"/html/ESMTITLE.HTML";
-    wnd.F11.location=strPath+strLang+"/html/ESMSELCT.HTML";
-    wnd.F12.location=strPath+strLang+"/html/ESMBLANK.HTML";
+    document.getElementById('F10').src=strPath+strLang+"/html/ESMTITLE.HTML";
+    document.getElementById('F11').src=strPath+strLang+"/html/ESMSELCT.HTML";
+    document.getElementById('F12').src=strPath+strLang+"/html/ESMBLANK.HTML";
   }                                                                 
 }
 
