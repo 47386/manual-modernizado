@@ -19,6 +19,11 @@
  * Global state — all initialised here so no iframe cross-origin access
  * is needed.
  * --------------------------------------------------------------------- */
+/* Default language index — must match the position of 'es' in LANGINFO.JS
+   (de=0, en=1, es=2, it=3, pt=4).  Kept as a named constant so it only
+   needs to change in one place if LANGINFO.JS is ever reordered.        */
+var DEFAULT_LANG_IDX = 2;
+
 var gESM       = new Array;
 var gLng       = new Array;
 var gMSG       = new Array;
@@ -27,7 +32,7 @@ var fn         = new Array;
 var gSIE, gSmFlag, gBrmFlag, sDT;
 
 gESM.Lng       = gLng;
-gESM.lngSel    = 2;   /* default: Spanish (index 2 in LANGINFO.JS) */
+gESM.lngSel    = DEFAULT_LANG_IDX;
 gESM.MsgC      = gMSG;
 gESM.ModelInfo = gModelInfo;
 gESM.mySel     = 0;
@@ -273,7 +278,7 @@ html, body {
               <div id="divSysCompTreeSearching" style="display:none;" class="SearchMessage"
                    ondblclick="document.getElementById('divSysCompTreeSearching').style.display='none';
                                document.getElementById('divSysCompTreeSearched').style.display='block';">
-                Now&nbsp;Searching...
+                Buscando...
               </div>
               <div id="divSysCompTreeSearched" style="display:block;">
                 <iframe id="iframeTree" name="SelTree"
@@ -375,7 +380,7 @@ function Initialize() {
     elmOpt.value = gLng[i].Code;
     cmbLang.options.add(elmOpt);
   }
-  if (gESM.lngSel < 0 || gESM.lngSel >= gLng.length) { gESM.lngSel = 2; }
+  if (gESM.lngSel < 0 || gESM.lngSel >= gLng.length) { gESM.lngSel = DEFAULT_LANG_IDX; }
   cmbLang.selectedIndex  = gESM.lngSel;
   cmbLang.disabled       = (gLng.length <= 1);
 
@@ -529,6 +534,9 @@ function ClearSearch() {
 
 /* ── Callbacks invoked by SelTree iframe (parent.Old / parent.Tsl) ─ */
 
+/* Called by the SelTree iframe body.onLoad.  Hides the "Buscando..."
+   spinner and shows the rendered tree.  The name check guards against
+   spurious calls from other iframes (e.g. F12) that also call Old(). */
 function Old(obj) {
   if (obj == null) { return; }
   if (obj.name === document.getElementById('iframeTree').name) {
@@ -556,6 +564,8 @@ function Tsl(key, sct, sc, sys, comp, sitq) {
 
 /* ── Callbacks invoked by F12 content pages (parent.Cts / parent.Prt etc.) ─ */
 
+/* Cts: navigate F12 to a content page identified by its key. */
+
 function Cts(key, anc) {
   var strLang = gESM.Lng[gESM.lngSel].Code;
   var url = "./" + strLang + "/html/" + key + ".html";
@@ -563,6 +573,9 @@ function Cts(key, anc) {
   document.getElementById('F12').src = url;
 }
 
+/* Jmp/Prt/Scl: stubs required by content pages that call parent.Jmp(),
+   parent.Prt(), parent.Scl().  They are no-ops in the modernised single-
+   page architecture but must exist to prevent JS errors. */
 function Jmp(anc) {}
 function Prt(key) {}
 function Scl(sys, comp) {}
