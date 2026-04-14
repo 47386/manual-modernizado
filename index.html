@@ -5,181 +5,124 @@
 <meta name="author" content="HONDA MOTOR Co.,Ltd.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manual del Taller Honda Civic (HONDA MOTOR Co.,Ltd.)</title>
+
+<!-- Utility scripts -->
 <script src="./_COM/HONDAESM.JS"></script>
 <script src="./_COM/MESSAGE.JS"></script>
 <script src="./_COM/LANGINFO.JS"></script>
+<!-- Navigation data scripts (Spanish) -->
+<script src="./es/js/ESMSELCT.JS"></script>
+<script src="./es/js/MODELINFO.JS"></script>
+
 <script>
-var gESM, gLng, gMSG, gModelInfo, fn;
-var fStart = (GetCookie("EsmStart") == "true") ? false : true;
+/* -----------------------------------------------------------------------
+ * Global state — all initialised here so no iframe cross-origin access
+ * is needed.
+ * --------------------------------------------------------------------- */
+var gESM       = new Array;
+var gLng       = new Array;
+var gMSG       = new Array;
+var gModelInfo = new Array;
+var fn         = new Array;
+var gSIE, gSmFlag, gBrmFlag, sDT;
 
-if (fStart || !document.referrer) {
-  gESM       = new Array;
-  gLng       = new Array;
-  gMSG       = new Array;
-  gModelInfo = new Array;
-  fn         = new Array;
+gESM.Lng       = gLng;
+gESM.lngSel    = 2;   /* default: Spanish (index 2 in LANGINFO.JS) */
+gESM.MsgC      = gMSG;
+gESM.ModelInfo = gModelInfo;
+gESM.mySel     = 0;
+gESM.mcSel     = 0;
+gESM.subSel    = 0;
+gESM.subUse    = 0;
+gESM.mdlSel    = 0;
+gESM.manTyp    = 'SM';
+gESM.smFlag    = -1;
+gESM.brmFlag   = -1;
+gESM.Key       = "";
+gESM.Sct       = "";
+gESM.Sc        = "";
+gESM.Sys       = "";
+gESM.Comp      = "";
+gESM.Sitq      = "";
+gESM.Keyword   = "";
+gESM.SIE       = new Array;
+gSIE           = gESM.SIE;
 
-  gESM.Lng       = gLng;
-  gESM.lngSel    = -1;
-  gESM.MsgC      = gMSG;
-  gESM.ModelInfo = gModelInfo;
-  gESM.mySel     = -1;
-  gESM.mcSel     = -1;
-  gESM.subSel    =  0;
-  gESM.subUse    =  0;
-  gESM.mdlSel    =  0;
-  gESM.manTyp    = 'SM';
-  gESM.smFlag    = -1;
-  gESM.brmFlag   = -1;
-  document.ESM   = gESM;
-  SetLang();
+fn.GetCookie  = GetCookie;
+fn.SetCookie  = SetCookie;
+fn.FormatStr  = FormatStr;
+fn.ChangeLang = ChangeLang;
+gESM.fn = fn;
 
-  gESM.Key     = "";
-  gESM.Sct     = "";
-  gESM.Sc      = "";
-  gESM.Sys     = "";
-  gESM.Comp    = "";
-  gESM.Sitq    = "";
-  gESM.Keyword = "";
+/* Fill language list */
+SetLang();
 
-  fn.GetCookie  = GetCookie;
-  fn.SetCookie  = SetCookie;
-  fn.FormatStr  = FormatStr;
-  fn.ChangeLang = ChangeLang;
-  gESM.fn = fn;
-} else {
-  document.ESM   = parent.document.ESM;
-  gESM           = document.ESM;
-  gLng           = gESM.Lng;
-  gMSG           = gESM.MsgC;
-  gModelInfo     = gESM.ModelInfo;
-  fn             = gESM.fn;
-}
-fn.SetCookie("EsmStart", "true", true);
+/* Fill model info */
+CreateModelInf();
+SetManualType();
+gESM.smFlag  = gSmFlag;
+gESM.brmFlag = gBrmFlag;
 
-function Initialize()
-{
-  var strLang, strYear, strCode, strData;
-  var i;
-
-  if (gESM.Lng.length <= 0) {
-    alert("No se encontró información de idioma.");
-    return;
-  }
-
-  if (fStart || (gESM.lngSel < 0)) {
-    strLang = GetCookie("EsmLang");
-    if (strLang.length > 0) {
-      gESM.subSel = strLang.substr(strLang.length - 1, 1);
-      strLang = strLang.substr(0, strLang.length - 1);
-      gESM.lngSel = -1;
-      for (i = 0; i < gESM.Lng.length; ++i) {
-        strCode = gESM.Lng[i].Code;
-        if (strLang.toUpperCase() == strCode.toUpperCase()) {
-          gESM.lngSel = i;
-          break;
-        }
-      }
-    }
-  }
-  if (fStart || (gESM.mySel < 0)) {
-    strYear = GetCookie("EsmYear");
-    if (strYear.length > 0) {
-      gESM.mySel = -1;
-      for (i = 0; i < gESM.ModelInfo.length; ++i) {
-        strData = gESM.ModelInfo[i].Year;
-        if (strYear.toUpperCase() == strData.toUpperCase()) {
-          gESM.mySel = i;
-          break;
-        }
-      }
-    }
-    if ((gESM.mySel >= 0) && (gESM.mcSel < 0)) {
-      strCode = GetCookie("EsmCode");
-      if (strCode.length > 0) {
-        gESM.mcSel = -1;
-        for (i = 0; i < gESM.ModelInfo[gESM.mySel].CodeList.length; ++i) {
-          strData = gESM.ModelInfo[gESM.mySel].CodeList[i].Code;
-          if (strCode.toUpperCase() == strData.toUpperCase()) {
-            gESM.mcSel = i;
-            break;
-          }
-        }
+/* Restore selections from cookies */
+(function () {
+  var strLang = GetCookie("EsmLang");
+  if (strLang.length > 0) {
+    var code = strLang.substr(0, strLang.length - 1);
+    for (var i = 0; i < gLng.length; i++) {
+      if (code.toUpperCase() === gLng[i].Code.toUpperCase()) {
+        gESM.lngSel = i;
+        break;
       }
     }
   }
 
-  if (gESM.lngSel < 0) { gESM.lngSel = 2; } // default: Spanish
-  if (gESM.mySel  < 0) { gESM.mySel  = 0; }
-  if (gESM.mcSel  < 0) { gESM.mcSel  = 0; }
-}
-
-function Old(obj)
-{
-  if (obj == null) { return; }
-  obj.Fsl(gESM.Key, gESM.Sct, gESM.Sc, gESM.Sys, gESM.Comp, gESM.Sitq, gESM.Keyword);
-  obj.Chh(obj.document.body.clientHeight);
-}
-
-function Tsl(key, sct, sc, sys, comp, sitq)
-{
-  gESM.Key  = key;
-  gESM.Sct  = sct;
-  gESM.Sc   = sc;
-  gESM.Sys  = sys;
-  gESM.Comp = comp;
-  gESM.Sitq = sitq;
-}
-
-function Cts(key, anc)
-{
-  var dir = window.location.href.substring(0, window.location.href.lastIndexOf("/")) + "/" + gESM.Lng[gESM.lngSel].Code + "/html/";
-  if (!anc) { anc = ""; } else { anc = "#" + anc; }
-  var url = key + ".html" + anc;
-  jsShopPopUpHistWindow(url, key, anc);
-}
-
-function Jmp(anc) {}
-function Prt(key) {}
-function Scl(sys, comp) {}
-
-var win = null;
-function jsShopPopUpHistWindow(url, key, anc)
-{
-  var w = 1024, h = 668;
-  var t = (screen.availHeight - h) / 2;
-  var l = (screen.availWidth  - w) / 2;
-  var newUrl = window.location.href.substring(0, window.location.href.lastIndexOf("/")) + "/" + gESM.Lng[gESM.lngSel].Code + "/html/ESMManualMain.html?url=" + encodeURIComponent(url) + "&key=" + key + "&anc=" + anc;
-  if (win == null || win.closed) {
-    win = window.open(newUrl, "ESM", "toolbar=yes,menubar=yes,status=yes,scrollbars=no,resizable=yes,top=" + t + ",left=" + l + ",width=" + w + ",height=" + h);
-  } else {
-    win.location.href = newUrl;
+  var strYear = GetCookie("EsmYear");
+  if (strYear.length > 0) {
+    for (var i = 0; i < gModelInfo.length; i++) {
+      if (strYear.toUpperCase() === gModelInfo[i].Year.toUpperCase()) {
+        gESM.mySel = i;
+        break;
+      }
+    }
   }
-  if (win) { win.focus(); }
-}
 
-function OnLoad()
-{
-  if (gESM.subSel == 0) { gESM.subSel = 1; }
-  if (gESM.subSel == 1 && (gESM.subUse & 1) == 0) { gESM.subSel = 2; }
-  if (gESM.subSel == 2 && (gESM.subUse & 2) == 0) { gESM.subSel = 1; }
-  ChangeLang(false);
-}
+  var strCode = GetCookie("EsmCode");
+  if (strCode.length > 0) {
+    var list = gModelInfo[gESM.mySel].CodeList;
+    for (var i = 0; i < list.length; i++) {
+      if (strCode.toUpperCase() === list[i].Code.toUpperCase()) {
+        gESM.mcSel = i;
+        break;
+      }
+    }
+  }
 
-function OnUnload()
-{
-  var f10 = document.getElementById('F10');
-  var f11 = document.getElementById('F11');
-  var f12 = document.getElementById('F12');
-  if (f10) f10.src = "./_COM/ESMTITLE.HTML";
-  if (f11) f11.src = "./_COM/ESMSELCT.HTML";
-  if (f12) f12.src = "./_COM/ESMBLANK.HTML";
-}
+  var strType = GetCookie("EsmType");
+  if (strType === "SM")      { gESM.mdlSel = 1; }
+  else if (strType === "BM") { gESM.mdlSel = 2; }
+}());
 
-Initialize();
-window.onload = OnLoad;
-window.onunload = OnUnload;
+SetCookie("EsmStart", "true", true);
 </script>
+
+<!-- Override ChangeLang so it works without F10/F11 iframes -->
+<script>
+function ChangeLang(fSub) {
+  var strLang = gESM.Lng[gESM.lngSel].Code;
+  SetCookie("EsmLang", strLang + gESM.mySel);
+  if (fSub) {
+    /* Called after a language change by the user — reload the page so the
+       correct language scripts (MODELINFO.JS etc.) are loaded again.      */
+    window.location.reload();
+  } else {
+    /* Called on startup — just show the blank content page. */
+    var f12 = document.getElementById('F12');
+    if (f12) { f12.src = "./_COM/ESMBLANK.HTML"; }
+  }
+}
+</script>
+
+<link rel="stylesheet" href="./es/css/ESMCONTS.CSS">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
@@ -196,6 +139,7 @@ html, body {
   height: 71px;
   flex-shrink: 0;
   overflow: hidden;
+  background-color: #fff;
 }
 #body {
   display: flex;
@@ -205,16 +149,23 @@ html, body {
 #nav {
   width: 370px;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-right: 1px solid #ccc;
 }
 #content {
   flex: 1;
   overflow: hidden;
 }
-iframe {
+#content iframe {
   width: 100%;
   height: 100%;
+  border: none;
+  display: block;
+}
+#iframeTree {
+  width: 340px;
+  height: 210px;
   border: none;
   display: block;
 }
@@ -222,17 +173,402 @@ iframe {
 </head>
 <body>
 <div id="layout">
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       HEADER  (content of es/html/ESMTITLE.HTML, paths adjusted)
+       ═══════════════════════════════════════════════════════════════ -->
   <div id="header">
-    <iframe id="F10" name="F10" src="./_COM/ESMTITLE.HTML" scrolling="no" title="Cabecera"></iframe>
-  </div>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr style="margin:0;padding:0;">
+        <td width="1%"></td>
+        <td>
+          <div class="Header">CIVIC 3D</div>
+        </td>
+        <td valign="top" align="right" width="1%">
+          <img src="./es/img/TTLHONDA.PNG" alt="Honda">
+        </td>
+        <td width="1%"></td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr style="margin:0;padding:0;">
+        <td style="background-image:url('./es/img/TITLEBAR.PNG')" height="31">&nbsp;</td>
+        <td style="background-image:url('./es/img/TITLEEND.PNG')" height="31">&nbsp;</td>
+      </tr>
+    </table>
+  </div><!-- /header -->
+
   <div id="body">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         NAVIGATION PANEL  (content of es/html/ESMSELCT.HTML)
+         ═══════════════════════════════════════════════════════════ -->
     <div id="nav">
-      <iframe id="F11" name="F11" src="./_COM/ESMSELCT.HTML" title="Navegación"></iframe>
-    </div>
+      <div id="SEARCH">
+        <table width="100%" cellspacing="0">
+          <tr>
+            <td align="left">
+              <img src="./es/img/GL_SEARCH.PNG" title="Buscar"
+                   onclick="WordSearch();" ondblclick="WordSearch();">
+              <img src="./es/img/clear_search.png" title="Cancelar búsqueda"
+                   onclick="ClearSearch();" ondblclick="ClearSearch();">
+            </td>
+          </tr>
+        </table>
+        <hr color="gray">
+        <table width="100%" cellspacing="0">
+          <tr>
+            <td width="1%"><img src="./es/img/LABELPNT.PNG" width="16" height="16"></td>
+            <td width="99%" class="Label">Modelo</td>
+          </tr>
+        </table>
+        <table cellspacing="0">
+          <tr>
+            <td width="1%"></td>
+            <td nowrap class="Label"><div style="margin-left:20px;">Año Modelo</div></td>
+            <td>&nbsp;<select id="cmbMY" onchange="OnChangeModelYear();"></select></td>
+            <td width="1%"></td>
+            <td nowrap class="Label"><div style="margin-left:20px;">Código de Modelo</div></td>
+            <td>&nbsp;<select id="cmbMC" onchange="OnChangeModelCode();"></select></td>
+          </tr>
+        </table>
+        <hr color="gray">
+        <table width="100%" cellspacing="0">
+          <tr>
+            <td width="1%"><img src="./es/img/LABELPNT.PNG" width="16" height="16"></td>
+            <td width="99%" class="Label">Búsqueda individual</td>
+          </tr>
+        </table>
+        <table width="100%" cellspacing="0">
+          <tr>
+            <td width="50%" align="center">
+              <input type="radio" value="1" name="radInd" id="radSM" onclick="OnChangeIndv(true,1);">
+              <label for="radSM">Manual del taller</label>
+            </td>
+            <td width="50%" align="center">
+              <input type="radio" value="2" name="radInd" id="radBM" onclick="OnChangeIndv(true,2);">
+              <label for="radBM">Manual de reparación de la carrocería</label>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%" align="center">
+              <img id="Ind1I" src="./es/img/DM_SHOP_MANUAL.PNG"
+                   onclick="OnChangeIndv(true,1);" ondblclick="OnChangeIndv(true,1);">
+            </td>
+            <td width="50%" align="center">
+              <img id="Ind2I" src="./es/img/DM_BODY_RIPEA.PNG"
+                   onclick="OnChangeIndv(true,2);" ondblclick="OnChangeIndv(true,2);">
+            </td>
+          </tr>
+        </table>
+        <hr color="gray">
+        <table width="100%" cellspacing="0">
+          <tr>
+            <td width="1%"><img src="./es/img/LABELPNT.PNG" width="16" height="16"></td>
+            <td class="Label">Seleccionar Sistema/Componente</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <div id="divSysCompTreeSearching" style="display:none;" class="SearchMessage"
+                   ondblclick="document.getElementById('divSysCompTreeSearching').style.display='none';
+                               document.getElementById('divSysCompTreeSearched').style.display='block';">
+                Now&nbsp;Searching...
+              </div>
+              <div id="divSysCompTreeSearched" style="display:block;">
+                <iframe id="iframeTree" name="SelTree"
+                        src="./_COM/ESMBLANK.HTML"></iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div id="KeyWordSearch">
+          <table width="96%" cellspacing="0">
+            <tr>
+              <td><img src="./es/img/LABELPNT.PNG" width="16" height="16"></td>
+              <td class="Label">Teclee</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input id="txtWord" type="text" size="30" onkeyup="OnChangeText();"></td>
+              <td>
+                <img src="./es/img/GL_SEARCH.PNG" title="Buscar"
+                     onclick="WordSearch();" ondblclick="WordSearch();">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div><!-- /SEARCH -->
+
+      <div id="SelLanguage">
+        <hr color="gray">
+        <table>
+          <tr>
+            <td><img src="./es/img/LABELPNT.PNG" width="16" height="16"></td>
+            <td class="Label">Modificar idioma</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><select id="cmbLang" onchange="OnChangeLang();"></select></td>
+            <td></td>
+          </tr>
+        </table>
+      </div><!-- /SelLanguage -->
+    </div><!-- /nav -->
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CONTENT AREA  — only this iframe is kept; it is always set
+         programmatically (parent→iframe), which is safe with file://
+         ═══════════════════════════════════════════════════════════ -->
     <div id="content">
       <iframe id="F12" name="F12" src="./_COM/ESMBLANK.HTML" title="Contenido"></iframe>
     </div>
-  </div>
-</div>
+
+  </div><!-- /body -->
+</div><!-- /layout -->
+
+<!-- ===================================================================
+     NAVIGATION JAVASCRIPT
+     (Adapted from es/html/ESMSELCT.HTML — all parent.* references
+      removed; paths adjusted to be relative to the root index.html)
+     ================================================================ -->
+<script>
+/* Populate all dropdowns and set initial radio/iframe state. */
+function Initialize() {
+  var i, elmOpt;
+  var cmbMY   = document.getElementById('cmbMY');
+  var cmbMC   = document.getElementById('cmbMC');
+  var cmbLang = document.getElementById('cmbLang');
+  var radSM   = document.getElementById('radSM');
+  var radBM   = document.getElementById('radBM');
+
+  gMSG.length = 0;
+  sDT = new Array;
+
+  /* Year dropdown */
+  for (i = 0; i < gModelInfo.length; i++) {
+    elmOpt       = document.createElement("option");
+    elmOpt.text  = gModelInfo[i].Year;
+    elmOpt.value = i;
+    cmbMY.options.add(elmOpt);
+  }
+  if (gESM.mySel < 0 || gESM.mySel >= gModelInfo.length) { gESM.mySel = 0; }
+  cmbMY.selectedIndex = gESM.mySel;
+
+  /* Model-code dropdown */
+  var codeList = gModelInfo[cmbMY.selectedIndex].CodeList;
+  for (i = 0; i < codeList.length; i++) {
+    elmOpt       = document.createElement("option");
+    elmOpt.text  = codeList[i].Code;
+    elmOpt.value = i;
+    cmbMC.options.add(elmOpt);
+  }
+  if (gESM.mcSel < 0 || gESM.mcSel >= codeList.length) { gESM.mcSel = 0; }
+  cmbMC.selectedIndex = gESM.mcSel;
+
+  /* Language dropdown */
+  for (i = 0; i < gLng.length; i++) {
+    elmOpt       = document.createElement("option");
+    elmOpt.text  = gLng[i].Name;
+    elmOpt.value = gLng[i].Code;
+    cmbLang.options.add(elmOpt);
+  }
+  if (gESM.lngSel < 0 || gESM.lngSel >= gLng.length) { gESM.lngSel = 2; }
+  cmbLang.selectedIndex  = gESM.lngSel;
+  cmbLang.disabled       = (gLng.length <= 1);
+
+  /* Radio buttons */
+  radSM.disabled = (gESM.smFlag  === -1);
+  radBM.disabled = (gESM.brmFlag === -1);
+  radSM.checked  = false;
+  radBM.checked  = false;
+
+  if (gESM.mdlSel === 1) {
+    radSM.checked = true;
+  } else if (gESM.mdlSel === 2) {
+    radBM.checked = true;
+  } else {
+    if (!radSM.disabled) {
+      gESM.mdlSel   = 1;
+      radSM.checked = true;
+    } else if (!radBM.disabled) {
+      gESM.mdlSel   = 2;
+      radBM.checked = true;
+    }
+  }
+
+  OnChangeIndv(true, gESM.mdlSel);
+}
+
+/* Load the component-tree iframe for the current selection. */
+function loadTree() {
+  var radSM  = document.getElementById('radSM');
+  var radBM  = document.getElementById('radBM');
+  var prefix;
+
+  if      (radSM.checked) { prefix = "SMT_"; }
+  else if (radBM.checked) { prefix = "BRT_"; }
+  else {
+    document.getElementById('iframeTree').src = "./_COM/ESMBLANK.HTML";
+    return;
+  }
+
+  var strTree = prefix
+    + gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_"
+    + gModelInfo[gESM.mySel].Year + ".html";
+
+  document.getElementById('iframeTree').src =
+    "./" + gLng[gESM.lngSel].Code + "/html/" + strTree;
+}
+
+/* ── Event handlers ─────────────────────────────────────────────── */
+
+function OnChangeLang() {
+  var cmbLang = document.getElementById('cmbLang');
+  gESM.lngSel = cmbLang.selectedIndex;
+  ChangeLang(true);   /* saves cookie and reloads the page */
+}
+
+function OnChangeText() {
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+}
+
+function OnChangeModelYear() {
+  var cmbMY = document.getElementById('cmbMY');
+  var cmbMC = document.getElementById('cmbMC');
+  var i, elmOpt;
+
+  gESM.mySel = cmbMY.selectedIndex;
+  ChangeModelYear(false);
+
+  /* Rebuild model-code list */
+  cmbMC.options.length = 0;
+  var codeList = gModelInfo[cmbMY.selectedIndex].CodeList;
+  for (i = 0; i < codeList.length; i++) {
+    elmOpt       = document.createElement("option");
+    elmOpt.text  = codeList[i].Code;
+    elmOpt.value = i;
+    cmbMC.options.add(elmOpt);
+  }
+  cmbMC.selectedIndex = 0;
+  gESM.mcSel = 0;
+  ChangeModelCode(false);
+
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+  loadTree();
+}
+
+function OnChangeModelCode() {
+  var cmbMC = document.getElementById('cmbMC');
+  gESM.mcSel = cmbMC.selectedIndex;
+  ChangeModelCode(false);
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+  loadTree();
+}
+
+function OnChangeIndv(fReload, nIndex) {
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
+
+  if (gESM.mdlSel === nIndex && !fReload) { return; }
+  gESM.mdlSel = nIndex;
+
+  if (nIndex === 1) {
+    radSM.checked = true;
+    radBM.checked = false;
+    gESM.manTyp   = "SM";
+  } else if (nIndex === 2) {
+    radSM.checked = false;
+    radBM.checked = true;
+    gESM.manTyp   = "BM";
+  }
+
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+  ChangeModelType(false);
+  loadTree();
+}
+
+/* ── Search ─────────────────────────────────────────────────────── */
+
+function WordSearch() {
+  var radSM = document.getElementById('radSM');
+  var radBM = document.getElementById('radBM');
+  var prefix;
+
+  gESM.Keyword = document.getElementById('txtWord').value;
+
+  if      (radSM.checked) { prefix = "SML_"; }
+  else if (radBM.checked) { prefix = "BRL_"; }
+  else {
+    document.getElementById('iframeTree').src = "./_COM/ESMBLANK.HTML";
+    return;
+  }
+
+  var strTree = prefix
+    + gModelInfo[gESM.mySel].CodeList[gESM.mcSel].Code + "_"
+    + gModelInfo[gESM.mySel].Year + ".html";
+
+  document.getElementById('F12').src =
+    "./" + gLng[gESM.lngSel].Code + "/html/" + strTree;
+}
+
+function ClearSearch() {
+  gESM.Key     = "";
+  gESM.Sct     = "";
+  gESM.Sc      = "";
+  gESM.Sys     = "";
+  gESM.Comp    = "";
+  gESM.Sitq    = "";
+  gESM.Keyword = "";
+  document.getElementById('txtWord').value = "";
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+  loadTree();
+}
+
+/* ── Callbacks invoked by SelTree iframe (parent.Old / parent.Tsl) ─ */
+
+function Old(obj) {
+  if (obj == null) { return; }
+  if (obj.name === document.getElementById('iframeTree').name) {
+    document.getElementById('divSysCompTreeSearching').style.display = "none";
+    document.getElementById('divSysCompTreeSearched').style.display  = "block";
+    gESM.Key     = "";
+    gESM.Sct     = "";
+    gESM.Sc      = "";
+    gESM.Sys     = "";
+    gESM.Comp    = "";
+    gESM.Sitq    = "";
+    gESM.Keyword = "";
+  }
+}
+
+function Tsl(key, sct, sc, sys, comp, sitq) {
+  gESM.Key  = key;
+  gESM.Sct  = sct;
+  gESM.Sc   = sc;
+  gESM.Sys  = sys;
+  gESM.Comp = comp;
+  gESM.Sitq = sitq;
+  document.getElementById('F12').src = "./_COM/ESMBLANK.HTML";
+}
+
+/* ── Callbacks invoked by F12 content pages (parent.Cts / parent.Prt etc.) ─ */
+
+function Cts(key, anc) {
+  var strLang = gESM.Lng[gESM.lngSel].Code;
+  var url = "./" + strLang + "/html/" + key + ".html";
+  if (anc) { url += "#" + anc; }
+  document.getElementById('F12').src = url;
+}
+
+function Jmp(anc) {}
+function Prt(key) {}
+function Scl(sys, comp) {}
+
+/* ── Startup ─────────────────────────────────────────────────────── */
+window.onload = function () { Initialize(); };
+</script>
 </body>
 </html>
