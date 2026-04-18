@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <script>
 <!--
+var ESM_TARGET_ORIGIN = (window.location.protocol === 'file:') ? 'null' : window.location.origin;
 var tDT     = new Array;
 var trOpen  = null;
 var trSel   = null;
@@ -261,7 +262,7 @@ function TreeExpand(strID)
       if (trOpen != null) {
         trOpen.src = "../img/TR_CLOSE.PNG";
         trOpen = null;
-        window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, '*');
+        window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, ESM_TARGET_ORIGIN);
       }
     }
     with (objChd.style) {
@@ -286,7 +287,7 @@ function TreeClick(strID)
     trSel = null;
     trOpen.src = "../img/TR_CLOSE.PNG";
     trOpen = null;
-    window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, '*');
+    window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, ESM_TARGET_ORIGIN);
   }
   else {
     if (trSel != null) {
@@ -307,13 +308,13 @@ function TreeClick(strID)
     var strSys = tDT[strID].Sys;
     var strComp = tDT[strID].Comp;
     var strSitq = tDT[strID].Sitq;
-    window.parent.postMessage({type:'tsl', key:strKey, sct:strSct, sc:strSc, sys:strSys, comp:strComp, sitq:strSitq}, '*');
+    window.parent.postMessage({type:'tsl', key:strKey, sct:strSct, sc:strSc, sys:strSys, comp:strComp, sitq:strSitq}, ESM_TARGET_ORIGIN);
   }
 }
 //-->
 </script>
 </head>
-<body id="TreeBody" topmargin="10" onLoad="javascript:window.parent.postMessage({type:'old'}, '*')">
+<body id="TreeBody" topmargin="10" onLoad="javascript:window.parent.postMessage({type:'old'}, ESM_TARGET_ORIGIN)">
   <div><script>CreateTree();</script></div>
 </body>
 </html>

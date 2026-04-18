@@ -10,6 +10,7 @@
 <script src="../js/SieListFunc.js"></script>
 <script>
 <!--
+var ESM_TARGET_ORIGIN = (window.location.protocol === 'file:') ? 'null' : window.location.origin;
 var tDT     = new Array;
 var cdInfo  = new Array;
 var trSel   = null;
@@ -1409,7 +1410,7 @@ function Fsl(strKey, strSct, strSc, strSys, strComp, strSitq, strKeywords)
 }
 function PostCts(strKey, strAnc)
 {
-  window.parent.postMessage({type:'cts', key:strKey, anc:strAnc}, '*');
+  window.parent.postMessage({type:'cts', key:strKey, anc:strAnc}, ESM_TARGET_ORIGIN);
 }
 function CreateList()
 {
@@ -1425,7 +1426,7 @@ function CreateList()
 //-->
 </script>
 </head>
-<body id="TreeBody" topmargin="10" onLoad="javascript:window.parent.postMessage({type:'old'}, '*')">
+<body id="TreeBody" topmargin="10" onLoad="javascript:window.parent.postMessage({type:'old'}, ESM_TARGET_ORIGIN)">
   <div><script>CreateList();</script></div>
 </body>
 </html>
