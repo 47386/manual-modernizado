@@ -534,6 +534,21 @@ function ClearSearch() {
 
 /* ── Callbacks invoked by SelTree iframe (parent.Old / parent.Tsl) ─ */
 
+window.addEventListener('message', function (event) {
+  var data = event.data;
+  if (!data || typeof data !== "object" || !data.type) { return; }
+
+  if (data.type === "old") {
+    Old({ name: document.getElementById('iframeTree').name });
+  } else if (data.type === "tsl") {
+    Tsl(data.key || "", data.sct || "", data.sc || "", data.sys || "", data.comp || "", data.sitq || "");
+  } else if (data.type === "cts") {
+    Cts(data.key || "", data.anc || "");
+  } else if (data.type === "navigate") {
+    if (data.url) { document.getElementById('F12').src = data.url; }
+  }
+});
+
 /* Called by the SelTree iframe body.onLoad.  Hides the "Buscando..."
    spinner and shows the rendered tree.  The name check guards against
    spurious calls from other iframes (e.g. F12) that also call Old(). */

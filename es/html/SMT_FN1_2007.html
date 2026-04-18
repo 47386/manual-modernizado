@@ -247,9 +247,9 @@ function CreateTree()
 }
 function TreeExpand(strID)
 {
-  var objTre = document.all["I" + strID];
-  var objFld = document.all["F" + strID];
-  var objChd = document.all["C" + strID];
+  var objTre = document.getElementById("I" + strID);
+  var objFld = document.getElementById("F" + strID);
+  var objChd = document.getElementById("C" + strID);
   if (objChd != null) {
     if (trSel != null) {
       trSel.style.backgroundColor = "#FFFFFF";
@@ -257,7 +257,7 @@ function TreeExpand(strID)
       if (trOpen != null) {
         trOpen.src = "../img/TR_CLOSE.PNG";
         trOpen = null;
-        parent.Tsl('','','','','','');
+        window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, '*');
       }
     }
     with (objChd.style) {
@@ -275,14 +275,14 @@ function TreeExpand(strID)
 function TreeClick(strID)
 {
   var  htmlName;
-  var objFld  = document.all["F" + strID];
-  var objTtl  = document.all["T" + strID];
+  var objFld  = document.getElementById("F" + strID);
+  var objTtl  = document.getElementById("T" + strID);
   if (trSel == objTtl) {
     trSel.style.backgroundColor = "#FFFFFF";
     trSel = null;
     trOpen.src = "../img/TR_CLOSE.PNG";
     trOpen = null;
-    parent.Tsl('','','','','','');
+    window.parent.postMessage({type:'tsl', key:'', sct:'', sc:'', sys:'', comp:'', sitq:''}, '*');
   }
   else {
     if (trSel != null) {
@@ -303,13 +303,13 @@ function TreeClick(strID)
     var strSys = tDT[strID].Sys;
     var strComp = tDT[strID].Comp;
     var strSitq = tDT[strID].Sitq;
-    parent.Tsl(strKey,strSct,strSc,strSys,strComp,strSitq);
+    window.parent.postMessage({type:'tsl', key:strKey, sct:strSct, sc:strSc, sys:strSys, comp:strComp, sitq:strSitq}, '*');
   }
 }
 //-->
 </script>
 </head>
-<body id="TreeBody" topmargin="10" onLoad="javascript:parent.Old(this)">
+<body id="TreeBody" topmargin="10" onLoad="javascript:window.parent.postMessage({type:'old'}, '*')">
   <div><script>CreateTree();</script></div>
 </body>
 </html>
