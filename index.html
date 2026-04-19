@@ -534,6 +534,36 @@ function ClearSearch() {
 
 /* ── Callbacks invoked by SelTree iframe (parent.Old / parent.Tsl) ─ */
 
+window.addEventListener('message', function (event) {
+  var treeFrame = document.getElementById('iframeTree');
+  var f12Frame = document.getElementById('F12');
+  var fromTree = treeFrame && event.source === treeFrame.contentWindow;
+  var fromF12  = f12Frame && event.source === f12Frame.contentWindow;
+
+  if (!fromTree && !fromF12) { return; }
+  /* file:// pages have opaque origins; browsers serialize message origin as "null". */
+  if (window.location.protocol === "file:") {
+    if (event.origin !== "null") { return; }
+  } else if (event.origin !== window.location.origin) {
+    return;
+  }
+
+  var data = event.data;
+  if (!data || typeof data !== "object" || !data.type) { return; }
+
+  if (data.type === "old") {
+    if (treeFrame) {
+      Old({ name: treeFrame.name });
+    }
+  } else if (data.type === "tsl") {
+    Tsl(data.key || "", data.sct || "", data.sc || "", data.sys || "", data.comp || "", data.sitq || "");
+  } else if (data.type === "cts") {
+    Cts(data.key || "", data.anc || "");
+  } else if (data.type === "navigate") {
+    if (data.url) { document.getElementById('F12').src = data.url; }
+  }
+});
+
 /* Called by the SelTree iframe body.onLoad.  Hides the "Buscando..."
    spinner and shows the rendered tree.  The name check guards against
    spurious calls from other iframes (e.g. F12) that also call Old(). */
